@@ -1,19 +1,15 @@
 import { StatusBar } from "expo-status-bar";
 import React, { useEffect } from "react";
-import {
-  StyleSheet,
-  Text,
-  View,
-  Image,
-  Dimensions,
-  SafeAreaView,
-  Animated,
-} from "react-native";
+import { StyleSheet,Text,View,Image, Dimensions, SafeAreaView, Animated,} from "react-native";
 
 import { LinearGradient } from "expo-linear-gradient";
+import { useNavigation } from '@react-navigation/native';
+import { createStackNavigator } from '@react-navigation/stack';
+import { TouchableOpacity } from 'react-native-gesture-handler';
+
 
 const imagenes = [
-  "https://images.unsplash.com/photo-1559494007-9f5847c49d94?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=774&q=80",
+  "https://i.imgur.com/9UycxBg.jpg",
   "https://images.unsplash.com/photo-1506477331477-33d5d8b3dc85?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2425&q=80",
   "https://images.unsplash.com/photo-1505118380757-91f5f5632de0?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=652&q=80",
   "https://images.unsplash.com/photo-1525183995014-bd94c0750cd5?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80",
@@ -21,6 +17,26 @@ const imagenes = [
   "https://images.unsplash.com/photo-1503756234508-e32369269deb?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1035&q=80",
   "https://images.unsplash.com/photo-1504681869696-d977211a5f4c?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=652&q=80",
 ];
+
+const backdropImagenes = [
+  "https://www.hondurastips.hn/wp-content/uploads/2016/08/danli-8.jpg",
+  "https://elcomercio.pe/resizer/vR-RM4uvl6yxbaPOw9rHhcBg6Jw=/1200x1200/smart/filters:format(jpeg):quality(75)/cloudfront-us-east-1.images.arcpublishing.com/elcomercio/ZRNBMG3HVBAHPGAZAUJGBJJ7HU.jpg",
+  "https://i.blogs.es/b7f54f/dragon-ball-asi-se-veria-broly-si-alcanzara-la-transformacion-super-saiyajin-4-en-un-fanart-que-lo-imagina-mas-poderoso-que-nunca1/1366_2000.jpeg",
+  // Agrega más URL de imágenes personalizadas aquí
+];
+
+
+// Inicio de codigos de los texto debajo de el carrucel
+const titulos = [
+  "DANLI 0703",
+  "Título 2",
+  "Título 3",
+  "Título 4",
+  "Título 5",
+  "Título 6",
+  "Título 7",
+];
+// Fin de codigos de los texto debajo de el carrucel
 
 const width = Dimensions.get("window").width;
 const height = Dimensions.get("window").height;
@@ -43,7 +59,7 @@ function Backdrop({ scrollX }) {
         StyleSheet.absoluteFillObject,
       ]}
     >
-      {imagenes.map((imagen, index) => {
+      {backdropImagenes.map((imagen, index) => {
         const inputRange = [
           (index - 1) * ANCHO_CONTENEDOR,
           index * ANCHO_CONTENEDOR,
@@ -79,6 +95,7 @@ function Backdrop({ scrollX }) {
 }
 
 export default function Carrucel() {
+
   const scrollX = React.useRef(new Animated.Value(0)).current;
 
   useEffect(() => {
@@ -144,8 +161,7 @@ export default function Carrucel() {
               >
                 <Image source={{ uri: item }} style={styles.posterImage} />
                 <Text style={{ fontWeight: "bold", fontSize: 26 }}>
-                  {" "}
-                  Título
+                {titulos[index]} {/* Utiliza el título correspondiente */}
                 </Text>
               </Animated.View>
             </View>

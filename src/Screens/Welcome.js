@@ -115,14 +115,14 @@ const Welcome = () => {
                 color: COLORS.white,
                 marginVertical: 4,
               }}>
-              Aca encontraras los sitios mas 
+              Directorio de negocios, ubicaciones
             </Text>
             <Text
               style={{
                 fontSize: 16,
                 color: COLORS.white,
               }}>
-              atractivos de Honduras.
+              y entretenimiento.
             </Text>
           </View>
 
