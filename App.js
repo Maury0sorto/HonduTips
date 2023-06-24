@@ -1,20 +1,26 @@
-import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View } from 'react-native';
 
-export default function App() {
+import { useState } from 'react';  // Eliminé la importación duplicada de 'React'
+
+import LoadingScreen from './src/Screens/LoadingScreen';
+import { ThemeProvider } from './src/Navigation/ThemeContext';
+import { HomeScreen, Welcome } from "./src/Screens";
+import { createNativeStackNavigator } from "@react-navigation/native-stack"
+import { NavigationContainer } from '@react-navigation/native';
+import Prueba from './src/Navigation/Tabs';
+import OnboardingScreen from './src/Screens/OnboardingScreen';
+
+const Stack = createNativeStackNavigator();
+
+const App = () => {
   return (
-    <View style={styles.container}>
-      <Text>Open up App.js to start working on your app!</Text>
-      <StatusBar style="auto" />
-    </View>
+    <>
+    
+      <Prueba/>
+      <LoadingScreen />
+      
+      
+    </>
   );
-}
+};
 
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-});
+export default App;
