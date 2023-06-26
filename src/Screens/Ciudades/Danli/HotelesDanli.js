@@ -1,12 +1,12 @@
 import React, { useState } from 'react';
 import { View, Text, Image, TouchableHighlight, StyleSheet, ScrollView,TouchableOpacity } from 'react-native';
 import { SelectList } from 'react-native-dropdown-select-list';
-import  ExpressoAmericanoDanli from './RestaurantesDanli/ExpressoAmericanoDanli';
-import WendysDanli from './RestaurantesDanli/WendysDanli';
-import PizzaHutDanli from './RestaurantesDanli/PizzaHutDanli';
-import ChesterChikeDanli from './RestaurantesDanli/ChesterChikenDanli';
+import { Ionicons } from '@expo/vector-icons';
 import PapaJohnstDanli from './RestaurantesDanli/PapaJohnsDanli';
-
+import HotelMeLateBoutiqueDanli from './HotelesDanli/HotelMeLateBoutiqueDanli';
+import HotelCasaEncatadaDanli from './HotelesDanli/HotelCasaEncantadaDanli';
+import FamilyHotelDanli from './HotelesDanli/FamilyHotelDanli';
+import HotelPosadaLosArcosDanli from './HotelesDanli/HotelPosadaLosArcosDanli';
 
 const ScreenA = ({ text, mostrarBotonAnterior }) => {
   return (
@@ -16,10 +16,13 @@ const ScreenA = ({ text, mostrarBotonAnterior }) => {
         underlayColor="#FFFF"
         onPress={mostrarBotonAnterior}
       >
-        <Text style={styles.backButtonText}>Ver los hoteles...</Text>
+         <>
+      <Ionicons name="arrow-back" size={24} color="black" style={styles.backButtonIcon} />
+      <Text style={styles.backButtonText}>Regresar</Text>
+    </>
        
       </TouchableHighlight>
-      <WendysDanli/>
+      <HotelMeLateBoutiqueDanli/>
    
     </View>
   );
@@ -33,9 +36,12 @@ const ScreenB = ({ text, mostrarBotonAnterior }) => {
         underlayColor="#0080ff"
         onPress={mostrarBotonAnterior}
       >
-        <Text style={styles.backButtonText}>Ver los hoteles...</Text>
+        <>
+      <Ionicons name="arrow-back" size={24} color="black" style={styles.backButtonIcon} />
+      <Text style={styles.backButtonText}>Regresar</Text>
+    </>
       </TouchableHighlight>
-      <PizzaHutDanli/>
+      <HotelCasaEncatadaDanli/>
      
     </View>
   );
@@ -49,9 +55,12 @@ const ScreenC = ({ text, mostrarBotonAnterior }) => {
         underlayColor="#0080ff"
         onPress={mostrarBotonAnterior}
       >
-        <Text style={styles.backButtonText}>Ver los hoteles...</Text>
+        <>
+      <Ionicons name="arrow-back" size={24} color="black" style={styles.backButtonIcon} />
+      <Text style={styles.backButtonText}>Regresar</Text>
+    </>
       </TouchableHighlight>
-      <ChesterChikeDanli/>
+      <FamilyHotelDanli/>
     </View>
   );
 };
@@ -64,9 +73,12 @@ const ScreenD = ({ text, mostrarBotonAnterior }) => {
         underlayColor="#0080ff"
         onPress={mostrarBotonAnterior}
       >
-        <Text style={styles.backButtonText}>Ver los hoteles...</Text>
+        <>
+      <Ionicons name="arrow-back" size={24} color="black" style={styles.backButtonIcon} />
+      <Text style={styles.backButtonText}>Regresar</Text>
+    </>
       </TouchableHighlight>
-      <PapaJohnstDanli/>
+      <HotelPosadaLosArcosDanli/>
     </View>
   );
 };
@@ -236,6 +248,9 @@ const styles = StyleSheet.create({
     borderRadius: 5,
     marginBottom: 10,
     marginTop: 20,
+
+    flexDirection: 'row',
+    alignItems: 'center',
   },
   backButtonText: {
     color: '#000',
