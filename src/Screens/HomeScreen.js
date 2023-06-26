@@ -5,7 +5,9 @@ import Carrucel from '../components/Carrucel';
 import OnboardingScreen from './OnboardingScreen';
 
 const HomeScreen = () => {
- 
+  const navigation = useNavigation();
+
+
   return (
 
     
@@ -26,6 +28,19 @@ const styles = StyleSheet.create({
   text: {
     fontSize: 24,
     fontWeight: 'bold',
+  },
+
+  button: {
+    backgroundColor: 'blue',
+    paddingVertical: 10,
+    paddingHorizontal: 20,
+    borderRadius: 8,
+    marginTop: 20,
+  },
+  buttonText: {
+    fontSize: 16,
+    fontWeight: 'bold',
+    color: 'white',
   },
 });
 

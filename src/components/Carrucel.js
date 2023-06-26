@@ -1,11 +1,14 @@
 import { StatusBar } from "expo-status-bar";
-import React, { useEffect } from "react";
-import { StyleSheet,Text,View,Image, Dimensions, SafeAreaView, Animated,} from "react-native";
+import React, { useEffect, useState } from "react";
+import { StyleSheet,Text,View,Image, Dimensions, SafeAreaView, Animated, TouchableOpacity} from "react-native";
+
+
 
 import { LinearGradient } from "expo-linear-gradient";
 import { useNavigation } from '@react-navigation/native';
 import { createStackNavigator } from '@react-navigation/stack';
-import { TouchableOpacity } from 'react-native-gesture-handler';
+
+
 
 
 const imagenes = [
@@ -95,6 +98,8 @@ function Backdrop({ scrollX }) {
 }
 
 export default function Carrucel() {
+  const navigation = useNavigation();
+  const [isLoading, setIsLoading] = useState(true);
 
   const scrollX = React.useRef(new Animated.Value(0)).current;
 
@@ -168,7 +173,20 @@ export default function Carrucel() {
           );
         }}
       />
+      
+    
+    <View style={styles.container}>
+      <TouchableOpacity
+        style={styles.button}
+        onPress={() => navigation.navigate("Search")}
+        
+      >
+        <Text style={styles.buttonText}>Ir a Settings</Text>
+      </TouchableOpacity>
+    </View>
     </SafeAreaView>
+
+    
   );
 }
 
@@ -186,4 +204,31 @@ const styles = StyleSheet.create({
     margin: 0,
     marginBottom: 10,
   },
+
+
+
+
+
+
+
+
+
+  button: {
+    backgroundColor: 'blue',
+    paddingVertical: 10,
+    paddingHorizontal: 20,
+    borderRadius: 8,
+    marginTop: 20,
+  },
+  buttonText: {
+    fontSize: 16,
+    fontWeight: 'bold',
+    color: 'white',
+  },
+
+
+
+
+
+
 });
