@@ -10,9 +10,9 @@ import ImageViewer from 'react-native-image-zoom-viewer';
 const locationsData = [
   {
     title: "Hot Wings",
- 
-    latitude:     14.027753369431249, 
-    longitude:  -86.57813775070774,
+    
+    latitude:     14.01724329528049, 
+    longitude:  -86.57223710296083,
   },
 
   // Agrega más ubicaciones aquí si lo deseas
@@ -31,7 +31,7 @@ export default function HotWingsDanli() {  // Este solo es el nomre que se usa p
   };
   const images = [
     {
-      url: 'https://scontent.fsap8-1.fna.fbcdn.net/v/t31.18172-8/12240220_985120801526088_7052278077399162835_o.jpg?_nc_cat=105&ccb=1-7&_nc_sid=dbeb18&_nc_ohc=K8470BfE3KkAX883Pew&_nc_ht=scontent.fsap8-1.fna&oh=00_AfDCu_nxykCBWP8zQNIkfwzdvTTJM2DHNjRCQlc_x2geBw&oe=64BBF275',
+      url: 'https://scontent.fsap8-1.fna.fbcdn.net/v/t39.30808-6/273615766_414988600421895_4252468089432628433_n.jpg?_nc_cat=109&cb=99be929b-59f725be&ccb=1-7&_nc_sid=19026a&_nc_ohc=F7pJJPfzGMUAX9tVV2v&_nc_ht=scontent.fsap8-1.fna&oh=00_AfAweWYmqqFsarymBOx481BQM_dgwne5g4UcUWI64YoSjA&oe=649EB561',
     },
   ];
 
@@ -43,8 +43,8 @@ export default function HotWingsDanli() {  // Este solo es el nomre que se usa p
    // INICIO CODIGO PARA EL PUNNTO CENTRAL DEL MAPA DE LA UBICACION
   const mapRef = useRef(null);
   const initialRegion = {
-    latitude:    14.027753369431249, 
-    longitude:  -86.57813775070774,
+    latitude:     14.01724329528049, 
+    longitude:  -86.57223710296083,
     latitudeDelta: 0.01,    //ENTRE NUMEROS MAS GRANDES MAS ZOOM DE LA VISTIA INICIAL DEL MAPA
     longitudeDelta: 0.01,  //ENTRE NUMEROS MAS GRANDES MAS ZOOM DE LA VISTIA INICIAL DEL MAPA
   };
@@ -142,7 +142,7 @@ export default function HotWingsDanli() {  // Este solo es el nomre que se usa p
       <View style={styles.buttonContainer3}>
         <TouchableOpacity activeOpacity={1} onPress={toggleModal}>
           <Image
-            source={{ uri: 'https://scontent.fsap8-1.fna.fbcdn.net/v/t31.18172-8/12240220_985120801526088_7052278077399162835_o.jpg?_nc_cat=105&ccb=1-7&_nc_sid=dbeb18&_nc_ohc=K8470BfE3KkAX883Pew&_nc_ht=scontent.fsap8-1.fna&oh=00_AfDCu_nxykCBWP8zQNIkfwzdvTTJM2DHNjRCQlc_x2geBw&oe=64BBF275' }}
+            source={{ uri: 'https://scontent.fsap8-1.fna.fbcdn.net/v/t39.30808-6/273615766_414988600421895_4252468089432628433_n.jpg?_nc_cat=109&cb=99be929b-59f725be&ccb=1-7&_nc_sid=19026a&_nc_ohc=F7pJJPfzGMUAX9tVV2v&_nc_ht=scontent.fsap8-1.fna&oh=00_AfAweWYmqqFsarymBOx481BQM_dgwne5g4UcUWI64YoSjA&oe=649EB561' }}
             style={styles.imagen}
             resizeMode="cover"
           />
@@ -153,15 +153,15 @@ export default function HotWingsDanli() {  // Este solo es el nomre que se usa p
       <View style={styles.scheduleContainer}>
         <View style={styles.scheduleItem}>
           <Icon name="clock-o" size={20} color="#000" style={styles.scheduleIcon} />
-          <Text style={styles.scheduleText}>Lun-Vie: 9:00 AM - 6:00 PM</Text>
+          <Text style={styles.scheduleText}>Lun-Mie: 11:00 AM - 10:00 PM</Text>
         </View>
         <View style={styles.scheduleItem}>
           <Icon name="clock-o" size={20} color="#000" style={styles.scheduleIcon} />
-          <Text style={styles.scheduleText}>Sáb: 10:00 AM - 4:00 PM</Text>
+          <Text style={styles.scheduleText}>Sáb: 11:00 AM - 11:45 PM</Text>
         </View>
         <View style={styles.scheduleItem}>
           <Icon name="clock-o" size={20} color="#000" style={styles.scheduleIcon} />
-          <Text style={styles.scheduleText}>Dom: Cerrado</Text>
+          <Text style={styles.scheduleText}>Dom: 11:00 AM - 10:00 PM</Text>
         </View>
       </View>
 
@@ -186,7 +186,7 @@ export default function HotWingsDanli() {  // Este solo es el nomre que se usa p
           <TouchableOpacity
             style={styles.button}
             onPress={() => {
-              Linking.openURL('https://www.pizzahutonline.hn/');
+              Linking.openURL('https://www.facebook.com/HotWingsParadise');
             }}
           >
              <Icon name="globe" size={20} color="white" style={styles.buttonIcon} />
@@ -195,7 +195,7 @@ export default function HotWingsDanli() {  // Este solo es el nomre que se usa p
           <TouchableOpacity
             style={styles.button}
             onPress={() => {
-              Linking.openURL('tel: *5000');
+              Linking.openURL('tel: +50488600121');
             }}
           >
              <Icon name="phone" size={20} color="white" style={styles.buttonIcon} />
