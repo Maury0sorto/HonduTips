@@ -7,6 +7,7 @@ import PizzaHutDanli from './RestaurantesDanli/PizzaHutDanli';
 import ChesterChikeDanli from './RestaurantesDanli/ChesterChikenDanli';
 import PapaJohnstDanli from './RestaurantesDanli/PapaJohnsDanli';
 import ParadiseBurgerDanli from './RestaurantesDanli/ParadiseBurgerDanli';
+import HotWingsDanli from './RestaurantesDanli/HotWings';
 
 const ScreenA = ({ text, mostrarBotonAnterior }) => {
   return (
@@ -101,6 +102,21 @@ const ScreenF = ({ text, mostrarBotonAnterior }) => {
   );
 };
 
+const ScreenG = ({ text, mostrarBotonAnterior }) => {
+  return (
+    <View style={styles.componentContainer}>
+      <TouchableHighlight
+        style={styles.backButton}
+        underlayColor="#0080ff"
+        onPress={mostrarBotonAnterior}
+      >
+        <Text style={styles.backButtonText}>Ver los restaurantes...</Text>
+      </TouchableHighlight>
+      <HotWingsDanli/>
+    </View>
+  );
+};
+
 const RestaurantesDanli = () => {
   const [componenteVisible, setComponenteVisible] = useState(null);
   const [mostrarSelectList, setMostrarSelectList] = useState(true); // Nuevo estado
@@ -126,6 +142,7 @@ const RestaurantesDanli = () => {
     { text: 'Papa Johns', image: 'https://scontent.fsap8-1.fna.fbcdn.net/v/t39.30808-6/309639873_2055961541266124_6515876166726249677_n.jpg?_nc_cat=104&ccb=1-7&_nc_sid=09cbfe&_nc_ohc=X3tRoyKK9ocAX_9vCOI&_nc_ht=scontent.fsap8-1.fna&oh=00_AfBbkhONEfeqgzrsjZI8Q7NF8XpXx6y1EThX6iMgNlJrGQ&oe=649806B4', screen: ScreenD },
     { text: 'Expresso Americano', image: 'https://media.giphy.com/avatars/espressoamericano/OvcvgcC9TVlp.jpg', screen: ScreenE },
     { text: "Paradise Burger", image: 'https://scontent.fsap8-1.fna.fbcdn.net/v/t39.30808-6/301142856_452426046902766_6302578564774581807_n.jpg?_nc_cat=109&ccb=1-7&_nc_sid=09cbfe&_nc_ohc=3mQS9QVKScgAX-n2wPO&_nc_ht=scontent.fsap8-1.fna&oh=00_AfAvovX-dp8UzN45xpiJkZAFVUB3jpdOHKNBSbCu8deyHg&oe=6498B25F', screen: ScreenF },
+    { text: "Hot Wings", image: 'https://scontent.fsap8-1.fna.fbcdn.net/v/t39.30808-6/346629593_1960075220994004_5975068841861283462_n.jpg?_nc_cat=106&cb=99be929b-59f725be&ccb=1-7&_nc_sid=09cbfe&_nc_ohc=ZT_-H3QrFKkAX8W2kR6&_nc_ht=scontent.fsap8-1.fna&oh=00_AfB4h7TtayyqLxRW1tCueTQUqeFti0tbvruUm3aKDk6yUg&oe=649EBDAE', screen: ScreenG },
   ];
 
   const data2 = [
@@ -136,6 +153,7 @@ const RestaurantesDanli = () => {
     { key: '5', value: 'Papa Johns' },
     { key: '6', value: 'Expresso Americano' },
     { key: '7', value: 'Paradise Burger' },
+    { key: '8', value: 'Hot Wings' },
     
   ];
 
