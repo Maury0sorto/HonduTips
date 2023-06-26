@@ -10,6 +10,8 @@ import ParadiseBurgerDanli from './RestaurantesDanli/ParadiseBurgerDanli';
 import HotWingsDanli from './RestaurantesDanli/HotWings';
 import SushiTotemoDanli from './RestaurantesDanli/SushiTetemoDanli';
 import MarioChavezDanli from './RestaurantesDanli/MarioChavezDanli';
+import ElGauchoDanli from './RestaurantesDanli/ElGauchoDanli';
+import CocoBaleadasDanli from './RestaurantesDanli/CocoBaleadasDanli';
 
 const ScreenA = ({ text, mostrarBotonAnterior }) => {
   return (
@@ -148,6 +150,35 @@ const ScreenI= ({ text, mostrarBotonAnterior }) => {
   );
 };
 
+const ScreenJ= ({ text, mostrarBotonAnterior }) => {
+  return (
+    <View style={styles.componentContainer}>
+      <TouchableHighlight
+        style={styles.backButton}
+        underlayColor="#0080ff"
+        onPress={mostrarBotonAnterior}
+      >
+        <Text style={styles.backButtonText}>Ver los restaurantes...</Text>
+      </TouchableHighlight>
+      <ElGauchoDanli/>
+    </View>
+  );
+};
+
+const ScreenK= ({ text, mostrarBotonAnterior }) => {
+  return (
+    <View style={styles.componentContainer}>
+      <TouchableHighlight
+        style={styles.backButton}
+        underlayColor="#0080ff"
+        onPress={mostrarBotonAnterior}
+      >
+        <Text style={styles.backButtonText}>Ver los restaurantes...</Text>
+      </TouchableHighlight>
+      <CocoBaleadasDanli/>
+    </View>
+  );
+};
 const RestaurantesDanli = () => {
   const [componenteVisible, setComponenteVisible] = useState(null);
   const [mostrarSelectList, setMostrarSelectList] = useState(true); // Nuevo estado
@@ -176,6 +207,12 @@ const RestaurantesDanli = () => {
     { text: "Hot Wings", image: 'https://scontent.fsap8-1.fna.fbcdn.net/v/t39.30808-6/346629593_1960075220994004_5975068841861283462_n.jpg?_nc_cat=106&cb=99be929b-59f725be&ccb=1-7&_nc_sid=09cbfe&_nc_ohc=ZT_-H3QrFKkAX8W2kR6&_nc_ht=scontent.fsap8-1.fna&oh=00_AfB4h7TtayyqLxRW1tCueTQUqeFti0tbvruUm3aKDk6yUg&oe=649EBDAE', screen: ScreenG },
     { text: "Sushi Totemo", image: 'https://scontent.fsap8-1.fna.fbcdn.net/v/t39.30808-6/343310766_2183144078740427_3441642581191720748_n.jpg?_nc_cat=101&cb=99be929b-59f725be&ccb=1-7&_nc_sid=09cbfe&_nc_ohc=KGx1dnjGAR0AX-3DsBX&_nc_ht=scontent.fsap8-1.fna&oh=00_AfBDqOOa_SgCBqGal6lYmzl2WgG1hr03IIhHmPyGzwTPsw&oe=649EE165', screen: ScreenH },
     { text: "Restaurante Mario Chávez", image: 'https://scontent.fsap8-1.fna.fbcdn.net/v/t39.30808-6/323553590_1140424086657650_1481250813580760994_n.jpg?_nc_cat=108&cb=99be929b-59f725be&ccb=1-7&_nc_sid=09cbfe&_nc_ohc=-FGGdSpCcLoAX-iM634&_nc_ht=scontent.fsap8-1.fna&oh=00_AfBg14AnXVlbICXzhWK46wXJJ7MzPwiZdCxVGHWJXK6IIA&oe=649F07DB', screen: ScreenI },
+    { text: "El Gaucho", image: 'https://scontent.fsap8-1.fna.fbcdn.net/v/t39.30808-6/323695677_444934067711668_6237152711758612986_n.jpg?_nc_cat=106&cb=99be929b-59f725be&ccb=1-7&_nc_sid=09cbfe&_nc_ohc=KUhX5jVr6HcAX_SIQjY&_nc_ht=scontent.fsap8-1.fna&oh=00_AfBV1m6ut0siH1NgvTya3nTR-y50KYTyczJZXbgRLoNxwg&oe=649F1E55', screen: ScreenJ },
+    { text: "Coco Baleadas", image: 'https://scontent.fsap8-1.fna.fbcdn.net/v/t1.6435-9/42716286_2144075459244554_1165425262507065344_n.jpg?_nc_cat=102&cb=99be929b-59f725be&ccb=1-7&_nc_sid=174925&_nc_ohc=pyq1nYYASiYAX_eVu3E&_nc_ht=scontent.fsap8-1.fna&oh=00_AfC-Mwl6QNbnpKY_gHuAFGZr0Zpkq_zXw2Ff78aAOYsZmA&oe=64C16D0F', screen: ScreenK },
+   
+  
+  
+  
   ];
 
   const data2 = [
@@ -189,6 +226,8 @@ const RestaurantesDanli = () => {
     { key: '8', value: 'Hot Wings' },
     { key: '9', value: 'Sushi Totemo' },
     { key: '10', value: 'Restaurante Mario Chávez' },
+    { key: '11', value: 'El Gaucho' },
+    { key: '12', value: 'Coco Baleadas' },
     
   ];
 

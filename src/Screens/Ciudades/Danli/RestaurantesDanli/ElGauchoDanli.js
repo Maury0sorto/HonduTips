@@ -9,10 +9,10 @@ import ImageViewer from 'react-native-image-zoom-viewer';
 // INICIO DE PARA PONER PINES DENTRO DEL MAPA 
 const locationsData = [
   {
-    title: "Restaurante Mario Chávez Danlí",
+    title: "El Gaucho",
     
-    latitude:     14.028621592575234,  
-    longitude:  -86.57620096199183,
+    latitude:     14.027708969528256,  
+    longitude:  -86.57913210125578,
   },
 
   // Agrega más ubicaciones aquí si lo deseas
@@ -22,7 +22,7 @@ const locationsData = [
 
 
 
-export default function MarioChavezDanli() {  // Este solo es el nomre que se usa para importar esta screen dentro de otro o mandar a llamar
+export default function ElGauchoDanli() {  // Este solo es el nomre que se usa para importar esta screen dentro de otro o mandar a llamar
 
   // INICIO DE CODIGO PARA AGREGAR BOTONCITO CON MENU 
   const [modalVisible, setModalVisible] = useState(false);
@@ -31,7 +31,7 @@ export default function MarioChavezDanli() {  // Este solo es el nomre que se us
   };
   const images = [
     {
-      url: 'https://scontent.fsap8-1.fna.fbcdn.net/v/t39.30808-6/337688407_238473368578181_6713639087703081696_n.jpg?_nc_cat=106&cb=99be929b-59f725be&ccb=1-7&_nc_sid=8bfeb9&_nc_ohc=lYsZv27wTGwAX8Jb-w1&_nc_ht=scontent.fsap8-1.fna&oh=00_AfA9oOzKwQ9n70ju6Ts62ScN0SWAddP83PhnSHkHH7MW3w&oe=649FC291',
+      url: 'https://scontent.fsap8-1.fna.fbcdn.net/v/t39.30808-6/348462963_636071268381955_7852745894598269020_n.jpg?_nc_cat=105&cb=99be929b-59f725be&ccb=1-7&_nc_sid=730e14&_nc_ohc=TuyihjimnaAAX__GpxN&_nc_ht=scontent.fsap8-1.fna&oh=00_AfBh94nv9tBaF5sJSUcPCNRTWZbFgGxShhZ--Ve1xXk85g&oe=649F0170',
     },
   ];
 
@@ -43,8 +43,8 @@ export default function MarioChavezDanli() {  // Este solo es el nomre que se us
    // INICIO CODIGO PARA EL PUNNTO CENTRAL DEL MAPA DE LA UBICACION
   const mapRef = useRef(null);
   const initialRegion = {
-    latitude:     14.028621592575234,  
-    longitude:  -86.57620096199183,
+    latitude:     14.027708969528256,  
+    longitude:  -86.57913210125578,
     latitudeDelta: 0.01,    //ENTRE NUMEROS MAS GRANDES MAS ZOOM DE LA VISTIA INICIAL DEL MAPA
     longitudeDelta: 0.01,  //ENTRE NUMEROS MAS GRANDES MAS ZOOM DE LA VISTIA INICIAL DEL MAPA
   };
@@ -109,7 +109,7 @@ export default function MarioChavezDanli() {  // Este solo es el nomre que se us
   return (
     <ScrollView>
       <View style={styles.container}>
-        <Text style={styles.title}>Restaurante Mario Chávez</Text>
+        <Text style={styles.title}>El Gaucho</Text>
         <View style={styles.containerSwipers}>
           <View style={styles.swiperContainer}>
             <Swiper
@@ -121,10 +121,10 @@ export default function MarioChavezDanli() {  // Este solo es el nomre que se us
               }}
             >
                  <View style={styles.slide}>
-                <Image style={styles.image} source={{ uri: 'https://scontent.fsap8-1.fna.fbcdn.net/v/t39.30808-6/328752375_1201311830759173_1182052205696010183_n.jpg?_nc_cat=111&cb=99be929b-59f725be&ccb=1-7&_nc_sid=8bfeb9&_nc_ohc=tZpQpd04yEAAX9L7Fz6&_nc_ht=scontent.fsap8-1.fna&oh=00_AfB740h6eGVUZI3Rr67OamS8UI___RvTwGbZdoMEc5S42Q&oe=649DFC04' }} />
+                <Image style={styles.image} source={{ uri: 'https://scontent.fsap8-1.fna.fbcdn.net/v/t39.30808-6/352197394_966808898086213_5373133564402773932_n.jpg?_nc_cat=110&cb=99be929b-59f725be&ccb=1-7&_nc_sid=730e14&_nc_ohc=oLeUPvGeowEAX_CHu78&_nc_ht=scontent.fsap8-1.fna&oh=00_AfCNzn9f1p5aDCGT-KHeH4IWS-zJ9a1iRKrBVmok8ZWgAg&oe=649E65DB' }} />
               </View>
               <View style={styles.slide}>
-                <Image style={styles.image} source={{ uri: 'https://scontent.fsap8-1.fna.fbcdn.net/v/t39.30808-6/321507570_1540278629806196_1247527338588745550_n.jpg?_nc_cat=109&cb=99be929b-59f725be&ccb=1-7&_nc_sid=8bfeb9&_nc_ohc=v7h4fffRx44AX_pqasQ&_nc_ht=scontent.fsap8-1.fna&oh=00_AfAY1eV1og_jx2N7LRODsqMHbK_1hTwW9Y2aUGjArt5Upg&oe=649EA634' }} />
+                <Image style={styles.image} source={{ uri: 'https://scontent.fsap8-1.fna.fbcdn.net/v/t39.30808-6/351159716_980099253025543_1510921832396773426_n.jpg?_nc_cat=111&cb=99be929b-59f725be&ccb=1-7&_nc_sid=730e14&_nc_ohc=fPbmX5Z2ZiYAX_ooXJ7&_nc_ht=scontent.fsap8-1.fna&oh=00_AfAE6HZlxkSm8jr55sq9Rsv16hphE5cDolW6qZaPc6MEfA&oe=649FB49D' }} />
               </View>
              
   
@@ -142,7 +142,7 @@ export default function MarioChavezDanli() {  // Este solo es el nomre que se us
       <View style={styles.buttonContainer3}>
         <TouchableOpacity activeOpacity={1} onPress={toggleModal}>
           <Image
-            source={{ uri: 'https://scontent.fsap8-1.fna.fbcdn.net/v/t39.30808-6/337688407_238473368578181_6713639087703081696_n.jpg?_nc_cat=106&cb=99be929b-59f725be&ccb=1-7&_nc_sid=8bfeb9&_nc_ohc=lYsZv27wTGwAX8Jb-w1&_nc_ht=scontent.fsap8-1.fna&oh=00_AfA9oOzKwQ9n70ju6Ts62ScN0SWAddP83PhnSHkHH7MW3w&oe=649FC291' }}
+            source={{ uri: 'https://scontent.fsap8-1.fna.fbcdn.net/v/t39.30808-6/348462963_636071268381955_7852745894598269020_n.jpg?_nc_cat=105&cb=99be929b-59f725be&ccb=1-7&_nc_sid=730e14&_nc_ohc=TuyihjimnaAAX__GpxN&_nc_ht=scontent.fsap8-1.fna&oh=00_AfBh94nv9tBaF5sJSUcPCNRTWZbFgGxShhZ--Ve1xXk85g&oe=649F0170' }}
             style={styles.imagen}
             resizeMode="cover"
           />
@@ -153,15 +153,15 @@ export default function MarioChavezDanli() {  // Este solo es el nomre que se us
       <View style={styles.scheduleContainer}>
         <View style={styles.scheduleItem}>
           <Icon name="clock-o" size={20} color="#000" style={styles.scheduleIcon} />
-          <Text style={styles.scheduleText}>Lun-Vie: 11:00 AM - 10:30 PM</Text>
+          <Text style={styles.scheduleText}>Lun-Mie: 10:00 AM - 90:30 PM</Text>
         </View>
         <View style={styles.scheduleItem}>
           <Icon name="clock-o" size={20} color="#000" style={styles.scheduleIcon} />
-          <Text style={styles.scheduleText}>Sab: 11:00 AM - 11:30 PM</Text>
+          <Text style={styles.scheduleText}>Jue: 10:00 AM - 10:30 PM</Text>
         </View>
         <View style={styles.scheduleItem}>
           <Icon name="clock-o" size={20} color="#000" style={styles.scheduleIcon} />
-          <Text style={styles.scheduleText}>Dom: 11:00 AM - 10:30 PM</Text>
+          <Text style={styles.scheduleText}>Sab - Dom: 10:00 AM - 9:30 PM</Text>
         </View>
       </View>
 
@@ -186,7 +186,7 @@ export default function MarioChavezDanli() {  // Este solo es el nomre que se us
           <TouchableOpacity
             style={styles.button}
             onPress={() => {
-              Linking.openURL('https://www.facebook.com/profile.php?id=100063540673881');
+              Linking.openURL('https://www.facebook.com/ElGauchoDanli');
             }}
           >
              <Icon name="globe" size={20} color="white" style={styles.buttonIcon} />
@@ -195,7 +195,7 @@ export default function MarioChavezDanli() {  // Este solo es el nomre que se us
           <TouchableOpacity
             style={styles.button}
             onPress={() => {
-              Linking.openURL('tel: +50496446442');
+              Linking.openURL('tel: +50431916260');
             }}
           >
              <Icon name="phone" size={20} color="white" style={styles.buttonIcon} />
