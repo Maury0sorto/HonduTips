@@ -9,10 +9,10 @@ import ImageViewer from 'react-native-image-zoom-viewer';
 // INICIO DE PARA PONER PINES DENTRO DEL MAPA 
 const locationsData = [
   {
-    title: "Sushi Totemo",
+    title: "Restaurante Mario Chávez Danlí",
     
-    latitude:     14.027708969528256,  
-    longitude:  -86.57913210125578,
+    latitude:     14.028621592575234,  
+    longitude:  -86.57620096199183,
   },
 
   // Agrega más ubicaciones aquí si lo deseas
@@ -22,7 +22,7 @@ const locationsData = [
 
 
 
-export default function SushiTotemoDanli() {  // Este solo es el nomre que se usa para importar esta screen dentro de otro o mandar a llamar
+export default function MarioChavezDanli() {  // Este solo es el nomre que se usa para importar esta screen dentro de otro o mandar a llamar
 
   // INICIO DE CODIGO PARA AGREGAR BOTONCITO CON MENU 
   const [modalVisible, setModalVisible] = useState(false);
@@ -43,8 +43,8 @@ export default function SushiTotemoDanli() {  // Este solo es el nomre que se us
    // INICIO CODIGO PARA EL PUNNTO CENTRAL DEL MAPA DE LA UBICACION
   const mapRef = useRef(null);
   const initialRegion = {
-    latitude:     14.027708969528256,  
-    longitude:  -86.57913210125578,
+    latitude:     14.028621592575234,  
+    longitude:  -86.57620096199183,
     latitudeDelta: 0.01,    //ENTRE NUMEROS MAS GRANDES MAS ZOOM DE LA VISTIA INICIAL DEL MAPA
     longitudeDelta: 0.01,  //ENTRE NUMEROS MAS GRANDES MAS ZOOM DE LA VISTIA INICIAL DEL MAPA
   };
@@ -109,7 +109,7 @@ export default function SushiTotemoDanli() {  // Este solo es el nomre que se us
   return (
     <ScrollView>
       <View style={styles.container}>
-        <Text style={styles.title}>Sushi Totemo </Text>
+        <Text style={styles.title}>Restaurante Mario Chávez</Text>
         <View style={styles.containerSwipers}>
           <View style={styles.swiperContainer}>
             <Swiper
@@ -121,10 +121,10 @@ export default function SushiTotemoDanli() {  // Este solo es el nomre que se us
               }}
             >
                  <View style={styles.slide}>
-                <Image style={styles.image} source={{ uri: 'https://scontent.fsap8-1.fna.fbcdn.net/v/t39.30808-6/343119821_539952238303268_5679636599591199737_n.jpg?_nc_cat=108&cb=99be929b-59f725be&ccb=1-7&_nc_sid=19026a&_nc_ohc=EsTqX3e3u3YAX9Ij2rL&_nc_ht=scontent.fsap8-1.fna&oh=00_AfArkympcxTKXC9glvF1Hc6NYBmH4HiGQzMO0F4y2B218w&oe=649EBD97' }} />
+                <Image style={styles.image} source={{ uri: 'https://scontent.fsap8-1.fna.fbcdn.net/v/t39.30808-6/328752375_1201311830759173_1182052205696010183_n.jpg?_nc_cat=111&cb=99be929b-59f725be&ccb=1-7&_nc_sid=8bfeb9&_nc_ohc=tZpQpd04yEAAX9L7Fz6&_nc_ht=scontent.fsap8-1.fna&oh=00_AfB740h6eGVUZI3Rr67OamS8UI___RvTwGbZdoMEc5S42Q&oe=649DFC04' }} />
               </View>
               <View style={styles.slide}>
-                <Image style={styles.image} source={{ uri: 'https://scontent.fsap8-1.fna.fbcdn.net/v/t39.30808-6/354457542_160885480313608_5303609186893537555_n.jpg?_nc_cat=108&cb=99be929b-59f725be&ccb=1-7&_nc_sid=730e14&_nc_ohc=cH5-3URjKyUAX-WIF82&_nc_ht=scontent.fsap8-1.fna&oh=00_AfAGLgP9HVF-bPUhJ4NG9qIOYPtMmDz0iIwqfBp9_88bQQ&oe=649E2022' }} />
+                <Image style={styles.image} source={{ uri: 'https://scontent.fsap8-1.fna.fbcdn.net/v/t39.30808-6/321507570_1540278629806196_1247527338588745550_n.jpg?_nc_cat=109&cb=99be929b-59f725be&ccb=1-7&_nc_sid=8bfeb9&_nc_ohc=v7h4fffRx44AX_pqasQ&_nc_ht=scontent.fsap8-1.fna&oh=00_AfAY1eV1og_jx2N7LRODsqMHbK_1hTwW9Y2aUGjArt5Upg&oe=649EA634' }} />
               </View>
              
   
@@ -142,7 +142,7 @@ export default function SushiTotemoDanli() {  // Este solo es el nomre que se us
       <View style={styles.buttonContainer3}>
         <TouchableOpacity activeOpacity={1} onPress={toggleModal}>
           <Image
-            source={{ uri: 'https://scontent.fsap8-1.fna.fbcdn.net/v/t39.30808-6/353633536_157877867281036_6228716184675745656_n.jpg?_nc_cat=102&cb=99be929b-59f725be&ccb=1-7&_nc_sid=730e14&_nc_ohc=7vFkIkbk4z4AX-xUPsm&_nc_ht=scontent.fsap8-1.fna&oh=00_AfBDaqUkQpjBUflbxsrv5NKvN-mQ6_qWhhDrkSQ0jPzlYA&oe=649F2DBE' }}
+            source={{ uri: 'https://scontent.fsap8-1.fna.fbcdn.net/v/t39.30808-6/337688407_238473368578181_6713639087703081696_n.jpg?_nc_cat=106&cb=99be929b-59f725be&ccb=1-7&_nc_sid=8bfeb9&_nc_ohc=lYsZv27wTGwAX8Jb-w1&_nc_ht=scontent.fsap8-1.fna&oh=00_AfA9oOzKwQ9n70ju6Ts62ScN0SWAddP83PhnSHkHH7MW3w&oe=649FC291' }}
             style={styles.imagen}
             resizeMode="cover"
           />
@@ -153,15 +153,15 @@ export default function SushiTotemoDanli() {  // Este solo es el nomre que se us
       <View style={styles.scheduleContainer}>
         <View style={styles.scheduleItem}>
           <Icon name="clock-o" size={20} color="#000" style={styles.scheduleIcon} />
-          <Text style={styles.scheduleText}>Lun-Mie: 11:00 AM - 8:30 PM</Text>
+          <Text style={styles.scheduleText}>Lun-Vie: 11:00 AM - 10:30 PM</Text>
         </View>
         <View style={styles.scheduleItem}>
           <Icon name="clock-o" size={20} color="#000" style={styles.scheduleIcon} />
-          <Text style={styles.scheduleText}>Jue: 11:00 AM - 9:00 PM</Text>
+          <Text style={styles.scheduleText}>Sab: 11:00 AM - 11:30 PM</Text>
         </View>
         <View style={styles.scheduleItem}>
           <Icon name="clock-o" size={20} color="#000" style={styles.scheduleIcon} />
-          <Text style={styles.scheduleText}>Sab - Dom: 11:00 AM - 8:30 PM</Text>
+          <Text style={styles.scheduleText}>Dom: 11:00 AM - 10:30 PM</Text>
         </View>
       </View>
 
@@ -186,7 +186,7 @@ export default function SushiTotemoDanli() {  // Este solo es el nomre que se us
           <TouchableOpacity
             style={styles.button}
             onPress={() => {
-              Linking.openURL('https://www.facebook.com/profile.php?id=100091764708728');
+              Linking.openURL('https://www.facebook.com/profile.php?id=100063540673881');
             }}
           >
              <Icon name="globe" size={20} color="white" style={styles.buttonIcon} />
@@ -195,7 +195,7 @@ export default function SushiTotemoDanli() {  // Este solo es el nomre que se us
           <TouchableOpacity
             style={styles.button}
             onPress={() => {
-              Linking.openURL('tel: +50494494564');
+              Linking.openURL('tel: +50496446442');
             }}
           >
              <Icon name="phone" size={20} color="white" style={styles.buttonIcon} />
