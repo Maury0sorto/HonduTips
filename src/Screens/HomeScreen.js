@@ -10,12 +10,13 @@ const HomeScreen = () => {
 
   return (
 
-    
+    <>
     <View style={styles.container}>
-      
       <Carrucel/>
-      
     </View>
+    
+
+    </>
   );
 };
 

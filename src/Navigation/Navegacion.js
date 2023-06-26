@@ -12,7 +12,7 @@ function Navegacion() {
   return (
     <NavigationContainer>
       <Stack.Navigator>
-        <Stack.Screen name="Home" component={HomeScreen} />
+       
         <Stack.Screen name="Onboarding" component={OnboardingScreen} />
       </Stack.Navigator>
     </NavigationContainer>
