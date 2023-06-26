@@ -9,10 +9,10 @@ import ImageViewer from 'react-native-image-zoom-viewer';
 // INICIO DE PARA PONER PINES DENTRO DEL MAPA 
 const locationsData = [
   {
-    title: "Restaurante Mario Chávez Danlí",
+    title: "Coco Baleadas",
     
-    latitude:     14.028621592575234,  
-    longitude:  -86.57620096199183,
+    latitude:     14.015333728186443,  
+    longitude:  -86.5699817619921,
   },
 
   // Agrega más ubicaciones aquí si lo deseas
@@ -22,7 +22,7 @@ const locationsData = [
 
 
 
-export default function MarioChavezDanli() {  // Este solo es el nomre que se usa para importar esta screen dentro de otro o mandar a llamar
+export default function CocoBaleadasDanli() {  // Este solo es el nomre que se usa para importar esta screen dentro de otro o mandar a llamar
 
   // INICIO DE CODIGO PARA AGREGAR BOTONCITO CON MENU 
   const [modalVisible, setModalVisible] = useState(false);
@@ -31,7 +31,7 @@ export default function MarioChavezDanli() {  // Este solo es el nomre que se us
   };
   const images = [
     {
-      url: 'https://scontent.fsap8-1.fna.fbcdn.net/v/t39.30808-6/337688407_238473368578181_6713639087703081696_n.jpg?_nc_cat=106&cb=99be929b-59f725be&ccb=1-7&_nc_sid=8bfeb9&_nc_ohc=lYsZv27wTGwAX8Jb-w1&_nc_ht=scontent.fsap8-1.fna&oh=00_AfA9oOzKwQ9n70ju6Ts62ScN0SWAddP83PhnSHkHH7MW3w&oe=649FC291',
+      url: 'https://scontent.fsap8-1.fna.fbcdn.net/v/t1.6435-9/51620255_2230226330629466_6360732830347034624_n.jpg?_nc_cat=111&cb=99be929b-59f725be&ccb=1-7&_nc_sid=8bfeb9&_nc_ohc=Bn4NenyllKEAX-v1chP&_nc_ht=scontent.fsap8-1.fna&oh=00_AfCYy6HqUp-Hptui6nzU3edheKGis8x5v0sHCjmwSgtIjw&oe=64C143E8',
     },
   ];
 
@@ -43,8 +43,8 @@ export default function MarioChavezDanli() {  // Este solo es el nomre que se us
    // INICIO CODIGO PARA EL PUNNTO CENTRAL DEL MAPA DE LA UBICACION
   const mapRef = useRef(null);
   const initialRegion = {
-    latitude:     14.028621592575234,  
-    longitude:  -86.57620096199183,
+    latitude:     14.015333728186443,   
+    longitude:  -86.5699817619921,
     latitudeDelta: 0.01,    //ENTRE NUMEROS MAS GRANDES MAS ZOOM DE LA VISTIA INICIAL DEL MAPA
     longitudeDelta: 0.01,  //ENTRE NUMEROS MAS GRANDES MAS ZOOM DE LA VISTIA INICIAL DEL MAPA
   };
@@ -109,7 +109,7 @@ export default function MarioChavezDanli() {  // Este solo es el nomre que se us
   return (
     <ScrollView>
       <View style={styles.container}>
-        <Text style={styles.title}>Restaurante Mario Chávez</Text>
+        <Text style={styles.title}>Coco Baleadas</Text>
         <View style={styles.containerSwipers}>
           <View style={styles.swiperContainer}>
             <Swiper
@@ -121,10 +121,10 @@ export default function MarioChavezDanli() {  // Este solo es el nomre que se us
               }}
             >
                  <View style={styles.slide}>
-                <Image style={styles.image} source={{ uri: 'https://scontent.fsap8-1.fna.fbcdn.net/v/t39.30808-6/328752375_1201311830759173_1182052205696010183_n.jpg?_nc_cat=111&cb=99be929b-59f725be&ccb=1-7&_nc_sid=8bfeb9&_nc_ohc=tZpQpd04yEAAX9L7Fz6&_nc_ht=scontent.fsap8-1.fna&oh=00_AfB740h6eGVUZI3Rr67OamS8UI___RvTwGbZdoMEc5S42Q&oe=649DFC04' }} />
+                <Image style={styles.image} source={{ uri: 'https://scontent.fsap8-1.fna.fbcdn.net/v/t1.18169-9/16195697_1764274610557976_4614336402846243195_n.jpg?_nc_cat=100&cb=99be929b-59f725be&ccb=1-7&_nc_sid=9267fe&_nc_ohc=7meabuxdUoMAX8GI36I&_nc_ht=scontent.fsap8-1.fna&oh=00_AfAOa0Ys_JeO2ftC1m6S5Qu0XFLnoSDvAeuVDHNnuQhPsw&oe=64C15018' }} />
               </View>
               <View style={styles.slide}>
-                <Image style={styles.image} source={{ uri: 'https://scontent.fsap8-1.fna.fbcdn.net/v/t39.30808-6/321507570_1540278629806196_1247527338588745550_n.jpg?_nc_cat=109&cb=99be929b-59f725be&ccb=1-7&_nc_sid=8bfeb9&_nc_ohc=v7h4fffRx44AX_pqasQ&_nc_ht=scontent.fsap8-1.fna&oh=00_AfAY1eV1og_jx2N7LRODsqMHbK_1hTwW9Y2aUGjArt5Upg&oe=649EA634' }} />
+                <Image style={styles.image} source={{ uri: 'https://scontent.fsap8-1.fna.fbcdn.net/v/t1.18169-9/27654917_1975732522745516_605685658057467757_n.jpg?_nc_cat=107&cb=99be929b-59f725be&ccb=1-7&_nc_sid=8bfeb9&_nc_ohc=zalgBTC1ywoAX_2SvGL&_nc_ht=scontent.fsap8-1.fna&oh=00_AfBVGgqaxaocz8OkEuj0zREmkN4JIiLvweD_KwM9CpECzA&oe=64C16FC8' }} />
               </View>
              
   
@@ -142,7 +142,7 @@ export default function MarioChavezDanli() {  // Este solo es el nomre que se us
       <View style={styles.buttonContainer3}>
         <TouchableOpacity activeOpacity={1} onPress={toggleModal}>
           <Image
-            source={{ uri: 'https://scontent.fsap8-1.fna.fbcdn.net/v/t39.30808-6/337688407_238473368578181_6713639087703081696_n.jpg?_nc_cat=106&cb=99be929b-59f725be&ccb=1-7&_nc_sid=8bfeb9&_nc_ohc=lYsZv27wTGwAX8Jb-w1&_nc_ht=scontent.fsap8-1.fna&oh=00_AfA9oOzKwQ9n70ju6Ts62ScN0SWAddP83PhnSHkHH7MW3w&oe=649FC291' }}
+            source={{ uri: 'https://scontent.fsap8-1.fna.fbcdn.net/v/t1.6435-9/51620255_2230226330629466_6360732830347034624_n.jpg?_nc_cat=111&cb=99be929b-59f725be&ccb=1-7&_nc_sid=8bfeb9&_nc_ohc=Bn4NenyllKEAX-v1chP&_nc_ht=scontent.fsap8-1.fna&oh=00_AfCYy6HqUp-Hptui6nzU3edheKGis8x5v0sHCjmwSgtIjw&oe=64C143E8' }}
             style={styles.imagen}
             resizeMode="cover"
           />
@@ -153,15 +153,15 @@ export default function MarioChavezDanli() {  // Este solo es el nomre que se us
       <View style={styles.scheduleContainer}>
         <View style={styles.scheduleItem}>
           <Icon name="clock-o" size={20} color="#000" style={styles.scheduleIcon} />
-          <Text style={styles.scheduleText}>Lun-Vie: 11:00 AM - 10:30 PM</Text>
+          <Text style={styles.scheduleText}>Lun-Vie: 7:00 AM - 9:00 PM</Text>
         </View>
         <View style={styles.scheduleItem}>
           <Icon name="clock-o" size={20} color="#000" style={styles.scheduleIcon} />
-          <Text style={styles.scheduleText}>Sab: 11:00 AM - 11:30 PM</Text>
+          <Text style={styles.scheduleText}>Sab: 7:00 AM - 9:00 PM</Text>
         </View>
         <View style={styles.scheduleItem}>
           <Icon name="clock-o" size={20} color="#000" style={styles.scheduleIcon} />
-          <Text style={styles.scheduleText}>Dom: 11:00 AM - 10:30 PM</Text>
+          <Text style={styles.scheduleText}>Dom: 8:00 AM - 9:00 PM</Text>
         </View>
       </View>
 
@@ -186,7 +186,7 @@ export default function MarioChavezDanli() {  // Este solo es el nomre que se us
           <TouchableOpacity
             style={styles.button}
             onPress={() => {
-              Linking.openURL('https://www.facebook.com/profile.php?id=100063540673881');
+              Linking.openURL('https://www.facebook.com/ElGauchoDanli');
             }}
           >
              <Icon name="globe" size={20} color="white" style={styles.buttonIcon} />
@@ -195,7 +195,7 @@ export default function MarioChavezDanli() {  // Este solo es el nomre que se us
           <TouchableOpacity
             style={styles.button}
             onPress={() => {
-              Linking.openURL('tel: +50496446442');
+              Linking.openURL('tel: +50494141765');
             }}
           >
              <Icon name="phone" size={20} color="white" style={styles.buttonIcon} />
