@@ -121,10 +121,10 @@ export default function HotWingsDanli() {  // Este solo es el nomre que se usa p
               }}
             >
                  <View style={styles.slide}>
-                <Image style={styles.image} source={{ uri: 'https://fastly.4sqi.net/img/general/600x600/42576202__lCGPtj4jloHaB0j6t6fxFUYXMjDlZ8GtRAa8f8A_lQ.jpg' }} />
+                <Image style={styles.image} source={{ uri: 'https://scontent.fsap8-1.fna.fbcdn.net/v/t39.30808-6/345461941_575926594633130_7986262452366602633_n.jpg?_nc_cat=108&cb=99be929b-59f725be&ccb=1-7&_nc_sid=8bfeb9&_nc_ohc=C3vgLH-tGMcAX9BM6C-&_nc_oc=AQn1f4ihQirLBhfjmWN-9hvAZLWviiwfCSw7UWMxqrYiRO63fQq7a8q9RPZgNEYG7Nk&_nc_ht=scontent.fsap8-1.fna&oh=00_AfDo2gF4Wewdfd_aoLCFNOWIZPVX1YewmToDVtWsVGV7ww&oe=649E6DA3' }} />
               </View>
               <View style={styles.slide}>
-                <Image style={styles.image} source={{ uri: 'https://lh3.googleusercontent.com/p/AF1QipNcA6Sn1Exw-cOI0-wz4pIXy0VxZECJvfVr3mFd=s1600-w400' }} />
+                <Image style={styles.image} source={{ uri: 'https://scontent.fsap8-1.fna.fbcdn.net/v/t39.30808-6/347130118_918430306113519_4327570015276365461_n.jpg?_nc_cat=109&cb=99be929b-59f725be&ccb=1-7&_nc_sid=8bfeb9&_nc_ohc=E-NV-YTptWQAX8ipLxr&_nc_ht=scontent.fsap8-1.fna&oh=00_AfAcdCICWa35GaE8i1u903q0tcWrp4azlConNZde7IvIqQ&oe=649EEB23' }} />
               </View>
              
   
