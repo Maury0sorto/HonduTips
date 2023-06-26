@@ -13,8 +13,8 @@ import { createStackNavigator } from '@react-navigation/stack';
 
 const imagenes = [
   "https://i.imgur.com/9UycxBg.jpg",
-  "https://images.unsplash.com/photo-1506477331477-33d5d8b3dc85?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2425&q=80",
-  "https://images.unsplash.com/photo-1505118380757-91f5f5632de0?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=652&q=80",
+  "https://i.imgur.com/3JsIc7p.jpg",
+  "https://i.imgur.com/dYTQAcn.jpg",
   "https://images.unsplash.com/photo-1525183995014-bd94c0750cd5?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80",
   "https://images.unsplash.com/photo-1488462237308-ecaa28b729d7?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=714&q=80",
   "https://images.unsplash.com/photo-1503756234508-e32369269deb?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1035&q=80",
@@ -23,8 +23,8 @@ const imagenes = [
 
 const backdropImagenes = [
   "https://www.hondurastips.hn/wp-content/uploads/2016/08/danli-8.jpg",
-  "https://elcomercio.pe/resizer/vR-RM4uvl6yxbaPOw9rHhcBg6Jw=/1200x1200/smart/filters:format(jpeg):quality(75)/cloudfront-us-east-1.images.arcpublishing.com/elcomercio/ZRNBMG3HVBAHPGAZAUJGBJJ7HU.jpg",
-  "https://i.blogs.es/b7f54f/dragon-ball-asi-se-veria-broly-si-alcanzara-la-transformacion-super-saiyajin-4-en-un-fanart-que-lo-imagina-mas-poderoso-que-nunca1/1366_2000.jpeg",
+  "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/0a/fe/70/b2/catedral-san-pedro-apostol.jpg?w=500&h=-1&s=1",
+  "https://scontent.fsap8-1.fna.fbcdn.net/v/t39.30808-6/266384242_494500052267714_6339538490678465268_n.jpg?stp=dst-jpg_p526x296&_nc_cat=101&ccb=1-7&_nc_sid=8bfeb9&_nc_ohc=YOVJgUlu4ioAX84XGEj&_nc_ht=scontent.fsap8-1.fna&oh=00_AfCdaBdEmVUfnybxf0uSH8aoTdxb5_0IDPtNdNZWwyTZOw&oe=649E8851",
   // Agrega más URL de imágenes personalizadas aquí
 ];
 
@@ -32,8 +32,8 @@ const backdropImagenes = [
 // Inicio de codigos de los texto debajo de el carrucel
 const titulos = [
   "DANLI 0703",
-  "Título 2",
-  "Título 3",
+  "SAN PEDRO SULA 0501",
+  "TEGUCIGALPA 0801" ,
   "Título 4",
   "Título 5",
   "Título 6",
