@@ -7,6 +7,4 @@ export {
     Settings,
     HomeScreen,
     Welcome,
-   
-
-}
+}                   //Esto esta funcionando para los stacks

@@ -1,16 +1,12 @@
-import { View, Text, Pressable, Image } from 'react-native';
-
+import { View, Text, Pressable, Image } from 'react-native';  //Importamos todo lo quee necesitemos
 import React, { useState, useEffect } from 'react';
-
-
 import { LinearGradient } from 'expo-linear-gradient';
 import COLORS from '../constants/colors';
 import Button from '../components/Button';
-import HomeScreen from '../Screens/HomeScreen';
 import { useNavigation } from '@react-navigation/native';
 
 const Welcome = () => {
-  const navigation = useNavigation();
+  const navigation = useNavigation();  //Esta funcion sirve para poder navegar 
 
 
   return (

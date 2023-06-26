@@ -6,7 +6,7 @@ import Settings from "../Screens/Settings";
 
 
 
-const SettingsStackScreen = () => {
+const SettingsStackScreen = () => {                   // Este stack es el de Settings  es decir es uno de los 3 que se ven en la parte de abajo
   const SettingsStack = createNativeStackNavigator();
   return(
         <SettingsStack.Navigator>

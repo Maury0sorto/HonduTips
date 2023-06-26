@@ -1,6 +1,5 @@
 
-import { useState } from 'react';  // Eliminé la importación duplicada de 'React'
-
+import { useState } from 'react';  // Importar todo lo que se necesitara
 import LoadingScreen from './src/Screens/LoadingScreen';
 import { ThemeProvider } from './src/Navigation/ThemeContext';
 import { HomeScreen, Welcome } from "./src/Screens";
@@ -11,12 +10,12 @@ import OnboardingScreen from './src/Screens/OnboardingScreen';
 
 const Stack = createNativeStackNavigator();
 
-const App = () => {
+const App = () => { // Aca se mandara  llamar solamente lo que se desea a la hora de cargar la App al iniciarla
   return (
     <>
     
-      <Prueba/>
-      <LoadingScreen />
+      <Prueba/>       
+      <LoadingScreen /> 
       
       
     </>

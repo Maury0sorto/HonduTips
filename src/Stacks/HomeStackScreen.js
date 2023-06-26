@@ -4,7 +4,7 @@ import { createNativeStackNavigator } from "@react-navigation/native-stack";
 import HomeScreen from "../Screens/HomeScreen";
 import { Ionicons } from "@expo/vector-icons";
 
-const HomeStackScreen = () => {
+const HomeStackScreen = () => {                           // Este stack es el de Home es decir es uno de los 3 que se ven en la parte de abajo
   const HomeStack = createNativeStackNavigator();
   return (
     <HomeStack.Navigator>

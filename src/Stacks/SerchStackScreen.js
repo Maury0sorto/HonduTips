@@ -15,7 +15,10 @@ import GasolinerasDanli from '../Screens/Ciudades/Danli/GasolinerasDanli';
 import BarberiasDanli from '../Screens/Ciudades/Danli/BarberiasDanli';
 import FarmaciasDanli from '../Screens/Ciudades/Danli/FarmaciasDanli';
 
-const SerchStackScreen = () => {
+
+
+
+const SerchStackScreen = () => {        // Este stack es el de Search es decir es uno de los 3 que se ven en la parte de abajo
 
     const SerchStack = createNativeStackNavigator();
   return (
@@ -27,8 +30,6 @@ const SerchStackScreen = () => {
       headerTintColor: '#fff', // Color del texto en la barra de navegación
     }}
   >
-
-
           <SerchStack.Screen name="Search" component={Ciudades}/>
           <SerchStack.Screen name="Search2" component={Search2}/>
           <SerchStack.Screen name="Danli" component={DanliScreen}/>
