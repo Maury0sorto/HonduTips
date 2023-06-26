@@ -184,6 +184,8 @@ export default function Carrucel() {
         <Text style={styles.buttonText}>Ir a Settings</Text>
       </TouchableOpacity>
     </View>
+
+    
     </SafeAreaView>
 
     

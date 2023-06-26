@@ -124,7 +124,7 @@ const Welcome = () => {
 
           <Button
             title="HonduTips"
-            onPress={() => navigation.navigate('HomeScreen')}
+            onPress={() => navigation.navigate("HomeScreen")}
             style={{
               marginTop: 22,
               width: '100%',

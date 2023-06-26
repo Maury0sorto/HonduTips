@@ -22,6 +22,8 @@ const Tab = createBottomTabNavigator();
 const Tabs = () => {
   return (
     <Tab.Navigator >
+
+
       <Tab.Screen
         name="Home"
         component={HomeStackScreen}
@@ -35,7 +37,8 @@ const Tabs = () => {
         }}
       />
 
-      <Tab.Screen
+        
+<Tab.Screen
         name="Search"
         component={SerchStackScreen}
         options={{
@@ -53,6 +56,7 @@ const Tabs = () => {
         name="Settings"
         component={Settings}
         options={{
+          
           headerStyle: { backgroundColor: '#00BCE4', shadowColor: 'black' },
           headerTintColor: '#fff',
           tabBarIcon: ({ color, size }) => (

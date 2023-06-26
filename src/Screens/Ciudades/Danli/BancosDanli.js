@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { View, Text, Image, TouchableHighlight, StyleSheet, ScrollView,TouchableOpacity } from 'react-native';
 import { SelectList } from 'react-native-dropdown-select-list';
+import { Ionicons } from '@expo/vector-icons';
 import AtlantidaDanli from './BancosDanli/AtlantidaDanli';
 import FicohsaDanli from './BancosDanli/FicohsaDanli';
 import BANTRABDanli from './BancosDanli/BANTRABDanli';
@@ -16,7 +17,10 @@ const ScreenA = ({ text, mostrarBotonAnterior }) => {
         underlayColor="#FFFF"
         onPress={mostrarBotonAnterior}
       >
-        <Text style={styles.backButtonText}>Ir a los bancos...</Text>
+        <>
+      <Ionicons name="arrow-back" size={24} color="black" style={styles.backButtonIcon} />
+      <Text style={styles.backButtonText}>Regresar</Text>
+    </>
        
       </TouchableHighlight>
       <AtlantidaDanli/>
@@ -264,6 +268,10 @@ const styles = StyleSheet.create({
     borderRadius: 5,
     marginBottom: 10,
     marginTop: 20,
+
+    flexDirection: 'row',
+    alignItems: 'center',
+    
   },
   backButtonText: {
     color: '#000',
