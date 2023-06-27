@@ -17,6 +17,10 @@ import AsadoselGordoDanli from './RestaurantesDanli/AsadosElGordoDanli';
 import ElToritoDanli from './RestaurantesDanli/ElToritoDanli';
 import Danli800Grados from './RestaurantesDanli/800gradosDanli';
 import RincondelToroDanli from './RestaurantesDanli/RincondelToroDanli';
+import JamsDanli from './RestaurantesDanli/JamsDanli';
+import NapolesDanli from './RestaurantesDanli/NapolesDanli';
+import MegaPizzaDanli from './RestaurantesDanli/MegaPizzaDanli';
+import PicolinoDanli from './RestaurantesDanli/PicolinoDanli';
 
 const ScreenA = ({ text, mostrarBotonAnterior }) => {
   return (
@@ -255,6 +259,61 @@ const ScreenO= ({ text, mostrarBotonAnterior }) => {
     </View>
   );
 };
+const ScreenP= ({ text, mostrarBotonAnterior }) => {
+  return (
+    <View style={styles.componentContainer}>
+      <TouchableHighlight
+        style={styles.backButton}
+        underlayColor="#0080ff"
+        onPress={mostrarBotonAnterior}
+      >
+        <Text style={styles.backButtonText}>Ver los restaurantes...</Text>
+      </TouchableHighlight>
+      <JamsDanli/>
+    </View>
+  );
+};
+const ScreenQ= ({ text, mostrarBotonAnterior }) => {
+  return (
+    <View style={styles.componentContainer}>
+      <TouchableHighlight
+        style={styles.backButton}
+        underlayColor="#0080ff"
+        onPress={mostrarBotonAnterior}
+      >
+        <Text style={styles.backButtonText}>Ver los restaurantes...</Text>
+      </TouchableHighlight>
+      <NapolesDanli/>
+    </View>
+  );
+};
+const ScreenR= ({ text, mostrarBotonAnterior }) => {
+  return (
+    <View style={styles.componentContainer}>
+      <TouchableHighlight
+        style={styles.backButton}
+        underlayColor="#0080ff"
+        onPress={mostrarBotonAnterior}
+      >
+        <Text style={styles.backButtonText}>Ver los restaurantes...</Text>
+      </TouchableHighlight>
+      <MegaPizzaDanli/>
+    </View>
+  );
+};const ScreenS= ({ text, mostrarBotonAnterior }) => {
+  return (
+    <View style={styles.componentContainer}>
+      <TouchableHighlight
+        style={styles.backButton}
+        underlayColor="#0080ff"
+        onPress={mostrarBotonAnterior}
+      >
+        <Text style={styles.backButtonText}>Ver los restaurantes...</Text>
+      </TouchableHighlight>
+      <PicolinoDanli/>
+    </View>
+  );
+};
 const RestaurantesDanli = () => {
   const [componenteVisible, setComponenteVisible] = useState(null);
   const [mostrarSelectList, setMostrarSelectList] = useState(true); // Nuevo estado
@@ -290,6 +349,10 @@ const RestaurantesDanli = () => {
     { text: "El Torito", image: 'https://scontent.ftgu3-4.fna.fbcdn.net/v/t39.30808-6/305620187_609265687569160_2100453553839024644_n.jpg?_nc_cat=109&cb=99be929b-59f725be&ccb=1-7&_nc_sid=09cbfe&_nc_ohc=tn801JTWHtkAX_PmN_h&_nc_ht=scontent.ftgu3-4.fna&oh=00_AfBbd42RfpDzcPFeFlZ6fxUdds_cuRVDIjGy9u5vjmLROQ&oe=64A02F64', screen: ScreenN},
     { text: "800 Grados", image: 'https://scontent.ftgu3-3.fna.fbcdn.net/v/t39.30808-6/323773866_535253195336933_2214384425370066927_n.jpg?_nc_cat=111&cb=99be929b-59f725be&ccb=1-7&_nc_sid=09cbfe&_nc_ohc=w57-9c9Do8QAX9URWun&_nc_ht=scontent.ftgu3-3.fna&oh=00_AfCXyxqqAlSafBFo7Cmb_bHXmjPwl0SriuvvcgbOLkhU7g&oe=649F9562', screen: ScreenÑ},
     { text: "El Rincón del Toro", image: 'https://scontent.ftgu3-3.fna.fbcdn.net/v/t39.30808-6/318711036_528672305941630_92058210381710933_n.jpg?_nc_cat=104&cb=99be929b-59f725be&ccb=1-7&_nc_sid=09cbfe&_nc_ohc=HwjfIwkamv0AX-CHgHY&_nc_ht=scontent.ftgu3-3.fna&oh=00_AfBlPxyW7gJpssbYb8MGBdUvKLV9a-sw1m-0bJ16wYYnng&oe=649F3183', screen: ScreenO},
+    { text: "Jam's", image: 'https://scontent.ftgu3-3.fna.fbcdn.net/v/t39.30808-6/315252857_147347051369941_6230054939530427174_n.jpg?_nc_cat=105&cb=99be929b-59f725be&ccb=1-7&_nc_sid=09cbfe&_nc_ohc=YrAeZO71MmMAX_SlJsk&_nc_ht=scontent.ftgu3-3.fna&oh=00_AfCIfSCbB_xPi7gGE1Px35utIZL0rLrVcr150FREwBcmHg&oe=649F337E', screen: ScreenP},
+    { text: "Pizzería Nápoles", image: 'https://scontent.ftgu3-3.fna.fbcdn.net/v/t39.30808-6/327028496_702125618286866_8807573907191352898_n.jpg?_nc_cat=101&cb=99be929b-59f725be&ccb=1-7&_nc_sid=09cbfe&_nc_ohc=Sd4iThVy3LwAX9r-1yy&_nc_ht=scontent.ftgu3-3.fna&oh=00_AfDCwzj5wZ2hYHxf2Gn97I_6iZ4HxgH01erzZYfNUakyOA&oe=64A0AE25', screen: ScreenQ},
+    { text: "Mega Pizza", image: 'https://scontent.ftgu3-3.fna.fbcdn.net/v/t39.30808-6/271747154_1289385321487391_4302338733097803900_n.png?_nc_cat=101&cb=99be929b-59f725be&ccb=1-7&_nc_sid=09cbfe&_nc_ohc=_hTHfJCYHYQAX_MET0s&_nc_ht=scontent.ftgu3-3.fna&oh=00_AfCAybD85VhvQWdJ-GagLG5jb38rjSjPl7bR2oK3CZQBJw&oe=64A08624', screen: ScreenR},
+    { text: "Pizza Picolino", image: 'https://scontent.ftgu3-3.fna.fbcdn.net/v/t39.30808-6/279743863_1027434387867292_6859084035090998512_n.jpg?_nc_cat=101&cb=99be929b-59f725be&ccb=1-7&_nc_sid=09cbfe&_nc_ohc=wXSP5rv6kEIAX8dh0iM&_nc_ht=scontent.ftgu3-3.fna&oh=00_AfABcBqVFpNTA4BCP9PEM9bKEEr_-RKkB5ju8_mAH4NGxQ&oe=649F9A0E', screen: ScreenS},
    
   
   
@@ -314,6 +377,10 @@ const RestaurantesDanli = () => {
     { key: '15', value: 'El Torito' },
     { key: '16', value: '800 Grados' },
     { key: '17', value: 'El Rincón del Toro' },
+    { key: '18', value: 'Jams' },
+    { key: '19', value: 'Pizzería Nápoles' },
+    { key: '20', value: 'Mega Pizza' },
+    { key: '21', value: 'Pizza Picolino' },
     
   ];
 
