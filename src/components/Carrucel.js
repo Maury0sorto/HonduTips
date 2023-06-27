@@ -35,7 +35,7 @@ const titulos = [
   "DANLI 0703",
   "SAN PEDRO SULA 0501",
   "TEGUCIGALPA 0801" ,
-  "Título 4",
+  "pene 4",
   "Título 5",
   "Título 6",
   "Título 7",
