@@ -2,10 +2,16 @@ import React, { useState, useEffect } from 'react';
 import { View, Text, StyleSheet, TouchableOpacity, Image, ScrollView, TextInput } from 'react-native';
 import { useNavigation } from '@react-navigation/native';
 import { Ionicons } from '@expo/vector-icons';
-
+import { HeaderBackButton } from '@react-navigation/stack';
 
 const DanliScreen = () => {
   const navigation = useNavigation();
+
+  useEffect(() => {
+    navigation.setOptions({
+      headerBackVisible: true,
+    });
+  }, []);
   const [data, setData] = useState([
     { text: 'Bancos', image: 'https://i.imgur.com/MBBciCd.png' },
     { text: 'Restaurantes', image: 'https://i.imgur.com/S3qhqOw.png' },

@@ -2,6 +2,7 @@ import { StatusBar } from "expo-status-bar";
 import React, { useEffect, useState } from "react";
 import { StyleSheet,Text,View,Image, Dimensions, SafeAreaView, Animated, TouchableOpacity} from "react-native";
 
+import { CommonActions } from '@react-navigation/native';
 
 
 import { LinearGradient } from "expo-linear-gradient";
@@ -101,6 +102,13 @@ export default function Carrucel() {
   const navigation = useNavigation();
   const [isLoading, setIsLoading] = useState(true);
 
+  const navigateToDanli = () => {
+    navigation.navigate('Search');
+    setTimeout(() => {
+      navigation.navigate('Danli');
+    }, 300);
+  };
+
   const scrollX = React.useRef(new Animated.Value(0)).current;
 
   useEffect(() => {
@@ -153,6 +161,26 @@ export default function Carrucel() {
             outputRange: [0, -0.2 * ANCHO_CONTENEDOR, 0],
           });
           return (
+
+            <TouchableOpacity
+            key={index}
+            onPress={() => {
+              switch (index) {
+                case 0:
+                  navigateToDanli();
+                  break;
+                case 1:
+                  navigation.navigate("Danli");
+                  break;
+                case 2:
+                  navigation.navigate("Screen3");
+                  break;
+                // Resto de tus casos
+                default:
+                  break;
+              }
+            }}
+          >
             <View style={{ width: ANCHO_CONTENEDOR }}>
               <Animated.View
                 style={{
@@ -170,18 +198,15 @@ export default function Carrucel() {
                 </Text>
               </Animated.View>
             </View>
+            </TouchableOpacity>
           );
         }}
       />
       
     
-    <View style={styles.container}>
-      <TouchableOpacity
-        style={styles.button}
-        onPress={() => navigation.navigate("Danli")}
-        
-      >
-        <Text style={styles.buttonText}>Ir a Settings</Text>
+      <View style={styles.container}>
+      <TouchableOpacity style={styles.button} onPress={navigateToDanli}>
+        <Text style={styles.buttonText}>Ir a Danli</Text>
       </TouchableOpacity>
     </View>
 

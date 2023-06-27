@@ -31,7 +31,7 @@ const SerchStackScreen = () => {        // Este stack es el de Search es decir e
     }}
   >
           <SerchStack.Screen name="Ciudades" component={Ciudades}/>
-          <SerchStack.Screen name='Danli' component={DanliScreen}/>
+          <SerchStack.Screen name='Danli' component={DanliScreen}  options={{ headerBackVisible: true }} />
           <SerchStack.Screen name="Bancos Danli" component={BancosDanli}/>
           <SerchStack.Screen name="Restaurantes Danli" component={RestaurantesDanli} />
           <SerchStack.Screen name="Hoteles Danli" component={HotelesDanli}/>
