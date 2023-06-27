@@ -13,6 +13,10 @@ import MarioChavezDanli from './RestaurantesDanli/MarioChavezDanli';
 import ElGauchoDanli from './RestaurantesDanli/ElGauchoDanli';
 import CocoBaleadasDanli from './RestaurantesDanli/CocoBaleadasDanli';
 import MoyasGrillDanli from './RestaurantesDanli/MoyasDanli';
+import AsadoselGordoDanli from './RestaurantesDanli/AsadosElGordoDanli';
+import ElToritoDanli from './RestaurantesDanli/ElToritoDanli';
+import Danli800Grados from './RestaurantesDanli/800gradosDanli';
+import RincondelToroDanli from './RestaurantesDanli/RincondelToroDanli';
 
 const ScreenA = ({ text, mostrarBotonAnterior }) => {
   return (
@@ -195,6 +199,62 @@ const ScreenL= ({ text, mostrarBotonAnterior }) => {
     </View>
   );
 };
+const ScreenM= ({ text, mostrarBotonAnterior }) => {
+  return (
+    <View style={styles.componentContainer}>
+      <TouchableHighlight
+        style={styles.backButton}
+        underlayColor="#0080ff"
+        onPress={mostrarBotonAnterior}
+      >
+        <Text style={styles.backButtonText}>Ver los restaurantes...</Text>
+      </TouchableHighlight>
+      <AsadoselGordoDanli/>
+    </View>
+  );
+};
+const ScreenN= ({ text, mostrarBotonAnterior }) => {
+  return (
+    <View style={styles.componentContainer}>
+      <TouchableHighlight
+        style={styles.backButton}
+        underlayColor="#0080ff"
+        onPress={mostrarBotonAnterior}
+      >
+        <Text style={styles.backButtonText}>Ver los restaurantes...</Text>
+      </TouchableHighlight>
+      <ElToritoDanli/>
+    </View>
+  );
+};
+const ScreenÑ= ({ text, mostrarBotonAnterior }) => {
+  return (
+    <View style={styles.componentContainer}>
+      <TouchableHighlight
+        style={styles.backButton}
+        underlayColor="#0080ff"
+        onPress={mostrarBotonAnterior}
+      >
+        <Text style={styles.backButtonText}>Ver los restaurantes...</Text>
+      </TouchableHighlight>
+      <Danli800Grados/>
+    </View>
+  );
+};
+const ScreenO= ({ text, mostrarBotonAnterior }) => {
+  return (
+    <View style={styles.componentContainer}>
+      <TouchableHighlight
+        style={styles.backButton}
+        underlayColor="#0080ff"
+        onPress={mostrarBotonAnterior}
+      >
+        <Text style={styles.backButtonText}>Ver los restaurantes...</Text>
+      </TouchableHighlight>
+      <RincondelToroDanli/>
+    </View>
+  );
+};
 const RestaurantesDanli = () => {
   const [componenteVisible, setComponenteVisible] = useState(null);
   const [mostrarSelectList, setMostrarSelectList] = useState(true); // Nuevo estado
@@ -217,15 +277,19 @@ const RestaurantesDanli = () => {
    
     { text: 'Pizza Hut', image: 'https://graffica.info/wp-content/uploads/2017/07/Pizza_Hut_Logo_3.png', screen: ScreenB },
     { text: "Chesters Chiken", image: 'https://static.wikia.nocookie.net/logopedia/images/0/02/Chesters-0.png/revision/latest?cb=20200304191304', screen: ScreenC },
-    { text: 'Papa Johns', image: 'https://scontent.fsap8-1.fna.fbcdn.net/v/t39.30808-6/309639873_2055961541266124_6515876166726249677_n.jpg?_nc_cat=104&ccb=1-7&_nc_sid=09cbfe&_nc_ohc=X3tRoyKK9ocAX_9vCOI&_nc_ht=scontent.fsap8-1.fna&oh=00_AfBbkhONEfeqgzrsjZI8Q7NF8XpXx6y1EThX6iMgNlJrGQ&oe=649806B4', screen: ScreenD },
+    { text: 'Papa Johns', image: 'https://scontent.ftgu3-3.fna.fbcdn.net/v/t39.30808-6/309639873_2055961541266124_6515876166726249677_n.jpg?_nc_cat=104&cb=99be929b-59f725be&ccb=1-7&_nc_sid=09cbfe&_nc_ohc=U7tRfKx1PUYAX-4Kqxp&_nc_ht=scontent.ftgu3-3.fna&oh=00_AfD8HLF9Fw1p5u5yPkQRDbJO1h_TbfbUlCyXtc04sLa4bw&oe=649FEFB4', screen: ScreenD },
     { text: 'Expresso Americano', image: 'https://media.giphy.com/avatars/espressoamericano/OvcvgcC9TVlp.jpg', screen: ScreenE },
-    { text: "Paradise Burger", image: 'https://scontent.fsap8-1.fna.fbcdn.net/v/t39.30808-6/301142856_452426046902766_6302578564774581807_n.jpg?_nc_cat=109&ccb=1-7&_nc_sid=09cbfe&_nc_ohc=3mQS9QVKScgAX-n2wPO&_nc_ht=scontent.fsap8-1.fna&oh=00_AfAvovX-dp8UzN45xpiJkZAFVUB3jpdOHKNBSbCu8deyHg&oe=6498B25F', screen: ScreenF },
+    { text: "Paradise Burger", image: 'https://scontent.ftgu3-4.fna.fbcdn.net/v/t39.30808-6/301142856_452426046902766_6302578564774581807_n.jpg?_nc_cat=109&cb=99be929b-59f725be&ccb=1-7&_nc_sid=09cbfe&_nc_ohc=iog7n5WRpe4AX9PnFJx&_nc_ht=scontent.ftgu3-4.fna&oh=00_AfCVQ1I2E73-ccXkujXZOSRJ0BP6qWFiIuduZKrwrPVbZw&oe=64A09B5F', screen: ScreenF },
     { text: "Hot Wings", image: 'https://scontent.fsap8-1.fna.fbcdn.net/v/t39.30808-6/346629593_1960075220994004_5975068841861283462_n.jpg?_nc_cat=106&cb=99be929b-59f725be&ccb=1-7&_nc_sid=09cbfe&_nc_ohc=ZT_-H3QrFKkAX8W2kR6&_nc_ht=scontent.fsap8-1.fna&oh=00_AfB4h7TtayyqLxRW1tCueTQUqeFti0tbvruUm3aKDk6yUg&oe=649EBDAE', screen: ScreenG },
     { text: "Sushi Totemo", image: 'https://scontent.fsap8-1.fna.fbcdn.net/v/t39.30808-6/343310766_2183144078740427_3441642581191720748_n.jpg?_nc_cat=101&cb=99be929b-59f725be&ccb=1-7&_nc_sid=09cbfe&_nc_ohc=KGx1dnjGAR0AX-3DsBX&_nc_ht=scontent.fsap8-1.fna&oh=00_AfBDqOOa_SgCBqGal6lYmzl2WgG1hr03IIhHmPyGzwTPsw&oe=649EE165', screen: ScreenH },
     { text: "Restaurante Mario Chávez", image: 'https://scontent.fsap8-1.fna.fbcdn.net/v/t39.30808-6/323553590_1140424086657650_1481250813580760994_n.jpg?_nc_cat=108&cb=99be929b-59f725be&ccb=1-7&_nc_sid=09cbfe&_nc_ohc=-FGGdSpCcLoAX-iM634&_nc_ht=scontent.fsap8-1.fna&oh=00_AfBg14AnXVlbICXzhWK46wXJJ7MzPwiZdCxVGHWJXK6IIA&oe=649F07DB', screen: ScreenI },
     { text: "El Gaucho", image: 'https://scontent.fsap8-1.fna.fbcdn.net/v/t39.30808-6/323695677_444934067711668_6237152711758612986_n.jpg?_nc_cat=106&cb=99be929b-59f725be&ccb=1-7&_nc_sid=09cbfe&_nc_ohc=KUhX5jVr6HcAX_SIQjY&_nc_ht=scontent.fsap8-1.fna&oh=00_AfBV1m6ut0siH1NgvTya3nTR-y50KYTyczJZXbgRLoNxwg&oe=649F1E55', screen: ScreenJ },
     { text: "Coco Baleadas", image: 'https://scontent.fsap8-1.fna.fbcdn.net/v/t1.6435-9/42716286_2144075459244554_1165425262507065344_n.jpg?_nc_cat=102&cb=99be929b-59f725be&ccb=1-7&_nc_sid=174925&_nc_ohc=pyq1nYYASiYAX_eVu3E&_nc_ht=scontent.fsap8-1.fna&oh=00_AfC-Mwl6QNbnpKY_gHuAFGZr0Zpkq_zXw2Ff78aAOYsZmA&oe=64C16D0F', screen: ScreenK },
     { text: "Moyas Grill", image: 'https://scontent.ftgu3-3.fna.fbcdn.net/v/t39.30808-6/326250757_681003343722419_3032547084751507322_n.jpg?stp=cp6_dst-jpg&_nc_cat=104&cb=99be929b-59f725be&ccb=1-7&_nc_sid=09cbfe&_nc_ohc=c8P7dYLzPJQAX8L39Eq&_nc_ht=scontent.ftgu3-3.fna&oh=00_AfBHlXdtqL6tswL1C5ZtpGsuUdcsdpkHmnrE2JAKJhbyow&oe=649F02C1', screen: ScreenL },
+    { text: "Asados El Gordo", image: 'https://scontent.ftgu3-4.fna.fbcdn.net/v/t39.30808-6/305105310_493556006114989_8534309958381839711_n.jpg?_nc_cat=108&cb=99be929b-59f725be&ccb=1-7&_nc_sid=09cbfe&_nc_ohc=coHOQs5QdoIAX8LixWX&_nc_ht=scontent.ftgu3-4.fna&oh=00_AfBUY4Nc7lWJM8VuzpG_COlREAiSNhwT7OEF2Ddn1d6fyA&oe=649FA7D0', screen: ScreenM},
+    { text: "El Torito", image: 'https://scontent.ftgu3-4.fna.fbcdn.net/v/t39.30808-6/305620187_609265687569160_2100453553839024644_n.jpg?_nc_cat=109&cb=99be929b-59f725be&ccb=1-7&_nc_sid=09cbfe&_nc_ohc=tn801JTWHtkAX_PmN_h&_nc_ht=scontent.ftgu3-4.fna&oh=00_AfBbd42RfpDzcPFeFlZ6fxUdds_cuRVDIjGy9u5vjmLROQ&oe=64A02F64', screen: ScreenN},
+    { text: "800 Grados", image: 'https://scontent.ftgu3-3.fna.fbcdn.net/v/t39.30808-6/323773866_535253195336933_2214384425370066927_n.jpg?_nc_cat=111&cb=99be929b-59f725be&ccb=1-7&_nc_sid=09cbfe&_nc_ohc=w57-9c9Do8QAX9URWun&_nc_ht=scontent.ftgu3-3.fna&oh=00_AfCXyxqqAlSafBFo7Cmb_bHXmjPwl0SriuvvcgbOLkhU7g&oe=649F9562', screen: ScreenÑ},
+    { text: "El Rincón del Toro", image: 'https://scontent.ftgu3-3.fna.fbcdn.net/v/t39.30808-6/318711036_528672305941630_92058210381710933_n.jpg?_nc_cat=104&cb=99be929b-59f725be&ccb=1-7&_nc_sid=09cbfe&_nc_ohc=HwjfIwkamv0AX-CHgHY&_nc_ht=scontent.ftgu3-3.fna&oh=00_AfBlPxyW7gJpssbYb8MGBdUvKLV9a-sw1m-0bJ16wYYnng&oe=649F3183', screen: ScreenO},
    
   
   
@@ -246,6 +310,10 @@ const RestaurantesDanli = () => {
     { key: '11', value: 'El Gaucho' },
     { key: '12', value: 'Coco Baleadas' },
     { key: '13', value: 'Moyas Grill' },
+    { key: '14', value: 'Asados El Gordo' },
+    { key: '15', value: 'El Torito' },
+    { key: '16', value: '800 Grados' },
+    { key: '17', value: 'El Rincón del Toro' },
     
   ];
 
