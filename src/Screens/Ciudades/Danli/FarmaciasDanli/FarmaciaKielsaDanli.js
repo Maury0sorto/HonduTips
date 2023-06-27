@@ -7,7 +7,7 @@ import Swiper from "react-native-web-swiper";
 const locationsData = [
   {
     title: "Farmacia Kielsa",
-    latitude:   14.031972296776456, 
+    latitude:   14.031972296776456,  
     longitude:  -86.57046211079877,
   },
  

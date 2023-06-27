@@ -37,7 +37,10 @@ const ScreenB = ({ text, mostrarBotonAnterior }) => {
         underlayColor="#0080ff"
         onPress={mostrarBotonAnterior}
       >
-        <Text style={styles.backButtonText}>Ir a los bancos...</Text>
+          <>
+      <Ionicons name="arrow-back" size={24} color="black" style={styles.backButtonIcon} />
+      <Text style={styles.backButtonText}>Regresar</Text>
+    </>
       </TouchableHighlight>
       <FicohsaDanli/>
      
@@ -53,7 +56,10 @@ const ScreenC = ({ text, mostrarBotonAnterior }) => {
         underlayColor="#0080ff"
         onPress={mostrarBotonAnterior}
       >
-        <Text style={styles.backButtonText}>Ir a los bancos...</Text>
+           <>
+      <Ionicons name="arrow-back" size={24} color="black" style={styles.backButtonIcon} />
+      <Text style={styles.backButtonText}>Regresar</Text>
+    </>
       </TouchableHighlight>
       <BancoOccidenteDanli/>
     </View>
@@ -68,7 +74,10 @@ const ScreenD = ({ text, mostrarBotonAnterior }) => {
         underlayColor="#0080ff"
         onPress={mostrarBotonAnterior}
       >
-        <Text style={styles.backButtonText}>Ir a los bancos...</Text>
+           <>
+      <Ionicons name="arrow-back" size={24} color="black" style={styles.backButtonIcon} />
+      <Text style={styles.backButtonText}>Regresar</Text>
+    </>
       </TouchableHighlight>
       <BancoProamericaDanli/>
     </View>
@@ -83,7 +92,10 @@ const ScreenE = ({ text, mostrarBotonAnterior }) => {
         underlayColor="#0080ff"
         onPress={mostrarBotonAnterior}
       >
-        <Text style={styles.backButtonText}>Ir a los bancos...</Text>
+         <>
+      <Ionicons name="arrow-back" size={24} color="black" style={styles.backButtonIcon} />
+      <Text style={styles.backButtonText}>Regresar</Text>
+    </>
       </TouchableHighlight>
      <BanPaisDanli/>
     </View>
@@ -98,7 +110,10 @@ const ScreenF = ({ text, mostrarBotonAnterior }) => {
         underlayColor="#0080ff"
         onPress={mostrarBotonAnterior}
       >
-        <Text style={styles.backButtonText}>Ir a los bancos...</Text>
+          <>
+      <Ionicons name="arrow-back" size={24} color="black" style={styles.backButtonIcon} />
+      <Text style={styles.backButtonText}>Regresar</Text>
+    </>
       </TouchableHighlight>
       <BANTRABDanli/>
     </View>

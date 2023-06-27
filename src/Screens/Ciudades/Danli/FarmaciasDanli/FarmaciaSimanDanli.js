@@ -115,11 +115,11 @@ export default function FarmaciaSimanDanli() {
         </View>
         <View style={styles.scheduleItem}>
           <Icon name="clock-o" size={20} color="#000" style={styles.scheduleIcon} />
-          <Text style={styles.scheduleText}>Sáb: 7:00 AM -10:00 PM</Text>
+          <Text style={styles.scheduleText}>Sáb: 7:00 AM - 7:00 PM</Text>
         </View>
         <View style={styles.scheduleItem}>
           <Icon name="clock-o" size={20} color="#000" style={styles.scheduleIcon} />
-          <Text style={styles.scheduleText}>Dom: 8:00 AM -8:00 PM</Text>
+          <Text style={styles.scheduleText}>Dom: 8:00 AM - 6:00 PM</Text>
         </View>
       </View>
                 
