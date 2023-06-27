@@ -186,7 +186,7 @@ export default function CocoBaleadasDanli() {  // Este solo es el nomre que se u
           <TouchableOpacity
             style={styles.button}
             onPress={() => {
-              Linking.openURL('https://www.facebook.com/ElGauchoDanli');
+              Linking.openURL('https://www.facebook.com/cocobaleadasdanli?locale=es_LA');
             }}
           >
              <Icon name="globe" size={20} color="white" style={styles.buttonIcon} />

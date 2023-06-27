@@ -12,6 +12,7 @@ import SushiTotemoDanli from './RestaurantesDanli/SushiTetemoDanli';
 import MarioChavezDanli from './RestaurantesDanli/MarioChavezDanli';
 import ElGauchoDanli from './RestaurantesDanli/ElGauchoDanli';
 import CocoBaleadasDanli from './RestaurantesDanli/CocoBaleadasDanli';
+import MoyasGrillDanli from './RestaurantesDanli/MoyasDanli';
 
 const ScreenA = ({ text, mostrarBotonAnterior }) => {
   return (
@@ -179,6 +180,21 @@ const ScreenK= ({ text, mostrarBotonAnterior }) => {
     </View>
   );
 };
+
+const ScreenL= ({ text, mostrarBotonAnterior }) => {
+  return (
+    <View style={styles.componentContainer}>
+      <TouchableHighlight
+        style={styles.backButton}
+        underlayColor="#0080ff"
+        onPress={mostrarBotonAnterior}
+      >
+        <Text style={styles.backButtonText}>Ver los restaurantes...</Text>
+      </TouchableHighlight>
+      <MoyasGrillDanli/>
+    </View>
+  );
+};
 const RestaurantesDanli = () => {
   const [componenteVisible, setComponenteVisible] = useState(null);
   const [mostrarSelectList, setMostrarSelectList] = useState(true); // Nuevo estado
@@ -209,6 +225,7 @@ const RestaurantesDanli = () => {
     { text: "Restaurante Mario Chávez", image: 'https://scontent.fsap8-1.fna.fbcdn.net/v/t39.30808-6/323553590_1140424086657650_1481250813580760994_n.jpg?_nc_cat=108&cb=99be929b-59f725be&ccb=1-7&_nc_sid=09cbfe&_nc_ohc=-FGGdSpCcLoAX-iM634&_nc_ht=scontent.fsap8-1.fna&oh=00_AfBg14AnXVlbICXzhWK46wXJJ7MzPwiZdCxVGHWJXK6IIA&oe=649F07DB', screen: ScreenI },
     { text: "El Gaucho", image: 'https://scontent.fsap8-1.fna.fbcdn.net/v/t39.30808-6/323695677_444934067711668_6237152711758612986_n.jpg?_nc_cat=106&cb=99be929b-59f725be&ccb=1-7&_nc_sid=09cbfe&_nc_ohc=KUhX5jVr6HcAX_SIQjY&_nc_ht=scontent.fsap8-1.fna&oh=00_AfBV1m6ut0siH1NgvTya3nTR-y50KYTyczJZXbgRLoNxwg&oe=649F1E55', screen: ScreenJ },
     { text: "Coco Baleadas", image: 'https://scontent.fsap8-1.fna.fbcdn.net/v/t1.6435-9/42716286_2144075459244554_1165425262507065344_n.jpg?_nc_cat=102&cb=99be929b-59f725be&ccb=1-7&_nc_sid=174925&_nc_ohc=pyq1nYYASiYAX_eVu3E&_nc_ht=scontent.fsap8-1.fna&oh=00_AfC-Mwl6QNbnpKY_gHuAFGZr0Zpkq_zXw2Ff78aAOYsZmA&oe=64C16D0F', screen: ScreenK },
+    { text: "Moyas Grill", image: 'https://scontent.ftgu3-3.fna.fbcdn.net/v/t39.30808-6/326250757_681003343722419_3032547084751507322_n.jpg?stp=cp6_dst-jpg&_nc_cat=104&cb=99be929b-59f725be&ccb=1-7&_nc_sid=09cbfe&_nc_ohc=c8P7dYLzPJQAX8L39Eq&_nc_ht=scontent.ftgu3-3.fna&oh=00_AfBHlXdtqL6tswL1C5ZtpGsuUdcsdpkHmnrE2JAKJhbyow&oe=649F02C1', screen: ScreenL },
    
   
   
@@ -228,6 +245,7 @@ const RestaurantesDanli = () => {
     { key: '10', value: 'Restaurante Mario Chávez' },
     { key: '11', value: 'El Gaucho' },
     { key: '12', value: 'Coco Baleadas' },
+    { key: '13', value: 'Moyas Grill' },
     
   ];
 

@@ -9,10 +9,16 @@ import ImageViewer from 'react-native-image-zoom-viewer';
 // INICIO DE PARA PONER PINES DENTRO DEL MAPA 
 const locationsData = [
   {
-    title: "Moyas Grill",
-    
+    title: "Moyas Grill 2",
+     
     latitude:     14.015333728186443,  
     longitude:  -86.5699817619921,
+  },
+  {
+    title: "Moyas Grill 1",
+     
+    latitude:     14.036536070892195,  
+    longitude:  -86.57260852244646,
   },
 
   // Agrega más ubicaciones aquí si lo deseas
@@ -31,7 +37,7 @@ export default function MoyasGrillDanli() {  // Este solo es el nomre que se usa
   };
   const images = [
     {
-      url: 'https://scontent.fsap8-1.fna.fbcdn.net/v/t1.6435-9/51620255_2230226330629466_6360732830347034624_n.jpg?_nc_cat=111&cb=99be929b-59f725be&ccb=1-7&_nc_sid=8bfeb9&_nc_ohc=Bn4NenyllKEAX-v1chP&_nc_ht=scontent.fsap8-1.fna&oh=00_AfCYy6HqUp-Hptui6nzU3edheKGis8x5v0sHCjmwSgtIjw&oe=64C143E8',
+      url: 'https://scontent.ftgu3-4.fna.fbcdn.net/v/t39.30808-6/350283291_963354108201954_641532074007510627_n.jpg?_nc_cat=102&cb=99be929b-59f725be&ccb=1-7&_nc_sid=730e14&_nc_ohc=uWwiLfIFWf0AX9FHR7F&_nc_ht=scontent.ftgu3-4.fna&oh=00_AfAAIjAw4ttDfHTsxvoiFeQtb783eM2wGnGyzISK8klqkQ&oe=649EF32F',
     },
   ];
 
@@ -43,10 +49,11 @@ export default function MoyasGrillDanli() {  // Este solo es el nomre que se usa
    // INICIO CODIGO PARA EL PUNNTO CENTRAL DEL MAPA DE LA UBICACION
   const mapRef = useRef(null);
   const initialRegion = {
+    
     latitude:     14.015333728186443,   
     longitude:  -86.5699817619921,
-    latitudeDelta: 0.01,    //ENTRE NUMEROS MAS GRANDES MAS ZOOM DE LA VISTIA INICIAL DEL MAPA
-    longitudeDelta: 0.01,  //ENTRE NUMEROS MAS GRANDES MAS ZOOM DE LA VISTIA INICIAL DEL MAPA
+    latitudeDelta: 0.09,    //ENTRE NUMEROS MAS GRANDES MAS ZOOM DE LA VISTIA INICIAL DEL MAPA
+    longitudeDelta: 0.09,  //ENTRE NUMEROS MAS GRANDES MAS ZOOM DE LA VISTIA INICIAL DEL MAPA
   };
   // FIN CODIGO PARA EL PUNNTO CENTRAL DEL MAPA DE LA UBICACION
 
@@ -109,7 +116,7 @@ export default function MoyasGrillDanli() {  // Este solo es el nomre que se usa
   return (
     <ScrollView>
       <View style={styles.container}>
-        <Text style={styles.title}>Coco Baleadas</Text>
+        <Text style={styles.title}>Moyas Grill</Text>
         <View style={styles.containerSwipers}>
           <View style={styles.swiperContainer}>
             <Swiper
@@ -142,7 +149,7 @@ export default function MoyasGrillDanli() {  // Este solo es el nomre que se usa
       <View style={styles.buttonContainer3}>
         <TouchableOpacity activeOpacity={1} onPress={toggleModal}>
           <Image
-            source={{ uri: 'https://scontent.fsap8-1.fna.fbcdn.net/v/t1.6435-9/51620255_2230226330629466_6360732830347034624_n.jpg?_nc_cat=111&cb=99be929b-59f725be&ccb=1-7&_nc_sid=8bfeb9&_nc_ohc=Bn4NenyllKEAX-v1chP&_nc_ht=scontent.fsap8-1.fna&oh=00_AfCYy6HqUp-Hptui6nzU3edheKGis8x5v0sHCjmwSgtIjw&oe=64C143E8' }}
+            source={{ uri: 'https://scontent.ftgu3-4.fna.fbcdn.net/v/t39.30808-6/350283291_963354108201954_641532074007510627_n.jpg?_nc_cat=102&cb=99be929b-59f725be&ccb=1-7&_nc_sid=730e14&_nc_ohc=uWwiLfIFWf0AX9FHR7F&_nc_ht=scontent.ftgu3-4.fna&oh=00_AfAAIjAw4ttDfHTsxvoiFeQtb783eM2wGnGyzISK8klqkQ&oe=649EF32F' }}
             style={styles.imagen}
             resizeMode="cover"
           />
@@ -153,16 +160,9 @@ export default function MoyasGrillDanli() {  // Este solo es el nomre que se usa
       <View style={styles.scheduleContainer}>
         <View style={styles.scheduleItem}>
           <Icon name="clock-o" size={20} color="#000" style={styles.scheduleIcon} />
-          <Text style={styles.scheduleText}>Lun-Vie: 7:00 AM - 9:00 PM</Text>
+          <Text style={styles.scheduleText}>Lun-Dom: 11:00 AM - 9:00 PM</Text>
         </View>
-        <View style={styles.scheduleItem}>
-          <Icon name="clock-o" size={20} color="#000" style={styles.scheduleIcon} />
-          <Text style={styles.scheduleText}>Sab: 7:00 AM - 9:00 PM</Text>
-        </View>
-        <View style={styles.scheduleItem}>
-          <Icon name="clock-o" size={20} color="#000" style={styles.scheduleIcon} />
-          <Text style={styles.scheduleText}>Dom: 8:00 AM - 9:00 PM</Text>
-        </View>
+        
       </View>
 
       <Modal visible={modalVisible} animationType="fade" transparent={true}>
@@ -186,7 +186,7 @@ export default function MoyasGrillDanli() {  // Este solo es el nomre que se usa
           <TouchableOpacity
             style={styles.button}
             onPress={() => {
-              Linking.openURL('https://www.facebook.com/ElGauchoDanli');
+              Linking.openURL('https://www.facebook.com/Moyasgrill/?locale=es_LA');
             }}
           >
              <Icon name="globe" size={20} color="white" style={styles.buttonIcon} />
@@ -195,7 +195,7 @@ export default function MoyasGrillDanli() {  // Este solo es el nomre que se usa
           <TouchableOpacity
             style={styles.button}
             onPress={() => {
-              Linking.openURL('tel: +50494141765');
+              Linking.openURL('tel: +50433244859');
             }}
           >
              <Icon name="phone" size={20} color="white" style={styles.buttonIcon} />
