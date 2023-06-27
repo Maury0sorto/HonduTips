@@ -1,27 +1,32 @@
 import React, { useState } from 'react';
 import { View, Text, Image, TouchableHighlight, StyleSheet, ScrollView,TouchableOpacity } from 'react-native';
 import { SelectList } from 'react-native-dropdown-select-list';
-import  ExpressoAmericanoDanli from './RestaurantesDanli/ExpressoAmericanoDanli';
-import WendysDanli from './RestaurantesDanli/WendysDanli';
-import PizzaHutDanli from './RestaurantesDanli/PizzaHutDanli';
-import ChesterChikeDanli from './RestaurantesDanli/ChesterChikenDanli';
+import { Ionicons } from '@expo/vector-icons';
+
+ 
+import FarmaciaSimanDanli from './FarmaciasDanli/FarmaciaSimanDanli';
+import FarmaciaElAhorroDanli from './FarmaciasDanli/FarmaciaElAhorroDanli';
+import FarmacityDanli from './FarmaciasDanli/FarmaCityDanli';
+import FarmaciaKielsaDanli from './FarmaciasDanli/FarmaciaKielsaDanli';
 import PapaJohnstDanli from './RestaurantesDanli/PapaJohnsDanli';
 import ParadiseBurgerDanli from './RestaurantesDanli/ParadiseBurgerDanli';
 
 const ScreenA = ({ text, mostrarBotonAnterior }) => {
   return (
     <View style={styles.componentContainer}>
-      <TouchableHighlight
-        style={styles.backButton}
-        underlayColor="#FFFF"
-        onPress={mostrarBotonAnterior}
-      >
-        <Text style={styles.backButtonText}>Ver las Farmacias...</Text>
-       
-      </TouchableHighlight>
-      <WendysDanli/>
+    <TouchableHighlight
+      style={styles.backButton}
+      underlayColor="#0080ff"
+      onPress={mostrarBotonAnterior}
+    >
+       <>
+      <Ionicons name="arrow-back" size={24} color="black" style={styles.backButtonIcon} />
+      <Text style={styles.backButtonText}>Regresar</Text>
+    </>
+    </TouchableHighlight>
+    <FarmaciaSimanDanli/>
    
-    </View>
+  </View>
   );
 };
 
@@ -33,9 +38,12 @@ const ScreenB = ({ text, mostrarBotonAnterior }) => {
         underlayColor="#0080ff"
         onPress={mostrarBotonAnterior}
       >
-        <Text style={styles.backButtonText}>Ver las Farmacias...</Text>
+         <>
+      <Ionicons name="arrow-back" size={24} color="black" style={styles.backButtonIcon} />
+      <Text style={styles.backButtonText}>Regresar</Text>
+    </>
       </TouchableHighlight>
-      <PizzaHutDanli/>
+      <FarmacityDanli/>
      
     </View>
   );
@@ -49,9 +57,12 @@ const ScreenC = ({ text, mostrarBotonAnterior }) => {
         underlayColor="#0080ff"
         onPress={mostrarBotonAnterior}
       >
-        <Text style={styles.backButtonText}>Ver las Farmacias...</Text>
+        <>
+      <Ionicons name="arrow-back" size={24} color="black" style={styles.backButtonIcon} />
+      <Text style={styles.backButtonText}>Regresar</Text>
+    </>
       </TouchableHighlight>
-      <ChesterChikeDanli/>
+      <FarmaciaElAhorroDanli/>
     </View>
   );
 };
@@ -64,9 +75,12 @@ const ScreenD = ({ text, mostrarBotonAnterior }) => {
         underlayColor="#0080ff"
         onPress={mostrarBotonAnterior}
       >
-        <Text style={styles.backButtonText}>Ver las Farmacias...</Text>
+         <>
+      <Ionicons name="arrow-back" size={24} color="black" style={styles.backButtonIcon} />
+      <Text style={styles.backButtonText}>Regresar</Text>
+    </>
       </TouchableHighlight>
-      <PapaJohnstDanli/>
+      <FarmaciaKielsaDanli/>
     </View>
   );
 };
@@ -236,6 +250,10 @@ const styles = StyleSheet.create({
     borderRadius: 5,
     marginBottom: 10,
     marginTop: 20,
+
+    
+    flexDirection: 'row',
+    alignItems: 'center',
   },
   backButtonText: {
     color: '#000',
