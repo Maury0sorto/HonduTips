@@ -178,7 +178,7 @@ export default function Carrucel() {
     <View style={styles.container}>
       <TouchableOpacity
         style={styles.button}
-        onPress={() => navigation.navigate("Search")}
+        onPress={() => navigation.navigate("Danli")}
         
       >
         <Text style={styles.buttonText}>Ir a Settings</Text>

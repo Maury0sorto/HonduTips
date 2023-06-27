@@ -4,8 +4,8 @@ import { createNativeStackNavigator } from "@react-navigation/native-stack";
 import { Ionicons } from "@expo/vector-icons";
 import { Welcome } from '../Screens';
 import Ciudades from '../Screens/Ciudades';
-import Search2 from '../Screens/Search2';
-import CopiaCiudades from '../Screens/CopiaCiudades'
+
+
 import OnboardingScreen from '../Screens/OnboardingScreen';
 import DanliScreen from '../Screens/Ciudades/Danli/DanliScreen';
 import BancosDanli from '../Screens/Ciudades/Danli/BancosDanli';
@@ -30,9 +30,8 @@ const SerchStackScreen = () => {        // Este stack es el de Search es decir e
       headerTintColor: '#fff', // Color del texto en la barra de navegación
     }}
   >
-          <SerchStack.Screen name="Search" component={Ciudades}/>
-          <SerchStack.Screen name="Search2" component={Search2}/>
-          <SerchStack.Screen name="Danli" component={DanliScreen}/>
+          <SerchStack.Screen name="Ciudades" component={Ciudades}/>
+          <SerchStack.Screen name='Danli' component={DanliScreen}/>
           <SerchStack.Screen name="Bancos Danli" component={BancosDanli}/>
           <SerchStack.Screen name="Restaurantes Danli" component={RestaurantesDanli} />
           <SerchStack.Screen name="Hoteles Danli" component={HotelesDanli}/>
@@ -42,7 +41,7 @@ const SerchStackScreen = () => {        // Este stack es el de Search es decir e
 
 
 
-          <SerchStack.Screen name="Search3" component={OnboardingScreen}/>
+          <SerchStack.Screen name="Onboarding" component={OnboardingScreen}/>
         </SerchStack.Navigator>
   )
 }

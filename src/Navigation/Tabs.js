@@ -17,13 +17,17 @@ import OnboardingScreen from '../Screens/OnboardingScreen';
 
 
 const Stack = createNativeStackNavigator();
-const Tab = createBottomTabNavigator();
+
 
 const Tabs = () => {
+  const Tab = createBottomTabNavigator();
+  const [isAuthenticated, setIsAuthenticated] = useState(false);
   return (
+
+    
     <Tab.Navigator >
 
-
+      
       <Tab.Screen
         name="Home"
         component={HomeStackScreen}
@@ -70,9 +74,11 @@ const Tabs = () => {
 
       
     </Tab.Navigator>
-
+    
+    
     
   );
+  
 };
 
 const Prueba = () => {
