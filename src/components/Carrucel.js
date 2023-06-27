@@ -193,7 +193,7 @@ export default function Carrucel() {
                 }}
               >
                 <Image source={{ uri: item }} style={styles.posterImage} />
-                <Text style={{ fontWeight: "bold", fontSize: 26 }}>
+                <Text style={{ fontWeight: "bold", fontSize: 26 , textAlign:"center"}}>
                 {titulos[index]} {/* Utiliza el título correspondiente */}
                 </Text>
               </Animated.View>
