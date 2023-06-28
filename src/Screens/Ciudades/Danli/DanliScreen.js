@@ -13,12 +13,16 @@ const DanliScreen = () => {
     });
   }, []);
   const [data, setData] = useState([
-    { text: 'Bancos', image: 'https://i.imgur.com/MBBciCd.png' },
-    { text: 'Restaurantes', image: 'https://i.imgur.com/S3qhqOw.png' },
-    { text: 'Hoteles', image: 'https://i.imgur.com/mtHBnRk.png' },
-    { text: 'Farmacias', image: 'https://i.imgur.com/mV53L0F.png' },
-    { text: 'Gasolineras', image: 'https://img.freepik.com/vector-gratis/ilustracion-icono-dibujos-animados-gasolinera_138676-2605.jpg?w=2000' },
-    { text: 'Barberias', image: 'https://cdn-icons-png.flaticon.com/512/595/595604.png' },
+    { text: 'Bancos', image: 'https://i.imgur.com/slMIpLh.png' },
+    { text: 'Restaurantes', image: 'https://i.imgur.com/1YAKCnD.png' },
+    { text: 'Hoteles', image: 'https://i.imgur.com/VEQBtoM.png' },
+    { text: 'Farmacias', image: 'https://i.imgur.com/mX83bjL.png' },
+    { text: 'Gasolineras', image: 'https://i.imgur.com/Tt5mWRN.png' },
+    { text: 'Barberias', image: 'https://i.imgur.com/VCZ0aiI.png' },
+    { text: 'Gimnasios', image: 'https://i.imgur.com/lwBDw2H.png' },
+    { text: 'Hospital', image: 'https://i.imgur.com/5n9FC8p.png' },
+    { text: 'Automotriz', image: 'https://i.imgur.com/tyb93n3.png' },
+    { text: 'Plazas Comerciales', image: 'https://i.imgur.com/ScyxlFm.png' },
   ]);
   const [filterData, setFilterData] = useState([]);
   const [searchText, setSearchText] = useState('');
@@ -51,6 +55,18 @@ const DanliScreen = () => {
     } else if (text === 'Gasolineras') {
       navigation.navigate('Gasolineras Danli');
     } else if (text === 'Barberias') {
+      navigation.navigate('Barberias Danli');
+    }
+    else if (text === 'Gimnasios') {
+      navigation.navigate('Barberias Danli');
+    }
+    else if (text === 'Hospital') {
+      navigation.navigate('Barberias Danli');
+    }
+    else if (text === 'Automotriz') {
+      navigation.navigate('Barberias Danli');
+    }
+    else if (text === 'Plazas Comerciales') {
       navigation.navigate('Barberias Danli');
     }
   };
