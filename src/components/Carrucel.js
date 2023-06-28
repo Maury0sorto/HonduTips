@@ -13,9 +13,9 @@ import { createStackNavigator } from '@react-navigation/stack';
 
 
 const imagenes = [
-  "https://i.imgur.com/9UycxBg.jpg",
-  "https://i.imgur.com/3JsIc7p.jpg",
-  "https://i.imgur.com/dYTQAcn.jpg",
+  "https://i.imgur.com/ig5o937.jpg",
+  "https://i.imgur.com/SsAiDx4.jpg",
+  "https://i.imgur.com/NvF53X6.jpg",
   "https://images.unsplash.com/photo-1525183995014-bd94c0750cd5?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80",
   "https://images.unsplash.com/photo-1488462237308-ecaa28b729d7?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=714&q=80",
   "https://images.unsplash.com/photo-1503756234508-e32369269deb?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1035&q=80",
@@ -24,8 +24,8 @@ const imagenes = [
 
 const backdropImagenes = [
   "https://www.hondurastips.hn/wp-content/uploads/2016/08/danli-8.jpg",
-  "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/0a/fe/70/b2/catedral-san-pedro-apostol.jpg?w=500&h=-1&s=1",
   "https://scontent.fsap8-1.fna.fbcdn.net/v/t39.30808-6/266384242_494500052267714_6339538490678465268_n.jpg?stp=dst-jpg_p526x296&_nc_cat=101&ccb=1-7&_nc_sid=8bfeb9&_nc_ohc=YOVJgUlu4ioAX84XGEj&_nc_ht=scontent.fsap8-1.fna&oh=00_AfCdaBdEmVUfnybxf0uSH8aoTdxb5_0IDPtNdNZWwyTZOw&oe=649E8851",
+  "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/0a/fe/70/b2/catedral-san-pedro-apostol.jpg?w=500&h=-1&s=1",
   // Agrega más URL de imágenes personalizadas aquí
 ];
 
@@ -33,8 +33,8 @@ const backdropImagenes = [
 // Inicio de codigos de los texto debajo de el carrucel
 const titulos = [
   "DANLI 0703",
-  "SAN PEDRO SULA 0501",
   "TEGUCIGALPA 0801" ,
+  "SAN PEDRO SULA 0501",
   "Título 4",
   "Título 5",
   "Título 6",
@@ -103,10 +103,11 @@ export default function Carrucel() {
   const [isLoading, setIsLoading] = useState(true);
 
   const navigateToDanli = () => {
-    navigation.navigate('Search');
-    setTimeout(() => {
+    navigation.navigate('Search'); 
+    setTimeout(() => { 
       navigation.navigate('Danli');
     }, 300);
+    
   };
 
   const scrollX = React.useRef(new Animated.Value(0)).current;
@@ -141,7 +142,7 @@ export default function Carrucel() {
         horizontal={true}
         snapToAlignment="start"
         contentContainerStyle={{
-          paddingTop: 130,
+          paddingTop: 200,  // Para hacer mas arriba o mas abajo el carruccel
           paddingHorizontal: ESPACIO_CONTENEDOR,
         }}
         snapToInterval={ANCHO_CONTENEDOR}
@@ -170,10 +171,10 @@ export default function Carrucel() {
                   navigateToDanli();
                   break;
                 case 1:
-                  navigation.navigate("Danli");
+                  navigateToDanli();
                   break;
                 case 2:
-                  navigation.navigate("Screen3");
+                  navigateToDanli();
                   break;
                 // Resto de tus casos
                 default:
@@ -204,11 +205,7 @@ export default function Carrucel() {
       />
       
     
-      <View style={styles.container}>
-      <TouchableOpacity style={styles.button} onPress={navigateToDanli}>
-        <Text style={styles.buttonText}>Ir a Danli</Text>
-      </TouchableOpacity>
-    </View>
+      
 
     
     </SafeAreaView>
@@ -225,11 +222,11 @@ const styles = StyleSheet.create({
   },
   posterImage: {
     width: "100%",
-    height: ANCHO_CONTENEDOR * 1.2,
+    height: ANCHO_CONTENEDOR * 1.25,
     resizeMode: "cover",
     borderRadius: 24,
     margin: 0,
-    marginBottom: 10,
+    marginBottom:5,
   },
 
 
