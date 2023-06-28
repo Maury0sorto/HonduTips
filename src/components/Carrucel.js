@@ -23,9 +23,9 @@ const imagenes = [
 ];
 
 const backdropImagenes = [
-  "https://www.hondurastips.hn/wp-content/uploads/2016/08/danli-8.jpg",
+  "https://i.imgur.com/3zYzmxn.jpg",
   "https://scontent.fsap8-1.fna.fbcdn.net/v/t39.30808-6/266384242_494500052267714_6339538490678465268_n.jpg?stp=dst-jpg_p526x296&_nc_cat=101&ccb=1-7&_nc_sid=8bfeb9&_nc_ohc=YOVJgUlu4ioAX84XGEj&_nc_ht=scontent.fsap8-1.fna&oh=00_AfCdaBdEmVUfnybxf0uSH8aoTdxb5_0IDPtNdNZWwyTZOw&oe=649E8851",
-  "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/0a/fe/70/b2/catedral-san-pedro-apostol.jpg?w=500&h=-1&s=1",
+  "https://i.imgur.com/Cy47CV7.jpg",
   // Agrega más URL de imágenes personalizadas aquí
 ];
 
@@ -156,7 +156,7 @@ export default function Carrucel() {
         horizontal={true}
         snapToAlignment="start"
         contentContainerStyle={{
-          paddingTop: 200,  // Para hacer mas arriba o mas abajo el carruccel
+          paddingTop: 280,  // Para hacer mas arriba o mas abajo el carruccel
           paddingHorizontal: ESPACIO_CONTENEDOR,
         }}
         snapToInterval={ANCHO_CONTENEDOR}

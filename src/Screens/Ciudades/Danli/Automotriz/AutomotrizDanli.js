@@ -4,7 +4,7 @@ import { useNavigation } from '@react-navigation/native';
 import { Ionicons } from '@expo/vector-icons';
 import { HeaderBackButton } from '@react-navigation/stack';
 
-const DanliScreen = () => {
+const AutomotrizDanli = () => {
   const navigation = useNavigation();
 
   useEffect(() => {
@@ -13,16 +13,9 @@ const DanliScreen = () => {
     });
   }, []);
   const [data, setData] = useState([
-    { text: 'Bancos', image: 'https://i.imgur.com/slMIpLh.png' },
-    { text: 'Restaurantes', image: 'https://i.imgur.com/1YAKCnD.png' },
-    { text: 'Hoteles', image: 'https://i.imgur.com/VEQBtoM.png' },
-    { text: 'Farmacias', image: 'https://i.imgur.com/mX83bjL.png' },
-    { text: 'Gasolineras', image: 'https://i.imgur.com/Tt5mWRN.png' },
-    { text: 'Barberias', image: 'https://i.imgur.com/VCZ0aiI.png' },
-    { text: 'Gimnasios', image: 'https://i.imgur.com/lwBDw2H.png' },
-    { text: 'Hospital', image: 'https://i.imgur.com/5n9FC8p.png' },
-    { text: 'Automotriz', image: 'https://i.imgur.com/tyb93n3.png' },
-    { text: 'Plazas Comerciales', image: 'https://i.imgur.com/ScyxlFm.png' },
+   
+    { text: 'Lubricentro', image: 'https://i.imgur.com/tyb93n3.png' },
+    { text: 'Automotriz 2', image: 'https://i.imgur.com/tyb93n3.png' },
   ]);
   const [filterData, setFilterData] = useState([]);
   const [searchText, setSearchText] = useState('');
@@ -44,31 +37,13 @@ const DanliScreen = () => {
 
   const handleButtonPress = (text) => {
     // Configura la navegación a las pantallas correspondientes según el texto del botón
-    if (text === 'Bancos') {
+    if (text === 'Lubricentro') {
       navigation.navigate('Bancos Danli');
     } else if (text === 'Restaurantes') {
       navigation.navigate('Restaurantes Danli');
-    } else if (text === 'Hoteles') {
+    } else if (text === 'Automotriz 2') {
       navigation.navigate('Hoteles Danli');
-    } else if (text === 'Farmacias') {
-      navigation.navigate('Farmacias Danli');
-    } else if (text === 'Gasolineras') {
-      navigation.navigate('Gasolineras Danli');
-    } else if (text === 'Barberias') {
-      navigation.navigate('Barberias Danli');
-    }
-    else if (text === 'Gimnasios') {
-      navigation.navigate('Barberias Danli');
-    }
-    else if (text === 'Hospital') {
-      navigation.navigate('Barberias Danli');
-    }
-    else if (text === 'Automotriz') {
-      navigation.navigate('Automotriz Danli');
-    }
-    else if (text === 'Plazas Comerciales') {
-      navigation.navigate('Barberias Danli');
-    }
+    } 
   };
 
   
@@ -77,7 +52,7 @@ const DanliScreen = () => {
     if (filterData.length === 0 && searchText.length !== 0) {
       return (
         <Text style={styles.noResultsText}>
-          Este tipo de lugares aun no estan en la APP
+          Este tipo de Servicio Automotriz aun no se encuentra en la APP
         </Text>
       );
     }
@@ -256,4 +231,4 @@ const styles = StyleSheet.create({
   },
 });
 
-export default DanliScreen;
+export default AutomotrizDanli;
