@@ -102,13 +102,27 @@ export default function Carrucel() {
   const navigation = useNavigation();
   const [isLoading, setIsLoading] = useState(true);
 
+
+// Configuracion de navegaciones
+
   const navigateToDanli = () => {
     navigation.navigate('Search'); 
     setTimeout(() => { 
       navigation.navigate('Danli');
     }, 300);
-    
   };
+
+  const navigateToConstruccion = () => {
+    navigation.navigate('Search'); 
+    setTimeout(() => { 
+      navigation.navigate('Construccion');
+    }, 300);
+  };
+
+  // Fin Configuracion de navegaciones
+
+
+
 
   const scrollX = React.useRef(new Animated.Value(0)).current;
 
@@ -171,10 +185,10 @@ export default function Carrucel() {
                   navigateToDanli();
                   break;
                 case 1:
-                  navigateToDanli();
+                  navigateToConstruccion();
                   break;
                 case 2:
-                  navigateToDanli();
+                  navigateToConstruccion();
                   break;
                 // Resto de tus casos
                 default:

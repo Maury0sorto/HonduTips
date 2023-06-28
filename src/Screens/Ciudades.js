@@ -37,15 +37,15 @@ const Ciudades = () => {
     if (text === 'Danli') {
       navigation.navigate('Danli');
     } else if (text === 'Tegus') {
-      navigation.navigate('Search2');
+      navigation.navigate('Construccion');
     } else if (text === 'El Paraiso') {
-      navigation.navigate('Search2');
+      navigation.navigate('Construccion');
     } else if (text === 'La Ceiba') {
-      navigation.navigate('Search2');
+      navigation.navigate('Construccion');
     } else if (text === 'San Pedro Sula') {
-      navigation.navigate('Search2');
+      navigation.navigate('Construccion');
     } else if (text === 'Roatan') {
-      navigation.navigate('Search3');
+      navigation.navigate('Construccion');
     }
   };
 

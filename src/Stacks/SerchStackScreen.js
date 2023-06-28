@@ -16,6 +16,7 @@ import BarberiasDanli from '../Screens/Ciudades/Danli/BarberiasDanli';
 import FarmaciasDanli from '../Screens/Ciudades/Danli/FarmaciasDanli';
 
 
+import EnConstruccion from '../Screens/EnConstruccion';
 
 
 const SerchStackScreen = () => {        // Este stack es el de Search es decir es uno de los 3 que se ven en la parte de abajo
@@ -40,7 +41,7 @@ const SerchStackScreen = () => {        // Este stack es el de Search es decir e
           <SerchStack.Screen name="Farmacias Danli" component={FarmaciasDanli}/>
 
 
-
+          <SerchStack.Screen name="Construccion" component={EnConstruccion}/>
           <SerchStack.Screen name="Onboarding" component={OnboardingScreen}/>
         </SerchStack.Navigator>
   )
