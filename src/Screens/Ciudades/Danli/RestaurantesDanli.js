@@ -24,6 +24,8 @@ import PicolinoDanli from './RestaurantesDanli/PicolinoDanli';
 import OviserDanli from './RestaurantesDanli/Ovi&Serdanli';
 import PolloLandiaDanli from './RestaurantesDanli/PolloLandiadanli';
 import PolloslaCestaDanli from './RestaurantesDanli/LaCestaDanli';
+import PolloCampesinoDanli from './RestaurantesDanli/pollocampesinoDanli';
+import BigosDanli from './RestaurantesDanli/BigosDanli';
 
 const ScreenA = ({ text, mostrarBotonAnterior }) => {
   return (
@@ -358,6 +360,35 @@ const ScreenU= ({ text, mostrarBotonAnterior }) => {
     </View>
   );
 };
+const ScreenW= ({ text, mostrarBotonAnterior }) => {
+  return (
+    <View style={styles.componentContainer}>
+      <TouchableHighlight
+        style={styles.backButton}
+        underlayColor="#0080ff"
+        onPress={mostrarBotonAnterior}
+      >
+        <Text style={styles.backButtonText}>Ver los restaurantes...</Text>
+      </TouchableHighlight>
+      <PolloCampesinoDanli/>
+    </View>
+  );
+};
+const ScreenX= ({ text, mostrarBotonAnterior }) => {
+  return (
+    <View style={styles.componentContainer}>
+      <TouchableHighlight
+        style={styles.backButton}
+        underlayColor="#0080ff"
+        onPress={mostrarBotonAnterior}
+      >
+        <Text style={styles.backButtonText}>Ver los restaurantes...</Text>
+      </TouchableHighlight>
+      <BigosDanli/>
+    </View>
+  );
+};
+
 const RestaurantesDanli = () => {
   const [componenteVisible, setComponenteVisible] = useState(null);
   const [mostrarSelectList, setMostrarSelectList] = useState(true); // Nuevo estado
@@ -400,6 +431,16 @@ const RestaurantesDanli = () => {
     { text: "Ovi & Ser", image: 'https://scontent.fsap8-1.fna.fbcdn.net/v/t39.30808-6/323867740_6623661224317291_9202089584719900258_n.jpg?_nc_cat=100&cb=99be929b-59f725be&ccb=1-7&_nc_sid=09cbfe&_nc_ohc=XfQNz9xc_7UAX9ZXE9v&_nc_oc=AQlN_m1bdg4sYGCZ13nFbYiAIpriQ6_CelWPfswmYj-f8cwtqmUXvnMGhqQlHQJW3ug&_nc_ht=scontent.fsap8-1.fna&oh=00_AfC06cD4y05SI_Ho4LKJQA3bghZugniWOBI_IYU9nVEl4w&oe=649F3D08', screen: ScreenT},
     { text: "Pollolandia", image: 'https://scontent.fsap8-1.fna.fbcdn.net/v/t39.30808-6/347446343_772421607766649_795804025841303832_n.jpg?_nc_cat=100&cb=99be929b-59f725be&ccb=1-7&_nc_sid=09cbfe&_nc_ohc=odEBZQIWXLEAX__m-vR&_nc_ht=scontent.fsap8-1.fna&oh=00_AfD3jqI4stOrLVdhU92OO2FnoGauH65VPz8MCPYee-pAVA&oe=649FA659', screen: ScreenU},
     { text: "Pollos La Cesta", image: 'https://scontent.fsap8-1.fna.fbcdn.net/v/t39.30808-1/345920514_539994888349310_7491954719497548359_n.jpg?stp=dst-jpg_p200x200&_nc_cat=108&cb=99be929b-59f725be&ccb=1-7&_nc_sid=c6021c&_nc_ohc=tAK5_2fr8UwAX_6_D7-&_nc_ht=scontent.fsap8-1.fna&oh=00_AfDfTqxB_1wt5xxaWAUgSxj8jDI_dO7Ag744iDPl46Gf0w&oe=64A0C002', screen: ScreenV},
+    { text: "Pollo Campesino", image: 'https://scontent.fsap8-1.fna.fbcdn.net/v/t39.30808-6/327107488_3415127425397936_587678943379260759_n.jpg?_nc_cat=104&cb=99be929b-59f725be&ccb=1-7&_nc_sid=09cbfe&_nc_ohc=x_JDECsKWOsAX8a4rWL&_nc_ht=scontent.fsap8-1.fna&oh=00_AfBKUWk3Jxyzm6BBzQaTBJc2X2sF8RxZQzSD58dLdwzygQ&oe=64A189EB', screen: ScreenW},
+    { text: "Bigos", image: 'https://scontent.fsap8-1.fna.fbcdn.net/v/t39.30808-6/324188755_949078036090103_6975206024296977072_n.jpg?_nc_cat=105&cb=99be929b-59f725be&ccb=1-7&_nc_sid=09cbfe&_nc_ohc=GLoa1DsDUioAX_n6TVi&_nc_ht=scontent.fsap8-1.fna&oh=00_AfDLqcIryCSSehuP8ujI6ONHgK2vlw1L5rPIFefvFqz9jw&oe=64A19662', screen: ScreenX},
+    { text: "", image: '', screen: ScreenX},
+    { text: "", image: '', screen: ScreenX},
+    { text: "", image: '', screen: ScreenX},
+    { text: "", image: '', screen: ScreenX},
+    { text: "", image: '', screen: ScreenX},
+    { text: "", image: '', screen: ScreenX},
+    { text: "", image: '', screen: ScreenX},
+    { text: "", image: '', screen: ScreenX},
    
   
   
@@ -431,6 +472,18 @@ const RestaurantesDanli = () => {
     { key: '22', value: 'Ovi & Ser' },
     { key: '23', value: 'Pollolandia' },
     { key: '24', value: 'Pollos La Cesta' },
+    { key: '25', value: 'Pollo Campesino' },
+    { key: '26', value: 'Bigos' },
+    { key: '', value: '' },
+    { key: '', value: '' },
+    { key: '', value: '' },
+    { key: '', value: '' },
+    { key: '', value: '' },
+    { key: '', value: '' },
+    { key: '', value: '' },
+    { key: '', value: '' },
+    { key: '', value: '' },
+    { key: '', value: '' },
     
   ];
 
