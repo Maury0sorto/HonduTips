@@ -38,7 +38,7 @@ const AutomotrizDanli = () => {
   const handleButtonPress = (text) => {
     // Configura la navegación a las pantallas correspondientes según el texto del botón
     if (text === 'Lubricentro') {
-      navigation.navigate('Bancos Danli');
+      navigation.navigate('Lubricentros Danli');
     } else if (text === 'Restaurantes') {
       navigation.navigate('Restaurantes Danli');
     } else if (text === 'Automotriz 2') {
