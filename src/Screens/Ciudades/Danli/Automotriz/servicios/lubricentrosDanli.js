@@ -32,7 +32,7 @@ const ScreenA = ({ text, mostrarBotonAnterior }) => {
 
 
 
-const lubricentrosDanli = () => {
+const LubricentrosDanli = () => {
   const [componenteVisible, setComponenteVisible] = useState(null);
   const [mostrarSelectList, setMostrarSelectList] = useState(true); // Nuevo estado
   const [selectedOption, setSelectedOption] = useState('Recomendados');
@@ -202,4 +202,4 @@ const styles = StyleSheet.create({
   },
 });
 
-export default lubricentrosDanli;
+export default LubricentrosDanli;

@@ -31,7 +31,7 @@ const ScreenA = ({ text, mostrarBotonAnterior }) => {
 
 
 
-const carwashDanli = () => {
+const CarWashDanli = () => {
   const [componenteVisible, setComponenteVisible] = useState(null);
   const [mostrarSelectList, setMostrarSelectList] = useState(true); // Nuevo estado
   const [selectedOption, setSelectedOption] = useState('Recomendados');
@@ -201,4 +201,4 @@ const styles = StyleSheet.create({
   },
 });
 
-export default carwashDanli;
+export default CarWashDanli;
