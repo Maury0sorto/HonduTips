@@ -198,6 +198,25 @@ export default function Carrucel() {
                 case 2:
                   navigateToConstruccion();
                   break;
+                  case 3:
+                    navigateToConstruccion();
+                    break;
+                    case 4:
+                      navigateToConstruccion();
+                      break;
+                      case 5:
+                        navigateToConstruccion();
+                        break;
+                        case 6:
+                          navigateToConstruccion();
+                          break;
+                          case 7:
+                            navigateToConstruccion();
+                            break;
+                            case 8:
+                              navigateToConstruccion();
+                              break;
+
                 // Resto de tus casos
                 default:
                   break;
