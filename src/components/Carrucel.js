@@ -125,6 +125,7 @@ export default function Carrucel() {
       navigation.navigate('Construccion');
     }, 300);
   };
+  
 
   // Fin Configuracion de navegaciones
 
