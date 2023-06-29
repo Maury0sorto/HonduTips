@@ -44,30 +44,30 @@ const DanlíScreen = () => {
 
   const handleButtonPress = (text) => {
     // Configura la navegación a las pantallas correspondientes según el texto del botón
-    if (text === 'Bancos') {
-      navigation.navigate('Bancos Danlí');
+    if (text === 'Banca') {
+      navigation.navigate('Bancos Danli');
     } else if (text === 'Restaurantes') {
-      navigation.navigate('Restaurantes Danlí');
+      navigation.navigate('Restaurantes Danli');
     } else if (text === 'Hoteles') {
-      navigation.navigate('Hoteles Danlí');
+      navigation.navigate('Hoteles Danli');
     } else if (text === 'Farmacias') {
-      navigation.navigate('Farmacias Danlí');
+      navigation.navigate('Farmacias Danli');
     } else if (text === 'Gasolineras') {
-      navigation.navigate('Gasolineras Danlí');
+      navigation.navigate('Gasolineras Danli');
     } else if (text === 'Barberias') {
-      navigation.navigate('Barberias Danlí');
+      navigation.navigate('Barberias Danli');
     }
     else if (text === 'Gimnasios') {
-      navigation.navigate('Barberias Danlí');
+      navigation.navigate('Barberias Danli');
     }
-    else if (text === 'Hospital') {
-      navigation.navigate('Barberias Danlí');
+    else if (text === 'Salud') {
+      navigation.navigate('Barberias Danli');
     }
     else if (text === 'Automotriz') {
-      navigation.navigate('Automotriz Danlí');
+      navigation.navigate('Automotriz Danli');
     }
     else if (text === 'Plazas Comerciales') {
-      navigation.navigate('Barberias Danlí');
+      navigation.navigate('Barberias Danli');
     }
   };
 
