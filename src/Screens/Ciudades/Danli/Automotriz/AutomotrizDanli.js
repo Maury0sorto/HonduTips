@@ -14,9 +14,9 @@ const AutomotrizDanli = () => {
   }, []);
   const [data, setData] = useState([
    
-    { text: 'Lubricentros', image: 'https://i.imgur.com/Ly3u6Hy.png' },
-    { text: 'Talleres', image: 'https://i.imgur.com/yiy40fH.png' },
-    { text: 'CarWash', image: 'https://i.imgur.com/W0a4wIU.png' },
+    { text: 'Lubricentros', image: 'https://i.imgur.com/zcypVtQ.png' },
+    { text: 'Talleres', image: 'https://i.imgur.com/3QRHSCJ.png' },
+    { text: 'CarWash', image: 'https://i.imgur.com/SZ0GGQI.png' },
   ]);
   const [filterData, setFilterData] = useState([]);
   const [searchText, setSearchText] = useState('');
