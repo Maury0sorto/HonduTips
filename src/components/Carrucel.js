@@ -20,25 +20,31 @@ const imagenes = [
   "https://images.unsplash.com/photo-1488462237308-ecaa28b729d7?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=714&q=80",
   "https://images.unsplash.com/photo-1503756234508-e32369269deb?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1035&q=80",
   "https://images.unsplash.com/photo-1504681869696-d977211a5f4c?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=652&q=80",
+  "https://images.unsplash.com/photo-1504681869696-d977211a5f4c?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=652&q=80",
 ];
 
 const backdropImagenes = [
   "https://i.imgur.com/3zYzmxn.jpg",
   "https://scontent.fsap8-1.fna.fbcdn.net/v/t39.30808-6/266384242_494500052267714_6339538490678465268_n.jpg?stp=dst-jpg_p526x296&_nc_cat=101&ccb=1-7&_nc_sid=8bfeb9&_nc_ohc=YOVJgUlu4ioAX84XGEj&_nc_ht=scontent.fsap8-1.fna&oh=00_AfCdaBdEmVUfnybxf0uSH8aoTdxb5_0IDPtNdNZWwyTZOw&oe=649E8851",
   "https://i.imgur.com/Cy47CV7.jpg",
+  "https://3.cdnpt.com/Destinations/1399/1399/la-ceiba-3751619739-L.jpg",
+  "https://www.iht.hn/sites/default/files/inline-images/The%20Daily%20Beast%20-%201.jpg",
+  "https://media.tacdn.com/media/attractions-splice-spp-674x446/0a/ff/16/0a.jpg",
+  "https://www.elheraldo.hn/binrepository/1200x800/0c0/0d0/none/45933/DABA/telamar7-250515_EH847932_MG118921135.jpg",
   // Agrega más URL de imágenes personalizadas aquí
 ];
 
 
 // Inicio de codigos de los texto debajo de el carrucel
 const titulos = [
-  "DANLI 0703",
+  "DANLÍ 0703",
   "TEGUCIGALPA 0801" ,
   "SAN PEDRO SULA 0501",
-  "Título 4",
-  "Título 5",
-  "Título 6",
-  "Título 7",
+  "LA CEIBA 0101",
+  "ROATÁN 1101",
+  "COMAYAGUA 0301",
+  "TELA 0107",
+  "SANTA ROSA DE COPÁN 0401",
 ];
 // Fin de codigos de los texto debajo de el carrucel
 

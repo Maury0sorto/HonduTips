@@ -7,12 +7,12 @@ import { Ionicons } from '@expo/vector-icons';
 const Ciudades = () => {
   const navigation = useNavigation();
   const [data, setData] = useState([
-    { text: 'Danli', image: 'https://i.imgur.com/9UycxBg.jpg' },
-    { text: 'Tegus', image: 'https://i.imgur.com/dYTQAcn.jpg' },
-    { text: 'El Paraiso', image: 'https://i.imgur.com/AkAFz7F.jpg' },
+    { text: 'Danlí', image: 'https://i.imgur.com/9UycxBg.jpg' },
+    { text: 'Tegucigalpa', image: 'https://i.imgur.com/dYTQAcn.jpg' },
+    { text: 'El Paraíso', image: 'https://i.imgur.com/AkAFz7F.jpg' },
     { text: 'La Ceiba', image: 'https://i.imgur.com/RzTk95v.jpg' },
     { text: 'San Pedro Sula', image: 'https://i.imgur.com/3JsIc7p.jpg' },
-    { text: 'Roatan', image: 'https://i.imgur.com/iGGWOG6.jpg' },
+    { text: 'Roatán', image: 'https://i.imgur.com/iGGWOG6.jpg' },
   ]);
   const [filterData, setFilterData] = useState([]);
   const [searchText, setSearchText] = useState('');
@@ -34,17 +34,17 @@ const Ciudades = () => {
 
   const handleButtonPress = (text) => {
     // Configura la navegación a las pantallas correspondientes según el texto del botón
-    if (text === 'Danli') {
-      navigation.navigate('Danli');
+    if (text === 'Danlí') {
+      navigation.navigate('Danlí');
     } else if (text === 'Tegus') {
       navigation.navigate('Construccion');
-    } else if (text === 'El Paraiso') {
+    } else if (text === 'El Paraíso') {
       navigation.navigate('Construccion');
     } else if (text === 'La Ceiba') {
       navigation.navigate('Construccion');
     } else if (text === 'San Pedro Sula') {
       navigation.navigate('Construccion');
-    } else if (text === 'Roatan') {
+    } else if (text === 'Roatán') {
       navigation.navigate('Construccion');
     }
   };
