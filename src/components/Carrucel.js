@@ -31,6 +31,7 @@ const backdropImagenes = [
   "https://www.iht.hn/sites/default/files/inline-images/The%20Daily%20Beast%20-%201.jpg",
   "https://media.tacdn.com/media/attractions-splice-spp-674x446/0a/ff/16/0a.jpg",
   "https://www.elheraldo.hn/binrepository/1200x800/0c0/0d0/none/45933/DABA/telamar7-250515_EH847932_MG118921135.jpg",
+  "https://www.honduras.com/wp-content/uploads/2020/08/ruinas-de-copan.jpg",
   // Agrega más URL de imágenes personalizadas aquí
 ];
 
