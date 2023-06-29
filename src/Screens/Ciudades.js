@@ -35,7 +35,7 @@ const Ciudades = () => {
   const handleButtonPress = (text) => {
     // Configura la navegación a las pantallas correspondientes según el texto del botón
     if (text === 'Danlí') {
-      navigation.navigate('Danlí');
+      navigation.navigate('Danli');
     } else if (text === 'Tegus') {
       navigation.navigate('Construccion');
     } else if (text === 'El Paraíso') {
