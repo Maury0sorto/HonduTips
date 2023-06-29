@@ -98,7 +98,7 @@ export default function BACDanli() {
       <View style={styles.scheduleContainer}>
         <View style={styles.scheduleItem}>
           <Icon name="clock-o" size={20} color="#000" style={styles.scheduleIcon} />
-          <Text style={styles.scheduleText}>Lun-Vie: 8:30 AM - 4:30 PM</Text>
+          <Text style={styles.scheduleText}>Lun-Vie: 8:30 AM - 4:30 PM</Text>  
         </View>
         <View style={styles.scheduleItem}>
           <Icon name="clock-o" size={20} color="#000" style={styles.scheduleIcon} />
