@@ -8,6 +8,8 @@ import BANTRABDanli from './BancosDanli/BANTRABDanli';
 import BancoOccidenteDanli from './BancosDanli/BancoOccidenteDanli';
 import BancoProamericaDanli from './BancosDanli/BancoProamericaDanli';
 import BanPaisDanli from './BancosDanli/BanPaisDanli';
+import BACDanli from './BancosDanli/BACDanli';
+
 
 const ScreenA = ({ text, mostrarBotonAnterior }) => {
   return (
@@ -120,6 +122,25 @@ const ScreenF = ({ text, mostrarBotonAnterior }) => {
   );
 };
 
+
+const ScreenG = ({ text, mostrarBotonAnterior }) => {
+  return (
+    <View style={styles.componentContainer}>
+      <TouchableHighlight
+        style={styles.backButton}
+        underlayColor="#0080ff"
+        onPress={mostrarBotonAnterior}
+      >
+          <>
+      <Ionicons name="arrow-back" size={24} color="black" style={styles.backButtonIcon} />
+      <Text style={styles.backButtonText}>Regresar</Text>
+    </>
+      </TouchableHighlight>
+      <BACDanli/>
+    </View>
+  );
+};
+
 const MyScreen = () => {
   const [componenteVisible, setComponenteVisible] = useState(null);
   const [mostrarSelectList, setMostrarSelectList] = useState(true); // Nuevo estado
@@ -142,9 +163,11 @@ const MyScreen = () => {
    
     { text: 'Banco Ficohsa', image: 'https://i.imgur.com/MZ5vWuQ.png', screen: ScreenB },
     { text: 'Banco Occidente', image: 'https://i.imgur.com/hCvDavs.jpg', screen: ScreenC },
-    { text: 'Banco Proamerica', image: 'https://play-lh.googleusercontent.com/XN1DevVYDHl1jdi3kn6nfz9u-eJXzN0j3ZCJmgEjSryuNxBn_4KpKE7EpVnwauEX6Vk', screen: ScreenD },
+    { text: 'Banco Promerica', image: 'https://play-lh.googleusercontent.com/XN1DevVYDHl1jdi3kn6nfz9u-eJXzN0j3ZCJmgEjSryuNxBn_4KpKE7EpVnwauEX6Vk', screen: ScreenD },
     { text: 'BANPAIS', image: 'https://i.imgur.com/351oecS.png', screen: ScreenE },
     { text: 'Banco De Los Trabajadores', image: 'https://play-lh.googleusercontent.com/sqpvV9AEkQ0gMMFGmtZpOP8xpTV8iWcopMdo0QujP6tm59AP_3CRFMpFojMLIt_je4Q', screen: ScreenF },
+    { text: 'BAC', image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSeU4IPpu2dzGKQeWwsn-d1MnLcm_Zon1DMptUP_g67pfmhtZYl3QGu2Fe2WVSo7hQ-S9E&usqp=CAU', screen: ScreenG },
+  
   ];
 
   const data2 = [
@@ -152,10 +175,11 @@ const MyScreen = () => {
     { key: '2', value: 'Banco Atlantida' },
     { key: '3', value: 'Banco Ficohsa' },
     { key: '4', value: 'Banco Occidente' },
-    { key: '5', value: 'Banco Proamerica' },
+    { key: '5', value: 'Banco Promerica' },
     { key: '6', value: 'BANPAIS' },
     { key: '7', value: 'Banco De Los Trabajadores' },
     { key: '8', value: 'Banco Popular' },
+    { key: '9', value: 'BAC' },
   ];
 
   const ComponenteVisible = componenteVisible?.screenComponent || null;
