@@ -6,10 +6,10 @@ import Swiper from "react-native-web-swiper";
 
 const locationsData = [
   {
-    title: "Llantiservicios BARPÍN",
+    title: "Auto Estilo",
      
-    latitude:     14.039215220288225, 
-    longitude:   -86.57448594356545,
+    latitude:     14.027700610874744, 
+    longitude:   -86.57952633986953,
   },
  
   
@@ -18,13 +18,13 @@ const locationsData = [
   // Agrega más ubicaciones aquí si lo deseas
 ];
 
-export default function BarPinDanli() {
+export default function AutoEstiloDanli() {
   const mapRef = useRef(null);
   const initialRegion = {
-    latitude:     14.039215220288225, 
-    longitude:   -86.57448594356545, 
-    latitudeDelta: 0.01,
-    longitudeDelta: 0.01,
+    latitude:  14.027700610874744,
+    longitude:  -86.57952633986953, 
+    latitudeDelta: 0.008,
+    longitudeDelta: 0.008,
   };
 
   const openGoogleMaps = (latitude, longitude) => {
@@ -72,7 +72,7 @@ export default function BarPinDanli() {
   return (
     <ScrollView>
       <View style={styles.container}>
-        <Text style={styles.title}>Llantiservicios BARPÍN</Text>
+        <Text style={styles.title}>Auto Estilo</Text>
         <View style={styles.containerSwipers}>
           <View style={styles.swiperContainer}>
             <Swiper
@@ -85,10 +85,10 @@ export default function BarPinDanli() {
             >
 
                 <View style={styles.slide}>
-                <Image style={styles.image} source={{ uri: 'https://scontent.fsap8-1.fna.fbcdn.net/v/t39.30808-6/305309513_489972073134516_7221970525500718007_n.jpg?stp=dst-jpg_s417x417&_nc_cat=103&cb=99be929b-59f725be&ccb=1-7&_nc_sid=19026a&_nc_ohc=x6-mvuDZm1gAX_LLrNx&_nc_ht=scontent.fsap8-1.fna&oh=00_AfB-F6i2dbwBPt7iQfX8PQ_4uiSExDaMKy6ovHzNaICKzg&oe=64A31EBB' }} />
+                <Image style={styles.image} source={{ uri: 'https://scontent.fsap8-1.fna.fbcdn.net/v/t39.30808-6/268406954_1519726668407077_9103874267601601833_n.jpg?_nc_cat=107&cb=99be929b-59f725be&ccb=1-7&_nc_sid=a26aad&_nc_ohc=spY0idW8_24AX9FJdhx&_nc_ht=scontent.fsap8-1.fna&oh=00_AfA5z_NScoJHYPVZJ6dYgLBVWxF-08Ps9qwgZnA7AwlP2w&oe=64A2C544' }} />
               </View>
                  <View style={styles.slide}>
-                <Image style={styles.image} source={{ uri: 'https://scontent.fsap8-1.fna.fbcdn.net/v/t1.6435-9/35527345_622168114828957_1650786747690254336_n.jpg?_nc_cat=105&cb=99be929b-59f725be&ccb=1-7&_nc_sid=e3f864&_nc_ohc=vuuFCfwibAQAX8SvUoH&_nc_ht=scontent.fsap8-1.fna&oh=00_AfDOkh_ztaRqN_XgHBfjOuvl8j-YjFYN-aZ9ll7PS-x58A&oe=64C5225E' }} />
+                <Image style={styles.image} source={{ uri: 'https://scontent.fsap8-1.fna.fbcdn.net/v/t1.6435-9/149395395_1311004265945986_5688657656618193352_n.jpg?_nc_cat=110&cb=99be929b-59f725be&ccb=1-7&_nc_sid=a26aad&_nc_ohc=Gs7FznKpEUcAX_Cspuz&_nc_ht=scontent.fsap8-1.fna&oh=00_AfDQCWmDiAvcXXd5AOdyW2sRjCTXYW23_6jfBvYHU-RUCA&oe=64C524BE' }} />
               </View>
               
              
@@ -102,7 +102,7 @@ export default function BarPinDanli() {
       <View style={styles.scheduleContainer}>
         <View style={styles.scheduleItem}>
           <Icon name="clock-o" size={20} color="#000" style={styles.scheduleIcon} />
-          <Text style={styles.scheduleText}>Lun-Sab: 7:00 AM - 5:30 PM</Text>
+          <Text style={styles.scheduleText}>Lun-Sab: 7:30 AM - 5:30 PM</Text>
         </View>
         <View style={styles.scheduleItem}>
           <Icon name="clock-o" size={20} color="#000" style={styles.scheduleIcon} />
@@ -115,7 +115,7 @@ export default function BarPinDanli() {
           <TouchableOpacity
             style={styles.button}
             onPress={() => {
-              Linking.openURL('https://www.facebook.com/profile.php?id=100063651816022');
+              Linking.openURL('https://www.facebook.com/AutoEstiloDanli');
             }}
           >
             <Text style={styles.buttonText}>Visitar</Text>
@@ -123,7 +123,7 @@ export default function BarPinDanli() {
           <TouchableOpacity
             style={styles.button}
             onPress={() => {
-              Linking.openURL('tel: +50499732760');
+              Linking.openURL('tel: +50494754140');
             }}
           >
             <Text style={styles.buttonText}>Contactar</Text>
