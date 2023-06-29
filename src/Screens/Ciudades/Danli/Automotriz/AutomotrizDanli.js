@@ -14,8 +14,9 @@ const AutomotrizDanli = () => {
   }, []);
   const [data, setData] = useState([
    
-    { text: 'Lubricentro', image: 'https://i.imgur.com/tyb93n3.png' },
-    { text: 'Automotriz 2', image: 'https://i.imgur.com/tyb93n3.png' },
+    { text: 'Lubricentros', image: 'https://i.imgur.com/tyb93n3.png' },
+    { text: 'Talleres', image: 'https://i.imgur.com/tyb93n3.png' },
+    { text: 'CarWash', image: 'https://i.imgur.com/tyb93n3.png' },
   ]);
   const [filterData, setFilterData] = useState([]);
   const [searchText, setSearchText] = useState('');
@@ -37,12 +38,14 @@ const AutomotrizDanli = () => {
 
   const handleButtonPress = (text) => {
     // Configura la navegación a las pantallas correspondientes según el texto del botón
-    if (text === 'Lubricentro') {
+    if (text === 'Lubricentros') {
       navigation.navigate('Lubricentros Danli');
-    } else if (text === 'Restaurantes') {
-      navigation.navigate('Restaurantes Danli');
-    } else if (text === 'Automotriz 2') {
+    }  
+    else if (text === 'Talleres') {
       navigation.navigate('Hoteles Danli');
+    } 
+    else if (text === 'CarWash') {
+      navigation.navigate('CarWash Danli');
     } 
   };
 

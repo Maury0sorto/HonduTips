@@ -3,7 +3,7 @@ import { View, Text, Image, TouchableHighlight, StyleSheet, ScrollView,Touchable
 import { SelectList } from 'react-native-dropdown-select-list';
 import { Ionicons } from '@expo/vector-icons';
 
-import BarPinDanli from './BarPinDanli';
+import JirehDanli from './carwashJireh';
 
  
 
@@ -21,7 +21,7 @@ const ScreenA = ({ text, mostrarBotonAnterior }) => {
       <Text style={styles.backButtonText}>Regresar</Text>
     </>
     </TouchableHighlight>
-    <BarPinDanli/>
+    <JirehDanli/>
    
   </View>
   );
@@ -31,8 +31,7 @@ const ScreenA = ({ text, mostrarBotonAnterior }) => {
 
 
 
-
-const lubricentrosDanli = () => {
+const carwashDanli = () => {
   const [componenteVisible, setComponenteVisible] = useState(null);
   const [mostrarSelectList, setMostrarSelectList] = useState(true); // Nuevo estado
   const [selectedOption, setSelectedOption] = useState('Recomendados');
@@ -50,14 +49,14 @@ const lubricentrosDanli = () => {
   };
 
   const buttons = [
-    { text: "Llantiservicios Barpin", image: 'https://scontent.fsap8-1.fna.fbcdn.net/v/t39.30808-6/335969989_667936425338094_8331319845488467097_n.jpg?_nc_cat=104&cb=99be929b-59f725be&ccb=1-7&_nc_sid=09cbfe&_nc_ohc=-3TuBYC2Y8oAX_pR_Mv&_nc_ht=scontent.fsap8-1.fna&oh=00_AfBIkNrMiO8wSM-nQo1yxwXovZUwbCrjR1P8V-SNTNtHFA&oe=64A1F83C',  screen: ScreenA },
+    { text: "CarWash Jireh", image: 'https://scontent.fsap8-1.fna.fbcdn.net/v/t39.30808-6/341316165_727267185848390_9015755489032329918_n.jpg?_nc_cat=102&cb=99be929b-59f725be&ccb=1-7&_nc_sid=09cbfe&_nc_ohc=tERkz3TKimgAX8yDKke&_nc_ht=scontent.fsap8-1.fna&oh=00_AfA2IY34xk1HW5UikTkeDxVvmYfmu8zIO--86gBlZSH8QQ&oe=64A2EA5D',  screen: ScreenA },
     
   ];
 
   const data2 = [
     { key: '1', value: 'Recomendados' },
-    { key: '2', value: "Llantiservicios Barpin" },
-    
+    { key: '2', value: "CarWash Jireh" },
+   
     
   ];
 
@@ -202,4 +201,4 @@ const styles = StyleSheet.create({
   },
 });
 
-export default lubricentrosDanli;
+export default carwashDanli;
