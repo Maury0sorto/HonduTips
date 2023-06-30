@@ -3,29 +3,30 @@ import { View, Text, Image, TouchableHighlight, StyleSheet, ScrollView,Touchable
 import { SelectList } from 'react-native-dropdown-select-list';
 import { Ionicons } from '@expo/vector-icons';
 
- 
 
-import FarmaciaKielsaDanli from './FarmaciasDanli/FarmaciaKielsaDanli';
-import ACFitnesDanli from './GimnasiosDanli/ACFitnessDanli';
-import MuscleTempleGYMDanli from './GimnasiosDanli/MuscleTempleGYMDanli';
-import RoyalGYMDanli from './GimnasiosDanli/RoyalGYMDanli';
+import ChesterChikeDanli from './RestaurantesDanli/ChesterChikenDanli';
+import PapaJohnstDanli from './RestaurantesDanli/PapaJohnsDanli';
+import GasolineraUnoDanli from './GasolinerasDanli/GasolineraUnoDanli';
+import GasolineraTexacoDanli from './GasolinerasDanli/GasolineraTexacoDanli';
+import GasolineraPumaDanli from './GasolinerasDanli/GasolineraPumaDanli';
 
 const ScreenA = ({ text, mostrarBotonAnterior }) => {
   return (
     <View style={styles.componentContainer}>
-    <TouchableHighlight
-      style={styles.backButton}
-      underlayColor="#0080ff"
-      onPress={mostrarBotonAnterior}
-    >
-       <>
+      <TouchableHighlight
+        style={styles.backButton}
+        underlayColor="#FFFF"
+        onPress={mostrarBotonAnterior}
+      >
+        <>
       <Ionicons name="arrow-back" size={24} color="black" style={styles.backButtonIcon} />
       <Text style={styles.backButtonText}>Regresar</Text>
     </>
-    </TouchableHighlight>
-    <ACFitnesDanli/>
+       
+      </TouchableHighlight>
+      <GasolineraUnoDanli/>
    
-  </View>
+    </View>
   );
 };
 
@@ -42,7 +43,7 @@ const ScreenB = ({ text, mostrarBotonAnterior }) => {
       <Text style={styles.backButtonText}>Regresar</Text>
     </>
       </TouchableHighlight>
-      <RoyalGYMDanli/>
+      <GasolineraTexacoDanli/>
      
     </View>
   );
@@ -61,7 +62,7 @@ const ScreenC = ({ text, mostrarBotonAnterior }) => {
       <Text style={styles.backButtonText}>Regresar</Text>
     </>
       </TouchableHighlight>
-      <MuscleTempleGYMDanli/>
+      <GasolineraPumaDanli/>
     </View>
   );
 };
@@ -74,22 +75,22 @@ const ScreenD = ({ text, mostrarBotonAnterior }) => {
         underlayColor="#0080ff"
         onPress={mostrarBotonAnterior}
       >
-         <>
+        <>
       <Ionicons name="arrow-back" size={24} color="black" style={styles.backButtonIcon} />
       <Text style={styles.backButtonText}>Regresar</Text>
     </>
       </TouchableHighlight>
-      <FarmaciaKielsaDanli/>
+      <PapaJohnstDanli/>
     </View>
   );
 };
 
 
 
-const GimnasiosDanli = () => {
+const PlazasComercialesDanli = () => {
   const [componenteVisible, setComponenteVisible] = useState(null);
   const [mostrarSelectList, setMostrarSelectList] = useState(true); // Nuevo estado
-  const [selectedOption, setSelectedOption] = useState('Recomendados');
+  const [selectedOption, setSelectedOption] = useState('Recomendadas');
 
   const mostrarComponente = (text, screenComponent) => {
     setMostrarSelectList(false); // Ocultar SelectList
@@ -100,28 +101,31 @@ const GimnasiosDanli = () => {
   const mostrarBotonAnterior = () => {
      setMostrarSelectList(true); // Mostrar SelectList nuevamente
   setComponenteVisible(null);
-  setSelectedOption("Recomendados");
+  setSelectedOption("Recomendadas");
   };
 
   const buttons = [
-    { text: "AC Fitnes", image: 'https://scontent.fsap8-1.fna.fbcdn.net/v/t39.30808-6/217634985_100532505642965_2528312128850862728_n.png?_nc_cat=103&ccb=1-7&_nc_sid=09cbfe&_nc_ohc=XtmznUlbEucAX9MXem4&_nc_ht=scontent.fsap8-1.fna&oh=00_AfBX2RacVaR2Lf2YK_R9-cy79-oPXArSbsa1_DPqX5tmrg&oe=64A460A4',  screen: ScreenA },
-    { text: 'Royal GYM', image: 'https://scontent.fsap8-1.fna.fbcdn.net/v/t39.30808-6/278057476_487902492781642_6975817844622820455_n.jpg?_nc_cat=108&ccb=1-7&_nc_sid=09cbfe&_nc_ohc=5Px4BwuXfSQAX8FqRf4&_nc_ht=scontent.fsap8-1.fna&oh=00_AfB8XDtpiTkyOCmqDiLTobgNvdMrF-flg-4f5qsyVE49Cg&oe=64A52DE2', screen: ScreenB },
-    { text: "Muscle Temple Gym", image: 'https://scontent.fsap8-1.fna.fbcdn.net/v/t39.30808-6/293997360_371740498377165_761127965618406608_n.jpg?_nc_cat=104&ccb=1-7&_nc_sid=09cbfe&_nc_ohc=9aG33ZBzNpQAX9isKKj&_nc_ht=scontent.fsap8-1.fna&oh=00_AfB0hXuvkRSMNlZuONFYd-XiSQiDLC5L54qI_1-XOaEE5Q&oe=64A39520', screen: ScreenC },
-   
+    { text: "Mall Uniplaza", image: 'https://i.imgur.com/craZFGv.jpg',  screen: ScreenA },
+    { text: 'Las Colinas', image: 'https://scontent.fsap8-1.fna.fbcdn.net/v/t39.30808-6/343303187_781344000219687_7983847203504964586_n.jpg?_nc_cat=100&ccb=1-7&_nc_sid=09cbfe&_nc_ohc=FS21Rp5iFksAX8Vdjxp&_nc_ht=scontent.fsap8-1.fna&oh=00_AfDOGRGzoJsT_5e5WmNxPDBfq1SXN8VkNcLLyrhdfwdb9Q&oe=64A526D4', screen: ScreenB },
+    
+
   ];
 
   const data2 = [
-    { key: '1', value: 'Recomendados' },
-    { key: '2', value: "AC Fitnes" },
-    { key: '3', value: 'Royal GYM' },
-    { key: '4', value: 'Muscle Temple Gym' },
+    { key: '1', value: 'Recomendadas' },
+    { key: '2', value: "Mall Uniplaza" },
+    { key: '3', value: 'Las Colinas' },
+    
+    
+    
+    
   ];
 
   const ComponenteVisible = componenteVisible?.screenComponent || null;
 
   const filteredButtons = buttons.filter(
     (button) =>
-      selectedOption === 'Recomendados' || button.text.includes(selectedOption)
+      selectedOption === 'Recomendadas' || button.text.includes(selectedOption)
   ); 
 
   
@@ -135,9 +139,9 @@ const GimnasiosDanli = () => {
             setSelected={(val) => setSelectedOption(val)}
             data={data2}
             save="value"
-            placeholder="Recomendados"
-            noDataText="Restaurante no disponible"
-            searchPlaceholder="Busca tu farmacia"
+            placeholder="Recomendadas"
+            noDataText="Gasolinera no disponible"
+            searchPlaceholder="Busca tu gasolinera"
             onInputChange={(text) => mostrarComponente(text, null)}
           />
         </View>
@@ -246,9 +250,11 @@ const styles = StyleSheet.create({
     marginBottom: 10,
     marginTop: 20,
 
-    
+
+
     flexDirection: 'row',
     alignItems: 'center',
+
   },
   backButtonText: {
     color: '#000',
@@ -258,4 +264,4 @@ const styles = StyleSheet.create({
   },
 });
 
-export default GimnasiosDanli;
+export default PlazasComercialesDanli;
