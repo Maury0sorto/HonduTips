@@ -6,7 +6,7 @@ import Swiper from "react-native-web-swiper";
 
 const locationsData = [
   {
-    title: 'Davvienda',
+    title: 'Davivienda',
  
     latitude:   14.030758796002624, 
     longitude:  -86.56845155513517,
