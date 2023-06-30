@@ -16,7 +16,7 @@ import BarberiasDanli from '../Screens/Ciudades/Danli/BarberiasDanli';
 import FarmaciasDanli from '../Screens/Ciudades/Danli/FarmaciasDanli';
 import AutomotrizDanli from '../Screens/Ciudades/Danli/Automotriz/AutomotrizDanli';
 import CarWashDanli from '../Screens/Ciudades/Danli/Automotriz/servicios/CarWashDanli';
-import LubricentrosDanli from '../Screens/Ciudades/Danli/Automotriz/servicios/LubricentrosDanli';
+import LubricentrosDanli from '../Screens/Ciudades/Danli/Automotriz/servicios/lubricentrosDanli';
 
 
 import EnConstruccion from '../Screens/EnConstruccion';
