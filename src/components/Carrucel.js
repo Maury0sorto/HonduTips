@@ -13,7 +13,7 @@ import { createStackNavigator } from '@react-navigation/stack';
 
 
 const imagenes = [
-  "https://i.imgur.com/ig5o937.jpg",
+  "https://i.imgur.com/BN3nShb.jpg",
   "https://i.imgur.com/SsAiDx4.jpg",
   "https://i.imgur.com/NvF53X6.jpg",
   

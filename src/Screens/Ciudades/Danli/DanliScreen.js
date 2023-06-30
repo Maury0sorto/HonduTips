@@ -13,7 +13,7 @@ const DanlíScreen = () => {
     });
   }, []);
   const [data, setData] = useState([
-    { text: 'Banca', image: 'https://i.imgur.com/slMIpLh.png' },
+    { text: 'Banca', image: 'https://i.imgur.com/r6NIVCc.png' },
     { text: 'Restaurantes', image: 'https://i.imgur.com/1YAKCnD.png' },
     { text: 'Hoteles', image: 'https://i.imgur.com/VEQBtoM.png' },
     { text: 'Farmacias', image: 'https://i.imgur.com/mX83bjL.png' },
@@ -58,7 +58,7 @@ const DanlíScreen = () => {
       navigation.navigate('Barberias Danli');
     }
     else if (text === 'Gimnasios') {
-      navigation.navigate('Barberias Danli');
+      navigation.navigate('Gimnasios Danli');
     }
     else if (text === 'Salud') {
       navigation.navigate('Barberias Danli');
