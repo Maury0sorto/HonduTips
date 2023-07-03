@@ -26,6 +26,9 @@ import PolloLandiaDanli from './RestaurantesDanli/PolloLandiadanli';
 import PolloslaCestaDanli from './RestaurantesDanli/LaCestaDanli';
 import PolloCampesinoDanli from './RestaurantesDanli/pollocampesinoDanli';
 import BigosDanli from './RestaurantesDanli/BigosDanli';
+import KamfuDanli from './RestaurantesDanli/KamfuDanli';
+import OrientalDanli from './RestaurantesDanli/OrientalDanli';
+import PupusasDanli from './RestaurantesDanli/PupusasDanli';
 
 const ScreenA = ({ text, mostrarBotonAnterior }) => {
   return (
@@ -388,6 +391,48 @@ const ScreenX= ({ text, mostrarBotonAnterior }) => {
     </View>
   );
 };
+const ScreenY= ({ text, mostrarBotonAnterior }) => {
+  return (
+    <View style={styles.componentContainer}>
+      <TouchableHighlight
+        style={styles.backButton}
+        underlayColor="#0080ff"
+        onPress={mostrarBotonAnterior}
+      >
+        <Text style={styles.backButtonText}>Ver los restaurantes...</Text>
+      </TouchableHighlight>
+      <KamfuDanli/>
+    </View>
+  );
+};
+const ScreenZ= ({ text, mostrarBotonAnterior }) => {
+  return (
+    <View style={styles.componentContainer}>
+      <TouchableHighlight
+        style={styles.backButton}
+        underlayColor="#0080ff"
+        onPress={mostrarBotonAnterior}
+      >
+        <Text style={styles.backButtonText}>Ver los restaurantes...</Text>
+      </TouchableHighlight>
+      <OrientalDanli/>
+    </View>
+  );
+};
+const ScreenAA= ({ text, mostrarBotonAnterior }) => {
+  return (
+    <View style={styles.componentContainer}>
+      <TouchableHighlight
+        style={styles.backButton}
+        underlayColor="#0080ff"
+        onPress={mostrarBotonAnterior}
+      >
+        <Text style={styles.backButtonText}>Ver los restaurantes...</Text>
+      </TouchableHighlight>
+      <PupusasDanli/>
+    </View>
+  );
+};
 
 const RestaurantesDanli = () => {
   const [componenteVisible, setComponenteVisible] = useState(null);
@@ -433,14 +478,9 @@ const RestaurantesDanli = () => {
     { text: "Pollos La Cesta", image: 'https://scontent.fsap8-1.fna.fbcdn.net/v/t39.30808-1/345920514_539994888349310_7491954719497548359_n.jpg?stp=dst-jpg_p200x200&_nc_cat=108&cb=99be929b-59f725be&ccb=1-7&_nc_sid=c6021c&_nc_ohc=tAK5_2fr8UwAX_6_D7-&_nc_ht=scontent.fsap8-1.fna&oh=00_AfDfTqxB_1wt5xxaWAUgSxj8jDI_dO7Ag744iDPl46Gf0w&oe=64A0C002', screen: ScreenV},
     { text: "Pollo Campesino", image: 'https://scontent.fsap8-1.fna.fbcdn.net/v/t39.30808-6/327107488_3415127425397936_587678943379260759_n.jpg?_nc_cat=104&cb=99be929b-59f725be&ccb=1-7&_nc_sid=09cbfe&_nc_ohc=x_JDECsKWOsAX8a4rWL&_nc_ht=scontent.fsap8-1.fna&oh=00_AfBKUWk3Jxyzm6BBzQaTBJc2X2sF8RxZQzSD58dLdwzygQ&oe=64A189EB', screen: ScreenW},
     { text: "Bigos", image: 'https://scontent.fsap8-1.fna.fbcdn.net/v/t39.30808-6/324188755_949078036090103_6975206024296977072_n.jpg?_nc_cat=105&cb=99be929b-59f725be&ccb=1-7&_nc_sid=09cbfe&_nc_ohc=GLoa1DsDUioAX_n6TVi&_nc_ht=scontent.fsap8-1.fna&oh=00_AfDLqcIryCSSehuP8ujI6ONHgK2vlw1L5rPIFefvFqz9jw&oe=64A19662', screen: ScreenX},
-    { text: "", image: '', screen: ScreenX},
-    { text: "", image: '', screen: ScreenX},
-    { text: "", image: '', screen: ScreenX},
-    { text: "", image: '', screen: ScreenX},
-    { text: "", image: '', screen: ScreenX},
-    { text: "", image: '', screen: ScreenX},
-    { text: "", image: '', screen: ScreenX},
-    { text: "", image: '', screen: ScreenX},
+    { text: "KAM FU", image: 'https://scontent.fsap8-1.fna.fbcdn.net/v/t39.30808-6/271735932_275448434652028_1332807540249237618_n.jpg?_nc_cat=102&cb=99be929b-59f725be&ccb=1-7&_nc_sid=09cbfe&_nc_eui2=AeE21F6Espw2nNrHrj2vFoK3_rfus7073XH-t-6zvTvdcZsTRIifBXIjMscQ6MffQFvlY63335aO_VLqqu0nPLzC&_nc_ohc=oHtoP3CoEgkAX9-M6fz&_nc_ht=scontent.fsap8-1.fna&oh=00_AfB5GjivU2qnnrQCL3VQiQLLnBghGaqWT5G2p9VTphhwNA&oe=64A73774', screen: ScreenY},
+    { text: "Min Oriental", image: 'https://allrest-ams3-space-cdn-06-2023.ams3.digitaloceanspaces.com/adverts/restaurant/min-oriental/min-oriental.jpg', screen: ScreenZ},
+    { text: "Servitipicos Alameda Honduras", image: 'https://scontent.fsap8-1.fna.fbcdn.net/v/t39.30808-6/348992973_773007401279215_4735694757935288340_n.jpg?_nc_cat=103&cb=99be929b-59f725be&ccb=1-7&_nc_sid=09cbfe&_nc_eui2=AeEVhJqnXid2sje4IGp-1LOwnD9R-kiO2VmcP1H6SI7ZWZ37YHLVaF8YZdc12FW0dzH8g0CnV5WsgrSt16crDRks&_nc_ohc=2vHjQAYf6QIAX_faNo-&_nc_ht=scontent.fsap8-1.fna&oh=00_AfDWmxRKO5HmDvW5iCjlXngF5WmxXt5BIlG6ggVvS402KQ&oe=64A8693A', screen: ScreenAA},
    
   
   
@@ -474,16 +514,9 @@ const RestaurantesDanli = () => {
     { key: '24', value: 'Pollos La Cesta' },
     { key: '25', value: 'Pollo Campesino' },
     { key: '26', value: 'Bigos' },
-    { key: '', value: '' },
-    { key: '', value: '' },
-    { key: '', value: '' },
-    { key: '', value: '' },
-    { key: '', value: '' },
-    { key: '', value: '' },
-    { key: '', value: '' },
-    { key: '', value: '' },
-    { key: '', value: '' },
-    { key: '', value: '' },
+    { key: '27', value: 'KAM FU' },
+    { key: '28', value: 'Min Oriental' },
+    { key: '29', value: 'Servitipicos Alameda Honduras' },
     
   ];
 
