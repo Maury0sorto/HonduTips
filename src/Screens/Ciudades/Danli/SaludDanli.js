@@ -5,9 +5,11 @@ import { Ionicons } from '@expo/vector-icons';
 
 
 import PapaJohnstDanli from './RestaurantesDanli/PapaJohnsDanli';
-import GasolineraUnoDanli from './GasolinerasDanli/GasolineraUnoDanli';
 import GasolineraTexacoDanli from './GasolinerasDanli/GasolineraTexacoDanli';
 import GasolineraPumaDanli from './GasolinerasDanli/GasolineraPumaDanli';
+import HospitalGabrielaAlvaradoDanli from './SaludDanli/HospitalGabrielaAlvaradoDanli';
+import IHSSDanli from './SaludDanli/IHSSDanli';
+import IMSSDanli from './SaludDanli/IMSSDanli';
 
 const ScreenA = ({ text, mostrarBotonAnterior }) => {
   return (
@@ -23,7 +25,7 @@ const ScreenA = ({ text, mostrarBotonAnterior }) => {
     </>
        
       </TouchableHighlight>
-      <GasolineraUnoDanli/>
+      <HospitalGabrielaAlvaradoDanli/>
    
     </View>
   );
@@ -42,7 +44,7 @@ const ScreenB = ({ text, mostrarBotonAnterior }) => {
       <Text style={styles.backButtonText}>Regresar</Text>
     </>
       </TouchableHighlight>
-      <GasolineraTexacoDanli/>
+      <IHSSDanli/>
      
     </View>
   );
@@ -61,7 +63,7 @@ const ScreenC = ({ text, mostrarBotonAnterior }) => {
       <Text style={styles.backButtonText}>Regresar</Text>
     </>
       </TouchableHighlight>
-      <GasolineraPumaDanli/>
+      <IMSSDanli/>
     </View>
   );
 };
