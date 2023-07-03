@@ -161,7 +161,7 @@ export default function Carrucel() {
         horizontal={true}
         snapToAlignment="start"
         contentContainerStyle={{
-          paddingTop: 280,  // Para hacer mas arriba o mas abajo el carruccel
+          paddingTop: 230,  // Para hacer mas arriba o mas abajo el carruccel
           paddingHorizontal: ESPACIO_CONTENEDOR,
         }}
         snapToInterval={ANCHO_CONTENEDOR}
