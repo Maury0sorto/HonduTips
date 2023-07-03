@@ -29,7 +29,7 @@ const Tabs = () => {
 
       
       <Tab.Screen
-        name="Home"
+        name="Inicio"
         component={HomeStackScreen}
         options={{
           headerStyle: { backgroundColor: '#00BCE4', shadowColor: 'black' },
@@ -57,7 +57,7 @@ const Tabs = () => {
        />
 
       <Tab.Screen
-        name="Settings"
+        name="Ajustes"
         component={Settings}
         options={{
           
