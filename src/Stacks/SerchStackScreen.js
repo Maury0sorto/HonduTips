@@ -19,7 +19,7 @@ import CarWashDanli from '../Screens/Ciudades/Danli/Automotriz/servicios/CarWash
 import LubricentrosDanli from '../Screens/Ciudades/Danli/Automotriz/servicios/lubricentrosDanli';
 import GimnasiosDanli from '../Screens/Ciudades/Danli/GimnasiosDanli';
 import PlazasComercialesDanli from '../Screens/Ciudades/Danli/PlazasComercialesDanli';
-
+import SaludDanli from '../Screens/Ciudades/Danli/SaludDanli';
 
 
 import EnConstruccion from '../Screens/EnConstruccion';
@@ -50,7 +50,7 @@ const SerchStackScreen = () => {        // Este stack es el de Search es decir e
           <SerchStack.Screen name="Lubricentros Danli" component={LubricentrosDanli}/> 
           <SerchStack.Screen name="Gimnasios Danli" component={GimnasiosDanli}/> 
           <SerchStack.Screen name="Mall's Danli" component={PlazasComercialesDanli}/> 
-
+          <SerchStack.Screen name="Salud Danli" component={SaludDanli}/> 
 
 
           <SerchStack.Screen name="Construccion" component={EnConstruccion}/>

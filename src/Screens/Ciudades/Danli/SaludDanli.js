@@ -4,11 +4,10 @@ import { SelectList } from 'react-native-dropdown-select-list';
 import { Ionicons } from '@expo/vector-icons';
 
 
-import ChesterChikeDanli from './RestaurantesDanli/ChesterChikenDanli';
 import PapaJohnstDanli from './RestaurantesDanli/PapaJohnsDanli';
-import BarberiaGudosDanli from './BarberiasDanli/BarberiaGudosDanli';
-import BarberiaMileniumDanli from './BarberiasDanli/BarberiaMileniumDanli';
-
+import GasolineraUnoDanli from './GasolinerasDanli/GasolineraUnoDanli';
+import GasolineraTexacoDanli from './GasolinerasDanli/GasolineraTexacoDanli';
+import GasolineraPumaDanli from './GasolinerasDanli/GasolineraPumaDanli';
 
 const ScreenA = ({ text, mostrarBotonAnterior }) => {
   return (
@@ -18,13 +17,13 @@ const ScreenA = ({ text, mostrarBotonAnterior }) => {
         underlayColor="#FFFF"
         onPress={mostrarBotonAnterior}
       >
-      <>
+        <>
       <Ionicons name="arrow-back" size={24} color="black" style={styles.backButtonIcon} />
       <Text style={styles.backButtonText}>Regresar</Text>
     </>
        
       </TouchableHighlight>
-      <BarberiaGudosDanli/>
+      <GasolineraUnoDanli/>
    
     </View>
   );
@@ -38,12 +37,12 @@ const ScreenB = ({ text, mostrarBotonAnterior }) => {
         underlayColor="#0080ff"
         onPress={mostrarBotonAnterior}
       >
-        <>
+         <>
       <Ionicons name="arrow-back" size={24} color="black" style={styles.backButtonIcon} />
       <Text style={styles.backButtonText}>Regresar</Text>
     </>
       </TouchableHighlight>
-      <BarberiaMileniumDanli/>
+      <GasolineraTexacoDanli/>
      
     </View>
   );
@@ -57,9 +56,12 @@ const ScreenC = ({ text, mostrarBotonAnterior }) => {
         underlayColor="#0080ff"
         onPress={mostrarBotonAnterior}
       >
-        <Text style={styles.backButtonText}>Ver las barberias....</Text>
+        <>
+      <Ionicons name="arrow-back" size={24} color="black" style={styles.backButtonIcon} />
+      <Text style={styles.backButtonText}>Regresar</Text>
+    </>
       </TouchableHighlight>
-      <ChesterChikeDanli/>
+      <GasolineraPumaDanli/>
     </View>
   );
 };
@@ -72,7 +74,10 @@ const ScreenD = ({ text, mostrarBotonAnterior }) => {
         underlayColor="#0080ff"
         onPress={mostrarBotonAnterior}
       >
-        <Text style={styles.backButtonText}>Ver las barberias...</Text>
+        <>
+      <Ionicons name="arrow-back" size={24} color="black" style={styles.backButtonIcon} />
+      <Text style={styles.backButtonText}>Regresar</Text>
+    </>
       </TouchableHighlight>
       <PapaJohnstDanli/>
     </View>
@@ -81,7 +86,7 @@ const ScreenD = ({ text, mostrarBotonAnterior }) => {
 
 
 
-const BarberiasDanli = () => {
+const SaludDanli = () => {
   const [componenteVisible, setComponenteVisible] = useState(null);
   const [mostrarSelectList, setMostrarSelectList] = useState(true); // Nuevo estado
   const [selectedOption, setSelectedOption] = useState('Recomendadas');
@@ -99,14 +104,18 @@ const BarberiasDanli = () => {
   };
 
   const buttons = [
-    { text: "Gudo's Barber Shop", image: 'https://scontent.ftgu2-3.fna.fbcdn.net/v/t1.6435-9/84417156_404104600506266_3678776354938574901_n.jpg?_nc_cat=110&ccb=1-7&_nc_sid=8bfeb9&_nc_ohc=2qdJe0Y-0cQAX9HfEna&_nc_ht=scontent.ftgu2-3.fna&oh=00_AfBIy1Q0u3k73sXcmZ4chG-J5Sx5jVUut8_UWtpjG0e5jg&oe=64BD6190',  screen: ScreenA },
-    { text: 'Barberia Milenium', image: 'https://scontent.ftgu2-2.fna.fbcdn.net/v/t39.30808-6/245220410_625456092171502_3658673365075829292_n.jpg?_nc_cat=103&ccb=1-7&_nc_sid=09cbfe&_nc_ohc=5iG4J1fxuG0AX8HLcfZ&_nc_ht=scontent.ftgu2-2.fna&oh=00_AfCxr_Z_PrbMNy2rceZYEEuuPBa-SIUZ7pdPGYkbpGzoIQ&oe=649B9AA4', screen: ScreenB },
+    { text: "Hospital Gabriela Alvarado", image: 'https://scontent.fsap8-1.fna.fbcdn.net/v/t39.30808-6/280668186_533030501614511_7278109461792763589_n.jpg?_nc_cat=101&ccb=1-7&_nc_sid=09cbfe&_nc_ohc=cjn0dXL9edgAX_LVSxz&_nc_ht=scontent.fsap8-1.fna&oh=00_AfBWZYysP-_quUNpzNRID8pv5Vcunw0XoYzuWbJwonsitQ&oe=64A76203',  screen: ScreenA },
+    { text: 'IHSS Danli', image: 'https://scontent.fsap8-1.fna.fbcdn.net/v/t39.30808-6/275555531_7247746151932117_8739330950694517292_n.jpg?_nc_cat=109&ccb=1-7&_nc_sid=09cbfe&_nc_ohc=ttGGKZ6pwuEAX_5bbhM&_nc_ht=scontent.fsap8-1.fna&oh=00_AfCBlmPjx4LeELnTGLk_cqeow0RXYaSs3PaDPNga1ULf9Q&oe=64A75EB4', screen: ScreenB },
+    { text: 'IMSS Danli', image: 'https://www.noticierosgrem.com.mx/wp-content/uploads/2018/03/Logo-del-imss.jpg', screen: ScreenB },
+    
+
   ];
 
   const data2 = [
     { key: '1', value: 'Recomendadas' },
-    { key: '2', value: "Gudo's Barber Shop" },
-    { key: '3', value: 'Barberia Milenium' },
+    { key: '2', value: "Hospital Gabriela Alvarado" },
+    { key: '3', value: 'IHSS Danli' },
+    { key: '4', value: 'IMSS Danli' },
     
     
     
@@ -133,7 +142,7 @@ const BarberiasDanli = () => {
             save="value"
             placeholder="Recomendadas"
             noDataText="Gasolinera no disponible"
-            searchPlaceholder="Busca tu barberia"
+            searchPlaceholder="Busca tu gasolinera"
             onInputChange={(text) => mostrarComponente(text, null)}
           />
         </View>
@@ -242,9 +251,11 @@ const styles = StyleSheet.create({
     marginBottom: 10,
     marginTop: 20,
 
+
+
     flexDirection: 'row',
     alignItems: 'center',
-    
+
   },
   backButtonText: {
     color: '#000',
@@ -254,4 +265,4 @@ const styles = StyleSheet.create({
   },
 });
 
-export default BarberiasDanli;
+export default SaludDanli;

@@ -61,7 +61,7 @@ const DanlíScreen = () => {
       navigation.navigate('Gimnasios Danli');
     }
     else if (text === 'Salud') {
-      navigation.navigate('Barberias Danli');
+      navigation.navigate('Salud Danli');
     }
     else if (text === 'Automotriz') {
       navigation.navigate('Automotriz Danli');
