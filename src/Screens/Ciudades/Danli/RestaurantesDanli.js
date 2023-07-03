@@ -62,7 +62,10 @@ const ScreenB = ({ text, mostrarBotonAnterior }) => {
         underlayColor="#0080ff"
         onPress={mostrarBotonAnterior}
       >
-        <Text style={styles.backButtonText}>Ver los restaurantes...</Text>
+        <>
+      <Ionicons name="arrow-back" size={24} color="black" style={styles.backButtonIcon} />
+      <Text style={styles.backButtonText}>Regresar</Text>
+    </>
       </TouchableHighlight>
       <PizzaHutDanli/>
      
@@ -78,7 +81,10 @@ const ScreenC = ({ text, mostrarBotonAnterior }) => {
         underlayColor="#0080ff"
         onPress={mostrarBotonAnterior}
       >
-        <Text style={styles.backButtonText}>Ver los restaurantes...</Text>
+       <>
+      <Ionicons name="arrow-back" size={24} color="black" style={styles.backButtonIcon} />
+      <Text style={styles.backButtonText}>Regresar</Text>
+    </>
       </TouchableHighlight>
       <ChesterChikeDanli/>
     </View>
@@ -93,7 +99,10 @@ const ScreenD = ({ text, mostrarBotonAnterior }) => {
         underlayColor="#0080ff"
         onPress={mostrarBotonAnterior}
       >
-        <Text style={styles.backButtonText}>Ver los restaurantes...</Text>
+       <>
+      <Ionicons name="arrow-back" size={24} color="black" style={styles.backButtonIcon} />
+      <Text style={styles.backButtonText}>Regresar</Text>
+    </>
       </TouchableHighlight>
       <PapaJohnstDanli/>
     </View>
@@ -108,7 +117,10 @@ const ScreenE = ({ text, mostrarBotonAnterior }) => {
         underlayColor="#0080ff"
         onPress={mostrarBotonAnterior}
       >
-        <Text style={styles.backButtonText}>Ver los restaurantes...</Text>
+       <>
+      <Ionicons name="arrow-back" size={24} color="black" style={styles.backButtonIcon} />
+      <Text style={styles.backButtonText}>Regresar</Text>
+    </>
       </TouchableHighlight>
      <ExpressoAmericanoDanli/>
     </View>
@@ -123,7 +135,10 @@ const ScreenF = ({ text, mostrarBotonAnterior }) => {
         underlayColor="#0080ff"
         onPress={mostrarBotonAnterior}
       >
-        <Text style={styles.backButtonText}>Ver los restaurantes...</Text>
+       <>
+      <Ionicons name="arrow-back" size={24} color="black" style={styles.backButtonIcon} />
+      <Text style={styles.backButtonText}>Regresar</Text>
+    </>
       </TouchableHighlight>
       <ParadiseBurgerDanli/>
     </View>
@@ -138,7 +153,10 @@ const ScreenG = ({ text, mostrarBotonAnterior }) => {
         underlayColor="#0080ff"
         onPress={mostrarBotonAnterior}
       >
-        <Text style={styles.backButtonText}>Ver los restaurantes...</Text>
+       <>
+      <Ionicons name="arrow-back" size={24} color="black" style={styles.backButtonIcon} />
+      <Text style={styles.backButtonText}>Regresar</Text>
+    </>
       </TouchableHighlight>
       <HotWingsDanli/>
     </View>
@@ -152,7 +170,10 @@ const ScreenH = ({ text, mostrarBotonAnterior }) => {
         underlayColor="#0080ff"
         onPress={mostrarBotonAnterior}
       >
-        <Text style={styles.backButtonText}>Ver los restaurantes...</Text>
+       <>
+      <Ionicons name="arrow-back" size={24} color="black" style={styles.backButtonIcon} />
+      <Text style={styles.backButtonText}>Regresar</Text>
+    </>
       </TouchableHighlight>
       <SushiTotemoDanli/>
     </View>
@@ -167,7 +188,10 @@ const ScreenI= ({ text, mostrarBotonAnterior }) => {
         underlayColor="#0080ff"
         onPress={mostrarBotonAnterior}
       >
-        <Text style={styles.backButtonText}>Ver los restaurantes...</Text>
+       <>
+      <Ionicons name="arrow-back" size={24} color="black" style={styles.backButtonIcon} />
+      <Text style={styles.backButtonText}>Regresar</Text>
+    </>
       </TouchableHighlight>
       <MarioChavezDanli/>
     </View>
@@ -182,7 +206,10 @@ const ScreenJ= ({ text, mostrarBotonAnterior }) => {
         underlayColor="#0080ff"
         onPress={mostrarBotonAnterior}
       >
-        <Text style={styles.backButtonText}>Ver los restaurantes...</Text>
+       <>
+      <Ionicons name="arrow-back" size={24} color="black" style={styles.backButtonIcon} />
+      <Text style={styles.backButtonText}>Regresar</Text>
+    </>
       </TouchableHighlight>
       <ElGauchoDanli/>
     </View>
@@ -197,7 +224,10 @@ const ScreenK= ({ text, mostrarBotonAnterior }) => {
         underlayColor="#0080ff"
         onPress={mostrarBotonAnterior}
       >
-        <Text style={styles.backButtonText}>Ver los restaurantes...</Text>
+       <>
+      <Ionicons name="arrow-back" size={24} color="black" style={styles.backButtonIcon} />
+      <Text style={styles.backButtonText}>Regresar</Text>
+    </>
       </TouchableHighlight>
       <CocoBaleadasDanli/>
     </View>
@@ -212,7 +242,10 @@ const ScreenL= ({ text, mostrarBotonAnterior }) => {
         underlayColor="#0080ff"
         onPress={mostrarBotonAnterior}
       >
-        <Text style={styles.backButtonText}>Ver los restaurantes...</Text>
+       <>
+      <Ionicons name="arrow-back" size={24} color="black" style={styles.backButtonIcon} />
+      <Text style={styles.backButtonText}>Regresar</Text>
+    </>
       </TouchableHighlight>
       <MoyasGrillDanli/>
     </View>
@@ -226,7 +259,10 @@ const ScreenM= ({ text, mostrarBotonAnterior }) => {
         underlayColor="#0080ff"
         onPress={mostrarBotonAnterior}
       >
-        <Text style={styles.backButtonText}>Ver los restaurantes...</Text>
+       <>
+      <Ionicons name="arrow-back" size={24} color="black" style={styles.backButtonIcon} />
+      <Text style={styles.backButtonText}>Regresar</Text>
+    </>
       </TouchableHighlight>
       <AsadoselGordoDanli/>
     </View>
@@ -240,7 +276,10 @@ const ScreenN= ({ text, mostrarBotonAnterior }) => {
         underlayColor="#0080ff"
         onPress={mostrarBotonAnterior}
       >
-        <Text style={styles.backButtonText}>Ver los restaurantes...</Text>
+       <>
+      <Ionicons name="arrow-back" size={24} color="black" style={styles.backButtonIcon} />
+      <Text style={styles.backButtonText}>Regresar</Text>
+    </>
       </TouchableHighlight>
       <ElToritoDanli/>
     </View>
@@ -254,7 +293,10 @@ const ScreenÑ= ({ text, mostrarBotonAnterior }) => {
         underlayColor="#0080ff"
         onPress={mostrarBotonAnterior}
       >
-        <Text style={styles.backButtonText}>Ver los restaurantes...</Text>
+       <>
+      <Ionicons name="arrow-back" size={24} color="black" style={styles.backButtonIcon} />
+      <Text style={styles.backButtonText}>Regresar</Text>
+    </>
       </TouchableHighlight>
       <Danli800Grados/>
     </View>
@@ -268,7 +310,10 @@ const ScreenO= ({ text, mostrarBotonAnterior }) => {
         underlayColor="#0080ff"
         onPress={mostrarBotonAnterior}
       >
-        <Text style={styles.backButtonText}>Ver los restaurantes...</Text>
+       <>
+      <Ionicons name="arrow-back" size={24} color="black" style={styles.backButtonIcon} />
+      <Text style={styles.backButtonText}>Regresar</Text>
+    </>
       </TouchableHighlight>
       <RincondelToroDanli/>
     </View>
@@ -282,7 +327,10 @@ const ScreenP= ({ text, mostrarBotonAnterior }) => {
         underlayColor="#0080ff"
         onPress={mostrarBotonAnterior}
       >
-        <Text style={styles.backButtonText}>Ver los restaurantes...</Text>
+       <>
+      <Ionicons name="arrow-back" size={24} color="black" style={styles.backButtonIcon} />
+      <Text style={styles.backButtonText}>Regresar</Text>
+    </>
       </TouchableHighlight>
       <JamsDanli/>
     </View>
@@ -296,7 +344,10 @@ const ScreenQ= ({ text, mostrarBotonAnterior }) => {
         underlayColor="#0080ff"
         onPress={mostrarBotonAnterior}
       >
-        <Text style={styles.backButtonText}>Ver los restaurantes...</Text>
+       <>
+      <Ionicons name="arrow-back" size={24} color="black" style={styles.backButtonIcon} />
+      <Text style={styles.backButtonText}>Regresar</Text>
+    </>
       </TouchableHighlight>
       <NapolesDanli/>
     </View>
@@ -310,7 +361,10 @@ const ScreenR= ({ text, mostrarBotonAnterior }) => {
         underlayColor="#0080ff"
         onPress={mostrarBotonAnterior}
       >
-        <Text style={styles.backButtonText}>Ver los restaurantes...</Text>
+       <>
+      <Ionicons name="arrow-back" size={24} color="black" style={styles.backButtonIcon} />
+      <Text style={styles.backButtonText}>Regresar</Text>
+    </>
       </TouchableHighlight>
       <MegaPizzaDanli/>
     </View>
@@ -323,7 +377,10 @@ const ScreenR= ({ text, mostrarBotonAnterior }) => {
         underlayColor="#0080ff"
         onPress={mostrarBotonAnterior}
       >
-        <Text style={styles.backButtonText}>Ver los restaurantes...</Text>
+       <>
+      <Ionicons name="arrow-back" size={24} color="black" style={styles.backButtonIcon} />
+      <Text style={styles.backButtonText}>Regresar</Text>
+    </>
       </TouchableHighlight>
       <PicolinoDanli/>
     </View>
@@ -337,7 +394,10 @@ const ScreenT= ({ text, mostrarBotonAnterior }) => {
         underlayColor="#0080ff"
         onPress={mostrarBotonAnterior}
       >
-        <Text style={styles.backButtonText}>Ver los restaurantes...</Text>
+       <>
+      <Ionicons name="arrow-back" size={24} color="black" style={styles.backButtonIcon} />
+      <Text style={styles.backButtonText}>Regresar</Text>
+    </>
       </TouchableHighlight>
       <OviserDanli/>
     </View>
@@ -351,7 +411,10 @@ const ScreenU= ({ text, mostrarBotonAnterior }) => {
         underlayColor="#0080ff"
         onPress={mostrarBotonAnterior}
       >
-        <Text style={styles.backButtonText}>Ver los restaurantes...</Text>
+       <>
+      <Ionicons name="arrow-back" size={24} color="black" style={styles.backButtonIcon} />
+      <Text style={styles.backButtonText}>Regresar</Text>
+    </>
       </TouchableHighlight>
       <PolloLandiaDanli/>
     </View>
@@ -364,7 +427,10 @@ const ScreenU= ({ text, mostrarBotonAnterior }) => {
         underlayColor="#0080ff"
         onPress={mostrarBotonAnterior}
       >
-        <Text style={styles.backButtonText}>Ver los restaurantes...</Text>
+       <>
+      <Ionicons name="arrow-back" size={24} color="black" style={styles.backButtonIcon} />
+      <Text style={styles.backButtonText}>Regresar</Text>
+    </>
       </TouchableHighlight>
       <PolloslaCestaDanli/>
     </View>
@@ -378,7 +444,10 @@ const ScreenW= ({ text, mostrarBotonAnterior }) => {
         underlayColor="#0080ff"
         onPress={mostrarBotonAnterior}
       >
-        <Text style={styles.backButtonText}>Ver los restaurantes...</Text>
+       <>
+      <Ionicons name="arrow-back" size={24} color="black" style={styles.backButtonIcon} />
+      <Text style={styles.backButtonText}>Regresar</Text>
+    </>
       </TouchableHighlight>
       <PolloCampesinoDanli/>
     </View>
@@ -392,7 +461,10 @@ const ScreenX= ({ text, mostrarBotonAnterior }) => {
         underlayColor="#0080ff"
         onPress={mostrarBotonAnterior}
       >
-        <Text style={styles.backButtonText}>Ver los restaurantes...</Text>
+       <>
+      <Ionicons name="arrow-back" size={24} color="black" style={styles.backButtonIcon} />
+      <Text style={styles.backButtonText}>Regresar</Text>
+    </>
       </TouchableHighlight>
       <BigosDanli/>
     </View>
@@ -406,7 +478,10 @@ const ScreenY= ({ text, mostrarBotonAnterior }) => {
         underlayColor="#0080ff"
         onPress={mostrarBotonAnterior}
       >
-        <Text style={styles.backButtonText}>Ver los restaurantes...</Text>
+       <>
+      <Ionicons name="arrow-back" size={24} color="black" style={styles.backButtonIcon} />
+      <Text style={styles.backButtonText}>Regresar</Text>
+    </>
       </TouchableHighlight>
       <KamfuDanli/>
     </View>
@@ -420,7 +495,10 @@ const ScreenZ= ({ text, mostrarBotonAnterior }) => {
         underlayColor="#0080ff"
         onPress={mostrarBotonAnterior}
       >
-        <Text style={styles.backButtonText}>Ver los restaurantes...</Text>
+       <>
+      <Ionicons name="arrow-back" size={24} color="black" style={styles.backButtonIcon} />
+      <Text style={styles.backButtonText}>Regresar</Text>
+    </>
       </TouchableHighlight>
       <OrientalDanli/>
     </View>
@@ -434,7 +512,10 @@ const ScreenAA= ({ text, mostrarBotonAnterior }) => {
         underlayColor="#0080ff"
         onPress={mostrarBotonAnterior}
       >
-        <Text style={styles.backButtonText}>Ver los restaurantes...</Text>
+       <>
+      <Ionicons name="arrow-back" size={24} color="black" style={styles.backButtonIcon} />
+      <Text style={styles.backButtonText}>Regresar</Text>
+    </>
       </TouchableHighlight>
       <PupusasDanli/>
     </View>
@@ -448,7 +529,10 @@ const ScreenAB= ({ text, mostrarBotonAnterior }) => {
         underlayColor="#0080ff"
         onPress={mostrarBotonAnterior}
       >
-        <Text style={styles.backButtonText}>Ver los restaurantes...</Text>
+       <>
+      <Ionicons name="arrow-back" size={24} color="black" style={styles.backButtonIcon} />
+      <Text style={styles.backButtonText}>Regresar</Text>
+    </>
       </TouchableHighlight>
       <SportJaliDanli/>
     </View>
@@ -462,7 +546,10 @@ const ScreenAC= ({ text, mostrarBotonAnterior }) => {
         underlayColor="#0080ff"
         onPress={mostrarBotonAnterior}
       >
-        <Text style={styles.backButtonText}>Ver los restaurantes...</Text>
+       <>
+      <Ionicons name="arrow-back" size={24} color="black" style={styles.backButtonIcon} />
+      <Text style={styles.backButtonText}>Regresar</Text>
+    </>
       </TouchableHighlight>
       <BaleadasYuliDanli/>
     </View>
