@@ -29,6 +29,8 @@ import BigosDanli from './RestaurantesDanli/BigosDanli';
 import KamfuDanli from './RestaurantesDanli/KamfuDanli';
 import OrientalDanli from './RestaurantesDanli/OrientalDanli';
 import PupusasDanli from './RestaurantesDanli/PupusasDanli';
+import SportJaliDanli from './RestaurantesDanli/SportJaliDanli';
+import BaleadasYuliDanli from './RestaurantesDanli/BaleadasYuli';
 
 const ScreenA = ({ text, mostrarBotonAnterior }) => {
   return (
@@ -433,6 +435,34 @@ const ScreenAA= ({ text, mostrarBotonAnterior }) => {
     </View>
   );
 };
+const ScreenAB= ({ text, mostrarBotonAnterior }) => {
+  return (
+    <View style={styles.componentContainer}>
+      <TouchableHighlight
+        style={styles.backButton}
+        underlayColor="#0080ff"
+        onPress={mostrarBotonAnterior}
+      >
+        <Text style={styles.backButtonText}>Ver los restaurantes...</Text>
+      </TouchableHighlight>
+      <SportJaliDanli/>
+    </View>
+  );
+};
+const ScreenAC= ({ text, mostrarBotonAnterior }) => {
+  return (
+    <View style={styles.componentContainer}>
+      <TouchableHighlight
+        style={styles.backButton}
+        underlayColor="#0080ff"
+        onPress={mostrarBotonAnterior}
+      >
+        <Text style={styles.backButtonText}>Ver los restaurantes...</Text>
+      </TouchableHighlight>
+      <BaleadasYuliDanli/>
+    </View>
+  );
+};
 
 const RestaurantesDanli = () => {
   const [componenteVisible, setComponenteVisible] = useState(null);
@@ -481,6 +511,8 @@ const RestaurantesDanli = () => {
     { text: "KAM FU", image: 'https://scontent.fsap8-1.fna.fbcdn.net/v/t39.30808-6/271735932_275448434652028_1332807540249237618_n.jpg?_nc_cat=102&cb=99be929b-59f725be&ccb=1-7&_nc_sid=09cbfe&_nc_eui2=AeE21F6Espw2nNrHrj2vFoK3_rfus7073XH-t-6zvTvdcZsTRIifBXIjMscQ6MffQFvlY63335aO_VLqqu0nPLzC&_nc_ohc=oHtoP3CoEgkAX9-M6fz&_nc_ht=scontent.fsap8-1.fna&oh=00_AfB5GjivU2qnnrQCL3VQiQLLnBghGaqWT5G2p9VTphhwNA&oe=64A73774', screen: ScreenY},
     { text: "Min Oriental", image: 'https://allrest-ams3-space-cdn-06-2023.ams3.digitaloceanspaces.com/adverts/restaurant/min-oriental/min-oriental.jpg', screen: ScreenZ},
     { text: "Servitipicos Alameda Honduras", image: 'https://scontent.fsap8-1.fna.fbcdn.net/v/t39.30808-6/348992973_773007401279215_4735694757935288340_n.jpg?_nc_cat=103&cb=99be929b-59f725be&ccb=1-7&_nc_sid=09cbfe&_nc_eui2=AeEVhJqnXid2sje4IGp-1LOwnD9R-kiO2VmcP1H6SI7ZWZ37YHLVaF8YZdc12FW0dzH8g0CnV5WsgrSt16crDRks&_nc_ohc=2vHjQAYf6QIAX_faNo-&_nc_ht=scontent.fsap8-1.fna&oh=00_AfDWmxRKO5HmDvW5iCjlXngF5WmxXt5BIlG6ggVvS402KQ&oe=64A8693A', screen: ScreenAA},
+    { text: "Sport Jali", image: 'https://scontent.fsap8-1.fna.fbcdn.net/v/t39.30808-6/286781801_2242366029245456_906977375012473814_n.jpg?_nc_cat=101&cb=99be929b-59f725be&ccb=1-7&_nc_sid=09cbfe&_nc_eui2=AeHQy6bX3s2XeVaP6jxyA9BkXIb4ZiXsBXFchvhmJewFcSXbbYuF42i66UE4FoQsrUs3_uuoPTCkc6_1VP8-4Hhi&_nc_ohc=9-sKEANLu_UAX_ukjbx&_nc_ht=scontent.fsap8-1.fna&oh=00_AfDdrdVllfD5FxzMdXTTe0k5PKI9HEhbb9XxlWaAPm4_ZA&oe=64A73727', screen: ScreenAB},
+    { text: "Baleadas Yuli", image: 'https://scontent.fsap8-1.fna.fbcdn.net/v/t39.30808-6/305028972_472829328189425_5933724912231027169_n.jpg?_nc_cat=110&cb=99be929b-59f725be&ccb=1-7&_nc_sid=09cbfe&_nc_eui2=AeES0yGPfsnkJE9gKj0gcumBiWT4p_uSBrWJZPin-5IGtfHGaCKFV9zmTXPC1w6HCiLPJ5W2HVk0vSvndxMbNicv&_nc_ohc=u7If57OmjOgAX8OXn-0&_nc_ht=scontent.fsap8-1.fna&oh=00_AfDjq4uV70DReplx0Q-_A9u_rX9c9hYNf63hFGLaFElHKw&oe=64A82F31', screen: ScreenAC},
    
   
   
@@ -517,6 +549,8 @@ const RestaurantesDanli = () => {
     { key: '27', value: 'KAM FU' },
     { key: '28', value: 'Min Oriental' },
     { key: '29', value: 'Servitipicos Alameda Honduras' },
+    { key: '30', value: 'Sport Jali' },
+    { key: '31', value: 'Baleadas Yuli' },
     
   ];
 
