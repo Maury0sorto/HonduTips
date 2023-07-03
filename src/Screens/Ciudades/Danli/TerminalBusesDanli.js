@@ -4,13 +4,9 @@ import { SelectList } from 'react-native-dropdown-select-list';
 import { Ionicons } from '@expo/vector-icons';
 
 
-import ChesterChikeDanli from './RestaurantesDanli/ChesterChikenDanli';
-import PapaJohnstDanli from './RestaurantesDanli/PapaJohnsDanli';
-import GasolineraUnoDanli from './GasolinerasDanli/GasolineraUnoDanli';
-import GasolineraTexacoDanli from './GasolinerasDanli/GasolineraTexacoDanli';
-import GasolineraPumaDanli from './GasolinerasDanli/GasolineraPumaDanli';
-import MallUniplazaDanli from './PlazasComercialesDanli/MallUniplazaDanli';
-import PaseoLasColinasDanli from './PlazasComercialesDanli/PaseoLasColinasDanli';
+
+import BarberiaGudosDanli from './BarberiasDanli/BarberiaGudosDanli';
+import BarberiaMileniumDanli from './BarberiasDanli/BarberiaMileniumDanli';
 
 
 const ScreenA = ({ text, mostrarBotonAnterior }) => {
@@ -21,13 +17,13 @@ const ScreenA = ({ text, mostrarBotonAnterior }) => {
         underlayColor="#FFFF"
         onPress={mostrarBotonAnterior}
       >
-        <>
+      <>
       <Ionicons name="arrow-back" size={24} color="black" style={styles.backButtonIcon} />
       <Text style={styles.backButtonText}>Regresar</Text>
     </>
        
       </TouchableHighlight>
-      <MallUniplazaDanli/>
+      <BarberiaGudosDanli/>
    
     </View>
   );
@@ -41,56 +37,24 @@ const ScreenB = ({ text, mostrarBotonAnterior }) => {
         underlayColor="#0080ff"
         onPress={mostrarBotonAnterior}
       >
-         <>
+        <>
       <Ionicons name="arrow-back" size={24} color="black" style={styles.backButtonIcon} />
       <Text style={styles.backButtonText}>Regresar</Text>
     </>
       </TouchableHighlight>
-      <PaseoLasColinasDanli/>
+      <BarberiaMileniumDanli/>
      
     </View>
   );
 };
 
-const ScreenC = ({ text, mostrarBotonAnterior }) => {
-  return (
-    <View style={styles.componentContainer}>
-      <TouchableHighlight
-        style={styles.backButton}
-        underlayColor="#0080ff"
-        onPress={mostrarBotonAnterior}
-      >
-        <>
-      <Ionicons name="arrow-back" size={24} color="black" style={styles.backButtonIcon} />
-      <Text style={styles.backButtonText}>Regresar</Text>
-    </>
-      </TouchableHighlight>
-      <GasolineraPumaDanli/>
-    </View>
-  );
-};
-
-const ScreenD = ({ text, mostrarBotonAnterior }) => {
-  return (
-    <View style={styles.componentContainer}>
-      <TouchableHighlight
-        style={styles.backButton}
-        underlayColor="#0080ff"
-        onPress={mostrarBotonAnterior}
-      >
-        <>
-      <Ionicons name="arrow-back" size={24} color="black" style={styles.backButtonIcon} />
-      <Text style={styles.backButtonText}>Regresar</Text>
-    </>
-      </TouchableHighlight>
-      <PapaJohnstDanli/>
-    </View>
-  );
-};
 
 
 
-const PlazasComercialesDanli = () => {
+
+
+
+const TerminalBusesDanli = () => {
   const [componenteVisible, setComponenteVisible] = useState(null);
   const [mostrarSelectList, setMostrarSelectList] = useState(true); // Nuevo estado
   const [selectedOption, setSelectedOption] = useState('Recomendadas');
@@ -108,16 +72,14 @@ const PlazasComercialesDanli = () => {
   };
 
   const buttons = [
-    { text: "Mall Uniplaza", image: 'https://i.imgur.com/craZFGv.jpg',  screen: ScreenA },
-    { text: 'Paseo Las Colinas', image: 'https://scontent.fsap8-1.fna.fbcdn.net/v/t39.30808-6/343303187_781344000219687_7983847203504964586_n.jpg?_nc_cat=100&ccb=1-7&_nc_sid=09cbfe&_nc_ohc=FS21Rp5iFksAX8Vdjxp&_nc_ht=scontent.fsap8-1.fna&oh=00_AfDOGRGzoJsT_5e5WmNxPDBfq1SXN8VkNcLLyrhdfwdb9Q&oe=64A526D4', screen: ScreenB },
-    
-
+    { text: "Terminal de Buses", image: 'https://scontent.fsap8-1.fna.fbcdn.net/v/t39.30808-6/279543005_5648968268464458_8778377059714326265_n.jpg?_nc_cat=102&ccb=1-7&_nc_sid=09cbfe&_nc_ohc=YBuCipCxuIcAX8506ec&_nc_ht=scontent.fsap8-1.fna&oh=00_AfDkpqd7BwDJRhwu1AC_0c0IqjyJNuIOqQQpVLblehs_FA&oe=64A7B206',  screen: ScreenA },
+    { text: 'Transporte Daniela', image: 'https://lh5.googleusercontent.com/p/AF1QipO_mGSGi9BK3gjqVcL4LFpAyBbvKOCfyQIEFQTu', screen: ScreenB },
   ];
 
   const data2 = [
     { key: '1', value: 'Recomendadas' },
-    { key: '2', value: "Mall Uniplaza" },
-    { key: '3', value: 'Paseo Las Colinas' },
+    { key: '2', value: "Terminal de Buses" },
+    { key: '3', value: 'Transporte Daniela' },
     
     
     
@@ -144,7 +106,7 @@ const PlazasComercialesDanli = () => {
             save="value"
             placeholder="Recomendadas"
             noDataText="Gasolinera no disponible"
-            searchPlaceholder="Busca tu gasolinera"
+            searchPlaceholder="Busca tu barberia"
             onInputChange={(text) => mostrarComponente(text, null)}
           />
         </View>
@@ -253,11 +215,9 @@ const styles = StyleSheet.create({
     marginBottom: 10,
     marginTop: 20,
 
-
-
     flexDirection: 'row',
     alignItems: 'center',
-
+    
   },
   backButtonText: {
     color: '#000',
@@ -267,4 +227,4 @@ const styles = StyleSheet.create({
   },
 });
 
-export default PlazasComercialesDanli;
+export default TerminalBusesDanli;
