@@ -43,7 +43,7 @@ const Tabs = () => {
 
         
 <Tab.Screen
-        name="Search"
+        name="Buscar"
         component={SerchStackScreen}
         options={{
           headerShown: false,

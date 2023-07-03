@@ -9,6 +9,9 @@ import PapaJohnstDanli from './RestaurantesDanli/PapaJohnsDanli';
 import GasolineraUnoDanli from './GasolinerasDanli/GasolineraUnoDanli';
 import GasolineraTexacoDanli from './GasolinerasDanli/GasolineraTexacoDanli';
 import GasolineraPumaDanli from './GasolinerasDanli/GasolineraPumaDanli';
+import MallUniplazaDanli from './PlazasComercialesDanli/MallUniplazaDanli';
+import PaseoLasColinasDanli from './PlazasComercialesDanli/PaseoLasColinasDanli';
+
 
 const ScreenA = ({ text, mostrarBotonAnterior }) => {
   return (
@@ -24,7 +27,7 @@ const ScreenA = ({ text, mostrarBotonAnterior }) => {
     </>
        
       </TouchableHighlight>
-      <GasolineraUnoDanli/>
+      <MallUniplazaDanli/>
    
     </View>
   );
@@ -43,7 +46,7 @@ const ScreenB = ({ text, mostrarBotonAnterior }) => {
       <Text style={styles.backButtonText}>Regresar</Text>
     </>
       </TouchableHighlight>
-      <GasolineraTexacoDanli/>
+      <PaseoLasColinasDanli/>
      
     </View>
   );

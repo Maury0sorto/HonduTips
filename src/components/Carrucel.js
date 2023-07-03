@@ -110,14 +110,14 @@ export default function Carrucel() {
 // Configuracion de navegaciones
 
   const navigateToDanli = () => {
-    navigation.navigate('Search'); 
+    navigation.navigate('Buscar'); 
     setTimeout(() => { 
       navigation.navigate('Danli');
     }, 300);
   };
 
   const navigateToConstruccion = () => {
-    navigation.navigate('Search'); 
+    navigation.navigate('Buscar'); 
     setTimeout(() => { 
       navigation.navigate('Construccion');
     }, 300);

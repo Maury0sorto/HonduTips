@@ -23,6 +23,7 @@ const DanlíScreen = () => {
     { text: 'Salud', image: 'https://i.imgur.com/5n9FC8p.png' },
     { text: 'Automotriz', image: 'https://i.imgur.com/tyb93n3.png' },
     { text: 'Plazas Comerciales', image: 'https://i.imgur.com/ScyxlFm.png' },
+    { text: 'Terminal de Buses', image: 'https://i.imgur.com/HdtWT32.png' },
   ]);
   const [filterData, setFilterData] = useState([]);
   const [searchText, setSearchText] = useState('');
@@ -67,6 +68,9 @@ const DanlíScreen = () => {
       navigation.navigate('Automotriz Danli');
     }
     else if (text === 'Plazas Comerciales') {
+      navigation.navigate("Mall's Danli");
+    }
+    else if (text === 'Terminal de Buses') {
       navigation.navigate("Mall's Danli");
     }
   };
