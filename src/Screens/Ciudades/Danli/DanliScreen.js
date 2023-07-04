@@ -216,11 +216,10 @@ const styles = StyleSheet.create({
     
   },
   buttonImage: {
-    width: 150,
-    height: 150,
-    marginBottom: 8,
+    width: 140,
+    height: 140,
+    marginBottom: 10,
     alignSelf: 'center',
-     borderRadius: 10,
   },
   buttonText: {
     marginTop: 10,
