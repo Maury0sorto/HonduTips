@@ -216,8 +216,8 @@ const styles = StyleSheet.create({
     
   },
   buttonImage: {
-    width: 140,
-    height: 140,
+    width: 145,
+    height: 145,
     marginBottom: 10,
     alignSelf: 'center',
   },
