@@ -4,14 +4,12 @@ import { SelectList } from 'react-native-dropdown-select-list';
 import { Ionicons } from '@expo/vector-icons';
 
 
-import ChesterChikeDanli from './RestaurantesDanli/ChesterChikenDanli';
+
 import PapaJohnstDanli from './RestaurantesDanli/PapaJohnsDanli';
-import GasolineraUnoDanli from './GasolinerasDanli/GasolineraUnoDanli';
-import GasolineraTexacoDanli from './GasolinerasDanli/GasolineraTexacoDanli';
 import GasolineraPumaDanli from './GasolinerasDanli/GasolineraPumaDanli';
 import MallUniplazaDanli from './PlazasComercialesDanli/MallUniplazaDanli';
 import PaseoLasColinasDanli from './PlazasComercialesDanli/PaseoLasColinasDanli';
-
+import MallLaCumbreDanli from './PlazasComercialesDanli/MallLaCumbreDanli';
 
 const ScreenA = ({ text, mostrarBotonAnterior }) => {
   return (
@@ -65,7 +63,7 @@ const ScreenC = ({ text, mostrarBotonAnterior }) => {
       <Text style={styles.backButtonText}>Regresar</Text>
     </>
       </TouchableHighlight>
-      <GasolineraPumaDanli/>
+      <MallLaCumbreDanli/>
     </View>
   );
 };
@@ -110,6 +108,7 @@ const PlazasComercialesDanli = () => {
   const buttons = [
     { text: "Mall Uniplaza", image: 'https://i.imgur.com/craZFGv.jpg',  screen: ScreenA },
     { text: 'Paseo Las Colinas', image: 'https://scontent.fsap8-1.fna.fbcdn.net/v/t39.30808-6/343303187_781344000219687_7983847203504964586_n.jpg?_nc_cat=100&ccb=1-7&_nc_sid=09cbfe&_nc_ohc=FS21Rp5iFksAX8Vdjxp&_nc_ht=scontent.fsap8-1.fna&oh=00_AfDOGRGzoJsT_5e5WmNxPDBfq1SXN8VkNcLLyrhdfwdb9Q&oe=64A526D4', screen: ScreenB },
+    { text: 'Mall La Cumbre', image: 'https://i.imgur.com/MDHhqXA.jpg', screen: ScreenC },
     
 
   ];
@@ -118,7 +117,7 @@ const PlazasComercialesDanli = () => {
     { key: '1', value: 'Recomendadas' },
     { key: '2', value: "Mall Uniplaza" },
     { key: '3', value: 'Paseo Las Colinas' },
-    
+    { key: '4', value: 'Mall La Cumbre' },
     
     
     
