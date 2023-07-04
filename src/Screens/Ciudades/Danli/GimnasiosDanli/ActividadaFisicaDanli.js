@@ -4,7 +4,7 @@ import { useNavigation } from '@react-navigation/native';
 import { Ionicons } from '@expo/vector-icons';
 import { HeaderBackButton } from '@react-navigation/stack';
 
-const DanlíScreen = () => {
+const ActividadFisicaDanli = () => {
   const navigation = useNavigation();
 
   useEffect(() => {
@@ -13,18 +13,11 @@ const DanlíScreen = () => {
     });
   }, []);
   const [data, setData] = useState([
-    { text: 'Banca', image: 'https://i.imgur.com/r6NIVCc.png' },
-    { text: 'Restaurantes', image: 'https://i.imgur.com/1YAKCnD.png' },
-    { text: 'Hoteles', image: 'https://i.imgur.com/VEQBtoM.png' },
-    { text: 'Farmacias', image: 'https://i.imgur.com/mX83bjL.png' },
-    { text: 'Gasolineras', image: 'https://i.imgur.com/Tt5mWRN.png' },
-    { text: 'Barberias', image: 'https://i.imgur.com/VCZ0aiI.png' },
-    { text: 'Actividad Física', image: 'https://i.imgur.com/UlA2Ql8.png' },
-    { text: 'Salud', image: 'https://i.imgur.com/5n9FC8p.png' }, 
-    { text: 'Automotriz', image: 'https://i.imgur.com/tyb93n3.png' },
-    { text: 'Plazas Comerciales', image: 'https://i.imgur.com/ScyxlFm.png' },
-    { text: 'Puntos de Transporte', image: 'https://i.imgur.com/HdtWT32.png' },
-    { text: 'Educación', image: 'https://i.imgur.com/n3so3KR.png' },
+   
+    { text: 'Gimnasios', image: 'https://i.imgur.com/lwBDw2H.png' },
+    { text: 'FootBall', image: 'https://i.imgur.com/5XhuwCQ.png' },
+    { text: 'Basket', image: 'https://i.imgur.com/X4vep01.png' },
+    { text: 'Artes Marciales Mixtas', image: 'https://i.imgur.com/KMUVlmk.png' },
   ]);
   const [filterData, setFilterData] = useState([]);
   const [searchText, setSearchText] = useState('');
@@ -46,34 +39,18 @@ const DanlíScreen = () => {
 
   const handleButtonPress = (text) => {
     // Configura la navegación a las pantallas correspondientes según el texto del botón
-    if (text === 'Banca') {
-      navigation.navigate('Bancos Danli');
-    } else if (text === 'Restaurantes') {
-      navigation.navigate('Restaurantes Danli');
-    } else if (text === 'Hoteles') {
-      navigation.navigate('Hoteles Danli');
-    } else if (text === 'Farmacias') {
-      navigation.navigate('Farmacias Danli');
-    } else if (text === 'Gasolineras') {
-      navigation.navigate('Gasolineras Danli');
-    } else if (text === 'Barberias') {
-      navigation.navigate('Barberias Danli');
-    }
-    else if (text === 'Actividad Física') {
-      navigation.navigate('Actividad Fisica en Danli');
-    }
-    else if (text === 'Salud') {
-      navigation.navigate('Salud Danli');
-    }
-    else if (text === 'Automotriz') {
-      navigation.navigate('Automotriz Danli');
-    }
-    else if (text === 'Plazas Comerciales') {
-      navigation.navigate("Mall's Danli");
-    }
-    else if (text === 'Puntos de Transporte') {
-      navigation.navigate("Terminal de Buses Danli");
-    }
+    if (text === 'Gimnasios') {
+      navigation.navigate('Gimnasios Danli');
+    }  
+    else if (text === 'FootBall') {
+      navigation.navigate('Gimnasios Danli');
+    } 
+    else if (text === 'Basket') {
+      navigation.navigate('Gimnasios Danli');
+    } 
+    else if (text === 'Artes Marciales Mixtas') {
+        navigation.navigate('Gimnasios Danli');
+      } 
   };
 
   
@@ -82,7 +59,7 @@ const DanlíScreen = () => {
     if (filterData.length === 0 && searchText.length !== 0) {
       return (
         <Text style={styles.noResultsText}>
-          Este tipo de lugares aun no estan en la APP
+          Este tipo de actividad fisica aun no se encuentrssa en la APP
         </Text>
       );
     }
@@ -261,4 +238,4 @@ const styles = StyleSheet.create({
   },
 });
 
-export default DanlíScreen;
+export default ActividadFisicaDanli;
