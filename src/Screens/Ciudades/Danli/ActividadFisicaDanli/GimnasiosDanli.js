@@ -5,10 +5,12 @@ import { Ionicons } from '@expo/vector-icons';
 
  
 
-import FarmaciaKielsaDanli from './FarmaciasDanli/FarmaciaKielsaDanli';
-import ACFitnesDanli from './GimnasiosDanli/ACFitnessDanli';
+
+import ACFitnesDanli from  './GimnasiosDanli/ACFitnessDanli';
 import MuscleTempleGYMDanli from './GimnasiosDanli/MuscleTempleGYMDanli';
 import RoyalGYMDanli from './GimnasiosDanli/RoyalGYMDanli';
+import GymOlimpoDanli from './GimnasiosDanli/GymOlimpoDanli';
+import BetterGymDanli from './GimnasiosDanli/BetterGymDanli';
 
 const ScreenA = ({ text, mostrarBotonAnterior }) => {
   return (
@@ -79,10 +81,30 @@ const ScreenD = ({ text, mostrarBotonAnterior }) => {
       <Text style={styles.backButtonText}>Regresar</Text>
     </>
       </TouchableHighlight>
-      <FarmaciaKielsaDanli/>
+      <GymOlimpoDanli/>
     </View>
   );
 };
+
+const ScreenE = ({ text, mostrarBotonAnterior }) => {
+  return (
+    <View style={styles.componentContainer}>
+      <TouchableHighlight
+        style={styles.backButton}
+        underlayColor="#0080ff"
+        onPress={mostrarBotonAnterior}
+      >
+         <>
+      <Ionicons name="arrow-back" size={24} color="black" style={styles.backButtonIcon} />
+      <Text style={styles.backButtonText}>Regresar</Text>
+    </>
+      </TouchableHighlight>
+      <BetterGymDanli/>
+    </View>
+  );
+};
+
+
 
 
 
@@ -107,6 +129,8 @@ const GimnasiosDanli = () => {
     { text: "AC Fitnes", image: 'https://scontent.fsap8-1.fna.fbcdn.net/v/t39.30808-6/217634985_100532505642965_2528312128850862728_n.png?_nc_cat=103&ccb=1-7&_nc_sid=09cbfe&_nc_ohc=XtmznUlbEucAX9MXem4&_nc_ht=scontent.fsap8-1.fna&oh=00_AfBX2RacVaR2Lf2YK_R9-cy79-oPXArSbsa1_DPqX5tmrg&oe=64A460A4',  screen: ScreenA },
     { text: 'Royal GYM', image: 'https://scontent.fsap8-1.fna.fbcdn.net/v/t39.30808-6/278057476_487902492781642_6975817844622820455_n.jpg?_nc_cat=108&ccb=1-7&_nc_sid=09cbfe&_nc_ohc=5Px4BwuXfSQAX8FqRf4&_nc_ht=scontent.fsap8-1.fna&oh=00_AfB8XDtpiTkyOCmqDiLTobgNvdMrF-flg-4f5qsyVE49Cg&oe=64A52DE2', screen: ScreenB },
     { text: "Muscle Temple Gym", image: 'https://scontent.fsap8-1.fna.fbcdn.net/v/t39.30808-6/293997360_371740498377165_761127965618406608_n.jpg?_nc_cat=104&ccb=1-7&_nc_sid=09cbfe&_nc_ohc=9aG33ZBzNpQAX9isKKj&_nc_ht=scontent.fsap8-1.fna&oh=00_AfB0hXuvkRSMNlZuONFYd-XiSQiDLC5L54qI_1-XOaEE5Q&oe=64A39520', screen: ScreenC },
+    { text: "GYM Olimpo", image: 'https://i.imgur.com/3MabvRG.gif', screen: ScreenD },
+    { text: "Better Body GYM", image: 'https://i.imgur.com/3MabvRG.gif', screen: ScreenE },
    
   ];
 
@@ -115,6 +139,8 @@ const GimnasiosDanli = () => {
     { key: '2', value: "AC Fitnes" },
     { key: '3', value: 'Royal GYM' },
     { key: '4', value: 'Muscle Temple Gym' },
+    { key: '5', value: 'GYM Olimpo' },
+    { key: '6', value: 'Better Body GYM' },
   ];
 
   const ComponenteVisible = componenteVisible?.screenComponent || null;

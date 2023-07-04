@@ -15,8 +15,8 @@ const ActividadFisicaDanli = () => {
   const [data, setData] = useState([
    
     { text: 'Gimnasios', image: 'https://i.imgur.com/lwBDw2H.png' },
-    { text: 'FootBall', image: 'https://i.imgur.com/5XhuwCQ.png' },
-    { text: 'Basket', image: 'https://i.imgur.com/X4vep01.png' },
+    { text: 'Fútbol', image: 'https://i.imgur.com/5XhuwCQ.png' },
+    { text: 'Baloncesto', image: 'https://i.imgur.com/X4vep01.png' },
     { text: 'Artes Marciales Mixtas', image: 'https://i.imgur.com/KMUVlmk.png' },
   ]);
   const [filterData, setFilterData] = useState([]);
@@ -42,14 +42,14 @@ const ActividadFisicaDanli = () => {
     if (text === 'Gimnasios') {
       navigation.navigate('Gimnasios Danli');
     }  
-    else if (text === 'FootBall') {
-      navigation.navigate('Gimnasios Danli');
+    else if (text === 'Fútbol') {
+      navigation.navigate('Canchas De Fútbol en Danlí');
     } 
-    else if (text === 'Basket') {
-      navigation.navigate('Gimnasios Danli');
+    else if (text === 'Baloncesto') {
+      navigation.navigate('Baloncesto en Danlí');
     } 
     else if (text === 'Artes Marciales Mixtas') {
-        navigation.navigate('Gimnasios Danli');
+        navigation.navigate('Artes Marciales de Danlí');
       } 
   };
 

@@ -17,12 +17,14 @@ import FarmaciasDanli from '../Screens/Ciudades/Danli/FarmaciasDanli';
 import AutomotrizDanli from '../Screens/Ciudades/Danli/Automotriz/AutomotrizDanli';
 import CarWashDanli from '../Screens/Ciudades/Danli/Automotriz/servicios/CarWashDanli';
 import LubricentrosDanli from '../Screens/Ciudades/Danli/Automotriz/servicios/lubricentrosDanli';
-import GimnasiosDanli from '../Screens/Ciudades/Danli/GimnasiosDanli';
+import GimnasiosDanli from '../Screens/Ciudades/Danli/ActividadFisicaDanli/GimnasiosDanli';
 import PlazasComercialesDanli from '../Screens/Ciudades/Danli/PlazasComercialesDanli';
 import SaludDanli from '../Screens/Ciudades/Danli/SaludDanli';
 import TerminalBusesDanli from '../Screens/Ciudades/Danli/TerminalBusesDanli';
-import ActividadFisicaDanli from '../Screens/Ciudades/Danli/GimnasiosDanli/ActividadaFisicaDanli';
-
+import ActividadFisicaDanli from '../Screens/Ciudades/Danli/ActividadFisicaDanli/ActividadaFisicaDanli';
+import ArtesMarcialesDanli from '../Screens/Ciudades/Danli/ActividadFisicaDanli/ArtesMarcialesDanli/ArtesMarcialesDanli';
+import CanchasDeFutbolDanli from '../Screens/Ciudades/Danli/ActividadFisicaDanli/CanchasFootBallDanli/CanchasDeFutbolDanli';
+import CanchasDeBaloncestoDanli from '../Screens/Ciudades/Danli/ActividadFisicaDanli/CanchasBasketDanli/CanchasDeBaloncestoDanli';
 
 import EnConstruccion from '../Screens/EnConstruccion';
 
@@ -55,7 +57,9 @@ const SerchStackScreen = () => {        // Este stack es el de Search es decir e
           <SerchStack.Screen name="Salud Danli" component={SaludDanli}/> 
           <SerchStack.Screen name="Terminal de Buses Danli" component={TerminalBusesDanli}/> 
           <SerchStack.Screen name="Actividad Fisica en Danli" component={ActividadFisicaDanli}/> 
-
+          <SerchStack.Screen name="Artes Marciales de Danlí" component={ArtesMarcialesDanli}/> 
+          <SerchStack.Screen name="Canchas De Fútbol en Danlí" component={CanchasDeFutbolDanli}/> 
+          <SerchStack.Screen name="Baloncesto en Danlí" component={CanchasDeBaloncestoDanli}/> 
 
 
           <SerchStack.Screen name="Construccion" component={EnConstruccion}/>
