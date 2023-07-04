@@ -4,11 +4,14 @@ import { SelectList } from 'react-native-dropdown-select-list';
 import { Ionicons } from '@expo/vector-icons';
 
 
-import ChesterChikeDanli from './RestaurantesDanli/ChesterChikenDanli';
-import PapaJohnstDanli from './RestaurantesDanli/PapaJohnsDanli';
 import BarberiaGudosDanli from './BarberiasDanli/BarberiaGudosDanli';
 import BarberiaMileniumDanli from './BarberiasDanli/BarberiaMileniumDanli';
-
+import BarberiaLeody from './BarberiasDanli/BarberiaLeodyDanli';
+import MateosBarberShop from  './BarberiasDanli/MateosBarberShopDanli';
+import BarberiaTuImagenDanli from './BarberiasDanli/BarberiaTuImagenDanli';
+import BarberiaErickGlamurDanli from './BarberiasDanli/BarberiaErickGlamurDanli';
+import ShadaiMasterBarberShopDanli from './BarberiasDanli/ShadaiMasterBarberShopDanli';
+import EvansBarberShopDanli from './BarberiasDanli/EvansBarberShopDanli';
 
 const ScreenA = ({ text, mostrarBotonAnterior }) => {
   return (
@@ -57,9 +60,12 @@ const ScreenC = ({ text, mostrarBotonAnterior }) => {
         underlayColor="#0080ff"
         onPress={mostrarBotonAnterior}
       >
-        <Text style={styles.backButtonText}>Ver las barberias....</Text>
+        <>
+      <Ionicons name="arrow-back" size={24} color="black" style={styles.backButtonIcon} />
+      <Text style={styles.backButtonText}>Regresar</Text>
+    </>
       </TouchableHighlight>
-      <ChesterChikeDanli/>
+      <BarberiaLeody/>
     </View>
   );
 };
@@ -72,9 +78,85 @@ const ScreenD = ({ text, mostrarBotonAnterior }) => {
         underlayColor="#0080ff"
         onPress={mostrarBotonAnterior}
       >
-        <Text style={styles.backButtonText}>Ver las barberias...</Text>
+       <>
+      <Ionicons name="arrow-back" size={24} color="black" style={styles.backButtonIcon} />
+      <Text style={styles.backButtonText}>Regresar</Text>
+    </>
       </TouchableHighlight>
-      <PapaJohnstDanli/>
+      <MateosBarberShop/>
+    </View>
+  );
+};
+
+const ScreenE = ({ text, mostrarBotonAnterior }) => {
+  return (
+    <View style={styles.componentContainer}>
+      <TouchableHighlight
+        style={styles.backButton}
+        underlayColor="#0080ff"
+        onPress={mostrarBotonAnterior}
+      >
+       <>
+      <Ionicons name="arrow-back" size={24} color="black" style={styles.backButtonIcon} />
+      <Text style={styles.backButtonText}>Regresar</Text>
+    </>
+      </TouchableHighlight>
+      <BarberiaTuImagenDanli/>
+    </View>
+  );
+};
+
+const ScreenF = ({ text, mostrarBotonAnterior }) => {
+  return (
+    <View style={styles.componentContainer}>
+      <TouchableHighlight
+        style={styles.backButton}
+        underlayColor="#0080ff"
+        onPress={mostrarBotonAnterior}
+      >
+       <>
+      <Ionicons name="arrow-back" size={24} color="black" style={styles.backButtonIcon} />
+      <Text style={styles.backButtonText}>Regresar</Text>
+    </>
+      </TouchableHighlight>
+      <BarberiaErickGlamurDanli/>
+    </View>
+  );
+};
+
+const ScreenG = ({ text, mostrarBotonAnterior }) => {
+  return (
+    <View style={styles.componentContainer}>
+      <TouchableHighlight
+        style={styles.backButton}
+        underlayColor="#0080ff"
+        onPress={mostrarBotonAnterior}
+      >
+       <>
+      <Ionicons name="arrow-back" size={24} color="black" style={styles.backButtonIcon} />
+      <Text style={styles.backButtonText}>Regresar</Text>
+    </>
+      </TouchableHighlight>
+      <ShadaiMasterBarberShopDanli/>
+    </View>
+  );
+};
+
+
+const ScreenH = ({ text, mostrarBotonAnterior }) => {
+  return (
+    <View style={styles.componentContainer}>
+      <TouchableHighlight
+        style={styles.backButton}
+        underlayColor="#0080ff"
+        onPress={mostrarBotonAnterior}
+      >
+       <>
+      <Ionicons name="arrow-back" size={24} color="black" style={styles.backButtonIcon} />
+      <Text style={styles.backButtonText}>Regresar</Text>
+    </>
+      </TouchableHighlight>
+      <EvansBarberShopDanli/>
     </View>
   );
 };
@@ -101,12 +183,12 @@ const BarberiasDanli = () => {
   const buttons = [
     { text: "Gudo's Barber Shop", image: 'https://scontent.ftgu2-3.fna.fbcdn.net/v/t1.6435-9/84417156_404104600506266_3678776354938574901_n.jpg?_nc_cat=110&ccb=1-7&_nc_sid=8bfeb9&_nc_ohc=2qdJe0Y-0cQAX9HfEna&_nc_ht=scontent.ftgu2-3.fna&oh=00_AfBIy1Q0u3k73sXcmZ4chG-J5Sx5jVUut8_UWtpjG0e5jg&oe=64BD6190',  screen: ScreenA },
     { text: 'Barberia Millenium', image: 'https://scontent.ftgu2-2.fna.fbcdn.net/v/t39.30808-6/245220410_625456092171502_3658673365075829292_n.jpg?_nc_cat=103&ccb=1-7&_nc_sid=09cbfe&_nc_ohc=5iG4J1fxuG0AX8HLcfZ&_nc_ht=scontent.ftgu2-2.fna&oh=00_AfCxr_Z_PrbMNy2rceZYEEuuPBa-SIUZ7pdPGYkbpGzoIQ&oe=649B9AA4', screen: ScreenB },
-    { text: 'Barberia Leody', image: 'https://i.imgur.com/h2bmzh4.jpg', screen: ScreenB },
-    { text: 'Mateos Barber Shop', image: 'https://i.imgur.com/h2bmzh4.jpg', screen: ScreenB },
-    { text: 'Barberia Tu Imagen', image: 'https://i.imgur.com/h2bmzh4.jpg', screen: ScreenB },
-    { text: 'Barberia Erick Glamur', image: 'https://i.imgur.com/h2bmzh4.jpg', screen: ScreenB },
-    { text: 'Shadai Master BarberShop', image: 'https://i.imgur.com/h2bmzh4.jpg', screen: ScreenB },
-    { text: 'Evan’s Barber Shop', image: 'https://i.imgur.com/h2bmzh4.jpg', screen: ScreenB },
+    { text: 'Barberia Leody', image: 'https://i.imgur.com/h2bmzh4.jpg', screen: ScreenC },
+    { text: 'Mateos Barber Shop', image: 'https://i.imgur.com/h2bmzh4.jpg', screen: ScreenD },
+    { text: 'Barberia Tu Imagen', image: 'https://i.imgur.com/h2bmzh4.jpg', screen: ScreenE },
+    { text: 'Barberia Erick Glamur', image: 'https://i.imgur.com/h2bmzh4.jpg', screen: ScreenF },
+    { text: 'Shadai Master BarberShop', image: 'https://i.imgur.com/h2bmzh4.jpg', screen: ScreenG },
+    { text: 'Evan’s Barber Shop', image: 'https://i.imgur.com/h2bmzh4.jpg', screen: ScreenH },
   
   ];
 
