@@ -1,65 +1,34 @@
 import React, { useState, useRef } from 'react';
-import { StyleSheet, View, Dimensions, Linking, Text, Alert, TouchableOpacity, ScrollView, Image , Modal} from 'react-native';
+import { StyleSheet, View, Dimensions, Linking, Text, Alert, TouchableOpacity, ScrollView, Image } from 'react-native';
+import Icon from 'react-native-vector-icons/FontAwesome';
 import MapView, { Marker, Callout } from 'react-native-maps';
 import Swiper from "react-native-web-swiper";
-import Icon from 'react-native-vector-icons/FontAwesome';
-import ImageViewer from 'react-native-image-zoom-viewer';
 
-
-// INICIO DE PARA PONER PINES DENTRO DEL MAPA 
 const locationsData = [
   {
-    title: "Paseo Pupuseria",
-    
-    latitude:     14.03000077782946,      
-    longitude:  -86.5692339701064,
-  }, {
-    title: "Paseo Pupuseria #2",
-    
-    latitude:     14.027740231279315,       
-    longitude:  -86.57908916260345,
+    title: 'Banrural',
+    description: 'Descripción de Tegucigalpa',
+    latitude: 14.02885997329403,
+    longitude: -86.57195943955364,
+  },
+  {
+    title: 'Banrural',
+    description: 'Descripción de Tegucigalpa',
+    latitude: 14.030667455785771,
+    longitude: -86.57961041534016,
   },
   // Agrega más ubicaciones aquí si lo deseas
 ];
-// FIN DE FUNCIO  DE PARA PONER PINES DENTRO DEL MAPA 
 
-
-
-
-export default function PaseoPupuseriaDanli() {  // Este solo es el nomre que se usa para importar esta screen dentro de otro o mandar a llamar
-
-  // INICIO DE CODIGO PARA AGREGAR BOTONCITO CON MENU 
-  const [modalVisible, setModalVisible] = useState(false);
-  const toggleModal = () => {
-    setModalVisible(!modalVisible);
-  };
-  const images = [
-    {
-      url: 'https://i.imgur.com/TrVtmLC.jpg',
-    },
-  ];
-
-   // FIN DE CODIGO PARA AGREGAR BOTONCITO CON MENU 
-
-
-
-
-   // INICIO CODIGO PARA EL PUNNTO CENTRAL DEL MAPA DE LA UBICACION
+export default function Banrural() {
   const mapRef = useRef(null);
   const initialRegion = {
-    
-    latitude:     14.03000077782946,       
-    longitude: -86.5692339701064,
-    latitudeDelta: 0.03,    //ENTRE NUMEROS MAS GRANDES MAS ZOOM DE LA VISTIA INICIAL DEL MAPA
-    longitudeDelta: 0.03,  //ENTRE NUMEROS MAS GRANDES MAS ZOOM DE LA VISTIA INICIAL DEL MAPA
+    latitude: 14.030667455785771,
+    longitude: -86.57961041534016,
+    latitudeDelta: 0.01,
+    longitudeDelta: 0.01,
   };
-  // FIN CODIGO PARA EL PUNNTO CENTRAL DEL MAPA DE LA UBICACION
 
-
-
-
-
-  // INICIO DE CODIGO PARA REDIRIGIR A LA APP GE GOOGLE MAPS, CON MENSAJE DE ALERTA INCLUIDO
   const openGoogleMaps = (latitude, longitude) => {
     Alert.alert(
       'Redirigiendo a Google Maps',
@@ -80,12 +49,7 @@ export default function PaseoPupuseriaDanli() {  // Este solo es el nomre que se
       { cancelable: false }
     );
   };
-  // FIN DE CODIGO PARA REDIRIGIR A LA APP GE GOOGLE MAPS, CON MENSAJE DE ALERTA INCLUIDO
 
-
-
-
-  // INICIO DE CODIO DE BOTONES DE ZOOM DEL MAPA
   const handleZoomIn = () => {
     const region = {
       latitude: initialRegion.latitude,
@@ -106,15 +70,11 @@ export default function PaseoPupuseriaDanli() {  // Este solo es el nomre que se
     };
     mapRef.current.animateToRegion(region, 500);
   };
-  // FIN DE CODIO DE BOTONES DE ZOOM DEL MAPA
 
-
-
-  
   return (
     <ScrollView>
       <View style={styles.container}>
-        <Text style={styles.title}>Paseo Pupuseria</Text>
+        <Text style={styles.title}>Banrural</Text>
         <View style={styles.containerSwipers}>
           <View style={styles.swiperContainer}>
             <Swiper
@@ -125,74 +85,50 @@ export default function PaseoPupuseriaDanli() {  // Este solo es el nomre que se
                 dotActiveStyle: { backgroundColor: "red" },
               }}
             >
-                 <View style={styles.slide}>
-                <Image style={styles.image} source={{ uri: 'https://img.freepik.com/vector-premium/elemento-doodle-barra-carga-estilo-dibujo-linea-dibujada-mano-velocidad-descarga-lenta-estado-progreso-concepto-barra-carga-internet-ilustracion-vector-aislado_253081-823.jpg' }} />
+              <View style={styles.slide}>
+                <Image style={styles.image} source={{ uri: 'https://lh3.googleusercontent.com/p/AF1QipOIr0w9_r3dKSZEiAjwPvcpoPf2Ta5paEXaqoEv=s680-w680-h510' }} />
               </View>
-  
+              <View style={styles.slide}>
+                <Image style={styles.image} source={{ uri: 'https://www.banrural.com.hn/wp-content/uploads/2019/04/bg-quienes1.jpg' }} />
+              </View>
+              
             </Swiper>
           </View>
         </View>
 
 
-                
-
-
-<View style={styles.container}>
-      
-      <Text style={styles.menuText}>MENU</Text>
-
-      <View style={styles.buttonContainer3}>
-        <TouchableOpacity activeOpacity={1} onPress={toggleModal}>
-          <Image
-            source={{ uri: 'https://i.imgur.com/TrVtmLC.jpg' }}
-            style={styles.imagen}
-            resizeMode="cover"
-          />
-        </TouchableOpacity>
-      </View>
-
-      <Text style={styles.scheduleHeaderText}>HORARIOS DE ATENCION</Text>
+        <Text style={styles.scheduleHeaderText}>HORARIOS DE ATENCION</Text>
       <View style={styles.scheduleContainer}>
-      <View style={styles.scheduleItem}>
+        <View style={styles.scheduleItem}>
           <Icon name="clock-o" size={20} color="#000" style={styles.scheduleIcon} />
-          <Text style={styles.scheduleText}>Lun-Dom: 6:45 AM - 8:00 PM</Text>
+          <Text style={styles.scheduleText}>Lun-Vie: 9:00 AM - 4:00 PM</Text>
+        </View>
+        <View style={styles.scheduleItem}>
+          <Icon name="clock-o" size={20} color="#000" style={styles.scheduleIcon} />
+          <Text style={styles.scheduleText}>Sáb: 9:00 AM - 12:00 PM</Text>
+        </View>
+        <View style={styles.scheduleItem}>
+          <Icon name="clock-o" size={20} color="#000" style={styles.scheduleIcon} />
+          <Text style={styles.scheduleText}>Dom: Cerrado</Text>
         </View>
       </View>
-
-      <Modal visible={modalVisible} animationType="fade" transparent={true}>
-        <ImageViewer
-          imageUrls={images}
-          onCancel={toggleModal}
-          enableSwipeDown={true}
-          renderIndicator={() => null}
-          renderHeader={() => (
-            <TouchableOpacity style={styles.closeButtonContainer3} onPress={toggleModal}>
-              <Icon name="times" size={20} color="#fff" />
-            </TouchableOpacity>
-          )}
-          renderFooter={() => null}
-        />
-      </Modal>
-    </View>
 
 
         <View style={styles.buttonContainer}>
           <TouchableOpacity
             style={styles.button}
             onPress={() => {
-              Linking.openURL('#');
+              Linking.openURL('https://www.banrural.com.hn/');
             }}
           >
-             <Icon name="globe" size={20} color="white" style={styles.buttonIcon} />
-            <Text style={styles.buttonText}>Sitio Web</Text>
+            <Text style={styles.buttonText}>Visitar</Text>
           </TouchableOpacity>
           <TouchableOpacity
             style={styles.button}
             onPress={() => {
-              Linking.openURL('tel: +50498528317');
+              Linking.openURL('tel: 22027676');
             }}
           >
-             <Icon name="phone" size={20} color="white" style={styles.buttonIcon} />
             <Text style={styles.buttonText}>Contactar</Text>
           </TouchableOpacity>
         </View>
@@ -232,8 +168,6 @@ export default function PaseoPupuseriaDanli() {  // Este solo es el nomre que se
   );
 }
 
-
-
 // CODIGO DE ESTILOS
 const styles = StyleSheet.create({
   container: {
@@ -245,7 +179,6 @@ const styles = StyleSheet.create({
     fontSize: 34,
     fontWeight: 'bold',
     marginTop: 10,
-    textAlign:'center',
   },
   mapContainer: {
     aspectRatio: 16 / 9,
@@ -386,6 +319,4 @@ const styles = StyleSheet.create({
   },
 
   //fin de estilos de menu y horarios
-
-
 });

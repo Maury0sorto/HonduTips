@@ -175,7 +175,7 @@ export default function LaTorreDanli() {  // Este solo es el nomre que se usa pa
           <TouchableOpacity
             style={styles.button}
             onPress={() => {
-              Linking.openURL('');
+              Linking.openURL('#');
             }}
           >
              <Icon name="globe" size={20} color="white" style={styles.buttonIcon} />
