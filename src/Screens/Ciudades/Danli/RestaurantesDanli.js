@@ -33,6 +33,8 @@ import OrientalDanli from './RestaurantesDanli/OrientalDanli';
 import PupusasDanli from './RestaurantesDanli/PupusasDanli';
 import SportJaliDanli from './RestaurantesDanli/SportJaliDanli';
 import BaleadasYuliDanli from './RestaurantesDanli/BaleadasYuli';
+import LaTorreDanli from './RestaurantesDanli/LaTorreDanli';
+import PaseoPupuseriaDanli from './RestaurantesDanli/PaseoPupuseriaDanli';
 
 const ScreenA = ({ text, mostrarBotonAnterior }) => {
   return (
@@ -555,6 +557,40 @@ const ScreenAC= ({ text, mostrarBotonAnterior }) => {
     </View>
   );
 };
+const ScreenAD= ({ text, mostrarBotonAnterior }) => {
+  return (
+    <View style={styles.componentContainer}>
+      <TouchableHighlight
+        style={styles.backButton}
+        underlayColor="#0080ff"
+        onPress={mostrarBotonAnterior}
+      >
+       <>
+      <Ionicons name="arrow-back" size={24} color="black" style={styles.backButtonIcon} />
+      <Text style={styles.backButtonText}>Regresar</Text>
+    </>
+      </TouchableHighlight>
+      <LaTorreDanli/>
+    </View>
+  );
+};
+const ScreenAF= ({ text, mostrarBotonAnterior }) => {
+  return (
+    <View style={styles.componentContainer}>
+      <TouchableHighlight
+        style={styles.backButton}
+        underlayColor="#0080ff"
+        onPress={mostrarBotonAnterior}
+      >
+       <>
+      <Ionicons name="arrow-back" size={24} color="black" style={styles.backButtonIcon} />
+      <Text style={styles.backButtonText}>Regresar</Text>
+    </>
+      </TouchableHighlight>
+      <PaseoPupuseriaDanli/>
+    </View>
+  );
+};
 
 const RestaurantesDanli = () => {
   const [componenteVisible, setComponenteVisible] = useState(null);
@@ -583,7 +619,7 @@ const RestaurantesDanli = () => {
     { text: "Paradise Burger", image: 'https://scontent.ftgu3-4.fna.fbcdn.net/v/t39.30808-6/301142856_452426046902766_6302578564774581807_n.jpg?_nc_cat=109&cb=99be929b-59f725be&ccb=1-7&_nc_sid=09cbfe&_nc_ohc=iog7n5WRpe4AX9PnFJx&_nc_ht=scontent.ftgu3-4.fna&oh=00_AfCVQ1I2E73-ccXkujXZOSRJ0BP6qWFiIuduZKrwrPVbZw&oe=64A09B5F', screen: ScreenF },
     { text: "Hot Wings", image: 'https://scontent.fsap8-1.fna.fbcdn.net/v/t39.30808-6/346629593_1960075220994004_5975068841861283462_n.jpg?_nc_cat=106&cb=99be929b-59f725be&ccb=1-7&_nc_sid=09cbfe&_nc_ohc=ZT_-H3QrFKkAX8W2kR6&_nc_ht=scontent.fsap8-1.fna&oh=00_AfB4h7TtayyqLxRW1tCueTQUqeFti0tbvruUm3aKDk6yUg&oe=649EBDAE', screen: ScreenG },
     { text: "Sushi Totemo", image: 'https://scontent.fsap8-1.fna.fbcdn.net/v/t39.30808-6/343310766_2183144078740427_3441642581191720748_n.jpg?_nc_cat=101&cb=99be929b-59f725be&ccb=1-7&_nc_sid=09cbfe&_nc_ohc=KGx1dnjGAR0AX-3DsBX&_nc_ht=scontent.fsap8-1.fna&oh=00_AfBDqOOa_SgCBqGal6lYmzl2WgG1hr03IIhHmPyGzwTPsw&oe=649EE165', screen: ScreenH },
-    { text: "Restaurante Mario Chávez", image: 'https://scontent.fsap8-1.fna.fbcdn.net/v/t39.30808-6/323553590_1140424086657650_1481250813580760994_n.jpg?_nc_cat=108&cb=99be929b-59f725be&ccb=1-7&_nc_sid=09cbfe&_nc_ohc=-FGGdSpCcLoAX-iM634&_nc_ht=scontent.fsap8-1.fna&oh=00_AfBg14AnXVlbICXzhWK46wXJJ7MzPwiZdCxVGHWJXK6IIA&oe=649F07DB', screen: ScreenI },
+    { text: "Mario Chávez", image: 'https://scontent.fsap8-1.fna.fbcdn.net/v/t39.30808-6/323553590_1140424086657650_1481250813580760994_n.jpg?_nc_cat=108&cb=99be929b-59f725be&ccb=1-7&_nc_sid=09cbfe&_nc_ohc=-FGGdSpCcLoAX-iM634&_nc_ht=scontent.fsap8-1.fna&oh=00_AfBg14AnXVlbICXzhWK46wXJJ7MzPwiZdCxVGHWJXK6IIA&oe=649F07DB', screen: ScreenI },
     { text: "El Gaucho", image: 'https://scontent.fsap8-1.fna.fbcdn.net/v/t39.30808-6/323695677_444934067711668_6237152711758612986_n.jpg?_nc_cat=106&cb=99be929b-59f725be&ccb=1-7&_nc_sid=09cbfe&_nc_ohc=KUhX5jVr6HcAX_SIQjY&_nc_ht=scontent.fsap8-1.fna&oh=00_AfBV1m6ut0siH1NgvTya3nTR-y50KYTyczJZXbgRLoNxwg&oe=649F1E55', screen: ScreenJ },
     { text: "Coco Baleadas", image: 'https://scontent.fsap8-1.fna.fbcdn.net/v/t1.6435-9/42716286_2144075459244554_1165425262507065344_n.jpg?_nc_cat=102&cb=99be929b-59f725be&ccb=1-7&_nc_sid=174925&_nc_ohc=pyq1nYYASiYAX_eVu3E&_nc_ht=scontent.fsap8-1.fna&oh=00_AfC-Mwl6QNbnpKY_gHuAFGZr0Zpkq_zXw2Ff78aAOYsZmA&oe=64C16D0F', screen: ScreenK },
     { text: "Moyas Grill", image: 'https://scontent.ftgu3-3.fna.fbcdn.net/v/t39.30808-6/326250757_681003343722419_3032547084751507322_n.jpg?stp=cp6_dst-jpg&_nc_cat=104&cb=99be929b-59f725be&ccb=1-7&_nc_sid=09cbfe&_nc_ohc=c8P7dYLzPJQAX8L39Eq&_nc_ht=scontent.ftgu3-3.fna&oh=00_AfBHlXdtqL6tswL1C5ZtpGsuUdcsdpkHmnrE2JAKJhbyow&oe=649F02C1', screen: ScreenL },
@@ -596,15 +632,17 @@ const RestaurantesDanli = () => {
     { text: "Mega Pizza", image: 'https://scontent.ftgu3-3.fna.fbcdn.net/v/t39.30808-6/271747154_1289385321487391_4302338733097803900_n.png?_nc_cat=101&cb=99be929b-59f725be&ccb=1-7&_nc_sid=09cbfe&_nc_ohc=_hTHfJCYHYQAX_MET0s&_nc_ht=scontent.ftgu3-3.fna&oh=00_AfCAybD85VhvQWdJ-GagLG5jb38rjSjPl7bR2oK3CZQBJw&oe=64A08624', screen: ScreenR},
     { text: "Pizza Picolino", image: 'https://scontent.ftgu3-3.fna.fbcdn.net/v/t39.30808-6/279743863_1027434387867292_6859084035090998512_n.jpg?_nc_cat=101&cb=99be929b-59f725be&ccb=1-7&_nc_sid=09cbfe&_nc_ohc=wXSP5rv6kEIAX8dh0iM&_nc_ht=scontent.ftgu3-3.fna&oh=00_AfABcBqVFpNTA4BCP9PEM9bKEEr_-RKkB5ju8_mAH4NGxQ&oe=649F9A0E', screen: ScreenS},
     { text: "Ovi & Ser", image: 'https://scontent.fsap8-1.fna.fbcdn.net/v/t39.30808-6/323867740_6623661224317291_9202089584719900258_n.jpg?_nc_cat=100&cb=99be929b-59f725be&ccb=1-7&_nc_sid=09cbfe&_nc_ohc=XfQNz9xc_7UAX9ZXE9v&_nc_oc=AQlN_m1bdg4sYGCZ13nFbYiAIpriQ6_CelWPfswmYj-f8cwtqmUXvnMGhqQlHQJW3ug&_nc_ht=scontent.fsap8-1.fna&oh=00_AfC06cD4y05SI_Ho4LKJQA3bghZugniWOBI_IYU9nVEl4w&oe=649F3D08', screen: ScreenT},
-    { text: "Pollolandia", image: 'https://scontent.fsap8-1.fna.fbcdn.net/v/t39.30808-6/347446343_772421607766649_795804025841303832_n.jpg?_nc_cat=100&cb=99be929b-59f725be&ccb=1-7&_nc_sid=09cbfe&_nc_ohc=odEBZQIWXLEAX__m-vR&_nc_ht=scontent.fsap8-1.fna&oh=00_AfD3jqI4stOrLVdhU92OO2FnoGauH65VPz8MCPYee-pAVA&oe=649FA659', screen: ScreenU},
+    { text: "Pollolandia", image: 'https://scontent.fsap8-1.fna.fbcdn.net/v/t39.30808-6/319064962_5871233029601732_5845134388220215097_n.jpg?_nc_cat=107&cb=99be929b-59f725be&ccb=1-7&_nc_sid=174925&_nc_eui2=AeFOQssgMx-HpuT-934BiM0N3L4p2yWz1rzcvinbJbPWvJ8Tw396C33pKpO2YrgHR6pjSPv0WbAY5lxJCtqpojNg&_nc_ohc=q1PNuaUlxNUAX__dejO&_nc_ht=scontent.fsap8-1.fna&oh=00_AfDx8v8vsSDiGTwBXrcMBo7DfpkGvwpv9BNo0SAI7ynpHQ&oe=64A98C6A', screen: ScreenU},
     { text: "Pollos La Cesta", image: 'https://scontent.fsap8-1.fna.fbcdn.net/v/t39.30808-1/345920514_539994888349310_7491954719497548359_n.jpg?stp=dst-jpg_p200x200&_nc_cat=108&cb=99be929b-59f725be&ccb=1-7&_nc_sid=c6021c&_nc_ohc=tAK5_2fr8UwAX_6_D7-&_nc_ht=scontent.fsap8-1.fna&oh=00_AfDfTqxB_1wt5xxaWAUgSxj8jDI_dO7Ag744iDPl46Gf0w&oe=64A0C002', screen: ScreenV},
     { text: "Pollo Campesino", image: 'https://scontent.fsap8-1.fna.fbcdn.net/v/t39.30808-6/327107488_3415127425397936_587678943379260759_n.jpg?_nc_cat=104&cb=99be929b-59f725be&ccb=1-7&_nc_sid=09cbfe&_nc_ohc=x_JDECsKWOsAX8a4rWL&_nc_ht=scontent.fsap8-1.fna&oh=00_AfBKUWk3Jxyzm6BBzQaTBJc2X2sF8RxZQzSD58dLdwzygQ&oe=64A189EB', screen: ScreenW},
     { text: "Bigos", image: 'https://scontent.fsap8-1.fna.fbcdn.net/v/t39.30808-6/324188755_949078036090103_6975206024296977072_n.jpg?_nc_cat=105&cb=99be929b-59f725be&ccb=1-7&_nc_sid=09cbfe&_nc_ohc=GLoa1DsDUioAX_n6TVi&_nc_ht=scontent.fsap8-1.fna&oh=00_AfDLqcIryCSSehuP8ujI6ONHgK2vlw1L5rPIFefvFqz9jw&oe=64A19662', screen: ScreenX},
     { text: "KAM FU", image: 'https://scontent.fsap8-1.fna.fbcdn.net/v/t39.30808-6/271735932_275448434652028_1332807540249237618_n.jpg?_nc_cat=102&cb=99be929b-59f725be&ccb=1-7&_nc_sid=09cbfe&_nc_eui2=AeE21F6Espw2nNrHrj2vFoK3_rfus7073XH-t-6zvTvdcZsTRIifBXIjMscQ6MffQFvlY63335aO_VLqqu0nPLzC&_nc_ohc=oHtoP3CoEgkAX9-M6fz&_nc_ht=scontent.fsap8-1.fna&oh=00_AfB5GjivU2qnnrQCL3VQiQLLnBghGaqWT5G2p9VTphhwNA&oe=64A73774', screen: ScreenY},
     { text: "Min Oriental", image: 'https://allrest-ams3-space-cdn-06-2023.ams3.digitaloceanspaces.com/adverts/restaurant/min-oriental/min-oriental.jpg', screen: ScreenZ},
-    { text: "Servitipicos Alameda Honduras", image: 'https://scontent.fsap8-1.fna.fbcdn.net/v/t39.30808-6/348992973_773007401279215_4735694757935288340_n.jpg?_nc_cat=103&cb=99be929b-59f725be&ccb=1-7&_nc_sid=09cbfe&_nc_eui2=AeEVhJqnXid2sje4IGp-1LOwnD9R-kiO2VmcP1H6SI7ZWZ37YHLVaF8YZdc12FW0dzH8g0CnV5WsgrSt16crDRks&_nc_ohc=2vHjQAYf6QIAX_faNo-&_nc_ht=scontent.fsap8-1.fna&oh=00_AfDWmxRKO5HmDvW5iCjlXngF5WmxXt5BIlG6ggVvS402KQ&oe=64A8693A', screen: ScreenAA},
+    { text: "Servitipicos Alameda", image: 'https://scontent.fsap8-1.fna.fbcdn.net/v/t39.30808-6/348992973_773007401279215_4735694757935288340_n.jpg?_nc_cat=103&cb=99be929b-59f725be&ccb=1-7&_nc_sid=09cbfe&_nc_eui2=AeEVhJqnXid2sje4IGp-1LOwnD9R-kiO2VmcP1H6SI7ZWZ37YHLVaF8YZdc12FW0dzH8g0CnV5WsgrSt16crDRks&_nc_ohc=2vHjQAYf6QIAX_faNo-&_nc_ht=scontent.fsap8-1.fna&oh=00_AfDWmxRKO5HmDvW5iCjlXngF5WmxXt5BIlG6ggVvS402KQ&oe=64A8693A', screen: ScreenAA},
     { text: "Sport Jali", image: 'https://scontent.fsap8-1.fna.fbcdn.net/v/t39.30808-6/286781801_2242366029245456_906977375012473814_n.jpg?_nc_cat=101&cb=99be929b-59f725be&ccb=1-7&_nc_sid=09cbfe&_nc_eui2=AeHQy6bX3s2XeVaP6jxyA9BkXIb4ZiXsBXFchvhmJewFcSXbbYuF42i66UE4FoQsrUs3_uuoPTCkc6_1VP8-4Hhi&_nc_ohc=9-sKEANLu_UAX_ukjbx&_nc_ht=scontent.fsap8-1.fna&oh=00_AfDdrdVllfD5FxzMdXTTe0k5PKI9HEhbb9XxlWaAPm4_ZA&oe=64A73727', screen: ScreenAB},
     { text: "Baleadas Yuli", image: 'https://scontent.fsap8-1.fna.fbcdn.net/v/t39.30808-6/305028972_472829328189425_5933724912231027169_n.jpg?_nc_cat=110&cb=99be929b-59f725be&ccb=1-7&_nc_sid=09cbfe&_nc_eui2=AeES0yGPfsnkJE9gKj0gcumBiWT4p_uSBrWJZPin-5IGtfHGaCKFV9zmTXPC1w6HCiLPJ5W2HVk0vSvndxMbNicv&_nc_ohc=u7If57OmjOgAX8OXn-0&_nc_ht=scontent.fsap8-1.fna&oh=00_AfDjq4uV70DReplx0Q-_A9u_rX9c9hYNf63hFGLaFElHKw&oe=64A82F31', screen: ScreenAC},
+    { text: "Torre Fuerte", image: 'https://i.imgur.com/3MabvRG.gif', screen: ScreenAD},
+    { text: "Paseo Pupuseria", image: 'https://i.imgur.com/3MabvRG.gif', screen: ScreenAF},
    
   
   
@@ -621,7 +659,7 @@ const RestaurantesDanli = () => {
     { key: '7', value: 'Paradise Burger' },
     { key: '8', value: 'Hot Wings' },
     { key: '9', value: 'Sushi Totemo' },
-    { key: '10', value: 'Restaurante Mario Chávez' },
+    { key: '10', value: 'Mario Chávez' },
     { key: '11', value: 'El Gaucho' },
     { key: '12', value: 'Coco Baleadas' },
     { key: '13', value: 'Moyas Grill' },
@@ -640,9 +678,11 @@ const RestaurantesDanli = () => {
     { key: '26', value: 'Bigos' },
     { key: '27', value: 'KAM FU' },
     { key: '28', value: 'Min Oriental' },
-    { key: '29', value: 'Servitipicos Alameda Honduras' },
+    { key: '29', value: 'Servitipicos Alameda' },
     { key: '30', value: 'Sport Jali' },
     { key: '31', value: 'Baleadas Yuli' },
+    { key: '32', value: 'Torre Fuerte' },
+    { key: '33', value: 'Paseo Pupuseria' },
     
   ];
 
