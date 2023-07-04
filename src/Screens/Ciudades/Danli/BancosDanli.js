@@ -10,6 +10,7 @@ import BancoProamericaDanli from './BancosDanli/BancoProamericaDanli';
 import BanPaisDanli from './BancosDanli/BanPaisDanli';
 import BACDanli from './BancosDanli/BACDanli';
 import Davivienda from './BancosDanli/Davivienda';
+import Banrural from './BancosDanli/Banrural';
 
 
 
@@ -160,7 +161,23 @@ const Screenh = ({ text, mostrarBotonAnterior }) => {
     </View>
   );
 };
-
+const Screeni = ({ text, mostrarBotonAnterior }) => {
+  return (
+    <View style={styles.componentContainer}>
+      <TouchableHighlight
+        style={styles.backButton}
+        underlayColor="#0080ff"
+        onPress={mostrarBotonAnterior}
+      >
+          <>
+      <Ionicons name="arrow-back" size={24} color="black" style={styles.backButtonIcon} />
+      <Text style={styles.backButtonText}>Regresar</Text>
+    </>
+      </TouchableHighlight>
+      <Banrural/>
+    </View>
+  );
+};
 const MyScreen = () => {
   const [componenteVisible, setComponenteVisible] = useState(null);
   const [mostrarSelectList, setMostrarSelectList] = useState(true); // Nuevo estado
@@ -188,6 +205,7 @@ const MyScreen = () => {
     { text: 'Banco De Los Trabajadores', image: 'https://play-lh.googleusercontent.com/sqpvV9AEkQ0gMMFGmtZpOP8xpTV8iWcopMdo0QujP6tm59AP_3CRFMpFojMLIt_je4Q', screen: ScreenF },
     { text: 'BAC', image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSeU4IPpu2dzGKQeWwsn-d1MnLcm_Zon1DMptUP_g67pfmhtZYl3QGu2Fe2WVSo7hQ-S9E&usqp=CAU', screen: ScreenG },
     { text: 'Davivienda', image: 'https://d1yjjnpx0p53s8.cloudfront.net/styles/logo-original-577x577/s3/122017/untitled-1_46.png?QGYPpQzyBDJWZcxniQEKeXifDHt1F0Ty&itok=nXXCyRfy', screen: Screenh },
+    { text: 'Banrural', image: 'https://scontent.ftgu2-2.fna.fbcdn.net/v/t1.18169-9/10403147_803320833037829_8379118936803293338_n.jpg?_nc_cat=100&ccb=1-7&_nc_sid=9267fe&_nc_ohc=8BhY5eVI2L8AX8-iXW4&_nc_ht=scontent.ftgu2-2.fna&oh=00_AfBxDfE8yREZvV-x1I8txcAPirDwD-iMeGBKXEY0moG_oQ&oe=64CBC060', screen: Screeni },
   
   
   ];
@@ -203,6 +221,7 @@ const MyScreen = () => {
     { key: '8', value: 'Banco Popular' },
     { key: '9', value: 'BAC' },
     { key: '10', value: 'Davivienda' },
+    { key: '11', value: 'Banrural' },
   ];
 
   const ComponenteVisible = componenteVisible?.screenComponent || null;
