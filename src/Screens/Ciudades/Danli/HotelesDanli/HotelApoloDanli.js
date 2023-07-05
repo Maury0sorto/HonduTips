@@ -2,6 +2,7 @@ import React, { useState, useRef } from 'react';
 import { StyleSheet, View, Dimensions, Linking, Text, Alert, TouchableOpacity, ScrollView, Image } from 'react-native';
 import MapView, { Marker, Callout } from 'react-native-maps';
 import Swiper from "react-native-web-swiper";
+import Icon from 'react-native-vector-icons/FontAwesome';
 
 const locationsData = [
   {
@@ -101,6 +102,7 @@ export default function HotelApoloDanli() {
               Linking.openURL('tel: 9685-7130');
             }}
           >
+              <Icon name="phone" size={20} color="white" style={styles.buttonIcon} />
             <Text style={styles.buttonText}>Contactar</Text>
           </TouchableOpacity>
         </View>
@@ -140,6 +142,7 @@ export default function HotelApoloDanli() {
   );
 }
 
+// CODIGO DE ESTILOS
 const styles = StyleSheet.create({
   container: {
     flex: 1,
@@ -156,7 +159,7 @@ const styles = StyleSheet.create({
     width: Dimensions.get('window').width * 0.8,
     borderRadius: 10,
     overflow: 'hidden',
-    marginTop: 80,
+    marginTop: 40,
   },
   map: {
     flex: 1,
@@ -196,8 +199,14 @@ const styles = StyleSheet.create({
     paddingVertical: 10,
     marginHorizontal: 10,
     borderRadius: 5,
-    marginTop: 50,
+    marginTop: 10,
+    flexDirection: 'row',
+    alignItems: 'center',
   },
+  buttonIcon: {
+    marginRight: 5,
+  },
+
   buttonText: {
     color: 'white',
     fontSize: 16,
@@ -224,4 +233,65 @@ const styles = StyleSheet.create({
     fontSize: 24,
     fontWeight: 'bold',
   },
+
+
+
+  // Esttilos de menu y horarios
+  container4: {
+    flex: 1,
+    justifyContent: 'center',
+    alignItems: 'center',
+    backgroundColor: '#fff',
+    paddingHorizontal: 40,
+ 
+  },
+  menuText: {
+    fontSize: 18,
+    fontWeight: 'bold',
+    marginBottom: 10,
+    marginTop: 40,
+  },
+  buttonContainer3: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    marginBottom: 20,
+  },
+  imagen: {
+    width: 200,
+    height: 200,
+    borderRadius: 10,
+  },
+  scheduleHeaderText: {
+    fontSize: 18,
+    fontWeight: 'bold',
+    marginTop: 20,
+    marginBottom: 10,
+  },
+  scheduleContainer: {
+    marginLeft: 10,
+  },
+  scheduleItem: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    marginBottom: 5,
+  },
+  scheduleIcon: {
+    marginRight: 5,
+  },
+  scheduleText: {
+    color: '#000',
+  },
+  closeButtonContainer3: {
+    position: 'absolute',
+    top: 30,
+    right: 30,
+    width: 30,
+    height: 30,
+    justifyContent: 'center',
+    alignItems: 'center',
+    zIndex: 9999,
+  },
+
+  //fin de estilos de menu y horarios
+
 });
