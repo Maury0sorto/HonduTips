@@ -120,14 +120,16 @@ export default function ArtesMarcialesDanli() {
               Linking.openURL('https://www.facebook.com/pages/Escuela-Municipal-De-Deporte-Danli/638361522860996');
             }}
           >
+               <Icon name="globe" size={20} color="white" style={styles.buttonIcon} />
             <Text style={styles.buttonText}>Visitar</Text>
           </TouchableOpacity>
           <TouchableOpacity
             style={styles.button}
             onPress={() => {
-              Linking.openURL('https://www.facebook.com/pages/Escuela-Municipal-De-Deporte-Danli/638361522860996');
+              Linking.openURL('https://www.facebook.com/pages/Escuela-Municipal-De-Deporte-Danli/638361522860996'); 
             }}
           >
+             <Icon name="phone" size={20} color="white" style={styles.buttonIcon} />
             <Text style={styles.buttonText}>Contactar</Text>
           </TouchableOpacity>
         </View>

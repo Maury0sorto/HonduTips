@@ -12,7 +12,7 @@ const locationsData = [
     longitude:  -86.57912792402742,
   },
 
-  // Agrega más ubicaciones aquí si lo deseas
+  // Agrega más ubicaciones aquí si lo deseas 
 ];
 
 export default function MallUniplazaDanli() {
@@ -115,6 +115,7 @@ export default function MallUniplazaDanli() {
               Linking.openURL('http://www.malluniplaza.com/uniplaza-danli/');
             }}
           >
+             <Icon name="globe" size={20} color="white" style={styles.buttonIcon} />
             <Text style={styles.buttonText}>Visitar</Text>
           </TouchableOpacity>
           <TouchableOpacity
@@ -123,6 +124,7 @@ export default function MallUniplazaDanli() {
               Linking.openURL('tel: 2236-7484');
             }}
           >
+            <Icon name="phone" size={20} color="white" style={styles.buttonIcon} />
             <Text style={styles.buttonText}>Contactar</Text>
           </TouchableOpacity>
         </View>

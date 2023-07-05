@@ -21,7 +21,7 @@ export default function BarberiaTuImagenDanli() {
     latitude:    14.027154898979708, 
     longitude:  -86.56991876931053,
     latitudeDelta: 0.001,
-    longitudeDelta: 0.001,
+    longitudeDelta: 0.001, 
   };
 
   const openGoogleMaps = (latitude, longitude) => {
@@ -117,6 +117,7 @@ export default function BarberiaTuImagenDanli() {
               Linking.openURL('tel: 2763-5981');
             }}
           >
+              <Icon name="phone" size={20} color="white" style={styles.buttonIcon} />
             <Text style={styles.buttonText}>Contactar</Text>
           </TouchableOpacity>
         </View>

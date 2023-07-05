@@ -117,6 +117,7 @@ export default function BarberiaErickGlamurDanli() {
               Linking.openURL('tel: 9791-8196');
             }}
           >
+              <Icon name="phone" size={20} color="white" style={styles.buttonIcon} />
             <Text style={styles.buttonText}>Contactar</Text>
           </TouchableOpacity>
         </View>
@@ -149,7 +150,7 @@ export default function BarberiaErickGlamurDanli() {
             <TouchableOpacity style={styles.zoomButton} onPress={handleZoomOut}>
               <Text style={styles.zoomButtonText}>-</Text>
             </TouchableOpacity>
-          </View>
+          </View> 
         </View>
       </View>
     </ScrollView>

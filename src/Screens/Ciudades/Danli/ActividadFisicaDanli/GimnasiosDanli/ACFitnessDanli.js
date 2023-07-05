@@ -2,7 +2,7 @@ import React, { useState, useRef } from 'react';
 import { StyleSheet, View, Dimensions, Linking, Text, Alert, TouchableOpacity, ScrollView, Image } from 'react-native';
 import Icon from 'react-native-vector-icons/FontAwesome';
 import MapView, { Marker, Callout } from 'react-native-maps';
-import Swiper from "react-native-web-swiper";
+import Swiper from "react-native-web-swiper"; 
 
 const locationsData = [
   {
@@ -120,6 +120,7 @@ export default function ACFitnesDanli() {
               Linking.openURL('https://www.ficohsa.com/hn');
             }}
           >
+              <Icon name="globe" size={20} color="white" style={styles.buttonIcon} />
             <Text style={styles.buttonText}>Visitar</Text>
           </TouchableOpacity>
           <TouchableOpacity
@@ -128,6 +129,7 @@ export default function ACFitnesDanli() {
               Linking.openURL('tel: 80022801000');
             }}
           >
+             <Icon name="phone" size={20} color="white" style={styles.buttonIcon} />
             <Text style={styles.buttonText}>Contactar</Text>
           </TouchableOpacity>
         </View>

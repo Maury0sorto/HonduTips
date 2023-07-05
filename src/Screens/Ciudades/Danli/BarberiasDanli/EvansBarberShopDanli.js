@@ -18,7 +18,7 @@ const locationsData = [
 export default function EvansBarberShopDanli() {
   const mapRef = useRef(null);
   const initialRegion = {
-    latitude:    14.04600308830221, 
+    latitude:    14.04600308830221,  
     longitude:  -86.56492481036182,
     latitudeDelta: 0.001,
     longitudeDelta: 0.001,
@@ -117,6 +117,7 @@ export default function EvansBarberShopDanli() {
               Linking.openURL('tel: 9722-5938');
             }}
           >
+              <Icon name="phone" size={20} color="white" style={styles.buttonIcon} />
             <Text style={styles.buttonText}>Contactar</Text>
           </TouchableOpacity>
         </View>

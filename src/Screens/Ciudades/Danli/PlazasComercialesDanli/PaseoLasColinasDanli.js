@@ -89,7 +89,7 @@ export default function PaseoLasColinasDanli() {
              
             </Swiper>
           </View>
-        </View>
+        </View> 
 
 
         <Text style={styles.scheduleHeaderText}>HORARIOS DE ATENCION</Text>
@@ -116,6 +116,7 @@ export default function PaseoLasColinasDanli() {
               Linking.openURL('https://www.facebook.com/centrocomercialpaseolascolinasdanli/');
             }}
           >
+             <Icon name="globe" size={20} color="white" style={styles.buttonIcon} />
             <Text style={styles.buttonText}>Visitar</Text>
           </TouchableOpacity>
           <TouchableOpacity
@@ -124,6 +125,7 @@ export default function PaseoLasColinasDanli() {
               Linking.openURL('tel: 9764-4795');
             }}
           >
+            <Icon name="phone" size={20} color="white" style={styles.buttonIcon} />
             <Text style={styles.buttonText}>Contactar</Text>
           </TouchableOpacity>
         </View>
