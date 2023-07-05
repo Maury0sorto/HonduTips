@@ -1,28 +1,64 @@
+
+
+
+
 import React, { useState, useRef } from 'react';
-import { StyleSheet, View, Dimensions, Linking, Text, Alert, TouchableOpacity, ScrollView, Image } from 'react-native';
+import { StyleSheet, View, Dimensions, Linking, Text, Alert, TouchableOpacity, ScrollView, Image , Modal} from 'react-native';
 import MapView, { Marker, Callout } from 'react-native-maps';
 import Swiper from "react-native-web-swiper";
+import Icon from 'react-native-vector-icons/FontAwesome';
+import ImageViewer from 'react-native-image-zoom-viewer';
 
+
+// INICIO DE PARA PONER PINES DENTRO DEL MAPA 
 const locationsData = [
   {
     title: "Papa Johns",
- 
-    latitude:   14.019088107974794, 
-    longitude:  -86.57309958622083,
+    
+    latitude:   14.019217134830521,  
+    longitude:  -86.57239200179406,
   },
 
   // Agrega más ubicaciones aquí si lo deseas
 ];
+// FIN DE FUNCIO  DE PARA PONER PINES DENTRO DEL MAPA 
 
-export default function PapaJohnstDanli() {
+
+
+
+export default function PapaJohnstDanli() {  // Este solo es el nomre que se usa para importar esta screen dentro de otro o mandar a llamar
+
+  // INICIO DE CODIGO PARA AGREGAR BOTONCITO CON MENU 
+  const [modalVisible, setModalVisible] = useState(false);
+  const toggleModal = () => {
+    setModalVisible(!modalVisible);
+  };
+  const images = [
+    {
+      url: 'https://scontent.fsap8-1.fna.fbcdn.net/v/t39.30808-6/316669803_146907448093956_2324211972475293790_n.jpg?_nc_cat=107&cb=99be929b-59f725be&ccb=1-7&_nc_sid=730e14&_nc_eui2=AeEZftu6k1Zo_O_5P_uJffdwksWifcW543OSxaJ9xbnjc9eU1hPsaTN9z8vRfpolHcy9_KI1Zvq1QHic5O6APTlP&_nc_ohc=3U6IzrkfD3cAX_RT16a&_nc_ht=scontent.fsap8-1.fna&oh=00_AfC_ItyMIA_yCjC03U-bdzPbP79BVRjmPqBcXq14Gk5hUw&oe=64AAC17F',
+    },
+  ];
+
+   // FIN DE CODIGO PARA AGREGAR BOTONCITO CON MENU 
+
+
+
+
+   // INICIO CODIGO PARA EL PUNNTO CENTRAL DEL MAPA DE LA UBICACION
   const mapRef = useRef(null);
   const initialRegion = {
-    latitude:   14.019088107974794, 
-    longitude:  -86.57309958622083,
-    latitudeDelta: 0.01,
-    longitudeDelta: 0.01,
+    latitude:  14.019217134830521,  
+    longitude:  -86.57239200179406,
+    latitudeDelta: 0.01,    //ENTRE NUMEROS MAS GRANDES MAS ZOOM DE LA VISTIA INICIAL DEL MAPA
+    longitudeDelta: 0.01,  //ENTRE NUMEROS MAS GRANDES MAS ZOOM DE LA VISTIA INICIAL DEL MAPA
   };
+  // FIN CODIGO PARA EL PUNNTO CENTRAL DEL MAPA DE LA UBICACION
 
+
+
+
+
+  // INICIO DE CODIGO PARA REDIRIGIR A LA APP GE GOOGLE MAPS, CON MENSAJE DE ALERTA INCLUIDO
   const openGoogleMaps = (latitude, longitude) => {
     Alert.alert(
       'Redirigiendo a Google Maps',
@@ -43,7 +79,12 @@ export default function PapaJohnstDanli() {
       { cancelable: false }
     );
   };
+  // FIN DE CODIGO PARA REDIRIGIR A LA APP GE GOOGLE MAPS, CON MENSAJE DE ALERTA INCLUIDO
 
+
+
+
+  // INICIO DE CODIO DE BOTONES DE ZOOM DEL MAPA
   const handleZoomIn = () => {
     const region = {
       latitude: initialRegion.latitude,
@@ -64,7 +105,11 @@ export default function PapaJohnstDanli() {
     };
     mapRef.current.animateToRegion(region, 500);
   };
+  // FIN DE CODIO DE BOTONES DE ZOOM DEL MAPA
 
+
+
+  
   return (
     <ScrollView>
       <View style={styles.container}>
@@ -80,16 +125,58 @@ export default function PapaJohnstDanli() {
               }}
             >
                  <View style={styles.slide}>
-                <Image style={styles.image} source={{ uri: 'https://elastro.net/wp-content/uploads/2023/01/WhatsApp-Image-2023-01-06-at-12.01.49-1024x794.jpg' }} />
+                <Image style={styles.image} source={{ uri: 'https://scontent.fsap8-1.fna.fbcdn.net/v/t39.30808-6/323411654_6054590541271298_5137366980241072669_n.jpg?_nc_cat=104&cb=99be929b-59f725be&ccb=1-7&_nc_sid=730e14&_nc_eui2=AeFLCeXzPw6g-gNgfJLEBcCU3WEUcRbViEXdYRRxFtWIRcDSPokEqyvcygj5iC77OEMNNU5U76N0nLsiW5mUA2PB&_nc_ohc=yT_umlDiBeQAX8PgDx1&_nc_oc=AQmIRqDdFKbbqsH7eOgJGxnDVHg8W4We9KOel7wkhQ36Qha261JNF8kf0FjVwmHFsRo&_nc_ht=scontent.fsap8-1.fna&oh=00_AfAsm9fXwLA1mKTDucRX-ye68y9-hKwQYnnOQ0L1YPS6Qg&oe=64AB21F4' }} />
               </View>
               <View style={styles.slide}>
-                <Image style={styles.image} source={{ uri: 'https://www.gramarquitectura.es/wp-content/uploads/2021/03/gram-arquitectura_PJ_Diamante_4-interior.jpg' }} />
+                <Image style={styles.image} source={{ uri: 'https://scontent.fsap8-1.fna.fbcdn.net/v/t39.30808-6/324253413_713151737055613_8916560639534714398_n.jpg?stp=cp6_dst-jpg&_nc_cat=102&cb=99be929b-59f725be&ccb=1-7&_nc_sid=8bfeb9&_nc_eui2=AeGVXvq8iOFY1NAKunqQwmkDkqYvrllvzJKSpi-uWW_MkortCKBi9BxkVcVwHISGF0dQAUgb19ys-ElQd6XrfwWw&_nc_ohc=L0QIu3dgxCEAX8ybeBU&_nc_ht=scontent.fsap8-1.fna&oh=00_AfBKMZNXZxhSvcy2yeYHZ9RQZcQoVNfmk9FBV_bqOLlhaw&oe=64A9F194' }} />
               </View>
              
-             
+  
             </Swiper>
           </View>
         </View>
+
+
+                
+
+
+<View style={styles.container}>
+      <Text style={styles.menuText}>MENU</Text>
+
+      <View style={styles.buttonContainer3}>
+        <TouchableOpacity activeOpacity={1} onPress={toggleModal}>
+          <Image
+            source={{ uri: 'https://scontent.fsap8-1.fna.fbcdn.net/v/t39.30808-6/316669803_146907448093956_2324211972475293790_n.jpg?_nc_cat=107&cb=99be929b-59f725be&ccb=1-7&_nc_sid=730e14&_nc_eui2=AeEZftu6k1Zo_O_5P_uJffdwksWifcW543OSxaJ9xbnjc9eU1hPsaTN9z8vRfpolHcy9_KI1Zvq1QHic5O6APTlP&_nc_ohc=3U6IzrkfD3cAX_RT16a&_nc_ht=scontent.fsap8-1.fna&oh=00_AfC_ItyMIA_yCjC03U-bdzPbP79BVRjmPqBcXq14Gk5hUw&oe=64AAC17F' }}
+            style={styles.imagen}
+            resizeMode="cover"
+          />
+        </TouchableOpacity>
+      </View>
+
+      <Text style={styles.scheduleHeaderText}>HORARIOS DE ATENCION</Text>
+      <View style={styles.scheduleContainer}>
+        <View style={styles.scheduleItem}>
+          <Icon name="clock-o" size={20} color="#000" style={styles.scheduleIcon} />
+          <Text style={styles.scheduleText}>Lun-Dom: 11:00 AM - 10:00 PM</Text>
+        </View>
+      </View>
+
+      <Modal visible={modalVisible} animationType="fade" transparent={true}>
+        <ImageViewer
+          imageUrls={images}
+          onCancel={toggleModal}
+          enableSwipeDown={true}
+          renderIndicator={() => null}
+          renderHeader={() => (
+            <TouchableOpacity style={styles.closeButtonContainer3} onPress={toggleModal}>
+              <Icon name="times" size={20} color="#fff" />
+            </TouchableOpacity>
+          )}
+          renderFooter={() => null}
+        />
+      </Modal>
+    </View>
+
 
         <View style={styles.buttonContainer}>
           <TouchableOpacity
@@ -98,14 +185,16 @@ export default function PapaJohnstDanli() {
               Linking.openURL('https://www.papajohns.hn/');
             }}
           >
-            <Text style={styles.buttonText}>Visitar</Text>
+             <Icon name="globe" size={20} color="white" style={styles.buttonIcon} />
+            <Text style={styles.buttonText}>Sitio Web</Text>
           </TouchableOpacity>
           <TouchableOpacity
             style={styles.button}
             onPress={() => {
-              Linking.openURL('https://www.instagram.com/papajohnshn/');
+              Linking.openURL('tel: *7272');
             }}
           >
+             <Icon name="phone" size={20} color="white" style={styles.buttonIcon} />
             <Text style={styles.buttonText}>Contactar</Text>
           </TouchableOpacity>
         </View>
@@ -145,6 +234,9 @@ export default function PapaJohnstDanli() {
   );
 }
 
+
+
+// CODIGO DE ESTILOS
 const styles = StyleSheet.create({
   container: {
     flex: 1,
@@ -161,7 +253,7 @@ const styles = StyleSheet.create({
     width: Dimensions.get('window').width * 0.8,
     borderRadius: 10,
     overflow: 'hidden',
-    marginTop: 80,
+    marginTop: 40,
   },
   map: {
     flex: 1,
@@ -201,8 +293,14 @@ const styles = StyleSheet.create({
     paddingVertical: 10,
     marginHorizontal: 10,
     borderRadius: 5,
-    marginTop: 50,
+    marginTop: 10,
+    flexDirection: 'row',
+    alignItems: 'center',
   },
+  buttonIcon: {
+    marginRight: 5,
+  },
+
   buttonText: {
     color: 'white',
     fontSize: 16,
@@ -229,4 +327,66 @@ const styles = StyleSheet.create({
     fontSize: 24,
     fontWeight: 'bold',
   },
+
+
+
+  // Esttilos de menu y horarios
+  container4: {
+    flex: 1,
+    justifyContent: 'center',
+    alignItems: 'center',
+    backgroundColor: '#fff',
+    paddingHorizontal: 40,
+ 
+  },
+  menuText: {
+    fontSize: 18,
+    fontWeight: 'bold',
+    marginBottom: 10,
+    marginTop: 40,
+  },
+  buttonContainer3: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    marginBottom: 20,
+  },
+  imagen: {
+    width: 200,
+    height: 200,
+    borderRadius: 10,
+  },
+  scheduleHeaderText: {
+    fontSize: 18,
+    fontWeight: 'bold',
+    marginTop: 20,
+    marginBottom: 10,
+  },
+  scheduleContainer: {
+    marginLeft: 10,
+  },
+  scheduleItem: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    marginBottom: 5,
+  },
+  scheduleIcon: {
+    marginRight: 5,
+  },
+  scheduleText: {
+    color: '#000',
+  },
+  closeButtonContainer3: {
+    position: 'absolute',
+    top: 30,
+    right: 30,
+    width: 30,
+    height: 30,
+    justifyContent: 'center',
+    alignItems: 'center',
+    zIndex: 9999,
+  },
+
+  //fin de estilos de menu y horarios
+
+
 });
