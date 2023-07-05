@@ -21,7 +21,7 @@ const imagenes = [
 ];
 
 const backdropImagenes = [
-  "https://i.imgur.com/3zYzmxn.jpg",
+  "https://cnnespanol.cnn.com/wp-content/uploads/2023/01/230111175654-cerro-tecana-cte-full-169.jpg?quality=100&strip=info",
   "https://scontent.fsap8-1.fna.fbcdn.net/v/t39.30808-6/266384242_494500052267714_6339538490678465268_n.jpg?stp=dst-jpg_p526x296&_nc_cat=101&ccb=1-7&_nc_sid=8bfeb9&_nc_ohc=YOVJgUlu4ioAX84XGEj&_nc_ht=scontent.fsap8-1.fna&oh=00_AfCdaBdEmVUfnybxf0uSH8aoTdxb5_0IDPtNdNZWwyTZOw&oe=649E8851",
   "https://i.imgur.com/Cy47CV7.jpg",
   "https://3.cdnpt.com/Destinations/1399/1399/la-ceiba-3751619739-L.jpg",
