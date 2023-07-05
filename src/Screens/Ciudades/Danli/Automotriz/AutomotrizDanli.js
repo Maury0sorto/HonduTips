@@ -16,7 +16,7 @@ const AutomotrizDanli = () => {
    
     { text: 'Lubricentros', image: 'https://i.imgur.com/zcypVtQ.png' },
     { text: 'Talleres', image: 'https://i.imgur.com/3QRHSCJ.png' },
-    { text: 'CarWash', image: 'https://i.imgur.com/SZ0GGQI.png' },
+    { text: 'Auto Lavado', image: 'https://i.imgur.com/SZ0GGQI.png' },
   ]);
   const [filterData, setFilterData] = useState([]);
   const [searchText, setSearchText] = useState('');
@@ -44,7 +44,7 @@ const AutomotrizDanli = () => {
     else if (text === 'Talleres') {
       navigation.navigate('Hoteles Danli');
     } 
-    else if (text === 'CarWash') {
+    else if (text === 'Auto Lavado') {
       navigation.navigate('Carwash Danli');
     } 
   };

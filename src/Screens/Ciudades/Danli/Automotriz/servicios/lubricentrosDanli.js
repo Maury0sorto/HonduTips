@@ -108,7 +108,7 @@ const LubricentrosDanli = () => {
         </View>
       )}
 
-      {ComponenteVisible ? (
+      {ComponenteVisible ? ( 
         <ComponenteVisible
           text={componenteVisible.text}
           mostrarBotonAnterior={mostrarBotonAnterior}

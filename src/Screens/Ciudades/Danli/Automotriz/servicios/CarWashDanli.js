@@ -4,6 +4,8 @@ import { SelectList } from 'react-native-dropdown-select-list';
 import { Ionicons } from '@expo/vector-icons';
 
 import JirehDanli from './carwashJireh';
+import BarPinDanli from './BarPinDanli';
+import EvoAutoSpaDanli from './EvoAutoSpaDanli';
 
  
 
@@ -14,7 +16,7 @@ const ScreenA = ({ text, mostrarBotonAnterior }) => {
     <TouchableHighlight
       style={styles.backButton}
       underlayColor="#0080ff"
-      onPress={mostrarBotonAnterior}
+      onPress={mostrarBotonAnterior} 
     >
        <>
       <Ionicons name="arrow-back" size={24} color="black" style={styles.backButtonIcon} />
@@ -22,6 +24,42 @@ const ScreenA = ({ text, mostrarBotonAnterior }) => {
     </>
     </TouchableHighlight>
     <JirehDanli/>
+   
+  </View>
+  );
+};
+const ScreenB = ({ text, mostrarBotonAnterior }) => {
+  return (
+    <View style={styles.componentContainer}>
+    <TouchableHighlight
+      style={styles.backButton}
+      underlayColor="#0080ff"
+      onPress={mostrarBotonAnterior} 
+    >
+       <>
+      <Ionicons name="arrow-back" size={24} color="black" style={styles.backButtonIcon} />
+      <Text style={styles.backButtonText}>Regresar</Text>
+    </>
+    </TouchableHighlight>
+    <BarPinDanli/>
+   
+  </View>
+  );
+};
+const ScreenC = ({ text, mostrarBotonAnterior }) => {
+  return (
+    <View style={styles.componentContainer}>
+    <TouchableHighlight
+      style={styles.backButton}
+      underlayColor="#0080ff"
+      onPress={mostrarBotonAnterior} 
+    >
+       <>
+      <Ionicons name="arrow-back" size={24} color="black" style={styles.backButtonIcon} />
+      <Text style={styles.backButtonText}>Regresar</Text>
+    </>
+    </TouchableHighlight>
+    <EvoAutoSpaDanli/>
    
   </View>
   );
@@ -50,12 +88,16 @@ const CarWashDanli = () => {
 
   const buttons = [
     { text: "CarWash Jireh", image: 'https://scontent.fsap8-1.fna.fbcdn.net/v/t39.30808-6/341316165_727267185848390_9015755489032329918_n.jpg?_nc_cat=102&cb=99be929b-59f725be&ccb=1-7&_nc_sid=09cbfe&_nc_ohc=tERkz3TKimgAX8yDKke&_nc_ht=scontent.fsap8-1.fna&oh=00_AfA2IY34xk1HW5UikTkeDxVvmYfmu8zIO--86gBlZSH8QQ&oe=64A2EA5D',  screen: ScreenA },
+    { text: "Llantiservicios Barpin", image: 'https://scontent.fsap8-1.fna.fbcdn.net/v/t39.30808-6/335969989_667936425338094_8331319845488467097_n.jpg?_nc_cat=104&cb=99be929b-59f725be&ccb=1-7&_nc_sid=09cbfe&_nc_ohc=-3TuBYC2Y8oAX_pR_Mv&_nc_ht=scontent.fsap8-1.fna&oh=00_AfBIkNrMiO8wSM-nQo1yxwXovZUwbCrjR1P8V-SNTNtHFA&oe=64A1F83C',  screen: ScreenB },
+    { text: "Evo Auto Spa", image: 'https://scontent.fsap8-1.fna.fbcdn.net/v/t39.30808-6/301974136_430827812360788_6626560381477251656_n.png?_nc_cat=102&cb=99be929b-59f725be&ccb=1-7&_nc_sid=09cbfe&_nc_eui2=AeHOr5koC8javNcRPWKFI7UIfHYUApr6mUl8dhQCmvqZSbDA4WiFqVHwIxFF-a9WMAvZ4bwqLON5jYmnk3YSWkNG&_nc_ohc=n7BNCpB7kg4AX_cu_VO&_nc_ht=scontent.fsap8-1.fna&oh=00_AfDIvKGyonIMz6HZWvuGS8IiVH41dZacoBabfEVjnv5EfA&oe=64A9F9BF',  screen: ScreenC },
     
   ];
 
   const data2 = [
     { key: '1', value: 'Recomendados' },
     { key: '2', value: "CarWash Jireh" },
+    { key: '3', value: "Llantiservicios Barpin" },
+    { key: '4', value: "Evo Auto Spa" },
    
     
   ];
