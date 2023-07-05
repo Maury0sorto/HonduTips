@@ -65,7 +65,7 @@ export default function RoyalGYMDanli() {
     };
     mapRef.current.animateToRegion(region, 500);
   };
-
+ 
   return (
     <ScrollView>
       <View style={styles.container}>
@@ -120,6 +120,7 @@ export default function RoyalGYMDanli() {
               Linking.openURL('https://www.facebook.com/profile.php?id=100046856871939');
             }}
           >
+              <Icon name="globe" size={20} color="white" style={styles.buttonIcon} />
             <Text style={styles.buttonText}>Visitar</Text>
           </TouchableOpacity>
           <TouchableOpacity
@@ -128,6 +129,7 @@ export default function RoyalGYMDanli() {
               Linking.openURL('tel: 9896-6141');
             }}
           >
+             <Icon name="phone" size={20} color="white" style={styles.buttonIcon} />
             <Text style={styles.buttonText}>Contactar</Text>
           </TouchableOpacity>
         </View>

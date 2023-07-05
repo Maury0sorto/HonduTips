@@ -74,7 +74,7 @@ export default function GymOlimpoDanli() {
           <View style={styles.swiperContainer}>
             <Swiper
               horizontal
-              loop
+              loop 
               timeout={-3.5}
               controlsProps={{
                 dotActiveStyle: { backgroundColor: "red" },
@@ -120,6 +120,7 @@ export default function GymOlimpoDanli() {
               Linking.openURL('https://www.facebook.com/OlimpoGymDanli');
             }}
           >
+              <Icon name="globe" size={20} color="white" style={styles.buttonIcon} />
             <Text style={styles.buttonText}>Visitar</Text>
           </TouchableOpacity>
           <TouchableOpacity
@@ -128,6 +129,7 @@ export default function GymOlimpoDanli() {
               Linking.openURL('tel: 9965-2893');
             }}
           >
+             <Icon name="phone" size={20} color="white" style={styles.buttonIcon} />
             <Text style={styles.buttonText}>Contactar</Text>
           </TouchableOpacity>
         </View>

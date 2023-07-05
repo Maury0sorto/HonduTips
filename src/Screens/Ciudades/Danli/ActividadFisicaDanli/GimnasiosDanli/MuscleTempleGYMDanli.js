@@ -7,7 +7,7 @@ import Swiper from "react-native-web-swiper";
 const locationsData = [
   {
     title: 'Muscle Temple GYM ',
- 
+  
     latitude:    14.031937422686996, 
     longitude:  -86.5707911298545,
   },
@@ -120,6 +120,7 @@ export default function MuscleTempleGYMDanli() {
               Linking.openURL('https://www.facebook.com/profile.php?id=100066236545124');
             }}
           >
+              <Icon name="globe" size={20} color="white" style={styles.buttonIcon} />
             <Text style={styles.buttonText}>Visitar</Text>
           </TouchableOpacity>
           <TouchableOpacity
@@ -128,6 +129,7 @@ export default function MuscleTempleGYMDanli() {
               Linking.openURL('https://www.facebook.com/profile.php?id=100066236545124');
             }}
           >
+             <Icon name="phone" size={20} color="white" style={styles.buttonIcon} />
             <Text style={styles.buttonText}>Contactar</Text>
           </TouchableOpacity>
         </View>

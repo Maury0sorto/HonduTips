@@ -117,6 +117,7 @@ export default function ShadaiMasterBarberShopDanli() {
               Linking.openURL('tel: 9816-8415');
             }}
           >
+            <Icon name="phone" size={20} color="white" style={styles.buttonIcon} />
             <Text style={styles.buttonText}>Contactar</Text>
           </TouchableOpacity>
         </View>

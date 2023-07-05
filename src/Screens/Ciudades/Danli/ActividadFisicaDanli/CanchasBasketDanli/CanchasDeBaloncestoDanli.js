@@ -78,7 +78,7 @@ export default function CanchasDeBaloncestoDanli() {
               horizontal
               loop
               timeout={-3.5}
-              controlsProps={{
+              controlsProps={{ 
                 dotActiveStyle: { backgroundColor: "red" },
               }}
             >

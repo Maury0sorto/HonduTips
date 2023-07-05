@@ -90,7 +90,7 @@ export default function IHSSDanli() {
           </View>
         </View>
 
-
+ 
         <Text style={styles.scheduleHeaderText}>HORARIOS DE ATENCION</Text>
       <View style={styles.scheduleContainer}>
         <View style={styles.scheduleItem}>
@@ -115,6 +115,7 @@ export default function IHSSDanli() {
               Linking.openURL('https://www.facebook.com/ihss.hn');
             }}
           >
+                  <Icon name="globe" size={20} color="white" style={styles.buttonIcon} />
             <Text style={styles.buttonText}>Visitar</Text>
           </TouchableOpacity>
           <TouchableOpacity
@@ -123,6 +124,7 @@ export default function IHSSDanli() {
               Linking.openURL('tel: 2763-2463');
             }}
           >
+            <Icon name="phone" size={20} color="white" style={styles.buttonIcon} />
             <Text style={styles.buttonText}>Contactar</Text>
           </TouchableOpacity>
         </View>

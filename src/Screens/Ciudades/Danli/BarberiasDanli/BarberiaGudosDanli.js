@@ -12,7 +12,7 @@ const locationsData = [
     longitude:  -86.56990008652978,
   },
   {
-    title: 'Gudos Barber Shop 2',
+    title: 'Gudos Barber Shop 2', 
    
     latitude:  14.0277416709307, 
     longitude: -86.58016601537132,
@@ -120,6 +120,7 @@ export default function BarberiaGudosDanli() {
               Linking.openURL('https://www.facebook.com/profile.php?id=100031733156910&locale=es_LA');
             }}
           >
+             <Icon name="globe" size={20} color="white" style={styles.buttonIcon} />
             <Text style={styles.buttonText}>Visitar</Text>
           </TouchableOpacity>
           <TouchableOpacity
@@ -128,6 +129,7 @@ export default function BarberiaGudosDanli() {
               Linking.openURL('tel: 9585-4622');
             }}
           >
+              <Icon name="phone" size={20} color="white" style={styles.buttonIcon} />
             <Text style={styles.buttonText}>Contactar</Text>
           </TouchableOpacity>
         </View>

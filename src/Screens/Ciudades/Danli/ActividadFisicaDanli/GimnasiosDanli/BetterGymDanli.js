@@ -73,7 +73,7 @@ export default function BetterGymDanli() {
         <View style={styles.containerSwipers}>
           <View style={styles.swiperContainer}>
             <Swiper
-              horizontal
+              horizontal 
               loop
               timeout={-3.5}
               controlsProps={{
@@ -120,6 +120,7 @@ export default function BetterGymDanli() {
               Linking.openURL('https://gimnasio-de-diamantina-better-gym.business.site/');
             }}
           >
+              <Icon name="globe" size={20} color="white" style={styles.buttonIcon} />
             <Text style={styles.buttonText}>Visitar</Text>
           </TouchableOpacity>
           <TouchableOpacity
@@ -128,6 +129,7 @@ export default function BetterGymDanli() {
               Linking.openURL('tel: 9937-0105');
             }}
           >
+             <Icon name="phone" size={20} color="white" style={styles.buttonIcon} />
             <Text style={styles.buttonText}>Contactar</Text>
           </TouchableOpacity>
         </View>

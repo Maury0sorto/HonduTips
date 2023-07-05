@@ -89,7 +89,7 @@ export default function CanchasDeFutbolDanli() {
 
   return (
     <ScrollView>
-      <View style={styles.container}>
+      <View style={styles.container}> 
         <Text style={styles.title }>Canchas De Fútbol en Danlí</Text >
         <View style={styles.containerSwipers}>
           <View style={styles.swiperContainer}>

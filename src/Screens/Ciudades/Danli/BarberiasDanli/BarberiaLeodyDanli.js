@@ -14,7 +14,7 @@ const locationsData = [
   
   // Agrega más ubicaciones aquí si lo deseas
 ];
-
+ 
 export default function BarberiaLeodyDanli() {
   const mapRef = useRef(null);
   const initialRegion = {
@@ -117,6 +117,7 @@ export default function BarberiaLeodyDanli() {
               Linking.openURL('tel: 9782-8967');
             }}
           >
+              <Icon name="phone" size={20} color="white" style={styles.buttonIcon} />
             <Text style={styles.buttonText}>Contactar</Text>
           </TouchableOpacity>
         </View>

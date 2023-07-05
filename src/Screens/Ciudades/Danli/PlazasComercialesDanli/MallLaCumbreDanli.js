@@ -18,7 +18,7 @@ const locationsData = [
 export default function MallLaCumbreDanli() {
   const mapRef = useRef(null);
   const initialRegion = {
-    latitude:      14.020743726676715, 
+    latitude:      14.020743726676715,  
     longitude: -86.56997366570069,
     latitudeDelta: 0.001,
     longitudeDelta: 0.001,
@@ -115,6 +115,7 @@ export default function MallLaCumbreDanli() {
               Linking.openURL('http://aronahonduras.com/');
             }}
           >
+             <Icon name="globe" size={20} color="white" style={styles.buttonIcon} />
             <Text style={styles.buttonText}>Visitar</Text>
           </TouchableOpacity>
           <TouchableOpacity
@@ -123,6 +124,7 @@ export default function MallLaCumbreDanli() {
               Linking.openURL('tel: 3271-4168');
             }}
           >
+            <Icon name="phone" size={20} color="white" style={styles.buttonIcon} />
             <Text style={styles.buttonText}>Contactar</Text>
           </TouchableOpacity>
         </View>

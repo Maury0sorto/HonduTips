@@ -13,7 +13,7 @@ const locationsData = [
   },
   
   // Agrega más ubicaciones aquí si lo deseas
-];
+]; 
 
 export default function MateosBarberShopDanli() {
   const mapRef = useRef(null);
@@ -117,6 +117,7 @@ export default function MateosBarberShopDanli() {
               Linking.openURL('tel: 9680-5708');
             }}
           >
+            <Icon name="phone" size={20} color="white" style={styles.buttonIcon} />
             <Text style={styles.buttonText}>Contactar</Text>
           </TouchableOpacity>
         </View>

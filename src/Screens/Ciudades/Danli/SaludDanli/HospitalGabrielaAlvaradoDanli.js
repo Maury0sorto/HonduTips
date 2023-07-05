@@ -120,6 +120,7 @@ export default function HospitalGabrielaAlvaradoDanli() {
               Linking.openURL('https://www.salud.gob.hn/site/index.php/component/k2/item/2574-secretario-de-salud-visita-region-sanitaria-del-paraiso-hospital-gabriela-alvarado-y-osi-de-las-manos');
             }}
           >
+                  <Icon name="globe" size={20} color="white" style={styles.buttonIcon} />
             <Text style={styles.buttonText}>Visitar</Text>
           </TouchableOpacity>
           <TouchableOpacity
@@ -128,6 +129,7 @@ export default function HospitalGabrielaAlvaradoDanli() {
               Linking.openURL('https://www.facebook.com/hgabrielaalvarado');
             }}
           >
+            <Icon name="phone" size={20} color="white" style={styles.buttonIcon} />
             <Text style={styles.buttonText}>Contactar</Text>
           </TouchableOpacity>
         </View>
@@ -148,7 +150,7 @@ export default function HospitalGabrielaAlvaradoDanli() {
                 <Callout>
                   <View>
                     <Text>{location.title}</Text>
-                  </View>
+                  </View> 
                 </Callout>
               </Marker>
             ))}
