@@ -153,15 +153,11 @@ export default function PizzaHutDanli() {  // Este solo es el nomre que se usa p
       <View style={styles.scheduleContainer}>
         <View style={styles.scheduleItem}>
           <Icon name="clock-o" size={20} color="#000" style={styles.scheduleIcon} />
-          <Text style={styles.scheduleText}>Lun-Vie: 9:00 AM - 6:00 PM</Text>
+          <Text style={styles.scheduleText}>Lun-Sab: 10:00 AM - 10:00 PM</Text>
         </View>
         <View style={styles.scheduleItem}>
           <Icon name="clock-o" size={20} color="#000" style={styles.scheduleIcon} />
-          <Text style={styles.scheduleText}>Sáb: 10:00 AM - 4:00 PM</Text>
-        </View>
-        <View style={styles.scheduleItem}>
-          <Icon name="clock-o" size={20} color="#000" style={styles.scheduleIcon} />
-          <Text style={styles.scheduleText}>Dom: Cerrado</Text>
+          <Text style={styles.scheduleText}>Dom: 10:00 AM - 9:00 PM</Text>
         </View>
       </View>
 

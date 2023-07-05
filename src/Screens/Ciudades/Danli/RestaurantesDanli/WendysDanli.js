@@ -26,7 +26,7 @@ export default function WendysDanli() {
   };
   const images = [
     {
-      url: 'https://scontent.fsap8-1.fna.fbcdn.net/v/t31.18172-8/12240220_985120801526088_7052278077399162835_o.jpg?_nc_cat=105&ccb=1-7&_nc_sid=dbeb18&_nc_ohc=K8470BfE3KkAX883Pew&_nc_ht=scontent.fsap8-1.fna&oh=00_AfDCu_nxykCBWP8zQNIkfwzdvTTJM2DHNjRCQlc_x2geBw&oe=64BBF275',
+      url: 'https://scontent.fsap8-1.fna.fbcdn.net/v/t39.30808-6/342207150_890017345392663_3592820033758714548_n.jpg?_nc_cat=109&cb=99be929b-59f725be&ccb=1-7&_nc_sid=730e14&_nc_eui2=AeGanjSvNfu2UCMuPZXIug9EQzePfiZgoExDN49-JmCgTHqPvkH5hfzmKDdgdQMwIdY9G7au50dxl1FNm46KtMhw&_nc_ohc=NrXJOhxcYHAAX8Q11Me&_nc_ht=scontent.fsap8-1.fna&oh=00_AfAKdy3o3Ke6evLTL7f-sEHrlYlzoHClvbkIiyObK5GPoQ&oe=64A9A40D',
     },
   ];
 
@@ -117,7 +117,7 @@ export default function WendysDanli() {
       <View style={styles.buttonContainer3}>
         <TouchableOpacity activeOpacity={1} onPress={toggleModal}>
           <Image
-            source={{ uri: 'https://scontent.fsap8-1.fna.fbcdn.net/v/t31.18172-8/12240220_985120801526088_7052278077399162835_o.jpg?_nc_cat=105&ccb=1-7&_nc_sid=dbeb18&_nc_ohc=K8470BfE3KkAX883Pew&_nc_ht=scontent.fsap8-1.fna&oh=00_AfDCu_nxykCBWP8zQNIkfwzdvTTJM2DHNjRCQlc_x2geBw&oe=64BBF275' }}
+            source={{ uri: 'https://scontent.fsap8-1.fna.fbcdn.net/v/t39.30808-6/342207150_890017345392663_3592820033758714548_n.jpg?_nc_cat=109&cb=99be929b-59f725be&ccb=1-7&_nc_sid=730e14&_nc_eui2=AeGanjSvNfu2UCMuPZXIug9EQzePfiZgoExDN49-JmCgTHqPvkH5hfzmKDdgdQMwIdY9G7au50dxl1FNm46KtMhw&_nc_ohc=NrXJOhxcYHAAX8Q11Me&_nc_ht=scontent.fsap8-1.fna&oh=00_AfAKdy3o3Ke6evLTL7f-sEHrlYlzoHClvbkIiyObK5GPoQ&oe=64A9A40D' }}
             style={styles.imagen}
             resizeMode="cover"
           />
@@ -128,15 +128,7 @@ export default function WendysDanli() {
       <View style={styles.scheduleContainer}>
         <View style={styles.scheduleItem}>
           <Icon name="clock-o" size={20} color="#000" style={styles.scheduleIcon} />
-          <Text style={styles.scheduleText}>Lun-Vie: 9:00 AM - 6:00 PM</Text>
-        </View>
-        <View style={styles.scheduleItem}>
-          <Icon name="clock-o" size={20} color="#000" style={styles.scheduleIcon} />
-          <Text style={styles.scheduleText}>Sáb: 10:00 AM - 4:00 PM</Text>
-        </View>
-        <View style={styles.scheduleItem}>
-          <Icon name="clock-o" size={20} color="#000" style={styles.scheduleIcon} />
-          <Text style={styles.scheduleText}>Dom: Cerrado</Text>
+          <Text style={styles.scheduleText}>Lun-Dom: 11:00 AM - 10:00 PM</Text>
         </View>
       </View>
 
