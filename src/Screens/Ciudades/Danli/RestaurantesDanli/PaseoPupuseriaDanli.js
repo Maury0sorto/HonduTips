@@ -189,7 +189,7 @@ export default function PaseoPupuseriaDanli() {  // Este solo es el nomre que se
           <TouchableOpacity
             style={styles.button}
             onPress={() => {
-              Linking.openURL('tel: +50498528317');
+              Linking.openURL('tel: +50427635034');
             }}
           >
              <Icon name="phone" size={20} color="white" style={styles.buttonIcon} />
