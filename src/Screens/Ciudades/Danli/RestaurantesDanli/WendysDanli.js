@@ -1,5 +1,5 @@
 import React, { useState, useRef } from 'react';
-import { StyleSheet, View, Dimensions, Linking, Text, Alert, TouchableOpacity, ScrollView, Image, Modal } from 'react-native';
+import { StyleSheet, View, Dimensions, Linking, Text, Alert, TouchableOpacity, ScrollView, Image , Modal} from 'react-native';
 import MapView, { Marker, Callout } from 'react-native-maps';
 import Swiper from "react-native-web-swiper";
 import Icon from 'react-native-vector-icons/FontAwesome';
@@ -149,6 +149,7 @@ export default function WendysDanli() {
     </View>
 
 
+
         <View style={styles.buttonContainer}>
           <TouchableOpacity
             style={styles.button}
@@ -156,14 +157,16 @@ export default function WendysDanli() {
               Linking.openURL('https://www.wendys.hn/');
             }}
           >
-            <Text style={styles.buttonText}>Visitar</Text>
+             <Icon name="globe" size={20} color="white" style={styles.buttonIcon} />
+            <Text style={styles.buttonText}>Sitio Web</Text>
           </TouchableOpacity>
           <TouchableOpacity
             style={styles.button}
             onPress={() => {
-              Linking.openURL('tel: 2512-6002');
+              Linking.openURL('tel: +50425126002');
             }}
           >
+             <Icon name="phone" size={20} color="white" style={styles.buttonIcon} />
             <Text style={styles.buttonText}>Contactar</Text>
           </TouchableOpacity>
         </View>
