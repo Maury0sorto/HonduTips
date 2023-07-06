@@ -83,11 +83,11 @@ export default function BetterGymDanli() {
 
 
                 <View style={styles.slide}>
-                <Image style={styles.image} source={{ uri: 'https://scontent.fsap8-1.fna.fbcdn.net/v/t39.30808-6/241671870_1464363833898553_4649218066534803519_n.jpg?_nc_cat=101&ccb=1-7&_nc_sid=09cbfe&_nc_ohc=NYQhKBQaLlAAX9s9UR9&_nc_ht=scontent.fsap8-1.fna&oh=00_AfA5ULONWa8rlh7FMDyY_WltESMwCjHcfX8mkLURGV528Q&oe=64AA35AD' }} />
+                <Image style={styles.image} source={{ uri: 'https://i.imgur.com/QTApFm3.png' }} />
               </View>
             
                  <View style={styles.slide}>
-                <Image style={styles.image} source={{ uri: 'https://scontent.fsap8-1.fna.fbcdn.net/v/t39.30808-6/275058493_1582026168798985_2086079579320358399_n.png?_nc_cat=108&ccb=1-7&_nc_sid=730e14&_nc_ohc=aG2AKeOFHPoAX-Q_8Y5&_nc_ht=scontent.fsap8-1.fna&oh=00_AfCHQ6FGD4lH0KaqwCmXM6FOSpio1pWEYk9_g-SUghGuXQ&oe=64A906C7' }} />
+                <Image style={styles.image} source={{ uri: 'https://i.imgur.com/6dCmDom.png' }} />
               </View>
              
              

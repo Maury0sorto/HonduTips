@@ -81,10 +81,10 @@ export default function MateosBarberShopDanli() {
               }}
             >
               <View style={styles.slide}>
-                <Image style={styles.image} source={{ uri: 'https://negociorentablehoy.com/wp-content/uploads/2018/07/negociopeluqueriabarberia.jpg' }} />
+                <Image style={styles.image} source={{ uri: 'https://i.imgur.com/uQY4qoM.png' }} />
               </View>
               <View style={styles.slide}>
-                <Image style={styles.image} source={{ uri: 'https://negociorentablehoy.com/wp-content/uploads/2018/07/negociopeluqueriabarberia.jpg' }} />
+                <Image style={styles.image} source={{ uri: 'https://i.imgur.com/uQY4qoM.png' }} />
               </View>
               
             </Swiper>

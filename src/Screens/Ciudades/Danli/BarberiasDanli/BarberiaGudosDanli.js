@@ -86,10 +86,10 @@ export default function BarberiaGudosDanli() {
               }}
             >
               <View style={styles.slide}>
-                <Image style={styles.image} source={{ uri: 'https://scontent.fsap8-1.fna.fbcdn.net/v/t1.6435-9/131929591_3539515229468169_6175911875017364023_n.jpg?_nc_cat=110&ccb=1-7&_nc_sid=8bfeb9&_nc_ohc=Hlx50pKWKecAX8eWTif&_nc_ht=scontent.fsap8-1.fna&oh=00_AfBt8RuGQdgsocHXfrphNK9ty4SAH54gNeAZ1ykZ18cKrw&oe=64CA6DB8' }} />
+                <Image style={styles.image} source={{ uri: 'https://i.imgur.com/AVM9fdI.png' }} />
               </View>
               <View style={styles.slide}>
-                <Image style={styles.image} source={{ uri: 'https://scontent.fsap8-1.fna.fbcdn.net/v/t39.30808-6/278632340_5000038493415828_8113487535713802022_n.jpg?_nc_cat=110&ccb=1-7&_nc_sid=8bfeb9&_nc_ohc=qzr8t021ZuQAX88h47a&_nc_ht=scontent.fsap8-1.fna&oh=00_AfBA3V0mWgfriGbNifhOT7nEZHoiX7LfmRgBI54Y_Z9sTA&oe=64A8CA21' }} />
+                <Image style={styles.image} source={{ uri: 'https://i.imgur.com/pbibGYX.png' }} />
               </View>
             </Swiper>
           </View>

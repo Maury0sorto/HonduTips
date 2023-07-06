@@ -83,11 +83,11 @@ export default function GymOlimpoDanli() {
 
 
                 <View style={styles.slide}>
-                <Image style={styles.image} source={{ uri: 'https://scontent.fsap8-1.fna.fbcdn.net/v/t1.6435-9/52498820_2140764032829727_2577403251490029568_n.jpg?_nc_cat=110&ccb=1-7&_nc_sid=8bfeb9&_nc_ohc=TyoIH96wqJIAX9l61xt&_nc_ht=scontent.fsap8-1.fna&oh=00_AfBOEyp6pbYwe4o0UhWHjnows4KN3WXCQ-VmZuCrhtiXag&oe=64CBDF73' }} />
+                <Image style={styles.image} source={{ uri: 'https://i.imgur.com/NvxY7Uh.png' }} />
               </View>
             
                  <View style={styles.slide}>
-                <Image style={styles.image} source={{ uri: 'https://scontent.fsap8-1.fna.fbcdn.net/v/t1.6435-9/52498820_2140764032829727_2577403251490029568_n.jpg?_nc_cat=110&ccb=1-7&_nc_sid=8bfeb9&_nc_ohc=TyoIH96wqJIAX9l61xt&_nc_ht=scontent.fsap8-1.fna&oh=00_AfBOEyp6pbYwe4o0UhWHjnows4KN3WXCQ-VmZuCrhtiXag&oe=64CBDF73' }} />
+                <Image style={styles.image} source={{ uri: 'https://i.imgur.com/NvxY7Uh.png' }} />
               </View>
              
              

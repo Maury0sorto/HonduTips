@@ -98,10 +98,10 @@ export default function GasolineraUnoDanli() {
 
                 
                  <View style={styles.slide}>
-                <Image style={styles.image} source={{ uri: 'https://d1mrtjpezxphht.cloudfront.net/wp-content/uploads/2020/02/UNO-NOTICIA.jpg' }} />
+                <Image style={styles.image} source={{ uri: 'https://i.imgur.com/GAUnyoh.png' }} />
               </View>
               <View style={styles.slide}>
-                <Image style={styles.image} source={{ uri: 'https://www.laprensa.hn/binrepository/961x546/0c44/960d503/none/11004/UKFX/lp-web-1_2554518_20220927151218.jpg' }} />
+                <Image style={styles.image} source={{ uri: 'https://i.imgur.com/u0lNBgc.png' }} />
               </View>
              
              

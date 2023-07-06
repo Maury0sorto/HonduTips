@@ -83,11 +83,11 @@ export default function ArtesMarcialesDanli() {
 
 
                 <View style={styles.slide}>
-                <Image style={styles.image} source={{ uri: 'https://www.warriorsbarcelona.com/wp-content/uploads/2022/12/conceptos-valores-artes-marciales-inculcan-ninos-735.jpeg' }} />
+                <Image style={styles.image} source={{ uri: 'https://i.imgur.com/AZOVKmk.png' }} />
               </View>
             
                  <View style={styles.slide}>
-                <Image style={styles.image} source={{ uri: 'https://img.europapress.es/fotoweb/fotonoticia_20171103145122_1200.jpg' }} />
+                <Image style={styles.image} source={{ uri: 'https://i.imgur.com/fsjkt0o.png' }} />
               </View>
              
              

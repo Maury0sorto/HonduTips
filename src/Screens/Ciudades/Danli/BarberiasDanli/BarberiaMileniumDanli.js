@@ -81,10 +81,10 @@ export default function BarberiaMileniumDanli() {
               }}
             >
               <View style={styles.slide}>
-                <Image style={styles.image} source={{ uri: 'https://scontent.fsap8-1.fna.fbcdn.net/v/t39.30808-6/282096638_764829561567487_6639569965677704913_n.jpg?_nc_cat=106&ccb=1-7&_nc_sid=8bfeb9&_nc_ohc=UTjY505fpccAX_8gVBj&_nc_ht=scontent.fsap8-1.fna&oh=00_AfCKil8fsj-o71uSYVJdUdzCBwa6aLSlNVG0kqZP9hK5dw&oe=64A85569' }} />
+                <Image style={styles.image} source={{ uri: 'https://i.imgur.com/3eN1WUN.png' }} />
               </View>
               <View style={styles.slide}>
-                <Image style={styles.image} source={{ uri: 'https://scontent.fsap8-1.fna.fbcdn.net/v/t39.30808-6/258795240_657364592313985_3050303409697068712_n.jpg?_nc_cat=108&ccb=1-7&_nc_sid=8bfeb9&_nc_ohc=5qc0-NX5_2kAX-x4mMK&_nc_ht=scontent.fsap8-1.fna&oh=00_AfDxBdVvnBbklcO3C92Q6GkfwXNFlr1zZN31KPgSP5Wdnw&oe=64A8A153' }} />
+                <Image style={styles.image} source={{ uri: 'https://i.imgur.com/h5zn3Dj.png' }} />
               </View> 
               
             </Swiper>

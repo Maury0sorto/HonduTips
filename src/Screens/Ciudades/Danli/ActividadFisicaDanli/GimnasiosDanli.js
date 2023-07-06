@@ -129,8 +129,8 @@ const GimnasiosDanli = () => {
     { text: "AC Fitnes", image: 'https://i.imgur.com/qeqZlb6.png',  screen: ScreenA },
     { text: 'Royal GYM', image: 'https://i.imgur.com/XV4Juf5.jpg', screen: ScreenB },
     { text: "Muscle Temple Gym", image: 'https://i.imgur.com/uaPaHyW.jpg', screen: ScreenC },
-    { text: "GYM Olimpo", image: 'https://i.imgur.com/TJIXdjN.gif', screen: ScreenD },
-    { text: "Better Body GYM", image: 'https://i.imgur.com/TJIXdjN.gif', screen: ScreenE },
+    { text: "GYM Olimpo", image: 'https://i.imgur.com/YrrDG9H.jpg', screen: ScreenD },
+    { text: "Better Body GYM", image: 'https://i.imgur.com/YrrDG9H.jpg', screen: ScreenE },
    
   ];
 

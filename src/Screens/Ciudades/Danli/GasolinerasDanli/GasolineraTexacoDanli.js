@@ -85,10 +85,10 @@ export default function GasolineraTexacoDanli() {
             >
 
                 <View style={styles.slide}>
-                <Image style={styles.image} source={{ uri: 'https://www.texaco.com/content/texaco/en_us/home/about-texaco/jcr%3Acontent/parsys/multi_column_870423805/parsys-pdisplay-0/adaptive_image.img.jpg' }} />
+                <Image style={styles.image} source={{ uri: 'https://i.imgur.com/O2aH1uZ.png' }} />
               </View>
                  <View style={styles.slide}>
-                <Image style={styles.image} source={{ uri: 'https://i.ytimg.com/vi/yHSf3Q2W2Ik/maxresdefault.jpg' }} />
+                <Image style={styles.image} source={{ uri: 'https://i.imgur.com/NaK0NrY.png' }} />
               </View>
               
              

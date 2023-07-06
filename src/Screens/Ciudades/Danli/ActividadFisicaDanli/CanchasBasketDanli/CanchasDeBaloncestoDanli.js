@@ -85,11 +85,11 @@ export default function CanchasDeBaloncestoDanli() {
 
 
                 <View style={styles.slide}>
-                <Image style={styles.image} source={{ uri: 'https://es.reformsports.com/doaveero/2020/10/basketbol-sahasinin-yapimi-hakkinda-bilgiler.jpg' }} />
+                <Image style={styles.image} source={{ uri: 'https://i.imgur.com/Z5qXQPD.png' }} />
               </View>
             
                  <View style={styles.slide}>
-                <Image style={styles.image} source={{ uri: 'https://static.vecteezy.com/system/resources/thumbnails/001/994/529/small/sports-basketball-court-match-illustration-sports-match-vector.jpg' }} />
+                <Image style={styles.image} source={{ uri: 'https://i.imgur.com/Ul78qQF.png' }} />
               </View>
              
              

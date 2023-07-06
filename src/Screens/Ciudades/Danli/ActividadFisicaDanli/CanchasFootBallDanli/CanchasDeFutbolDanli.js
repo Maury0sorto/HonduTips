@@ -104,11 +104,11 @@ export default function CanchasDeFutbolDanli() {
 
 
                 <View style={styles.slide}>
-                <Image style={styles.image} source={{ uri: 'https://www.parqueygrama.com/wp-content/uploads/2017/05/mantenimiento-grama-futbol.png' }} />
+                <Image style={styles.image} source={{ uri: 'https://i.imgur.com/ISMSwB7.png' }} />
               </View>
             
                  <View style={styles.slide}>
-                <Image style={styles.image} source={{ uri: 'https://www.economiayviveros.com.ar/imagenes/ciencia-y-arte/cesped-canchas-futbol-1.jpg' }} />
+                <Image style={styles.image} source={{ uri: 'https://i.imgur.com/yd81WzX.png' }} />
               </View>
              
              

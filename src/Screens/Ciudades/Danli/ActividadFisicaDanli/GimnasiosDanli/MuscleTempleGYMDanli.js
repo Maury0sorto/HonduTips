@@ -83,11 +83,11 @@ export default function MuscleTempleGYMDanli() {
 
 
                 <View style={styles.slide}>
-                <Image style={styles.image} source={{ uri: 'https://scontent.fsap8-1.fna.fbcdn.net/v/t39.30808-6/294214226_371740611710487_6507106958709481401_n.jpg?stp=dst-jpg_s960x960&_nc_cat=108&ccb=1-7&_nc_sid=e3f864&_nc_ohc=R8mFdXeBF8kAX-T2C_8&_nc_ht=scontent.fsap8-1.fna&oh=00_AfC1KYOPhRrRNJ8lRHfNmjzKgJ-TdjjXLfhvDpSSndHWWA&oe=64A4ECB9' }} />
+                <Image style={styles.image} source={{ uri: 'https://i.imgur.com/abAi17a.png' }} />
               </View>
             
                  <View style={styles.slide}>
-                <Image style={styles.image} source={{ uri: 'https://scontent.fsap8-1.fna.fbcdn.net/v/t39.30808-6/294214226_371740611710487_6507106958709481401_n.jpg?stp=dst-jpg_s960x960&_nc_cat=108&ccb=1-7&_nc_sid=e3f864&_nc_ohc=R8mFdXeBF8kAX-T2C_8&_nc_ht=scontent.fsap8-1.fna&oh=00_AfC1KYOPhRrRNJ8lRHfNmjzKgJ-TdjjXLfhvDpSSndHWWA&oe=64A4ECB9' }} />
+                <Image style={styles.image} source={{ uri: 'https://i.imgur.com/abAi17a.png' }} />
               </View>
              
              

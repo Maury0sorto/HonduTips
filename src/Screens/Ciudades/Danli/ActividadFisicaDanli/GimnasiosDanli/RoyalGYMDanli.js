@@ -83,11 +83,11 @@ export default function RoyalGYMDanli() {
 
 
                 <View style={styles.slide}>
-                <Image style={styles.image} source={{ uri: 'https://scontent.fsap8-1.fna.fbcdn.net/v/t39.30808-6/298937113_577291673842723_3128496337475699895_n.jpg?_nc_cat=110&ccb=1-7&_nc_sid=19026a&_nc_ohc=uidbt3pY1wgAX8u5YEA&_nc_ht=scontent.fsap8-1.fna&oh=00_AfBJOESmroACUcIK6vqgNBueDXA_a06ddFb-Hw3IzCxlnw&oe=64A4C422' }} />
+                <Image style={styles.image} source={{ uri: 'https://i.imgur.com/GN4ndrH.png' }} />
               </View>
             
                  <View style={styles.slide}>
-                <Image style={styles.image} source={{ uri: 'https://scontent.fsap8-1.fna.fbcdn.net/v/t39.30808-6/314462757_651384056433484_7624432546706998650_n.jpg?_nc_cat=105&ccb=1-7&_nc_sid=19026a&_nc_ohc=THdlH7fLFc4AX_aJ7Xb&_nc_ht=scontent.fsap8-1.fna&oh=00_AfB8gMStRP2X_xnWYSV7E1znjXH-NoSx33dR5z0Dz-mpJA&oe=64A53331' }} />
+                <Image style={styles.image} source={{ uri: 'https://i.imgur.com/GN4ndrH.png' }} />
               </View>
              
              

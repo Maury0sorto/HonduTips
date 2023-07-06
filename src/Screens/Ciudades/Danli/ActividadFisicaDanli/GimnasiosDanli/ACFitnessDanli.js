@@ -83,11 +83,11 @@ export default function ACFitnesDanli() {
 
 
                 <View style={styles.slide}>
-                <Image style={styles.image} source={{ uri: 'https://scontent.fsap8-1.fna.fbcdn.net/v/t39.30808-6/222650422_101416622221220_5332579088153093106_n.jpg?_nc_cat=106&ccb=1-7&_nc_sid=e3f864&_nc_ohc=5viTtVgL-bsAX9ox4pB&_nc_ht=scontent.fsap8-1.fna&oh=00_AfBHjcAlBHHqhBzp3CKYuMns5GTCxuICAjaRTKGfvbtvRA&oe=64A45269' }} />
+                <Image style={styles.image} source={{ uri: 'https://i.imgur.com/qeqZlb6.png' }} />
               </View>
             
                  <View style={styles.slide}>
-                <Image style={styles.image} source={{ uri: 'https://scontent.fsap8-1.fna.fbcdn.net/v/t39.30808-6/285584476_184318990597649_795752698118459606_n.jpg?_nc_cat=109&ccb=1-7&_nc_sid=e3f864&_nc_ohc=TOhlMYLSEc0AX9l0DF6&_nc_ht=scontent.fsap8-1.fna&oh=00_AfCOfR-Ck_pN3mOqrQ0MUD9RekLx-hSqAw1D-dcLD0Fqxg&oe=64A34BE2' }} />
+                <Image style={styles.image} source={{ uri: 'https://i.imgur.com/bGGhoJf.png' }} />
               </View>
              
              

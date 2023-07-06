@@ -99,10 +99,10 @@ export default function GasolineraPumaDanli() {
             >
 
                 <View style={styles.slide}>
-                <Image style={styles.image} source={{ uri: 'https://www.prensa.com/resizer/AqnZVj4Vfj52BUtx4gMCMplgJxk=/arc-anglerfish-arc2-prod-corprensa/public/EEVDYFSUKNH77PLNHCV332FA7A.jpeg' }} />
+                <Image style={styles.image} source={{ uri: 'https://i.imgur.com/l7rptYO.jpg' }} />
               </View>
                  <View style={styles.slide}>
-                <Image style={styles.image} source={{ uri: 'https://uspto.report/TM/88845653/mark.png' }} />
+                <Image style={styles.image} source={{ uri: 'https://i.imgur.com/61PbNCG.png' }} />
               </View>
               
              
