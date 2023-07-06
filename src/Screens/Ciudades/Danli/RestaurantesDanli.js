@@ -645,8 +645,8 @@ const RestaurantesDanli = () => {
     { text: "Servitipicos Alameda", image: 'https://i.imgur.com/aDbMNWE.jpg', screen: ScreenAA},
     { text: "Sport Jali", image: 'https://i.imgur.com/BBV6ynZ.jpg', screen: ScreenAB},
     { text: "Baleadas Yuli", image: 'https://i.imgur.com/AVc27Xo.jpg', screen: ScreenAC},
-    { text: "Torre Fuerte", image: 'https://i.imgur.com/h2bmzh4.jpg', screen: ScreenAD},
-    { text: "Paseo Pupuseria", image: 'https://i.imgur.com/h2bmzh4.jpg', screen: ScreenAF},
+    { text: "Torre Fuerte", image: 'https://i.imgur.com/YrrDG9H.jpg', screen: ScreenAD},
+    { text: "Paseo Pupuseria", image: 'https://i.imgur.com/YrrDG9H.jpg', screen: ScreenAF},
    
   
   
