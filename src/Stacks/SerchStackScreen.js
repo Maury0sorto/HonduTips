@@ -42,21 +42,21 @@ const SerchStackScreen = () => {        // Este stack es el de Search es decir e
     }}  //dsa
   >
           <SerchStack.Screen name="Ciudades" component={Ciudades}/>
-          <SerchStack.Screen name='Danli' component={DanliScreen}  options={{ headerBackVisible: true }} />
-          <SerchStack.Screen name="Bancos Danli" component={BancosDanli}/>
-          <SerchStack.Screen name="Restaurantes Danli" component={RestaurantesDanli} />
-          <SerchStack.Screen name="Hoteles Danli" component={HotelesDanli}/>
-          <SerchStack.Screen name="Gasolineras Danli" component={GasolinerasDanli}/>
-          <SerchStack.Screen name="Barberias Danli" component={BarberiasDanli}/>
-          <SerchStack.Screen name="Farmacias Danli" component={FarmaciasDanli}/>
-          <SerchStack.Screen name="Automotriz Danli" component={AutomotrizDanli}/>
+          <SerchStack.Screen name='Danlí' component={DanliScreen}  options={{ headerBackVisible: true }} />
+          <SerchStack.Screen name="Bancos Danlí" component={BancosDanli}/>
+          <SerchStack.Screen name="Restaurantes Danlí" component={RestaurantesDanli} />
+          <SerchStack.Screen name="Hoteles Danlí" component={HotelesDanli}/>
+          <SerchStack.Screen name="Gasolineras Danlí" component={GasolinerasDanli}/>
+          <SerchStack.Screen name="Barberias Danlí" component={BarberiasDanli}/>
+          <SerchStack.Screen name="Farmacias Danlí" component={FarmaciasDanli}/>
+          <SerchStack.Screen name="Automotriz Danlí" component={AutomotrizDanli}/>
           <SerchStack.Screen name="Carwash Danli" component={CarWashDanli}/>
           <SerchStack.Screen name="Lubricentros Danli" component={LubricentrosDanli}/> 
           <SerchStack.Screen name="Gimnasios Danli" component={GimnasiosDanli}/> 
-          <SerchStack.Screen name="Mall's Danli" component={PlazasComercialesDanli}/> 
-          <SerchStack.Screen name="Salud Danli" component={SaludDanli}/> 
-          <SerchStack.Screen name="Terminal de Buses Danli" component={TerminalBusesDanli}/> 
-          <SerchStack.Screen name="Actividad Fisica en Danli" component={ActividadFisicaDanli}/> 
+          <SerchStack.Screen name="Mall's Danlí" component={PlazasComercialesDanli}/> 
+          <SerchStack.Screen name="Salud Danlí" component={SaludDanli}/> 
+          <SerchStack.Screen name="Terminal de Buses Danlí" component={TerminalBusesDanli}/> 
+          <SerchStack.Screen name="Actividad Fisica en Danlí" component={ActividadFisicaDanli}/> 
           <SerchStack.Screen name="Artes Marciales de Danlí" component={ArtesMarcialesDanli}/> 
           <SerchStack.Screen name="Canchas De Fútbol en Danlí" component={CanchasDeFutbolDanli}/> 
           <SerchStack.Screen name="Baloncesto en Danlí" component={CanchasDeBaloncestoDanli}/> 

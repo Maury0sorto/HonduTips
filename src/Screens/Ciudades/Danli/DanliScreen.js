@@ -47,32 +47,32 @@ const DanlíScreen = () => {
   const handleButtonPress = (text) => {
     // Configura la navegación a las pantallas correspondientes según el texto del botón
     if (text === 'Banca') {
-      navigation.navigate('Bancos Danli');
+      navigation.navigate('Bancos Danlí');
     } else if (text === 'Restaurantes') {
-      navigation.navigate('Restaurantes Danli');
+      navigation.navigate('Restaurantes Danlí');
     } else if (text === 'Hoteles') {
-      navigation.navigate('Hoteles Danli');
+      navigation.navigate('Hoteles Danlí'); 
     } else if (text === 'Farmacias') {
-      navigation.navigate('Farmacias Danli');
+      navigation.navigate('Farmacias Danlí');
     } else if (text === 'Gasolineras') {
-      navigation.navigate('Gasolineras Danli');
+      navigation.navigate('Gasolineras Danlí');
     } else if (text === 'Barberias') {
-      navigation.navigate('Barberias Danli');
+      navigation.navigate('Barberias Danlí');
     }
     else if (text === 'Actividad Física') {
-      navigation.navigate('Actividad Fisica en Danli');
+      navigation.navigate('Actividad Fisica en Danlí');
     }
     else if (text === 'Centros Medicos') {
-      navigation.navigate('Salud Danli');
+      navigation.navigate('Salud Danlí');
     }
     else if (text === 'Automotriz') {
-      navigation.navigate('Automotriz Danli');
+      navigation.navigate('Automotriz Danlí');
     }
     else if (text === 'Plazas Comerciales') {
-      navigation.navigate("Mall's Danli");
+      navigation.navigate("Mall's Danlí");
     }
     else if (text === 'Puntos de Transporte') {
-      navigation.navigate("Terminal de Buses Danli");
+      navigation.navigate("Terminal de Buses Danlí");
     }
   };
 
