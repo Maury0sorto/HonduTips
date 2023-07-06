@@ -6,7 +6,7 @@ import Swiper from "react-native-web-swiper";
 
 const locationsData = [
   {
-    title: 'Barberia Erick Glamur',
+    title: 'Barberia Erick Glamur ',
     
     latitude:    14.030814697330069, 
     longitude:  -86.5776766111407,
