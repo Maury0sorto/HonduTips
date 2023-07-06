@@ -81,10 +81,10 @@ export default function MallUniplazaDanli() {
               }}
             >
               <View style={styles.slide}>
-                <Image style={styles.image} source={{ uri: 'https://scontent.fsap8-1.fna.fbcdn.net/v/t39.30808-6/351383246_1027952378589833_5063940838847755455_n.jpg?_nc_cat=101&ccb=1-7&_nc_sid=e3f864&_nc_ohc=doEOpDbj34sAX9sWj2O&_nc_ht=scontent.fsap8-1.fna&oh=00_AfDIZz7q2-vGbXyV8mmHk7N6ilOExbIJbg0G-Y_qTnjj_Q&oe=64A8AEC5' }} />
+                <Image style={styles.image} source={{ uri: 'https://i.imgur.com/F8GOzro.png' }} />
               </View>
               <View style={styles.slide}>
-                <Image style={styles.image} source={{ uri: 'https://scontent.fsap8-1.fna.fbcdn.net/v/t39.30808-6/320266700_884627255871959_3420942261380362561_n.jpg?_nc_cat=105&ccb=1-7&_nc_sid=8bfeb9&_nc_ohc=3nCJsZ2qNDcAX_ZwSjn&_nc_ht=scontent.fsap8-1.fna&oh=00_AfBAOyeUUeszfFv9pox-LAN_HNkkx5heYv1dtQpLTwS9PQ&oe=64A85DF7' }} />
+                <Image style={styles.image} source={{ uri: 'https://i.imgur.com/0iJ7Vll.png' }} />
               </View>
             </Swiper>
           </View>

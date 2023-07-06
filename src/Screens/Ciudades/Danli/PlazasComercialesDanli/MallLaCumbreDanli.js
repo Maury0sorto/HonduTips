@@ -81,10 +81,10 @@ export default function MallLaCumbreDanli() {
               }}
             >
               <View style={styles.slide}>
-                <Image style={styles.image} source={{ uri: 'https://scontent.fsap8-1.fna.fbcdn.net/v/t39.30808-6/294184352_478867297575698_3863378249719634206_n.jpg?_nc_cat=101&ccb=1-7&_nc_sid=e3f864&_nc_ohc=bma9bRw8gY4AX8ljsb6&_nc_ht=scontent.fsap8-1.fna&oh=00_AfBrfw-vlg5OjS0vdbK1GsRsj9kjxWkCcSCjjYQYIueTpQ&oe=64A84C6E' }} />
+                <Image style={styles.image} source={{ uri: 'https://i.imgur.com/PQxsaM5.png' }} />
               </View>
               <View style={styles.slide}>
-                <Image style={styles.image} source={{ uri: 'https://scontent.fsap8-1.fna.fbcdn.net/v/t39.30808-6/294184352_478867297575698_3863378249719634206_n.jpg?_nc_cat=101&ccb=1-7&_nc_sid=e3f864&_nc_ohc=bma9bRw8gY4AX8ljsb6&_nc_ht=scontent.fsap8-1.fna&oh=00_AfBrfw-vlg5OjS0vdbK1GsRsj9kjxWkCcSCjjYQYIueTpQ&oe=64A84C6E' }} />
+                <Image style={styles.image} source={{ uri: 'https://i.imgur.com/PQxsaM5.png' }} />
               </View>
             </Swiper>
           </View>

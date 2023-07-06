@@ -81,10 +81,10 @@ export default function PaseoLasColinasDanli() {
               }}
             >
                 <View style={styles.slide}>
-                <Image style={styles.image} source={{ uri: 'https://scontent.fsap8-1.fna.fbcdn.net/v/t39.30808-6/333897537_3036274906673968_8621775030337526709_n.png?stp=dst-jpg&_nc_cat=105&ccb=1-7&_nc_sid=19026a&_nc_ohc=BNcIkfzOYXIAX8wr_dw&_nc_ht=scontent.fsap8-1.fna&oh=00_AfBIhRBM0yYVNQ4jSqEga9Fo884W6kimAuUxUnMBvU6tuQ&oe=64A764F0' }} />
+                <Image style={styles.image} source={{ uri: 'https://i.imgur.com/ozStmeQ.png' }} />
               </View>
               <View style={styles.slide}>
-                <Image style={styles.image} source={{ uri: 'https://scontent.fsap8-1.fna.fbcdn.net/v/t39.30808-6/343368011_679835310572713_1055324881183498708_n.jpg?_nc_cat=102&ccb=1-7&_nc_sid=730e14&_nc_ohc=9636muAtEpkAX9CUbtD&_nc_ht=scontent.fsap8-1.fna&oh=00_AfDMqzTWpo_2LRJqVOEgE6ygCJNLbyPpX6LjakYaGiB52Q&oe=64A8C5F0' }} />
+                <Image style={styles.image} source={{ uri: 'https://i.imgur.com/XUCMOYN.png' }} />
               </View>
              
             </Swiper>
