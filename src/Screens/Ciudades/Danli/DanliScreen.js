@@ -13,18 +13,18 @@ const DanlíScreen = () => {
     });
   }, []);
   const [data, setData] = useState([
-    { text: 'Banca', image: 'https://i.imgur.com/r6NIVCc.png' },
-    { text: 'Restaurantes', image: 'https://i.imgur.com/1YAKCnD.png' },
-    { text: 'Hoteles', image: 'https://i.imgur.com/VEQBtoM.png' },
-    { text: 'Farmacias', image: 'https://i.imgur.com/mX83bjL.png' },
-    { text: 'Gasolineras', image: 'https://i.imgur.com/Tt5mWRN.png' },
-    { text: 'Barberias', image: 'https://i.imgur.com/VCZ0aiI.png' },
-    { text: 'Actividad Física', image: 'https://i.imgur.com/UlA2Ql8.png' },
-    { text: 'Centros Medicos', image: 'https://i.imgur.com/5n9FC8p.png' }, 
-    { text: 'Automotriz', image: 'https://i.imgur.com/tyb93n3.png' },
-    { text: 'Plazas Comerciales', image: 'https://i.imgur.com/ScyxlFm.png' },
-    { text: 'Puntos de Transporte', image: 'https://i.imgur.com/HdtWT32.png' },
-    { text: 'Educación', image: 'https://i.imgur.com/n3so3KR.png' },
+    { text: 'Banca', image: 'https://i.imgur.com/Bffp4OT.png' },
+    { text: 'Restaurantes', image: 'https://i.imgur.com/SQStGOP.png' },
+    { text: 'Hoteles', image: 'https://i.imgur.com/SN0hO9s.png' },
+    { text: 'Farmacias', image: 'https://i.imgur.com/dsnanSl.png' },
+    { text: 'Gasolineras', image: 'https://i.imgur.com/meCBdUt.png' },
+    { text: 'Barberias', image: 'https://i.imgur.com/K0qLKfW.png' },
+    { text: 'Actividad Física', image: 'https://i.imgur.com/YFd8er3.png' },
+    { text: 'Centros Medicos', image: 'https://i.imgur.com/H4mcQuT.png' }, 
+    { text: 'Automotriz', image: 'https://i.imgur.com/Ld3u2NI.png' },
+    { text: 'Plazas Comerciales', image: 'https://i.imgur.com/GycKe4i.png' },
+    { text: 'Puntos de Transporte', image: 'https://i.imgur.com/2sgBrWV.png' },
+    { text: 'Educación', image: 'https://i.imgur.com/jPVcqaS.png' },
   ]);
   const [filterData, setFilterData] = useState([]);
   const [searchText, setSearchText] = useState('');

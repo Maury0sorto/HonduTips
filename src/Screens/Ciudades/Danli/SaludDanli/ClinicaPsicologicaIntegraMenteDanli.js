@@ -1,27 +1,27 @@
 import React, { useState, useRef } from 'react';
 import { StyleSheet, View, Dimensions, Linking, Text, Alert, TouchableOpacity, ScrollView, Image } from 'react-native';
+import Icon from 'react-native-vector-icons/FontAwesome';
 import MapView, { Marker, Callout } from 'react-native-maps';
 import Swiper from "react-native-web-swiper";
-import Icon from 'react-native-vector-icons/FontAwesome';
 
 const locationsData = [
   {
-    title: "Hotel Granada",
- 
-    latitude:   14.027295705335005, 
-    longitude:   -86.57461232112786,
+    title: 'Clinica Psicológica Integramente',
+    
+    latitude:    14.02836546715607,
+    longitude:  -86.56909662183048,
   },
-
+ 
   // Agrega más ubicaciones aquí si lo deseas
 ];
 
-export default function HotelGranadaDanli() {
+export default function ClinicaPsicologicaIntegraMenteDanli() {
   const mapRef = useRef(null);
   const initialRegion = {
-    latitude:   14.027295705335005, 
-    longitude:   -86.57461232112786,
-    latitudeDelta: 0.01,
-    longitudeDelta: 0.01,
+    latitude:    14.02836546715607,
+    longitude:  -86.56909662183048,
+    latitudeDelta: 0.003,
+    longitudeDelta: 0.003,
   };
 
   const openGoogleMaps = (latitude, longitude) => {
@@ -69,7 +69,7 @@ export default function HotelGranadaDanli() {
   return (
     <ScrollView>
       <View style={styles.container}>
-        <Text style={styles.title}>Hotel Granada</Text>
+        <Text style={styles.title}> Clinica Psicológica Integramente </Text>
         <View style={styles.containerSwipers}>
           <View style={styles.swiperContainer}>
             <Swiper
@@ -80,37 +80,50 @@ export default function HotelGranadaDanli() {
                 dotActiveStyle: { backgroundColor: "red" },
               }}
             >
-
-                <View style={styles.slide}>
-                <Image style={styles.image} source={{ uri: 'https://i.imgur.com/zZVmH2D.png' }} />
+              <View style={styles.slide}>
+                <Image style={styles.image} source={{ uri: 'https://www.centromedicoallende.com.mx/images/463516-centro-medico-o-couto-banner.jpg?crc=453963139' }} />
               </View>
-                 <View style={styles.slide}>
-                <Image style={styles.image} source={{ uri: 'https://i.imgur.com/zZVmH2D.png' }} />
+              <View style={styles.slide}>
+                <Image style={styles.image} source={{ uri: 'https://media.istockphoto.com/id/954802966/es/foto/fotos-de-cuidado-de-la-salud.jpg?s=612x612&w=0&k=20&c=_LxrDX5x80whOA-3OTyqWfwpJ2wrf1VBteJykVg1jJk=' }} />
               </View>
-            
-             
-             
             </Swiper>
           </View>
         </View>
 
+
+        <Text style={styles.scheduleHeaderText}>HORARIOS DE ATENCION</Text>
+      <View style={styles.scheduleContainer}>
+        <View style={styles.scheduleItem}>
+          <Icon name="clock-o" size={20} color="#000" style={styles.scheduleIcon} />
+          <Text style={styles.scheduleText}>Lun-Ma: Cerrado </Text>
+        </View>
+        
+        <View style={styles.scheduleItem}>
+          <Icon name="clock-o" size={20} color="#000" style={styles.scheduleIcon} />
+          <Text style={styles.scheduleText}>Mi-Ju: 8:00 AM - 4:00 PM </Text>
+        </View>
+        
+        <View style={styles.scheduleItem}>
+          <Icon name="clock-o" size={20} color="#000" style={styles.scheduleIcon} />
+          <Text style={styles.scheduleText}>Vie-Sáb: 8:00 AM - 4:00 PM </Text>
+        </View>
+        
+        <View style={styles.scheduleItem}>
+          <Icon name="clock-o" size={20} color="#000" style={styles.scheduleIcon} />
+          <Text style={styles.scheduleText}>Dom: Cerrado </Text>
+        </View>
+      </View>
+
+
         <View style={styles.buttonContainer}>
+       
           <TouchableOpacity
             style={styles.button}
             onPress={() => {
-              Linking.openURL('https://www.facebook.com/profile.php?id=100064649801382');
+              Linking.openURL('tel: 3185-8887');
             }}
           >
-             <Icon name="globe" size={20} color="white" style={styles.buttonIcon} />
-            <Text style={styles.buttonText}>Visitar</Text>
-          </TouchableOpacity>
-          <TouchableOpacity
-            style={styles.button}
-            onPress={() => {
-              Linking.openURL('tel: 2763-2499');
-            }}
-          >
-             <Icon name="phone" size={20} color="white" style={styles.buttonIcon} />
+            <Icon name="phone" size={20} color="white" style={styles.buttonIcon} />
             <Text style={styles.buttonText}>Contactar</Text>
           </TouchableOpacity>
         </View>
@@ -131,7 +144,7 @@ export default function HotelGranadaDanli() {
                 <Callout>
                   <View>
                     <Text>{location.title}</Text>
-                  </View>
+                  </View> 
                 </Callout>
               </Marker>
             ))}
@@ -161,6 +174,7 @@ const styles = StyleSheet.create({
     fontSize: 34,
     fontWeight: 'bold',
     marginTop: 10,
+    textAlign: 'center',
   },
   mapContainer: {
     aspectRatio: 16 / 9,
@@ -301,5 +315,4 @@ const styles = StyleSheet.create({
   },
 
   //fin de estilos de menu y horarios
-
 });

@@ -105,9 +105,9 @@ const GasolinerasDanli = () => {
   };
 
   const buttons = [
-    { text: "Gasolinera Uno", image: 'https://scontent.ftgu2-3.fna.fbcdn.net/v/t39.30808-6/310994414_481719290664274_947117072423186180_n.png?_nc_cat=109&ccb=1-7&_nc_sid=09cbfe&_nc_ohc=bLs-33kUqJYAX-FkqYs&_nc_ht=scontent.ftgu2-3.fna&oh=00_AfAZ2Zv7FzAOedXOFRjI2jjkUY2a_wITHKM43IRugxjV0w&oe=649B3912',  screen: ScreenA },
-    { text: 'Gasolinera Texaco', image: 'https://scontent.ftgu2-3.fna.fbcdn.net/v/t39.30808-6/212301045_993368057868532_635814340386293217_n.png?_nc_cat=111&ccb=1-7&_nc_sid=09cbfe&_nc_ohc=MFDCqnQFtDoAX-C743J&_nc_ht=scontent.ftgu2-3.fna&oh=00_AfAo3Scvpqs97syAMQqdPgr83PX1nuvgR1zEJHqPYBh2pQ&oe=649B6719', screen: ScreenB },
-    { text: "Gasolinera Puma", image: 'https://scontent.ftgu2-2.fna.fbcdn.net/v/t39.30808-6/306354912_132279286239458_1560117613148766858_n.png?_nc_cat=103&ccb=1-7&_nc_sid=09cbfe&_nc_ohc=wNzX1OB84SMAX8M1Esz&_nc_ht=scontent.ftgu2-2.fna&oh=00_AfAnzjvleRgPK8QqVpIFvK19f3ejJx9V-zJ6KjWrn_DVOg&oe=649A4C64', screen: ScreenC },
+    { text: "Gasolinera Uno", image: 'https://i.imgur.com/fe10m0d.png',  screen: ScreenA },
+    { text: 'Gasolinera Texaco', image: 'https://i.imgur.com/brQEGC8.png', screen: ScreenB },
+    { text: "Gasolinera Puma", image: 'https://i.imgur.com/WANLQnB.png', screen: ScreenC },
    
 
   ];

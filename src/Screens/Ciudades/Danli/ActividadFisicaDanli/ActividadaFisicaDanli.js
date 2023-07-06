@@ -14,10 +14,10 @@ const ActividadFisicaDanli = () => {
   }, []);
   const [data, setData] = useState([
    
-    { text: 'Gimnasios', image: 'https://i.imgur.com/lwBDw2H.png' },
-    { text: 'Fútbol', image: 'https://i.imgur.com/5XhuwCQ.png' },
-    { text: 'Baloncesto', image: 'https://i.imgur.com/X4vep01.png' },
-    { text: 'Artes Marciales Mixtas', image: 'https://i.imgur.com/KMUVlmk.png' },
+    { text: 'Gimnasios', image: 'https://i.imgur.com/cBvl0M9.png' },
+    { text: 'Fútbol', image: 'https://i.imgur.com/ZgGhd86.png' },
+    { text: 'Baloncesto', image: 'https://i.imgur.com/F6N60i4.png' },
+    { text: 'Artes Marciales Mixtas', image: 'https://i.imgur.com/Z878AFN.png' },
   ]);
   const [filterData, setFilterData] = useState([]);
   const [searchText, setSearchText] = useState('');

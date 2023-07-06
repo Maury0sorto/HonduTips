@@ -84,10 +84,10 @@ export default function FarmaciaKielsaDanli() {
             >
 
                 <View style={styles.slide}>
-                <Image style={styles.image} source={{ uri: 'http://cr.citymall.net/wp-content/uploads/2014/09/kielsaArtboard-1.png' }} />
+                <Image style={styles.image} source={{ uri: 'https://i.imgur.com/g4bEMEU.png' }} />
               </View>
                  <View style={styles.slide}>
-                <Image style={styles.image} source={{ uri: 'https://scontent.fsap8-1.fna.fbcdn.net/v/t1.6435-9/164681959_4093818450637814_7274952409904040112_n.png?_nc_cat=102&ccb=1-7&_nc_sid=e3f864&_nc_ohc=uI5mUD3JenMAX-N92eu&_nc_ht=scontent.fsap8-1.fna&oh=00_AfAN_yrEsWrmHdsItDw5lqWs1GOvDjcZXbAc4t3_XL1r9A&oe=64C26FDB' }} />
+                <Image style={styles.image} source={{ uri: 'https://i.imgur.com/r49y7JM.png' }} />
               </View>
               
              

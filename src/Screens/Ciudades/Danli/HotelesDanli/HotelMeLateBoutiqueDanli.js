@@ -81,10 +81,10 @@ export default function HotelMeLateBoutiqueDanli() {
               }}
             >
                  <View style={styles.slide}>
-                <Image style={styles.image} source={{ uri: 'https://q-xx.bstatic.com/xdata/images/hotel/max1024x768/184599458.jpg?k=054c46ad8f255480130bc581414dd42a6d60268bf0bb5503f991bca07c37195c&o=' }} />
+                <Image style={styles.image} source={{ uri: 'https://i.imgur.com/PZ13Dcz.jpg' }} />
               </View>
               <View style={styles.slide}>
-                <Image style={styles.image} source={{ uri: 'https://media-cdn.tripadvisor.com/media/photo-s/1a/94/cf/20/20200105-223127-largejpg.jpg' }} />
+                <Image style={styles.image} source={{ uri: 'https://i.imgur.com/GBe3yD0.jpg' }} />
               </View>
              
              

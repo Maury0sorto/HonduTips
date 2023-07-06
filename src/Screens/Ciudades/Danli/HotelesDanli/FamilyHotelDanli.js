@@ -82,10 +82,10 @@ export default function FamilyHotelDanli() {
             >
 
                 <View style={styles.slide}>
-                <Image style={styles.image} source={{ uri: 'https://scontent.fsap8-1.fna.fbcdn.net/v/t39.30808-6/255175560_1555391664809766_1326841528578620274_n.png?_nc_cat=110&ccb=1-7&_nc_sid=09cbfe&_nc_ohc=z2NUJxCKkL4AX88WjWS&_nc_ht=scontent.fsap8-1.fna&oh=00_AfCdqwfySNN5XmgzFKjyOpr5LWqEK_AmMj4EnYWYBU3tDQ&oe=649E525A' }} />
+                <Image style={styles.image} source={{ uri: 'https://i.imgur.com/bRpkpsj.png' }} />
               </View>
                  <View style={styles.slide}>
-                <Image style={styles.image} source={{ uri: 'https://scontent.fsap8-1.fna.fbcdn.net/v/t39.30808-6/263744638_1569687013380231_5812266162226269549_n.png?_nc_cat=105&ccb=1-7&_nc_sid=e3f864&_nc_ohc=56Ed25oSuJMAX8-sYhH&_nc_ht=scontent.fsap8-1.fna&oh=00_AfDnTJ6En3H_dGQhU6NdDfNdVR2LdEEI25Xyb5kjjOpmgQ&oe=649ED52D' }} />
+                <Image style={styles.image} source={{ uri: 'https://i.imgur.com/czw5cNy.jpg' }} />
               </View>
             
              

@@ -82,10 +82,10 @@ export default function HotelLaEsperanzaDanli() {
             >
 
                 <View style={styles.slide}>
-                <Image style={styles.image} source={{ uri: 'https://i.imgur.com/fIcmPAu.jpg' }} />
+                <Image style={styles.image} source={{ uri: 'https://i.imgur.com/PQ3ZRZX.png' }} />
               </View>
                  <View style={styles.slide}>
-                <Image style={styles.image} source={{ uri: 'https://i.imgur.com/PzXfHXy.jpg' }} />
+                <Image style={styles.image} source={{ uri: 'https://i.imgur.com/CiKLp6P.png' }} />
               </View>
             
              

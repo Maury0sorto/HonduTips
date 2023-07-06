@@ -94,10 +94,10 @@ export default function FarmaciaSimanDanli() {
             >
 
                 <View style={styles.slide}>
-                <Image style={styles.image} source={{ uri: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSVm-YYYZUB5d8urqz6jLn5QEZRTRNnZW6-7JPP-Xxvm_Iy3bQUvqwBen90tTIYSHC9M6E&usqp=CAU' }} />
+                <Image style={styles.image} source={{ uri: 'https://i.imgur.com/bINqb48.png' }} />
               </View>
                  <View style={styles.slide}>
-                <Image style={styles.image} source={{ uri: 'https://i.pinimg.com/originals/33/d3/a4/33d3a4a009346dae2e66448e7c33681b.jpg' }} />
+                <Image style={styles.image} source={{ uri: 'https://i.imgur.com/SjYXA24.png' }} />
               </View>
               
              

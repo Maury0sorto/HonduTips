@@ -82,10 +82,10 @@ export default function HotelVillaParaisoDanli() {
             >
 
                 <View style={styles.slide}>
-                <Image style={styles.image} source={{ uri: 'https://scontent.fsap8-1.fna.fbcdn.net/v/t1.6435-9/132956422_171013344767719_8355383251282346469_n.jpg?_nc_cat=109&ccb=1-7&_nc_sid=8bfeb9&_nc_ohc=9FXiEpVN5m4AX_xW05C&_nc_ht=scontent.fsap8-1.fna&oh=00_AfCM-AgKT-dq6HWzyMpE6Q0wPaU_lqOOnA0sYlJMF-t8AA&oe=64CCF8F7' }} />
+                <Image style={styles.image} source={{ uri: 'https://i.imgur.com/lEj7ihg.png' }} />
               </View>
                  <View style={styles.slide}>
-                <Image style={styles.image} source={{ uri: 'https://scontent.fsap8-1.fna.fbcdn.net/v/t39.30808-6/278903387_489630186239365_3068872100356549891_n.jpg?_nc_cat=107&ccb=1-7&_nc_sid=8bfeb9&_nc_ohc=j2qvFc-50dwAX9gjRus&_nc_ht=scontent.fsap8-1.fna&oh=00_AfDGN-6lKLvyiRt5hUKXCh0PYu_ldUkFSEqrk0dhGlexcg&oe=64AA8B6E' }} />
+                <Image style={styles.image} source={{ uri: 'https://i.imgur.com/rTXZgdD.png' }} />
               </View>
             
              

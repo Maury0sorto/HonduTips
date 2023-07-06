@@ -88,10 +88,10 @@ export default function FarmacityDanli() {
             >
 
                 <View style={styles.slide}>
-                <Image style={styles.image} source={{ uri: 'https://farmacityar.vteximg.com.br/arquivos/ids/192996/bannerNuestraEmpresaMobile2.png?v=637139225496030000' }} />
+                <Image style={styles.image} source={{ uri: 'https://i.imgur.com/4fa29G3.png' }} />
               </View>
                  <View style={styles.slide}>
-                <Image style={styles.image} source={{ uri: 'https://scontent.fsap8-1.fna.fbcdn.net/v/t39.30808-6/277765818_282015670756904_5599360994349349773_n.jpg?_nc_cat=100&ccb=1-7&_nc_sid=730e14&_nc_ohc=MmUuRvrTtckAX-J9_Wu&_nc_ht=scontent.fsap8-1.fna&oh=00_AfAcMAvJHLd4QTW3JIoSo5ePgCe8K9kuMCSJbEl1fEHhgw&oe=649F4EBB' }} />
+                <Image style={styles.image} source={{ uri: 'https://i.imgur.com/4fa29G3.png' }} />
               </View>
               
              

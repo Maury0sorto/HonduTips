@@ -5,7 +5,7 @@ export default function EnConstruccion() {
   return (
     <View style={styles.container}>
       <ImageBackground
-        source={{ uri: 'https://i.imgur.com/UaT9x6Q.png' }}
+        source={{ uri: 'https://i.imgur.com/L3jkuII.png' }}
         style={styles.imageBackground}
       >
         

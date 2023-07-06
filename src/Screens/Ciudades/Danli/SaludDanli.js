@@ -10,6 +10,10 @@ import GasolineraPumaDanli from './GasolinerasDanli/GasolineraPumaDanli';
 import HospitalGabrielaAlvaradoDanli from './SaludDanli/HospitalGabrielaAlvaradoDanli';
 import IHSSDanli from './SaludDanli/IHSSDanli';
 import IMSSDanli from './SaludDanli/IMSSDanli';
+import CentroMedicoQuirurgicoDeOriendeDanli from './SaludDanli/CentroMedicoQuirurgicoDeOrienteDanli';
+import CentroMedicoNavarroEspinalDanli from './SaludDanli/CentroMedicoNavarroEspinalDanli';
+import CEMEDDanli from './SaludDanli/CEMEDDanli';
+
 
 const ScreenA = ({ text, mostrarBotonAnterior }) => {
   return (
@@ -63,7 +67,7 @@ const ScreenC = ({ text, mostrarBotonAnterior }) => {
       <Text style={styles.backButtonText}>Regresar</Text>
     </>
       </TouchableHighlight>
-      <IMSSDanli/>
+      <CentroMedicoQuirurgicoDeOriendeDanli/>
     </View>
   );
 };
@@ -81,10 +85,48 @@ const ScreenD = ({ text, mostrarBotonAnterior }) => {
       <Text style={styles.backButtonText}>Regresar</Text>
     </>
       </TouchableHighlight>
-      <PapaJohnstDanli/>
+      <CentroMedicoNavarroEspinalDanli/>
     </View>
   );
-};
+}; 
+
+const ScreenF = ({ text, mostrarBotonAnterior }) => {
+  return (
+    <View style={styles.componentContainer}>
+      <TouchableHighlight
+        style={styles.backButton}
+        underlayColor="#0080ff"
+        onPress={mostrarBotonAnterior}
+      >
+        <>
+      <Ionicons name="arrow-back" size={24} color="black" style={styles.backButtonIcon} />
+      <Text style={styles.backButtonText}>Regresar</Text>
+    </>
+      </TouchableHighlight>
+      <CEMEDDanli/>
+    </View>
+  );
+}; 
+
+
+const ScreenG = ({ text, mostrarBotonAnterior }) => {
+  return (
+    <View style={styles.componentContainer}>
+      <TouchableHighlight
+        style={styles.backButton}
+        underlayColor="#0080ff"
+        onPress={mostrarBotonAnterior}
+      >
+        <>
+      <Ionicons name="arrow-back" size={24} color="black" style={styles.backButtonIcon} />
+      <Text style={styles.backButtonText}>Regresar</Text>
+    </>
+      </TouchableHighlight>
+      <CentroMedicoNavarroEspinalDanli/>
+    </View>
+  );
+}; 
+
 
 
 
@@ -108,13 +150,12 @@ const SaludDanli = () => {
   const buttons = [
     { text: "Hospital Gabriela Alvarado", image: 'https://scontent.fsap8-1.fna.fbcdn.net/v/t39.30808-6/280668186_533030501614511_7278109461792763589_n.jpg?_nc_cat=101&ccb=1-7&_nc_sid=09cbfe&_nc_ohc=cjn0dXL9edgAX_LVSxz&_nc_ht=scontent.fsap8-1.fna&oh=00_AfBWZYysP-_quUNpzNRID8pv5Vcunw0XoYzuWbJwonsitQ&oe=64A76203',  screen: ScreenA },
     { text: 'IHSS Danli', image: 'https://scontent.fsap8-1.fna.fbcdn.net/v/t39.30808-6/275555531_7247746151932117_8739330950694517292_n.jpg?_nc_cat=109&ccb=1-7&_nc_sid=09cbfe&_nc_ohc=ttGGKZ6pwuEAX_5bbhM&_nc_ht=scontent.fsap8-1.fna&oh=00_AfCBlmPjx4LeELnTGLk_cqeow0RXYaSs3PaDPNga1ULf9Q&oe=64A75EB4', screen: ScreenB },
-    { text: 'Centro Medico Quirurgico De Oriente', image: 'https://i.imgur.com/h2bmzh4.jpg', screen: ScreenB },
-    { text: 'Centro Médico Navarro Espinal', image: 'https://i.imgur.com/h2bmzh4.jpg', screen: ScreenB },
-    { text: 'CEMED', image: 'https://i.imgur.com/h2bmzh4.jpg', screen: ScreenB },
+    { text: 'Centro Medico Quirurgico De Oriente', image: 'https://i.imgur.com/h2bmzh4.jpg', screen: ScreenC },
+    { text: 'Centro Médico Navarro Espinal', image: 'https://i.imgur.com/h2bmzh4.jpg', screen: ScreenD },
+    { text: 'CEMED', image: 'https://i.imgur.com/h2bmzh4.jpg', screen: ScreenF },
     { text: 'Clínica Psicológica IntegraMente', image: 'https://i.imgur.com/h2bmzh4.jpg', screen: ScreenB },
     { text: 'Clinicas Medicas Danli', image: 'https://i.imgur.com/h2bmzh4.jpg', screen: ScreenB },
     { text: "Clínica Médica Ferrera'S", image: 'https://i.imgur.com/h2bmzh4.jpg', screen: ScreenB },
-    { text: 'Clínica Psicológica IntegraMente Danlí', image: 'https://i.imgur.com/h2bmzh4.jpg', screen: ScreenB },
     { text: 'Clinica Dr. Salvador Moncada', image: 'https://i.imgur.com/h2bmzh4.jpg', screen: ScreenB },
     { text: 'Clinica Dental Mayorquin', image: 'https://i.imgur.com/h2bmzh4.jpg', screen: ScreenB },
     { text: 'C&D Dental', image: 'https://i.imgur.com/h2bmzh4.jpg', screen: ScreenB },
@@ -126,9 +167,15 @@ const SaludDanli = () => {
     { key: '1', value: 'Recomendadas' },
     { key: '2', value: "Hospital Gabriela Alvarado" },
     { key: '3', value: 'IHSS Danli' },
-    { key: '4', value: 'IMSS Danli' },
-    
-    
+    { key: '4', value: 'Centro Medico Quirurgico De Oriente' },
+    { key: '5', value: 'Centro Médico Navarro Espinal' },
+    { key: '6', value: 'CEMED' },
+    { key: '7', value: 'Clínica Psicológica IntegraMente' },
+    { key: '8', value: 'Clinicas Medicas Danli' },
+    { key: '9', value: "Clínica Médica Ferrera'S" },
+    { key: '10', value: 'Clinica Dr. Salvador Moncada' },
+    { key: '11', value: 'Clinica Dental Mayorquin' },
+    { key: '12', value: 'C&D Dental' },
     
     
   ];

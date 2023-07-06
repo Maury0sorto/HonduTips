@@ -105,10 +105,10 @@ const FarmaciasDanli = () => {
   };
 
   const buttons = [
-    { text: "Farmacia Siman", image: 'https://scontent.ftgu2-2.fna.fbcdn.net/v/t39.30808-6/271005459_10158843247628111_7685085808735428877_n.jpg?_nc_cat=100&ccb=1-7&_nc_sid=09cbfe&_nc_ohc=WHASNpTjVcgAX9_gKFo&_nc_oc=AQnhECabMiWDo1bgRRnTU1rRAyGAOvKHHLfeqEAUaN3QkcmDCRpCahUHHTwk26d4tYU&_nc_ht=scontent.ftgu2-2.fna&oh=00_AfAl6gzoYWSFeK0rlBKbdIZq9UNcZuwGQAPh89k6s33hQA&oe=649A5012',  screen: ScreenA },
-    { text: 'Farmacity', image: 'https://farmacityar.vteximg.com.br/arquivos/farmalogoinstit.png?v=636706429804500000', screen: ScreenB },
-    { text: "Farmacia El Ahorro", image: 'https://scontent.ftgu2-3.fna.fbcdn.net/v/t39.30808-6/323981630_887769745593216_3056649274394557423_n.jpg?_nc_cat=110&ccb=1-7&_nc_sid=09cbfe&_nc_ohc=serI6ZgwvecAX8Favui&_nc_ht=scontent.ftgu2-3.fna&oh=00_AfAVOE1b4f2VOPvrKBBBd8ybj6p1CQhvHt3KVymaGIpvGQ&oe=649B66E8', screen: ScreenC },
-    { text: 'Farmacia Kielsa', image: 'https://scontent.ftgu2-2.fna.fbcdn.net/v/t39.30808-6/271139287_4989166467769670_4819857384114343886_n.jpg?_nc_cat=101&ccb=1-7&_nc_sid=09cbfe&_nc_ohc=gS6Ae_ub5PwAX9Y5afb&_nc_ht=scontent.ftgu2-2.fna&oh=00_AfDcLCrqJDViHGod8aUiOcvpWYXrUh1DczzP9WuZrFPmsQ&oe=649B8669', screen: ScreenD },
+    { text: "Farmacia Siman", image: 'https://i.imgur.com/VgkaSP8.jpg',  screen: ScreenA },
+    { text: 'Farmacity', image: 'https://i.imgur.com/cp6LNsK.png', screen: ScreenB },
+    { text: "Farmacia El Ahorro", image: 'https://i.imgur.com/N1zCJCs.jpg', screen: ScreenC },
+    { text: 'Farmacia Kielsa', image: 'https://i.imgur.com/qjaIPFh.jpg', screen: ScreenD },
 
   ];
 

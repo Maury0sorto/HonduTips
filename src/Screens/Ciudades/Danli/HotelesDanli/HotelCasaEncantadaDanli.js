@@ -81,10 +81,10 @@ export default function HotelCasaEncatadaDanli() {
               }}
             >
                  <View style={styles.slide}>
-                <Image style={styles.image} source={{ uri: 'https://scontent.fsap8-1.fna.fbcdn.net/v/t1.6435-9/37092820_1879953018714384_2414585662683480064_n.jpg?_nc_cat=108&ccb=1-7&_nc_sid=e3f864&_nc_ohc=kQKnRlmGNS4AX-ZnMR7&_nc_ht=scontent.fsap8-1.fna&oh=00_AfDXATGtKUr6_wuEuZVLhbkS4jAZu_iDxzqahr4pSD6zcg&oe=64C17F9F' }} />
+                <Image style={styles.image} source={{ uri: 'https://i.imgur.com/evaymF4.jpg' }} />
               </View>
               <View style={styles.slide}>
-                <Image style={styles.image} source={{ uri: 'https://scontent.fsap8-1.fna.fbcdn.net/v/t1.6435-9/39229165_1936593589716993_5725975907114418176_n.jpg?_nc_cat=104&ccb=1-7&_nc_sid=e3f864&_nc_ohc=_qkA8lzEdHUAX9Q-L0T&_nc_ht=scontent.fsap8-1.fna&oh=00_AfApysA7CIC74-dUDw3_y8coWt9kGHf7LZ3equxMQauBhQ&oe=64C163EC' }} />
+                <Image style={styles.image} source={{ uri: 'https://i.imgur.com/bAc4wi0.jpg' }} />
               </View>
              
              

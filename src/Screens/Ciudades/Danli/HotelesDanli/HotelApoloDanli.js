@@ -82,10 +82,10 @@ export default function HotelApoloDanli() {
             >
 
                 <View style={styles.slide}>
-                <Image style={styles.image} source={{ uri: 'https://st4.depositphotos.com/7752738/22013/v/600/depositphotos_220137044-stock-illustration-hotel-near-sea-or-ocean.jpg' }} />
+                <Image style={styles.image} source={{ uri: 'https://i.imgur.com/PRsshIt.png' }} />
               </View>
                  <View style={styles.slide}>
-                <Image style={styles.image} source={{ uri: 'https://st4.depositphotos.com/7752738/22013/v/600/depositphotos_220137044-stock-illustration-hotel-near-sea-or-ocean.jpg' }} />
+                <Image style={styles.image} source={{ uri: 'https://i.imgur.com/PRsshIt.png' }} />
               </View>
             
              

@@ -222,16 +222,16 @@ const HotelesDanli = () => {
   };
 
   const buttons = [
-    { text: "Hotel Me Late Boutique", image: 'https://scontent.fsap8-1.fna.fbcdn.net/v/t39.30808-6/348921036_766774968266866_8906466839262024938_n.jpg?_nc_cat=108&ccb=1-7&_nc_sid=09cbfe&_nc_ohc=pQw99xLx_XMAX-dw_XG&_nc_ht=scontent.fsap8-1.fna&oh=00_AfDxpBK5PZvCCQ6Imq3Q0DocDaCzk8cVWLvRAKmFwlhTCw&oe=6498095F',  screen: ScreenA },
-    { text: 'Hotel Casa Encantada', image: 'https://scontent.fsap8-1.fna.fbcdn.net/v/t39.30808-6/299389713_463159265819149_7979066709760225222_n.jpg?_nc_cat=103&ccb=1-7&_nc_sid=09cbfe&_nc_ohc=GcnSQYksXcYAX8niMqZ&_nc_ht=scontent.fsap8-1.fna&oh=00_AfA3g_A4nFGprzEoqb-JAANM6V5wCXYlKFvfjV2g8M47_w&oe=649930CE', screen: ScreenB },
-    { text: "Family Hotel", image: 'https://scontent.fsap8-1.fna.fbcdn.net/v/t39.30808-6/255175560_1555391664809766_1326841528578620274_n.png?_nc_cat=110&ccb=1-7&_nc_sid=09cbfe&_nc_ohc=Z4lh48vshv4AX8Tf4m5&_nc_ht=scontent.fsap8-1.fna&oh=00_AfBT-xCAUIWzSVRI_svSo4O1V5QhYOnBopcc2PsHKo0u0A&oe=6498639A', screen: ScreenC },
-    { text: 'Hotel Posada "Los Arcos"', image: 'https://scontent.fsap8-1.fna.fbcdn.net/v/t39.30808-6/273614094_461763148665328_8277138618712969499_n.jpg?_nc_cat=102&ccb=1-7&_nc_sid=09cbfe&_nc_ohc=i9ku2WgdZOAAX-xl4Yd&_nc_ht=scontent.fsap8-1.fna&oh=00_AfB1-lvNgvreeytVOW4BCrPljJF5cOz_29XJQUEXrahrbw&oe=64978C3D', screen: ScreenD },
-    { text: 'Hotel La Esperanza', image: 'https://i.imgur.com/h2bmzh4.jpg', screen: ScreenE },
-    { text: 'Hotel Apolo', image: 'https://i.imgur.com/h2bmzh4.jpg', screen: ScreenF },
-    { text: 'Hotel Granada', image: 'https://scontent.fsap8-1.fna.fbcdn.net/v/t39.30808-6/301104193_436708248494165_2652813280354234899_n.jpg?_nc_cat=103&ccb=1-7&_nc_sid=09cbfe&_nc_ohc=xdSxuAYfkGoAX86Y90T&_nc_ht=scontent.fsap8-1.fna&oh=00_AfCnejL5NPfHTDc6MDOQXe1a35qCo-migVZTd7cYOsho0A&oe=64AA4AD3', screen: ScreenG },
-    { text: 'Hotel Clementina', image: 'https://scontent.fsap8-1.fna.fbcdn.net/v/t39.30808-6/251362656_188700420088316_8732296025596021790_n.jpg?_nc_cat=101&ccb=1-7&_nc_sid=a26aad&_nc_ohc=KwTOEA_DiVYAX_E3YAf&_nc_oc=AQniSgT6VpBGYccsVKHGykGoi4IJUuv2J1GxNFTA164Qf8HtWdBXFpAx3J-xWe5LVYo&_nc_ht=scontent.fsap8-1.fna&oh=00_AfD-1kjR2G0euZvJCvGKXT5MEmbi45luyNQvL1m1jIlImw&oe=64AA15FA', screen: ScreenH },
-    { text: 'Hotel La Guadalupe', image: 'https://i.imgur.com/h2bmzh4.jpg', screen: ScreenI },
-    { text: 'Hotel Villa Paraiso', image: 'https://i.imgur.com/h2bmzh4.jpg', screen: ScreenJ },
+    { text: "Hotel Me Late Boutique", image: 'https://i.imgur.com/9HptOUw.jpg',  screen: ScreenA },
+    { text: 'Hotel Casa Encantada', image: 'https://i.imgur.com/sYu84sU.jpg', screen: ScreenB },
+    { text: "Family Hotel", image: 'https://i.imgur.com/YrrDG9H.jpg', screen: ScreenC },
+    { text: 'Hotel Posada "Los Arcos"', image: 'https://i.imgur.com/LKC1e6A.jpg', screen: ScreenD },
+    { text: 'Hotel La Esperanza', image: 'https://i.imgur.com/YrrDG9H.jpg', screen: ScreenE },
+    { text: 'Hotel Apolo', image: 'https://i.imgur.com/YrrDG9H.jpg', screen: ScreenF },
+    { text: 'Hotel Granada', image: 'https://i.imgur.com/Mc9aTIy.jpg', screen: ScreenG },
+    { text: 'Hotel Clementina', image: 'https://i.imgur.com/lcYrbPb.jpg', screen: ScreenH },
+    { text: 'Hotel La Guadalupe', image: 'https://i.imgur.com/YrrDG9H.jpg', screen: ScreenI },
+    { text: 'Hotel Villa Paraiso', image: 'https://i.imgur.com/YrrDG9H.jpg', screen: ScreenJ },
 
 
   ];

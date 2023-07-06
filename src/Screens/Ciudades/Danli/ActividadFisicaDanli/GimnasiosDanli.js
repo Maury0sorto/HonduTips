@@ -126,11 +126,11 @@ const GimnasiosDanli = () => {
   };
 
   const buttons = [
-    { text: "AC Fitnes", image: 'https://scontent.fsap8-1.fna.fbcdn.net/v/t39.30808-6/217634985_100532505642965_2528312128850862728_n.png?_nc_cat=103&ccb=1-7&_nc_sid=09cbfe&_nc_ohc=XtmznUlbEucAX9MXem4&_nc_ht=scontent.fsap8-1.fna&oh=00_AfBX2RacVaR2Lf2YK_R9-cy79-oPXArSbsa1_DPqX5tmrg&oe=64A460A4',  screen: ScreenA },
-    { text: 'Royal GYM', image: 'https://scontent.fsap8-1.fna.fbcdn.net/v/t39.30808-6/278057476_487902492781642_6975817844622820455_n.jpg?_nc_cat=108&ccb=1-7&_nc_sid=09cbfe&_nc_ohc=5Px4BwuXfSQAX8FqRf4&_nc_ht=scontent.fsap8-1.fna&oh=00_AfB8XDtpiTkyOCmqDiLTobgNvdMrF-flg-4f5qsyVE49Cg&oe=64A52DE2', screen: ScreenB },
-    { text: "Muscle Temple Gym", image: 'https://scontent.fsap8-1.fna.fbcdn.net/v/t39.30808-6/293997360_371740498377165_761127965618406608_n.jpg?_nc_cat=104&ccb=1-7&_nc_sid=09cbfe&_nc_ohc=9aG33ZBzNpQAX9isKKj&_nc_ht=scontent.fsap8-1.fna&oh=00_AfB0hXuvkRSMNlZuONFYd-XiSQiDLC5L54qI_1-XOaEE5Q&oe=64A39520', screen: ScreenC },
-    { text: "GYM Olimpo", image: 'https://i.imgur.com/3MabvRG.gif', screen: ScreenD },
-    { text: "Better Body GYM", image: 'https://i.imgur.com/3MabvRG.gif', screen: ScreenE },
+    { text: "AC Fitnes", image: 'https://i.imgur.com/qeqZlb6.png',  screen: ScreenA },
+    { text: 'Royal GYM', image: 'https://i.imgur.com/XV4Juf5.jpg', screen: ScreenB },
+    { text: "Muscle Temple Gym", image: 'https://i.imgur.com/uaPaHyW.jpg', screen: ScreenC },
+    { text: "GYM Olimpo", image: 'https://i.imgur.com/TJIXdjN.gif', screen: ScreenD },
+    { text: "Better Body GYM", image: 'https://i.imgur.com/TJIXdjN.gif', screen: ScreenE },
    
   ];
 

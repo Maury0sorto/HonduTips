@@ -106,9 +106,9 @@ const PlazasComercialesDanli = () => {
   };
 
   const buttons = [
-    { text: "Mall Uniplaza", image: 'https://i.imgur.com/craZFGv.jpg',  screen: ScreenA },
-    { text: 'Paseo Las Colinas', image: 'https://scontent.fsap8-1.fna.fbcdn.net/v/t39.30808-6/343303187_781344000219687_7983847203504964586_n.jpg?_nc_cat=100&ccb=1-7&_nc_sid=09cbfe&_nc_ohc=FS21Rp5iFksAX8Vdjxp&_nc_ht=scontent.fsap8-1.fna&oh=00_AfDOGRGzoJsT_5e5WmNxPDBfq1SXN8VkNcLLyrhdfwdb9Q&oe=64A526D4', screen: ScreenB },
-    { text: 'Mall La Cumbre', image: 'https://i.imgur.com/MDHhqXA.jpg', screen: ScreenC },
+    { text: "Mall Uniplaza", image: 'https://i.imgur.com/9QrO6SG.jpg',  screen: ScreenA },
+    { text: 'Paseo Las Colinas', image: 'https://i.imgur.com/GZ77tP9.jpg', screen: ScreenB },
+    { text: 'Mall La Cumbre', image: 'https://i.imgur.com/o76d0ai.jpg', screen: ScreenC },
     
 
   ];

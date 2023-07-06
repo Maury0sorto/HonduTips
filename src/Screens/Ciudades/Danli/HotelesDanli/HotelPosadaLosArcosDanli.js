@@ -82,10 +82,10 @@ export default function HotelPosadaLosArcosDanli() {
               }}
             >
                  <View style={styles.slide}>
-                <Image style={styles.image} source={{ uri: 'https://scontent.fsap8-1.fna.fbcdn.net/v/t1.18169-9/28468349_1966507693666076_2710747751220154197_n.jpg?_nc_cat=102&ccb=1-7&_nc_sid=8bfeb9&_nc_ohc=_OUkqnf-jtQAX9RqQUl&_nc_ht=scontent.fsap8-1.fna&oh=00_AfAdUp2CozNZ0nGP2rRmD3R-5_xOyYtxY6wssCk6USFRNg&oe=64C172E2' }} />
+                <Image style={styles.image} source={{ uri: 'https://i.imgur.com/02WKhVI.jpg' }} />
               </View>
               <View style={styles.slide}>
-                <Image style={styles.image} source={{ uri: 'https://scontent.fsap8-1.fna.fbcdn.net/v/t1.18169-9/12108242_1516387445344772_7582361347735617094_n.jpg?_nc_cat=101&ccb=1-7&_nc_sid=8bfeb9&_nc_ohc=m7h050yr3EsAX_ARjfR&_nc_ht=scontent.fsap8-1.fna&oh=00_AfALcQWO_iKeSwVGOTSm6n2ZA8vyyP3MLAGR05ami0r1lw&oe=64C178B9' }} />
+                <Image style={styles.image} source={{ uri: 'https://i.imgur.com/wBpuCwg.jpg' }} />
               </View>
              
              

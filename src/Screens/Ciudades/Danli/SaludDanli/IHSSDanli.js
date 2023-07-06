@@ -175,6 +175,7 @@ const styles = StyleSheet.create({
     fontSize: 34,
     fontWeight: 'bold',
     marginTop: 10,
+    textAlign: 'center',
   },
   mapContainer: {
     aspectRatio: 16 / 9,

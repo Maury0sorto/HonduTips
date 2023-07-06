@@ -82,10 +82,10 @@ export default function HotelLaGuadalupeDanli() {
             >
 
                 <View style={styles.slide}>
-                <Image style={styles.image} source={{ uri: 'https://scontent.fsap8-1.fna.fbcdn.net/v/t1.18169-9/20525422_1348654258580543_5374617286047283454_n.jpg?_nc_cat=108&ccb=1-7&_nc_sid=8bfeb9&_nc_ohc=E6WTxgjCbMMAX_Icx7E&_nc_ht=scontent.fsap8-1.fna&oh=00_AfDjbH0OKHCGqD15L5L6cgyhmLA-37_qcpVp0E636yzTxw&oe=64CCFCA7' }} />
+                <Image style={styles.image} source={{ uri: 'https://i.imgur.com/yIHDoNd.png' }} />
               </View>
                  <View style={styles.slide}>
-                <Image style={styles.image} source={{ uri: 'https://scontent.fsap8-1.fna.fbcdn.net/v/t31.18172-8/12132365_833199943459313_1341635572839291534_o.jpg?_nc_cat=110&ccb=1-7&_nc_sid=cdbe9c&_nc_ohc=amnVH614jTgAX9KgLQu&_nc_ht=scontent.fsap8-1.fna&oh=00_AfC4qiYwWub1FYfCfSos7mrKNuHcq5o5cNcwMbm1dKhPuA&oe=64CD041E' }} />
+                <Image style={styles.image} source={{ uri: 'https://i.imgur.com/79P9RWs.png' }} />
               </View>
             
              

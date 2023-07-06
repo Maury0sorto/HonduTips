@@ -82,10 +82,10 @@ export default function HotelClementinaDanli() {
             >
 
                 <View style={styles.slide}>
-                <Image style={styles.image} source={{ uri: 'https://scontent.fsap8-1.fna.fbcdn.net/v/t39.30808-6/332726416_214432854465062_1268835985940367861_n.jpg?_nc_cat=107&ccb=1-7&_nc_sid=730e14&_nc_ohc=kiWzjlTpbpwAX-4jmTe&_nc_ht=scontent.fsap8-1.fna&oh=00_AfDXKWKGu3DXYb_Xo5kgQkaRhJC158a_ROsa6wa1V7vizA&oe=64AA02D6' }} />
+                <Image style={styles.image} source={{ uri: 'https://i.imgur.com/dpTjL6d.png' }} />
               </View>
                  <View style={styles.slide}>
-                <Image style={styles.image} source={{ uri: 'https://scontent.fsap8-1.fna.fbcdn.net/v/t39.30808-6/299457006_374757738177918_3439306290759813676_n.jpg?_nc_cat=101&ccb=1-7&_nc_sid=09cbfe&_nc_ohc=xYPOCjiQOQYAX8KjRC5&_nc_ht=scontent.fsap8-1.fna&oh=00_AfBGIdiSXBwwYOBBTEfdaFWURNg2EVxeM5qfeeqxXBd4vg&oe=64AA3F94' }} />
+                <Image style={styles.image} source={{ uri: 'https://i.imgur.com/8OMLRHo.png' }} />
               </View>
             
              

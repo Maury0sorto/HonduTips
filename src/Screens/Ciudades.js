@@ -7,12 +7,12 @@ import { Ionicons } from '@expo/vector-icons';
 const Ciudades = () => {
   const navigation = useNavigation();
   const [data, setData] = useState([
-    { text: 'Danlí', image: 'https://i.imgur.com/BN3nShb.jpg' },
-    { text: 'Tegucigalpa', image: 'https://i.imgur.com/dYTQAcn.jpg' },
-    { text: 'El Paraíso', image: 'https://i.imgur.com/PGGaBml.jpg' },
-    { text: 'La Ceiba', image: 'https://i.imgur.com/RzTk95v.jpg' },
-    { text: 'San Pedro Sula', image: 'https://i.imgur.com/3JsIc7p.jpg' },
-    { text: 'Roatán', image: 'https://i.imgur.com/iGGWOG6.jpg' },
+    { text: 'Danlí', image: 'https://i.imgur.com/sU3Xoaz.jpg' },
+    { text: 'Tegucigalpa', image: 'https://i.imgur.com/gXiH3F2.jpg' },
+    { text: 'El Paraíso', image: 'https://i.imgur.com/ALmWN0k.jpg' },
+    { text: 'La Ceiba', image: 'https://i.imgur.com/IIprwA2.jpg' },
+    { text: 'San Pedro Sula', image: 'https://i.imgur.com/StpvOLJ.jpg' },
+    { text: 'Roatán', image: 'https://i.imgur.com/8uXrwY5.jpg' },
   ]);
   const [filterData, setFilterData] = useState([]);
   const [searchText, setSearchText] = useState('');

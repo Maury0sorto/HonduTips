@@ -94,10 +94,10 @@ export default function FarmaciaElAhorroDanli() {
             >
 
                 <View style={styles.slide}>
-                <Image style={styles.image} source={{ uri: 'https://tiempo.hn/wp-content/uploads/2021/12/Diseno-Fachada-Farmacias-Del-Ahorro-03.jpg' }} />
+                <Image style={styles.image} source={{ uri: 'https://i.imgur.com/XpmKEX4.png' }} />
               </View>
                  <View style={styles.slide}>
-                <Image style={styles.image} source={{ uri: 'https://moodle.farmaciasdelahorro.hn/pluginfile.php/1372/block_html/content/Precios%20bajos%20siempre.jpg' }} />
+                <Image style={styles.image} source={{ uri: 'https://i.imgur.com/HvPmRTd.png' }} />
               </View>
               
              

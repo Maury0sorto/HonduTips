@@ -13,22 +13,18 @@ import { createStackNavigator } from '@react-navigation/stack';
 
 
 const imagenes = [
-  "https://i.imgur.com/BN3nShb.jpg",
-  "https://i.imgur.com/SsAiDx4.jpg",
-  "https://i.imgur.com/NvF53X6.jpg",
+  "https://i.imgur.com/qoIRXJF.jpg",
+  "https://i.imgur.com/LxWPBjy.jpg",
+  "https://i.imgur.com/Fv8pBwy.jpg",
   
 
 ];
 
 const backdropImagenes = [
-  "https://cnnespanol.cnn.com/wp-content/uploads/2023/01/230111175654-cerro-tecana-cte-full-169.jpg?quality=100&strip=info",
-  "https://scontent.fsap8-1.fna.fbcdn.net/v/t39.30808-6/266384242_494500052267714_6339538490678465268_n.jpg?_nc_cat=101&ccb=1-7&_nc_sid=8bfeb9&_nc_ohc=TPg3R5l9o4YAX9Bge7M&_nc_ht=scontent.fsap8-1.fna&oh=00_AfCVQL4WWvRjF9ufoXq1TkJ_aznSnLHPpcOnTF2ZUTGUdw&oe=64AC6011",
-  "https://i.imgur.com/Cy47CV7.jpg",
-  "https://3.cdnpt.com/Destinations/1399/1399/la-ceiba-3751619739-L.jpg",
-  "https://www.iht.hn/sites/default/files/inline-images/The%20Daily%20Beast%20-%201.jpg",
-  "https://media.tacdn.com/media/attractions-splice-spp-674x446/0a/ff/16/0a.jpg",
-  "https://www.elheraldo.hn/binrepository/1200x800/0c0/0d0/none/45933/DABA/telamar7-250515_EH847932_MG118921135.jpg",
-  "https://www.honduras.com/wp-content/uploads/2020/08/ruinas-de-copan.jpg",
+  "https://i.imgur.com/LZhskEp.jpg",
+  "https://i.imgur.com/sXuH5b8.jpg",
+  "https://i.imgur.com/HMiBgzP.jpg",
+ 
   // Agrega más URL de imágenes personalizadas aquí
 ];
 
