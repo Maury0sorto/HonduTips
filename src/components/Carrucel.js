@@ -108,7 +108,7 @@ export default function Carrucel() {
   const navigateToDanli = () => {
     navigation.navigate('Buscar'); 
     setTimeout(() => { 
-      navigation.navigate('Danli');
+      navigation.navigate('Danlí');
     }, 300);
   };
 
