@@ -6,25 +6,25 @@ import Swiper from "react-native-web-swiper";
 
 const locationsData = [
   {
-    title: 'Banco Lafise',
+    title: 'Bancafe',
     description: 'Descripción de Tegucigalpa',
-    latitude: 14.03118549468538,
-    longitude: -86.56849976931967,
+    latitude: 14.034589153046227,
+    longitude: -86.56844081476235,
   },
   {
-    title: 'Banco Lafise',
+    title: 'Bancafe',
     description: 'Descripción de Tegucigalpa',
-    latitude: 14.03118549468538,
-    longitude: -86.56849976931967,
+    latitude: 14.034589153046227,
+    longitude: -86.56844081476235,
   },
   // Agrega más ubicaciones aquí si lo deseas
 ];
 
-export default function Bancolafise() {
+export default function Bancafe() {
   const mapRef = useRef(null);
   const initialRegion = {
-    latitude: 14.03118549468538,
-    longitude: -86.56849976931967,
+    latitude: 14.034589153046227,
+    longitude: -86.56844081476235,
     latitudeDelta: 0.01,
     longitudeDelta: 0.01,
   };
@@ -74,7 +74,7 @@ export default function Bancolafise() {
   return (
     <ScrollView>
       <View style={styles.container}>
-        <Text style={styles.title}>Banco Lafise</Text>
+        <Text style={styles.title}>Banco Atlantida</Text>
         <View style={styles.containerSwipers}>
           <View style={styles.swiperContainer}>
             <Swiper
@@ -86,10 +86,10 @@ export default function Bancolafise() {
               }}
             >
               <View style={styles.slide}>
-                <Image style={styles.image} source={{ uri: 'https://dinero.hn/wp-content/uploads/2023/02/Lafise-capital.jpg' }} />
+                <Image style={styles.image} source={{ uri: 'https://www.banhcafe.hn/wp-content/uploads/2021/01/X2.jpg' }} />
               </View>
               <View style={styles.slide}>
-                <Image style={styles.image} source={{ uri: 'https://www.lafise.com/Portals/5/EasyDNNnews/392/img-fotobanco1200x451pix.jpg' }} />
+                <Image style={styles.image} source={{ uri: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSjrk2x3gu1ZWPRWFwjG5EbNOUhk27wfeVznA&usqp=CAU' }} />
               </View>
               
             </Swiper>
@@ -105,7 +105,7 @@ export default function Bancolafise() {
         </View>
         <View style={styles.scheduleItem}>
           <Icon name="clock-o" size={20} color="#000" style={styles.scheduleIcon} />
-          <Text style={styles.scheduleText}>Sáb: cerrado </Text>
+          <Text style={styles.scheduleText}>Sáb: 8:30 AM - 12:00 PM</Text>
         </View>
         <View style={styles.scheduleItem}>
           <Icon name="clock-o" size={20} color="#000" style={styles.scheduleIcon} />
@@ -118,7 +118,7 @@ export default function Bancolafise() {
           <TouchableOpacity
             style={styles.button}
             onPress={() => {
-              Linking.openURL('https://www.lafise.com/blh');
+              Linking.openURL('https://www.banhcafe.hn/');
             }}
           >
             <Text style={styles.buttonText}>Visitar</Text>
@@ -126,7 +126,7 @@ export default function Bancolafise() {
           <TouchableOpacity
             style={styles.button}
             onPress={() => {
-              Linking.openURL('tel: 2237-4000');
+              Linking.openURL('tel: 2239-8370');
             }}
           >
             <Text style={styles.buttonText}>Contactar</Text>
