@@ -72,7 +72,7 @@ const DanlíScreen = () => {
       navigation.navigate("Mall's Danlí");
     }
     else if (text === 'Puntos de Transporte') {
-      navigation.navigate("Terminal de Buses Danlí");
+      navigation.navigate("Puntos de Transporte Danlí");
     }
   };
 
