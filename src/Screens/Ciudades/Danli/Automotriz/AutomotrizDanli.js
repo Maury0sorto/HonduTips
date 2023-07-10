@@ -42,7 +42,7 @@ const AutomotrizDanli = () => {
       navigation.navigate('Lubricentros Danlí');
     }  
     else if (text === 'Talleres') {
-      navigation.navigate('Hoteles Danlí');
+      navigation.navigate('Talleres en Danli');
     } 
     else if (text === 'Auto Lavado') {
       navigation.navigate('Carwash Danlí');

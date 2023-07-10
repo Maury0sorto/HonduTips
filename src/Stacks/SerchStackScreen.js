@@ -25,6 +25,7 @@ import ActividadFisicaDanli from '../Screens/Ciudades/Danli/ActividadFisicaDanli
 import ArtesMarcialesDanli from '../Screens/Ciudades/Danli/ActividadFisicaDanli/ArtesMarcialesDanli/ArtesMarcialesDanli';
 import CanchasDeFutbolDanli from '../Screens/Ciudades/Danli/ActividadFisicaDanli/CanchasFootBallDanli/CanchasDeFutbolDanli';
 import CanchasDeBaloncestoDanli from '../Screens/Ciudades/Danli/ActividadFisicaDanli/CanchasBasketDanli/CanchasDeBaloncestoDanli';
+import TalleresDanli from '../Screens/Ciudades/Danli/Automotriz/servicios/TalleresDanli';
 
 import EnConstruccion from '../Screens/EnConstruccion';
 
@@ -60,6 +61,7 @@ const SerchStackScreen = () => {        // Este stack es el de Search es decir e
           <SerchStack.Screen name="Artes Marciales de Danlí" component={ArtesMarcialesDanli}/> 
           <SerchStack.Screen name="Canchas De Fútbol en Danlí" component={CanchasDeFutbolDanli}/> 
           <SerchStack.Screen name="Baloncesto en Danlí" component={CanchasDeBaloncestoDanli}/> 
+          <SerchStack.Screen name="Talleres en Danli" component={TalleresDanli}/>
 
 
           <SerchStack.Screen name="Construccion" component={EnConstruccion}/>
