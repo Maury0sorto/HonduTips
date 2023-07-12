@@ -109,6 +109,13 @@ const PlazasComercialesDanli = () => {
     { text: "Mall Uniplaza", image: 'https://i.imgur.com/9QrO6SG.jpg',  screen: ScreenA },
     { text: 'Paseo Las Colinas', image: 'https://i.imgur.com/GZ77tP9.jpg', screen: ScreenB },
     { text: 'Mall La Cumbre', image: 'https://i.imgur.com/o76d0ai.jpg', screen: ScreenC },
+      { text: 'Plaza San Miguel', image: 'https://i.imgur.com/YrrDG9H.jpg', screen: ScreenC },
+       { text: 'Plaza Las Colinas', image: 'https://i.imgur.com/YrrDG9H.jpg', screen: ScreenC },
+        { text: 'Nova Plaza', image: 'https://i.imgur.com/YrrDG9H.jpg', screen: ScreenC },
+         { text: 'Centro Comercial Maria Luisa', image: 'https://i.imgur.com/YrrDG9H.jpg', screen: ScreenC },
+          { text: 'Centro Comercial Santa Rita', image: 'https://i.imgur.com/YrrDG9H.jpg', screen: ScreenC },
+          { text: 'Centro Comercial El Dorado', image: 'https://i.imgur.com/YrrDG9H.jpg', screen: ScreenC },
+          { text: 'Edificio Astro', image: 'https://i.imgur.com/YrrDG9H.jpg', screen: ScreenC },
     
 
   ];

@@ -74,6 +74,10 @@ const TerminalBusesDanli = () => {
   const buttons = [
     { text: "Terminal de Buses", image: 'https://scontent.fsap8-1.fna.fbcdn.net/v/t39.30808-6/279543005_5648968268464458_8778377059714326265_n.jpg?_nc_cat=102&ccb=1-7&_nc_sid=09cbfe&_nc_ohc=YBuCipCxuIcAX8506ec&_nc_ht=scontent.fsap8-1.fna&oh=00_AfDkpqd7BwDJRhwu1AC_0c0IqjyJNuIOqQQpVLblehs_FA&oe=64A7B206',  screen: ScreenA },
     { text: 'Transporte Daniela', image: 'https://lh5.googleusercontent.com/p/AF1QipO_mGSGi9BK3gjqVcL4LFpAyBbvKOCfyQIEFQTu', screen: ScreenB },
+    { text: 'Transportes Rodríguez', image: 'https://i.imgur.com/YrrDG9H.jpg', screen: ScreenB },
+    { text: 'Punto de Taxis Uniplaza', image: 'https://i.imgur.com/YrrDG9H.jpg', screen: ScreenB },
+    { text: 'Punto de Taxis La Terminal', image: 'https://i.imgur.com/YrrDG9H.jpg', screen: ScreenB },
+    
   ];
 
   const data2 = [
