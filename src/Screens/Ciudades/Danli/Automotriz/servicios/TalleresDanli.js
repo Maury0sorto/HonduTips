@@ -107,7 +107,7 @@ const TalleresDanli = () => {
   };
 
   const buttons = [
-    { text: "Taller Mecanico Alvarado", image: 'https://i.imgur.com/YrrDG9H.jpg',  screen: ScreenA },
+    { text: "Taller Mecanico Alvarado", image: 'https://i.imgur.com/fv4KinK.jpg',  screen: ScreenA },
     { text: "Taller Mecanico Merlo", image: 'https://i.imgur.com/YrrDG9H.jpg',  screen: ScreenB },
     { text: "Taller Mecanico Williams", image: 'https://i.imgur.com/YrrDG9H.jpg',  screen: ScreenC },
     { text: "Taller Auto Eléctrico El Rey", image: 'https://i.imgur.com/YrrDG9H.jpg',  screen: ScreenD },
