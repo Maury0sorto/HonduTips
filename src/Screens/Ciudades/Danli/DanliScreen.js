@@ -14,16 +14,16 @@ const DanlíScreen = () => {
   }, []);
   const [data, setData] = useState([
     { text: 'Banca', image: 'https://i.imgur.com/Bffp4OT.png' },
-    { text: 'Restaurantes', image: 'https://i.imgur.com/SQStGOP.png' },
-    { text: 'Hoteles', image: 'https://i.imgur.com/SN0hO9s.png' },
+    { text: 'Alimentos y Bebidas', image: 'https://i.imgur.com/SQStGOP.png' },
+    { text: 'Hospedajes', image: 'https://i.imgur.com/SN0hO9s.png' },
     { text: 'Farmacias', image: 'https://i.imgur.com/dsnanSl.png' },
     { text: 'Gasolineras', image: 'https://i.imgur.com/meCBdUt.png' },
     { text: 'Barberias', image: 'https://i.imgur.com/K0qLKfW.png' },
-    { text: 'Actividad Física', image: 'https://i.imgur.com/YFd8er3.png' },
+    { text: 'Deporte', image: 'https://i.imgur.com/YFd8er3.png' },
     { text: 'Centros Medicos', image: 'https://i.imgur.com/H4mcQuT.png' }, 
     { text: 'Automotriz', image: 'https://i.imgur.com/Ld3u2NI.png' },
     { text: 'Plazas Comerciales', image: 'https://i.imgur.com/GycKe4i.png' },
-    { text: 'Puntos de Transporte', image: 'https://i.imgur.com/2sgBrWV.png' },
+    { text: 'Transportes', image: 'https://i.imgur.com/2sgBrWV.png' },
     { text: 'Educación', image: 'https://i.imgur.com/jPVcqaS.png' },
   ]);
   const [filterData, setFilterData] = useState([]);
@@ -48,9 +48,9 @@ const DanlíScreen = () => {
     // Configura la navegación a las pantallas correspondientes según el texto del botón
     if (text === 'Banca') {
       navigation.navigate('Bancos Danlí');
-    } else if (text === 'Restaurantes') {
+    } else if (text === 'Alimentos y Bebidas') {
       navigation.navigate('Restaurantes Danlí');
-    } else if (text === 'Hoteles') {
+    } else if (text === 'Hospedajes') {
       navigation.navigate('Hoteles Danlí'); 
     } else if (text === 'Farmacias') {
       navigation.navigate('Farmacias Danlí');
@@ -59,7 +59,7 @@ const DanlíScreen = () => {
     } else if (text === 'Barberias') {
       navigation.navigate('Barberias Danlí');
     }
-    else if (text === 'Actividad Física') {
+    else if (text === 'Deporte') {
       navigation.navigate('Actividad Fisica en Danlí');
     }
     else if (text === 'Centros Medicos') {
@@ -71,7 +71,7 @@ const DanlíScreen = () => {
     else if (text === 'Plazas Comerciales') {
       navigation.navigate("Mall's Danlí");
     }
-    else if (text === 'Puntos de Transporte') {
+    else if (text === 'Transportes') {
       navigation.navigate("Puntos de Transporte Danlí");
     }
   };
