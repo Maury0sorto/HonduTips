@@ -17,6 +17,7 @@ const AlimentosBebidasDanli = () => {
     { text: 'Supermercados', image: 'https://i.imgur.com/PUravFh.png' },
     { text: 'Restaurantes', image: 'https://i.imgur.com/SQStGOP.png' },
     { text: 'Bares', image: 'https://i.imgur.com/K8i0GPL.png' },
+    { text: 'Food Trucks', image: 'https://i.imgur.com/CWYpQ5n.png' },
     { text: 'Cafeteria', image: 'https://i.imgur.com/XYgNC4A.png' },
     { text: 'Reposteria', image: 'https://i.imgur.com/GgGx4NI.png' },
   ]);
@@ -49,6 +50,9 @@ const AlimentosBebidasDanli = () => {
     else if (text === 'Bares') {
       navigation.navigate('Carwash Danlí');
     } 
+    else if (text === 'Food Trucks') {
+        navigation.navigate('Carwash Danlí');
+      } 
     else if (text === 'Cafeteria') {
         navigation.navigate('Carwash Danlí');
       } 
