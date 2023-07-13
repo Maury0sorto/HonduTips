@@ -15,7 +15,7 @@ const SaludDanli = () => {
   const [data, setData] = useState([
    
     { text: 'Centros Medicos', image: 'https://i.imgur.com/H4mcQuT.png' },
-    { text: 'Clinicas Dentales', image: 'https://i.imgur.com/H4mcQuT.png' },
+    { text: 'Clinicas Dentales', image: 'https://i.imgur.com/Vras53w.png' },
     { text: 'Farmacias', image: 'https://i.imgur.com/dsnanSl.png' },
   ]);
   const [filterData, setFilterData] = useState([]);
@@ -42,7 +42,7 @@ const SaludDanli = () => {
       navigation.navigate('Centros Medicos Danlí');
     }  
     else if (text === 'Clinicas Dentales') {
-      navigation.navigate('Talleres en Danli');
+      navigation.navigate('Clinicas Dentales Danlí');
     } 
     else if (text === 'Farmacias') {
       navigation.navigate('Farmacias Danlí');
