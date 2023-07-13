@@ -142,23 +142,21 @@ const MotelesDanli = () => {
   };
 
   const buttons = [
-    { text: "Farmacia Siman", image: 'https://i.imgur.com/YrrDG9H.jpg',  screen: ScreenA },
-    { text: 'Farmacity', image: 'https://i.imgur.com/YrrDG9H.jpg', screen: ScreenB },
-    { text: "Farmacia El Ahorro", image: 'https://i.imgur.com/YrrDG9H.jpg', screen: ScreenC },
-    { text: 'Farmacia Kielsa', image: 'https://i.imgur.com/YrrDG9H.jpg', screen: ScreenD },
-    { text: 'FarmaFácil', image: 'https://i.imgur.com/YrrDG9H.jpg', screen: ScreenE },
-    { text: 'Farmacia Regis', image: 'https://i.imgur.com/YrrDG9H.jpg', screen: ScreenF },
+    { text: "Motel Rapid", image: 'https://i.imgur.com/YrrDG9H.jpg',  screen: ScreenA },
+    { text: 'Motel la fuente', image: 'https://i.imgur.com/YrrDG9H.jpg', screen: ScreenB },
+    { text: "Autohotel San Marquez", image: 'https://i.imgur.com/YrrDG9H.jpg', screen: ScreenC },
+    { text: 'Motel Oasis', image: 'https://i.imgur.com/YrrDG9H.jpg', screen: ScreenD },
+   
 
   ];
 
   const data2 = [
     { key: '1', value: 'Recomendados' },
-    { key: '2', value: "Farmacia Siman" },
-    { key: '3', value: 'Farmacity' },
-    { key: '4', value: 'Farmacia El Ahorro' },
-    { key: '5', value: 'Farmacia Kielsa' },
-    { key: '6', value: 'FarmaFácil' },
-    { key: '7', value: 'Farmacia Regis' },
+    { key: '2', value: "Motel Rapid" },
+    { key: '3', value: 'Motel la fuente' },
+    { key: '4', value: 'Autohotel San Marquez' },
+    { key: '5', value: 'Motel Oasis' },
+ 
     
     
   ];

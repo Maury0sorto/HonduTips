@@ -63,7 +63,7 @@ const SerchStackScreen = () => {        // Este stack es el de Search es decir e
           <SerchStack.Screen name="Mall's Danlí" component={PlazasComercialesDanli}/> 
           <SerchStack.Screen name="Clinicas Danlí" component={ClinicasDanli}/> 
           <SerchStack.Screen name="Puntos de Transporte Danlí" component={TerminalBusesDanli}/> 
-          <SerchStack.Screen name="Actividad Fisica en Danlí" component={ActividadFisicaDanli}/> 
+          <SerchStack.Screen name="Deportes Danlí" component={ActividadFisicaDanli}/> 
           <SerchStack.Screen name="Artes Marciales de Danlí" component={ArtesMarcialesDanli}/> 
           <SerchStack.Screen name="Canchas De Fútbol en Danlí" component={CanchasDeFutbolDanli}/> 
           <SerchStack.Screen name="Baloncesto en Danlí" component={CanchasDeBaloncestoDanli}/> 
