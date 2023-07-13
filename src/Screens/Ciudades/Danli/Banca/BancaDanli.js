@@ -14,9 +14,9 @@ const BancaDanli = () => {
   }, []);
   const [data, setData] = useState([
    
-    { text: 'Bancos', image: 'https://i.imgur.com/Bg6SMdQ.png' },
-    { text: 'Cooperativas', image: 'https://i.imgur.com/BdTjvSo.png' },
-    { text: 'Financieras', image: 'https://i.imgur.com/98yvBMX.png' },
+    { text: 'Bancos', image: 'https://i.imgur.com/9u18cBl.png' },
+    { text: 'Cooperativas', image: 'https://i.imgur.com/CVgBq5x.png' },
+    { text: 'Financieras', image: 'https://i.imgur.com/1GKvChM.png' },
   ]);
   const [filterData, setFilterData] = useState([]);
   const [searchText, setSearchText] = useState('');
