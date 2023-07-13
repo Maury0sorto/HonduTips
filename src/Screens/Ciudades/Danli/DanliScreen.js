@@ -16,7 +16,7 @@ const DanlíScreen = () => {
     { text: 'Banca', image: 'https://i.imgur.com/Bffp4OT.png' },
     { text: 'Alimentos y Bebidas', image: 'https://i.imgur.com/SQStGOP.png' },
     { text: 'Hospedajes', image: 'https://i.imgur.com/SN0hO9s.png' },
-    { text: 'Salud', image: 'https://i.imgur.com/dsnanSl.png' },
+    { text: 'Salud', image: 'https://i.imgur.com/MhIuylY.png' },
     { text: 'Gasolineras', image: 'https://i.imgur.com/meCBdUt.png' },
     { text: 'Barberias', image: 'https://i.imgur.com/K0qLKfW.png' },
     { text: 'Deporte', image: 'https://i.imgur.com/YFd8er3.png' },
