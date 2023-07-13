@@ -13,13 +13,13 @@ import HotelesDanli from '../Screens/Ciudades/Danli/HospedajesDanli/HotelesDanli
 import RestaurantesDanli from '../Screens/Ciudades/Danli/RestaurantesDanli'
 import GasolinerasDanli from '../Screens/Ciudades/Danli/GasolinerasDanli';
 import BarberiasDanli from '../Screens/Ciudades/Danli/BarberiasDanli';
-import FarmaciasDanli from '../Screens/Ciudades/Danli/FarmaciasDanli';
+import FarmaciasDanli from '../Screens/Ciudades/Danli/SaludDanli/FarmaciasDanli';
 import AutomotrizDanli from '../Screens/Ciudades/Danli/Automotriz/AutomotrizDanli';
 import CarWashDanli from '../Screens/Ciudades/Danli/Automotriz/servicios/CarWashDanli';
 import LubricentrosDanli from '../Screens/Ciudades/Danli/Automotriz/servicios/lubricentrosDanli';
 import GimnasiosDanli from '../Screens/Ciudades/Danli/ActividadFisicaDanli/GimnasiosDanli';
 import PlazasComercialesDanli from '../Screens/Ciudades/Danli/PlazasComercialesDanli';
-import ClinicasDanli from '../Screens/Ciudades/Danli/ClinicasDanli';
+import ClinicasDanli from '../Screens/Ciudades/Danli/SaludDanli/CentroMedicosDanli';
 import TerminalBusesDanli from '../Screens/Ciudades/Danli/TerminalBusesDanli';
 import ActividadFisicaDanli from '../Screens/Ciudades/Danli/ActividadFisicaDanli/ActividadaFisicaDanli';
 import ArtesMarcialesDanli from '../Screens/Ciudades/Danli/ActividadFisicaDanli/ArtesMarcialesDanli/ArtesMarcialesDanli';
@@ -30,6 +30,8 @@ import TalleresDanli from '../Screens/Ciudades/Danli/Automotriz/servicios/Taller
 import EnConstruccion from '../Screens/EnConstruccion';
 import HospedajesDanli from '../Screens/Ciudades/Danli/HospedajesDanli/HospedajesDanli';
 import AlimentosBebidasDanli from '../Screens/Ciudades/Danli/AlimentosBebidasDanli/AlimentosBebidasDanli';
+import SaludDanli from '../Screens/Ciudades/Danli/SaludDanli/SaludDanli';
+import CentroMedicosDanli from '../Screens/Ciudades/Danli/SaludDanli/CentroMedicosDanli';
 
 
 const SerchStackScreen = () => {        // Este stack es el de Search es decir es uno de los 3 que se ven en la parte de abajo
@@ -64,6 +66,8 @@ const SerchStackScreen = () => {        // Este stack es el de Search es decir e
           <SerchStack.Screen name="Canchas De Fútbol en Danlí" component={CanchasDeFutbolDanli}/> 
           <SerchStack.Screen name="Baloncesto en Danlí" component={CanchasDeBaloncestoDanli}/> 
           <SerchStack.Screen name="Talleres en Danli" component={TalleresDanli}/>
+          <SerchStack.Screen name="Salud Danli" component={SaludDanli}/>
+          <SerchStack.Screen name="Centros Medicos Danlí" component={CentroMedicosDanli}/>
 
 
           <SerchStack.Screen name="Alimetos y Bebidas Danlí" component={AlimentosBebidasDanli}/>

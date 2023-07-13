@@ -3,30 +3,32 @@ import { View, Text, Image, TouchableHighlight, StyleSheet, ScrollView,Touchable
 import { SelectList } from 'react-native-dropdown-select-list';
 import { Ionicons } from '@expo/vector-icons';
 
- 
-import FarmaciaSimanDanli from './FarmaciasDanli/FarmaciaSimanDanli';
-import FarmaciaElAhorroDanli from './FarmaciasDanli/FarmaciaElAhorroDanli';
-import FarmacityDanli from './FarmaciasDanli/FarmaCityDanli';
-import FarmaciaKielsaDanli from './FarmaciasDanli/FarmaciaKielsaDanli';
-import PapaJohnstDanli from './RestaurantesDanli/PapaJohnsDanli';
-import ParadiseBurgerDanli from './RestaurantesDanli/ParadiseBurgerDanli';
+
+
+import HospitalGabrielaAlvaradoDanli from './CentrosMedicosDanli/HospitalGabrielaAlvaradoDanli';
+import IHSSDanli from './CentrosMedicosDanli/IHSSDanli';
+import CentroMedicoQuirurgicoDeOriendeDanli from './CentrosMedicosDanli/CentroMedicoQuirurgicoDeOrienteDanli';
+import CentroMedicoNavarroEspinalDanli from './CentrosMedicosDanli/CentroMedicoNavarroEspinalDanli';
+import CEMEDDanli from './CentrosMedicosDanli/CEMEDDanli';
+
 
 const ScreenA = ({ text, mostrarBotonAnterior }) => {
   return (
     <View style={styles.componentContainer}>
-    <TouchableHighlight
-      style={styles.backButton}
-      underlayColor="#0080ff"
-      onPress={mostrarBotonAnterior}
-    >
-       <>
+      <TouchableHighlight
+        style={styles.backButton}
+        underlayColor="#FFFF"
+        onPress={mostrarBotonAnterior}
+      >
+        <>
       <Ionicons name="arrow-back" size={24} color="black" style={styles.backButtonIcon} />
       <Text style={styles.backButtonText}>Regresar</Text>
     </>
-    </TouchableHighlight>
-    <FarmaciaSimanDanli/>
+       
+      </TouchableHighlight>
+      <HospitalGabrielaAlvaradoDanli/>
    
-  </View>
+    </View>
   );
 };
 
@@ -43,7 +45,7 @@ const ScreenB = ({ text, mostrarBotonAnterior }) => {
       <Text style={styles.backButtonText}>Regresar</Text>
     </>
       </TouchableHighlight>
-      <FarmacityDanli/>
+      <IHSSDanli/>
      
     </View>
   );
@@ -62,7 +64,7 @@ const ScreenC = ({ text, mostrarBotonAnterior }) => {
       <Text style={styles.backButtonText}>Regresar</Text>
     </>
       </TouchableHighlight>
-      <FarmaciaElAhorroDanli/>
+      <CentroMedicoQuirurgicoDeOriendeDanli/>
     </View>
   );
 };
@@ -75,22 +77,60 @@ const ScreenD = ({ text, mostrarBotonAnterior }) => {
         underlayColor="#0080ff"
         onPress={mostrarBotonAnterior}
       >
-         <>
+        <>
       <Ionicons name="arrow-back" size={24} color="black" style={styles.backButtonIcon} />
       <Text style={styles.backButtonText}>Regresar</Text>
     </>
       </TouchableHighlight>
-      <FarmaciaKielsaDanli/>
+      <CentroMedicoNavarroEspinalDanli/>
     </View>
   );
-};
+}; 
+
+const ScreenF = ({ text, mostrarBotonAnterior }) => {
+  return (
+    <View style={styles.componentContainer}>
+      <TouchableHighlight
+        style={styles.backButton}
+        underlayColor="#0080ff"
+        onPress={mostrarBotonAnterior}
+      >
+        <>
+      <Ionicons name="arrow-back" size={24} color="black" style={styles.backButtonIcon} />
+      <Text style={styles.backButtonText}>Regresar</Text>
+    </>
+      </TouchableHighlight>
+      <CEMEDDanli/>
+    </View>
+  );
+}; 
+
+
+const ScreenG = ({ text, mostrarBotonAnterior }) => {
+  return (
+    <View style={styles.componentContainer}>
+      <TouchableHighlight
+        style={styles.backButton}
+        underlayColor="#0080ff"
+        onPress={mostrarBotonAnterior}
+      >
+        <>
+      <Ionicons name="arrow-back" size={24} color="black" style={styles.backButtonIcon} />
+      <Text style={styles.backButtonText}>Regresar</Text>
+    </>
+      </TouchableHighlight>
+      <CentroMedicoNavarroEspinalDanli/>
+    </View>
+  );
+}; 
 
 
 
-const FarmaciasDanli = () => {
+
+const CentroMedicosDanli = () => {
   const [componenteVisible, setComponenteVisible] = useState(null);
   const [mostrarSelectList, setMostrarSelectList] = useState(true); // Nuevo estado
-  const [selectedOption, setSelectedOption] = useState('Recomendados');
+  const [selectedOption, setSelectedOption] = useState('Recomendadas');
 
   const mostrarComponente = (text, screenComponent) => {
     setMostrarSelectList(false); // Ocultar SelectList
@@ -101,23 +141,38 @@ const FarmaciasDanli = () => {
   const mostrarBotonAnterior = () => {
      setMostrarSelectList(true); // Mostrar SelectList nuevamente
   setComponenteVisible(null);
-  setSelectedOption("Recomendados");
+  setSelectedOption("Recomendadas");
   };
 
   const buttons = [
-    { text: "Farmacia Siman", image: 'https://i.imgur.com/VgkaSP8.jpg',  screen: ScreenA },
-    { text: 'Farmacity', image: 'https://i.imgur.com/cp6LNsK.png', screen: ScreenB },
-    { text: "Farmacia El Ahorro", image: 'https://i.imgur.com/N1zCJCs.jpg', screen: ScreenC },
-    { text: 'Farmacia Kielsa', image: 'https://i.imgur.com/qjaIPFh.jpg', screen: ScreenD },
+    { text: "Hospital Gabriela Alvarado", image: 'https://scontent.fsap8-1.fna.fbcdn.net/v/t39.30808-6/280668186_533030501614511_7278109461792763589_n.jpg?_nc_cat=101&ccb=1-7&_nc_sid=09cbfe&_nc_ohc=cjn0dXL9edgAX_LVSxz&_nc_ht=scontent.fsap8-1.fna&oh=00_AfBWZYysP-_quUNpzNRID8pv5Vcunw0XoYzuWbJwonsitQ&oe=64A76203',  screen: ScreenA },
+    { text: 'IHSS Danli', image: 'https://scontent.fsap8-1.fna.fbcdn.net/v/t39.30808-6/275555531_7247746151932117_8739330950694517292_n.jpg?_nc_cat=109&ccb=1-7&_nc_sid=09cbfe&_nc_ohc=ttGGKZ6pwuEAX_5bbhM&_nc_ht=scontent.fsap8-1.fna&oh=00_AfCBlmPjx4LeELnTGLk_cqeow0RXYaSs3PaDPNga1ULf9Q&oe=64A75EB4', screen: ScreenB },
+    { text: 'Centro Medico Quirurgico De Oriente', image: 'https://i.imgur.com/h2bmzh4.jpg', screen: ScreenC },
+    { text: 'Centro Médico Navarro Espinal', image: 'https://i.imgur.com/h2bmzh4.jpg', screen: ScreenD },
+    { text: 'CEMED', image: 'https://i.imgur.com/h2bmzh4.jpg', screen: ScreenF },
+    { text: 'Clínica Psicológica IntegraMente', image: 'https://i.imgur.com/h2bmzh4.jpg', screen: ScreenB },
+    { text: 'Clinicas Medicas Danli', image: 'https://i.imgur.com/h2bmzh4.jpg', screen: ScreenB },
+    { text: "Clínica Médica Ferrera'S", image: 'https://i.imgur.com/h2bmzh4.jpg', screen: ScreenB },
+    { text: 'Clinica Dr. Salvador Moncada', image: 'https://i.imgur.com/h2bmzh4.jpg', screen: ScreenB },
+    { text: 'Clinica Dental Mayorquin', image: 'https://i.imgur.com/h2bmzh4.jpg', screen: ScreenB },
+    { text: 'C&D Dental', image: 'https://i.imgur.com/h2bmzh4.jpg', screen: ScreenB },
+    
 
   ];
 
   const data2 = [
-    { key: '1', value: 'Recomendados' },
-    { key: '2', value: "Farmacia Siman" },
-    { key: '3', value: 'Farmacity' },
-    { key: '4', value: 'Farmacia El Ahorro' },
-    { key: '5', value: 'Farmacia Kielsa' },
+    { key: '1', value: 'Recomendadas' },
+    { key: '2', value: "Hospital Gabriela Alvarado" },
+    { key: '3', value: 'IHSS Danli' },
+    { key: '4', value: 'Centro Medico Quirurgico De Oriente' },
+    { key: '5', value: 'Centro Médico Navarro Espinal' },
+    { key: '6', value: 'CEMED' },
+    { key: '7', value: 'Clínica Psicológica IntegraMente' },
+    { key: '8', value: 'Clinicas Medicas Danli' },
+    { key: '9', value: "Clínica Médica Ferrera'S" },
+    { key: '10', value: 'Clinica Dr. Salvador Moncada' },
+    { key: '11', value: 'Clinica Dental Mayorquin' },
+    { key: '12', value: 'C&D Dental' },
     
     
   ];
@@ -126,7 +181,7 @@ const FarmaciasDanli = () => {
 
   const filteredButtons = buttons.filter(
     (button) =>
-      selectedOption === 'Recomendados' || button.text.includes(selectedOption)
+      selectedOption === 'Recomendadas' || button.text.includes(selectedOption)
   ); 
 
   
@@ -140,9 +195,9 @@ const FarmaciasDanli = () => {
             setSelected={(val) => setSelectedOption(val)}
             data={data2}
             save="value"
-            placeholder="Recomendados"
-            noDataText="Restaurante no disponible"
-            searchPlaceholder="Busca tu farmacia"
+            placeholder="Recomendadas"
+            noDataText="Gasolinera no disponible"
+            searchPlaceholder="Busca tu gasolinera"
             onInputChange={(text) => mostrarComponente(text, null)}
           />
         </View>
@@ -251,9 +306,11 @@ const styles = StyleSheet.create({
     marginBottom: 10,
     marginTop: 20,
 
-    
+
+
     flexDirection: 'row',
     alignItems: 'center',
+
   },
   backButtonText: {
     color: '#000',
@@ -263,4 +320,4 @@ const styles = StyleSheet.create({
   },
 });
 
-export default FarmaciasDanli;
+export default CentroMedicosDanli;
