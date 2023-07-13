@@ -5,6 +5,8 @@ import { Ionicons } from '@expo/vector-icons';
 
 import ExpressoAmericanoDanli from '../../RestaurantesDanli/ExpressoAmericanoDanli';
 import CoffeRoadDanli from './CoffeRoadDanli';
+import CafetiniDanli from './CafetiniDanli';
+import OVCafeDanli from './OVCafeDanli';
 
  
 
@@ -45,7 +47,42 @@ const ScreenB = ({ text, mostrarBotonAnterior }) => {
   </View>
   );
 };
-
+const ScreenC = ({ text, mostrarBotonAnterior }) => {
+  return (
+    <View style={styles.componentContainer}>
+    <TouchableHighlight
+      style={styles.backButton}
+      underlayColor="#0080ff"
+      onPress={mostrarBotonAnterior} 
+    >
+       <>
+      <Ionicons name="arrow-back" size={24} color="black" style={styles.backButtonIcon} />
+      <Text style={styles.backButtonText}>Regresar</Text>
+    </>
+    </TouchableHighlight>
+    <CafetiniDanli/>
+   
+  </View>
+  );
+};
+const ScreenD = ({ text, mostrarBotonAnterior }) => {
+  return (
+    <View style={styles.componentContainer}>
+    <TouchableHighlight
+      style={styles.backButton}
+      underlayColor="#0080ff"
+      onPress={mostrarBotonAnterior} 
+    >
+       <>
+      <Ionicons name="arrow-back" size={24} color="black" style={styles.backButtonIcon} />
+      <Text style={styles.backButtonText}>Regresar</Text>
+    </>
+    </TouchableHighlight>
+    <OVCafeDanli/>
+   
+  </View>
+  );
+};
 
 const CafesDanli = () => {
   const [componenteVisible, setComponenteVisible] = useState(null);
@@ -67,6 +104,8 @@ const CafesDanli = () => {
   const buttons = [
     { text: "Espresso Americano", image: 'https://i.imgur.com/FQTshUX.jpg',  screen: ScreenA },
     { text: "Coffe Road", image: 'https://i.imgur.com/X4qyqXv.jpg',  screen: ScreenB},
+    { text: "Cafetini", image: 'https://i.imgur.com/XkpYni9.jpg',  screen: ScreenC},
+    { text: "Oscar Valladares Café", image: 'https://i.imgur.com/VUeIgCN.jpg',  screen: ScreenD},
     
   ];
 
@@ -74,6 +113,8 @@ const CafesDanli = () => {
     { key: '1', value: 'Recomendados' },
     { key: '2', value: "Espresso Americano" },
     { key: '3', value: "Coffe Road" },
+    { key: '4', value: "Cafetini" },
+    { key: '5', value: "OV Café" },
    
     
   ];

@@ -9,10 +9,10 @@ import ImageViewer from 'react-native-image-zoom-viewer';
 // INICIO DE PARA PONER PINES DENTRO DEL MAPA 
 const locationsData = [
   {
-    title: "Coffe Road",
+    title: "Oscar Valladres Café",
      
-    latitude:     14.029698269647254,    
-    longitude:  -86.56759242494124,
+    latitude:     14.027799812075115,    
+    longitude:  -86.57420263398636 ,
   },
 
   // Agrega más ubicaciones aquí si lo deseas
@@ -22,7 +22,7 @@ const locationsData = [
 
 
 
-export default function CoffeRoadDanli() {  // Este solo es el nomre que se usa para importar esta screen dentro de otro o mandar a llamar
+export default function OVCafeDanli() {  // Este solo es el nomre que se usa para importar esta screen dentro de otro o mandar a llamar
 
   // INICIO DE CODIGO PARA AGREGAR BOTONCITO CON MENU 
   const [modalVisible, setModalVisible] = useState(false);
@@ -31,7 +31,7 @@ export default function CoffeRoadDanli() {  // Este solo es el nomre que se usa 
   };
   const images = [
     {
-      url: 'https://i.imgur.com/YyvLJbO.png',
+      url: 'https://i.imgur.com/ahwxwGV.jpg',
     },
   ];
 
@@ -44,8 +44,8 @@ export default function CoffeRoadDanli() {  // Este solo es el nomre que se usa 
   const mapRef = useRef(null);
   const initialRegion = {
     
-    latitude:     14.029698269647254,    
-    longitude:  -86.56759242494124,
+    latitude:     14.027799812075115,  
+    longitude:  -86.57420263398636 ,
     latitudeDelta: 0.009,    //ENTRE NUMEROS MAS GRANDES MAS ZOOM DE LA VISTIA INICIAL DEL MAPA
     longitudeDelta: 0.009,  //ENTRE NUMEROS MAS GRANDES MAS ZOOM DE LA VISTIA INICIAL DEL MAPA
   };
@@ -110,7 +110,7 @@ export default function CoffeRoadDanli() {  // Este solo es el nomre que se usa 
   return (
     <ScrollView>
       <View style={styles.container}>
-        <Text style={styles.title}>Coffe Road</Text>
+        <Text style={styles.title}>Oscar Valladres Café</Text>
         <View style={styles.containerSwipers}>
           <View style={styles.swiperContainer}>
             <Swiper
@@ -122,10 +122,10 @@ export default function CoffeRoadDanli() {  // Este solo es el nomre que se usa 
               }}
             >
                  <View style={styles.slide}>
-                <Image style={styles.image} source={{ uri: 'https://i.imgur.com/RIrIjLz.png' }} />
+                <Image style={styles.image} source={{ uri: 'https://i.imgur.com/kqGI2DA.jpg' }} />
               </View>
               <View style={styles.slide}>
-                <Image style={styles.image} source={{ uri: 'https://i.imgur.com/oiTzQSd.jpg' }} />
+                <Image style={styles.image} source={{ uri: 'https://i.imgur.com/pfrwkXr.jpg' }} />
               </View>
              
   
@@ -143,7 +143,7 @@ export default function CoffeRoadDanli() {  // Este solo es el nomre que se usa 
       <View style={styles.buttonContainer3}>
         <TouchableOpacity activeOpacity={1} onPress={toggleModal}>
           <Image
-            source={{ uri: 'https://i.imgur.com/YyvLJbO.png' }}
+            source={{ uri: 'https://i.imgur.com/ahwxwGV.jpg' }}
             style={styles.imagen}
             resizeMode="cover"
           />
@@ -154,11 +154,11 @@ export default function CoffeRoadDanli() {  // Este solo es el nomre que se usa 
       <View style={styles.scheduleContainer}>
         <View style={styles.scheduleItem}>
           <Icon name="clock-o" size={20} color="#000" style={styles.scheduleIcon} />
-          <Text style={styles.scheduleText}>Lun-Sab: 7:00 AM - 8:00 PM</Text>
+          <Text style={styles.scheduleText}>Lun-Vie: 8:00 AM - 8:00 PM</Text>
         </View>
         <View style={styles.scheduleItem}>
           <Icon name="clock-o" size={20} color="#000" style={styles.scheduleIcon} />
-          <Text style={styles.scheduleText}>Dom: 11:00 AM - 6:00 PM</Text>
+          <Text style={styles.scheduleText}>Sab-Dom: 10:00 AM - 8:00 PM</Text>
         </View>
       </View>
 
@@ -183,7 +183,7 @@ export default function CoffeRoadDanli() {  // Este solo es el nomre que se usa 
           <TouchableOpacity
             style={styles.button}
             onPress={() => {
-              Linking.openURL('https://www.facebook.com/coffeeroadhn');
+              Linking.openURL('https://www.facebook.com/oscar.valladares.cafe');
             }}
           >
              <Icon name="globe" size={20} color="white" style={styles.buttonIcon} />
@@ -192,7 +192,7 @@ export default function CoffeRoadDanli() {  // Este solo es el nomre que se usa 
           <TouchableOpacity
             style={styles.button}
             onPress={() => {
-              Linking.openURL('tel: +50489803537');
+              Linking.openURL('tel: +50433306045');
             }}
           >
              <Icon name="phone" size={20} color="white" style={styles.buttonIcon} />
