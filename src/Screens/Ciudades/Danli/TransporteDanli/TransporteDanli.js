@@ -5,8 +5,8 @@ import { Ionicons } from '@expo/vector-icons';
 
 
 
-import BarberiaGudosDanli from './BarberiasDanli/BarberiaGudosDanli';
-import BarberiaMileniumDanli from './BarberiasDanli/BarberiaMileniumDanli';
+import BarberiaGudosDanli from '../BarberiasDanli/BarberiaGudosDanli';
+import BarberiaMileniumDanli from '../BarberiasDanli/BarberiaMileniumDanli';
 
 
 const ScreenA = ({ text, mostrarBotonAnterior }) => {
