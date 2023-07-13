@@ -29,6 +29,7 @@ import TalleresDanli from '../Screens/Ciudades/Danli/Automotriz/servicios/Taller
 
 import EnConstruccion from '../Screens/EnConstruccion';
 import HospedajesDanli from '../Screens/Ciudades/Danli/HospedajesDanli/HospedajesDanli';
+import AlimentosBebidasDanli from '../Screens/Ciudades/Danli/AlimentosBebidasDanli/AlimentosBebidasDanli';
 
 
 const SerchStackScreen = () => {        // Este stack es el de Search es decir es uno de los 3 que se ven en la parte de abajo
@@ -64,6 +65,8 @@ const SerchStackScreen = () => {        // Este stack es el de Search es decir e
           <SerchStack.Screen name="Baloncesto en Danlí" component={CanchasDeBaloncestoDanli}/> 
           <SerchStack.Screen name="Talleres en Danli" component={TalleresDanli}/>
 
+
+          <SerchStack.Screen name="Alimetos y Bebidas Danlí" component={AlimentosBebidasDanli}/>
           <SerchStack.Screen name="Hospedajes Danlí" component={HospedajesDanli}/>
 
 
