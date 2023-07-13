@@ -2,6 +2,8 @@ import React, { useState } from 'react';
 import { View, Text, Image, TouchableHighlight, StyleSheet, ScrollView,TouchableOpacity } from 'react-native';
 import { SelectList } from 'react-native-dropdown-select-list';
 import { Ionicons } from '@expo/vector-icons';
+
+
 import AtlantidaDanli from './BancosDanli/AtlantidaDanli';
 import FicohsaDanli from './BancosDanli/FicohsaDanli';
 import BANTRABDanli from './BancosDanli/BANTRABDanli';

@@ -8,7 +8,7 @@ import Ciudades from '../Screens/Ciudades';
 
 import OnboardingScreen from '../Screens/OnboardingScreen';
 import DanliScreen from '../Screens/Ciudades/Danli/DanliScreen';
-import BancosDanli from '../Screens/Ciudades/Danli/BancosDanli';
+import BancosDanli from '../Screens/Ciudades/Danli/Banca/BancosDanli';
 import HotelesDanli from '../Screens/Ciudades/Danli/HospedajesDanli/HotelesDanli';
 import RestaurantesDanli from '../Screens/Ciudades/Danli/RestaurantesDanli'
 import GasolinerasDanli from '../Screens/Ciudades/Danli/GasolinerasDanli';
@@ -36,6 +36,7 @@ import CentroMedicosDanli from '../Screens/Ciudades/Danli/SaludDanli/CentroMedic
 import CafesDanli from '../Screens/Ciudades/Danli/AlimentosBebidasDanli/cafeteriasDanli/CafesDanli';
 import ClinicasDentalesDanli from '../Screens/Ciudades/Danli/SaludDanli/ClinicasDentalesDanli';
 import MotelesDanli from '../Screens/Ciudades/Danli/HospedajesDanli/MotelesDanli';
+import BancaDanli from '../Screens/Ciudades/Danli/Banca/BancaDanli';
 const SerchStackScreen = () => {        // Este stack es el de Search es decir es uno de los 3 que se ven en la parte de abajo
 
     const SerchStack = createNativeStackNavigator();
@@ -74,6 +75,8 @@ const SerchStackScreen = () => {        // Este stack es el de Search es decir e
 
           <SerchStack.Screen name="Alimetos y Bebidas Danlí" component={AlimentosBebidasDanli}/>
           <SerchStack.Screen name="Cafés Danlí" component={CafesDanli}/>
+
+        <SerchStack.Screen name="Banca Danlí" component={BancaDanli}/>
 
 
           <SerchStack.Screen name="Hospedajes Danlí" component={HospedajesDanli}/>
