@@ -8,8 +8,7 @@ import FarmaciaSimanDanli from './FarmaciasDanli/FarmaciaSimanDanli';
 import FarmaciaElAhorroDanli from './FarmaciasDanli/FarmaciaElAhorroDanli';
 import FarmacityDanli from './FarmaciasDanli/FarmaCityDanli';
 import FarmaciaKielsaDanli from './FarmaciasDanli/FarmaciaKielsaDanli';
-import PapaJohnstDanli from '../RestaurantesDanli/PapaJohnsDanli';
-import ParadiseBurgerDanli from '../RestaurantesDanli/ParadiseBurgerDanli';
+
 
 const ScreenA = ({ text, mostrarBotonAnterior }) => {
   return (
@@ -105,19 +104,29 @@ const ClinicasDentalesDanli = () => {
   };
 
   const buttons = [
-    { text: "Farmacia Siman", image: 'https://i.imgur.com/VgkaSP8.jpg',  screen: ScreenA },
-    { text: 'Farmacity', image: 'https://i.imgur.com/cp6LNsK.png', screen: ScreenB },
-    { text: "Farmacia El Ahorro", image: 'https://i.imgur.com/N1zCJCs.jpg', screen: ScreenC },
-    { text: 'Farmacia Kielsa', image: 'https://i.imgur.com/qjaIPFh.jpg', screen: ScreenD },
+    { text: "Centro Estetico Dental (CED)", image: 'https://i.imgur.com/YrrDG9H.jpg',  screen: ScreenA },
+    { text: 'CIODENTAL', image: 'https://i.imgur.com/YrrDG9H.jpg', screen: ScreenB },
+    { text: "Clinica integral dental (CID)", image: 'https://i.imgur.com/YrrDG9H.jpg', screen: ScreenC },
+    { text: 'C&D Dental', image: 'https://i.imgur.com/YrrDG9H.jpg', screen: ScreenD },
+    { text: 'Clinica Dental Mayorquin', image: 'https://i.imgur.com/YrrDG9H.jpg', screen: ScreenD },
+    { text: 'Smile Team Centro Odontológico', image: 'https://i.imgur.com/YrrDG9H.jpg', screen: ScreenD },
+    { text: 'VDC Especialidades Dentales', image: 'https://i.imgur.com/YrrDG9H.jpg', screen: ScreenD },
+    { text: 'CLINICA DE ORTODONCIA Dra. Rosalba Argüello', image: 'https://i.imgur.com/YrrDG9H.jpg', screen: ScreenD },
+
 
   ];
 
   const data2 = [
     { key: '1', value: 'Recomendados' },
-    { key: '2', value: "Farmacia Siman" },
-    { key: '3', value: 'Farmacity' },
-    { key: '4', value: 'Farmacia El Ahorro' },
-    { key: '5', value: 'Farmacia Kielsa' },
+    { key: '2', value: "Centro Estetico Dental (CED)" },
+    { key: '3', value: 'CIODENTAL' },
+    { key: '4', value: 'Clinica integral dental (CID)' },
+    { key: '5', value: 'C&D Dental' },
+    { key: '6', value: 'Clinica Dental Mayorquin' },
+    { key: '7', value: 'Smile Team Centro Odontológico' },
+    { key: '8', value: 'VDC Especialidades Dentales' },
+    { key: '9', value: 'CLINICA DE ORTODONCIA Dra. Rosalba Argüello' },
+
     
     
   ];

@@ -154,8 +154,7 @@ const CentroMedicosDanli = () => {
     { text: 'Clinicas Medicas Danli', image: 'https://i.imgur.com/h2bmzh4.jpg', screen: ScreenB },
     { text: "Clínica Médica Ferrera'S", image: 'https://i.imgur.com/h2bmzh4.jpg', screen: ScreenB },
     { text: 'Clinica Dr. Salvador Moncada', image: 'https://i.imgur.com/h2bmzh4.jpg', screen: ScreenB },
-    { text: 'Clinica Dental Mayorquin', image: 'https://i.imgur.com/h2bmzh4.jpg', screen: ScreenB },
-    { text: 'C&D Dental', image: 'https://i.imgur.com/h2bmzh4.jpg', screen: ScreenB },
+ 
     
 
   ];
@@ -171,8 +170,7 @@ const CentroMedicosDanli = () => {
     { key: '8', value: 'Clinicas Medicas Danli' },
     { key: '9', value: "Clínica Médica Ferrera'S" },
     { key: '10', value: 'Clinica Dr. Salvador Moncada' },
-    { key: '11', value: 'Clinica Dental Mayorquin' },
-    { key: '12', value: 'C&D Dental' },
+
     
     
   ];
