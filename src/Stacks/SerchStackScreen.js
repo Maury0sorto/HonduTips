@@ -9,7 +9,7 @@ import Ciudades from '../Screens/Ciudades';
 import OnboardingScreen from '../Screens/OnboardingScreen';
 import DanliScreen from '../Screens/Ciudades/Danli/DanliScreen';
 import BancosDanli from '../Screens/Ciudades/Danli/BancosDanli';
-import HotelesDanli from '../Screens/Ciudades/Danli/HotelesDanli';
+import HotelesDanli from '../Screens/Ciudades/Danli/HospedajesDanli/HotelesDanli';
 import RestaurantesDanli from '../Screens/Ciudades/Danli/RestaurantesDanli'
 import GasolinerasDanli from '../Screens/Ciudades/Danli/GasolinerasDanli';
 import BarberiasDanli from '../Screens/Ciudades/Danli/BarberiasDanli';
