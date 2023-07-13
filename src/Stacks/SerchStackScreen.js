@@ -12,7 +12,7 @@ import BancosDanli from '../Screens/Ciudades/Danli/Banca/BancosDanli';
 import HotelesDanli from '../Screens/Ciudades/Danli/HospedajesDanli/HotelesDanli';
 import RestaurantesDanli from '../Screens/Ciudades/Danli/RestaurantesDanli'
 import GasolinerasDanli from '../Screens/Ciudades/Danli/GasolinerasDanli';
-import BarberiasDanli from '../Screens/Ciudades/Danli/BarberiasDanli';
+import BarberiasDanli from '../Screens/Ciudades/Danli/BarberiasDanli/BarberiasDanli';
 import FarmaciasDanli from '../Screens/Ciudades/Danli/SaludDanli/FarmaciasDanli';
 import AutomotrizDanli from '../Screens/Ciudades/Danli/Automotriz/AutomotrizDanli';
 import CarWashDanli from '../Screens/Ciudades/Danli/Automotriz/servicios/CarWashDanli';
