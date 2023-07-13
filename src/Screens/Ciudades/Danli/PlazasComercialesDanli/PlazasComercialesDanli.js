@@ -4,11 +4,12 @@ import { SelectList } from 'react-native-dropdown-select-list';
 import { Ionicons } from '@expo/vector-icons';
 
 
-import ChesterChikeDanli from './RestaurantesDanli/ChesterChikenDanli';
-import PapaJohnstDanli from './RestaurantesDanli/PapaJohnsDanli';
-import GasolineraUnoDanli from './GasolinerasDanli/GasolineraUnoDanli';
-import GasolineraTexacoDanli from './GasolinerasDanli/GasolineraTexacoDanli';
-import GasolineraPumaDanli from './GasolinerasDanli/GasolineraPumaDanli';
+
+import PapaJohnstDanli from '../RestaurantesDanli/PapaJohnsDanli';
+import GasolineraPumaDanli from '../GasolinerasDanli/GasolineraPumaDanli';
+import MallUniplazaDanli from './MallUniplazaDanli';
+import PaseoLasColinasDanli from './PaseoLasColinasDanli';
+import MallLaCumbreDanli from './MallLaCumbreDanli';
 
 const ScreenA = ({ text, mostrarBotonAnterior }) => {
   return (
@@ -24,7 +25,7 @@ const ScreenA = ({ text, mostrarBotonAnterior }) => {
     </>
        
       </TouchableHighlight>
-      <GasolineraUnoDanli/>
+      <MallUniplazaDanli/>
    
     </View>
   );
@@ -43,7 +44,7 @@ const ScreenB = ({ text, mostrarBotonAnterior }) => {
       <Text style={styles.backButtonText}>Regresar</Text>
     </>
       </TouchableHighlight>
-      <GasolineraTexacoDanli/>
+      <PaseoLasColinasDanli/>
      
     </View>
   );
@@ -62,7 +63,7 @@ const ScreenC = ({ text, mostrarBotonAnterior }) => {
       <Text style={styles.backButtonText}>Regresar</Text>
     </>
       </TouchableHighlight>
-      <GasolineraPumaDanli/>
+      <MallLaCumbreDanli/>
     </View>
   );
 };
@@ -87,7 +88,7 @@ const ScreenD = ({ text, mostrarBotonAnterior }) => {
 
 
 
-const GasolinerasDanli = () => {
+const PlazasComercialesDanli = () => {
   const [componenteVisible, setComponenteVisible] = useState(null);
   const [mostrarSelectList, setMostrarSelectList] = useState(true); // Nuevo estado
   const [selectedOption, setSelectedOption] = useState('Recomendadas');
@@ -105,18 +106,25 @@ const GasolinerasDanli = () => {
   };
 
   const buttons = [
-    { text: "Gasolinera Uno", image: 'https://i.imgur.com/fe10m0d.png',  screen: ScreenA },
-    { text: 'Gasolinera Texaco', image: 'https://i.imgur.com/brQEGC8.png', screen: ScreenB },
-    { text: "Gasolinera Puma", image: 'https://i.imgur.com/WANLQnB.png', screen: ScreenC },
-   
+    { text: "Mall Uniplaza", image: 'https://i.imgur.com/9QrO6SG.jpg',  screen: ScreenA },
+    { text: 'Paseo Las Colinas', image: 'https://i.imgur.com/GZ77tP9.jpg', screen: ScreenB },
+    { text: 'Mall La Cumbre', image: 'https://i.imgur.com/o76d0ai.jpg', screen: ScreenC },
+      { text: 'Plaza San Miguel', image: 'https://i.imgur.com/YrrDG9H.jpg', screen: ScreenC },
+       { text: 'Plaza Las Colinas', image: 'https://i.imgur.com/YrrDG9H.jpg', screen: ScreenC },
+        { text: 'Nova Plaza', image: 'https://i.imgur.com/YrrDG9H.jpg', screen: ScreenC },
+         { text: 'Centro Comercial Maria Luisa', image: 'https://i.imgur.com/YrrDG9H.jpg', screen: ScreenC },
+          { text: 'Centro Comercial Santa Rita', image: 'https://i.imgur.com/YrrDG9H.jpg', screen: ScreenC },
+          { text: 'Centro Comercial El Dorado', image: 'https://i.imgur.com/YrrDG9H.jpg', screen: ScreenC },
+          { text: 'Edificio Astro', image: 'https://i.imgur.com/YrrDG9H.jpg', screen: ScreenC },
+    
 
   ];
 
   const data2 = [
     { key: '1', value: 'Recomendadas' },
-    { key: '2', value: "Gasolinera Uno" },
-    { key: '3', value: 'Gasolinera Texaco' },
-    { key: '4', value: 'Gasolinera Puma' },
+    { key: '2', value: "Mall Uniplaza" },
+    { key: '3', value: 'Paseo Las Colinas' },
+    { key: '4', value: 'Mall La Cumbre' },
     
     
     
@@ -265,4 +273,4 @@ const styles = StyleSheet.create({
   },
 });
 
-export default GasolinerasDanli;
+export default PlazasComercialesDanli;

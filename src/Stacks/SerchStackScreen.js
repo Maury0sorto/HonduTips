@@ -11,14 +11,14 @@ import DanliScreen from '../Screens/Ciudades/Danli/DanliScreen';
 import BancosDanli from '../Screens/Ciudades/Danli/Banca/BancosDanli';
 import HotelesDanli from '../Screens/Ciudades/Danli/HospedajesDanli/HotelesDanli';
 import RestaurantesDanli from '../Screens/Ciudades/Danli/RestaurantesDanli'
-import GasolinerasDanli from '../Screens/Ciudades/Danli/GasolinerasDanli';
+import GasolinerasDanli from '../Screens/Ciudades/Danli/GasolinerasDanli/GasolinerasDanli';
 import BarberiasDanli from '../Screens/Ciudades/Danli/BarberiasDanli/BarberiasDanli';
 import FarmaciasDanli from '../Screens/Ciudades/Danli/SaludDanli/FarmaciasDanli';
 import AutomotrizDanli from '../Screens/Ciudades/Danli/Automotriz/AutomotrizDanli';
 import CarWashDanli from '../Screens/Ciudades/Danli/Automotriz/servicios/CarWashDanli';
 import LubricentrosDanli from '../Screens/Ciudades/Danli/Automotriz/servicios/lubricentrosDanli';
 import GimnasiosDanli from '../Screens/Ciudades/Danli/ActividadFisicaDanli/GimnasiosDanli';
-import PlazasComercialesDanli from '../Screens/Ciudades/Danli/PlazasComercialesDanli';
+import PlazasComercialesDanli from '../Screens/Ciudades/Danli/PlazasComercialesDanli/PlazasComercialesDanli';
 import ClinicasDanli from '../Screens/Ciudades/Danli/SaludDanli/CentroMedicosDanli';
 import TerminalBusesDanli from '../Screens/Ciudades/Danli/TransporteDanli/TransporteDanli';
 import ActividadFisicaDanli from '../Screens/Ciudades/Danli/ActividadFisicaDanli/ActividadaFisicaDanli';
