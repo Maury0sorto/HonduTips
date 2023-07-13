@@ -8,8 +8,8 @@ import FarmaciaSimanDanli from './FarmaciasDanli/FarmaciaSimanDanli';
 import FarmaciaElAhorroDanli from './FarmaciasDanli/FarmaciaElAhorroDanli';
 import FarmacityDanli from './FarmaciasDanli/FarmaCityDanli';
 import FarmaciaKielsaDanli from './FarmaciasDanli/FarmaciaKielsaDanli';
-import PapaJohnstDanli from '../RestaurantesDanli/PapaJohnsDanli';
-import ParadiseBurgerDanli from '../RestaurantesDanli/ParadiseBurgerDanli';
+import FarmaFacilDanli from './FarmaciasDanli/FarmaFacilDanli';
+import FarmaRegisDanli from './FarmaciasDanli/FarmaciaRegisDanli';
 
 const ScreenA = ({ text, mostrarBotonAnterior }) => {
   return (
@@ -85,6 +85,43 @@ const ScreenD = ({ text, mostrarBotonAnterior }) => {
   );
 };
 
+const ScreenE = ({ text, mostrarBotonAnterior }) => {
+  return (
+    <View style={styles.componentContainer}>
+      <TouchableHighlight
+        style={styles.backButton}
+        underlayColor="#0080ff"
+        onPress={mostrarBotonAnterior}
+      >
+         <>
+      <Ionicons name="arrow-back" size={24} color="black" style={styles.backButtonIcon} />
+      <Text style={styles.backButtonText}>Regresar</Text>
+    </>
+      </TouchableHighlight>
+      <FarmaFacilDanli/>
+    </View>
+  );
+};
+
+
+const ScreenF = ({ text, mostrarBotonAnterior }) => {
+  return (
+    <View style={styles.componentContainer}>
+      <TouchableHighlight
+        style={styles.backButton}
+        underlayColor="#0080ff"
+        onPress={mostrarBotonAnterior}
+      >
+         <>
+      <Ionicons name="arrow-back" size={24} color="black" style={styles.backButtonIcon} />
+      <Text style={styles.backButtonText}>Regresar</Text>
+    </>
+      </TouchableHighlight>
+      <FarmaRegisDanli/>
+    </View>
+  );
+};
+
 
 
 const FarmaciasDanli = () => {
@@ -109,6 +146,8 @@ const FarmaciasDanli = () => {
     { text: 'Farmacity', image: 'https://i.imgur.com/cp6LNsK.png', screen: ScreenB },
     { text: "Farmacia El Ahorro", image: 'https://i.imgur.com/N1zCJCs.jpg', screen: ScreenC },
     { text: 'Farmacia Kielsa', image: 'https://i.imgur.com/qjaIPFh.jpg', screen: ScreenD },
+    { text: 'FarmaFácil', image: 'https://i.imgur.com/0gZiHIv.png', screen: ScreenE },
+    { text: 'Farmacia Regis', image: 'https://i.imgur.com/knOgxxE.png', screen: ScreenF },
 
   ];
 
@@ -118,6 +157,8 @@ const FarmaciasDanli = () => {
     { key: '3', value: 'Farmacity' },
     { key: '4', value: 'Farmacia El Ahorro' },
     { key: '5', value: 'Farmacia Kielsa' },
+    { key: '6', value: 'FarmaFácil' },
+    { key: '7', value: 'Farmacia Regis' },
     
     
   ];
