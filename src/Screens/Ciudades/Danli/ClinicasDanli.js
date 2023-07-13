@@ -4,9 +4,7 @@ import { SelectList } from 'react-native-dropdown-select-list';
 import { Ionicons } from '@expo/vector-icons';
 
 
-import PapaJohnstDanli from './RestaurantesDanli/PapaJohnsDanli';
-import GasolineraTexacoDanli from './GasolinerasDanli/GasolineraTexacoDanli';
-import GasolineraPumaDanli from './GasolinerasDanli/GasolineraPumaDanli';
+
 import HospitalGabrielaAlvaradoDanli from './SaludDanli/HospitalGabrielaAlvaradoDanli';
 import IHSSDanli from './SaludDanli/IHSSDanli';
 import IMSSDanli from './SaludDanli/IMSSDanli';
@@ -130,7 +128,7 @@ const ScreenG = ({ text, mostrarBotonAnterior }) => {
 
 
 
-const SaludDanli = () => {
+const ClinicasDanli = () => {
   const [componenteVisible, setComponenteVisible] = useState(null);
   const [mostrarSelectList, setMostrarSelectList] = useState(true); // Nuevo estado
   const [selectedOption, setSelectedOption] = useState('Recomendadas');
@@ -323,4 +321,4 @@ const styles = StyleSheet.create({
   },
 });
 
-export default SaludDanli;
+export default ClinicasDanli;
