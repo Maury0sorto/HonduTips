@@ -42,7 +42,7 @@ const AlimentosBebidasDanli = () => {
   const handleButtonPress = (text) => {
     // Configura la navegación a las pantallas correspondientes según el texto del botón
     if (text === 'Supermercados') {
-      navigation.navigate('Lubricentros Danlí');
+      navigation.navigate('Supermercados Danlí');
     }  
     else if (text === 'Restaurantes') {
       navigation.navigate('Restaurantes Danlí');
