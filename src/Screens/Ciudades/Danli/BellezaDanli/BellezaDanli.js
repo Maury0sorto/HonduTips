@@ -4,7 +4,7 @@ import { useNavigation } from '@react-navigation/native';
 import { Ionicons } from '@expo/vector-icons';
 import { HeaderBackButton } from '@react-navigation/stack';
 
-const DanlíScreen = () => {
+const BellezaDanli = () => {
   const navigation = useNavigation();
 
   useEffect(() => {
@@ -13,17 +13,10 @@ const DanlíScreen = () => {
     });
   }, []);
   const [data, setData] = useState([
-    { text: 'Banca', image: 'https://i.imgur.com/Bffp4OT.png' },
-    { text: 'Alimentos y Bebidas', image: 'https://i.imgur.com/fo5oW3d.png' },
-    { text: 'Hospedajes', image: 'https://i.imgur.com/SN0hO9s.png' },
-    { text: 'Salud', image: 'https://i.imgur.com/MhIuylY.png' },
-    { text: 'Gasolineras', image: 'https://i.imgur.com/meCBdUt.png' },
-    { text: 'Belleza', image: 'https://i.imgur.com/VE8iMQw.png' },
-    { text: 'Deporte', image: 'https://i.imgur.com/YFd8er3.png' },
-    { text: 'Automotriz', image: 'https://i.imgur.com/Ld3u2NI.png' },
-    { text: 'Plazas Comerciales', image: 'https://i.imgur.com/GycKe4i.png' },
-    { text: 'Transportes', image: 'https://i.imgur.com/2sgBrWV.png' },
-    { text: 'Educación', image: 'https://i.imgur.com/jPVcqaS.png' },
+   
+    { text: 'Salones de Belleza', image: 'https://i.imgur.com/oufNclx.png' },
+    { text: 'Barberias', image: 'https://i.imgur.com/K0qLKfW.png' },
+   
   ]);
   const [filterData, setFilterData] = useState([]);
   const [searchText, setSearchText] = useState('');
@@ -45,31 +38,12 @@ const DanlíScreen = () => {
 
   const handleButtonPress = (text) => {
     // Configura la navegación a las pantallas correspondientes según el texto del botón
-    if (text === 'Banca') {
-      navigation.navigate('Banca Danlí');
-    } else if (text === 'Alimentos y Bebidas') {
-      navigation.navigate('Alimetos y Bebidas Danlí');
-    } else if (text === 'Hospedajes') {
-      navigation.navigate('Hospedajes Danlí'); 
-    } else if (text === 'Salud') {
-      navigation.navigate('Salud Danli');
-    } else if (text === 'Gasolineras') {
-      navigation.navigate('Gasolineras Danlí');
-    } else if (text === 'Belleza') {
-      navigation.navigate('Belleza Danlí');
-    }
-    else if (text === 'Deporte') {
-      navigation.navigate('Deportes Danlí');
-    }
-    else if (text === 'Automotriz') {
-      navigation.navigate('Automotriz Danlí');
-    }
-    else if (text === 'Plazas Comerciales') {
-      navigation.navigate("Mall's Danlí");
-    }
-    else if (text === 'Transportes') {
-      navigation.navigate("Transporte Danlí");
-    }
+    if (text === 'Salones de Belleza') {
+      navigation.navigate('Lubricentros Danlí');
+    }  
+    else if (text === 'Barberias') {
+      navigation.navigate('Barberias Danlí');
+    } 
   };
 
   
@@ -78,7 +52,7 @@ const DanlíScreen = () => {
     if (filterData.length === 0 && searchText.length !== 0) {
       return (
         <Text style={styles.noResultsText}>
-          Este tipo de lugares aun no estan en la APP
+          Este tipo de Servicio de Belleza aun no se encuentra en la APP
         </Text>
       );
     }
@@ -212,10 +186,11 @@ const styles = StyleSheet.create({
     
   },
   buttonImage: {
-    width: 145,
-    height: 145,
-    marginBottom: 10,
+    width: 150,
+    height: 150,
+    marginBottom: 8,
     alignSelf: 'center',
+     borderRadius: 10,
   },
   buttonText: {
     marginTop: 10,
@@ -256,4 +231,4 @@ const styles = StyleSheet.create({
   },
 });
 
-export default DanlíScreen;
+export default BellezaDanli;
