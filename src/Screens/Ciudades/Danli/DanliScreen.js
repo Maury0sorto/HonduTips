@@ -18,7 +18,7 @@ const DanlíScreen = () => {
     { text: 'Hospedajes', image: 'https://i.imgur.com/SN0hO9s.png' },
     { text: 'Salud', image: 'https://i.imgur.com/MhIuylY.png' },
     { text: 'Gasolineras', image: 'https://i.imgur.com/meCBdUt.png' },
-    { text: 'Barberias', image: 'https://i.imgur.com/K0qLKfW.png' },
+    { text: 'Belleza', image: 'https://i.imgur.com/VE8iMQw.png' },
     { text: 'Deporte', image: 'https://i.imgur.com/YFd8er3.png' },
     { text: 'Automotriz', image: 'https://i.imgur.com/Ld3u2NI.png' },
     { text: 'Plazas Comerciales', image: 'https://i.imgur.com/GycKe4i.png' },
@@ -55,7 +55,7 @@ const DanlíScreen = () => {
       navigation.navigate('Salud Danli');
     } else if (text === 'Gasolineras') {
       navigation.navigate('Gasolineras Danlí');
-    } else if (text === 'Barberias') {
+    } else if (text === 'Belleza ') {
       navigation.navigate('Barberias Danlí');
     }
     else if (text === 'Deporte') {
