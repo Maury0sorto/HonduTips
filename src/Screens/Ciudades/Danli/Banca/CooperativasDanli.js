@@ -272,7 +272,7 @@ const CooperativasDanli = () => {
   const buttons = [
     { text: 'Cooperativa Apaguiz Ltda.', image: 'https://i.imgur.com/L2h460e.png',  screen: ScreenA },
     { text: 'Cooperativa ELGA', image: 'https://i.imgur.com/Vk9XDkR.png', screen: ScreenB },
-    { text: 'Cooperativa Sanmarqueña Ltda. FLDL', image: 'https://i.imgur.com/hCvDavs.jpg', screen: ScreenC },
+    { text: 'Cooperativa Sanmarqueña Ltda. FLDL', image: 'https://i.imgur.com/fVOLk6Q.png', screen: ScreenC },
     { text: 'Coacehl', image: 'https://i.imgur.com/D95ZKJt.png', screen: ScreenD },
     { text: 'Cooperativa Sagrada Familia', image: 'https://i.imgur.com/laOKnsZ.png', screen: ScreenE },
   ];
