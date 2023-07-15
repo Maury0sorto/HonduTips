@@ -42,10 +42,10 @@ const BancaDanli = () => {
       navigation.navigate('Bancos Danlí');
     }  
     else if (text === 'Cooperativas') {
-      navigation.navigate('Talleres en Danli');
+      navigation.navigate('Cooperativas Danlí');
     } 
     else if (text === 'Financieras') {
-      navigation.navigate('Moteles Danlí');
+      navigation.navigate('Financieras Danlí');
     } 
   };
 

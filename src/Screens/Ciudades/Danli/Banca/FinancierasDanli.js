@@ -252,7 +252,7 @@ const Screenm = ({ text, mostrarBotonAnterior }) => {
     </View>
   );
 };
-const CooperativasDanli = () => {
+const FinancierasDanli = () => {
   const [componenteVisible, setComponenteVisible] = useState(null);
   const [mostrarSelectList, setMostrarSelectList] = useState(true); // Nuevo estado
   const [selectedOption, setSelectedOption] = useState('Recomendados');
@@ -424,4 +424,4 @@ const styles = StyleSheet.create({
   },
 });
 
-export default CooperativasDanli;
+export default FinancierasDanli;
