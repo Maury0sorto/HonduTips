@@ -178,6 +178,7 @@ const styles = StyleSheet.create({
     marginBottom: 8,
     alignSelf: 'center',
     borderRadius: 10,
+    marginTop: 20,
   },
   buttonText: {
     marginTop: 10,
@@ -194,7 +195,7 @@ const styles = StyleSheet.create({
     paddingVertical: 8,
     width: '80%',
     marginLeft: '10%',
-    marginTop: 16,
+    marginTop: 36,
   },
   icon: {
     marginRight: 8,

@@ -214,7 +214,7 @@ const styles = StyleSheet.create({
       paddingVertical: 8,
       width: '80%',
       marginLeft: '10%',
-      marginTop: 70,
+      marginTop: 30,
     },
     icon: {
       marginRight: 8,
