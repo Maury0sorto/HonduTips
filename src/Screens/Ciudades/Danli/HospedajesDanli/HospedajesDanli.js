@@ -163,48 +163,35 @@ const styles = StyleSheet.create({
   container: {
     flex: 1,
   },
-
-  
   container2: {
     flex: 1,
     paddingHorizontal: 16,
     marginTop: 16,
-    
-  },
-  row: {
-    flexDirection: 'row',
-    justifyContent: 'space-between',
-    paddingHorizontal: 16,
-    marginBottom: 16,
-    
   },
   button: {
-    maxWidth: 160,
-    
+    width: '100%',
     alignItems: 'center',
     backgroundColor: 'transparent',
     borderRadius: 10,
-  
-  
-    
+    marginBottom: 16,
   },
   buttonImage: {
-    width: 150,
-    height: 150,
+    width: 160,
+    height: 160,
     marginBottom: 8,
     alignSelf: 'center',
-     borderRadius: 10,
+    borderRadius: 10,
   },
   buttonText: {
     marginTop: 10,
-    fontSize: 16,
+    fontSize: 20,
     fontWeight: 'bold',
     textAlign: 'center',
   },
   searchContainer: {
     flexDirection: 'row',
     alignItems: 'center',
-    backgroundColor: '#ffff',
+    backgroundColor: '#fff',
     borderRadius: 20,
     paddingHorizontal: 8,
     paddingVertical: 8,
