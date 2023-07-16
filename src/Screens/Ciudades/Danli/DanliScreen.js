@@ -14,15 +14,15 @@ const DanlíScreen = () => {
   }, []);
   const [data, setData] = useState([
     { text: 'Banca', image: 'https://i.imgur.com/Bffp4OT.png' },
-    { text: 'Alimentos y Bebidas', image: 'https://i.imgur.com/fo5oW3d.png' },
-    { text: 'Hospedajes', image: 'https://i.imgur.com/SN0hO9s.png' },
+    { text: 'Alimento y Bebida', image: 'https://i.imgur.com/fo5oW3d.png' },
+    { text: 'Hospedaje', image: 'https://i.imgur.com/SN0hO9s.png' },
     { text: 'Salud', image: 'https://i.imgur.com/MhIuylY.png' },
-    { text: 'Gasolineras', image: 'https://i.imgur.com/meCBdUt.png' },
+    { text: 'Gasolinera', image: 'https://i.imgur.com/meCBdUt.png' },
     { text: 'Belleza', image: 'https://i.imgur.com/VE8iMQw.png' },
     { text: 'Deporte', image: 'https://i.imgur.com/YFd8er3.png' },
     { text: 'Automotriz', image: 'https://i.imgur.com/Ld3u2NI.png' },
-    { text: 'Plazas Comerciales', image: 'https://i.imgur.com/GycKe4i.png' },
-    { text: 'Transportes', image: 'https://i.imgur.com/2sgBrWV.png' },
+    { text: 'Plaza Comercial', image: 'https://i.imgur.com/GycKe4i.png' },
+    { text: 'Transporte', image: 'https://i.imgur.com/2sgBrWV.png' },
     { text: 'Educación', image: 'https://i.imgur.com/jPVcqaS.png' },
   ]);
   const [filterData, setFilterData] = useState([]);
@@ -47,13 +47,13 @@ const DanlíScreen = () => {
     // Configura la navegación a las pantallas correspondientes según el texto del botón
     if (text === 'Banca') {
       navigation.navigate('Banca Danlí');
-    } else if (text === 'Alimentos y Bebidas') {
+    } else if (text === 'Alimento y Bebida') {
       navigation.navigate('Alimetos y Bebidas Danlí');
-    } else if (text === 'Hospedajes') {
+    } else if (text === 'Hospedaje') {
       navigation.navigate('Hospedajes Danlí'); 
     } else if (text === 'Salud') {
       navigation.navigate('Salud Danli');
-    } else if (text === 'Gasolineras') {
+    } else if (text === 'Gasolinera') {
       navigation.navigate('Gasolineras Danlí');
     } else if (text === 'Belleza') {
       navigation.navigate('Belleza Danlí');
@@ -64,10 +64,10 @@ const DanlíScreen = () => {
     else if (text === 'Automotriz') {
       navigation.navigate('Automotriz Danlí');
     }
-    else if (text === 'Plazas Comerciales') {
+    else if (text === 'Plaza Comercial') {
       navigation.navigate("Mall's Danlí");
     }
-    else if (text === 'Transportes') {
+    else if (text === 'Transporte') {
       navigation.navigate("Transporte Danlí");
     }
   };
