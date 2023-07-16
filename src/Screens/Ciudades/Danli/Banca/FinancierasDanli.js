@@ -270,20 +270,18 @@ const FinancierasDanli = () => {
   };
 
   const buttons = [
-    { text: 'Cooperativa Apaguiz Ltda.', image: 'https://i.imgur.com/L2h460e.png',  screen: ScreenA },
-    { text: 'Cooperativa ELGA', image: 'https://i.imgur.com/Vk9XDkR.png', screen: ScreenB },
-    { text: 'Cooperativa Sanmarqueña Ltda. FLDL', image: 'https://i.imgur.com/hCvDavs.jpg', screen: ScreenC },
-    { text: 'Coacehl', image: 'https://i.imgur.com/D95ZKJt.png', screen: ScreenD },
-    { text: 'Cooperativa Sagrada Familia', image: 'https://i.imgur.com/laOKnsZ.png', screen: ScreenE },
+    { text: 'Financiera Finca', image: 'https://i.imgur.com/gIjE37h.png',  screen: ScreenA },
+    { text: 'Financiera IDH', image: 'https://i.imgur.com/BHJ73wn.png', screen: ScreenB },
+    { text: 'Cofisa', image: 'https://i.imgur.com/6YAaNju.png', screen: ScreenC },
+  
   ];
 
   const data2 = [
     { key: '1', value: 'Recomendados' },
-    { key: '2', value: 'Cooperativa Apaguiz Ltda.' },
-    { key: '3', value: 'Cooperativa ELGA' },
-    { key: '4', value: 'Cooperativa Sanmarqueña Ltda. FLDL' },
-    { key: '5', value: 'Coacehl' },
-    { key: '6', value: 'Cooperativa Sagrada Familia' },
+    { key: '2', value: 'Financiera Finca' },
+    { key: '3', value: 'Financiera IDH' },
+    { key: '4', value: 'Cofisa' },
+    
   ];
 
   const ComponenteVisible = componenteVisible?.screenComponent || null;
