@@ -4,7 +4,7 @@ import { useNavigation } from '@react-navigation/native';
 import { Ionicons } from '@expo/vector-icons';
 import { HeaderBackButton } from '@react-navigation/stack';
 
-const DanlíScreen = () => {
+const EduacionDanli = () => {
   const navigation = useNavigation();
 
   useEffect(() => {
@@ -13,17 +13,11 @@ const DanlíScreen = () => {
     });
   }, []);
   const [data, setData] = useState([
-    { text: 'Banca', image: 'https://i.imgur.com/Bffp4OT.png' },
-    { text: 'Alimento y Bebida', image: 'https://i.imgur.com/fo5oW3d.png' },
-    { text: 'Hospedaje', image: 'https://i.imgur.com/SN0hO9s.png' },
-    { text: 'Salud', image: 'https://i.imgur.com/MhIuylY.png' },
-    { text: 'Gasolinera', image: 'https://i.imgur.com/meCBdUt.png' },
-    { text: 'Belleza', image: 'https://i.imgur.com/VE8iMQw.png' },
-    { text: 'Deporte', image: 'https://i.imgur.com/YFd8er3.png' },
-    { text: 'Automotriz', image: 'https://i.imgur.com/Ld3u2NI.png' },
-    { text: 'Plaza Comercial', image: 'https://i.imgur.com/GycKe4i.png' },
-    { text: 'Transporte', image: 'https://i.imgur.com/2sgBrWV.png' },
-    { text: 'Educación', image: 'https://i.imgur.com/jPVcqaS.png' },
+   
+    { text: 'Kinder', image: 'https://i.imgur.com/Pi9y2ev.png' },
+    { text: 'Escuelas', image: 'https://i.imgur.com/TWmb3rH.png' },
+    { text: 'Colegios', image: 'https://i.imgur.com/TRB8NOZ.png' },
+    { text: 'Universidades', image: 'https://i.imgur.com/44U7hEs.png' },
   ]);
   const [filterData, setFilterData] = useState([]);
   const [searchText, setSearchText] = useState('');
@@ -45,34 +39,18 @@ const DanlíScreen = () => {
 
   const handleButtonPress = (text) => {
     // Configura la navegación a las pantallas correspondientes según el texto del botón
-    if (text === 'Banca') {
-      navigation.navigate('Banca Danlí');
-    } else if (text === 'Alimento y Bebida') {
-      navigation.navigate('Alimetos y Bebidas Danlí');
-    } else if (text === 'Hospedaje') {
-      navigation.navigate('Hospedajes Danlí'); 
-    } else if (text === 'Salud') {
-      navigation.navigate('Salud Danli');
-    } else if (text === 'Gasolinera') {
-      navigation.navigate('Gasolineras Danlí');
-    } else if (text === 'Belleza') {
-      navigation.navigate('Belleza Danlí');
-    }
-    else if (text === 'Deporte') {
-      navigation.navigate('Deportes Danlí');
-    }
-    else if (text === 'Automotriz') {
-      navigation.navigate('Automotriz Danlí');
-    }
-    else if (text === 'Plaza Comercial') {
-      navigation.navigate("Mall's Danlí"); 
-    }
-    else if (text === 'Transporte') {
-      navigation.navigate("Transporte Danlí");
-    }
-    else if (text === 'Educación') {
-      navigation.navigate("Educación Danlí");
-    }
+    if (text === 'Kinder') {
+      navigation.navigate('Hoteles Danlí');
+    }  
+    else if (text === 'Escuelas') {
+      navigation.navigate('Talleres en Danli');
+    } 
+    else if (text === 'Colegios') {
+      navigation.navigate('Moteles Danlí');
+    } 
+    else if (text === 'Universidades') {
+        navigation.navigate('Moteles Danlí');
+      } 
   };
 
   
@@ -81,7 +59,7 @@ const DanlíScreen = () => {
     if (filterData.length === 0 && searchText.length !== 0) {
       return (
         <Text style={styles.noResultsText}>
-          Este tipo de lugares aun no estan en la APP
+          Este tipo de Servicio de Educación aun no se encuentra en la APP
         </Text>
       );
     }
@@ -186,67 +164,68 @@ const DanlíScreen = () => {
 };
 
 const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-  },
-
-  
-  container2: {
-    flex: 1,
-    paddingHorizontal: 16,
-    marginTop: 16,
-    
-  },
-  row: {
-    flexDirection: 'row',
-    justifyContent: 'space-between',
-    paddingHorizontal: 16,
-    marginBottom: 16,
-    
-  },
-  button: {
-    maxWidth: 160,
-    
-    alignItems: 'center',
-    backgroundColor: 'transparent',
-    borderRadius: 10,
-  
+    container: {
+      flex: 1,
+    },
   
     
-  },
-  buttonImage: {
-    width: 145,
-    height: 145,
-    marginBottom: 10,
-    alignSelf: 'center',
-  },
-  buttonText: {
-    marginTop: 10,
-    fontSize: 16,
-    fontWeight: 'bold',
-    textAlign: 'center',
-  },
-  searchContainer: {
-    flexDirection: 'row',
-    alignItems: 'center',
-    backgroundColor: '#ffff',
-    borderRadius: 20,
-    paddingHorizontal: 8,
-    paddingVertical: 8,
-    width: '80%',
-    marginLeft: '10%',
-    marginTop: 16,
-  },
-  icon: {
-    marginRight: 8,
-  },
-  searchInput: {
-    flex: 1,
-    height: 30,
-    fontSize: 16,
-    fontWeight: 'bold',
-    color: 'black',
-  },
+    container2: {
+      flex: 1,
+      paddingHorizontal: 16,
+      marginTop: 16,
+      
+    },
+    row: {
+      flexDirection: 'row',
+      justifyContent: 'space-between',
+      paddingHorizontal: 16,
+      marginBottom: 16,
+      
+    },
+    button: {
+      maxWidth: 160,
+      
+      alignItems: 'center',
+      backgroundColor: 'transparent',
+      borderRadius: 10,
+    
+    
+      
+    },
+    buttonImage: {
+      width: 145,
+      height: 145,
+      marginBottom: 10,
+      alignSelf: 'center',
+      marginTop: 30,
+    },
+    buttonText: {
+      marginTop: 10,
+      fontSize: 16,
+      fontWeight: 'bold',
+      textAlign: 'center',
+    },
+    searchContainer: {
+      flexDirection: 'row',
+      alignItems: 'center',
+      backgroundColor: '#ffff',
+      borderRadius: 20,
+      paddingHorizontal: 8,
+      paddingVertical: 8,
+      width: '80%',
+      marginLeft: '10%',
+      marginTop: 70,
+    },
+    icon: {
+      marginRight: 8,
+    },
+    searchInput: {
+      flex: 1,
+      height: 30,
+      fontSize: 16,
+      fontWeight: 'bold',
+      color: 'black',
+    },
 
   noResultsText: {
     textAlign: 'center',
@@ -259,4 +238,4 @@ const styles = StyleSheet.create({
   },
 });
 
-export default DanlíScreen;
+export default EduacionDanli;
