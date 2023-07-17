@@ -7,9 +7,11 @@ import ExpressoAmericanoDanli from '../../RestaurantesDanli/ExpressoAmericanoDan
 import CoffeRoadDanli from './CoffeRoadDanli';
 import CafetiniDanli from './CafetiniDanli';
 import OVCafeDanli from './OVCafeDanli';
+import DonEstebanDanli from './DonEstebaDanli';
 
 import LunaCafeDanli from './LunaCafeDanli';
 import OviserCafeDanli from './OviserCafeDanli';
+import CafeteandoDanli from './CafeteandoDanli';
  
 
 
@@ -121,6 +123,42 @@ const ScreenG = ({ text, mostrarBotonAnterior }) => {
   </View>
   );
 };
+const ScreenH = ({ text, mostrarBotonAnterior }) => {
+  return (
+    <View style={styles.componentContainer}>
+    <TouchableHighlight
+      style={styles.backButton}
+      underlayColor="#0080ff"
+      onPress={mostrarBotonAnterior} 
+    >
+       <>
+      <Ionicons name="arrow-back" size={24} color="black" style={styles.backButtonIcon} />
+      <Text style={styles.backButtonText}>Regresar</Text>
+    </>
+    </TouchableHighlight>
+    <DonEstebanDanli/>
+   
+  </View>
+  );
+};
+const ScreenI = ({ text, mostrarBotonAnterior }) => {
+  return (
+    <View style={styles.componentContainer}>
+    <TouchableHighlight
+      style={styles.backButton}
+      underlayColor="#0080ff"
+      onPress={mostrarBotonAnterior} 
+    >
+       <>
+      <Ionicons name="arrow-back" size={24} color="black" style={styles.backButtonIcon} />
+      <Text style={styles.backButtonText}>Regresar</Text>
+    </>
+    </TouchableHighlight>
+    <CafeteandoDanli/>
+   
+  </View>
+  );
+};
 
 const CafesDanli = () => {
   const [componenteVisible, setComponenteVisible] = useState(null);
@@ -146,6 +184,8 @@ const CafesDanli = () => {
     { text: "Oscar Valladares Café", image: 'https://i.imgur.com/VUeIgCN.jpg',  screen: ScreenD},
     { text: "Luna Café", image: 'https://i.imgur.com/ACbjVaF.jpg',  screen: ScreenF},
     { text: "Ovi&Ser Café", image: 'https://i.imgur.com/J8qf7yF.jpg',  screen: ScreenG},
+    { text: "Don Esteban Café", image: 'https://i.imgur.com/zQbUVbO.jpg',  screen: ScreenH},
+    { text: "Cafeteando HN", image: 'https://i.imgur.com/SRMWRT7.jpg',  screen: ScreenI},
     
   ]; 
 
@@ -157,6 +197,8 @@ const CafesDanli = () => {
     { key: '5', value: "OV Café" },
     { key: '7', value: "Luna Café" },
     { key: '8', value: "Ovi&Ser Café" },
+    { key: '9', value: "Don Esteban Café" },
+    { key: '10', value: "Cafeteando HN" },
    
     
   ];
@@ -180,7 +222,7 @@ const CafesDanli = () => {
             data={data2}
             save="value"
             placeholder="Recomendados"
-            noDataText="Lubricentro no disponible"
+            noDataText="Cafetería no disponible"
             searchPlaceholder="Busca tu Cafetería"
             onInputChange={(text) => mostrarComponente(text, null)}
           />
