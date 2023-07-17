@@ -194,7 +194,7 @@ const CafesDanli = () => {
     { key: '2', value: "Espresso Americano" },
     { key: '3', value: "Coffe Road" },
     { key: '4', value: "Cafetini" },
-    { key: '5', value: "OV Café" },
+    { key: '5', value: "Oscar Valladares Café" },
     { key: '7', value: "Luna Café" },
     { key: '8', value: "Ovi&Ser Café" },
     { key: '9', value: "Don Esteban Café" },
