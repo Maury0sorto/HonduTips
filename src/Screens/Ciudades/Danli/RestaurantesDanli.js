@@ -3,7 +3,6 @@ import { View, Text, Image, TouchableHighlight, StyleSheet, ScrollView,Touchable
 import { SelectList } from 'react-native-dropdown-select-list';
 import { Ionicons } from '@expo/vector-icons';
 
-import  ExpressoAmericanoDanli from './RestaurantesDanli/ExpressoAmericanoDanli';
 import WendysDanli from './RestaurantesDanli/WendysDanli';
 import PizzaHutDanli from './RestaurantesDanli/PizzaHutDanli';
 import ChesterChikeDanli from './RestaurantesDanli/ChesterChikenDanli';
@@ -33,7 +32,6 @@ import OrientalDanli from './RestaurantesDanli/OrientalDanli';
 import PupusasDanli from './RestaurantesDanli/PupusasDanli';
 import SportJaliDanli from './RestaurantesDanli/SportJaliDanli';
 import BaleadasYuliDanli from './RestaurantesDanli/BaleadasYuli';
-import LaTorreDanli from './RestaurantesDanli/LaTorreDanli';
 import PaseoPupuseriaDanli from './RestaurantesDanli/PaseoPupuseriaDanli';
 
 const ScreenA = ({ text, mostrarBotonAnterior }) => {
@@ -111,23 +109,7 @@ const ScreenD = ({ text, mostrarBotonAnterior }) => {
   );
 };
 
-const ScreenE = ({ text, mostrarBotonAnterior }) => {
-  return (
-    <View style={styles.componentContainer}>
-      <TouchableHighlight
-        style={styles.backButton}
-        underlayColor="#0080ff"
-        onPress={mostrarBotonAnterior}
-      >
-       <>
-      <Ionicons name="arrow-back" size={24} color="black" style={styles.backButtonIcon} />
-      <Text style={styles.backButtonText}>Regresar</Text>
-    </>
-      </TouchableHighlight>
-     <ExpressoAmericanoDanli/>
-    </View>
-  );
-};
+
 
 const ScreenF = ({ text, mostrarBotonAnterior }) => {
   return (
@@ -557,23 +539,6 @@ const ScreenAC= ({ text, mostrarBotonAnterior }) => {
     </View>
   );
 };
-const ScreenAD= ({ text, mostrarBotonAnterior }) => {
-  return (
-    <View style={styles.componentContainer}>
-      <TouchableHighlight
-        style={styles.backButton}
-        underlayColor="#0080ff"
-        onPress={mostrarBotonAnterior}
-      >
-       <>
-      <Ionicons name="arrow-back" size={24} color="black" style={styles.backButtonIcon} />
-      <Text style={styles.backButtonText}>Regresar</Text>
-    </>
-      </TouchableHighlight>
-      <LaTorreDanli/>
-    </View>
-  );
-};
 const ScreenAF= ({ text, mostrarBotonAnterior }) => {
   return (
     <View style={styles.componentContainer}>
@@ -615,7 +580,6 @@ const RestaurantesDanli = () => {
     { text: 'Pizza Hut', image: 'https://i.imgur.com/2Ncnxt6.png', screen: ScreenB },
     { text: "Chesters Chiken", image: 'https://i.imgur.com/60pifRi.jpg', screen: ScreenC },
     { text: 'Papa Johns', image: 'https://i.imgur.com/7JddAuC.jpg', screen: ScreenD },
-    { text: 'Expresso Americano', image: 'https://i.imgur.com/FQTshUX.jpg', screen: ScreenE },
     { text: "Paradise Burger", image: 'https://i.imgur.com/tjoOVf2.jpg', screen: ScreenF },
     { text: "Hot Wings", image: 'https://i.imgur.com/mXVErEd.jpg', screen: ScreenG },
     { text: "Sushi Totemo", image: 'https://i.imgur.com/9qIWZC5.jpg', screen: ScreenH },
@@ -645,7 +609,6 @@ const RestaurantesDanli = () => {
     { text: "Servitipicos Alameda", image: 'https://i.imgur.com/aDbMNWE.jpg', screen: ScreenAA},
     { text: "Sport Jali", image: 'https://i.imgur.com/BBV6ynZ.jpg', screen: ScreenAB},
     { text: "Baleadas Yuli", image: 'https://i.imgur.com/AVc27Xo.jpg', screen: ScreenAC},
-    { text: "Torre Fuerte", image: 'https://i.imgur.com/YrrDG9H.jpg', screen: ScreenAD},
     { text: "Paseo Pupuseria", image: 'https://i.imgur.com/YrrDG9H.jpg', screen: ScreenAF},
    
   
