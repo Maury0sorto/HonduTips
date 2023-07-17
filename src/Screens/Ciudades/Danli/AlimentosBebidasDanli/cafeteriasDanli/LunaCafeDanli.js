@@ -9,16 +9,10 @@ import ImageViewer from 'react-native-image-zoom-viewer';
 // INICIO DE PARA PONER PINES DENTRO DEL MAPA 
 const locationsData = [
   {
-    title: "Ovi & Ser",
-    
-    latitude:     14.030540817832643,     
-    longitude:  -86.57429837794497,
-  },
-  {
-    title: "Ovi & Ser Xpress",
+    title: "Luna Café",
      
-    latitude:     14.029390353892405,     
-    longitude:  -86.5721583895908,
+    latitude:     14.030243485640623,   
+    longitude:   -86.56739617180948 ,
   },
 
   // Agrega más ubicaciones aquí si lo deseas
@@ -28,7 +22,7 @@ const locationsData = [
 
 
 
-export default function OviserDanli() {  // Este solo es el nomre que se usa para importar esta screen dentro de otro o mandar a llamar
+export default function LunaCafeDanli() {  // Este solo es el nomre que se usa para importar esta screen dentro de otro o mandar a llamar
 
   // INICIO DE CODIGO PARA AGREGAR BOTONCITO CON MENU 
   const [modalVisible, setModalVisible] = useState(false);
@@ -37,7 +31,7 @@ export default function OviserDanli() {  // Este solo es el nomre que se usa par
   };
   const images = [
     {
-      url: 'https://scontent.fsap8-1.fna.fbcdn.net/v/t39.30808-6/316280921_521731153306338_8746632445949559895_n.jpg?_nc_cat=103&cb=99be929b-59f725be&ccb=1-7&_nc_sid=c4c01c&_nc_ohc=MHjGAC8-zg8AX_XQlI4&_nc_ht=scontent.fsap8-1.fna&oh=00_AfDzcbdmdNfC1lcOw_mVcMHiUw1GO5adWaq3SGctE_xtZg&oe=64A071E8',
+      url: 'https://i.imgur.com/NWe4af1.jpg',
     },
   ];
 
@@ -50,10 +44,10 @@ export default function OviserDanli() {  // Este solo es el nomre que se usa par
   const mapRef = useRef(null);
   const initialRegion = {
     
-    latitude:     14.030540817832643,     
-    longitude:  -86.57429837794497,
-    latitudeDelta: 0.01,    //ENTRE NUMEROS MAS GRANDES MAS ZOOM DE LA VISTIA INICIAL DEL MAPA
-    longitudeDelta: 0.01,  //ENTRE NUMEROS MAS GRANDES MAS ZOOM DE LA VISTIA INICIAL DEL MAPA
+    latitude:     14.030243485640623,   
+    longitude:   -86.56739617180948 ,
+    latitudeDelta: 0.009,    //ENTRE NUMEROS MAS GRANDES MAS ZOOM DE LA VISTIA INICIAL DEL MAPA
+    longitudeDelta: 0.009,  //ENTRE NUMEROS MAS GRANDES MAS ZOOM DE LA VISTIA INICIAL DEL MAPA
   };
   // FIN CODIGO PARA EL PUNNTO CENTRAL DEL MAPA DE LA UBICACION
 
@@ -92,8 +86,8 @@ export default function OviserDanli() {  // Este solo es el nomre que se usa par
     const region = {
       latitude: initialRegion.latitude,
       longitude: initialRegion.longitude,
-      latitudeDelta: initialRegion.latitudeDelta * 0.5,
-      longitudeDelta: initialRegion.longitudeDelta * 0.5,
+      latitudeDelta: initialRegion.latitudeDelta * 0.01,
+      longitudeDelta: initialRegion.longitudeDelta * 0.01,
     };
     mapRef.current.animateToRegion(region, 500);
     
@@ -103,8 +97,8 @@ export default function OviserDanli() {  // Este solo es el nomre que se usa par
     const region = {
       latitude: initialRegion.latitude,
       longitude: initialRegion.longitude,
-      latitudeDelta: initialRegion.latitudeDelta * 3,
-      longitudeDelta: initialRegion.longitudeDelta * 3,
+      latitudeDelta: initialRegion.latitudeDelta * 0.01,
+      longitudeDelta: initialRegion.longitudeDelta * 0.01,
     };
     mapRef.current.animateToRegion(region, 500);
   };
@@ -116,7 +110,7 @@ export default function OviserDanli() {  // Este solo es el nomre que se usa par
   return (
     <ScrollView>
       <View style={styles.container}>
-        <Text style={styles.title}>Ovi & Ser</Text>
+        <Text style={styles.title}>Luna Café</Text>
         <View style={styles.containerSwipers}>
           <View style={styles.swiperContainer}>
             <Swiper
@@ -128,10 +122,10 @@ export default function OviserDanli() {  // Este solo es el nomre que se usa par
               }}
             >
                  <View style={styles.slide}>
-                <Image style={styles.image} source={{ uri: 'https://i.imgur.com/G28oZdf.jpg' }} />
+                <Image style={styles.image} source={{ uri: 'https://i.imgur.com/EtUSIEU.jpg' }} />
               </View>
               <View style={styles.slide}>
-                <Image style={styles.image} source={{ uri: 'https://i.imgur.com/smBZ5ay.jpg' }} />
+                <Image style={styles.image} source={{ uri: 'https://i.imgur.com/lNjsOcf.jpg' }} />
               </View>
              
   
@@ -149,7 +143,7 @@ export default function OviserDanli() {  // Este solo es el nomre que se usa par
       <View style={styles.buttonContainer3}>
         <TouchableOpacity activeOpacity={1} onPress={toggleModal}>
           <Image
-            source={{ uri: 'https://scontent.fsap8-1.fna.fbcdn.net/v/t39.30808-6/316280921_521731153306338_8746632445949559895_n.jpg?_nc_cat=103&cb=99be929b-59f725be&ccb=1-7&_nc_sid=c4c01c&_nc_ohc=MHjGAC8-zg8AX_XQlI4&_nc_ht=scontent.fsap8-1.fna&oh=00_AfDzcbdmdNfC1lcOw_mVcMHiUw1GO5adWaq3SGctE_xtZg&oe=64A071E8' }}
+            source={{ uri: 'https://i.imgur.com/NWe4af1.jpg' }}
             style={styles.imagen}
             resizeMode="cover"
           />
@@ -158,11 +152,14 @@ export default function OviserDanli() {  // Este solo es el nomre que se usa par
 
       <Text style={styles.scheduleHeaderText}>HORARIOS DE ATENCION</Text>
       <View style={styles.scheduleContainer}>
-      <View style={styles.scheduleItem}>
+        <View style={styles.scheduleItem}>
           <Icon name="clock-o" size={20} color="#000" style={styles.scheduleIcon} />
-          <Text style={styles.scheduleText}>Lun-Dom: 11:00 AM - 9:30 PM</Text>
+          <Text style={styles.scheduleText}>Lun-Sab: 7:00 AM - 8:00 PM</Text>
         </View>
-        
+        <View style={styles.scheduleItem}>
+          <Icon name="clock-o" size={20} color="#000" style={styles.scheduleIcon} />
+          <Text style={styles.scheduleText}>Dom: 1:00 PM - 8:00 PM</Text>
+        </View>
       </View>
 
       <Modal visible={modalVisible} animationType="fade" transparent={true}>
@@ -186,7 +183,7 @@ export default function OviserDanli() {  // Este solo es el nomre que se usa par
           <TouchableOpacity
             style={styles.button}
             onPress={() => {
-              Linking.openURL('https://www.facebook.com/oviserrestaurante');
+              Linking.openURL('https://www.facebook.com/lunacafedanli');
             }}
           >
              <Icon name="globe" size={20} color="white" style={styles.buttonIcon} />
@@ -195,7 +192,7 @@ export default function OviserDanli() {  // Este solo es el nomre que se usa par
           <TouchableOpacity
             style={styles.button}
             onPress={() => {
-              Linking.openURL('tel: +50495036186');
+              Linking.openURL('tel: +50487948100');
             }}
           >
              <Icon name="phone" size={20} color="white" style={styles.buttonIcon} />
@@ -251,6 +248,7 @@ const styles = StyleSheet.create({
     fontSize: 34,
     fontWeight: 'bold',
     marginTop: 10,
+    textAlign:'center',
   },
   mapContainer: {
     aspectRatio: 16 / 9,

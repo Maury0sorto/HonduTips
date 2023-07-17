@@ -8,6 +8,8 @@ import CoffeRoadDanli from './CoffeRoadDanli';
 import CafetiniDanli from './CafetiniDanli';
 import OVCafeDanli from './OVCafeDanli';
 
+import LunaCafeDanli from './LunaCafeDanli';
+import OviserCafeDanli from './OviserCafeDanli';
  
 
 
@@ -83,6 +85,42 @@ const ScreenD = ({ text, mostrarBotonAnterior }) => {
   </View>
   );
 };
+const ScreenF = ({ text, mostrarBotonAnterior }) => {
+  return (
+    <View style={styles.componentContainer}>
+    <TouchableHighlight
+      style={styles.backButton}
+      underlayColor="#0080ff"
+      onPress={mostrarBotonAnterior} 
+    >
+       <>
+      <Ionicons name="arrow-back" size={24} color="black" style={styles.backButtonIcon} />
+      <Text style={styles.backButtonText}>Regresar</Text>
+    </>
+    </TouchableHighlight>
+    <LunaCafeDanli/>
+   
+  </View>
+  );
+};
+const ScreenG = ({ text, mostrarBotonAnterior }) => {
+  return (
+    <View style={styles.componentContainer}>
+    <TouchableHighlight
+      style={styles.backButton}
+      underlayColor="#0080ff"
+      onPress={mostrarBotonAnterior} 
+    >
+       <>
+      <Ionicons name="arrow-back" size={24} color="black" style={styles.backButtonIcon} />
+      <Text style={styles.backButtonText}>Regresar</Text>
+    </>
+    </TouchableHighlight>
+    <OviserCafeDanli/>
+   
+  </View>
+  );
+};
 
 const CafesDanli = () => {
   const [componenteVisible, setComponenteVisible] = useState(null);
@@ -106,8 +144,10 @@ const CafesDanli = () => {
     { text: "Coffe Road", image: 'https://i.imgur.com/X4qyqXv.jpg',  screen: ScreenB},
     { text: "Cafetini", image: 'https://i.imgur.com/XkpYni9.jpg',  screen: ScreenC},
     { text: "Oscar Valladares Café", image: 'https://i.imgur.com/VUeIgCN.jpg',  screen: ScreenD},
+    { text: "Luna Café", image: 'https://i.imgur.com/ACbjVaF.jpg',  screen: ScreenF},
+    { text: "Ovi&Ser Café", image: 'https://i.imgur.com/J8qf7yF.jpg',  screen: ScreenG},
     
-  ];
+  ]; 
 
   const data2 = [
     { key: '1', value: 'Recomendados' },
@@ -115,6 +155,8 @@ const CafesDanli = () => {
     { key: '3', value: "Coffe Road" },
     { key: '4', value: "Cafetini" },
     { key: '5', value: "OV Café" },
+    { key: '7', value: "Luna Café" },
+    { key: '8', value: "Ovi&Ser Café" },
    
     
   ];
