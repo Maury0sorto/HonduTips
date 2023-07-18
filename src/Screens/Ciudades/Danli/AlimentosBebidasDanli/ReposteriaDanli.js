@@ -3,7 +3,7 @@ import { View, Text, Image, TouchableHighlight, StyleSheet, ScrollView,Touchable
 import { SelectList } from 'react-native-dropdown-select-list';
 import { Ionicons } from '@expo/vector-icons';
 
-import LaTorreDanli from '../RestaurantesDanli/LaTorreDanli';
+import NelyDanlu from './Reposteria/NelyDanli';
 
 const ScreenA = ({ text, mostrarBotonAnterior }) => {
   return (
@@ -18,7 +18,7 @@ const ScreenA = ({ text, mostrarBotonAnterior }) => {
       <Text style={styles.backButtonText}>Regresar</Text>
     </>
     </TouchableHighlight>
-    <LaTorreDanli/>
+    <NelyDanlu/>
    
   </View>
   );
@@ -42,13 +42,13 @@ const ReposteriaDanli = () => {
   };
  
   const buttons = [
-    { text: "Torre Fuerte", image: 'https://i.imgur.com/mGzpEYL.jpg',  screen: ScreenA },
+    { text: "Repostería Nely", image: 'https://i.imgur.com/CoA5cuh.jpg',  screen: ScreenA },
     
   ]; 
 
   const data2 = [
     { key: '1', value: 'Recomendados' },
-    { key: '2', value: "Torre Fuerte" },
+    { key: '2', value: "Repostería Nely" },
     
   ];
 
