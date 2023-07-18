@@ -40,10 +40,10 @@ const EduacionDanli = () => {
   const handleButtonPress = (text) => {
     // Configura la navegación a las pantallas correspondientes según el texto del botón
     if (text === 'Kinder') {
-      navigation.navigate('Hoteles Danlí');
+      navigation.navigate('Kinder en Danlí');
     }  
     else if (text === 'Escuelas') {
-      navigation.navigate('Talleres en Danli');
+      navigation.navigate('Escuelas Danlí');
     } 
     else if (text === 'Colegios') {
       navigation.navigate('Moteles Danlí');
