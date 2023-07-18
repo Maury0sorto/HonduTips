@@ -4,10 +4,14 @@ import { SelectList } from 'react-native-dropdown-select-list';
 import { Ionicons } from '@expo/vector-icons';
 
 
-
-import BarberiaGudosDanli from '../BellezaDanli/BarberiasDanli/BarberiaGudosDanli';
-import BarberiaMileniumDanli from '../BellezaDanli/BarberiasDanli/BarberiaMileniumDanli';
-
+import BarberiaGudosDanli from './BarberiasDanli/BarberiaGudosDanli';
+import BarberiaMileniumDanli from './BarberiasDanli/BarberiaMileniumDanli';
+import BarberiaLeody from './BarberiasDanli/BarberiaLeodyDanli';
+import MateosBarberShop from  './BarberiasDanli/MateosBarberShopDanli';
+import BarberiaTuImagenDanli from './BarberiasDanli/BarberiaTuImagenDanli';
+import BarberiaErickGlamurDanli from './BarberiasDanli/BarberiaErickGlamurDanli';
+import ShadaiMasterBarberShopDanli from './BarberiasDanli/ShadaiMasterBarberShopDanli';
+import EvansBarberShopDanli from './BarberiasDanli/EvansBarberShopDanli';
 
 const ScreenA = ({ text, mostrarBotonAnterior }) => {
   return (
@@ -48,13 +52,118 @@ const ScreenB = ({ text, mostrarBotonAnterior }) => {
   );
 };
 
+const ScreenC = ({ text, mostrarBotonAnterior }) => {
+  return (
+    <View style={styles.componentContainer}>
+      <TouchableHighlight
+        style={styles.backButton}
+        underlayColor="#0080ff"
+        onPress={mostrarBotonAnterior}
+      >
+        <>
+      <Ionicons name="arrow-back" size={24} color="black" style={styles.backButtonIcon} />
+      <Text style={styles.backButtonText}>Regresar</Text>
+    </>
+      </TouchableHighlight>
+      <BarberiaLeody/>
+    </View>
+  );
+};
+
+const ScreenD = ({ text, mostrarBotonAnterior }) => {
+  return (
+    <View style={styles.componentContainer}>
+      <TouchableHighlight
+        style={styles.backButton}
+        underlayColor="#0080ff"
+        onPress={mostrarBotonAnterior}
+      >
+       <>
+      <Ionicons name="arrow-back" size={24} color="black" style={styles.backButtonIcon} />
+      <Text style={styles.backButtonText}>Regresar</Text>
+    </>
+      </TouchableHighlight>
+      <MateosBarberShop/>
+    </View>
+  );
+};
+
+const ScreenE = ({ text, mostrarBotonAnterior }) => {
+  return (
+    <View style={styles.componentContainer}>
+      <TouchableHighlight
+        style={styles.backButton}
+        underlayColor="#0080ff"
+        onPress={mostrarBotonAnterior}
+      >
+       <>
+      <Ionicons name="arrow-back" size={24} color="black" style={styles.backButtonIcon} />
+      <Text style={styles.backButtonText}>Regresar</Text>
+    </>
+      </TouchableHighlight>
+      <BarberiaTuImagenDanli/>
+    </View>
+  );
+};
+
+const ScreenF = ({ text, mostrarBotonAnterior }) => {
+  return (
+    <View style={styles.componentContainer}>
+      <TouchableHighlight
+        style={styles.backButton}
+        underlayColor="#0080ff"
+        onPress={mostrarBotonAnterior}
+      >
+       <>
+      <Ionicons name="arrow-back" size={24} color="black" style={styles.backButtonIcon} />
+      <Text style={styles.backButtonText}>Regresar</Text>
+    </>
+      </TouchableHighlight>
+      <BarberiaErickGlamurDanli/>
+    </View>
+  );
+};
+
+const ScreenG = ({ text, mostrarBotonAnterior }) => {
+  return (
+    <View style={styles.componentContainer}>
+      <TouchableHighlight
+        style={styles.backButton}
+        underlayColor="#0080ff"
+        onPress={mostrarBotonAnterior}
+      >
+       <>
+      <Ionicons name="arrow-back" size={24} color="black" style={styles.backButtonIcon} />
+      <Text style={styles.backButtonText}>Regresar</Text>
+    </>
+      </TouchableHighlight>
+      <ShadaiMasterBarberShopDanli/>
+    </View>
+  );
+};
+
+
+const ScreenH = ({ text, mostrarBotonAnterior }) => {
+  return (
+    <View style={styles.componentContainer}>
+      <TouchableHighlight
+        style={styles.backButton}
+        underlayColor="#0080ff"
+        onPress={mostrarBotonAnterior}
+      >
+       <>
+      <Ionicons name="arrow-back" size={24} color="black" style={styles.backButtonIcon} />
+      <Text style={styles.backButtonText}>Regresar</Text>
+    </>
+      </TouchableHighlight>
+      <EvansBarberShopDanli/>
+    </View>
+  );
+};
 
 
 
-
-
-
-const TerminalBusesDanli = () => {
+const BarberiasDanli = () => {
   const [componenteVisible, setComponenteVisible] = useState(null);
   const [mostrarSelectList, setMostrarSelectList] = useState(true); // Nuevo estado
   const [selectedOption, setSelectedOption] = useState('Recomendadas');
@@ -72,22 +181,26 @@ const TerminalBusesDanli = () => {
   };
 
   const buttons = [
-    { text: "Terminal de Buses", image: 'https://scontent.fsap8-1.fna.fbcdn.net/v/t39.30808-6/279543005_5648968268464458_8778377059714326265_n.jpg?_nc_cat=102&ccb=1-7&_nc_sid=09cbfe&_nc_ohc=YBuCipCxuIcAX8506ec&_nc_ht=scontent.fsap8-1.fna&oh=00_AfDkpqd7BwDJRhwu1AC_0c0IqjyJNuIOqQQpVLblehs_FA&oe=64A7B206',  screen: ScreenA },
-    { text: 'Transporte Daniela', image: 'https://lh5.googleusercontent.com/p/AF1QipO_mGSGi9BK3gjqVcL4LFpAyBbvKOCfyQIEFQTu', screen: ScreenB },
-    { text: 'Transportes Rodríguez', image: 'https://i.imgur.com/YrrDG9H.jpg', screen: ScreenB },
-    { text: 'Punto de Taxis Uniplaza', image: 'https://i.imgur.com/YrrDG9H.jpg', screen: ScreenB },
-    { text: 'Punto de Taxis La Terminal', image: 'https://i.imgur.com/YrrDG9H.jpg', screen: ScreenB },
-    
+    { text: "Gudo's Barber Shop", image: 'https://i.imgur.com/FutdjTV.jpg',  screen: ScreenA },
+    { text: 'Barberia Millenium', image: 'https://i.imgur.com/LgXdoSo.jpg', screen: ScreenB },
+    { text: 'Barberia Leody', image: 'https://i.imgur.com/YrrDG9H.jpg', screen: ScreenC },
+    { text: 'Mateos Barber Shop', image: 'https://i.imgur.com/YrrDG9H.jpg', screen: ScreenD },
+    { text: 'Barberia Tu Imagen', image: 'https://i.imgur.com/YrrDG9H.jpg', screen: ScreenE },
+    { text: 'Barberia Erick Glamur', image: 'https://i.imgur.com/YrrDG9H.jpg', screen: ScreenF },
+    { text: 'Shadai Master BarberShop', image: 'https://i.imgur.com/YrrDG9H.jpg', screen: ScreenG },
+    { text: 'Evan’s Barber Shop', image: 'https://i.imgur.com/YrrDG9H.jpg', screen: ScreenH },
+  
   ];
 
   const data2 = [
     { key: '1', value: 'Recomendadas' },
-    { key: '2', value: "Terminal de Buses" },
-    { key: '3', value: 'Transporte Daniela' },
-    
-    
-    
-    
+    { key: '2', value: "Gudo's Barber Shop" },
+    { key: '3', value: 'Barberia Millenium' },
+    { key: '4', value: 'Barberia Leody' },
+    { key: '5', value: 'Mateos Barber Shop' },
+    { key: '6', value: 'Barberia Erick Glamur' },
+    { key: '7', value: 'Shadai Master BarberShop' },
+    { key: '8', value: 'Evan’s Barber Shop' },
   ];
 
   const ComponenteVisible = componenteVisible?.screenComponent || null;
@@ -231,4 +344,4 @@ const styles = StyleSheet.create({
   },
 });
 
-export default TerminalBusesDanli;
+export default BarberiasDanli;

@@ -12,7 +12,7 @@ import BancosDanli from '../Screens/Ciudades/Danli/Banca/BancosDanli';
 import HotelesDanli from '../Screens/Ciudades/Danli/HospedajesDanli/HotelesDanli';
 import RestaurantesDanli from '../Screens/Ciudades/Danli/RestaurantesDanli'
 import GasolinerasDanli from '../Screens/Ciudades/Danli/GasolinerasDanli/GasolinerasDanli';
-import BarberiasDanli from '../Screens/Ciudades/Danli/BarberiasDanli/BarberiasDanli';
+import BarberiasDanli from '../Screens/Ciudades/Danli/BellezaDanli/BarberiasDanli';
 import FarmaciasDanli from '../Screens/Ciudades/Danli/SaludDanli/FarmaciasDanli';
 import AutomotrizDanli from '../Screens/Ciudades/Danli/Automotriz/AutomotrizDanli';
 import CarWashDanli from '../Screens/Ciudades/Danli/Automotriz/servicios/CarWashDanli';
@@ -86,7 +86,7 @@ const SerchStackScreen = () => {        // Este stack es el de Search es decir e
           <SerchStack.Screen name="Cafés Danlí" component={CafesDanli}/>
           <SerchStack.Screen name="Bares Danlí" component={BaresDanli}/>
           <SerchStack.Screen name="Comida Callejera Danlí" component={FoodTrucksDanli}/>
-          <SerchStack.Screen name="Reposteria Danlí" component={ReposteriaDanli}/>
+          <SerchStack.Screen name="Repostería Danlí" component={ReposteriaDanli}/>
 
         <SerchStack.Screen name="Banca Danlí" component={BancaDanli}/>
         <SerchStack.Screen name="Cooperativas Danlí" component={CooperativasDanli}/>

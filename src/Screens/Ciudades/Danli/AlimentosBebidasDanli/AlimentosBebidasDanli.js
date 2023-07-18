@@ -57,7 +57,7 @@ const AlimentosBebidasDanli = () => {
         navigation.navigate('Cafés Danlí');
       } 
       else if (text === 'Reposterias') {
-        navigation.navigate('Reposteria Danlí');
+        navigation.navigate('Repostería Danlí');
       } 
   };
 
