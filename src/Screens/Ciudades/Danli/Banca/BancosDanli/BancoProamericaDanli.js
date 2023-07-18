@@ -5,18 +5,12 @@ import Swiper from "react-native-web-swiper";
 
 const locationsData = [
   {
-    title: 'Banco de Occidente Centro',
+    title: 'Banco Promerica',
  
     latitude:    14.032949438071917, 
     longitude:  -86.5703632738162,
   },
 
-  {
-    title: 'Banco de Occidente ',
- 
-    latitude:    14.028905703143225, 
-    longitude:  -86.57113915197448,
-  },
   
   // Agrega más ubicaciones aquí si lo deseas
 ];
@@ -75,7 +69,7 @@ export default function BancoProamericaDanli() {
   return (
     <ScrollView>
       <View style={styles.container}>
-        <Text style={styles.title}>Banco Proamerica</Text>
+        <Text style={styles.title}>Banco Promerica</Text>
         <View style={styles.containerSwipers}>
           <View style={styles.swiperContainer}>
             <Swiper

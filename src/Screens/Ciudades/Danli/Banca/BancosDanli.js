@@ -298,7 +298,7 @@ const MyScreen = () => {
     { key: '7', value: 'Banco De Los Trabajadores' },
     { key: '8', value: 'Bancopopular' },
     { key: '9', value: 'BAC' },
-    { key: '10', value: 'Davivienda' },
+    { key: '10', value: 'DAVIVIENDA' },
     { key: '11', value: 'BANRURAL' },
     { key: '12', value: 'Banco LAFISE' },
     { key: '13', value: 'BANHCAFE' },

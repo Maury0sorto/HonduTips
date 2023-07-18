@@ -6,13 +6,13 @@ import Swiper from "react-native-web-swiper";
 
 const locationsData = [
   {
-    title: 'Banco Lafise',
+    title: 'Banco LAFISE',
     description: 'Descripción de Tegucigalpa',
     latitude: 14.03118549468538,
     longitude: -86.56849976931967,
   },
   {
-    title: 'Banco Lafise',
+    title: 'Banco LAFISE',
     description: 'Descripción de Tegucigalpa',
     latitude: 14.03118549468538,
     longitude: -86.56849976931967,
@@ -74,7 +74,7 @@ export default function Bancolafise() {
   return (
     <ScrollView>
       <View style={styles.container}>
-        <Text style={styles.title}>Banco Lafise</Text>
+        <Text style={styles.title}>Banco LAFISE</Text>
         <View style={styles.containerSwipers}>
           <View style={styles.swiperContainer}>
             <Swiper

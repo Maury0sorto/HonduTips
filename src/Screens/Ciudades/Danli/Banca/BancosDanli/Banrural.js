@@ -6,13 +6,13 @@ import Swiper from "react-native-web-swiper";
 
 const locationsData = [
   {
-    title: 'Banrural',
+    title: 'BANRURAL',
     description: 'Descripción de Tegucigalpa',
     latitude: 14.02885997329403,
     longitude: -86.57195943955364,
   },
   {
-    title: 'Banrural',
+    title: 'BANRURAL',
     description: 'Descripción de Tegucigalpa',
     latitude: 14.030667455785771,
     longitude: -86.57961041534016,
@@ -74,7 +74,7 @@ export default function Banrural() {
   return (
     <ScrollView>
       <View style={styles.container}>
-        <Text style={styles.title}>Banrural</Text>
+        <Text style={styles.title}>BANRURAL</Text>
         <View style={styles.containerSwipers}>
           <View style={styles.swiperContainer}>
             <Swiper

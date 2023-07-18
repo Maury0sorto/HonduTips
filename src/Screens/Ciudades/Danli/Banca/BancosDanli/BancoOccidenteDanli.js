@@ -75,7 +75,7 @@ export default function BancoOccidenteDanli() {
   return (
     <ScrollView>
       <View style={styles.container}>
-        <Text style={styles.title}>Banco Occidente</Text>
+        <Text style={styles.title}>Banco de Occidente</Text>
         <View style={styles.containerSwipers}>
           <View style={styles.swiperContainer}>
             <Swiper

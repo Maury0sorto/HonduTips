@@ -6,7 +6,7 @@ import Swiper from "react-native-web-swiper";
 
 const locationsData = [
   {
-    title: 'Davivienda',
+    title: 'DAVIVIENDA',
  
     latitude:   14.030758796002624, 
     longitude:  -86.56845155513517,
@@ -70,7 +70,7 @@ export default function Davivienda() {
   return (
     <ScrollView>
       <View style={styles.container}>
-        <Text style={styles.title}>Davivienda</Text>
+        <Text style={styles.title}>DAVIVIENDA</Text>
         <View style={styles.containerSwipers}>
           <View style={styles.swiperContainer}>
             <Swiper

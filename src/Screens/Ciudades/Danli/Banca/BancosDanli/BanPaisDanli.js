@@ -5,7 +5,7 @@ import Swiper from "react-native-web-swiper";
 
 const locationsData = [
   {
-    title: 'BanPais',
+    title: 'BANPAIS',
  
     latitude:    14.029118963002626, 
     longitude:  -86.57078942441252,
@@ -69,7 +69,7 @@ export default function BanPaisDanli() {
   return (
     <ScrollView>
       <View style={styles.container}>
-        <Text style={styles.title}>BanPais</Text>
+        <Text style={styles.title}>BANPAIS</Text>
         <View style={styles.containerSwipers}>
           <View style={styles.swiperContainer}>
             <Swiper
