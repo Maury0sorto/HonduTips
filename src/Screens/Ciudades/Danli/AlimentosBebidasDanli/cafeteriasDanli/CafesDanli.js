@@ -12,6 +12,7 @@ import DonEstebanDanli from './DonEstebaDanli';
 import LunaCafeDanli from './LunaCafeDanli';
 import OviserCafeDanli from './OviserCafeDanli';
 import CafeteandoDanli from './CafeteandoDanli';
+import KFEDanli from '../Bares/KFEDanli';
  
 
 
@@ -159,6 +160,25 @@ const ScreenI = ({ text, mostrarBotonAnterior }) => {
   </View>
   );
 };
+const ScreenJ = ({ text, mostrarBotonAnterior }) => {
+  return (
+    <View style={styles.componentContainer}>
+    <TouchableHighlight
+      style={styles.backButton}
+      underlayColor="#0080ff"
+      onPress={mostrarBotonAnterior} 
+    >
+       <>
+      <Ionicons name="arrow-back" size={24} color="black" style={styles.backButtonIcon} />
+      <Text style={styles.backButtonText}>Regresar</Text>
+    </>
+    </TouchableHighlight>
+    <KFEDanli/>
+   
+  </View>
+  );
+};
+
 
 const CafesDanli = () => {
   const [componenteVisible, setComponenteVisible] = useState(null);
@@ -186,6 +206,7 @@ const CafesDanli = () => {
     { text: "Ovi&Ser Café", image: 'https://i.imgur.com/J8qf7yF.jpg',  screen: ScreenG},
     { text: "Don Esteban Café", image: 'https://i.imgur.com/zQbUVbO.jpg',  screen: ScreenH},
     { text: "Cafeteando HN", image: 'https://i.imgur.com/SRMWRT7.jpg',  screen: ScreenI},
+    { text: "KFE Cocktail & Wine", image: 'https://i.imgur.com/yXuCrlW.jpg',  screen: ScreenJ},
     
   ]; 
 
@@ -199,6 +220,7 @@ const CafesDanli = () => {
     { key: '8', value: "Ovi&Ser Café" },
     { key: '9', value: "Don Esteban Café" },
     { key: '10', value: "Cafeteando HN" },
+    { key: '11', value: "KFE Cocktail & Wine" },
    
     
   ];

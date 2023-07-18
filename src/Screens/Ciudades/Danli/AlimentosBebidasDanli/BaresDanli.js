@@ -5,6 +5,7 @@ import { Ionicons } from '@expo/vector-icons';
 
 import VorazDanli from './Bares/VorazDanli';
 import MiguelDanli from './Bares/MiguelCubanoDanli';
+import KFEDanli from './Bares/KFEDanli';
 
 
 const ScreenA = ({ text, mostrarBotonAnterior }) => {
@@ -43,6 +44,24 @@ const ScreenB = ({ text, mostrarBotonAnterior }) => {
   </View>
   );
 };
+const ScreenC = ({ text, mostrarBotonAnterior }) => {
+  return (
+    <View style={styles.componentContainer}>
+    <TouchableHighlight
+      style={styles.backButton}
+      underlayColor="#0080ff"
+      onPress={mostrarBotonAnterior} 
+    >
+       <>
+      <Ionicons name="arrow-back" size={24} color="black" style={styles.backButtonIcon} />
+      <Text style={styles.backButtonText}>Regresar</Text>
+    </>
+    </TouchableHighlight>
+    <KFEDanli/>
+   
+  </View>
+  );
+};
 
 const BaresDanli = () => {
   const [componenteVisible, setComponenteVisible] = useState(null);
@@ -64,6 +83,7 @@ const BaresDanli = () => {
   const buttons = [
     { text: "Voraz", image: 'https://i.imgur.com/N4RBKDK.jpg',  screen: ScreenA },
     { text: "Bar & Taqueria Miguel Cubano", image: 'https://i.imgur.com/X4HjSqn.jpg',  screen: ScreenB },
+    { text: "KFE Cocktail & Wine", image: 'https://i.imgur.com/yXuCrlW.jpg',  screen: ScreenC },
    
   ]; 
 
@@ -71,6 +91,7 @@ const BaresDanli = () => {
     { key: '1', value: 'Recomendados' },
     { key: '2', value: "Voraz" },
     { key: '3', value: "Bar & Taqueria Miguel Cubano" },
+    { key: '4', value: "KFE Cocktail & Wine" },
    
     
   ];
