@@ -6,25 +6,19 @@ import Swiper from "react-native-web-swiper";
 
 const locationsData = [
   {
-    title: 'Banco Atlantida',
-    description: 'Descripción de Tegucigalpa',
-    latitude: 14.02885997329403,
-    longitude: -86.57195943955364,
+    title: 'Cooperativa ELGA',
+    latitude:  14.031389381405388, 
+    longitude:  -86.56696981778592,
   },
-  {
-    title: 'Banco Atlantida 2',
-    description: 'Descripción de Tegucigalpa',
-    latitude: 14.030007669213457,
-    longitude: -86.56936117704309,
-  },
+  
   // Agrega más ubicaciones aquí si lo deseas
 ];
 
-export default function AtlantidaDanli() {
+export default function CooperativaELGADanli() {
   const mapRef = useRef(null);
   const initialRegion = {
-    latitude: 14.030215265206268,
-    longitude: -86.57062423700094,
+    latitude:  14.031389381405388, 
+    longitude:  -86.56696981778592,
     latitudeDelta: 0.01,
     longitudeDelta: 0.01,
   };
@@ -74,7 +68,7 @@ export default function AtlantidaDanli() {
   return (
     <ScrollView>
       <View style={styles.container}>
-        <Text style={styles.title}>Banco Atlantida</Text>
+        <Text style={styles.title}>Cooperativa ELGA</Text>
         <View style={styles.containerSwipers}>
           <View style={styles.swiperContainer}>
             <Swiper
@@ -86,13 +80,7 @@ export default function AtlantidaDanli() {
               }}
             >
               <View style={styles.slide}>
-                <Image style={styles.image} source={{ uri: 'https://www.cotizacion.co/img/casas-de-cambio/ChIJJx5bxNJpbo8RV-wBqNnBBS4.jpg' }} />
-              </View>
-              <View style={styles.slide}>
-                <Image style={styles.image} source={{ uri: 'https://lh3.googleusercontent.com/p/AF1QipP2sfRLpkO0p5271guHAOdpWgJe7BsH-YWQyAB7=s1600-w400' }} />
-              </View>
-              <View style={styles.slide}>
-                <Image style={styles.image} source={{ uri: 'https://segurosatlantida.com/wp-content/uploads/2019/05/choluteca.jpeg' }} />
+                <Image style={styles.image} source={{ uri: 'https://i.imgur.com/dPdyojX.png' }} />
               </View>
             </Swiper>
           </View>
@@ -103,11 +91,11 @@ export default function AtlantidaDanli() {
       <View style={styles.scheduleContainer}>
         <View style={styles.scheduleItem}>
           <Icon name="clock-o" size={20} color="#000" style={styles.scheduleIcon} />
-          <Text style={styles.scheduleText}>Lun-Vie: 9:00 AM - 5:00 PM</Text>
+          <Text style={styles.scheduleText}>Lun-Vie: 8:30 AM - 4:30 PM</Text>
         </View>
         <View style={styles.scheduleItem}>
           <Icon name="clock-o" size={20} color="#000" style={styles.scheduleIcon} />
-          <Text style={styles.scheduleText}>Sáb: 9:00 AM - 12:00 PM</Text>
+          <Text style={styles.scheduleText}>Sáb: 8:30 AM - 12:00 PM</Text>
         </View>
         <View style={styles.scheduleItem}>
           <Icon name="clock-o" size={20} color="#000" style={styles.scheduleIcon} />
@@ -120,15 +108,15 @@ export default function AtlantidaDanli() {
           <TouchableOpacity
             style={styles.button}
             onPress={() => {
-              Linking.openURL('https://www.bancatlan.hn/');
+              Linking.openURL('http://www.coopelga.hn/');
             }}
           >
             <Text style={styles.buttonText}>Visitar</Text>
           </TouchableOpacity>
-          <TouchableOpacity 
+          <TouchableOpacity
             style={styles.button}
             onPress={() => {
-              Linking.openURL('https://api.whatsapp.com/send?phone=50422801010');
+              Linking.openURL('tel: 2763-3086');
             }}
           >
             <Text style={styles.buttonText}>Contactar</Text>

@@ -4,11 +4,11 @@ import { SelectList } from 'react-native-dropdown-select-list';
 import { Ionicons } from '@expo/vector-icons';
 
 
-import AtlantidaDanli from './BancosDanli/AtlantidaDanli';
-import FicohsaDanli from './BancosDanli/FicohsaDanli';
-import BANTRABDanli from './BancosDanli/BANTRABDanli';
-import BancoOccidenteDanli from './BancosDanli/BancoOccidenteDanli';
-import BancoProamericaDanli from './BancosDanli/BancoProamericaDanli';
+import CooperativaApaguizDanli from './CooperativasDanli/CooperativaApaguizDanli';
+import CooperativaELGADanli from './CooperativasDanli/CooperativaELGADanli';
+import CooperativaSanmarqueñaDanli from './CooperativasDanli/CooperativaSanmarquennaDanli';
+import CooperativaCoacehlDanli from './CooperativasDanli/CoacehlDanli';
+import CooperativaSagradaFamiliaDanli from './CooperativasDanli/CooperativaSagradaFamiliaDanli';
 import BanPaisDanli from './BancosDanli/BanPaisDanli';
 import BACDanli from './BancosDanli/BACDanli';
 import Davivienda from './BancosDanli/Davivienda';
@@ -35,7 +35,7 @@ const ScreenA = ({ text, mostrarBotonAnterior }) => {
     </>
        
       </TouchableHighlight>
-      <AtlantidaDanli/>
+      <CooperativaApaguizDanli/>
    
     </View>
   );
@@ -54,7 +54,7 @@ const ScreenB = ({ text, mostrarBotonAnterior }) => {
       <Text style={styles.backButtonText}>Regresar</Text>
     </>
       </TouchableHighlight>
-      <FicohsaDanli/>
+      <CooperativaELGADanli/>
      
     </View>
   );
@@ -73,7 +73,7 @@ const ScreenC = ({ text, mostrarBotonAnterior }) => {
       <Text style={styles.backButtonText}>Regresar</Text>
     </>
       </TouchableHighlight>
-      <BancoOccidenteDanli/>
+      <CooperativaSanmarqueñaDanli/>
     </View>
   );
 };
@@ -91,7 +91,7 @@ const ScreenD = ({ text, mostrarBotonAnterior }) => {
       <Text style={styles.backButtonText}>Regresar</Text>
     </>
       </TouchableHighlight>
-      <BancoProamericaDanli/>
+      <CooperativaCoacehlDanli/>
     </View>
   );
 };
@@ -109,7 +109,7 @@ const ScreenE = ({ text, mostrarBotonAnterior }) => {
       <Text style={styles.backButtonText}>Regresar</Text>
     </>
       </TouchableHighlight>
-     <BanPaisDanli/>
+     <CooperativaSagradaFamiliaDanli/>
     </View>
   );
 };
