@@ -33,6 +33,7 @@ import PupusasDanli from './RestaurantesDanli/PupusasDanli';
 import SportJaliDanli from './RestaurantesDanli/SportJaliDanli';
 import BaleadasYuliDanli from './RestaurantesDanli/BaleadasYuli';
 import PaseoPupuseriaDanli from './RestaurantesDanli/PaseoPupuseriaDanli';
+import MiguelDanli from './AlimentosBebidasDanli/Bares/MiguelCubanoDanli';
 
 const ScreenA = ({ text, mostrarBotonAnterior }) => {
   return (
@@ -108,7 +109,23 @@ const ScreenD = ({ text, mostrarBotonAnterior }) => {
     </View>
   );
 };
-
+const ScreenE = ({ text, mostrarBotonAnterior }) => {
+  return (
+    <View style={styles.componentContainer}>
+      <TouchableHighlight
+        style={styles.backButton}
+        underlayColor="#0080ff"
+        onPress={mostrarBotonAnterior}
+      >
+       <>
+      <Ionicons name="arrow-back" size={24} color="black" style={styles.backButtonIcon} />
+      <Text style={styles.backButtonText}>Regresar</Text>
+    </>
+      </TouchableHighlight>
+      <MiguelDanli/>
+    </View>
+  );
+};
 
 
 const ScreenF = ({ text, mostrarBotonAnterior }) => {
@@ -580,8 +597,9 @@ const RestaurantesDanli = () => {
     { text: 'Pizza Hut', image: 'https://i.imgur.com/2Ncnxt6.png', screen: ScreenB },
     { text: "Chesters Chiken", image: 'https://i.imgur.com/60pifRi.jpg', screen: ScreenC },
     { text: 'Papa Johns', image: 'https://i.imgur.com/7JddAuC.jpg', screen: ScreenD },
+    { text: "Bar & Taqueria Miguel Cubano", image: 'https://i.imgur.com/X4HjSqn.jpg',  screen: ScreenE },
     { text: "Paradise Burger", image: 'https://i.imgur.com/tjoOVf2.jpg', screen: ScreenF },
-    { text: "Hot Wings", image: 'https://i.imgur.com/mXVErEd.jpg', screen: ScreenG },
+    { text: "Hot Wings", image: 'https://i.imgur.com/5g2ZlkU.jpg', screen: ScreenG },
     { text: "Sushi Totemo", image: 'https://i.imgur.com/9qIWZC5.jpg', screen: ScreenH },
     { text: "Mario Chávez", image: 'https://i.imgur.com/B9vkqJ7.jpg', screen: ScreenI },
     { text: "El Gaucho", image: 'https://i.imgur.com/MxcsjWk.jpg', screen: ScreenJ },
@@ -609,7 +627,7 @@ const RestaurantesDanli = () => {
     { text: "Servitipicos Alameda", image: 'https://i.imgur.com/aDbMNWE.jpg', screen: ScreenAA},
     { text: "Sport Jali", image: 'https://i.imgur.com/BBV6ynZ.jpg', screen: ScreenAB},
     { text: "Baleadas Yuli", image: 'https://i.imgur.com/AVc27Xo.jpg', screen: ScreenAC},
-    { text: "Paseo Pupuseria", image: 'https://i.imgur.com/YrrDG9H.jpg', screen: ScreenAF},
+    { text: "Paseo Pupuseria", image: 'https://i.imgur.com/164Tmgq.png', screen: ScreenAF},
    
   
   
@@ -622,7 +640,7 @@ const RestaurantesDanli = () => {
     { key: '3', value: 'Pizza Hut' },
     { key: '4', value: 'Chesters Chiken' },
     { key: '5', value: 'Papa Johns' },
-    { key: '6', value: 'Expresso Americano' },
+    { key: '6', value: 'Bar & Taqueria Miguel Cubano' },
     { key: '7', value: 'Paradise Burger' },
     { key: '8', value: 'Hot Wings' },
     { key: '9', value: 'Sushi Totemo' },

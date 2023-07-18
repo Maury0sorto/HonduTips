@@ -3,18 +3,7 @@ import { View, Text, Image, TouchableHighlight, StyleSheet, ScrollView,Touchable
 import { SelectList } from 'react-native-dropdown-select-list';
 import { Ionicons } from '@expo/vector-icons';
 
-import ExpressoAmericanoDanli from '../RestaurantesDanli/ExpressoAmericanoDanli';
-import CoffeRoadDanli from './cafeteriasDanli/CoffeRoadDanli';
-import CafetiniDanli from './cafeteriasDanli/CafetiniDanli';
-import OVCafeDanli from './cafeteriasDanli/OVCafeDanli';
-
-
-import LunaCafeDanli from './cafeteriasDanli/LunaCafeDanli';
-import OviserCafeDanli from './cafeteriasDanli/OviserCafeDanli';
-import CafeteandoDanli from './cafeteriasDanli/CafeteandoDanli';
-
- 
-
+import LaTorreDanli from '../RestaurantesDanli/LaTorreDanli';
 
 const ScreenA = ({ text, mostrarBotonAnterior }) => {
   return (
@@ -29,133 +18,7 @@ const ScreenA = ({ text, mostrarBotonAnterior }) => {
       <Text style={styles.backButtonText}>Regresar</Text>
     </>
     </TouchableHighlight>
-    <ExpressoAmericanoDanli/>
-   
-  </View>
-  );
-};
-const ScreenB = ({ text, mostrarBotonAnterior }) => {
-  return (
-    <View style={styles.componentContainer}>
-    <TouchableHighlight
-      style={styles.backButton}
-      underlayColor="#0080ff"
-      onPress={mostrarBotonAnterior} 
-    >
-       <>
-      <Ionicons name="arrow-back" size={24} color="black" style={styles.backButtonIcon} />
-      <Text style={styles.backButtonText}>Regresar</Text>
-    </>
-    </TouchableHighlight>
-    <CoffeRoadDanli/>
-   
-  </View>
-  );
-};
-const ScreenC = ({ text, mostrarBotonAnterior }) => {
-  return (
-    <View style={styles.componentContainer}>
-    <TouchableHighlight
-      style={styles.backButton}
-      underlayColor="#0080ff"
-      onPress={mostrarBotonAnterior} 
-    >
-       <>
-      <Ionicons name="arrow-back" size={24} color="black" style={styles.backButtonIcon} />
-      <Text style={styles.backButtonText}>Regresar</Text>
-    </>
-    </TouchableHighlight>
-    <CafetiniDanli/>
-   
-  </View>
-  );
-};
-const ScreenD = ({ text, mostrarBotonAnterior }) => {
-  return (
-    <View style={styles.componentContainer}>
-    <TouchableHighlight
-      style={styles.backButton}
-      underlayColor="#0080ff"
-      onPress={mostrarBotonAnterior} 
-    >
-       <>
-      <Ionicons name="arrow-back" size={24} color="black" style={styles.backButtonIcon} />
-      <Text style={styles.backButtonText}>Regresar</Text>
-    </>
-    </TouchableHighlight>
-    <OVCafeDanli/>
-   
-  </View>
-  );
-};
-const ScreenF = ({ text, mostrarBotonAnterior }) => {
-  return (
-    <View style={styles.componentContainer}>
-    <TouchableHighlight
-      style={styles.backButton}
-      underlayColor="#0080ff"
-      onPress={mostrarBotonAnterior} 
-    >
-       <>
-      <Ionicons name="arrow-back" size={24} color="black" style={styles.backButtonIcon} />
-      <Text style={styles.backButtonText}>Regresar</Text>
-    </>
-    </TouchableHighlight>
-    <LunaCafeDanli/>
-   
-  </View>
-  );
-};
-const ScreenG = ({ text, mostrarBotonAnterior }) => {
-  return (
-    <View style={styles.componentContainer}>
-    <TouchableHighlight
-      style={styles.backButton}
-      underlayColor="#0080ff"
-      onPress={mostrarBotonAnterior} 
-    >
-       <>
-      <Ionicons name="arrow-back" size={24} color="black" style={styles.backButtonIcon} />
-      <Text style={styles.backButtonText}>Regresar</Text>
-    </>
-    </TouchableHighlight>
-    <OviserCafeDanli/>
-   
-  </View>
-  );
-};
-const ScreenH = ({ text, mostrarBotonAnterior }) => {
-  return (
-    <View style={styles.componentContainer}>
-    <TouchableHighlight
-      style={styles.backButton}
-      underlayColor="#0080ff"
-      onPress={mostrarBotonAnterior} 
-    >
-       <>
-      <Ionicons name="arrow-back" size={24} color="black" style={styles.backButtonIcon} />
-      <Text style={styles.backButtonText}>Regresar</Text>
-    </>
-    </TouchableHighlight>
-    <ExpressoAmericanoDanli/>
-   
-  </View>
-  );
-};
-const ScreenI = ({ text, mostrarBotonAnterior }) => {
-  return (
-    <View style={styles.componentContainer}>
-    <TouchableHighlight
-      style={styles.backButton}
-      underlayColor="#0080ff"
-      onPress={mostrarBotonAnterior} 
-    >
-       <>
-      <Ionicons name="arrow-back" size={24} color="black" style={styles.backButtonIcon} />
-      <Text style={styles.backButtonText}>Regresar</Text>
-    </>
-    </TouchableHighlight>
-    <CafeteandoDanli/>
+    <LaTorreDanli/>
    
   </View>
   );
@@ -179,28 +42,13 @@ const FoodTrucksDanli = () => {
   };
  
   const buttons = [
-    { text: "Espresso Americano", image: 'https://i.imgur.com/FQTshUX.jpg',  screen: ScreenA },
-    { text: "Coffe Road", image: 'https://i.imgur.com/X4qyqXv.jpg',  screen: ScreenB},
-    { text: "Cafetini", image: 'https://i.imgur.com/XkpYni9.jpg',  screen: ScreenC},
-    { text: "Oscar Valladares Café", image: 'https://i.imgur.com/VUeIgCN.jpg',  screen: ScreenD},
-    { text: "Luna Café", image: 'https://i.imgur.com/ACbjVaF.jpg',  screen: ScreenF},
-    { text: "Ovi&Ser Café", image: 'https://i.imgur.com/J8qf7yF.jpg',  screen: ScreenG},
-    { text: "Don Esteban Café", image: 'https://i.imgur.com/zQbUVbO.jpg',  screen: ScreenH},
-    { text: "Cafeteando HN", image: 'https://i.imgur.com/SRMWRT7.jpg',  screen: ScreenI},
+    { text: "Torre Fuerte", image: 'https://i.imgur.com/mGzpEYL.jpg',  screen: ScreenA },
     
   ]; 
 
   const data2 = [
     { key: '1', value: 'Recomendados' },
-    { key: '2', value: "Espresso Americano" },
-    { key: '3', value: "Coffe Road" },
-    { key: '4', value: "Cafetini" },
-    { key: '5', value: "Oscar Valladares Café" },
-    { key: '7', value: "Luna Café" },
-    { key: '8', value: "Ovi&Ser Café" },
-    { key: '9', value: "Don Esteban Café" },
-    { key: '10', value: "Cafeteando HN" },
-   
+    { key: '2', value: "Torre Fuerte" },
     
   ];
 

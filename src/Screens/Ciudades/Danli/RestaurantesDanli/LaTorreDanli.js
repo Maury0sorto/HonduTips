@@ -30,7 +30,7 @@ export default function LaTorreDanli() {  // Este solo es el nomre que se usa pa
   };
   const images = [
     {
-      url: 'https://i.imgur.com/TrVtmLC.jpg',
+      url: 'https://i.imgur.com/KsjAz1a.jpg',
     },
   ];
 
@@ -121,7 +121,7 @@ export default function LaTorreDanli() {  // Este solo es el nomre que se usa pa
               }}
             >
                  <View style={styles.slide}>
-                <Image style={styles.image} source={{ uri: 'https://img.freepik.com/vector-premium/elemento-doodle-barra-carga-estilo-dibujo-linea-dibujada-mano-velocidad-descarga-lenta-estado-progreso-concepto-barra-carga-internet-ilustracion-vector-aislado_253081-823.jpg' }} />
+                <Image style={styles.image} source={{ uri: 'https://i.imgur.com/C6m9cfv.jpg?1' }} />
               </View>
   
             </Swiper>
@@ -139,7 +139,7 @@ export default function LaTorreDanli() {  // Este solo es el nomre que se usa pa
       <View style={styles.buttonContainer3}>
         <TouchableOpacity activeOpacity={1} onPress={toggleModal}>
           <Image
-            source={{ uri: 'https://i.imgur.com/TrVtmLC.jpg' }}
+            source={{ uri: 'https://i.imgur.com/KsjAz1a.jpg' }}
             style={styles.imagen}
             resizeMode="cover"
           />
@@ -175,7 +175,7 @@ export default function LaTorreDanli() {  // Este solo es el nomre que se usa pa
           <TouchableOpacity
             style={styles.button}
             onPress={() => {
-              Linking.openURL('#');
+              Linking.openURL('https://www.facebook.com/torrefuertecomidamexicana/?locale=hi_IN');
             }}
           >
              <Icon name="globe" size={20} color="white" style={styles.buttonIcon} />
@@ -184,7 +184,7 @@ export default function LaTorreDanli() {  // Este solo es el nomre que se usa pa
           <TouchableOpacity
             style={styles.button}
             onPress={() => {
-              Linking.openURL('tel:');
+              Linking.openURL('tel: +50495411071');
             }}
           >
              <Icon name="phone" size={20} color="white" style={styles.buttonIcon} />
