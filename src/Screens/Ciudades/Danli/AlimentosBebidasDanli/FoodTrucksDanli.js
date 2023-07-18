@@ -4,6 +4,7 @@ import { SelectList } from 'react-native-dropdown-select-list';
 import { Ionicons } from '@expo/vector-icons';
 
 import LaTorreDanli from '../RestaurantesDanli/LaTorreDanli';
+import HotDogDanli from './Trocos/HotDogDanli';
 
 const ScreenA = ({ text, mostrarBotonAnterior }) => {
   return (
@@ -19,6 +20,24 @@ const ScreenA = ({ text, mostrarBotonAnterior }) => {
     </>
     </TouchableHighlight>
     <LaTorreDanli/>
+   
+  </View>
+  );
+};
+const ScreenB = ({ text, mostrarBotonAnterior }) => {
+  return (
+    <View style={styles.componentContainer}>
+    <TouchableHighlight
+      style={styles.backButton}
+      underlayColor="#0080ff"
+      onPress={mostrarBotonAnterior} 
+    >
+       <>
+      <Ionicons name="arrow-back" size={24} color="black" style={styles.backButtonIcon} />
+      <Text style={styles.backButtonText}>Regresar</Text>
+    </>
+    </TouchableHighlight>
+    <HotDogDanli/>
    
   </View>
   );
@@ -43,12 +62,14 @@ const FoodTrucksDanli = () => {
  
   const buttons = [
     { text: "Torre Fuerte", image: 'https://i.imgur.com/mGzpEYL.jpg',  screen: ScreenA },
+    { text: "Hot Dogs El Chino", image: 'https://i.imgur.com/TVDsNk3.png',  screen: ScreenB },
     
   ]; 
 
   const data2 = [
     { key: '1', value: 'Recomendados' },
     { key: '2', value: "Torre Fuerte" },
+    { key: '3', value: "Hot Dogs El Chino" },
     
   ];
 
