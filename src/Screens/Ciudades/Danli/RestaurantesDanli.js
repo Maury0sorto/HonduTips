@@ -34,6 +34,7 @@ import SportJaliDanli from './RestaurantesDanli/SportJaliDanli';
 import BaleadasYuliDanli from './RestaurantesDanli/BaleadasYuli';
 import PaseoPupuseriaDanli from './RestaurantesDanli/PaseoPupuseriaDanli';
 import MiguelDanli from './AlimentosBebidasDanli/Bares/MiguelCubanoDanli';
+import GordoMexicanoDanli from './RestaurantesDanli/GordoMexicanoDanli';
 
 const ScreenA = ({ text, mostrarBotonAnterior }) => {
   return (
@@ -573,6 +574,23 @@ const ScreenAF= ({ text, mostrarBotonAnterior }) => {
     </View>
   );
 };
+const ScreenAG= ({ text, mostrarBotonAnterior }) => {
+  return (
+    <View style={styles.componentContainer}>
+      <TouchableHighlight
+        style={styles.backButton}
+        underlayColor="#0080ff"
+        onPress={mostrarBotonAnterior}
+      >
+       <>
+      <Ionicons name="arrow-back" size={24} color="black" style={styles.backButtonIcon} />
+      <Text style={styles.backButtonText}>Regresar</Text>
+    </>
+      </TouchableHighlight>
+      <GordoMexicanoDanli/>
+    </View>
+  );
+};
 
 const RestaurantesDanli = () => {
   const [componenteVisible, setComponenteVisible] = useState(null);
@@ -628,6 +646,7 @@ const RestaurantesDanli = () => {
     { text: "Sport Jali", image: 'https://i.imgur.com/BBV6ynZ.jpg', screen: ScreenAB},
     { text: "Baleadas Yuli", image: 'https://i.imgur.com/AVc27Xo.jpg', screen: ScreenAC},
     { text: "Paseo Pupuseria", image: 'https://i.imgur.com/164Tmgq.png', screen: ScreenAF},
+    { text: "El Gordo Mexican Food", image: 'https://i.imgur.com/jv52iF2.jpg', screen: ScreenAG},
    
   
   
@@ -666,7 +685,7 @@ const RestaurantesDanli = () => {
     { key: '29', value: 'Servitipicos Alameda' },
     { key: '30', value: 'Sport Jali' },
     { key: '31', value: 'Baleadas Yuli' },
-    { key: '32', value: 'Torre Fuerte' },
+    { key: '32', value: 'El Gordo Mexican Food' },
     { key: '33', value: 'Paseo Pupuseria' },
     
   ];
