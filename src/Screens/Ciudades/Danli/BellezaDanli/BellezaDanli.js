@@ -39,7 +39,7 @@ const BellezaDanli = () => {
   const handleButtonPress = (text) => {
     // Configura la navegación a las pantallas correspondientes según el texto del botón
     if (text === 'Salones de Belleza') {
-      navigation.navigate('Lubricentros Danlí');
+      navigation.navigate('Salon de Bellaza Danlí');
     }  
     else if (text === 'Barberias') {
       navigation.navigate('Barberias Danlí');
