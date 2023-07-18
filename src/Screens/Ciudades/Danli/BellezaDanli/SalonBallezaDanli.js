@@ -181,8 +181,8 @@ const SalonBellezaDanli = () => {
   };
 
   const buttons = [
-    { text: "Gudo's Barber Shop", image: 'https://i.imgur.com/FutdjTV.jpg',  screen: ScreenA },
-    { text: 'Barberia Millenium', image: 'https://i.imgur.com/LgXdoSo.jpg', screen: ScreenB },
+    { text: "Sala De Belleza Ibeth", image: 'https://i.imgur.com/YrrDG9H.jpg',  screen: ScreenA },
+    { text: 'Ashley Nails', image: 'https://i.imgur.com/YrrDG9H.jpg', screen: ScreenB },
     { text: 'Barberia Leody', image: 'https://i.imgur.com/YrrDG9H.jpg', screen: ScreenC },
     { text: 'Mateos Barber Shop', image: 'https://i.imgur.com/YrrDG9H.jpg', screen: ScreenD },
     { text: 'Barberia Tu Imagen', image: 'https://i.imgur.com/YrrDG9H.jpg', screen: ScreenE },
@@ -194,8 +194,8 @@ const SalonBellezaDanli = () => {
 
   const data2 = [
     { key: '1', value: 'Recomendadas' },
-    { key: '2', value: "Gudo's Barber Shop" },
-    { key: '3', value: 'Barberia Millenium' },
+    { key: '2', value: "Sala De Belleza Ibeth" },
+    { key: '3', value: 'Ashley Nails' },
     { key: '4', value: 'Barberia Leody' },
     { key: '5', value: 'Mateos Barber Shop' },
     { key: '6', value: 'Barberia Erick Glamur' },
