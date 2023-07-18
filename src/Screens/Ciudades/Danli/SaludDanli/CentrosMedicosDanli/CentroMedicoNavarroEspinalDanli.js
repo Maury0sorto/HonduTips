@@ -80,12 +80,14 @@ export default function CentroMedicoNavarroEspinalDanli() {
                 dotActiveStyle: { backgroundColor: "red" },
               }}
             >
-              <View style={styles.slide}>
-                <Image style={styles.image} source={{ uri: 'https://www.centromedicoallende.com.mx/images/463516-centro-medico-o-couto-banner.jpg?crc=453963139' }} />
+
+                <View style={styles.slide}>
+                <Image style={styles.image} source={{ uri: 'https://i.imgur.com/akcKF1m.png' }} />
               </View>
               <View style={styles.slide}>
-                <Image style={styles.image} source={{ uri: 'https://media.istockphoto.com/id/954802966/es/foto/fotos-de-cuidado-de-la-salud.jpg?s=612x612&w=0&k=20&c=_LxrDX5x80whOA-3OTyqWfwpJ2wrf1VBteJykVg1jJk=' }} />
+                <Image style={styles.image} source={{ uri: 'https://i.imgur.com/5PSrwTN.png' }} />
               </View>
+             
             </Swiper>
           </View>
         </View>

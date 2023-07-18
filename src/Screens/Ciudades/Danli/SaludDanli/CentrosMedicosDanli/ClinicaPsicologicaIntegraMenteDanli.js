@@ -81,10 +81,10 @@ export default function ClinicaPsicologicaIntegraMenteDanli() {
               }}
             >
               <View style={styles.slide}>
-                <Image style={styles.image} source={{ uri: 'https://www.centromedicoallende.com.mx/images/463516-centro-medico-o-couto-banner.jpg?crc=453963139' }} />
+                <Image style={styles.image} source={{ uri: 'https://i.imgur.com/4hxBuug.png' }} />
               </View>
               <View style={styles.slide}>
-                <Image style={styles.image} source={{ uri: 'https://media.istockphoto.com/id/954802966/es/foto/fotos-de-cuidado-de-la-salud.jpg?s=612x612&w=0&k=20&c=_LxrDX5x80whOA-3OTyqWfwpJ2wrf1VBteJykVg1jJk=' }} />
+                <Image style={styles.image} source={{ uri: 'https://i.imgur.com/62GfCCP.png' }} />
               </View>
             </Swiper>
           </View>
@@ -93,19 +93,15 @@ export default function ClinicaPsicologicaIntegraMenteDanli() {
 
         <Text style={styles.scheduleHeaderText}>HORARIOS DE ATENCION</Text>
       <View style={styles.scheduleContainer}>
+        
         <View style={styles.scheduleItem}>
           <Icon name="clock-o" size={20} color="#000" style={styles.scheduleIcon} />
-          <Text style={styles.scheduleText}>Lun-Ma: Cerrado </Text>
+          <Text style={styles.scheduleText}>Lun-Vie: 8:00 AM - 4:30 PM </Text>
         </View>
         
         <View style={styles.scheduleItem}>
           <Icon name="clock-o" size={20} color="#000" style={styles.scheduleIcon} />
-          <Text style={styles.scheduleText}>Mi-Ju: 8:00 AM - 4:00 PM </Text>
-        </View>
-        
-        <View style={styles.scheduleItem}>
-          <Icon name="clock-o" size={20} color="#000" style={styles.scheduleIcon} />
-          <Text style={styles.scheduleText}>Vie-Sáb: 8:00 AM - 4:00 PM </Text>
+          <Text style={styles.scheduleText}>Sáb: 8:00 AM - 2:00 PM </Text>
         </View>
         
         <View style={styles.scheduleItem}>
@@ -115,8 +111,16 @@ export default function ClinicaPsicologicaIntegraMenteDanli() {
       </View>
 
 
-        <View style={styles.buttonContainer}>
-       
+        <View style={styles.buttonContainer}> 
+        <TouchableOpacity
+            style={styles.button}
+            onPress={() => {
+              Linking.openURL('https://www.facebook.com/LigiaSosaIntegraMente/');
+            }}
+          >
+                  <Icon name="globe" size={20} color="white" style={styles.buttonIcon} />
+            <Text style={styles.buttonText}>Visitar</Text>
+          </TouchableOpacity>
           <TouchableOpacity
             style={styles.button}
             onPress={() => {

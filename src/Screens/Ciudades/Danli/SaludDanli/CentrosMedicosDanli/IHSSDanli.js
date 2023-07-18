@@ -81,10 +81,10 @@ export default function IHSSDanli() {
               }}
             >
               <View style={styles.slide}>
-                <Image style={styles.image} source={{ uri: 'https://scontent.fsap8-1.fna.fbcdn.net/v/t39.30808-6/352237373_152048061121918_6086942747711284487_n.jpg?stp=dst-jpg_p180x540&_nc_cat=103&ccb=1-7&_nc_sid=8bfeb9&_nc_ohc=59NVIwtosDQAX-my_rq&_nc_ht=scontent.fsap8-1.fna&oh=00_AfBDbW4QtdIx4PB57ZuqikZPr7lHIyIojlpmRsBavqM7Mw&oe=64A71A39' }} />
+                <Image style={styles.image} source={{ uri: 'https://i.imgur.com/m8qsiVH.png' }} />
               </View>
               <View style={styles.slide}>
-                <Image style={styles.image} source={{ uri: 'https://scontent.fsap8-1.fna.fbcdn.net/v/t39.30808-6/352237373_152048061121918_6086942747711284487_n.jpg?stp=dst-jpg_p180x540&_nc_cat=103&ccb=1-7&_nc_sid=8bfeb9&_nc_ohc=59NVIwtosDQAX-my_rq&_nc_ht=scontent.fsap8-1.fna&oh=00_AfBDbW4QtdIx4PB57ZuqikZPr7lHIyIojlpmRsBavqM7Mw&oe=64A71A39' }} />
+                <Image style={styles.image} source={{ uri: 'https://i.imgur.com/k1IWyNe.png' }} />
               </View>
             </Swiper>
           </View>

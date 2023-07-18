@@ -86,10 +86,10 @@ export default function HospitalGabrielaAlvaradoDanli() {
               }}
             >
               <View style={styles.slide}>
-                <Image style={styles.image} source={{ uri: 'https://scontent.fsap8-1.fna.fbcdn.net/v/t39.30808-6/281844572_536285517955676_3814969444590787433_n.jpg?_nc_cat=101&ccb=1-7&_nc_sid=e3f864&_nc_ohc=ZUQ21_R3dsEAX9Bm2yJ&_nc_ht=scontent.fsap8-1.fna&oh=00_AfBj4CQNK9B7jmANV3pXZwXnQ2iFxIIQ0xxlBNMX695qbA&oe=64A7169C' }} />
+                <Image style={styles.image} source={{ uri: 'https://i.imgur.com/OdDcJv0.png' }} />
               </View>
               <View style={styles.slide}>
-                <Image style={styles.image} source={{ uri: 'https://scontent.fsap8-1.fna.fbcdn.net/v/t1.6435-9/90374164_125152435735655_990955436016402432_n.jpg?_nc_cat=102&ccb=1-7&_nc_sid=8bfeb9&_nc_ohc=H-Ij-vXvf70AX-KgXhb&_nc_ht=scontent.fsap8-1.fna&oh=00_AfBDgrKzMMEU7hfuksLbLSkqBdgmHy3Sv57hH5EB64FP4g&oe=64CA7647' }} />
+                <Image style={styles.image} source={{ uri: 'https://i.imgur.com/3e56tm8.png' }} />
               </View>
             </Swiper>
           </View>

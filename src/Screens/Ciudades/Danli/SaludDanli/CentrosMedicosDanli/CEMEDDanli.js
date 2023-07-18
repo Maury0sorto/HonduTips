@@ -81,10 +81,10 @@ export default function CEMEDDanli() {
               }}
             >
               <View style={styles.slide}>
-                <Image style={styles.image} source={{ uri: 'https://www.centromedicoallende.com.mx/images/463516-centro-medico-o-couto-banner.jpg?crc=453963139' }} />
+                <Image style={styles.image} source={{ uri: 'https://i.imgur.com/tVgJ8ss.png' }} />
               </View>
               <View style={styles.slide}>
-                <Image style={styles.image} source={{ uri: 'https://media.istockphoto.com/id/954802966/es/foto/fotos-de-cuidado-de-la-salud.jpg?s=612x612&w=0&k=20&c=_LxrDX5x80whOA-3OTyqWfwpJ2wrf1VBteJykVg1jJk=' }} />
+                <Image style={styles.image} source={{ uri: 'https://i.imgur.com/tXKdvnN.png' }} />
               </View>
             </Swiper>
           </View>
@@ -116,8 +116,16 @@ export default function CEMEDDanli() {
 
 
         <View style={styles.buttonContainer}>
-       
-          <TouchableOpacity
+        <TouchableOpacity
+            style={styles.button}
+            onPress={() => {
+              Linking.openURL('https://www.facebook.com/cemed.hn');
+            }}
+          >
+                  <Icon name="globe" size={20} color="white" style={styles.buttonIcon} />
+            <Text style={styles.buttonText}>Visitar</Text>
+          </TouchableOpacity>
+          <TouchableOpacity 
             style={styles.button}
             onPress={() => {
               Linking.openURL('tel: 3378-3266');
