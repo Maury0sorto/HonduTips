@@ -166,7 +166,7 @@ const ScreenH = ({ text, mostrarBotonAnterior }) => {
 const SalonBellezaDanli = () => {
   const [componenteVisible, setComponenteVisible] = useState(null);
   const [mostrarSelectList, setMostrarSelectList] = useState(true); // Nuevo estado
-  const [selectedOption, setSelectedOption] = useState('Recomendadas');
+  const [selectedOption, setSelectedOption] = useState('Recomendados');
 
   const mostrarComponente = (text, screenComponent) => {
     setMostrarSelectList(false); // Ocultar SelectList
@@ -177,37 +177,37 @@ const SalonBellezaDanli = () => {
   const mostrarBotonAnterior = () => {
      setMostrarSelectList(true); // Mostrar SelectList nuevamente
   setComponenteVisible(null);
-  setSelectedOption("Recomendadas");
+  setSelectedOption("Recomendados");
   };
 
   const buttons = [
     { text: "Sala De Belleza Ibeth", image: 'https://i.imgur.com/YrrDG9H.jpg',  screen: ScreenA },
     { text: 'Ashley Nails', image: 'https://i.imgur.com/YrrDG9H.jpg', screen: ScreenB },
-    { text: 'Barberia Leody', image: 'https://i.imgur.com/YrrDG9H.jpg', screen: ScreenC },
-    { text: 'Mateos Barber Shop', image: 'https://i.imgur.com/YrrDG9H.jpg', screen: ScreenD },
-    { text: 'Barberia Tu Imagen', image: 'https://i.imgur.com/YrrDG9H.jpg', screen: ScreenE },
-    { text: 'Barberia Erick Glamur', image: 'https://i.imgur.com/YrrDG9H.jpg', screen: ScreenF },
-    { text: 'Shadai Master BarberShop', image: 'https://i.imgur.com/YrrDG9H.jpg', screen: ScreenG },
-    { text: 'Evan’s Barber Shop', image: 'https://i.imgur.com/YrrDG9H.jpg', screen: ScreenH },
+    { text: 'Sala De Belleza Allysson', image: 'https://i.imgur.com/YrrDG9H.jpg', screen: ScreenC },
+    { text: 'Sala De Belleza Radiance', image: 'https://i.imgur.com/YrrDG9H.jpg', screen: ScreenD },
+    { text: 'Beauty Center', image: 'https://i.imgur.com/YrrDG9H.jpg', screen: ScreenE },
+    { text: 'The beauty house', image: 'https://i.imgur.com/YrrDG9H.jpg', screen: ScreenF },
+    { text: "Alejandra's Salon", image: 'https://i.imgur.com/YrrDG9H.jpg', screen: ScreenG },
+    
   
   ];
 
   const data2 = [
-    { key: '1', value: 'Recomendadas' },
+    { key: '1', value: 'Recomendados' },
     { key: '2', value: "Sala De Belleza Ibeth" },
     { key: '3', value: 'Ashley Nails' },
-    { key: '4', value: 'Barberia Leody' },
-    { key: '5', value: 'Mateos Barber Shop' },
-    { key: '6', value: 'Barberia Erick Glamur' },
-    { key: '7', value: 'Shadai Master BarberShop' },
-    { key: '8', value: 'Evan’s Barber Shop' },
+    { key: '4', value: 'Sala De Belleza Allysson' },
+    { key: '5', value: 'Sala De Belleza Radiance' },
+    { key: '6', value: 'Beauty Center' },
+    { key: '7', value: 'The beauty house' },
+    { key: '8', value: "Alejandra's Salon" },
   ];
 
   const ComponenteVisible = componenteVisible?.screenComponent || null;
 
   const filteredButtons = buttons.filter(
     (button) =>
-      selectedOption === 'Recomendadas' || button.text.includes(selectedOption)
+      selectedOption === 'Recomendados' || button.text.includes(selectedOption)
   ); 
 
   
@@ -221,7 +221,7 @@ const SalonBellezaDanli = () => {
             setSelected={(val) => setSelectedOption(val)}
             data={data2}
             save="value"
-            placeholder="Recomendadas"
+            placeholder="Recomendados"
             noDataText="Gasolinera no disponible"
             searchPlaceholder="Busca tu barberia"
             onInputChange={(text) => mostrarComponente(text, null)}
