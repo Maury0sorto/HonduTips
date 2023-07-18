@@ -5,6 +5,7 @@ import { Ionicons } from '@expo/vector-icons';
 
 import LaTorreDanli from '../RestaurantesDanli/LaTorreDanli';
 import HotDogDanli from './Trocos/HotDogDanli';
+import LasColinasDanli from './Trocos/LasColinasDanli';
 
 const ScreenA = ({ text, mostrarBotonAnterior }) => {
   return (
@@ -42,6 +43,27 @@ const ScreenB = ({ text, mostrarBotonAnterior }) => {
   </View>
   );
 };
+const ScreenC = ({ text, mostrarBotonAnterior }) => {
+  return (
+    <View style={styles.componentContainer}>
+    <TouchableHighlight
+      style={styles.backButton}
+      underlayColor="#0080ff"
+      onPress={mostrarBotonAnterior} 
+    >
+       <>
+      <Ionicons name="arrow-back" size={24} color="black" style={styles.backButtonIcon} />
+      <Text style={styles.backButtonText}>Regresar</Text>
+    </>
+    </TouchableHighlight>
+    <LasColinasDanli/>
+   
+  </View>
+  );
+};
+
+
+
 
 const FoodTrucksDanli = () => {
   const [componenteVisible, setComponenteVisible] = useState(null);
@@ -63,6 +85,7 @@ const FoodTrucksDanli = () => {
   const buttons = [
     { text: "Torre Fuerte", image: 'https://i.imgur.com/mGzpEYL.jpg',  screen: ScreenA },
     { text: "Hot Dogs El Chino", image: 'https://i.imgur.com/TVDsNk3.png',  screen: ScreenB },
+    { text: "Las Colinas Food Truck Park", image: 'https://i.imgur.com/T3QGTTm.jpg',  screen: ScreenC },
     
   ]; 
 
@@ -70,6 +93,7 @@ const FoodTrucksDanli = () => {
     { key: '1', value: 'Recomendados' },
     { key: '2', value: "Torre Fuerte" },
     { key: '3', value: "Hot Dogs El Chino" },
+    { key: '4', value: "Las Colinas Food Truck Park" },
     
   ];
 
