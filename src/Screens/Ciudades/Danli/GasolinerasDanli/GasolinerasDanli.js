@@ -105,18 +105,18 @@ const GasolinerasDanli = () => {
   };
 
   const buttons = [
-    { text: "Gasolinera Uno", image: 'https://i.imgur.com/fe10m0d.png',  screen: ScreenA },
-    { text: 'Gasolinera Texaco', image: 'https://i.imgur.com/brQEGC8.png', screen: ScreenB },
-    { text: "Gasolinera Puma", image: 'https://i.imgur.com/WANLQnB.png', screen: ScreenC },
+    { text: "Gasolineras  Uno", image: 'https://i.imgur.com/fe10m0d.png',  screen: ScreenA },
+    { text: 'Gasolineras  Texaco', image: 'https://i.imgur.com/brQEGC8.png', screen: ScreenB },
+    { text: "Gasolineras  Puma", image: 'https://i.imgur.com/WANLQnB.png', screen: ScreenC },
    
 
   ];
 
   const data2 = [
     { key: '1', value: 'Recomendadas' },
-    { key: '2', value: "Gasolinera Uno" },
-    { key: '3', value: 'Gasolinera Texaco' },
-    { key: '4', value: 'Gasolinera Puma' },
+    { key: '2', value: "Gasolineras  Uno" },
+    { key: '3', value: 'Gasolineras  Texaco' },
+    { key: '4', value: 'Gasolineras  Puma' },
     
     
     
