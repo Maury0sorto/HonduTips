@@ -45,7 +45,7 @@ const HospedajesDanli = () => {
       navigation.navigate('Talleres en Danli');
     } 
     else if (text === 'Moteles') {
-      navigation.navigate('Moteles Danlí');
+      navigation.navigate('Moteles Danlí'); 
     } 
   };
 

@@ -4,9 +4,10 @@ import { SelectList } from 'react-native-dropdown-select-list';
 import { Ionicons } from '@expo/vector-icons';
 
 
-import AtlantidaDanli from './BancosDanli/AtlantidaDanli';
-import FicohsaDanli from './BancosDanli/FicohsaDanli';
-import BANTRABDanli from './BancosDanli/BANTRABDanli';
+import FinancieraFincaDanli from './FinancierasDanli/FinancieraFincaDanli';
+import FinancieraIDHDanli from './FinancierasDanli/FinancieraIDHDanli';
+import FinancieraCofisaDanli from './FinancierasDanli/FinancieraCofisaDanli';
+
 import BancoOccidenteDanli from './BancosDanli/BancoOccidenteDanli';
 import BancoProamericaDanli from './BancosDanli/BancoProamericaDanli';
 import BanPaisDanli from './BancosDanli/BanPaisDanli';
@@ -35,7 +36,7 @@ const ScreenA = ({ text, mostrarBotonAnterior }) => {
     </>
        
       </TouchableHighlight>
-      <AtlantidaDanli/>
+      <FinancieraFincaDanli/>
    
     </View>
   );
@@ -54,7 +55,7 @@ const ScreenB = ({ text, mostrarBotonAnterior }) => {
       <Text style={styles.backButtonText}>Regresar</Text>
     </>
       </TouchableHighlight>
-      <FicohsaDanli/>
+      <FinancieraIDHDanli/>
      
     </View>
   );
@@ -73,7 +74,7 @@ const ScreenC = ({ text, mostrarBotonAnterior }) => {
       <Text style={styles.backButtonText}>Regresar</Text>
     </>
       </TouchableHighlight>
-      <BancoOccidenteDanli/>
+      <FinancieraCofisaDanli/>
     </View>
   );
 };
@@ -270,17 +271,17 @@ const FinancierasDanli = () => {
   };
 
   const buttons = [
-    { text: 'Financiera Finca', image: 'https://i.imgur.com/gIjE37h.png',  screen: ScreenA },
+    { text: 'Financiera FINCA', image: 'https://i.imgur.com/gIjE37h.png',  screen: ScreenA },
     { text: 'Financiera IDH', image: 'https://i.imgur.com/BHJ73wn.png', screen: ScreenB },
-    { text: 'Cofisa', image: 'https://i.imgur.com/6YAaNju.png', screen: ScreenC },
+    { text: 'Financiera COFISA', image: 'https://i.imgur.com/6YAaNju.png', screen: ScreenC },
   
   ];
 
   const data2 = [
     { key: '1', value: 'Recomendados' },
-    { key: '2', value: 'Financiera Finca' },
+    { key: '2', value: 'Financiera FINCA' },
     { key: '3', value: 'Financiera IDH' },
-    { key: '4', value: 'Cofisa' },
+    { key: '4', value: 'Financiera COFISA' },
     
   ];
 
