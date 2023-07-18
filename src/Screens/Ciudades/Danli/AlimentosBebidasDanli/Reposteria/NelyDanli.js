@@ -153,7 +153,11 @@ export default function NelyDanlu() {  // Este solo es el nomre que se usa para 
       <View style={styles.scheduleContainer}>
       <View style={styles.scheduleItem}>
           <Icon name="clock-o" size={20} color="#000" style={styles.scheduleIcon} />
-          <Text style={styles.scheduleText}>Lun-Dom: 6:45 AM - 8:00 PM</Text>
+          <Text style={styles.scheduleText}>Lun-Sab: 8:00 AM - 7:00 PM</Text>
+        </View>
+        <View style={styles.scheduleItem}>
+          <Icon name="clock-o" size={20} color="#000" style={styles.scheduleIcon} />
+          <Text style={styles.scheduleText}>Dom: Cerrado</Text>
         </View>
       </View>
 
