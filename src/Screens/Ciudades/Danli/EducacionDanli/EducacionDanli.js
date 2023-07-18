@@ -46,10 +46,10 @@ const EduacionDanli = () => {
       navigation.navigate('Escuelas Danlí');
     } 
     else if (text === 'Colegios') {
-      navigation.navigate('Moteles Danlí');
+      navigation.navigate('Colegios Danlí');
     } 
     else if (text === 'Universidades') {
-        navigation.navigate('Moteles Danlí');
+        navigation.navigate('Universidades Danlí');
       } 
   };
 

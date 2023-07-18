@@ -77,6 +77,7 @@ const EscuelasDanli = () => {
     { text: 'Instituto Departamental de Oriente', image: 'https://i.imgur.com/YrrDG9H.jpg', screen: ScreenB },
     { text: 'Esc. Ren. Guia Tecnica', image: 'https://i.imgur.com/YrrDG9H.jpg', screen: ScreenB },
     { text: 'Escuela Manuel Adalid y Gamero', image: 'https://i.imgur.com/YrrDG9H.jpg', screen: ScreenB },
+    { text: "The Children's World School", image: 'https://i.imgur.com/YrrDG9H.jpg', screen: ScreenB },
   ];
 
   const data2 = [
@@ -86,6 +87,7 @@ const EscuelasDanli = () => {
     { key: '4', value: 'Instituto Departamental de Oriente' },
     { key: '5', value: 'Esc. Ren. Guia Tecnica' },
     { key: '6', value: 'Escuela Manuel Adalid y Gamero' },
+    { key: '7', value: "The Children's World School" },
     
     
     
