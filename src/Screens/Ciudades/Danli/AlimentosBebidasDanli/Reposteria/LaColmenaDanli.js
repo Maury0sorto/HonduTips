@@ -9,17 +9,12 @@ import ImageViewer from 'react-native-image-zoom-viewer';
 // INICIO DE PARA PONER PINES DENTRO DEL MAPA 
 const locationsData = [
   {
-    title: "Repostería Nely",
-    
-    latitude:     14.031202143590747,      
-    longitude:  -86.56521876130655,
+    title: "Repostería La Colmena",
+     
+    latitude:     14.031179186104787,   
+    longitude:  -86.57035478291148,
   },
-  {
-    title: "Repostería Nely Uniplaza",
-    
-    latitude:     14.027854728993482,      
-    longitude:   -86.57920717978509,
-  },
+  
   // Agrega más ubicaciones aquí si lo deseas
 ];
 // FIN DE FUNCIO  DE PARA PONER PINES DENTRO DEL MAPA 
@@ -27,7 +22,7 @@ const locationsData = [
 
 
 
-export default function NelyDanlu() {  // Este solo es el nomre que se usa para importar esta screen dentro de otro o mandar a llamar
+export default function ColmenaDanli() {  // Este solo es el nomre que se usa para importar esta screen dentro de otro o mandar a llamar
 
   // INICIO DE CODIGO PARA AGREGAR BOTONCITO CON MENU 
   const [modalVisible, setModalVisible] = useState(false);
@@ -36,7 +31,7 @@ export default function NelyDanlu() {  // Este solo es el nomre que se usa para 
   };
   const images = [
     {
-      url: 'https://i.imgur.com/8w8joRz.jpg',
+      url: 'https://i.imgur.com/g1h0zzl.png',
     },
   ];
 
@@ -49,8 +44,8 @@ export default function NelyDanlu() {  // Este solo es el nomre que se usa para 
   const mapRef = useRef(null);
   const initialRegion = {
     
-    latitude:     14.031202143590747,       
-    longitude: -86.56521876130655,
+    latitude:     14.031179186104787,    
+    longitude: -86.57035478291148,
     latitudeDelta: 0.03,    //ENTRE NUMEROS MAS GRANDES MAS ZOOM DE LA VISTIA INICIAL DEL MAPA
     longitudeDelta: 0.03,  //ENTRE NUMEROS MAS GRANDES MAS ZOOM DE LA VISTIA INICIAL DEL MAPA
   };
@@ -115,7 +110,7 @@ export default function NelyDanlu() {  // Este solo es el nomre que se usa para 
   return (
     <ScrollView>
       <View style={styles.container}>
-        <Text style={styles.title}>Repostería Nely</Text>
+        <Text style={styles.title}>Repostería La Colmena</Text>
         <View style={styles.containerSwipers}>
           <View style={styles.swiperContainer}>
             <Swiper
@@ -127,10 +122,10 @@ export default function NelyDanlu() {  // Este solo es el nomre que se usa para 
               }}
             >
                  <View style={styles.slide}>
-                <Image style={styles.image} source={{ uri: 'https://i.imgur.com/Vpf0FJa.jpg' }} />
+                <Image style={styles.image} source={{ uri: 'https://i.imgur.com/uoYRPH0.jpg' }} />
               </View>
               <View style={styles.slide}>
-                <Image style={styles.image} source={{ uri: 'https://i.imgur.com/ngJ3Spd.png' }} />
+                <Image style={styles.image} source={{ uri: 'https://i.imgur.com/Xru3HCv.png' }} />
               </View>
   
             </Swiper>
@@ -148,7 +143,7 @@ export default function NelyDanlu() {  // Este solo es el nomre que se usa para 
       <View style={styles.buttonContainer3}>
         <TouchableOpacity activeOpacity={1} onPress={toggleModal}>
           <Image
-            source={{ uri: 'https://i.imgur.com/8w8joRz.jpg' }}
+            source={{ uri: 'https://i.imgur.com/g1h0zzl.png' }}
             style={styles.imagen}
             resizeMode="cover"
           />
@@ -159,7 +154,7 @@ export default function NelyDanlu() {  // Este solo es el nomre que se usa para 
       <View style={styles.scheduleContainer}>
       <View style={styles.scheduleItem}>
           <Icon name="clock-o" size={20} color="#000" style={styles.scheduleIcon} />
-          <Text style={styles.scheduleText}>Lun-Sab: 8:00 AM - 7:00 PM</Text>
+          <Text style={styles.scheduleText}>Lun-Sab: 6:00 AM - 7:00 PM</Text>
         </View>
         <View style={styles.scheduleItem}>
           <Icon name="clock-o" size={20} color="#000" style={styles.scheduleIcon} />
@@ -185,19 +180,11 @@ export default function NelyDanlu() {  // Este solo es el nomre que se usa para 
 
 
         <View style={styles.buttonContainer}>
+          
           <TouchableOpacity
             style={styles.button}
             onPress={() => {
-              Linking.openURL('https://www.facebook.com/profile.php?id=100063908022637');
-            }}
-          >
-             <Icon name="globe" size={20} color="white" style={styles.buttonIcon} />
-            <Text style={styles.buttonText}>Sitio Web</Text>
-          </TouchableOpacity>
-          <TouchableOpacity
-            style={styles.button}
-            onPress={() => {
-              Linking.openURL('tel: +50432829888');
+              Linking.openURL('tel: +50496455417');
             }}
           >
              <Icon name="phone" size={20} color="white" style={styles.buttonIcon} />

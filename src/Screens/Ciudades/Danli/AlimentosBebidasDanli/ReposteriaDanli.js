@@ -4,6 +4,8 @@ import { SelectList } from 'react-native-dropdown-select-list';
 import { Ionicons } from '@expo/vector-icons';
 
 import NelyDanlu from './Reposteria/NelyDanli';
+import ColmenaDanli from './Reposteria/LaColmenaDanli';
+import SaritaDanli from './Reposteria/SaritaDanli';
 
 const ScreenA = ({ text, mostrarBotonAnterior }) => {
   return (
@@ -19,6 +21,42 @@ const ScreenA = ({ text, mostrarBotonAnterior }) => {
     </>
     </TouchableHighlight>
     <NelyDanlu/>
+   
+  </View>
+  );
+};
+const ScreenB = ({ text, mostrarBotonAnterior }) => {
+  return (
+    <View style={styles.componentContainer}>
+    <TouchableHighlight
+      style={styles.backButton}
+      underlayColor="#0080ff"
+      onPress={mostrarBotonAnterior} 
+    >
+       <>
+      <Ionicons name="arrow-back" size={24} color="black" style={styles.backButtonIcon} />
+      <Text style={styles.backButtonText}>Regresar</Text>
+    </>
+    </TouchableHighlight>
+    <ColmenaDanli/>
+   
+  </View>
+  );
+};
+const ScreenC = ({ text, mostrarBotonAnterior }) => {
+  return (
+    <View style={styles.componentContainer}>
+    <TouchableHighlight
+      style={styles.backButton}
+      underlayColor="#0080ff"
+      onPress={mostrarBotonAnterior} 
+    >
+       <>
+      <Ionicons name="arrow-back" size={24} color="black" style={styles.backButtonIcon} />
+      <Text style={styles.backButtonText}>Regresar</Text>
+    </>
+    </TouchableHighlight>
+    <SaritaDanli/>
    
   </View>
   );
@@ -43,12 +81,16 @@ const ReposteriaDanli = () => {
  
   const buttons = [
     { text: "Repostería Nely", image: 'https://i.imgur.com/CoA5cuh.jpg',  screen: ScreenA },
+    { text: "Repostería La Colmena", image: 'https://i.imgur.com/GprZneS.png',  screen: ScreenB },
+    { text: "Sarita", image: 'https://i.imgur.com/L2FDsRk.png',  screen: ScreenC },
     
   ]; 
 
   const data2 = [
     { key: '1', value: 'Recomendados' },
     { key: '2', value: "Repostería Nely" },
+    { key: '3', value: "Repostería La Colmena" },
+    { key: '4', value: "Sarita" },
     
   ];
 

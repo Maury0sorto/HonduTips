@@ -9,16 +9,22 @@ import ImageViewer from 'react-native-image-zoom-viewer';
 // INICIO DE PARA PONER PINES DENTRO DEL MAPA 
 const locationsData = [
   {
-    title: "Repostería Nely",
+    title: "Sarita",
     
-    latitude:     14.031202143590747,      
-    longitude:  -86.56521876130655,
+    latitude:     14.028792415677467,      
+    longitude:  -86.57892697314044,
   },
   {
-    title: "Repostería Nely Uniplaza",
+    title: "Sarita Uniplaza",
     
-    latitude:     14.027854728993482,      
-    longitude:   -86.57920717978509,
+    latitude:     14.027546325550746,      
+    longitude:   -86.57900477712307,
+  },
+  {
+    title: "Sarita Las Colinas",
+    
+    latitude:     14.015373074870974,       
+    longitude:   -86.57065527255592,
   },
   // Agrega más ubicaciones aquí si lo deseas
 ];
@@ -27,7 +33,7 @@ const locationsData = [
 
 
 
-export default function NelyDanlu() {  // Este solo es el nomre que se usa para importar esta screen dentro de otro o mandar a llamar
+export default function SaritaDanli() {  // Este solo es el nomre que se usa para importar esta screen dentro de otro o mandar a llamar
 
   // INICIO DE CODIGO PARA AGREGAR BOTONCITO CON MENU 
   const [modalVisible, setModalVisible] = useState(false);
@@ -36,7 +42,7 @@ export default function NelyDanlu() {  // Este solo es el nomre que se usa para 
   };
   const images = [
     {
-      url: 'https://i.imgur.com/8w8joRz.jpg',
+      url: 'https://i.imgur.com/nChlFAL.jpg',
     },
   ];
 
@@ -115,7 +121,7 @@ export default function NelyDanlu() {  // Este solo es el nomre que se usa para 
   return (
     <ScrollView>
       <View style={styles.container}>
-        <Text style={styles.title}>Repostería Nely</Text>
+        <Text style={styles.title}>Sarita</Text>
         <View style={styles.containerSwipers}>
           <View style={styles.swiperContainer}>
             <Swiper
@@ -127,10 +133,10 @@ export default function NelyDanlu() {  // Este solo es el nomre que se usa para 
               }}
             >
                  <View style={styles.slide}>
-                <Image style={styles.image} source={{ uri: 'https://i.imgur.com/Vpf0FJa.jpg' }} />
+                <Image style={styles.image} source={{ uri: 'https://i.imgur.com/ant9r4q.png' }} />
               </View>
               <View style={styles.slide}>
-                <Image style={styles.image} source={{ uri: 'https://i.imgur.com/ngJ3Spd.png' }} />
+                <Image style={styles.image} source={{ uri: 'https://i.imgur.com/sBc6lfW.png' }} />
               </View>
   
             </Swiper>
@@ -148,7 +154,7 @@ export default function NelyDanlu() {  // Este solo es el nomre que se usa para 
       <View style={styles.buttonContainer3}>
         <TouchableOpacity activeOpacity={1} onPress={toggleModal}>
           <Image
-            source={{ uri: 'https://i.imgur.com/8w8joRz.jpg' }}
+            source={{ uri: 'https://i.imgur.com/nChlFAL.jpg' }}
             style={styles.imagen}
             resizeMode="cover"
           />
@@ -159,11 +165,7 @@ export default function NelyDanlu() {  // Este solo es el nomre que se usa para 
       <View style={styles.scheduleContainer}>
       <View style={styles.scheduleItem}>
           <Icon name="clock-o" size={20} color="#000" style={styles.scheduleIcon} />
-          <Text style={styles.scheduleText}>Lun-Sab: 8:00 AM - 7:00 PM</Text>
-        </View>
-        <View style={styles.scheduleItem}>
-          <Icon name="clock-o" size={20} color="#000" style={styles.scheduleIcon} />
-          <Text style={styles.scheduleText}>Dom: Cerrado</Text>
+          <Text style={styles.scheduleText}>Lun-Dom: 8:00 AM - 7:00 PM</Text>
         </View>
       </View>
 
