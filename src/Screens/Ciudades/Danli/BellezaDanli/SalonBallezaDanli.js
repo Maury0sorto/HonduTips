@@ -4,14 +4,14 @@ import { SelectList } from 'react-native-dropdown-select-list';
 import { Ionicons } from '@expo/vector-icons';
 
 
-import BarberiaGudosDanli from './BarberiaGudosDanli';
-import BarberiaMileniumDanli from './BarberiaMileniumDanli';
-import BarberiaLeody from './BarberiaLeodyDanli';
-import MateosBarberShop from  './MateosBarberShopDanli';
-import BarberiaTuImagenDanli from './BarberiaTuImagenDanli';
-import BarberiaErickGlamurDanli from './BarberiaErickGlamurDanli';
-import ShadaiMasterBarberShopDanli from './ShadaiMasterBarberShopDanli';
-import EvansBarberShopDanli from './EvansBarberShopDanli';
+import BarberiaGudosDanli from './BarberiasDanli/BarberiaGudosDanli';
+import BarberiaMileniumDanli from './BarberiasDanli/BarberiaMileniumDanli';
+import BarberiaLeody from './BarberiasDanli/BarberiaLeodyDanli';
+import MateosBarberShop from  './BarberiasDanli/MateosBarberShopDanli';
+import BarberiaTuImagenDanli from './BarberiasDanli/BarberiaTuImagenDanli';
+import BarberiaErickGlamurDanli from './BarberiasDanli/BarberiaErickGlamurDanli';
+import ShadaiMasterBarberShopDanli from './BarberiasDanli/ShadaiMasterBarberShopDanli';
+import EvansBarberShopDanli from './BarberiasDanli/EvansBarberShopDanli';
 
 const ScreenA = ({ text, mostrarBotonAnterior }) => {
   return (
@@ -163,7 +163,7 @@ const ScreenH = ({ text, mostrarBotonAnterior }) => {
 
 
 
-const BarberiasDanli = () => {
+const SalonBellezaDanli = () => {
   const [componenteVisible, setComponenteVisible] = useState(null);
   const [mostrarSelectList, setMostrarSelectList] = useState(true); // Nuevo estado
   const [selectedOption, setSelectedOption] = useState('Recomendadas');
@@ -344,4 +344,4 @@ const styles = StyleSheet.create({
   },
 });
 
-export default BarberiasDanli;
+export default SalonBellezaDanli;
