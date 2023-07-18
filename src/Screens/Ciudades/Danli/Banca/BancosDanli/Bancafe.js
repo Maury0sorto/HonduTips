@@ -6,21 +6,14 @@ import Swiper from "react-native-web-swiper";
 
 const locationsData = [
   {
-    title: 'Bancafe',
-    description: 'Descripción de Tegucigalpa',
-    latitude: 14.034589153046227,
-    longitude: -86.56844081476235,
-  },
-  {
-    title: 'Bancafe',
-    description: 'Descripción de Tegucigalpa',
+    title: 'BANHCAFE',
     latitude: 14.034589153046227,
     longitude: -86.56844081476235,
   },
   // Agrega más ubicaciones aquí si lo deseas
 ];
 
-export default function Bancafe() {
+export default function BANHCAFE() {
   const mapRef = useRef(null);
   const initialRegion = {
     latitude: 14.034589153046227,
@@ -74,7 +67,7 @@ export default function Bancafe() {
   return (
     <ScrollView>
       <View style={styles.container}>
-        <Text style={styles.title}>Banco Atlantida</Text>
+        <Text style={styles.title}>BANHCAFE</Text>
         <View style={styles.containerSwipers}>
           <View style={styles.swiperContainer}>
             <Swiper
