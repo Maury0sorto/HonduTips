@@ -35,6 +35,8 @@ import BaleadasYuliDanli from './RestaurantesDanli/BaleadasYuli';
 import PaseoPupuseriaDanli from './RestaurantesDanli/PaseoPupuseriaDanli';
 import MiguelDanli from './AlimentosBebidasDanli/Bares/MiguelCubanoDanli';
 import GordoMexicanoDanli from './RestaurantesDanli/GordoMexicanoDanli';
+import ChilangosDanli from './RestaurantesDanli/ChilangosDanli';
+import AsadosPolenchoDanli from './RestaurantesDanli/AsadosPolencho';
 
 const ScreenA = ({ text, mostrarBotonAnterior }) => {
   return (
@@ -591,6 +593,40 @@ const ScreenAG= ({ text, mostrarBotonAnterior }) => {
     </View>
   );
 };
+const ScreenAH= ({ text, mostrarBotonAnterior }) => {
+  return (
+    <View style={styles.componentContainer}>
+      <TouchableHighlight
+        style={styles.backButton}
+        underlayColor="#0080ff"
+        onPress={mostrarBotonAnterior}
+      >
+       <>
+      <Ionicons name="arrow-back" size={24} color="black" style={styles.backButtonIcon} />
+      <Text style={styles.backButtonText}>Regresar</Text>
+    </>
+      </TouchableHighlight>
+      <ChilangosDanli/>
+    </View>
+  );
+};
+const ScreenAI= ({ text, mostrarBotonAnterior }) => {
+  return (
+    <View style={styles.componentContainer}>
+      <TouchableHighlight
+        style={styles.backButton}
+        underlayColor="#0080ff"
+        onPress={mostrarBotonAnterior}
+      >
+       <>
+      <Ionicons name="arrow-back" size={24} color="black" style={styles.backButtonIcon} />
+      <Text style={styles.backButtonText}>Regresar</Text>
+    </>
+      </TouchableHighlight>
+      <AsadosPolenchoDanli/>
+    </View>
+  );
+};
 
 const RestaurantesDanli = () => {
   const [componenteVisible, setComponenteVisible] = useState(null);
@@ -647,6 +683,8 @@ const RestaurantesDanli = () => {
     { text: "Baleadas Yuli", image: 'https://i.imgur.com/AVc27Xo.jpg', screen: ScreenAC},
     { text: "Paseo Pupuseria", image: 'https://i.imgur.com/164Tmgq.png', screen: ScreenAF},
     { text: "El Gordo Mexican Food", image: 'https://i.imgur.com/jv52iF2.jpg', screen: ScreenAG},
+    { text: "Taqueria Chilango’s", image: 'https://i.imgur.com/L1f7IxU.jpg', screen: ScreenAH},
+    { text: "Asados Polencho", image: 'https://i.imgur.com/L1f7IxU.jpg', screen: ScreenAI},
    
   
   
@@ -687,6 +725,8 @@ const RestaurantesDanli = () => {
     { key: '31', value: 'Baleadas Yuli' },
     { key: '32', value: 'El Gordo Mexican Food' },
     { key: '33', value: 'Paseo Pupuseria' },
+    { key: '34', value: 'Taqueria Chilango’s' },
+    { key: '35', value: 'Asados Polencho' },
     
   ];
 
