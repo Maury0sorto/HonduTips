@@ -3,37 +3,30 @@ import { View, Text, Image, TouchableHighlight, StyleSheet, ScrollView,Touchable
 import { SelectList } from 'react-native-dropdown-select-list';
 import { Ionicons } from '@expo/vector-icons';
 
-
-
-import HotelMeLateBoutiqueDanli from './HotelesDanli/HotelMeLateBoutiqueDanli';
-import HotelCasaEncatadaDanli from './HotelesDanli/HotelCasaEncantadaDanli';
-import FamilyHotelDanli from './HotelesDanli/FamilyHotelDanli';
-import HotelPosadaLosArcosDanli from './HotelesDanli/HotelPosadaLosArcosDanli';
-import HotelLaEsperanzaDanli from './HotelesDanli/HotelLaEsperanzaDanli';
-import HotelApoloDanli from './HotelesDanli/HotelApoloDanli';
-import HotelGranadaDanli from './HotelesDanli/HotelGranadaDanli';
-import HotelClementinaDanli from './HotelesDanli/HotelClementinaDanli';
-import HotelLaGuadalupeDanli from './HotelesDanli/HotelGuadalupeDanli';
-import HotelVillaParaisoDanli from './HotelesDanli/HotelVillaParaisoDanli';
-
+ 
+import FarmaciaSimanDanli from '../SaludDanli/FarmaciasDanli/FarmaciaSimanDanli';
+import FarmaciaElAhorroDanli from '../SaludDanli/FarmaciasDanli/FarmaciaElAhorroDanli';
+import FarmacityDanli from '../SaludDanli/FarmaciasDanli/FarmaCityDanli';
+import FarmaciaKielsaDanli from '../SaludDanli/FarmaciasDanli/FarmaciaKielsaDanli';
+import FarmaFacilDanli from '../SaludDanli/FarmaciasDanli/FarmaFacilDanli';
+import FarmaRegisDanli from '../SaludDanli/FarmaciasDanli/FarmaciaRegisDanli';
 
 const ScreenA = ({ text, mostrarBotonAnterior }) => {
   return (
     <View style={styles.componentContainer}>
-      <TouchableHighlight
-        style={styles.backButton}
-        underlayColor="#FFFF"
-        onPress={mostrarBotonAnterior}
-      >
-         <>
+    <TouchableHighlight
+      style={styles.backButton}
+      underlayColor="#0080ff"
+      onPress={mostrarBotonAnterior}
+    >
+       <>
       <Ionicons name="arrow-back" size={24} color="black" style={styles.backButtonIcon} />
       <Text style={styles.backButtonText}>Regresar</Text>
     </>
-       
-      </TouchableHighlight>
-      <HotelMeLateBoutiqueDanli/>
+    </TouchableHighlight>
+    <FarmaciaSimanDanli/>
    
-    </View>
+  </View>
   );
 };
 
@@ -45,12 +38,12 @@ const ScreenB = ({ text, mostrarBotonAnterior }) => {
         underlayColor="#0080ff"
         onPress={mostrarBotonAnterior}
       >
-        <>
+         <>
       <Ionicons name="arrow-back" size={24} color="black" style={styles.backButtonIcon} />
       <Text style={styles.backButtonText}>Regresar</Text>
     </>
       </TouchableHighlight>
-      <HotelCasaEncatadaDanli/>
+      <FarmacityDanli/>
      
     </View>
   );
@@ -69,7 +62,7 @@ const ScreenC = ({ text, mostrarBotonAnterior }) => {
       <Text style={styles.backButtonText}>Regresar</Text>
     </>
       </TouchableHighlight>
-      <FamilyHotelDanli/>
+      <FarmaciaElAhorroDanli/>
     </View>
   );
 };
@@ -82,16 +75,15 @@ const ScreenD = ({ text, mostrarBotonAnterior }) => {
         underlayColor="#0080ff"
         onPress={mostrarBotonAnterior}
       >
-        <>
+         <>
       <Ionicons name="arrow-back" size={24} color="black" style={styles.backButtonIcon} />
       <Text style={styles.backButtonText}>Regresar</Text>
     </>
       </TouchableHighlight>
-      <HotelPosadaLosArcosDanli/>
+      <FarmaciaKielsaDanli/>
     </View>
   );
 };
-
 
 const ScreenE = ({ text, mostrarBotonAnterior }) => {
   return (
@@ -101,15 +93,16 @@ const ScreenE = ({ text, mostrarBotonAnterior }) => {
         underlayColor="#0080ff"
         onPress={mostrarBotonAnterior}
       >
-        <>
+         <>
       <Ionicons name="arrow-back" size={24} color="black" style={styles.backButtonIcon} />
       <Text style={styles.backButtonText}>Regresar</Text>
     </>
       </TouchableHighlight>
-      <HotelLaEsperanzaDanli/>
+      <FarmaFacilDanli/>
     </View>
   );
 };
+
 
 const ScreenF = ({ text, mostrarBotonAnterior }) => {
   return (
@@ -119,92 +112,19 @@ const ScreenF = ({ text, mostrarBotonAnterior }) => {
         underlayColor="#0080ff"
         onPress={mostrarBotonAnterior}
       >
-        <>
+         <>
       <Ionicons name="arrow-back" size={24} color="black" style={styles.backButtonIcon} />
       <Text style={styles.backButtonText}>Regresar</Text>
     </>
       </TouchableHighlight>
-      <HotelApoloDanli/>
-    </View>
-  );
-};
-
-const ScreenG = ({ text, mostrarBotonAnterior }) => {
-  return (
-    <View style={styles.componentContainer}>
-      <TouchableHighlight
-        style={styles.backButton}
-        underlayColor="#0080ff"
-        onPress={mostrarBotonAnterior}
-      >
-        <>
-      <Ionicons name="arrow-back" size={24} color="black" style={styles.backButtonIcon} />
-      <Text style={styles.backButtonText}>Regresar</Text>
-    </>
-      </TouchableHighlight>
-      <HotelGranadaDanli/>
-    </View>
-  );
-};
-
-const ScreenH = ({ text, mostrarBotonAnterior }) => {
-  return (
-    <View style={styles.componentContainer}>
-      <TouchableHighlight
-        style={styles.backButton}
-        underlayColor="#0080ff"
-        onPress={mostrarBotonAnterior}
-      >
-        <>
-      <Ionicons name="arrow-back" size={24} color="black" style={styles.backButtonIcon} />
-      <Text style={styles.backButtonText}>Regresar</Text>
-    </>
-      </TouchableHighlight>
-      <HotelClementinaDanli/>
-    </View>
-  );
-};
-
-const ScreenI = ({ text, mostrarBotonAnterior }) => {
-  return (
-    <View style={styles.componentContainer}>
-      <TouchableHighlight
-        style={styles.backButton}
-        underlayColor="#0080ff"
-        onPress={mostrarBotonAnterior}
-      >
-        <>
-      <Ionicons name="arrow-back" size={24} color="black" style={styles.backButtonIcon} />
-      <Text style={styles.backButtonText}>Regresar</Text>
-    </>
-      </TouchableHighlight>
-      <HotelLaGuadalupeDanli/>
-    </View>
-  );
-};
-
-
-const ScreenJ = ({ text, mostrarBotonAnterior }) => {
-  return (
-    <View style={styles.componentContainer}>
-      <TouchableHighlight
-        style={styles.backButton}
-        underlayColor="#0080ff"
-        onPress={mostrarBotonAnterior}
-      >
-        <>
-      <Ionicons name="arrow-back" size={24} color="black" style={styles.backButtonIcon} />
-      <Text style={styles.backButtonText}>Regresar</Text>
-    </>
-      </TouchableHighlight>
-      <HotelVillaParaisoDanli/>
+      <FarmaRegisDanli/>
     </View>
   );
 };
 
 
 
-const HotelesDanli = () => {
+const HostalesDanli = () => {
   const [componenteVisible, setComponenteVisible] = useState(null);
   const [mostrarSelectList, setMostrarSelectList] = useState(true); // Nuevo estado
   const [selectedOption, setSelectedOption] = useState('Recomendados');
@@ -222,34 +142,23 @@ const HotelesDanli = () => {
   };
 
   const buttons = [
-    { text: 'Hotel Granada', image: 'https://i.imgur.com/Mc9aTIy.jpg', screen: ScreenG },
-    { text: 'Hotel Clementina', image: 'https://i.imgur.com/lcYrbPb.jpg', screen: ScreenH },
-    { text: "Hotel Me Late Boutique", image: 'https://i.imgur.com/9HptOUw.jpg',  screen: ScreenA },
-    { text: 'Hotel Casa Encantada', image: 'https://i.imgur.com/sYu84sU.jpg', screen: ScreenB },
-    { text: 'Hotel Posada "Los Arcos"', image: 'https://i.imgur.com/LKC1e6A.jpg', screen: ScreenD },
-    { text: "Family Hotel", image: 'https://i.imgur.com/DPSvwix.png', screen: ScreenC },
-    { text: 'Hotel La Esperanza', image: 'https://i.imgur.com/YrrDG9H.jpg', screen: ScreenE },
-    { text: 'Hotel Apolo', image: 'https://i.imgur.com/YrrDG9H.jpg', screen: ScreenF },
-    { text: 'Hotel La Guadalupe', image: 'https://i.imgur.com/YrrDG9H.jpg', screen: ScreenI },
-    { text: 'Hotel Villa Paraiso', image: 'https://i.imgur.com/YrrDG9H.jpg', screen: ScreenJ },
-
+    { text: "Motel Rapid", image: 'https://i.imgur.com/yT6YGr8.png',  screen: ScreenA },
+    { text: 'Motel La Fuente', image: 'https://i.imgur.com/ns9mheB.png', screen: ScreenB },
+    { text: "Autohotel San Marquez", image: 'https://i.imgur.com/YrrDG9H.jpg', screen: ScreenC },
+    { text: 'Motel Oasis', image: 'https://i.imgur.com/GUEPg63.png', screen: ScreenD },
+   
 
   ];
 
   const data2 = [
     { key: '1', value: 'Recomendados' },
-    { key: '2', value: "Hotel Me Late Boutique" },
-    { key: '3', value: 'Hotel Casa Encantada' },
-    { key: '4', value: 'Family Hotel' },
-    { key: '5', value: 'Hotel Posada "Los Arcos"' },
-    { key: '6', value: 'Hotel La Esperanza' },
-    { key: '7', value: 'Hotel Apolo' },
-    { key: '8', value: 'Hotel Granada' },
-    { key: '9', value: 'Hotel Clementina' },
-    { key: '10', value: 'Hotel Guadalupe' },
-    { key: '11', value: 'Hotel Villa Paraiso' },
-   
-
+    { key: '2', value: "Motel Rapid" },
+    { key: '3', value: 'Motel La Fuente' },
+    { key: '4', value: 'Autohotel San Marquez' },
+    { key: '5', value: 'Motel Oasis' },
+ 
+    
+    
   ];
 
   const ComponenteVisible = componenteVisible?.screenComponent || null;
@@ -272,7 +181,7 @@ const HotelesDanli = () => {
             save="value"
             placeholder="Recomendados"
             noDataText="Restaurante no disponible"
-            searchPlaceholder="Busca tu hotel"
+            searchPlaceholder="Busca tu farmacia"
             onInputChange={(text) => mostrarComponente(text, null)}
           />
         </View>
@@ -381,6 +290,7 @@ const styles = StyleSheet.create({
     marginBottom: 10,
     marginTop: 20,
 
+    
     flexDirection: 'row',
     alignItems: 'center',
   },
@@ -392,4 +302,4 @@ const styles = StyleSheet.create({
   },
 });
 
-export default HotelesDanli;
+export default HostalesDanli;

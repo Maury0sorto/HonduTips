@@ -142,10 +142,10 @@ const MotelesDanli = () => {
   };
 
   const buttons = [
-    { text: "Motel Rapid", image: 'https://i.imgur.com/YrrDG9H.jpg',  screen: ScreenA },
-    { text: 'Motel la fuente', image: 'https://i.imgur.com/YrrDG9H.jpg', screen: ScreenB },
+    { text: "Motel Rapid", image: 'https://i.imgur.com/yT6YGr8.png',  screen: ScreenA },
+    { text: 'Motel La Fuente', image: 'https://i.imgur.com/ns9mheB.png', screen: ScreenB },
     { text: "Autohotel San Marquez", image: 'https://i.imgur.com/YrrDG9H.jpg', screen: ScreenC },
-    { text: 'Motel Oasis', image: 'https://i.imgur.com/YrrDG9H.jpg', screen: ScreenD },
+    { text: 'Motel Oasis', image: 'https://i.imgur.com/GUEPg63.png', screen: ScreenD },
    
 
   ];
@@ -153,7 +153,7 @@ const MotelesDanli = () => {
   const data2 = [
     { key: '1', value: 'Recomendados' },
     { key: '2', value: "Motel Rapid" },
-    { key: '3', value: 'Motel la fuente' },
+    { key: '3', value: 'Motel La Fuente' },
     { key: '4', value: 'Autohotel San Marquez' },
     { key: '5', value: 'Motel Oasis' },
  

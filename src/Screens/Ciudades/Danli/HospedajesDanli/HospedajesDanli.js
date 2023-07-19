@@ -42,7 +42,7 @@ const HospedajesDanli = () => {
       navigation.navigate('Hoteles Danlí');
     }  
     else if (text === 'Hospedajes') {
-      navigation.navigate('Talleres en Danli');
+      navigation.navigate('Hostales Danlí');
     } 
     else if (text === 'Moteles') {
       navigation.navigate('Moteles Danlí'); 
