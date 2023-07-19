@@ -4,12 +4,15 @@ import { SelectList } from 'react-native-dropdown-select-list';
 import { Ionicons } from '@expo/vector-icons';
 
  
-import FarmaciaSimanDanli from '../SaludDanli/FarmaciasDanli/FarmaciaSimanDanli';
-import FarmaciaElAhorroDanli from '../SaludDanli/FarmaciasDanli/FarmaciaElAhorroDanli';
-import FarmacityDanli from '../SaludDanli/FarmaciasDanli/FarmaCityDanli';
+
+import Estudio69Danli from './MotelesDanli/Estudio69Danli';
+import MotelRapidinDanli from './MotelesDanli/MotelRapidinDanli';
+import MotelLaFuenteDanli from './MotelesDanli/MotelLaFuenteDanli';
+import MotelOasisDanli from './MotelesDanli/MotelOasisDanli';
+import AutoHotelSanMarquezDanli from './MotelesDanli/AutoHotelSanMarquezDanli';
 import FarmaciaKielsaDanli from '../SaludDanli/FarmaciasDanli/FarmaciaKielsaDanli';
 import FarmaFacilDanli from '../SaludDanli/FarmaciasDanli/FarmaFacilDanli';
-import FarmaRegisDanli from '../SaludDanli/FarmaciasDanli/FarmaciaRegisDanli';
+
 
 const ScreenA = ({ text, mostrarBotonAnterior }) => {
   return (
@@ -24,7 +27,7 @@ const ScreenA = ({ text, mostrarBotonAnterior }) => {
       <Text style={styles.backButtonText}>Regresar</Text>
     </>
     </TouchableHighlight>
-    <FarmaciaSimanDanli/>
+    <MotelRapidinDanli/>
    
   </View>
   );
@@ -43,7 +46,7 @@ const ScreenB = ({ text, mostrarBotonAnterior }) => {
       <Text style={styles.backButtonText}>Regresar</Text>
     </>
       </TouchableHighlight>
-      <FarmacityDanli/>
+      <MotelLaFuenteDanli/>
      
     </View>
   );
@@ -62,7 +65,7 @@ const ScreenC = ({ text, mostrarBotonAnterior }) => {
       <Text style={styles.backButtonText}>Regresar</Text>
     </>
       </TouchableHighlight>
-      <FarmaciaElAhorroDanli/>
+      <AutoHotelSanMarquezDanli/>
     </View>
   );
 };
@@ -80,7 +83,7 @@ const ScreenD = ({ text, mostrarBotonAnterior }) => {
       <Text style={styles.backButtonText}>Regresar</Text>
     </>
       </TouchableHighlight>
-      <FarmaciaKielsaDanli/>
+      <MotelOasisDanli/>
     </View>
   );
 };
@@ -117,7 +120,7 @@ const ScreenF = ({ text, mostrarBotonAnterior }) => {
       <Text style={styles.backButtonText}>Regresar</Text>
     </>
       </TouchableHighlight>
-      <FarmaRegisDanli/>
+      <Estudio69Danli/>
     </View>
   );
 };
@@ -142,22 +145,24 @@ const MotelesDanli = () => {
   };
 
   const buttons = [
-    { text: "Motel Rapid", image: 'https://i.imgur.com/yT6YGr8.png',  screen: ScreenA },
+    { text: "RAPID-INN", image: 'https://i.imgur.com/yT6YGr8.png',  screen: ScreenA },
     { text: 'Motel La Fuente', image: 'https://i.imgur.com/ns9mheB.png', screen: ScreenB },
     { text: "Autohotel San Marquez", image: 'https://i.imgur.com/YrrDG9H.jpg', screen: ScreenC },
     { text: 'Motel Oasis', image: 'https://i.imgur.com/GUEPg63.png', screen: ScreenD },
+    { text: 'Estudio 69', image: 'https://i.imgur.com/PftJfgV.png', screen: ScreenF },
    
 
   ];
 
   const data2 = [
     { key: '1', value: 'Recomendados' },
-    { key: '2', value: "Motel Rapid" },
+    { key: '2', value: "RAPID-INN" },
     { key: '3', value: 'Motel La Fuente' },
     { key: '4', value: 'Autohotel San Marquez' },
     { key: '5', value: 'Motel Oasis' },
+    { key: '6', value: 'Estudio 69' },
  
-    
+     
     
   ];
 

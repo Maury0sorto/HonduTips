@@ -4,12 +4,12 @@ import { SelectList } from 'react-native-dropdown-select-list';
 import { Ionicons } from '@expo/vector-icons';
 
  
-import FarmaciaSimanDanli from '../SaludDanli/FarmaciasDanli/FarmaciaSimanDanli';
-import FarmaciaElAhorroDanli from '../SaludDanli/FarmaciasDanli/FarmaciaElAhorroDanli';
-import FarmacityDanli from '../SaludDanli/FarmaciasDanli/FarmaCityDanli';
-import FarmaciaKielsaDanli from '../SaludDanli/FarmaciasDanli/FarmaciaKielsaDanli';
-import FarmaFacilDanli from '../SaludDanli/FarmaciasDanli/FarmaFacilDanli';
-import FarmaRegisDanli from '../SaludDanli/FarmaciasDanli/FarmaciaRegisDanli';
+import LaCasonaDanli from './HostalesDanli/LaCasonaDanli';
+import HospedajeDynaDanli from './HostalesDanli/HospedajeDynaDanli';
+import HotelElCastilloDanli from './HostalesDanli/HotelElCastilloDanli';
+import HotelMilayFDanli from './HostalesDanli/HotelMilayFDanli';
+import HotelMarilynDanli from './HostalesDanli/HotelMarilynDanli';
+import HotelLaPosadaDeGraceDanli from './HostalesDanli/HotelLaPosadaDeGraceDanli';
 
 const ScreenA = ({ text, mostrarBotonAnterior }) => {
   return (
@@ -24,7 +24,7 @@ const ScreenA = ({ text, mostrarBotonAnterior }) => {
       <Text style={styles.backButtonText}>Regresar</Text>
     </>
     </TouchableHighlight>
-    <FarmaciaSimanDanli/>
+    <LaCasonaDanli/>
    
   </View>
   );
@@ -43,7 +43,7 @@ const ScreenB = ({ text, mostrarBotonAnterior }) => {
       <Text style={styles.backButtonText}>Regresar</Text>
     </>
       </TouchableHighlight>
-      <FarmacityDanli/>
+      <HospedajeDynaDanli/>
      
     </View>
   );
@@ -62,7 +62,7 @@ const ScreenC = ({ text, mostrarBotonAnterior }) => {
       <Text style={styles.backButtonText}>Regresar</Text>
     </>
       </TouchableHighlight>
-      <FarmaciaElAhorroDanli/>
+      <HotelElCastilloDanli/>
     </View>
   );
 };
@@ -80,7 +80,7 @@ const ScreenD = ({ text, mostrarBotonAnterior }) => {
       <Text style={styles.backButtonText}>Regresar</Text>
     </>
       </TouchableHighlight>
-      <FarmaciaKielsaDanli/>
+      <HotelMilayFDanli/>
     </View>
   );
 };
@@ -98,7 +98,7 @@ const ScreenE = ({ text, mostrarBotonAnterior }) => {
       <Text style={styles.backButtonText}>Regresar</Text>
     </>
       </TouchableHighlight>
-      <FarmaFacilDanli/>
+      <HotelMarilynDanli/>
     </View>
   );
 };
@@ -117,7 +117,7 @@ const ScreenF = ({ text, mostrarBotonAnterior }) => {
       <Text style={styles.backButtonText}>Regresar</Text>
     </>
       </TouchableHighlight>
-      <FarmaRegisDanli/>
+      <HotelLaPosadaDeGraceDanli/>
     </View>
   );
 };
@@ -142,21 +142,24 @@ const HostalesDanli = () => {
   };
 
   const buttons = [
-    { text: "Motel Rapid", image: 'https://i.imgur.com/yT6YGr8.png',  screen: ScreenA },
-    { text: 'Motel La Fuente', image: 'https://i.imgur.com/ns9mheB.png', screen: ScreenB },
-    { text: "Autohotel San Marquez", image: 'https://i.imgur.com/YrrDG9H.jpg', screen: ScreenC },
-    { text: 'Motel Oasis', image: 'https://i.imgur.com/GUEPg63.png', screen: ScreenD },
+    { text: "La Casona", image: 'https://i.imgur.com/Cjd5uU7.png',  screen: ScreenA },
+    { text: "Hospedaje Dyna", image: 'https://i.imgur.com/YrrDG9H.jpg', screen: ScreenB },
+    { text: 'El Castillo', image: 'https://i.imgur.com/YrrDG9H.jpg', screen: ScreenC },
+    { text: 'Hospedaje Milay F', image: 'https://i.imgur.com/YrrDG9H.jpg', screen: ScreenD },
+    { text: 'Hopedaje Marilyn', image: 'https://i.imgur.com/YrrDG9H.jpg', screen: ScreenE },
+    { text: 'La Posada de Grace', image: 'https://i.imgur.com/oucDc6b.png', screen: ScreenF },
    
 
   ];
 
   const data2 = [
     { key: '1', value: 'Recomendados' },
-    { key: '2', value: "Motel Rapid" },
-    { key: '3', value: 'Motel La Fuente' },
-    { key: '4', value: 'Autohotel San Marquez' },
-    { key: '5', value: 'Motel Oasis' },
- 
+    { key: '2', value: "La Casona" },
+    { key: '4', value: 'Hospedaje Dyna' },
+    { key: '5', value: 'El Castillo' },
+    { key: '6', value: 'Hospedaje Milay F' },
+    { key: '7', value: 'Hospedaje Marilyn' },
+    { key: '8', value: 'La Posada de Grace' },
     
     
   ];

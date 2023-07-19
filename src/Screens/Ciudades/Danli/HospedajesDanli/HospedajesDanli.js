@@ -15,7 +15,7 @@ const HospedajesDanli = () => {
   const [data, setData] = useState([
    
     { text: 'Hoteles', image: 'https://i.imgur.com/Bg6SMdQ.png' },
-    { text: 'Hospedajes', image: 'https://i.imgur.com/BdTjvSo.png' },
+    { text: 'Hostales', image: 'https://i.imgur.com/BdTjvSo.png' },
     { text: 'Moteles', image: 'https://i.imgur.com/98yvBMX.png' },
   ]);
   const [filterData, setFilterData] = useState([]);
@@ -41,7 +41,7 @@ const HospedajesDanli = () => {
     if (text === 'Hoteles') {
       navigation.navigate('Hoteles Danlí');
     }  
-    else if (text === 'Hospedajes') {
+    else if (text === 'Hostales') {
       navigation.navigate('Hostales Danlí');
     } 
     else if (text === 'Moteles') {

@@ -1,40 +1,34 @@
 import React, { useState, useRef } from 'react';
-import { StyleSheet, View, Dimensions, Linking, Text, Alert, TouchableOpacity, ScrollView, Image, Modal } from 'react-native';
+import { StyleSheet, View, Dimensions, Linking, Text, Alert, TouchableOpacity, ScrollView, Image } from 'react-native';
 import MapView, { Marker, Callout } from 'react-native-maps';
 import Swiper from "react-native-web-swiper";
 import Icon from 'react-native-vector-icons/FontAwesome';
-import ImageViewer from 'react-native-image-zoom-viewer';
 
 const locationsData = [
   {
-    title: "Motel Oasis",
+    title: "La Casona",
  
-    latitude:    14.041402669262853, 
-    longitude:  -86.57036196608242,
+    latitude:     14.025794233539916, 
+    longitude:  -86.58463782038993,
+  },
+
+  {
+    title: "La Casona 2",
+ 
+    latitude:  14.025229929251294, 
+    longitude:  -86.56994425440516,
   },
 
   // Agrega más ubicaciones aquí si lo deseas
 ];
 
-export default function MotelOasisDanli() {
-
-     // INICIO DE CODIGO PARA AGREGAR BOTONCITO CON MENU 
-  const [modalVisible, setModalVisible] = useState(false);
-  const toggleModal = () => {
-    setModalVisible(!modalVisible);
-  };
-  const images = [
-    {
-      url: 'https://i.imgur.com/wx2NQr2.png',
-    },
-  ];
-
+export default function LaCasonaDanli() {
   const mapRef = useRef(null);
   const initialRegion = {
-    latitude:    14.041402669262853, 
-    longitude:  -86.57036196608242,
-    latitudeDelta: 0.003,
-    longitudeDelta: 0.003,
+    latitude:     14.028137595351625, 
+    longitude:  -86.5775245805174,
+    latitudeDelta: 0.017,
+    longitudeDelta: 0.017,
   };
 
   const openGoogleMaps = (latitude, longitude) => {
@@ -82,7 +76,7 @@ export default function MotelOasisDanli() {
   return (
     <ScrollView>
       <View style={styles.container}>
-        <Text style={styles.title}>Motel Oasis</Text>
+        <Text style={styles.title}>La Casona</Text>
         <View style={styles.containerSwipers}>
           <View style={styles.swiperContainer}>
             <Swiper
@@ -94,12 +88,11 @@ export default function MotelOasisDanli() {
               }}
             >
 
-               
-                 <View style={styles.slide}>
-                <Image style={styles.image} source={{ uri: 'https://i.imgur.com/VHUIYI5.png' }} />
+                <View style={styles.slide}>
+                <Image style={styles.image} source={{ uri: 'https://i.imgur.com/PyfdkWQ.png' }} />
               </View>
-              <View style={styles.slide}>
-                <Image style={styles.image} source={{ uri: 'https://i.imgur.com/vh04m9s.png' }} />
+                 <View style={styles.slide}>
+                <Image style={styles.image} source={{ uri: 'https://i.imgur.com/JMt1lpz.png' }} />
               </View>
             
              
@@ -108,44 +101,11 @@ export default function MotelOasisDanli() {
           </View>
         </View>
 
-
-
-
-        <View style={styles.container}>
-     
-
-      <View style={styles.buttonContainer3}>
-        <TouchableOpacity activeOpacity={1} onPress={toggleModal}>
-          <Image
-            source={{ uri: 'https://i.imgur.com/wx2NQr2.png' }}
-            style={styles.imagen}
-            resizeMode="cover"
-          />
-        </TouchableOpacity>
-      </View>
-      <Modal visible={modalVisible} animationType="fade" transparent={true}>
-        <ImageViewer
-          imageUrls={images}
-          onCancel={toggleModal}
-          enableSwipeDown={true}
-          renderIndicator={() => null}
-          renderHeader={() => (
-            <TouchableOpacity style={styles.closeButtonContainer3} onPress={toggleModal}>
-              <Icon name="times" size={20} color="#fff" />
-            </TouchableOpacity>
-          )}
-          renderFooter={() => null}
-        />
-      </Modal>
-    </View>
-
-
-
         <View style={styles.buttonContainer}>
-        <TouchableOpacity
+          <TouchableOpacity
             style={styles.button}
             onPress={() => {
-              Linking.openURL('https://www.facebook.com/profile.php?id=100057561815021');
+              Linking.openURL('https://www.facebook.com/hotelcasonadanli/?paipv=0&eav=AfaN4IridtYvZJcth1l7VGx72JIlX5w4ybM4O-redBrRV01AmrFNb3h0wmPJhm-hY24&_rdr');
             }}
           >
              <Icon name="globe" size={20} color="white" style={styles.buttonIcon} />
@@ -154,7 +114,7 @@ export default function MotelOasisDanli() {
           <TouchableOpacity
             style={styles.button}
             onPress={() => {
-              Linking.openURL('tel: 9751-3712');
+              Linking.openURL('tel: 9471-5801');
             }}
           >
              <Icon name="phone" size={20} color="white" style={styles.buttonIcon} />
@@ -196,9 +156,15 @@ export default function MotelOasisDanli() {
         <View style={styles.buttonContainer}>
           <TouchableOpacity
             style={styles.button2}
-            onPress={() => openGoogleMaps(  14.041402669262853, -86.57036196608242,)}
+            onPress={() => openGoogleMaps(   14.025794233539916, -86.58463782038993,)}
           >
-            <Text style={styles.buttonText2}>Motel Oasis</Text>
+            <Text style={styles.buttonText2}>La Casona</Text>
+          </TouchableOpacity>
+          <TouchableOpacity
+            style={styles.button2}
+            onPress={() => openGoogleMaps( 14.025229929251294, -86.56994425440516,)}
+          >
+            <Text style={styles.buttonText2}>La Casona 2</Text>
           </TouchableOpacity>
         </View>
      
@@ -322,7 +288,6 @@ const styles = StyleSheet.create({
     flexDirection: 'row',
     alignItems: 'center',
     marginBottom: 20,
-    marginTop: 30,
   },
   imagen: {
     width: 200,
@@ -373,7 +338,6 @@ const styles = StyleSheet.create({
     marginTop: 10,
     flexDirection: 'row',
     alignItems: 'center',
-    marginVertical: 20,
   },
   buttonText2: {
     color: 'white',

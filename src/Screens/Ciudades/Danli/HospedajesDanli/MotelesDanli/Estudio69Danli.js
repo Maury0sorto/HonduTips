@@ -7,16 +7,16 @@ import ImageViewer from 'react-native-image-zoom-viewer';
 
 const locationsData = [
   {
-    title: "Motel Oasis",
+    title: "Estudio 69 ",
  
-    latitude:    14.041402669262853, 
-    longitude:  -86.57036196608242,
+    latitude:   13.973370458283568, 
+    longitude:  -86.56442122808508,
   },
 
   // Agrega más ubicaciones aquí si lo deseas
 ];
 
-export default function MotelOasisDanli() {
+export default function Estudio69Danli() {
 
      // INICIO DE CODIGO PARA AGREGAR BOTONCITO CON MENU 
   const [modalVisible, setModalVisible] = useState(false);
@@ -25,14 +25,14 @@ export default function MotelOasisDanli() {
   };
   const images = [
     {
-      url: 'https://i.imgur.com/wx2NQr2.png',
+      url: 'https://i.imgur.com/0VkmJEN.png',
     },
   ];
 
   const mapRef = useRef(null);
   const initialRegion = {
-    latitude:    14.041402669262853, 
-    longitude:  -86.57036196608242,
+    latitude:   13.973370458283568, 
+    longitude:  -86.56442122808508,
     latitudeDelta: 0.003,
     longitudeDelta: 0.003,
   };
@@ -82,7 +82,7 @@ export default function MotelOasisDanli() {
   return (
     <ScrollView>
       <View style={styles.container}>
-        <Text style={styles.title}>Motel Oasis</Text>
+        <Text style={styles.title}>Estudio 69</Text>
         <View style={styles.containerSwipers}>
           <View style={styles.swiperContainer}>
             <Swiper
@@ -94,12 +94,11 @@ export default function MotelOasisDanli() {
               }}
             >
 
-               
-                 <View style={styles.slide}>
-                <Image style={styles.image} source={{ uri: 'https://i.imgur.com/VHUIYI5.png' }} />
+                <View style={styles.slide}>
+                <Image style={styles.image} source={{ uri: 'https://i.imgur.com/rcTYS29.png' }} />
               </View>
-              <View style={styles.slide}>
-                <Image style={styles.image} source={{ uri: 'https://i.imgur.com/vh04m9s.png' }} />
+                 <View style={styles.slide}>
+                <Image style={styles.image} source={{ uri: 'https://i.imgur.com/rcTYS29.png' }} />
               </View>
             
              
@@ -112,12 +111,12 @@ export default function MotelOasisDanli() {
 
 
         <View style={styles.container}>
-     
+      <Text style={styles.menuText}>Precios</Text>
 
       <View style={styles.buttonContainer3}>
         <TouchableOpacity activeOpacity={1} onPress={toggleModal}>
           <Image
-            source={{ uri: 'https://i.imgur.com/wx2NQr2.png' }}
+            source={{ uri: 'https://i.imgur.com/0VkmJEN.png' }}
             style={styles.imagen}
             resizeMode="cover"
           />
@@ -145,7 +144,7 @@ export default function MotelOasisDanli() {
         <TouchableOpacity
             style={styles.button}
             onPress={() => {
-              Linking.openURL('https://www.facebook.com/profile.php?id=100057561815021');
+              Linking.openURL('https://www.facebook.com/estudiohndanli');
             }}
           >
              <Icon name="globe" size={20} color="white" style={styles.buttonIcon} />
@@ -154,7 +153,7 @@ export default function MotelOasisDanli() {
           <TouchableOpacity
             style={styles.button}
             onPress={() => {
-              Linking.openURL('tel: 9751-3712');
+              Linking.openURL('tel: 8868-4602');
             }}
           >
              <Icon name="phone" size={20} color="white" style={styles.buttonIcon} />
@@ -196,9 +195,9 @@ export default function MotelOasisDanli() {
         <View style={styles.buttonContainer}>
           <TouchableOpacity
             style={styles.button2}
-            onPress={() => openGoogleMaps(  14.041402669262853, -86.57036196608242,)}
+            onPress={() => openGoogleMaps(   13.973370458283568, -86.56442122808508,)}
           >
-            <Text style={styles.buttonText2}>Motel Oasis</Text>
+            <Text style={styles.buttonText2}>Estudio 69</Text>
           </TouchableOpacity>
         </View>
      
@@ -322,7 +321,6 @@ const styles = StyleSheet.create({
     flexDirection: 'row',
     alignItems: 'center',
     marginBottom: 20,
-    marginTop: 30,
   },
   imagen: {
     width: 200,
@@ -379,5 +377,6 @@ const styles = StyleSheet.create({
     color: 'white',
     fontSize: 16,
     fontWeight: 'bold',
+    
   }, 
 });
