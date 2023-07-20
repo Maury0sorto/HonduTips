@@ -64,7 +64,6 @@ const Tabs = () => {
         name="Registra tu Empresa"
         component={Registro}
         options={{
-          headerShown: false,
           headerStyle: { backgroundColor: '#00BCE4', shadowColor: 'black'},
           headerTintColor: '#fff',
           tabBarIcon: ({ color, size }) => (
