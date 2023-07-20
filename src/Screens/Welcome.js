@@ -4,6 +4,7 @@ import { LinearGradient } from 'expo-linear-gradient';
 import COLORS from '../constants/colors';
 import Button from '../components/Button';
 import { useNavigation } from '@react-navigation/native';
+import Registro from './Registro';
 
 const Welcome = () => {
   const navigation = useNavigation();  //Esta funcion sirve para poder navegar 
@@ -102,7 +103,7 @@ const Welcome = () => {
             }}>
             Hondu-Tips
           </Text>
-         
+
 
           <View style={{ marginVertical: 22 }}>
             <Text
@@ -137,23 +138,18 @@ const Welcome = () => {
               marginTop: 12,
               justifyContent: 'center',
             }}>
-            <Text
-              style={{
-                fontSize: 16,
-                color: COLORS.white,
-              }}>
-              ¿Quieres recibir novedades?
-            </Text>
-            <Pressable onPress={() => navigation.navigate('HomeScreen')}>
+            <Pressable onPress={() => navigation.navigate('Registro')}>
               <Text
                 style={{
                   fontSize: 16,
                   color: COLORS.white,
                   fontWeight: 'bold',
-                  marginLeft: 4,
-                }}>
-                Registrarse
+                  textAlign: 'center', // Agregamos esta propiedad para centrar el texto
+                }}
+              >
+                ¡Si quieres registrar tu negocio, haz click aquí!
               </Text>
+
             </Pressable>
           </View>
         </View>

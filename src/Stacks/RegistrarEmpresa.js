@@ -1,8 +1,8 @@
 import React from "react";
 import { View, Text} from "react-native";
 import { createNativeStackNavigator} from "@react-navigation/native-stack"
+import Registro from "../Screens/Registro";
 
-import Settings from "../Screens/Settings";
 
 
 
@@ -10,7 +10,7 @@ const RegistrarEmpresa = () => {                   // Este stack es el de Settin
   const SettingsStack = createNativeStackNavigator();
   return(
         <SettingsStack.Navigator>
-          <SettingsStack.Screen name="Settings" component={Settings}/>
+          <SettingsStack.Screen name="Registro" component={Registro}/>
          
         </SettingsStack.Navigator>
     
