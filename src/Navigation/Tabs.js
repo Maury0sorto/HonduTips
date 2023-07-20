@@ -50,7 +50,7 @@ const Tabs = () => {
           headerStyle: { backgroundColor: '#00BCE4', shadowColor: 'black'},
           headerTintColor: '#fff',
           tabBarIcon: ({ color, size }) => (
-            <Ionicons name="md-search" size={size} color={color} />
+            <Ionicons name="md-location" size={size} color={color} />
           ),
           tabBarActiveTintColor: '#00BCE4',
         }}
