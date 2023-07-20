@@ -17,7 +17,7 @@ const DanlíScreen = () => {
   const [data, setData] = useState([
     { text: 'Banca', image: 'https://i.imgur.com/Bffp4OT.png' },
     { text: 'FESTIMA', image: 'https://i.imgur.com/XO8v9MO.png' },
-    { text: 'Alimento y Bebida', image: 'https://i.imgur.com/fo5oW3d.png' },
+    { text: 'Alimentos y Bebidas', image: 'https://i.imgur.com/fo5oW3d.png' },
     { text: 'Hospedaje', image: 'https://i.imgur.com/SN0hO9s.png' },
     { text: 'Salud', image: 'https://i.imgur.com/MhIuylY.png' },
     { text: 'Gasolineras', image: 'https://i.imgur.com/meCBdUt.png' },
@@ -51,7 +51,7 @@ const DanlíScreen = () => {
     // Configura la navegación a las pantallas correspondientes según el texto del botón
     if (text === 'Banca') {
       navigation.navigate('Banca Danlí');
-    } else if (text === 'Alimento y Bebida') {
+    } else if (text === 'Alimentos y Bebidas') {
       navigation.navigate('Alimetos y Bebidas Danlí');
     } else if (text === 'Hospedaje') {
       navigation.navigate('Hospedajes Danlí'); 
