@@ -64,11 +64,14 @@ const Tabs = () => {
         name="Registra tu Empresa"
         component={Registro}
         options={{
-          
-          headerStyle: { backgroundColor: '#00BCE4', shadowColor: 'black' },
+          headerShown: false,
+          headerStyle: { backgroundColor: '#00BCE4', shadowColor: 'black'},
           headerTintColor: '#fff',
           tabBarIcon: ({ color, size }) => (
-            <Ionicons name="save" size={size} color={color} />
+            <Image
+              source={{ uri: 'https://i.imgur.com/hQ8x85P.png' }} // URL de la imagen
+              style={{ width: size * 1.5, height: size, tintColor: color, resizeMode: 'contain' }}
+            />
           ),
           tabBarActiveTintColor: '#00BCE4',
         }}
