@@ -55,17 +55,15 @@ const styles = StyleSheet.create({
     backgroundColor: COLORS.white,
   },
   textboxContainer: {
-    flexDirection: "row",
-    alignItems: "center",
+    flexDirection: "column", // Cambio de "row" a "column"
     marginVertical: 10,
   },
   textbox: {
-    flex: 1,
     height: 40,
     borderWidth: 1,
     borderColor: COLORS.gray,
     borderRadius: 5,
-    marginLeft: 10,
+    marginTop: 5,
     paddingHorizontal: 10,
   },
 });

@@ -138,7 +138,7 @@ const Welcome = () => {
               marginTop: 12,
               justifyContent: 'center',
             }}>
-            <Pressable onPress={() => navigation.navigate('Registro')}>
+            <Pressable onPress={() => navigation.navigate('HomeScreen')}>
               <Text
                 style={{
                   fontSize: 16,
