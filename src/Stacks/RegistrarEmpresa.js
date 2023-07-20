@@ -7,14 +7,14 @@ import Registro from "../Screens/Registro";
 
 
 const RegistrarEmpresa = () => {                   // Este stack es el de Settings  es decir es uno de los 3 que se ven en la parte de abajo
-  const SettingsStack = createNativeStackNavigator();
+  const RegistrarStack = createNativeStackNavigator();
   return(
-        <SettingsStack.Navigator>
-          <SettingsStack.Screen name="Registro" component={Registro}/>
+        <RegistrarStack.Navigator>
+          <RegistrarStack.Screen name="Registro" component={Registro}/>
          
-        </SettingsStack.Navigator>
+        </RegistrarStack.Navigator>
     
   );
 };
 
-export default RegistrarEmpresa;
+export default RegistrarEmpresa; 

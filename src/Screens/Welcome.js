@@ -9,6 +9,14 @@ import Registro from './Registro';
 const Welcome = () => {
   const navigation = useNavigation();  //Esta funcion sirve para poder navegar 
 
+  const navigateToRegistrar = () => {
+    navigation.navigate('HomeScreen'); 
+    setTimeout(() => { 
+      navigation.navigate('Registra tu Empresa');
+    }, 300);
+  
+  };
+
 
   return (
     <LinearGradient
@@ -138,9 +146,9 @@ const Welcome = () => {
               marginTop: 12,
               justifyContent: 'center',
             }}>
-            <Pressable onPress={() => navigation.navigate('HomeScreen')}>
+           <Pressable onPress={navigateToRegistrar}>
               <Text
-                style={{
+                style={{ 
                   fontSize: 16,
                   color: COLORS.white,
                   fontWeight: 'bold',
