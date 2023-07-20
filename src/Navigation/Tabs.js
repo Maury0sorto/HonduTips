@@ -10,6 +10,7 @@ import HomeStackScreen from '../Stacks/HomeStackScreen';
 import { Ionicons } from '@expo/vector-icons';
 import Settings from '../Screens/Settings';
 import SerchStackScreen from '../Stacks/SerchStackScreen';
+import Registro from '../Screens/Registro';
 import OnboardingScreen from '../Screens/OnboardingScreen';
 
 
@@ -56,6 +57,20 @@ const Tabs = () => {
         }}
        />
 
+<Tab.Screen
+        name="Registra tu Empresa"
+        component={Registro}
+        options={{
+          
+          headerStyle: { backgroundColor: '#00BCE4', shadowColor: 'black' },
+          headerTintColor: '#fff',
+          tabBarIcon: ({ color, size }) => (
+            <Ionicons name="save" size={size} color={color} />
+          ),
+          tabBarActiveTintColor: '#00BCE4',
+        }}
+      />
+
       <Tab.Screen
         name="Ajustes"
         component={Settings}
@@ -69,6 +84,10 @@ const Tabs = () => {
           tabBarActiveTintColor: '#00BCE4',
         }}
       />
+
+
+
+      
 
       
 
