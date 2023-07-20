@@ -4,6 +4,7 @@ import { SafeAreaView } from "react-native-safe-area-context";
 import { COLORS } from "../constants/theme";
 import { MaterialIcons } from "@expo/vector-icons";
 import * as ImagePicker from 'expo-image-picker';
+import axios from 'axios';
 
 const Registro = ({ navigation }) => {
   const [nombre, setNombre] = useState("");
@@ -13,7 +14,7 @@ const Registro = ({ navigation }) => {
   const [paginaWebRedSocial, setPaginaWebRedSocial] = useState("");
   const [image, setImage] = useState(null);
 
-  const handleSubmit = () => {
+  const handleSubmit = async () => {
     if (!nombre || !nombreEmpresa || !rubro || !telefono || !paginaWebRedSocial || !image) {
       Alert.alert("Error", "Todos los campos son obligatorios. Por favor, completa todos los campos antes de registrar el negocio.");
       return;
@@ -25,10 +26,38 @@ const Registro = ({ navigation }) => {
       Rubro: rubro,
       Teléfono: telefono,
       "Página web o red social": paginaWebRedSocial,
-      "Foto del negocio": image,
     };
-    Alert.alert("Datos ingresados:", JSON.stringify(datos));
-    limpiarCampos();
+
+    try {
+      const templateParams = {
+        to_name: "alphamediamc@gmail.com", // Reemplaza con el correo del destinatario
+        from_name: "de_cruzn@unicah.edu", // Reemplaza con el correo del remitente
+        message: `
+          <h1>Datos del formulario de registro:</h1>
+          <p><b>Nombre:</b> ${datos.Nombre}</p>
+          <p><b>Nombre empresa:</b> ${datos["Nombre empresa"]}</p>
+          <p><b>Rubro:</b> ${datos.Rubro}</p>
+          <p><b>Teléfono:</b> ${datos.Teléfono}</p>
+          <p><b>Página web o red social:</b> ${datos["Página web o red social"]}</p>
+        `,
+      };
+
+      const response = await axios.post(
+        "https://api.emailjs.com/api/v1.0/email/send",
+        {
+          service_id: "service_d0pw1in", // Reemplaza con tu ID de servicio de EmailJS
+          template_id: "template_q093fnb", // Reemplaza con tu ID de plantilla de EmailJS
+          user_id: "7XJ5HhC2Oah9QJpfYy88u", // Reemplaza con tu User ID de EmailJS
+          template_params: templateParams,
+        }
+      );
+
+      console.log("Correo enviado correctamente:", response.data);
+      limpiarCampos();
+    } catch (error) {
+      console.log("Error al enviar el correo:", error);
+      Alert.alert("Error", "Ocurrió un error al enviar el correo. Por favor, inténtalo nuevamente.");
+    }
   };
 
   const limpiarCampos = () => {
@@ -49,7 +78,7 @@ const Registro = ({ navigation }) => {
         quality: 1,
       });
 
-      if (!result.canceled) {
+      if (!result.cancelled) {
         setImage(result.assets[0].uri);
       }
     } catch (error) {
@@ -120,7 +149,7 @@ const styles = StyleSheet.create({
     fontSize: 24,
     fontWeight: "bold",
     marginBottom: 20,
-    textAlign:"center"
+    textAlign: "center",
   },
   imagePickerButton: {
     alignItems: "center",
