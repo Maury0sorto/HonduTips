@@ -160,6 +160,30 @@ export default function GasolineraUnoDanli() {
             </TouchableOpacity>
           </View>
         </View>
+
+        <View style={styles.buttonContainerMapa}>
+          <TouchableOpacity
+            style={styles.button2}
+            onPress={() => openGoogleMaps(  14.021473417836598, -86.60248371883272,)}
+          >
+            <Text style={styles.buttonText2}>Gasolinera UNO</Text>
+          </TouchableOpacity>
+          <TouchableOpacity
+            style={styles.button2}
+            onPress={() => openGoogleMaps(  14.015471113420563, -86.5694749634024,)}
+          >
+            <Text style={styles.buttonText2}>UNO • Danlí</Text>
+          </TouchableOpacity>
+          <TouchableOpacity
+            style={styles.button2}
+            onPress={() => openGoogleMaps(  14.040054508283516, -86.57400277812609,)}
+          >
+            <Text style={styles.buttonText2}>UNO • Las Brisas</Text>
+          </TouchableOpacity>
+          
+          
+        </View>
+
       </View>
     </ScrollView>
   );
@@ -316,5 +340,31 @@ const styles = StyleSheet.create({
   },
 
   //fin de estilos de menu y horarios
+
+// para botones debajo del mapa
+button2: {
+  backgroundColor: '#00BCE4',
+  paddingHorizontal: 20,
+  paddingVertical: 10,
+  marginHorizontal: 10,
+  borderRadius: 5,
+  marginTop: 10,
+  flexDirection: 'row',
+  alignItems: 'center',
+  marginVertical: 20,
+},
+buttonText2: {
+  color: 'white',
+  fontSize: 16,
+  fontWeight: 'bold',
+}, 
+
+buttonContainerMapa: {
+  flexDirection: 'row',
+    flexWrap: 'wrap',
+    justifyContent: 'center',
+    marginTop: 20,
+    alignItems: 'center',
+},
 
 });

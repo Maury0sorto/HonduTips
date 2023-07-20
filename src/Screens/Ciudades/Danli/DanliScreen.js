@@ -17,11 +17,11 @@ const DanlíScreen = () => {
     { text: 'Alimento y Bebida', image: 'https://i.imgur.com/fo5oW3d.png' },
     { text: 'Hospedaje', image: 'https://i.imgur.com/SN0hO9s.png' },
     { text: 'Salud', image: 'https://i.imgur.com/MhIuylY.png' },
-    { text: 'Gasolinera', image: 'https://i.imgur.com/meCBdUt.png' },
+    { text: 'Gasolineras', image: 'https://i.imgur.com/meCBdUt.png' },
     { text: 'Belleza', image: 'https://i.imgur.com/VE8iMQw.png' },
     { text: 'Deporte', image: 'https://i.imgur.com/YFd8er3.png' },
     { text: 'Automotriz', image: 'https://i.imgur.com/Ld3u2NI.png' },
-    { text: 'Plaza Comercial', image: 'https://i.imgur.com/GycKe4i.png' },
+    { text: 'Plazas Comerciales', image: 'https://i.imgur.com/GycKe4i.png' },
     { text: 'Transporte', image: 'https://i.imgur.com/2sgBrWV.png' },
     { text: 'Educación', image: 'https://i.imgur.com/jPVcqaS.png' },
   ]);
@@ -53,7 +53,7 @@ const DanlíScreen = () => {
       navigation.navigate('Hospedajes Danlí'); 
     } else if (text === 'Salud') {
       navigation.navigate('Salud Danli');
-    } else if (text === 'Gasolinera') {
+    } else if (text === 'Gasolineras') {
       navigation.navigate('Gasolineras Danlí');
     } else if (text === 'Belleza') {
       navigation.navigate('Belleza Danlí');
@@ -64,8 +64,8 @@ const DanlíScreen = () => {
     else if (text === 'Automotriz') {
       navigation.navigate('Automotriz Danlí');
     }
-    else if (text === 'Plaza Comercial') {
-      navigation.navigate("Mall's Danlí"); 
+    else if (text === 'Plazas Comerciales') {
+      navigation.navigate("Plazas Comerciales Danlí"); 
     }
     else if (text === 'Transporte') {
       navigation.navigate("Transporte Danlí");

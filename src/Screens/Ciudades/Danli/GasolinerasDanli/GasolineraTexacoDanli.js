@@ -148,6 +148,17 @@ export default function GasolineraTexacoDanli() {
             </TouchableOpacity>
           </View>
         </View>
+
+        <View style={styles.buttonContainerMapa}>
+          <TouchableOpacity
+            style={styles.button2}
+            onPress={() => openGoogleMaps(  14.028464887899892, -86.57983869640856,)}
+          >
+            <Text style={styles.buttonText2}>Gasolinera TEXACO</Text>
+          </TouchableOpacity>
+
+        </View>
+
       </View>
     </ScrollView>
   );
@@ -304,5 +315,32 @@ const styles = StyleSheet.create({
   },
 
   //fin de estilos de menu y horarios
+
+
+  // para botones debajo del mapa
+button2: {
+  backgroundColor: '#00BCE4',
+  paddingHorizontal: 20,
+  paddingVertical: 10,
+  marginHorizontal: 10,
+  borderRadius: 5,
+  marginTop: 10,
+  flexDirection: 'row',
+  alignItems: 'center',
+  marginVertical: 20,
+},
+buttonText2: {
+  color: 'white',
+  fontSize: 16,
+  fontWeight: 'bold',
+}, 
+
+buttonContainerMapa: {
+  flexDirection: 'row',
+    flexWrap: 'wrap',
+    justifyContent: 'center',
+    marginTop: 20,
+    alignItems: 'center',
+},
 
 });

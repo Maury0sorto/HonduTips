@@ -139,7 +139,10 @@ const BancaDanli = () => {
   };
 
   return ( 
+    
     <View style={styles.container}>
+
+
   <View style={styles.searchContainer}>
     <Ionicons name="search" size={24} color="gray" style={styles.icon} />
     <TextInput
@@ -152,6 +155,7 @@ const BancaDanli = () => {
       }}
     />
   </View>
+
   <ScrollView>
     <View style={styles.container2}>{renderButtons()}</View>
   </ScrollView>
