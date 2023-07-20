@@ -1,49 +1,66 @@
 import { View, Text, TouchableOpacity, ScrollView, Alert, StyleSheet, TextInput } from "react-native";
-import React from "react";
+import React, { useState } from "react";
 import { SafeAreaView } from "react-native-safe-area-context";
 import { COLORS } from "../constants/theme";
 import { MaterialIcons } from "@expo/vector-icons";
 
 const Registro = ({ navigation }) => {
-  const [nombre1, setNombre1] = React.useState("");
-  const [nombre2, setNombre2] = React.useState("");
-  const [nombre3, setNombre3] = React.useState("");
+  const [nombre, setNombre] = useState("");
+  const [nombreEmpresa, setNombreEmpresa] = useState("");
+  const [rubro, setRubro] = useState("");
+  const [telefono, setTelefono] = useState("");
+  const [paginaWebRedSocial, setPaginaWebRedSocial] = useState("");
+
+  const handleSubmit = () => {
+    // Aquí puedes realizar alguna acción con los datos ingresados, como enviarlos a un servidor, almacenarlos en una base de datos, etc.
+    // Por ejemplo, podrías mostrar una alerta con los datos ingresados:
+    const datos = {
+      Nombre: nombre,
+      "Nombre empresa": nombreEmpresa,
+      Rubro: rubro,
+      Teléfono: telefono,
+      "Página web o red social": paginaWebRedSocial,
+    };
+    Alert.alert("Datos ingresados:", JSON.stringify(datos));
+  };
 
   return (
     <SafeAreaView style={styles.container}>
-      <ScrollView>
-        {/* TextBox 1 */}
-        <View style={styles.textboxContainer}>
-          <Text>Nombre 1:</Text>
-          <TextInput
-            style={[styles.textbox, ]} // Ajusta el ancho al 80%
-            value={nombre1}
-            onChangeText={(text) => setNombre1(text)}
-          />
-        </View>
-
-        {/* TextBox 2 */}
-        <View style={styles.textboxContainer}>
-          <Text>Nombre 2:</Text>
-          <TextInput
-            style={[styles.textbox, ]} // Ajusta el ancho al 80%
-            value={nombre2}
-            onChangeText={(text) => setNombre2(text)}
-          />
-        </View>
-
-        {/* TextBox 3 */}
-        <View style={styles.textboxContainer}>
-          <Text>Nombre 3:</Text>
-          <TextInput
-            style={[styles.textbox]} // Ajusta el ancho al 80%
-            value={nombre3}
-            onChangeText={(text) => setNombre3(text)}
-          />
-        </View>
-
-        {/* Resto del código... */}
-        {/* Aquí puedes agregar el resto de tu código para el componente Registro */}
+      <ScrollView contentContainerStyle={styles.scrollContainer}>
+        <TextInput
+          style={styles.input}
+          placeholder="Nombre"
+          value={nombre}
+          onChangeText={(text) => setNombre(text)}
+        />
+        <TextInput
+          style={styles.input}
+          placeholder="Nombre empresa"
+          value={nombreEmpresa}
+          onChangeText={(text) => setNombreEmpresa(text)}
+        />
+        <TextInput
+          style={styles.input}
+          placeholder="Rubro"
+          value={rubro}
+          onChangeText={(text) => setRubro(text)}
+        />
+        <TextInput
+          style={styles.input}
+          placeholder="Teléfono"
+          value={telefono}
+          onChangeText={(text) => setTelefono(text)}
+          keyboardType="phone-pad"
+        />
+        <TextInput
+          style={styles.input}
+          placeholder="Página web o red social"
+          value={paginaWebRedSocial}
+          onChangeText={(text) => setPaginaWebRedSocial(text)}
+        />
+        <TouchableOpacity style={styles.button} onPress={handleSubmit}>
+          <Text style={styles.buttonText}>Registrar</Text>
+        </TouchableOpacity>
       </ScrollView>
     </SafeAreaView>
   );
@@ -54,18 +71,27 @@ const styles = StyleSheet.create({
     flex: 1,
     backgroundColor: COLORS.white,
   },
-  textboxContainer: {
-    flexDirection: "column", // Cambio de "row" a "column"
-    marginVertical: 10,
+  scrollContainer: {
+    padding: 20,
   },
-  textbox: {
+  input: {
     height: 40,
-    borderWidth: 1,
     borderColor: COLORS.gray,
+    borderWidth: 1,
     borderRadius: 5,
-    marginTop: 5,
     paddingHorizontal: 10,
-    width: "80%"
+    marginBottom: 10,
+  },
+  button: {
+    backgroundColor: COLORS.primary,
+    padding: 10,
+    borderRadius: 5,
+    alignItems: "center",
+  },
+  buttonText: {
+    color: COLORS.white,
+    fontSize: 16,
+    fontWeight: "bold",
   },
 });
 
