@@ -1,7 +1,9 @@
 import React, { useState, useEffect } from 'react';
-import { View, Text, StyleSheet, TouchableOpacity, Image, ScrollView, TextInput } from 'react-native';
+import { View, Text, StyleSheet, TouchableOpacity, Image, ScrollView, TextInput, Linking } from 'react-native';
+
 import { useNavigation } from '@react-navigation/native';
 import { Ionicons } from '@expo/vector-icons';
+
 import { HeaderBackButton } from '@react-navigation/stack';
 
 const DanlíScreen = () => {
@@ -74,6 +76,8 @@ const DanlíScreen = () => {
     }
     else if (text === 'Educación') {
       navigation.navigate("Educación Danlí");
+    }else if (text === 'FESTIMA') {
+      Linking.openURL('https://www.facebook.com/festimaoficial/?locale=es_LA');
     }
   };
 
