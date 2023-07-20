@@ -19,7 +19,8 @@ const AlimentosBebidasDanli = () => {
     { text: 'Bares', image: 'https://i.imgur.com/K8i0GPL.png' },
     { text: 'Food Trucks', image: 'https://i.imgur.com/CWYpQ5n.png' },
     { text: 'Cafeterías', image: 'https://i.imgur.com/XYgNC4A.png' },
-    { text: 'Reposterias', image: 'https://i.imgur.com/GgGx4NI.png' },
+    { text: 'Reposterias', image: 'https://i.imgur.com/S2oPe0C.png' },
+    { text: 'Heladerias', image: 'https://i.imgur.com/GgGx4NI.png' },
   ]);
   const [filterData, setFilterData] = useState([]);
   const [searchText, setSearchText] = useState('');
@@ -57,6 +58,9 @@ const AlimentosBebidasDanli = () => {
         navigation.navigate('Cafés Danlí');
       } 
       else if (text === 'Reposterias') {
+        navigation.navigate('Repostería Danlí');
+      } 
+      else if (text === 'Heladerias') {
         navigation.navigate('Repostería Danlí');
       } 
   };
@@ -152,18 +156,7 @@ const AlimentosBebidasDanli = () => {
 
   return ( 
     <View style={styles.container}>
-  <View style={styles.searchContainer}>
-    <Ionicons name="search" size={24} color="gray" style={styles.icon} />
-    <TextInput
-      style={styles.searchInput}
-      placeholder="Donde quieres ir..."
-      value={searchText}
-      onChangeText={(text) => {
-        setSearchText(text);
-        filterSearch();
-      }}
-    />
-  </View>
+ 
   <ScrollView>
     <View style={styles.container2}>{renderButtons()}</View>
   </ScrollView>
@@ -180,7 +173,7 @@ const styles = StyleSheet.create({
   container2: {
     flex: 1,
     paddingHorizontal: 16,
-    marginTop: 16,
+    marginTop: 76,
     
   },
   row: {
