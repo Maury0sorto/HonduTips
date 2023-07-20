@@ -1,5 +1,5 @@
-import { View, Text, TouchableOpacity, ScrollView, Alert, StyleSheet, TextInput, Image } from "react-native";
 import React, { useState } from "react";
+import { View, Text, TouchableOpacity, ScrollView, Alert, StyleSheet, TextInput, Image } from "react-native";
 import { SafeAreaView } from "react-native-safe-area-context";
 import { COLORS } from "../constants/theme";
 import { MaterialIcons } from "@expo/vector-icons";
@@ -14,8 +14,11 @@ const Registro = ({ navigation }) => {
   const [image, setImage] = useState(null);
 
   const handleSubmit = () => {
-    // Aquí puedes realizar alguna acción con los datos ingresados, como enviarlos a un servidor, almacenarlos en una base de datos, etc.
-    // Por ejemplo, podrías mostrar una alerta con los datos ingresados:
+    if (!nombre || !nombreEmpresa || !rubro || !telefono || !paginaWebRedSocial || !image) {
+      Alert.alert("Error", "Todos los campos son obligatorios. Por favor, completa todos los campos antes de registrar el negocio.");
+      return;
+    }
+
     const datos = {
       Nombre: nombre,
       "Nombre empresa": nombreEmpresa,
@@ -25,18 +28,32 @@ const Registro = ({ navigation }) => {
       "Foto del negocio": image,
     };
     Alert.alert("Datos ingresados:", JSON.stringify(datos));
+    limpiarCampos();
+  };
+
+  const limpiarCampos = () => {
+    setNombre("");
+    setNombreEmpresa("");
+    setRubro("");
+    setTelefono("");
+    setPaginaWebRedSocial("");
+    setImage(null);
   };
 
   const pickImage = async () => {
-    const result = await ImagePicker.launchImageLibraryAsync({
-      mediaTypes: ImagePicker.MediaTypeOptions.Images,
-      allowsEditing: true,
-      aspect: [1, 1],
-      quality: 1,
-    });
+    try {
+      let result = await ImagePicker.launchImageLibraryAsync({
+        mediaTypes: ImagePicker.MediaTypeOptions.Images,
+        allowsEditing: true,
+        aspect: [1, 1],
+        quality: 1,
+      });
 
-    if (!result.cancelled) {
-      setImage(result.uri);
+      if (!result.canceled) {
+        setImage(result.assets[0].uri);
+      }
+    } catch (error) {
+      console.log("Error al cargar la imagen:", error);
     }
   };
 
@@ -78,11 +95,11 @@ const Registro = ({ navigation }) => {
         />
         <TextInput
           style={styles.input}
-          placeholder="Página web o red social"
+          placeholder="Link página web o red social"
           value={paginaWebRedSocial}
           onChangeText={(text) => setPaginaWebRedSocial(text)}
         />
-        <TouchableOpacity style={styles.button} onPress={handleSubmit}>
+        <TouchableOpacity style={styles.buttonContainer} onPress={handleSubmit}>
           <Text style={styles.buttonText}>Registrar</Text>
         </TouchableOpacity>
       </ScrollView>
@@ -96,12 +113,14 @@ const styles = StyleSheet.create({
     backgroundColor: COLORS.white,
   },
   scrollContainer: {
+    flexGrow: 1,
     padding: 20,
   },
   title: {
     fontSize: 24,
     fontWeight: "bold",
     marginBottom: 20,
+    textAlign:"center"
   },
   imagePickerButton: {
     alignItems: "center",
@@ -109,14 +128,14 @@ const styles = StyleSheet.create({
     backgroundColor: COLORS.lightGray,
     width: 100,
     height: 100,
-    borderRadius: 50,
+    borderRadius: 10,
     alignSelf: "center",
     marginBottom: 20,
   },
   imagePreview: {
     width: 100,
     height: 100,
-    borderRadius: 50,
+    borderRadius: 10,
   },
   input: {
     height: 40,
@@ -126,11 +145,14 @@ const styles = StyleSheet.create({
     paddingHorizontal: 10,
     marginBottom: 10,
   },
-  button: {
-    backgroundColor: COLORS.primary,
+  buttonContainer: {
+    backgroundColor: "#00BCE4",
     padding: 10,
-    borderRadius: 5,
+    borderRadius: 10,
     alignItems: "center",
+    width: "50%",
+    alignSelf: "center",
+    marginTop: 20,
   },
   buttonText: {
     color: COLORS.white,
