@@ -27,6 +27,7 @@ const Registro = ({ navigation }) => {
   return (
     <SafeAreaView style={styles.container}>
       <ScrollView contentContainerStyle={styles.scrollContainer}>
+        <Text style={styles.title}>Registrar Negocio</Text>
         <TextInput
           style={styles.input}
           placeholder="Nombre"
@@ -73,6 +74,12 @@ const styles = StyleSheet.create({
   },
   scrollContainer: {
     padding: 20,
+  },
+  title: {
+    fontSize: 24,
+    fontWeight: "bold",
+    marginBottom: 20,
+    textAlign:"center"
   },
   input: {
     height: 40,
