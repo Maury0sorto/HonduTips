@@ -232,6 +232,7 @@ const HotelesDanli = () => {
     { text: 'Hotel Apolo', image: 'https://i.imgur.com/YrrDG9H.jpg', screen: ScreenF },
     { text: 'Hotel La Guadalupe', image: 'https://i.imgur.com/YrrDG9H.jpg', screen: ScreenI },
     { text: 'Hotel Villa Paraiso', image: 'https://i.imgur.com/YrrDG9H.jpg', screen: ScreenJ },
+    { text: 'Hotel Kairos', image: 'https://i.imgur.com/YrrDG9H.jpg', screen: ScreenJ },
 
 
   ];
@@ -248,6 +249,7 @@ const HotelesDanli = () => {
     { key: '9', value: 'Hotel Clementina' },
     { key: '10', value: 'Hotel Guadalupe' },
     { key: '11', value: 'Hotel Villa Paraiso' },
+    { key: '12', value: 'Hotel Kairos' },
    
 
   ];

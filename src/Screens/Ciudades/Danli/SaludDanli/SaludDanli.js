@@ -140,18 +140,7 @@ const SaludDanli = () => {
 
   return ( 
     <View style={styles.container}>
-  <View style={styles.searchContainer}>
-    <Ionicons name="search" size={24} color="gray" style={styles.icon} />
-    <TextInput
-      style={styles.searchInput}
-      placeholder="Donde quieres ir..."
-      value={searchText}
-      onChangeText={(text) => {
-        setSearchText(text);
-        filterSearch();
-      }}
-    />
-  </View>
+ 
   <ScrollView>
     <View style={styles.container2}>{renderButtons()}</View>
   </ScrollView>
@@ -166,7 +155,7 @@ const styles = StyleSheet.create({
   container2: {
     flex: 1,
     paddingHorizontal: 16,
-    marginTop: 16,
+    marginTop: 56,
   },
   button: {
     width: '100%',

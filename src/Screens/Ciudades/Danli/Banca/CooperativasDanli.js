@@ -9,7 +9,8 @@ import CooperativaELGADanli from './CooperativasDanli/CooperativaELGADanli';
 import CooperativaSanmarqueñaDanli from './CooperativasDanli/CooperativaSanmarquennaDanli';
 import CooperativaCoacehlDanli from './CooperativasDanli/CoacehlDanli';
 import CooperativaSagradaFamiliaDanli from './CooperativasDanli/CooperativaSagradaFamiliaDanli';
-import BanPaisDanli from './BancosDanli/BanPaisDanli';
+import CooperativaFINACOOPDanli from './CooperativasDanli/CooperativaFINACOOPDanli';
+
 import BACDanli from './BancosDanli/BACDanli';
 import Davivienda from './BancosDanli/Davivienda';
 import Banrural from './BancosDanli/Banrural';
@@ -127,7 +128,7 @@ const ScreenF = ({ text, mostrarBotonAnterior }) => {
       <Text style={styles.backButtonText}>Regresar</Text>
     </>
       </TouchableHighlight>
-      <BANTRABDanli/>
+      <CooperativaFINACOOPDanli/>
     </View>
   );
 };
@@ -275,6 +276,7 @@ const CooperativasDanli = () => {
     { text: 'Cooperativa Sanmarqueña Ltda. FLDL', image: 'https://i.imgur.com/fVOLk6Q.png', screen: ScreenC },
     { text: 'Coacehl', image: 'https://i.imgur.com/D95ZKJt.png', screen: ScreenD },
     { text: 'Cooperativa Sagrada Familia', image: 'https://i.imgur.com/laOKnsZ.png', screen: ScreenE },
+    { text: 'Cooperativa FINACOOP', image: 'https://i.imgur.com/dPrX909.png', screen: ScreenF },
   ];
 
   const data2 = [
@@ -284,6 +286,7 @@ const CooperativasDanli = () => {
     { key: '4', value: 'Cooperativa Sanmarqueña Ltda. FLDL' },
     { key: '5', value: 'Coacehl' },
     { key: '6', value: 'Cooperativa Sagrada Familia' },
+    { key: '7', value: 'Cooperativa FINACOOP' },
   ];
 
   const ComponenteVisible = componenteVisible?.screenComponent || null;
