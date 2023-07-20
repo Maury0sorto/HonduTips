@@ -17,9 +17,9 @@ const AlimentosBebidasDanli = () => {
     { text: 'Supermercados', image: 'https://i.imgur.com/PUravFh.png' },
     { text: 'Restaurantes', image: 'https://i.imgur.com/SQStGOP.png' },
     { text: 'Bares', image: 'https://i.imgur.com/K8i0GPL.png' },
-    { text: 'Food Trucks', image: 'https://i.imgur.com/CWYpQ5n.png' },
-    { text: 'Cafeterías', image: 'https://i.imgur.com/XYgNC4A.png' },
-    { text: 'Reposterias', image: 'https://i.imgur.com/S2oPe0C.png' },
+    { text: 'Comida Callejera', image: 'https://i.imgur.com/CWYpQ5n.png' },
+    { text: 'Cafés', image: 'https://i.imgur.com/XYgNC4A.png' },
+    { text: 'Reposterias', image: 'https://i.imgur.com/BtElAYu.png' },
     { text: 'Heladerias', image: 'https://i.imgur.com/GgGx4NI.png' },
   ]);
   const [filterData, setFilterData] = useState([]);
@@ -51,17 +51,17 @@ const AlimentosBebidasDanli = () => {
     else if (text === 'Bares') {
       navigation.navigate('Bares Danlí');
     } 
-    else if (text === 'Food Trucks') {
+    else if (text === 'Comida Callejera') {
         navigation.navigate('Comida Callejera Danlí');
       } 
-    else if (text === 'Cafeterías') {
+    else if (text === 'Cafés') {
         navigation.navigate('Cafés Danlí');
       } 
       else if (text === 'Reposterias') {
         navigation.navigate('Repostería Danlí');
       } 
       else if (text === 'Heladerias') {
-        navigation.navigate('Repostería Danlí');
+        navigation.navigate('Heladeria Danlí');
       } 
   };
 
@@ -173,7 +173,7 @@ const styles = StyleSheet.create({
   container2: {
     flex: 1,
     paddingHorizontal: 16,
-    marginTop: 76,
+    marginTop: 36,
     
   },
   row: {
