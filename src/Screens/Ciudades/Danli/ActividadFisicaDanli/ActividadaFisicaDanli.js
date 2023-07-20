@@ -182,8 +182,8 @@ const styles = StyleSheet.create({
     
   },
   buttonImage: {
-    width: 150,
-    height: 150,
+    width: 145,
+    height: 145,
     marginBottom: 8,
     alignSelf: 'center',
      borderRadius: 10,
