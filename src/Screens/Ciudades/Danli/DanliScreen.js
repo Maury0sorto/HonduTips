@@ -14,6 +14,7 @@ const DanlíScreen = () => {
   }, []);
   const [data, setData] = useState([
     { text: 'Banca', image: 'https://i.imgur.com/Bffp4OT.png' },
+    { text: 'Festival del Maiz', image: 'https://i.imgur.com/KD2hzTw.png' },
     { text: 'Alimento y Bebida', image: 'https://i.imgur.com/fo5oW3d.png' },
     { text: 'Hospedaje', image: 'https://i.imgur.com/SN0hO9s.png' },
     { text: 'Salud', image: 'https://i.imgur.com/MhIuylY.png' },
@@ -24,6 +25,7 @@ const DanlíScreen = () => {
     { text: 'Plazas Comerciales', image: 'https://i.imgur.com/GycKe4i.png' },
     { text: 'Transporte', image: 'https://i.imgur.com/2sgBrWV.png' },
     { text: 'Educación', image: 'https://i.imgur.com/jPVcqaS.png' },
+    { text: 'Servicios Publicos', image: 'https://i.imgur.com/jPVcqaS.png' },
   ]);
   const [filterData, setFilterData] = useState([]);
   const [searchText, setSearchText] = useState('');
