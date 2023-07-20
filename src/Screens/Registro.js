@@ -16,7 +16,7 @@ const Registro = ({ navigation }) => {
         <View style={styles.textboxContainer}>
           <Text>Nombre 1:</Text>
           <TextInput
-            style={styles.textbox}
+            style={[styles.textbox, { width: "80%" }]} // Ajusta el ancho al 80%
             value={nombre1}
             onChangeText={(text) => setNombre1(text)}
           />
@@ -26,7 +26,7 @@ const Registro = ({ navigation }) => {
         <View style={styles.textboxContainer}>
           <Text>Nombre 2:</Text>
           <TextInput
-            style={styles.textbox}
+            style={[styles.textbox, { width: "80%" }]} // Ajusta el ancho al 80%
             value={nombre2}
             onChangeText={(text) => setNombre2(text)}
           />
@@ -36,7 +36,7 @@ const Registro = ({ navigation }) => {
         <View style={styles.textboxContainer}>
           <Text>Nombre 3:</Text>
           <TextInput
-            style={styles.textbox}
+            style={[styles.textbox, { width: "80%" }]} // Ajusta el ancho al 80%
             value={nombre3}
             onChangeText={(text) => setNombre3(text)}
           />
