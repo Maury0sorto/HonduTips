@@ -77,14 +77,15 @@ const Registro = ({ navigation }) => {
         aspect: [1, 1],
         quality: 1,
       });
-
-      if (!result.cancelled) {
+  
+      if (!result.canceled) { // Cambiar 'cancelled' a 'canceled'
         setImage(result.assets[0].uri);
       }
     } catch (error) {
       console.log("Error al cargar la imagen:", error);
     }
   };
+  
 
   return (
     <SafeAreaView style={styles.container}>
