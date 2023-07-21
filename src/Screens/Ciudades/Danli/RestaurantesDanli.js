@@ -724,7 +724,7 @@ const RestaurantesDanli = () => {
     { text: "Paseo Pupuseria", image: 'https://i.imgur.com/164Tmgq.png', screen: ScreenAF},
     { text: "El Gordo Mexican Food", image: 'https://i.imgur.com/jv52iF2.jpg', screen: ScreenAG},
     { text: "Taqueria Chilango’s", image: 'https://i.imgur.com/ce3YR88.jpg', screen: ScreenAH},
-    { text: "Asados Polencho", image: 'https://i.imgur.com/u2DzzzK.png', screen: ScreenAI},
+    { text: "Asados Polencho", image: 'https://i.imgur.com/rBQolKp.png', screen: ScreenAI},
     { text: "La Casa De Mami Yoli", image: 'https://i.imgur.com/DEA9GQG.jpg', screen: ScreenAJ},
    
   
