@@ -16,7 +16,7 @@ const DanlíScreen = () => {
   }, []);
   const [data, setData] = useState([
     { text: 'Banca', image: 'https://i.imgur.com/Bffp4OT.png' },
-    { text: 'FESTIMA', image: 'https://i.imgur.com/XO8v9MO.png' },
+    { text: 'FESTIMA', image: 'https://i.imgur.com/OxmmOCF.png' },
     { text: 'Alimentos y Bebidas', image: 'https://i.imgur.com/fo5oW3d.png' },
     { text: 'Hospedaje', image: 'https://i.imgur.com/SN0hO9s.png' },
     { text: 'Salud', image: 'https://i.imgur.com/MhIuylY.png' },
