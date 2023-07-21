@@ -7,21 +7,21 @@ import ImageViewer from 'react-native-image-zoom-viewer';
 
 const locationsData = [
   {
-    title: "Smile Team",
+    title: "Centro Comercial Santa Rita",
  
-    latitude:  14.028466838801386, 
-    longitude:  -86.57959266596771,
+    latitude:   14.022356289315425, 
+    longitude: -86.57374685776334,
   },
 
   // Agrega más ubicaciones aquí si lo deseas
 ];
 
-export default function SmileTeamDanli() {
+export default function CentroComercialSantaRitaDanli() {
 
   const mapRef = useRef(null);
   const initialRegion = {
-    latitude:  14.028466838801386, 
-    longitude:  -86.57959266596771,
+    latitude:   14.022356289315425, 
+    longitude: -86.57374685776334,
     latitudeDelta: 0.003,
     longitudeDelta: 0.003,
   };
@@ -46,7 +46,7 @@ export default function SmileTeamDanli() {
       { cancelable: false }
     );
   };
-
+  
   const handleZoomIn = () => {
     const region = {
       latitude: initialRegion.latitude,
@@ -71,7 +71,7 @@ export default function SmileTeamDanli() {
   return (
     <ScrollView>
       <View style={styles.container}>
-        <Text style={styles.title}>SMILE TEAM</Text>
+        <Text style={styles.title}>Centro Comercial Santa Rita</Text>
         <View style={styles.containerSwipers}>
           <View style={styles.swiperContainer}>
             <Swiper
@@ -84,7 +84,7 @@ export default function SmileTeamDanli() {
             >
 
                 <View style={styles.slide}>
-                <Image style={styles.image} source={{ uri: 'https://i.imgur.com/ZPo7rQh.png' }} />
+                <Image style={styles.image} source={{ uri: 'https://i.imgur.com/VZxyb55.png' }} />
               </View>
             
              
@@ -101,17 +101,17 @@ export default function SmileTeamDanli() {
       <View style={styles.scheduleContainer}>
         <View style={styles.scheduleItem}>
           <Icon name="clock-o" size={20} color="#000" style={styles.scheduleIcon} />
-          <Text style={styles.scheduleText}>Lun-Vie: 9:00 AM - 6:00 PM </Text>
+          <Text style={styles.scheduleText}>Lun-Vie: 8:00 AM - 5:00 PM </Text>
         </View>
         
         <View style={styles.scheduleItem}>
           <Icon name="clock-o" size={20} color="#000" style={styles.scheduleIcon} />
-          <Text style={styles.scheduleText}>Sáb: Cerrado </Text>
+          <Text style={styles.scheduleText}>Sáb: 8:00 AM - 12:00 PM </Text>
         </View>
         
         <View style={styles.scheduleItem}>
           <Icon name="clock-o" size={20} color="#000" style={styles.scheduleIcon} />
-          <Text style={styles.scheduleText}>Dom: 10:00 AM - 3:00 PM  </Text>
+          <Text style={styles.scheduleText}>Dom: Cerrado  </Text>
         </View>
       </View>
     </View>
@@ -119,19 +119,21 @@ export default function SmileTeamDanli() {
 
 
         <View style={styles.buttonContainer}>
+
         <TouchableOpacity
             style={styles.button}
             onPress={() => {
-              Linking.openURL('https://www.facebook.com/smileteam.hn/?locale=fo_FO');
+              Linking.openURL('https://www.facebook.com/profile.php?id=100064277823054&locale=hi_IN');
             }} 
           >
              <Icon name="globe" size={20} color="white" style={styles.buttonIcon} />
             <Text style={styles.buttonText}>Visitar</Text>
-          </TouchableOpacity>
-          <TouchableOpacity
+          </TouchableOpacity> 
+
+        <TouchableOpacity
             style={styles.button}
             onPress={() => {
-              Linking.openURL('tel: 3224-0877');
+              Linking.openURL('tel: 9606-7833');
             }}
           >
              <Icon name="phone" size={20} color="white" style={styles.buttonIcon} />
@@ -173,9 +175,9 @@ export default function SmileTeamDanli() {
         <View style={styles.buttonContainer}>
           <TouchableOpacity
             style={styles.button2}
-            onPress={() => openGoogleMaps(  14.028466838801386, -86.57959266596771,)}
+            onPress={() => openGoogleMaps( 14.022356289315425, -86.57374685776334,)}
           >
-            <Text style={styles.buttonText2}>SMILE TEAM</Text>
+            <Text style={styles.buttonText2}>Centro Comercial Santa Rita</Text>
           </TouchableOpacity>
         </View>
      

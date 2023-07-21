@@ -5,11 +5,16 @@ import { Ionicons } from '@expo/vector-icons';
 import { useNavigation } from '@react-navigation/native';
 
 
-import PapaJohnstDanli from '../RestaurantesDanli/PapaJohnsDanli';
-import GasolineraPumaDanli from '../GasolinerasDanli/GasolineraPumaDanli';
 import MallUniplazaDanli from './MallUniplazaDanli';
 import PaseoLasColinasDanli from './PaseoLasColinasDanli';
 import MallLaCumbreDanli from './MallLaCumbreDanli';
+import PlazaSanMiguelDanli from './PlazaSanMiguelDanli';
+import PlazaLasColinasDanli from './PlazaLasColinasDanli';
+import NovaPlazaDanli from './NovaPlazaDanli';
+import CentroComercialMariaLuisaDanli from './CentroComecialMariaLuisaDanli';
+import CentroComercialSantaRitaDanli from './CentroComercialSantaRitaDanli';
+import CentroComercialElDoradoDanli from './CentroComercialElDoradoDanli';
+import EdificioAstroDanli from './EdificioAstroDanli';
 
 const ScreenA = ({ text, mostrarBotonAnterior }) => {
   return (
@@ -81,12 +86,130 @@ const ScreenD = ({ text, mostrarBotonAnterior }) => {
       <Text style={styles.backButtonText}>Regresar</Text>
     </>
       </TouchableHighlight>
-      <PapaJohnstDanli/>
+      <PlazaSanMiguelDanli/>
+    </View>
+  );
+};
+
+const ScreenE = ({ text, mostrarBotonAnterior }) => {
+  return (
+    <View style={styles.componentContainer}>
+      <TouchableHighlight
+        style={styles.backButton}
+        underlayColor="#0080ff"
+        onPress={mostrarBotonAnterior}
+      >
+        <>
+      <Ionicons name="arrow-back" size={24} color="black" style={styles.backButtonIcon} />
+      <Text style={styles.backButtonText}>Regresar</Text>
+    </>
+      </TouchableHighlight>
+      <PlazaLasColinasDanli/>
     </View>
   );
 };
 
 
+const ScreenF = ({ text, mostrarBotonAnterior }) => {
+  return (
+    <View style={styles.componentContainer}>
+      <TouchableHighlight
+        style={styles.backButton}
+        underlayColor="#0080ff"
+        onPress={mostrarBotonAnterior}
+      >
+        <>
+      <Ionicons name="arrow-back" size={24} color="black" style={styles.backButtonIcon} />
+      <Text style={styles.backButtonText}>Regresar</Text>
+    </>
+      </TouchableHighlight>
+      <NovaPlazaDanli
+/>
+    </View>
+  );
+};
+
+
+const ScreenG = ({ text, mostrarBotonAnterior }) => {
+  return (
+    <View style={styles.componentContainer}>
+      <TouchableHighlight
+        style={styles.backButton}
+        underlayColor="#0080ff"
+        onPress={mostrarBotonAnterior}
+      >
+        <>
+      <Ionicons name="arrow-back" size={24} color="black" style={styles.backButtonIcon} />
+      <Text style={styles.backButtonText}>Regresar</Text>
+    </>
+      </TouchableHighlight>
+      <CentroComercialMariaLuisaDanli
+/>
+    </View>
+  );
+};
+
+
+const ScreenH = ({ text, mostrarBotonAnterior }) => {
+  return (
+    <View style={styles.componentContainer}>
+      <TouchableHighlight
+        style={styles.backButton}
+        underlayColor="#0080ff"
+        onPress={mostrarBotonAnterior}
+      >
+        <>
+      <Ionicons name="arrow-back" size={24} color="black" style={styles.backButtonIcon} />
+      <Text style={styles.backButtonText}>Regresar</Text>
+    </>
+      </TouchableHighlight>
+      <CentroComercialSantaRitaDanli
+/>
+    </View>
+  );
+};
+
+
+
+const ScreenI = ({ text, mostrarBotonAnterior }) => {
+  return (
+    <View style={styles.componentContainer}>
+      <TouchableHighlight
+        style={styles.backButton}
+        underlayColor="#0080ff"
+        onPress={mostrarBotonAnterior}
+      >
+        <>
+      <Ionicons name="arrow-back" size={24} color="black" style={styles.backButtonIcon} />
+      <Text style={styles.backButtonText}>Regresar</Text>
+    </>
+      </TouchableHighlight>
+      <CentroComercialElDoradoDanli
+/>
+    </View>
+  );
+};
+
+
+
+const ScreenJ = ({ text, mostrarBotonAnterior }) => {
+  return (
+    <View style={styles.componentContainer}>
+      <TouchableHighlight
+        style={styles.backButton}
+        underlayColor="#0080ff"
+        onPress={mostrarBotonAnterior}
+      >
+        <>
+      <Ionicons name="arrow-back" size={24} color="black" style={styles.backButtonIcon} />
+      <Text style={styles.backButtonText}>Regresar</Text>
+    </>
+      </TouchableHighlight>
+      <EdificioAstroDanli
+/>
+    </View>
+  );
+};
 
 const PlazasComercialesDanli = () => {
   const [componenteVisible, setComponenteVisible] = useState(null);
@@ -109,13 +232,13 @@ const PlazasComercialesDanli = () => {
     { text: "Mall Uniplaza", image: 'https://i.imgur.com/9QrO6SG.jpg',  screen: ScreenA },
     { text: 'Paseo Las Colinas', image: 'https://i.imgur.com/GZ77tP9.jpg', screen: ScreenB },
     { text: 'Mall La Cumbre', image: 'https://i.imgur.com/o76d0ai.jpg', screen: ScreenC },
-      { text: 'Plaza San Miguel', image: 'https://i.imgur.com/YrrDG9H.jpg', screen: ScreenC },
-       { text: 'Plaza Las Colinas', image: 'https://i.imgur.com/YrrDG9H.jpg', screen: ScreenC },
-        { text: 'Nova Plaza', image: 'https://i.imgur.com/YrrDG9H.jpg', screen: ScreenC },
-         { text: 'Centro Comercial Maria Luisa', image: 'https://i.imgur.com/YrrDG9H.jpg', screen: ScreenC },
-          { text: 'Centro Comercial Santa Rita', image: 'https://i.imgur.com/YrrDG9H.jpg', screen: ScreenC },
-          { text: 'Centro Comercial El Dorado', image: 'https://i.imgur.com/YrrDG9H.jpg', screen: ScreenC },
-          { text: 'Edificio Astro', image: 'https://i.imgur.com/YrrDG9H.jpg', screen: ScreenC },
+      { text: 'Plaza San Miguel', image: 'https://i.imgur.com/YrrDG9H.jpg', screen: ScreenD },
+       { text: 'Plaza Las Colinas', image: 'https://i.imgur.com/YrrDG9H.jpg', screen: ScreenE },
+        { text: 'Nova Plaza', image: 'https://i.imgur.com/YrrDG9H.jpg', screen: ScreenF },
+         { text: 'Centro Comercial Maria Luisa', image: 'https://i.imgur.com/W9gQYki.png', screen: ScreenG },
+          { text: 'Centro Comercial Santa Rita', image: 'https://i.imgur.com/kO7Whlv.png', screen: ScreenH },
+          { text: 'Centro Comercial El Dorado', image: 'https://i.imgur.com/AYPM9QQ.png', screen: ScreenI },
+          { text: 'Edificio Astro', image: 'https://i.imgur.com/c34VnNc.png', screen: ScreenJ },
     
 
   ];
