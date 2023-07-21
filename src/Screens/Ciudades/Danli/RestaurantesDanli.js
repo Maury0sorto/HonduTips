@@ -40,6 +40,8 @@ import MiguelDanli from './AlimentosBebidasDanli/Bares/MiguelCubanoDanli';
 import GordoMexicanoDanli from './RestaurantesDanli/GordoMexicanoDanli';
 import ChilangosDanli from './RestaurantesDanli/ChilangosDanli';
 import AsadosPolenchoDanli from './RestaurantesDanli/AsadosPolencho';
+import BuffeterosDanli from './RestaurantesDanli/BuffetererosDanli';
+import MamaYoliDanli from './RestaurantesDanli/MamaYoliDanli';
 
 const ScreenA = ({ text, mostrarBotonAnterior }) => {
   return (
@@ -562,6 +564,23 @@ const ScreenAC= ({ text, mostrarBotonAnterior }) => {
     </View>
   );
 };
+const ScreenAD= ({ text, mostrarBotonAnterior }) => {
+  return (
+    <View style={styles.componentContainer}>
+      <TouchableHighlight
+        style={styles.backButton}
+        underlayColor="#0080ff"
+        onPress={mostrarBotonAnterior}
+      >
+       <>
+      <Ionicons name="arrow-back" size={24} color="black" style={styles.backButtonIcon} />
+      <Text style={styles.backButtonText}>Regresar</Text>
+    </>
+      </TouchableHighlight>
+      <BuffeterosDanli/>
+    </View>
+  );
+};
 const ScreenAF= ({ text, mostrarBotonAnterior }) => {
   return (
     <View style={styles.componentContainer}>
@@ -630,6 +649,23 @@ const ScreenAI= ({ text, mostrarBotonAnterior }) => {
     </View>
   );
 };
+const ScreenAJ= ({ text, mostrarBotonAnterior }) => {
+  return (
+    <View style={styles.componentContainer}>
+      <TouchableHighlight
+        style={styles.backButton}
+        underlayColor="#0080ff"
+        onPress={mostrarBotonAnterior}
+      >
+       <>
+      <Ionicons name="arrow-back" size={24} color="black" style={styles.backButtonIcon} />
+      <Text style={styles.backButtonText}>Regresar</Text>
+    </>
+      </TouchableHighlight>
+      <MamaYoliDanli/>
+    </View>
+  );
+};
 
 const RestaurantesDanli = () => {
   const [componenteVisible, setComponenteVisible] = useState(null);
@@ -684,10 +720,12 @@ const RestaurantesDanli = () => {
     { text: "Servitipicos Alameda", image: 'https://i.imgur.com/aDbMNWE.jpg', screen: ScreenAA},
     { text: "Sport Jali", image: 'https://i.imgur.com/BBV6ynZ.jpg', screen: ScreenAB},
     { text: "Baleadas Yuli", image: 'https://i.imgur.com/AVc27Xo.jpg', screen: ScreenAC},
+    { text: "Buffeteros", image: 'https://i.imgur.com/VqwKOSs.jpg', screen: ScreenAD},
     { text: "Paseo Pupuseria", image: 'https://i.imgur.com/164Tmgq.png', screen: ScreenAF},
     { text: "El Gordo Mexican Food", image: 'https://i.imgur.com/jv52iF2.jpg', screen: ScreenAG},
     { text: "Taqueria Chilango’s", image: 'https://i.imgur.com/ce3YR88.jpg', screen: ScreenAH},
     { text: "Asados Polencho", image: 'https://i.imgur.com/u2DzzzK.png', screen: ScreenAI},
+    { text: "La Casa De Mami Yoli", image: 'https://i.imgur.com/DEA9GQG.jpg', screen: ScreenAJ},
    
   
   
