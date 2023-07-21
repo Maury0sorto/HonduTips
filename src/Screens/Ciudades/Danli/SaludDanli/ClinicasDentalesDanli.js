@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { View, Text, Image, TouchableHighlight, StyleSheet, ScrollView,TouchableOpacity } from 'react-native';
 import { SelectList } from 'react-native-dropdown-select-list';
 import { Ionicons } from '@expo/vector-icons';
-
+import { useNavigation } from '@react-navigation/native';
 
 import CEDDanli from './ClinicaDentalDanli/CEDDanli';
 import CioDentalDanli from './ClinicaDentalDanli/CioDentalDanli';
@@ -10,6 +10,9 @@ import CIDDanli from './ClinicaDentalDanli/CIDDanli';
 import CDDentalDanli from './ClinicaDentalDanli/C&DDentalDanli';
 import ClinicaDentalMayorquinDanli from './ClinicaDentalDanli/ClinicaDentalMayorquinDanli';
 import SmileTeamDanli from './ClinicaDentalDanli/SmileTeamDanli';
+import VCDDanli from './ClinicaDentalDanli/VDCDanli';
+import ClinicaOrtodonciaArguello from './ClinicaDentalDanli/ClinicaOrtodonciaDr.ArguelloDanli';
+
 
 const ScreenA = ({ text, mostrarBotonAnterior }) => {
   return (
@@ -122,6 +125,44 @@ const ScreenF = ({ text, mostrarBotonAnterior }) => {
 };
 
 
+const ScreenG = ({ text, mostrarBotonAnterior }) => {
+  return (
+    <View style={styles.componentContainer}>
+      <TouchableHighlight
+        style={styles.backButton}
+        underlayColor="#0080ff"
+        onPress={mostrarBotonAnterior}
+      >
+         <>
+      <Ionicons name="arrow-back" size={24} color="black" style={styles.backButtonIcon} />
+      <Text style={styles.backButtonText}>Regresar</Text>
+    </>
+      </TouchableHighlight>
+      <VCDDanli/>
+    </View>
+  );
+};
+
+
+
+const ScreenH = ({ text, mostrarBotonAnterior }) => {
+  return (
+    <View style={styles.componentContainer}>
+      <TouchableHighlight
+        style={styles.backButton}
+        underlayColor="#0080ff"
+        onPress={mostrarBotonAnterior}
+      >
+         <>
+      <Ionicons name="arrow-back" size={24} color="black" style={styles.backButtonIcon} />
+      <Text style={styles.backButtonText}>Regresar</Text>
+    </>
+      </TouchableHighlight>
+      <ClinicaOrtodonciaArguello/>
+    </View>
+  );
+};
+
 
 const ClinicasDentalesDanli = () => {
   const [componenteVisible, setComponenteVisible] = useState(null);
@@ -147,8 +188,8 @@ const ClinicasDentalesDanli = () => {
     { text: 'C&D Dental', image: 'https://i.imgur.com/K4t1Oye.png', screen: ScreenD },
     { text: 'Clinica Dental Mayorquin', image: 'https://i.imgur.com/DC0fNJ7.png', screen: ScreenE },
     { text: 'Smile Team Centro Odontológico', image: 'https://i.imgur.com/uhd5C5f.png', screen: ScreenF },
-    { text: 'VDC Especialidades Dentales', image: 'https://i.imgur.com/YrrDG9H.jpg', screen: ScreenD },
-    { text: 'CLINICA DE ORTODONCIA Dra. Rosalba Argüello', image: 'https://i.imgur.com/YrrDG9H.jpg', screen: ScreenD },
+    { text: 'VDC Especialidades Dentales', image: 'https://i.imgur.com/roQg4P3.png', screen: ScreenG },
+    { text: 'CLINICA DE ORTODONCIA Dra. Rosalba Argüello', image: 'https://i.imgur.com/jHDXyqV.png', screen: ScreenH },
 
 
   ];
@@ -177,21 +218,24 @@ const ClinicasDentalesDanli = () => {
 
   
   
+  const navigation = useNavigation();
+  const handleImagePress = () => {
+    // Aquí puedes agregar la lógica que desees ejecutar cuando se presione la imagen
+    navigation.navigate('Registra tu Empresa');
+  };
+
 
   return (
     <View style={styles.container}>
       {mostrarSelectList && (
-        <View style={styles.container2}>
-          <SelectList
-            setSelected={(val) => setSelectedOption(val)}
-            data={data2}
-            save="value"
-            placeholder="Recomendados"
-            noDataText="Restaurante no disponible"
-            searchPlaceholder="Busca tu farmacia"
-            onInputChange={(text) => mostrarComponente(text, null)}
-          />
-        </View>
+      <View style={styles.container2}>
+      <TouchableOpacity onPress={handleImagePress}>
+     <Image
+       source={{ uri: 'https://i.imgur.com/7YTTkEO.png' }} // Reemplaza con la URL de tu imagen
+       style={styles.image}
+     />
+   </TouchableOpacity>
+     </View>
       )}
 
       {ComponenteVisible ? (
@@ -232,7 +276,7 @@ const styles = StyleSheet.create({
     justifyContent: 'center',
   },
   container2: {
-    backgroundColor: '#ffff',
+    backgroundColor: 'transparent',
     borderRadius: 20,
     paddingHorizontal: 8,
     paddingVertical: 8,
@@ -306,6 +350,14 @@ const styles = StyleSheet.create({
     fontSize: 16,
     fontWeight: 'bold',
     
+  },
+
+
+  image: {
+    width: 362,
+    height: 76,
+   marginLeft: -35, // Alinea la imagen a la izquierda dentro del contenedor
+    // Otros estilos que desees aplicar a la imagen
   },
 });
 
