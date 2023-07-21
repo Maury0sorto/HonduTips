@@ -7,21 +7,21 @@ import ImageViewer from 'react-native-image-zoom-viewer';
 
 const locationsData = [
   {
-    title: "CED",
+    title: "Cedymeh",
  
-    latitude:  14.027527740627077, 
-    longitude:  -86.5792924385306,
+    latitude:   14.017126970125974, 
+    longitude:  -86.56958913131817,
   },
 
   // Agrega más ubicaciones aquí si lo deseas
 ];
 
-export default function CEDDanli() {
+export default function CedymehDanli() {
 
   const mapRef = useRef(null);
   const initialRegion = {
-    latitude:  14.027527740627077, 
-    longitude:  -86.5792924385306,
+    latitude:   14.017126970125974, 
+    longitude:  -86.56958913131817,
     latitudeDelta: 0.003,
     longitudeDelta: 0.003,
   };
@@ -71,7 +71,7 @@ export default function CEDDanli() {
   return (
     <ScrollView>
       <View style={styles.container}>
-        <Text style={styles.title}>Centro Estetico Dental</Text>
+        <Text style={styles.title}>Cedymeh</Text>
         <View style={styles.containerSwipers}>
           <View style={styles.swiperContainer}>
             <Swiper
@@ -84,10 +84,10 @@ export default function CEDDanli() {
             >
 
                 <View style={styles.slide}>
-                <Image style={styles.image} source={{ uri: 'https://i.imgur.com/DvSXzPC.png' }} />
+                <Image style={styles.image} source={{ uri: 'https://i.imgur.com/UEJjFlt.png' }} />
               </View>
                  <View style={styles.slide}>
-                <Image style={styles.image} source={{ uri: 'https://i.imgur.com/TZYLEwQ.png' }} />
+                <Image style={styles.image} source={{ uri: 'https://i.imgur.com/VGSu93K.png' }} />
               </View>
             
              
@@ -104,12 +104,11 @@ export default function CEDDanli() {
       <View style={styles.scheduleContainer}>
         <View style={styles.scheduleItem}>
           <Icon name="clock-o" size={20} color="#000" style={styles.scheduleIcon} />
-          <Text style={styles.scheduleText}>Lun-Vie: 8:00 AM - 8:00 PM </Text>
+          <Text style={styles.scheduleText}>Lun-Vie: 8:00 AM - 4:00 PM </Text>
         </View>
-        
         <View style={styles.scheduleItem}>
           <Icon name="clock-o" size={20} color="#000" style={styles.scheduleIcon} />
-          <Text style={styles.scheduleText}>Sáb: 8:00 AM - 4:00 PM </Text>
+          <Text style={styles.scheduleText}>Sáb: 8:00 AM - 12:00 PM </Text>
         </View>
         
         <View style={styles.scheduleItem}>
@@ -125,7 +124,7 @@ export default function CEDDanli() {
         <TouchableOpacity
             style={styles.button}
             onPress={() => {
-              Linking.openURL('http://www.centroesteticodental.com/');
+              Linking.openURL('https://www.facebook.com/cedymeh/?locale=es_LA');
             }}
           >
              <Icon name="globe" size={20} color="white" style={styles.buttonIcon} />
@@ -134,7 +133,7 @@ export default function CEDDanli() {
           <TouchableOpacity
             style={styles.button}
             onPress={() => {
-              Linking.openURL('tel: 9852-6709');
+              Linking.openURL('tel: 9722-5699');
             }}
           >
              <Icon name="phone" size={20} color="white" style={styles.buttonIcon} />
@@ -176,9 +175,9 @@ export default function CEDDanli() {
         <View style={styles.buttonContainer}>
           <TouchableOpacity
             style={styles.button2}
-            onPress={() => openGoogleMaps(   14.027527740627077, -86.5792924385306,)}
+            onPress={() => openGoogleMaps(   14.017126970125974, -86.56958913131817,)}
           >
-            <Text style={styles.buttonText2}>CED</Text>
+            <Text style={styles.buttonText2}>Cedymeh</Text>
           </TouchableOpacity>
         </View>
      

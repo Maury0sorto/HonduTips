@@ -161,7 +161,7 @@ const styles = StyleSheet.create({
     container2: {
       flex: 1,
       paddingHorizontal: 16,
-      marginTop: 136,
+      marginTop: 66,
       
     },
     row: {

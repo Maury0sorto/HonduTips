@@ -14,7 +14,7 @@ import ClinicaPsicologicaIntegraMenteDanli from './CentrosMedicosDanli/ClinicaPs
 import ClinicaDrSalvadorMoncadaDanli from './CentrosMedicosDanli/ClinicaDrSalvadorMoncadaDanli';
 import ClinicasMedicasDanli from './CentrosMedicosDanli/ClinicasMediasDanli';
 import ClinicaMedicaFerrerasDanli from './CentrosMedicosDanli/ClinicaMedicaFerrerasDanli';
-
+import CedymehDanli from './CentrosMedicosDanli/CedymehDanli';
 
 const ScreenA = ({ text, mostrarBotonAnterior }) => {
   return (
@@ -184,6 +184,24 @@ const ScreenK = ({ text, mostrarBotonAnterior }) => {
 }; 
 
 
+const ScreenM = ({ text, mostrarBotonAnterior }) => {
+  return (
+    <View style={styles.componentContainer}>
+      <TouchableHighlight
+        style={styles.backButton}
+        underlayColor="#0080ff"
+        onPress={mostrarBotonAnterior}
+      >
+        <>
+      <Ionicons name="arrow-back" size={24} color="black" style={styles.backButtonIcon} />
+      <Text style={styles.backButtonText}>Regresar</Text>
+    </>
+      </TouchableHighlight>
+      <CedymehDanli/>
+    </View>
+  );
+};
+
 
 const CentroMedicosDanli = () => {
   const [componenteVisible, setComponenteVisible] = useState(null);
@@ -212,6 +230,7 @@ const CentroMedicosDanli = () => {
     { text: "Clínica Médica Ferrera'S", image: 'https://i.imgur.com/h2bmzh4.jpg', screen: ScreenK },
     { text: 'Centro Medico Quirurgico De Oriente', image: 'https://i.imgur.com/h2bmzh4.jpg', screen: ScreenC },
     { text: 'Centro Médico Navarro Espinal', image: 'https://i.imgur.com/h2bmzh4.jpg', screen: ScreenD },
+    { text: 'Cedymeh', image: 'https://i.imgur.com/zQuHljo.png', screen: ScreenM },
  
     
 
@@ -228,6 +247,7 @@ const CentroMedicosDanli = () => {
     { key: '8', value: 'Clinicas Medicas Danli' },
     { key: '9', value: "Clínica Médica Ferrera'S" },
     { key: '10', value: 'Clinica Dr. Salvador Moncada' },
+    { key: '11', value: 'Cedymeh' },
 
     
     

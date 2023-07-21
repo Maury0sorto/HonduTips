@@ -3,12 +3,13 @@ import { View, Text, Image, TouchableHighlight, StyleSheet, ScrollView,Touchable
 import { SelectList } from 'react-native-dropdown-select-list';
 import { Ionicons } from '@expo/vector-icons';
 
- 
-import FarmaciaSimanDanli from './FarmaciasDanli/FarmaciaSimanDanli';
-import FarmaciaElAhorroDanli from './FarmaciasDanli/FarmaciaElAhorroDanli';
-import FarmacityDanli from './FarmaciasDanli/FarmaCityDanli';
-import FarmaciaKielsaDanli from './FarmaciasDanli/FarmaciaKielsaDanli';
 
+import CEDDanli from './ClinicaDentalDanli/CEDDanli';
+import CioDentalDanli from './ClinicaDentalDanli/CioDentalDanli';
+import CIDDanli from './ClinicaDentalDanli/CIDDanli';
+import CDDentalDanli from './ClinicaDentalDanli/C&DDentalDanli';
+import ClinicaDentalMayorquinDanli from './ClinicaDentalDanli/ClinicaDentalMayorquinDanli';
+import SmileTeamDanli from './ClinicaDentalDanli/SmileTeamDanli';
 
 const ScreenA = ({ text, mostrarBotonAnterior }) => {
   return (
@@ -23,7 +24,7 @@ const ScreenA = ({ text, mostrarBotonAnterior }) => {
       <Text style={styles.backButtonText}>Regresar</Text>
     </>
     </TouchableHighlight>
-    <FarmaciaSimanDanli/>
+    <CEDDanli/>
    
   </View>
   );
@@ -42,7 +43,7 @@ const ScreenB = ({ text, mostrarBotonAnterior }) => {
       <Text style={styles.backButtonText}>Regresar</Text>
     </>
       </TouchableHighlight>
-      <FarmacityDanli/>
+      <CioDentalDanli/>
      
     </View>
   );
@@ -61,7 +62,7 @@ const ScreenC = ({ text, mostrarBotonAnterior }) => {
       <Text style={styles.backButtonText}>Regresar</Text>
     </>
       </TouchableHighlight>
-      <FarmaciaElAhorroDanli/>
+      <CIDDanli/>
     </View>
   );
 };
@@ -79,7 +80,43 @@ const ScreenD = ({ text, mostrarBotonAnterior }) => {
       <Text style={styles.backButtonText}>Regresar</Text>
     </>
       </TouchableHighlight>
-      <FarmaciaKielsaDanli/>
+      <CDDentalDanli/>
+    </View>
+  );
+};
+
+const ScreenE = ({ text, mostrarBotonAnterior }) => {
+  return (
+    <View style={styles.componentContainer}>
+      <TouchableHighlight
+        style={styles.backButton}
+        underlayColor="#0080ff"
+        onPress={mostrarBotonAnterior}
+      >
+         <>
+      <Ionicons name="arrow-back" size={24} color="black" style={styles.backButtonIcon} />
+      <Text style={styles.backButtonText}>Regresar</Text>
+    </>
+      </TouchableHighlight>
+      <ClinicaDentalMayorquinDanli/>
+    </View>
+  );
+};
+
+const ScreenF = ({ text, mostrarBotonAnterior }) => {
+  return (
+    <View style={styles.componentContainer}>
+      <TouchableHighlight
+        style={styles.backButton}
+        underlayColor="#0080ff"
+        onPress={mostrarBotonAnterior}
+      >
+         <>
+      <Ionicons name="arrow-back" size={24} color="black" style={styles.backButtonIcon} />
+      <Text style={styles.backButtonText}>Regresar</Text>
+    </>
+      </TouchableHighlight>
+      <SmileTeamDanli/>
     </View>
   );
 };
@@ -104,12 +141,12 @@ const ClinicasDentalesDanli = () => {
   };
 
   const buttons = [
-    { text: "Centro Estetico Dental (CED)", image: 'https://i.imgur.com/YrrDG9H.jpg',  screen: ScreenA },
-    { text: 'CIODENTAL', image: 'https://i.imgur.com/YrrDG9H.jpg', screen: ScreenB },
-    { text: "Clinica integral dental (CID)", image: 'https://i.imgur.com/YrrDG9H.jpg', screen: ScreenC },
-    { text: 'C&D Dental', image: 'https://i.imgur.com/YrrDG9H.jpg', screen: ScreenD },
-    { text: 'Clinica Dental Mayorquin', image: 'https://i.imgur.com/YrrDG9H.jpg', screen: ScreenD },
-    { text: 'Smile Team Centro Odontológico', image: 'https://i.imgur.com/YrrDG9H.jpg', screen: ScreenD },
+    { text: "Centro Estetico Dental (CED)", image: 'https://i.imgur.com/NN9mghA.png',  screen: ScreenA },
+    { text: 'CIODENTAL', image: 'https://i.imgur.com/aogmDKY.png', screen: ScreenB },
+    { text: "Clinica integral Dental (CID)", image: 'https://i.imgur.com/Te4Mi98.png', screen: ScreenC },
+    { text: 'C&D Dental', image: 'https://i.imgur.com/K4t1Oye.png', screen: ScreenD },
+    { text: 'Clinica Dental Mayorquin', image: 'https://i.imgur.com/DC0fNJ7.png', screen: ScreenE },
+    { text: 'Smile Team Centro Odontológico', image: 'https://i.imgur.com/uhd5C5f.png', screen: ScreenF },
     { text: 'VDC Especialidades Dentales', image: 'https://i.imgur.com/YrrDG9H.jpg', screen: ScreenD },
     { text: 'CLINICA DE ORTODONCIA Dra. Rosalba Argüello', image: 'https://i.imgur.com/YrrDG9H.jpg', screen: ScreenD },
 
