@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { View, Text, Image, TouchableHighlight, StyleSheet, ScrollView,TouchableOpacity } from 'react-native';
 import { SelectList } from 'react-native-dropdown-select-list';
 import { Ionicons } from '@expo/vector-icons';
-
+import { useNavigation } from '@react-navigation/native';
 
 import FinancieraFincaDanli from './FinancierasDanli/FinancieraFincaDanli';
 import FinancieraIDHDanli from './FinancierasDanli/FinancieraIDHDanli';
@@ -292,20 +292,24 @@ const FinancierasDanli = () => {
       selectedOption === 'Recomendados' || button.text.includes(selectedOption)
   );
   
+  const navigation = useNavigation();
+  const handleImagePress = () => {
+    // Aquí puedes agregar la lógica que desees ejecutar cuando se presione la imagen
+    navigation.navigate('Registra tu Empresa');
+  };
+
 
   return (
     <View style={styles.container}>
       {mostrarSelectList && (
-        <View style={styles.container2}>
-          <SelectList
-            setSelected={(val) => setSelectedOption(val)}
-            data={data2}
-            save="value"
-            placeholder="Recomendados"
-            noDataText="Coopertiva no disponible"
-            searchPlaceholder="Busca tu coopertiva"
-          />
-        </View>
+      <View style={styles.container2}>
+      <TouchableOpacity onPress={handleImagePress}>
+     <Image
+       source={{ uri: 'https://i.imgur.com/7YTTkEO.png' }} // Reemplaza con la URL de tu imagen
+       style={styles.image}
+     />
+   </TouchableOpacity>
+     </View>
       )}
 
       {ComponenteVisible ? (
@@ -346,7 +350,7 @@ const styles = StyleSheet.create({
     justifyContent: 'center',
   },
   container2: {
-    backgroundColor: '#ffff',
+    backgroundColor: 'transparent',
     borderRadius: 20,
     paddingHorizontal: 8,
     paddingVertical: 8,
@@ -420,6 +424,13 @@ const styles = StyleSheet.create({
     fontSize: 16,
     fontWeight: 'bold',
     
+  },
+
+  image: {
+    width: 362,
+    height: 76,
+   marginLeft: -35, // Alinea la imagen a la izquierda dentro del contenedor
+    // Otros estilos que desees aplicar a la imagen
   },
 });
 
