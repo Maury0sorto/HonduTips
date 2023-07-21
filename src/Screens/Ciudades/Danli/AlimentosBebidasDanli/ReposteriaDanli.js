@@ -84,7 +84,6 @@ const ReposteriaDanli = () => {
   const buttons = [
     { text: "Repostería Nely", image: 'https://i.imgur.com/CoA5cuh.jpg',  screen: ScreenA },
     { text: "Repostería La Colmena", image: 'https://i.imgur.com/GprZneS.png',  screen: ScreenB },
-    { text: "Sarita", image: 'https://i.imgur.com/L2FDsRk.png',  screen: ScreenC },
     
   ]; 
 
@@ -92,7 +91,6 @@ const ReposteriaDanli = () => {
     { key: '1', value: 'Recomendados' },
     { key: '2', value: "Repostería Nely" },
     { key: '3', value: "Repostería La Colmena" },
-    { key: '4', value: "Sarita" },
     
   ];
 

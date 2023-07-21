@@ -5,8 +5,9 @@ import { Ionicons } from '@expo/vector-icons';
 import { useNavigation } from '@react-navigation/native';
 
 
-import NelyDanlu from './Reposteria/NelyDanli';
 import ColmenaDanli from './Reposteria/LaColmenaDanli';
+
+import NaturalJuiceDanli from './Reposteria/NaturalJuiceDanli';
 import SaritaDanli from './Reposteria/SaritaDanli';
 
 const ScreenA = ({ text, mostrarBotonAnterior }) => {
@@ -22,7 +23,7 @@ const ScreenA = ({ text, mostrarBotonAnterior }) => {
       <Text style={styles.backButtonText}>Regresar</Text>
     </>
     </TouchableHighlight>
-    <NelyDanlu/>
+    <NaturalJuiceDanli/>
    
   </View>
   );
@@ -82,17 +83,15 @@ const ReposteriaDanli = () => {
   };
  
   const buttons = [
-    { text: "Repostería Nely", image: 'https://i.imgur.com/CoA5cuh.jpg',  screen: ScreenA },
-    { text: "Repostería La Colmena", image: 'https://i.imgur.com/GprZneS.png',  screen: ScreenB },
+    { text: "Natural Juice", image: 'https://i.imgur.com/oNRZM6d.jpg',  screen: ScreenA },
     { text: "Sarita", image: 'https://i.imgur.com/L2FDsRk.png',  screen: ScreenC },
     
   ]; 
 
   const data2 = [
     { key: '1', value: 'Recomendados' },
-    { key: '2', value: "Repostería Nely" },
-    { key: '3', value: "Repostería La Colmena" },
-    { key: '4', value: "Sarita" },
+    { key: '2', value: "Natural Juice" },
+    { key: '3', value: "Sarita" },
     
   ];
 
