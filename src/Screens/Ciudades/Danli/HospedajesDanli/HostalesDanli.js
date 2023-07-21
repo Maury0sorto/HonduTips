@@ -177,8 +177,7 @@ const HostalesDanli = () => {
     // Aquí puedes agregar la lógica que desees ejecutar cuando se presione la imagen
     navigation.navigate('Registra tu Empresa');
   };
-
-
+  
   return (
     <View style={styles.container}>
       {mostrarSelectList && (
