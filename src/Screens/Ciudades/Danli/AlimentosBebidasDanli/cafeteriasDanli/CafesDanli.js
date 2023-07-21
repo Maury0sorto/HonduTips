@@ -204,7 +204,6 @@ const CafesDanli = () => {
     { text: "Oscar Valladares Café", image: 'https://i.imgur.com/VUeIgCN.jpg',  screen: ScreenD},
     { text: "Luna Café", image: 'https://i.imgur.com/ACbjVaF.jpg',  screen: ScreenF},
     { text: "Ovi&Ser Café", image: 'https://i.imgur.com/J8qf7yF.jpg',  screen: ScreenG},
-    { text: "Don Esteban Café", image: 'https://i.imgur.com/zQbUVbO.jpg',  screen: ScreenH},
     { text: "Cafeteando HN", image: 'https://i.imgur.com/SRMWRT7.jpg',  screen: ScreenI},
     { text: "KFE Cocktail & Wine", image: 'https://i.imgur.com/yXuCrlW.jpg',  screen: ScreenJ},
     
@@ -218,9 +217,8 @@ const CafesDanli = () => {
     { key: '5', value: "Oscar Valladares Café" },
     { key: '7', value: "Luna Café" },
     { key: '8', value: "Ovi&Ser Café" },
-    { key: '9', value: "Don Esteban Café" },
-    { key: '10', value: "Cafeteando HN" },
-    { key: '11', value: "KFE Cocktail & Wine" },
+    { key: '9', value: "Cafeteando HN" },
+    { key: '10', value: "KFE Cocktail & Wine" },
    
     
   ];
