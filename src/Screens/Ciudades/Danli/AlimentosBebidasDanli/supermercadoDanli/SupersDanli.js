@@ -121,9 +121,11 @@ const SupersDanli = () => {
   };
  
   const buttons = [
-    { text: "Maxi Despensa", image: 'https://i.imgur.com/KmCoFQ0.jpg',  screen: ScreenA },
-    { text: "Despensa Familiar", image: 'https://i.imgur.com/KmCoFQ0.jpg',  screen: ScreenB },
-    { text: "Supermercados La Colonia", image: 'https://i.imgur.com/WF2aGTy.jpg',  screen: ScreenC },
+    
+    { text: "Supermercados La Colonia T19", image: 'https://i.imgur.com/JKXtdqG.jpg',  screen: ScreenC },
+    { text: "Supermercados La Colonia T60", image: 'https://i.imgur.com/JKXtdqG.jpg',  screen: ScreenC },
+    { text: "Maxi Despensa", image: 'https://i.imgur.com/tBPr3FS.jpg',  screen: ScreenA },
+    { text: "Despensa Familiar", image: 'https://i.imgur.com/aWZdpQg.png',  screen: ScreenB },
     { text: "Supermercados Al Rashid", image: 'https://i.imgur.com/MjPpgUS.png',  screen: ScreenD },
     { text: "Yoyita's Market", image: 'https://i.imgur.com/BQFfZX7.jpg',  screen: ScreenE },
     

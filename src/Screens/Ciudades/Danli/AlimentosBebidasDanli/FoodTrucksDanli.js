@@ -85,7 +85,6 @@ const FoodTrucksDanli = () => {
   const buttons = [
     { text: "Torre Fuerte", image: 'https://i.imgur.com/mGzpEYL.jpg',  screen: ScreenA },
     { text: "Hot Dogs El Chino", image: 'https://i.imgur.com/TVDsNk3.png',  screen: ScreenB },
-    { text: "Las Colinas Food Truck Park", image: 'https://i.imgur.com/T3QGTTm.jpg',  screen: ScreenC },
     
   ]; 
 
@@ -93,7 +92,6 @@ const FoodTrucksDanli = () => {
     { key: '1', value: 'Recomendados' },
     { key: '2', value: "Torre Fuerte" },
     { key: '3', value: "Hot Dogs El Chino" },
-    { key: '4', value: "Las Colinas Food Truck Park" },
     
   ];
 

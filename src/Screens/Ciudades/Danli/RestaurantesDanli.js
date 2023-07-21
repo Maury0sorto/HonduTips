@@ -683,8 +683,8 @@ const RestaurantesDanli = () => {
     { text: "Baleadas Yuli", image: 'https://i.imgur.com/AVc27Xo.jpg', screen: ScreenAC},
     { text: "Paseo Pupuseria", image: 'https://i.imgur.com/164Tmgq.png', screen: ScreenAF},
     { text: "El Gordo Mexican Food", image: 'https://i.imgur.com/jv52iF2.jpg', screen: ScreenAG},
-    { text: "Taqueria Chilango’s", image: 'https://i.imgur.com/L1f7IxU.jpg', screen: ScreenAH},
-    { text: "Asados Polencho", image: 'https://i.imgur.com/L1f7IxU.jpg', screen: ScreenAI},
+    { text: "Taqueria Chilango’s", image: 'https://i.imgur.com/ce3YR88.jpg', screen: ScreenAH},
+    { text: "Asados Polencho", image: 'https://i.imgur.com/u2DzzzK.png', screen: ScreenAI},
    
   
   
