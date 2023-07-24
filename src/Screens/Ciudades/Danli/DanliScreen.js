@@ -84,19 +84,19 @@ const DanlíScreen = () => {
     }
 
     else if (text === 'Servicios Publicos') {
-      navigation.navigate("Educación Danlí");
+      navigation.navigate("Servicios Publicos Danlí");
     }
 
     else if (text === 'Empresas de Seguridad') {
-      navigation.navigate("Educación Danlí");
+      navigation.navigate("Empresas Seguridad Danlí");
     }
 
     else if (text === 'Medios de Comunicación') {
-      navigation.navigate("Educación Danlí");
+      navigation.navigate("Medios de Comunicación Danlí");
     }
 
     else if (text === 'TV por Cable') {
-      navigation.navigate("Educación Danlí");
+      navigation.navigate("Tv por Cable Danlí");
     }
   };
 
