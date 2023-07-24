@@ -82,6 +82,22 @@ const DanlíScreen = () => {
     }else if (text === 'FESTIMA') {
       Linking.openURL('https://www.facebook.com/festimaoficial/?locale=es_LA');
     }
+
+    else if (text === 'Servicios Publicos') {
+      navigation.navigate("Educación Danlí");
+    }
+
+    else if (text === 'Empresas de Seguridad') {
+      navigation.navigate("Educación Danlí");
+    }
+
+    else if (text === 'Medios de Comunicación') {
+      navigation.navigate("Educación Danlí");
+    }
+
+    else if (text === 'TV por Cable') {
+      navigation.navigate("Educación Danlí");
+    }
   };
 
   
