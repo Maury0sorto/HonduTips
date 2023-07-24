@@ -52,6 +52,10 @@ import ColegiosDanli from '../Screens/Ciudades/Danli/EducacionDanli/ColegiosDanl
 import UniversidadesDanli from '../Screens/Ciudades/Danli/EducacionDanli/UniversidadesDanli';
 import HostalesDanli from '../Screens/Ciudades/Danli/HospedajesDanli/HostalesDanli';
 import HeladeriaDanli from '../Screens/Ciudades/Danli/AlimentosBebidasDanli/HeladeriasDanli';
+import ServiciosPublicosDanli from '../Screens/Ciudades/Danli/ServiciosPublicosDanli/ServiciosPublicosDanli';
+import EmpresasSeguridadDanli from '../Screens/Ciudades/Danli/EmpresasSeguridadDanli/EmpresasSeguridadDanli';
+import MediosComunicacionDanli from '../Screens/Ciudades/Danli/MediosComunicacionDanli/MediosComunicacionDanli';
+import TvCableDanli from '../Screens/Ciudades/Danli/TvCableDanli/TvCableDanli';
 const SerchStackScreen = () => {        // Este stack es el de Search es decir es uno de los 3 que se ven en la parte de abajo
 
     const SerchStack = createNativeStackNavigator();
@@ -102,9 +106,7 @@ const SerchStackScreen = () => {        // Este stack es el de Search es decir e
         <SerchStack.Screen name="Financieras Danlí" component={FinancierasDanli}/>
         
 
-         
-
-
+  
           <SerchStack.Screen name="Hospedajes Danlí" component={HospedajesDanli}/>
           <SerchStack.Screen name="Moteles Danlí" component={MotelesDanli}/>
           <SerchStack.Screen name="Hostales Danlí" component={HostalesDanli}/>
@@ -118,6 +120,12 @@ const SerchStackScreen = () => {        // Este stack es el de Search es decir e
           <SerchStack.Screen name="Escuelas Danlí" component={EscuelasDanli}/>
           <SerchStack.Screen name="Colegios Danlí" component={ColegiosDanli}/>
           <SerchStack.Screen name="Universidades Danlí" component={UniversidadesDanli}/>
+
+
+          <SerchStack.Screen name="Servicios Publicos Danlí" component={ServiciosPublicosDanli}/>
+          <SerchStack.Screen name="Empresas Seguridad Danlí" component={EmpresasSeguridadDanli}/>
+          <SerchStack.Screen name="Medios de Comunicación Danlí" component={MediosComunicacionDanli}/>
+          <SerchStack.Screen name="Tv por Cable Danlí" component={TvCableDanli}/>
 
           <SerchStack.Screen name="Construccion" component={EnConstruccion}/>
           <SerchStack.Screen name="Onboarding" component={OnboardingScreen}/>

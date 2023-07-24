@@ -30,6 +30,7 @@ const DanlíScreen = () => {
     { text: 'Servicios Publicos', image: 'https://i.imgur.com/MjJTZBw.png' },
     { text: 'Empresas de Seguridad', image: 'https://i.imgur.com/4SNjwIg.png' },
     { text: 'Medios de Comunicación', image: 'https://i.imgur.com/Pgw3x9I.png' },
+    { text: 'TV por Cable', image: 'https://i.imgur.com/76LovHy.png' },
   ]);
   const [filterData, setFilterData] = useState([]);
   const [searchText, setSearchText] = useState('');
@@ -80,6 +81,22 @@ const DanlíScreen = () => {
       navigation.navigate("Educación Danlí");
     }else if (text === 'FESTIMA') {
       Linking.openURL('https://www.facebook.com/festimaoficial/?locale=es_LA');
+    }
+
+    else if (text === 'Servicios Publicos') {
+      navigation.navigate("Servicios Publicos Danlí");
+    }
+
+    else if (text === 'Empresas de Seguridad') {
+      navigation.navigate("Empresas Seguridad Danlí");
+    }
+
+    else if (text === 'Medios de Comunicación') {
+      navigation.navigate("Medios de Comunicación Danlí");
+    }
+
+    else if (text === 'TV por Cable') {
+      navigation.navigate("Tv por Cable Danlí");
     }
   };
 
