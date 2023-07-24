@@ -228,11 +228,11 @@ const HotelesDanli = () => {
     { text: 'Hotel Casa Encantada', image: 'https://i.imgur.com/sYu84sU.jpg', screen: ScreenB },
     { text: 'Hotel Posada "Los Arcos"', image: 'https://i.imgur.com/LKC1e6A.jpg', screen: ScreenD },
     { text: "Family Hotel", image: 'https://i.imgur.com/DPSvwix.png', screen: ScreenC },
-    { text: 'Hotel La Esperanza', image: 'https://i.imgur.com/YrrDG9H.jpg', screen: ScreenE },
-    { text: 'Hotel Apolo', image: 'https://i.imgur.com/YrrDG9H.jpg', screen: ScreenF },
-    { text: 'Hotel La Guadalupe', image: 'https://i.imgur.com/YrrDG9H.jpg', screen: ScreenI },
-    { text: 'Hotel Villa Paraiso', image: 'https://i.imgur.com/YrrDG9H.jpg', screen: ScreenJ },
-    { text: 'Hotel Kairos', image: 'https://i.imgur.com/YrrDG9H.jpg', screen: ScreenJ },
+    { text: 'Hotel La Esperanza', image: 'https://i.imgur.com/8BT7RHT.png', screen: ScreenE },
+    { text: 'Hotel Apolo', image: 'https://i.imgur.com/iafHP3j.png', screen: ScreenF },
+    { text: 'Hotel La Guadalupe', image: 'https://i.imgur.com/X9hX6Ik.png', screen: ScreenI },
+    { text: 'Hotel Villa Paraiso', image: 'https://i.imgur.com/NyECKWB.png', screen: ScreenJ },
+    { text: 'Hotel Kairos', image: 'https://i.imgur.com/rEFwTM7.png', screen: ScreenJ },
 
 
   ];

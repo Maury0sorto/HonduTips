@@ -147,7 +147,7 @@ const MotelesDanli = () => {
   const buttons = [
     { text: "RAPID-INN", image: 'https://i.imgur.com/yT6YGr8.png',  screen: ScreenA },
     { text: 'Motel La Fuente', image: 'https://i.imgur.com/ns9mheB.png', screen: ScreenB },
-    { text: "Autohotel San Marquez", image: 'https://i.imgur.com/YrrDG9H.jpg', screen: ScreenC },
+    { text: "Autohotel San Marquez", image: 'https://i.imgur.com/IgLkYm3.png', screen: ScreenC },
     { text: 'Motel Oasis', image: 'https://i.imgur.com/GUEPg63.png', screen: ScreenD },
     { text: 'Estudio 69', image: 'https://i.imgur.com/PftJfgV.png', screen: ScreenF },
    

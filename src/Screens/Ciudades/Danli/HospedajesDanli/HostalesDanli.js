@@ -143,10 +143,10 @@ const HostalesDanli = () => {
 
   const buttons = [
     { text: "La Casona", image: 'https://i.imgur.com/Cjd5uU7.png',  screen: ScreenA },
-    { text: "Hospedaje Dyna", image: 'https://i.imgur.com/YrrDG9H.jpg', screen: ScreenB },
-    { text: 'El Castillo', image: 'https://i.imgur.com/YrrDG9H.jpg', screen: ScreenC },
-    { text: 'Hospedaje Milay F', image: 'https://i.imgur.com/YrrDG9H.jpg', screen: ScreenD },
-    { text: 'Hopedaje Marilyn', image: 'https://i.imgur.com/YrrDG9H.jpg', screen: ScreenE },
+    { text: "Hospedaje Dyna", image: 'https://i.imgur.com/mQnd7xv.png', screen: ScreenB },
+    { text: 'El Castillo', image: 'https://i.imgur.com/qLMCO3Z.png', screen: ScreenC },
+    { text: 'Hospedaje Milay', image: 'https://i.imgur.com/8QyX1j9.png', screen: ScreenD },
+    { text: 'Hopedaje Marilyn', image: 'https://i.imgur.com/8QyX1j9.png', screen: ScreenE },
     { text: 'La Posada de Grace', image: 'https://i.imgur.com/oucDc6b.png', screen: ScreenF },
    
 
@@ -157,7 +157,7 @@ const HostalesDanli = () => {
     { key: '2', value: "La Casona" },
     { key: '4', value: 'Hospedaje Dyna' },
     { key: '5', value: 'El Castillo' },
-    { key: '6', value: 'Hospedaje Milay F' },
+    { key: '6', value: 'Hospedaje Milay' },
     { key: '7', value: 'Hospedaje Marilyn' },
     { key: '8', value: 'La Posada de Grace' },
     
