@@ -27,7 +27,7 @@ const DanlíScreen = () => {
     { text: 'Plazas Comerciales', image: 'https://i.imgur.com/GycKe4i.png' },
     { text: 'Transporte', image: 'https://i.imgur.com/2sgBrWV.png' },
     { text: 'Educación', image: 'https://i.imgur.com/jPVcqaS.png' },
-    { text: 'Servicios Publicos', image: 'https://i.imgur.com/KJxzlEd.png' },
+    { text: 'Servicios Publicos', image: 'https://i.imgur.com/MjJTZBw.png' },
     { text: 'Empresas de Seguridad', image: 'https://i.imgur.com/4SNjwIg.png' },
     { text: 'Medios de Comunicación', image: 'https://i.imgur.com/Pgw3x9I.png' },
   ]);
