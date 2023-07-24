@@ -28,6 +28,8 @@ const DanlíScreen = () => {
     { text: 'Transporte', image: 'https://i.imgur.com/2sgBrWV.png' },
     { text: 'Educación', image: 'https://i.imgur.com/jPVcqaS.png' },
     { text: 'Servicios Publicos', image: 'https://i.imgur.com/jPVcqaS.png' },
+    { text: 'Empresas de Seguridad', image: 'https://i.imgur.com/jPVcqaS.png' },
+    { text: 'Medios de Comunicación', image: 'https://i.imgur.com/jPVcqaS.png' },
   ]);
   const [filterData, setFilterData] = useState([]);
   const [searchText, setSearchText] = useState('');
