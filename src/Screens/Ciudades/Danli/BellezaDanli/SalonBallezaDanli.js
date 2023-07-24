@@ -4,12 +4,16 @@ import { SelectList } from 'react-native-dropdown-select-list';
 import { Ionicons } from '@expo/vector-icons';
 import { useNavigation } from '@react-navigation/native'
 
-import BarberiaGudosDanli from './BarberiasDanli/BarberiaGudosDanli';
-import BarberiaMileniumDanli from './BarberiasDanli/BarberiaMileniumDanli';
-import BarberiaLeody from './BarberiasDanli/BarberiaLeodyDanli';
-import MateosBarberShop from  './BarberiasDanli/MateosBarberShopDanli';
-import BarberiaTuImagenDanli from './BarberiasDanli/BarberiaTuImagenDanli';
-import BarberiaErickGlamurDanli from './BarberiasDanli/BarberiaErickGlamurDanli';
+
+import SalaBellezaIbethDanli from './SalonBellezaDanli.js/SalaBellezaIbeth';
+import AshleyNailsDanli from './SalonBellezaDanli.js/AshleyNails';
+import SalaBellezaAllysonDanli from './SalonBellezaDanli.js/SalaDeBellezaAllyson';
+import SalaBellezaRadiance from './SalonBellezaDanli.js/SalaBellezaRadiance';
+import BeautyCenterDanli from './SalonBellezaDanli.js/BeutyCenter';
+import TheBeautyHouseDanli from './SalonBellezaDanli.js/TheBeautyHouse';
+import AlejandrasSalonDanli from './SalonBellezaDanli.js/AleajndrasSalon';
+
+
 import ShadaiMasterBarberShopDanli from './BarberiasDanli/ShadaiMasterBarberShopDanli';
 import EvansBarberShopDanli from './BarberiasDanli/EvansBarberShopDanli';
 
@@ -27,7 +31,7 @@ const ScreenA = ({ text, mostrarBotonAnterior }) => {
     </>
        
       </TouchableHighlight>
-      <BarberiaGudosDanli/>
+      <SalaBellezaIbethDanli/>
    
     </View>
   );
@@ -46,7 +50,7 @@ const ScreenB = ({ text, mostrarBotonAnterior }) => {
       <Text style={styles.backButtonText}>Regresar</Text>
     </>
       </TouchableHighlight>
-      <BarberiaMileniumDanli/>
+      <AshleyNailsDanli/>
      
     </View>
   );
@@ -65,7 +69,7 @@ const ScreenC = ({ text, mostrarBotonAnterior }) => {
       <Text style={styles.backButtonText}>Regresar</Text>
     </>
       </TouchableHighlight>
-      <BarberiaLeody/>
+      <SalaBellezaAllysonDanli/>
     </View>
   );
 };
@@ -83,7 +87,7 @@ const ScreenD = ({ text, mostrarBotonAnterior }) => {
       <Text style={styles.backButtonText}>Regresar</Text>
     </>
       </TouchableHighlight>
-      <MateosBarberShop/>
+      <SalaBellezaRadiance/>
     </View>
   );
 };
@@ -101,7 +105,7 @@ const ScreenE = ({ text, mostrarBotonAnterior }) => {
       <Text style={styles.backButtonText}>Regresar</Text>
     </>
       </TouchableHighlight>
-      <BarberiaTuImagenDanli/>
+      <BeautyCenterDanli/>
     </View>
   );
 };
@@ -119,7 +123,7 @@ const ScreenF = ({ text, mostrarBotonAnterior }) => {
       <Text style={styles.backButtonText}>Regresar</Text>
     </>
       </TouchableHighlight>
-      <BarberiaErickGlamurDanli/>
+      <TheBeautyHouseDanli/>
     </View>
   );
 };
@@ -137,7 +141,7 @@ const ScreenG = ({ text, mostrarBotonAnterior }) => {
       <Text style={styles.backButtonText}>Regresar</Text>
     </>
       </TouchableHighlight>
-      <ShadaiMasterBarberShopDanli/>
+      <AlejandrasSalonDanli/>
     </View>
   );
 };
@@ -182,11 +186,11 @@ const SalonBellezaDanli = () => {
 
   const buttons = [
     { text: "Sala De Belleza Ibeth", image: 'https://i.imgur.com/YrrDG9H.jpg',  screen: ScreenA },
-    { text: 'Ashley Nails', image: 'https://i.imgur.com/YrrDG9H.jpg', screen: ScreenB },
+    { text: 'Ashley Nails', image: 'https://i.imgur.com/ixFtpl4.png', screen: ScreenB },
     { text: 'Sala De Belleza Allysson', image: 'https://i.imgur.com/YrrDG9H.jpg', screen: ScreenC },
-    { text: 'Sala De Belleza Radiance', image: 'https://i.imgur.com/YrrDG9H.jpg', screen: ScreenD },
-    { text: 'Beauty Center', image: 'https://i.imgur.com/YrrDG9H.jpg', screen: ScreenE },
-    { text: 'The beauty house', image: 'https://i.imgur.com/YrrDG9H.jpg', screen: ScreenF },
+    { text: 'Sala De Belleza Radiance', image: 'https://i.imgur.com/sjFztvn.png', screen: ScreenD },
+    { text: 'Beauty Center', image: 'https://i.imgur.com/hP5MCna.png', screen: ScreenE },
+    { text: 'The Beauty house', image: 'https://i.imgur.com/YrrDG9H.jpg', screen: ScreenF },
     { text: "Alejandra's Salon", image: 'https://i.imgur.com/YrrDG9H.jpg', screen: ScreenG },
     
   
@@ -199,7 +203,7 @@ const SalonBellezaDanli = () => {
     { key: '4', value: 'Sala De Belleza Allysson' },
     { key: '5', value: 'Sala De Belleza Radiance' },
     { key: '6', value: 'Beauty Center' },
-    { key: '7', value: 'The beauty house' },
+    { key: '7', value: 'The Beauty house' },
     { key: '8', value: "Alejandra's Salon" },
   ];
 
