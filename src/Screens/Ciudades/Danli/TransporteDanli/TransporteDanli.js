@@ -5,7 +5,8 @@ import { Ionicons } from '@expo/vector-icons';
 import { useNavigation } from '@react-navigation/native';
 
 
-import BarberiaGudosDanli from '../BellezaDanli/BarberiasDanli/BarberiaGudosDanli';
+import TerminalBusesDanli from './TerminalDeBusesDanli';
+import TransporteDanielaDanli from './TransporteDanielaDanli';
 import BarberiaMileniumDanli from '../BellezaDanli/BarberiasDanli/BarberiaMileniumDanli';
 
 
@@ -23,7 +24,7 @@ const ScreenA = ({ text, mostrarBotonAnterior }) => {
     </>
        
       </TouchableHighlight>
-      <BarberiaGudosDanli/>
+      <TerminalBusesDanli/>
    
     </View>
   );
@@ -42,7 +43,7 @@ const ScreenB = ({ text, mostrarBotonAnterior }) => {
       <Text style={styles.backButtonText}>Regresar</Text>
     </>
       </TouchableHighlight>
-      <BarberiaMileniumDanli/>
+      <TransporteDanielaDanli/>
      
     </View>
   );
@@ -54,7 +55,7 @@ const ScreenB = ({ text, mostrarBotonAnterior }) => {
 
 
 
-const TerminalBusesDanli = () => {
+const TransporteDanli = () => {
   const [componenteVisible, setComponenteVisible] = useState(null);
   const [mostrarSelectList, setMostrarSelectList] = useState(true); // Nuevo estado
   const [selectedOption, setSelectedOption] = useState('Recomendadas');
@@ -73,7 +74,7 @@ const TerminalBusesDanli = () => {
 
   const buttons = [
     { text: "Terminal de Buses", image: 'https://i.imgur.com/QiNZZXY.png',  screen: ScreenA },
-    { text: 'Transporte Daniela', image: 'https://lh5.googleusercontent.com/p/AF1QipO_mGSGi9BK3gjqVcL4LFpAyBbvKOCfyQIEFQTu', screen: ScreenB },
+    { text: 'Transporte Daniela', image: 'https://i.imgur.com/WtRKyBl.png', screen: ScreenB },
     { text: 'Transportes Rodríguez', image: 'https://i.imgur.com/QiNZZXY.png', screen: ScreenB },
     { text: 'Punto de Taxis Uniplaza', image: 'https://i.imgur.com/6LWYC7P.png', screen: ScreenB },
     { text: 'Punto de Taxis La Terminal', image: 'https://i.imgur.com/6LWYC7P.png', screen: ScreenB },
@@ -242,4 +243,4 @@ const styles = StyleSheet.create({
 
 });
 
-export default TerminalBusesDanli;
+export default TransporteDanli;

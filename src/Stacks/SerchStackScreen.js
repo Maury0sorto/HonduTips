@@ -56,6 +56,7 @@ import ServiciosPublicosDanli from '../Screens/Ciudades/Danli/ServiciosPublicosD
 import EmpresasSeguridadDanli from '../Screens/Ciudades/Danli/EmpresasSeguridadDanli/EmpresasSeguridadDanli';
 import MediosComunicacionDanli from '../Screens/Ciudades/Danli/MediosComunicacionDanli/MediosComunicacionDanli';
 import TvCableDanli from '../Screens/Ciudades/Danli/TvCableDanli/TvCableDanli';
+import TransporteDanli from '../Screens/Ciudades/Danli/TransporteDanli/TransporteDanli';
 const SerchStackScreen = () => {        // Este stack es el de Search es decir es uno de los 3 que se ven en la parte de abajo
 
     const SerchStack = createNativeStackNavigator();
@@ -82,7 +83,7 @@ const SerchStackScreen = () => {        // Este stack es el de Search es decir e
           <SerchStack.Screen name="Gimnasios Danli" component={GimnasiosDanli}/> 
           <SerchStack.Screen name="Plazas Comerciales Danlí" component={PlazasComercialesDanli}/> 
           <SerchStack.Screen name="Clinicas Danlí" component={ClinicasDanli}/> 
-          <SerchStack.Screen name="Transporte Danlí" component={TerminalBusesDanli}/> 
+          <SerchStack.Screen name="Transporte Danlí" component={TransporteDanli}/> 
           <SerchStack.Screen name="Deportes Danlí" component={ActividadFisicaDanli}/> 
           <SerchStack.Screen name="Artes Marciales de Danlí" component={ArtesMarcialesDanli}/> 
           <SerchStack.Screen name="Canchas De Fútbol en Danlí" component={CanchasDeFutbolDanli}/> 
