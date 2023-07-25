@@ -7,8 +7,8 @@ import { useNavigation } from '@react-navigation/native';
 
 import TerminalBusesDanli from './TerminalDeBusesDanli';
 import TransporteDanielaDanli from './TransporteDanielaDanli';
-import BarberiaMileniumDanli from '../BellezaDanli/BarberiasDanli/BarberiaMileniumDanli';
-
+import PuntoTaxisUniplaza from './PuntoTaxisUniplaza';
+import PuntoTaxisTerminal from './PuntoTaxisTerminal';
 
 const ScreenA = ({ text, mostrarBotonAnterior }) => {
   return (
@@ -50,7 +50,43 @@ const ScreenB = ({ text, mostrarBotonAnterior }) => {
 };
 
 
+const ScreenC = ({ text, mostrarBotonAnterior }) => {
+  return (
+    <View style={styles.componentContainer}>
+      <TouchableHighlight
+        style={styles.backButton}
+        underlayColor="#0080ff"
+        onPress={mostrarBotonAnterior}
+      >
+        <>
+      <Ionicons name="arrow-back" size={24} color="black" style={styles.backButtonIcon} />
+      <Text style={styles.backButtonText}>Regresar</Text>
+    </>
+      </TouchableHighlight>
+      <PuntoTaxisUniplaza/>
+     
+    </View>
+  );
+};
 
+const ScreenD = ({ text, mostrarBotonAnterior }) => {
+  return (
+    <View style={styles.componentContainer}>
+      <TouchableHighlight
+        style={styles.backButton}
+        underlayColor="#0080ff"
+        onPress={mostrarBotonAnterior}
+      >
+        <>
+      <Ionicons name="arrow-back" size={24} color="black" style={styles.backButtonIcon} />
+      <Text style={styles.backButtonText}>Regresar</Text>
+    </>
+      </TouchableHighlight>
+      <PuntoTaxisTerminal/>
+     
+    </View>
+  );
+};
 
 
 
@@ -75,9 +111,8 @@ const TransporteDanli = () => {
   const buttons = [
     { text: "Terminal de Buses", image: 'https://i.imgur.com/QiNZZXY.png',  screen: ScreenA },
     { text: 'Transporte Daniela', image: 'https://i.imgur.com/WtRKyBl.png', screen: ScreenB },
-    { text: 'Transportes Rodríguez', image: 'https://i.imgur.com/QiNZZXY.png', screen: ScreenB },
-    { text: 'Punto de Taxis Uniplaza', image: 'https://i.imgur.com/6LWYC7P.png', screen: ScreenB },
-    { text: 'Punto de Taxis La Terminal', image: 'https://i.imgur.com/6LWYC7P.png', screen: ScreenB },
+    { text: 'Punto de Taxis Uniplaza', image: 'https://i.imgur.com/6LWYC7P.png', screen: ScreenC },
+    { text: 'Punto de Taxis La Terminal', image: 'https://i.imgur.com/6LWYC7P.png', screen: ScreenD },
     
   ];
 
