@@ -185,13 +185,13 @@ const SalonBellezaDanli = () => {
   };
 
   const buttons = [
-    { text: "Sala De Belleza Ibeth", image: 'https://i.imgur.com/YrrDG9H.jpg',  screen: ScreenA },
+    { text: "Sala De Belleza Ibeth", image: 'https://i.imgur.com/cVE1UPR.png',  screen: ScreenA },
     { text: 'Ashley Nails', image: 'https://i.imgur.com/ixFtpl4.png', screen: ScreenB },
-    { text: 'Sala De Belleza Allysson', image: 'https://i.imgur.com/YrrDG9H.jpg', screen: ScreenC },
+    { text: 'Sala De Belleza Allysson', image: 'https://i.imgur.com/oXbG3S7.png', screen: ScreenC },
     { text: 'Sala De Belleza Radiance', image: 'https://i.imgur.com/sjFztvn.png', screen: ScreenD },
     { text: 'Beauty Center', image: 'https://i.imgur.com/hP5MCna.png', screen: ScreenE },
-    { text: 'The Beauty house', image: 'https://i.imgur.com/YrrDG9H.jpg', screen: ScreenF },
-    { text: "Alejandra's Salon", image: 'https://i.imgur.com/YrrDG9H.jpg', screen: ScreenG },
+    { text: 'The Beauty house', image: 'https://i.imgur.com/CRrZoJt.png', screen: ScreenF },
+    { text: "Alejandra's Salon", image: 'https://i.imgur.com/ahcKvam.png', screen: ScreenG },
     
   
   ];

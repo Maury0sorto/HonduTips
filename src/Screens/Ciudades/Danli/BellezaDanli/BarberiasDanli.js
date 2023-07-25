@@ -183,12 +183,12 @@ const BarberiasDanli = () => {
   const buttons = [
     { text: "Gudo's Barber Shop", image: 'https://i.imgur.com/FutdjTV.jpg',  screen: ScreenA },
     { text: 'Barberia Millenium', image: 'https://i.imgur.com/LgXdoSo.jpg', screen: ScreenB },
-    { text: 'Barberia Leody', image: 'https://i.imgur.com/YrrDG9H.jpg', screen: ScreenC },
-    { text: 'Mateos Barber Shop', image: 'https://i.imgur.com/YrrDG9H.jpg', screen: ScreenD },
-    { text: 'Barberia Tu Imagen', image: 'https://i.imgur.com/YrrDG9H.jpg', screen: ScreenE },
-    { text: 'Barberia Erick Glamur', image: 'https://i.imgur.com/YrrDG9H.jpg', screen: ScreenF },
-    { text: 'Shadai Master BarberShop', image: 'https://i.imgur.com/YrrDG9H.jpg', screen: ScreenG },
-    { text: 'Evan’s Barber Shop', image: 'https://i.imgur.com/YrrDG9H.jpg', screen: ScreenH },
+    { text: 'Barberia Leody', image: 'https://i.imgur.com/nKOV494.png', screen: ScreenC },
+    { text: 'Mateos Barber Shop', image: 'https://i.imgur.com/APOpusA.png', screen: ScreenD },
+    { text: 'Barberia Tu Imagen', image: 'https://i.imgur.com/KVHH0lQ.png', screen: ScreenE },
+    { text: 'Barberia Erick Glamur', image: 'https://i.imgur.com/x1MgQVy.png', screen: ScreenF },
+    { text: 'Shadai Master BarberShop', image: 'https://i.imgur.com/oXbG3S7.png', screen: ScreenG },
+    { text: 'Evan’s Barber Shop', image: 'https://i.imgur.com/qGaDSws.png', screen: ScreenH },
   
   ];
 

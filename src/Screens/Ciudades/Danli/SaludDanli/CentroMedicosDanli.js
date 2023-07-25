@@ -227,9 +227,9 @@ const CentroMedicosDanli = () => {
     { text: 'Clínica Psicológica IntegraMente', image: 'https://i.imgur.com/MyJNaQ0.png', screen: ScreenG },
     { text: 'Clinicas Medicas Danli', image: 'https://i.imgur.com/wPkpx22.png', screen: ScreenJ },
     { text: 'Clinica Dr. Salvador Moncada', image: 'https://i.imgur.com/BJXt1QL.png', screen: ScreenI },
-    { text: "Clínica Médica Ferrera'S", image: 'https://i.imgur.com/h2bmzh4.jpg', screen: ScreenK },
-    { text: 'Centro Medico Quirurgico De Oriente', image: 'https://i.imgur.com/h2bmzh4.jpg', screen: ScreenC },
-    { text: 'Centro Médico Navarro Espinal', image: 'https://i.imgur.com/h2bmzh4.jpg', screen: ScreenD },
+    { text: "Clínica Médica Ferrera'S", image: 'https://i.imgur.com/k3WNIza.png', screen: ScreenK },
+    { text: 'Centro Medico Quirurgico De Oriente', image: 'https://i.imgur.com/uzoCs5K.png', screen: ScreenC },
+    { text: 'Centro Médico Navarro Espinal', image: 'https://i.imgur.com/ESgteNM.png', screen: ScreenD },
     { text: 'Cedymeh', image: 'https://i.imgur.com/zQuHljo.png', screen: ScreenM },
  
     
