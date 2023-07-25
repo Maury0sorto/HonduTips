@@ -155,7 +155,7 @@ const styles = StyleSheet.create({
   container2: {
     flex: 1,
     paddingHorizontal: 16,
-    marginTop: 56,
+    marginTop: 26,
   },
   button: {
     width: '100%',
