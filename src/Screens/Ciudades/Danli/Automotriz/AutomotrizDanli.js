@@ -140,18 +140,7 @@ const AutomotrizDanli = () => {
 
   return ( 
     <View style={styles.container}>
-  <View style={styles.searchContainer}>
-    <Ionicons name="search" size={24} color="gray" style={styles.icon} />
-    <TextInput
-      style={styles.searchInput}
-      placeholder="Donde quieres ir..."
-      value={searchText}
-      onChangeText={(text) => {
-        setSearchText(text);
-        filterSearch();
-      }}
-    />
-  </View>
+
   <ScrollView>
     <View style={styles.container2}>{renderButtons()}</View>
   </ScrollView>
@@ -163,48 +152,35 @@ const styles = StyleSheet.create({
   container: {
     flex: 1,
   },
-
-  
   container2: {
     flex: 1,
     paddingHorizontal: 16,
-    marginTop: 16,
-    
-  },
-  row: {
-    flexDirection: 'row',
-    justifyContent: 'space-between',
-    paddingHorizontal: 16,
-    marginBottom: 16,
-    
+    marginTop: 56,
   },
   button: {
-    maxWidth: 160,
-    
+    width: '100%',
     alignItems: 'center',
     backgroundColor: 'transparent',
     borderRadius: 10,
-  
-  
-    
+    marginBottom: 16,
   },
   buttonImage: {
-    width: 145,
-    height: 145,
+    width: 160,
+    height: 160,
     marginBottom: 8,
     alignSelf: 'center',
-     borderRadius: 10,
+    borderRadius: 10,
   },
   buttonText: {
     marginTop: 10,
-    fontSize: 16,
+    fontSize: 20,
     fontWeight: 'bold',
     textAlign: 'center',
   },
   searchContainer: {
     flexDirection: 'row',
     alignItems: 'center',
-    backgroundColor: '#ffff',
+    backgroundColor: '#fff',
     borderRadius: 20,
     paddingHorizontal: 8,
     paddingVertical: 8,
@@ -232,6 +208,7 @@ const styles = StyleSheet.create({
     fontWeight: 'bold', // Aplicar formato en negrita
    // Utilizar la fuente "Arial Black"
   },
+ 
 });
 
 export default AutomotrizDanli;
