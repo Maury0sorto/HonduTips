@@ -90,23 +90,26 @@ const Registro = ({ navigation }) => {
   return (
     <SafeAreaView style={styles.container}>
       <ScrollView contentContainerStyle={styles.scrollContainer}>
-        <Text style={styles.title}>Registrar Negocio</Text>
+        <Text style={styles.title}>Registra tu Negocio</Text>
+        
         <TouchableOpacity onPress={pickImage} style={styles.imagePickerButton}>
           {image ? (
             <Image source={{ uri: image }} style={styles.imagePreview} />
           ) : (
             <MaterialIcons name="add-a-photo" size={30} color={COLORS.primary} />
           )}
+          <Text style={styles.letras}>Subir Logo</Text>
         </TouchableOpacity>
+        
         <TextInput
           style={styles.input}
-          placeholder="Nombre"
+          placeholder="Nombre Completo"
           value={nombre}
           onChangeText={(text) => setNombre(text)}
         />
         <TextInput
           style={styles.input}
-          placeholder="Nombre empresa"
+          placeholder="Nombre de la Empresa"
           value={nombreEmpresa}
           onChangeText={(text) => setNombreEmpresa(text)}
         />
@@ -118,14 +121,14 @@ const Registro = ({ navigation }) => {
         />
         <TextInput
           style={styles.input}
-          placeholder="Teléfono"
+          placeholder="Número de Teléfono"
           value={telefono}
           onChangeText={(text) => setTelefono(text)}
           keyboardType="phone-pad"
         />
         <TextInput
-          style={styles.input}
-          placeholder="Link página web o red social"
+          style={styles.input2}
+          placeholder="Información Adicional (Horarios y Dirección)"
           value={paginaWebRedSocial}
           onChangeText={(text) => setPaginaWebRedSocial(text)}
         />
@@ -152,6 +155,11 @@ const styles = StyleSheet.create({
     marginBottom: 20,
     textAlign: "center",
   },
+  letras:{
+    textAlign:"center",
+    marginTop:10,
+    color:"gray"
+  },
   imagePickerButton: {
     alignItems: "center",
     justifyContent: "center",
@@ -169,6 +177,14 @@ const styles = StyleSheet.create({
   },
   input: {
     height: 40,
+    borderColor: COLORS.gray,
+    borderWidth: 1,
+    borderRadius: 5,
+    paddingHorizontal: 10,
+    marginBottom: 10,
+  },
+  input2: {
+    height: 100,
     borderColor: COLORS.gray,
     borderWidth: 1,
     borderRadius: 5,
