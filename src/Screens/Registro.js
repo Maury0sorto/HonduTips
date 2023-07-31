@@ -60,6 +60,7 @@ export default function App() {
       alert('Por favor, completa todos los campos obligatorios.');
       return;
     }
+    else(alert('Datos Enviados Correctamente'))
 
     // Aquí puedes enviar los datos a un servidor o realizar alguna acción con ellos
     console.log(contactInfo, localInfo);
