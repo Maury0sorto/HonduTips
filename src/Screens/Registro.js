@@ -1,210 +1,187 @@
-import React, { useState } from "react";
-import { View, Text, TouchableOpacity, ScrollView, Alert, StyleSheet, TextInput, Image } from "react-native";
-import { SafeAreaView } from "react-native-safe-area-context";
-import { COLORS } from "../constants/theme";
-import { MaterialIcons } from "@expo/vector-icons";
-import * as ImagePicker from 'expo-image-picker';
-import axios from 'axios';
+import React, { useState } from 'react';
+import { View, Text, TextInput, StyleSheet, TouchableOpacity, ScrollView } from 'react-native';
 
-const Registro = ({ navigation }) => {
-  const [nombre, setNombre] = useState("");
-  const [nombreEmpresa, setNombreEmpresa] = useState("");
-  const [rubro, setRubro] = useState("");
-  const [telefono, setTelefono] = useState("");
-  const [paginaWebRedSocial, setPaginaWebRedSocial] = useState("");
-  const [image, setImage] = useState(null);
+const ExpoFormScreen = () => {
+  const [contactInfo, setContactInfo] = useState({
+    fullName: '',
+    contactPhone: '',
+    email: '',
+  });
 
-  const handleSubmit = async () => {
-    if (!nombre || !nombreEmpresa || !rubro || !telefono || !paginaWebRedSocial || !image) {
-      Alert.alert("Error", "Todos los campos son obligatorios. Por favor, completa todos los campos antes de registrar el negocio.");
-      return;
-    }
+  const [commerceInfo, setCommerceInfo] = useState({
+    storeName: '',
+    branchesNumber: '',
+    openingHours: '',
+    storePhone: '',
+    storeAddress: '',
+    additionalComments: '',
+  });
 
-    const datos = {
-      Nombre: nombre,
-      "Nombre empresa": nombreEmpresa,
-      Rubro: rubro,
-      Teléfono: telefono,
-      "Página web o red social": paginaWebRedSocial,
-    };
-
-    try {
-      const templateParams = {
-        to_name: "alphamediamc@gmail.com", // Reemplaza con el correo del destinatario
-        from_name: "de_cruzn@unicah.edu", // Reemplaza con el correo del remitente
-        message: `
-          <h1>Datos del formulario de registro:</h1>
-          <p><b>Nombre:</b> ${datos.Nombre}</p>
-          <p><b>Nombre empresa:</b> ${datos["Nombre empresa"]}</p>
-          <p><b>Rubro:</b> ${datos.Rubro}</p>
-          <p><b>Teléfono:</b> ${datos.Teléfono}</p>
-          <p><b>Página web o red social:</b> ${datos["Página web o red social"]}</p>
-        `,
-      };
-
-      const response = await axios.post(
-        "https://api.emailjs.com/api/v1.0/email/send",
-        {
-          service_id: "service_d0pw1in", // Reemplaza con tu ID de servicio de EmailJS
-          template_id: "template_q093fnb", // Reemplaza con tu ID de plantilla de EmailJS
-          user_id: "7XJ5HhC2Oah9QJpfYy88u", // Reemplaza con tu User ID de EmailJS
-          template_params: templateParams,
-        }
-      );
-
-      console.log("Correo enviado correctamente:", response.data);
-      limpiarCampos();
-    } catch (error) {
-      console.log("Error al enviar el correo:", error);
-      Alert.alert("Error", "Ocurrió un error al enviar el correo. Por favor, inténtalo nuevamente.");
-    }
+  const handleContactInfoChange = (key, value) => {
+    setContactInfo({
+      ...contactInfo,
+      [key]: value,
+    });
   };
 
-  const limpiarCampos = () => {
-    setNombre("");
-    setNombreEmpresa("");
-    setRubro("");
-    setTelefono("");
-    setPaginaWebRedSocial("");
-    setImage(null);
+  const handleCommerceInfoChange = (key, value) => {
+    setCommerceInfo({
+      ...commerceInfo,
+      [key]: value,
+    });
   };
 
-  const pickImage = async () => {
-    try {
-      let result = await ImagePicker.launchImageLibraryAsync({
-        mediaTypes: ImagePicker.MediaTypeOptions.Images,
-        allowsEditing: true,
-        aspect: [1, 1],
-        quality: 1,
-      });
-  
-      if (!result.canceled) { // Cambiar 'cancelled' a 'canceled'
-        setImage(result.assets[0].uri);
-      }
-    } catch (error) {
-      console.log("Error al cargar la imagen:", error);
-    }
+  const handleLogoUpload = () => {
+    // Implement logic for uploading logo image
   };
-  
+
+  const handlePhotoUpload = () => {
+    // Implement logic for uploading store photo
+  };
+
+  const handleMenuUpload = () => {
+    // Implement logic for uploading menu/services
+  };
 
   return (
-    <SafeAreaView style={styles.container}>
-      <ScrollView contentContainerStyle={styles.scrollContainer}>
-        <Text style={styles.title}>Registra tu Negocio</Text>
-        
-        <TouchableOpacity onPress={pickImage} style={styles.imagePickerButton}>
-          {image ? (
-            <Image source={{ uri: image }} style={styles.imagePreview} />
-          ) : (
-            <MaterialIcons name="add-a-photo" size={30} color={COLORS.primary} />
-          )}
-          <Text style={styles.letras}>Subir Logo</Text>
-        </TouchableOpacity>
-        
+    <ScrollView style={styles.container}>
+      <Text style={styles.title}>Información de Contacto</Text>
+
+      <View style={styles.formGroup}>
+        <Text style={styles.label}>Nombre completo de contacto:</Text>
         <TextInput
           style={styles.input}
-          placeholder="Nombre Completo"
-          value={nombre}
-          onChangeText={(text) => setNombre(text)}
+          value={contactInfo.fullName}
+          onChangeText={(text) => handleContactInfoChange('fullName', text)}
         />
+      </View>
+
+      <View style={styles.formGroup}>
+        <Text style={styles.label}>Teléfono de contacto:</Text>
         <TextInput
           style={styles.input}
-          placeholder="Nombre de la Empresa"
-          value={nombreEmpresa}
-          onChangeText={(text) => setNombreEmpresa(text)}
+          value={contactInfo.contactPhone}
+          onChangeText={(text) => handleContactInfoChange('contactPhone', text)}
         />
+      </View>
+
+      <View style={styles.formGroup}>
+        <Text style={styles.label}>Correo electrónico:</Text>
         <TextInput
           style={styles.input}
-          placeholder="Rubro"
-          value={rubro}
-          onChangeText={(text) => setRubro(text)}
+          value={contactInfo.email}
+          onChangeText={(text) => handleContactInfoChange('email', text)}
         />
+      </View>
+
+      <Text style={styles.title}>Datos del comercio</Text>
+
+      <View style={styles.formGroup}>
+        <Text style={styles.label}>Nombre del local:</Text>
         <TextInput
           style={styles.input}
-          placeholder="Número de Teléfono"
-          value={telefono}
-          onChangeText={(text) => setTelefono(text)}
-          keyboardType="phone-pad"
+          value={commerceInfo.storeName}
+          onChangeText={(text) => handleCommerceInfoChange('storeName', text)}
         />
+      </View>
+
+      <View style={styles.formGroup}>
+        <Text style={styles.label}>Número de sucursales:</Text>
         <TextInput
-          style={styles.input2}
-          placeholder="Información Adicional (Horarios y Dirección)"
-          value={paginaWebRedSocial}
-          onChangeText={(text) => setPaginaWebRedSocial(text)}
+          style={styles.input}
+          value={commerceInfo.branchesNumber}
+          onChangeText={(text) => handleCommerceInfoChange('branchesNumber', text)}
         />
-        <TouchableOpacity style={styles.buttonContainer} onPress={handleSubmit}>
-          <Text style={styles.buttonText}>Registrar</Text>
-        </TouchableOpacity>
-      </ScrollView>
-    </SafeAreaView>
+      </View>
+
+      <View style={styles.formGroup}>
+        <Text style={styles.label}>Horario de atención:</Text>
+        <TextInput
+          style={styles.input}
+          value={commerceInfo.openingHours}
+          onChangeText={(text) => handleCommerceInfoChange('openingHours', text)}
+        />
+      </View>
+
+      <View style={styles.formGroup}>
+        <Text style={styles.label}>Teléfono del local:</Text>
+        <TextInput
+          style={styles.input}
+          value={commerceInfo.storePhone}
+          onChangeText={(text) => handleCommerceInfoChange('storePhone', text)}
+        />
+      </View>
+
+      <View style={styles.formGroup}>
+        <Text style={styles.label}>Dirección completa del local:</Text>
+        <TextInput
+          style={styles.input}
+          value={commerceInfo.storeAddress}
+          onChangeText={(text) => handleCommerceInfoChange('storeAddress', text)}
+        />
+      </View>
+
+      <View style={styles.formGroup}>
+        <Text style={styles.label}>Comentarios adicionales:</Text>
+        <TextInput
+          style={styles.input}
+          value={commerceInfo.additionalComments}
+          onChangeText={(text) => handleCommerceInfoChange('additionalComments', text)}
+        />
+      </View>
+
+      <TouchableOpacity style={styles.button} onPress={handleLogoUpload}>
+        <Text style={styles.buttonText}>Subir Imagen de Logotipo</Text>
+      </TouchableOpacity>
+
+      <TouchableOpacity style={styles.button} onPress={handlePhotoUpload}>
+        <Text style={styles.buttonText}>Subir Fotografía del Local</Text>
+      </TouchableOpacity>
+
+      <TouchableOpacity style={styles.button} onPress={handleMenuUpload}>
+        <Text style={styles.buttonText}>Subir Menú / Servicios</Text>
+      </TouchableOpacity>
+    </ScrollView>
   );
 };
 
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: COLORS.white,
-  },
-  scrollContainer: {
-    flexGrow: 1,
     padding: 20,
+    backgroundColor: '#fff',
   },
   title: {
-    fontSize: 24,
-    fontWeight: "bold",
-    marginBottom: 20,
-    textAlign: "center",
+    fontSize: 18,
+    fontWeight: 'bold',
+    marginTop: 10,
+    marginBottom: 5,
   },
-  letras:{
-    textAlign:"center",
-    marginTop:10,
-    color:"gray"
+  formGroup: {
+    marginBottom: 15,
   },
-  imagePickerButton: {
-    alignItems: "center",
-    justifyContent: "center",
-    backgroundColor: COLORS.lightGray,
-    width: 100,
-    height: 100,
-    borderRadius: 10,
-    alignSelf: "center",
-    marginBottom: 20,
-  },
-  imagePreview: {
-    width: 100,
-    height: 100,
-    borderRadius: 10,
+  label: {
+    fontSize: 16,
+    marginBottom: 5,
   },
   input: {
-    height: 40,
-    borderColor: COLORS.gray,
     borderWidth: 1,
+    borderColor: '#ccc',
     borderRadius: 5,
-    paddingHorizontal: 10,
-    marginBottom: 10,
-  },
-  input2: {
-    height: 100,
-    borderColor: COLORS.gray,
-    borderWidth: 1,
-    borderRadius: 5,
-    paddingHorizontal: 10,
-    marginBottom: 10,
-  },
-  buttonContainer: {
-    backgroundColor: "#00BCE4",
     padding: 10,
-    borderRadius: 10,
-    alignItems: "center",
-    width: "50%",
-    alignSelf: "center",
-    marginTop: 20,
+    fontSize: 16,
+  },
+  button: {
+    backgroundColor: '#007BFF',
+    padding: 15,
+    borderRadius: 5,
+    marginTop: 10,
   },
   buttonText: {
-    color: COLORS.white,
+    color: '#fff',
     fontSize: 16,
-    fontWeight: "bold",
+    textAlign: 'center',
   },
 });
 
-export default Registro;
+export default ExpoFormScreen;
