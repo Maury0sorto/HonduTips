@@ -78,6 +78,11 @@ const EscuelasDanli = () => {
     { text: 'Esc. Ren. Guia Tecnica', image: 'https://i.imgur.com/YrrDG9H.jpg', screen: ScreenB },
     { text: 'Escuela Manuel Adalid y Gamero', image: 'https://i.imgur.com/YrrDG9H.jpg', screen: ScreenB },
     { text: "The Children's World School", image: 'https://i.imgur.com/YrrDG9H.jpg', screen: ScreenB },
+    { text: "Escuela República de Nicaragua ", image: 'https://i.imgur.com/YrrDG9H.jpg', screen: ScreenB },
+    { text: "Escuela Marta irias de alcántara ", image: 'https://i.imgur.com/YrrDG9H.jpg', screen: ScreenB },
+    { text: "Escuela Carlos Roberto Reina ", image: 'https://i.imgur.com/YrrDG9H.jpg', screen: ScreenB },
+    { text: "Escuela English Castle  ", image: 'https://i.imgur.com/YrrDG9H.jpg', screen: ScreenB },
+  
   ];
 
   const data2 = [

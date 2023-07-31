@@ -74,9 +74,9 @@ const UniversidadesDanli = () => {
   const buttons = [
     { text: "UNICAH Campus Santiago Apóstol", image: 'https://i.imgur.com/YrrDG9H.jpg',  screen: ScreenA },
     { text: 'Universidad Politécnica de Honduras', image: 'https://i.imgur.com/YrrDG9H.jpg', screen: ScreenB },
-    { text: 'Universidad nacional Autónoma de Honduras', image: 'https://i.imgur.com/YrrDG9H.jpg', screen: ScreenB },
     { text: 'Universidad Pedagógica Francisco Morazán', image: 'https://i.imgur.com/YrrDG9H.jpg', screen: ScreenB },
     { text: 'UNAH-TEC Danlí', image: 'https://i.imgur.com/YrrDG9H.jpg', screen: ScreenB },
+    { text: 'UCEM', image: 'https://i.imgur.com/YrrDG9H.jpg', screen: ScreenB },
    
   ];
 

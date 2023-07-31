@@ -69,7 +69,7 @@ const Ciudades = () => {
       for (let i = 0; i < data.length; i += 2) {
         const button1 = data[i];
         const button2 = data[i + 1];
-
+ 
         const row = (
           <View style={styles.row} key={i}>
             <TouchableOpacity

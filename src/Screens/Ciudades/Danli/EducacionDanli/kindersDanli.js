@@ -74,9 +74,10 @@ const KindersDanli = () => {
   const buttons = [
     { text: "Jardin de Niños Dulce Infancia", image: 'https://i.imgur.com/YrrDG9H.jpg',  screen: ScreenA },
     { text: 'Kinder Maria B. Barahona', image: 'https://i.imgur.com/YrrDG9H.jpg', screen: ScreenB },
+    { text: 'Luz Victoria ', image: 'https://i.imgur.com/YrrDG9H.jpg', screen: ScreenB },
+    { text: 'Kinder Barahona  ', image: 'https://i.imgur.com/YrrDG9H.jpg', screen: ScreenB },
    
-  ];
-
+  ]; 
   const data2 = [
     { key: '1', value: 'Recomendadas' },
     { key: '2', value: "Jardin de Niños Dulce Infancia" },

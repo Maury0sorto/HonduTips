@@ -79,6 +79,7 @@ const ColegiosDanli = () => {
     { text: 'INSTITUTO TEODORO RODAS VALLE', image: 'https://i.imgur.com/YrrDG9H.jpg', screen: ScreenB },
     { text: 'Centro Técnico Vocacional Pedro Nufio', image: 'https://i.imgur.com/YrrDG9H.jpg', screen: ScreenB },
     { text: 'Instituto Cosme García', image: 'https://i.imgur.com/YrrDG9H.jpg', screen: ScreenB },
+    
 
   ]; 
 
