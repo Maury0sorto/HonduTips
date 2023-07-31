@@ -153,12 +153,12 @@ const ColegiosDanli = () => {
   };
  
   const buttons = [
-    { text: "IDO", image: 'https://i.imgur.com/YrrDG9H.jpg',  screen: ScreenA },
-    { text: 'Intituto Católico Billingüe', image: 'https://i.imgur.com/YrrDG9H.jpg', screen: ScreenB },
-    { text: 'INTAO', image: 'https://i.imgur.com/YrrDG9H.jpg', screen: ScreenC },
-    { text: 'Instituto Teodoro Rodas Valle', image: 'https://i.imgur.com/YrrDG9H.jpg', screen: ScreenD },
-    { text: 'Centro Técnico Pedro Nufio', image: 'https://i.imgur.com/YrrDG9H.jpg', screen: ScreenE },
-    { text: 'Instituto Cosme García', image: 'https://i.imgur.com/YrrDG9H.jpg', screen: ScreenF },
+    { text: "IDO", image: 'https://i.imgur.com/uIbdUzo.png',  screen: ScreenA },
+    { text: 'Intituto Católico Billingüe', image: 'https://i.imgur.com/NfZfHr3.png', screen: ScreenB },
+    { text: 'INTAO', image: 'https://i.imgur.com/iXEMIEy.png', screen: ScreenC },
+    { text: 'Instituto Teodoro Rodas Valle', image: 'https://i.imgur.com/494Hgl6.png', screen: ScreenD },
+    { text: 'Centro Técnico Pedro Nufio', image: 'https://i.imgur.com/CYavd11.png', screen: ScreenE },
+    { text: 'Instituto Cosme García', image: 'https://i.imgur.com/5eqYkOo.png', screen: ScreenF },
     
 
   ]; 

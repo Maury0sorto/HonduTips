@@ -128,11 +128,11 @@ const UniversidadesDanli = () => {
   };
  
   const buttons = [
-    { text: "UNICAH Campus Santiago Apóstol", image: 'https://i.imgur.com/YrrDG9H.jpg',  screen: ScreenA },
-    { text: 'Universidad Politécnica de Honduras', image: 'https://i.imgur.com/YrrDG9H.jpg', screen: ScreenB },
-    { text: 'Universidad Pedagógica Francisco Morazán', image: 'https://i.imgur.com/YrrDG9H.jpg', screen: ScreenC },
-    { text: 'UNAH-TEC', image: 'https://i.imgur.com/YrrDG9H.jpg', screen: ScreenD }, 
-    { text: 'UCEM', image: 'https://i.imgur.com/YrrDG9H.jpg', screen: ScreenE },
+    { text: "UNICAH Campus Santiago Apóstol", image: 'https://i.imgur.com/a4QNd6G.png',  screen: ScreenA },
+    { text: 'Universidad Politécnica de Honduras', image: 'https://i.imgur.com/gNQlnYd.png', screen: ScreenB },
+    { text: 'Universidad Pedagógica Francisco Morazán', image: 'https://i.imgur.com/xlfjugi.png', screen: ScreenC },
+    { text: 'UNAH-TEC', image: 'https://i.imgur.com/v3SfbH9.png', screen: ScreenD }, 
+    { text: 'UCEM', image: 'https://i.imgur.com/0C3LUiP.png', screen: ScreenE },
    
   ];
 

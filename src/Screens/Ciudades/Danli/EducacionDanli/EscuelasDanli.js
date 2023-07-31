@@ -212,15 +212,15 @@ const EscuelasDanli = () => {
   };
  
   const buttons = [
-    { text: "Escuela Pedro Nufio", image: 'https://i.imgur.com/YrrDG9H.jpg',  screen: ScreenA },
+    { text: "Escuela Pedro Nufio", image: 'https://i.imgur.com/CYavd11.png',  screen: ScreenA },
     { text: 'Escuela San Luis', image: 'https://i.imgur.com/YrrDG9H.jpg', screen: ScreenB },
-    { text: 'Escuela Guia Tecnica #10', image: 'https://i.imgur.com/YrrDG9H.jpg', screen: ScreenC },
-    { text: 'Escuela Manuel Adalid y Gamero', image: 'https://i.imgur.com/YrrDG9H.jpg', screen: ScreenD },
-    { text: "The Children's World School", image: 'https://i.imgur.com/YrrDG9H.jpg', screen: ScreenE },
-    { text: "Escuela República de Nicaragua ", image: 'https://i.imgur.com/YrrDG9H.jpg', screen: ScreenF },
+    { text: 'Escuela Guia Tecnica #10', image: 'https://i.imgur.com/gn87JwL.png', screen: ScreenC },
+    { text: 'Escuela Manuel Adalid y Gamero', image: 'https://i.imgur.com/ZgUW8Y8.png', screen: ScreenD },
+    { text: "The Children's World School", image: 'https://i.imgur.com/pE6OFVI.png', screen: ScreenE },
+    { text: "Escuela República de Nicaragua ", image: 'https://i.imgur.com/jeGZPK3.png', screen: ScreenF },
     { text: "Escuela Marta Irias de Alcántara ", image: 'https://i.imgur.com/YrrDG9H.jpg', screen: ScreenI },
     { text: "Escuela Carlos Roberto Reina ", image: 'https://i.imgur.com/YrrDG9H.jpg', screen: ScreenG },
-    { text: "Escuela English Castle  ", image: 'https://i.imgur.com/YrrDG9H.jpg', screen: ScreenH },
+    { text: "Escuela English Castle  ", image: 'https://i.imgur.com/FNvH56C.png', screen: ScreenH },
 
   ];
 
