@@ -69,7 +69,7 @@ const SerchStackScreen = () => {        // Este stack es el de Search es decir e
       headerTintColor: '#fff', // Color del texto en la barra de navegación
     }}  //dsa
   >
-          <SerchStack.Screen name="Ciudades" component={Ciudades}/>
+         
           <SerchStack.Screen name='Danlí' component={DanliScreen}  options={{ headerBackVisible: true }} />
           <SerchStack.Screen name="Bancos Danlí" component={BancosDanli}/>
           <SerchStack.Screen name="Restaurantes Danlí" component={RestaurantesDanli} />

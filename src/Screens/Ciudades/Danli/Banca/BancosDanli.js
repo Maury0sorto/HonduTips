@@ -323,12 +323,7 @@ const MyScreen = () => {
     <View style={styles.container}>
       {mostrarSelectList && (
         <View style={styles.container2}>
-         <TouchableOpacity onPress={handleImagePress}>
-        <Image
-          source={{ uri: 'https://i.imgur.com/7YTTkEO.png' }} // Reemplaza con la URL de tu imagen
-          style={styles.image}
-        />
-      </TouchableOpacity>
+        
         </View>
       )}
 

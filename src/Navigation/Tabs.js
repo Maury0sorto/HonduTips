@@ -51,10 +51,7 @@ const Tabs = () => {
           headerStyle: { backgroundColor: '#00BCE4', shadowColor: 'black'},
           headerTintColor: '#fff',
           tabBarIcon: ({ color, size }) => (
-            <Image
-              source={{ uri: 'https://i.imgur.com/UpWzcqV.png' }} // URL de la imagen
-              style={{ width: size * 1.5, height: size, tintColor: color, resizeMode: 'contain' }}
-            />
+            <Ionicons name="md-search" size={size} color={color} />
           ),
           tabBarActiveTintColor: '#00BCE4',
         }}
@@ -76,20 +73,7 @@ const Tabs = () => {
         }}
       />
 
-      <Tab.Screen
-        name="Ajustes"
-        component={Settings}
-        options={{
-          
-          headerStyle: { backgroundColor: '#00BCE4', shadowColor: 'black' },
-          headerTintColor: '#fff',
-          tabBarIcon: ({ color, size }) => (
-            <Ionicons name="md-settings" size={size} color={color} />
-          ),
-          tabBarActiveTintColor: '#00BCE4',
-        }}
-      />
-
+     
 
 
       

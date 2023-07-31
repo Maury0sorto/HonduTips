@@ -1,187 +1,222 @@
 import React, { useState } from 'react';
-import { View, Text, TextInput, StyleSheet, TouchableOpacity, ScrollView } from 'react-native';
+import { ScrollView, View, Text, TextInput, TouchableOpacity, Image } from 'react-native';
+import { MaterialIcons } from '@expo/vector-icons';
+import * as ImagePicker from 'expo-image-picker';
 
-const ExpoFormScreen = () => {
+export default function App() {
   const [contactInfo, setContactInfo] = useState({
     fullName: '',
     contactPhone: '',
-    email: '',
+    contactEmail: '',
   });
 
-  const [commerceInfo, setCommerceInfo] = useState({
-    storeName: '',
-    branchesNumber: '',
+  const [localInfo, setLocalInfo] = useState({
+    localName: '',
+    branches: '',
     openingHours: '',
-    storePhone: '',
-    storeAddress: '',
-    additionalComments: '',
+    localPhone: '',
+    address: '',
+    comments: '',
+    logoImage: null,
+    localImage: null,
+    menuImage: null,
   });
 
-  const handleContactInfoChange = (key, value) => {
-    setContactInfo({
-      ...contactInfo,
-      [key]: value,
+  const pickImage = async (type) => {
+    let result = await ImagePicker.launchImageLibraryAsync({
+      mediaTypes: ImagePicker.MediaTypeOptions.Images,
+      allowsEditing: true,
+      aspect: [1, 1],
+      quality: 1,
     });
+
+    if (!result.cancelled) {
+      switch (type) {
+        case 'logo':
+          setLocalInfo({ ...localInfo, logoImage: result.uri });
+          break;
+        case 'local':
+          setLocalInfo({ ...localInfo, localImage: result.uri });
+          break;
+        case 'menu':
+          setLocalInfo({ ...localInfo, menuImage: result.uri });
+          break;
+      }
+    }
   };
 
-  const handleCommerceInfoChange = (key, value) => {
-    setCommerceInfo({
-      ...commerceInfo,
-      [key]: value,
-    });
-  };
+  const handleSubmit = () => {
+    // Validación de campos vacíos
+    if (
+      contactInfo.fullName.trim() === '' ||
+      contactInfo.contactPhone.trim() === '' ||
+      contactInfo.contactEmail.trim() === '' ||
+      localInfo.localName.trim() === '' ||
+      localInfo.branches.trim() === '' ||
+      localInfo.openingHours.trim() === '' ||
+      localInfo.localPhone.trim() === '' ||
+      localInfo.address.trim() === ''
+    ) {
+      alert('Por favor, completa todos los campos obligatorios.');
+      return;
+    }
 
-  const handleLogoUpload = () => {
-    // Implement logic for uploading logo image
-  };
-
-  const handlePhotoUpload = () => {
-    // Implement logic for uploading store photo
-  };
-
-  const handleMenuUpload = () => {
-    // Implement logic for uploading menu/services
+    // Aquí puedes enviar los datos a un servidor o realizar alguna acción con ellos
+    console.log(contactInfo, localInfo);
   };
 
   return (
-    <ScrollView style={styles.container}>
-      <Text style={styles.title}>Información de Contacto</Text>
+    <ScrollView style={{ padding: 16 }}>
+      <Text style={{ fontSize: 20, fontWeight: 'bold', marginBottom: 16, textAlign: 'center' }}>
+        Registra tu Empresa
+      </Text>
 
-      <View style={styles.formGroup}>
-        <Text style={styles.label}>Nombre completo de contacto:</Text>
+      {/* Información de Contacto */}
+      <Text style={{ fontSize: 18, fontWeight: 'bold', marginBottom: 8 }}>Información de Contacto</Text>
+      <View style={{ marginBottom: 16 }}>
+        <Text>Nombre completo de contacto:</Text>
         <TextInput
-          style={styles.input}
+          style={{ borderWidth: 1, borderColor: 'gray', padding: 8, marginBottom: 8, borderRadius: 8 }}
+          onChangeText={(text) => setContactInfo({ ...contactInfo, fullName: text.trim() })}
           value={contactInfo.fullName}
-          onChangeText={(text) => handleContactInfoChange('fullName', text)}
         />
-      </View>
 
-      <View style={styles.formGroup}>
-        <Text style={styles.label}>Teléfono de contacto:</Text>
+        <Text>Teléfono de contacto:</Text>
         <TextInput
-          style={styles.input}
+          style={{ borderWidth: 1, borderColor: 'gray', padding: 8, marginBottom: 8, borderRadius: 8 }}
+          onChangeText={(text) => setContactInfo({ ...contactInfo, contactPhone: text.trim() })}
           value={contactInfo.contactPhone}
-          onChangeText={(text) => handleContactInfoChange('contactPhone', text)}
         />
-      </View>
 
-      <View style={styles.formGroup}>
-        <Text style={styles.label}>Correo electrónico:</Text>
+        <Text>Correo electrónico:</Text>
         <TextInput
-          style={styles.input}
-          value={contactInfo.email}
-          onChangeText={(text) => handleContactInfoChange('email', text)}
+          style={{ borderWidth: 1, borderColor: 'gray', padding: 8, borderRadius: 8 }}
+          onChangeText={(text) => setContactInfo({ ...contactInfo, contactEmail: text.trim() })}
+          value={contactInfo.contactEmail}
         />
       </View>
 
-      <Text style={styles.title}>Datos del comercio</Text>
-
-      <View style={styles.formGroup}>
-        <Text style={styles.label}>Nombre del local:</Text>
+      {/* Datos del comercio */}
+      <Text style={{ fontSize: 18, fontWeight: 'bold', marginBottom: 8, borderRadius: 8 }}>
+        Datos del comercio
+      </Text>
+      <View style={{ marginBottom: 16 }}>
+        <Text>Nombre del local:</Text>
         <TextInput
-          style={styles.input}
-          value={commerceInfo.storeName}
-          onChangeText={(text) => handleCommerceInfoChange('storeName', text)}
+          style={{ borderWidth: 1, borderColor: 'gray', padding: 8, marginBottom: 8, borderRadius: 8 }}
+          onChangeText={(text) => setLocalInfo({ ...localInfo, localName: text.trim() })}
+          value={localInfo.localName}
         />
-      </View>
 
-      <View style={styles.formGroup}>
-        <Text style={styles.label}>Número de sucursales:</Text>
+        <Text>Número de sucursales:</Text>
         <TextInput
-          style={styles.input}
-          value={commerceInfo.branchesNumber}
-          onChangeText={(text) => handleCommerceInfoChange('branchesNumber', text)}
+          style={{ borderWidth: 1, borderColor: 'gray', padding: 8, marginBottom: 8, borderRadius: 8 }}
+          onChangeText={(text) => setLocalInfo({ ...localInfo, branches: text.trim() })}
+          value={localInfo.branches}
         />
-      </View>
 
-      <View style={styles.formGroup}>
-        <Text style={styles.label}>Horario de atención:</Text>
+        <Text>Horario de atención:</Text>
         <TextInput
-          style={styles.input}
-          value={commerceInfo.openingHours}
-          onChangeText={(text) => handleCommerceInfoChange('openingHours', text)}
+          style={{ borderWidth: 1, borderColor: 'gray', padding: 8, marginBottom: 8, borderRadius: 8 }}
+          onChangeText={(text) => setLocalInfo({ ...localInfo, openingHours: text.trim() })}
+          value={localInfo.openingHours}
         />
-      </View>
 
-      <View style={styles.formGroup}>
-        <Text style={styles.label}>Teléfono del local:</Text>
+        <Text>Teléfono del local:</Text>
         <TextInput
-          style={styles.input}
-          value={commerceInfo.storePhone}
-          onChangeText={(text) => handleCommerceInfoChange('storePhone', text)}
+          style={{ borderWidth: 1, borderColor: 'gray', padding: 8, marginBottom: 8, borderRadius: 8 }}
+          onChangeText={(text) => setLocalInfo({ ...localInfo, localPhone: text.trim() })}
+          value={localInfo.localPhone}
         />
-      </View>
 
-      <View style={styles.formGroup}>
-        <Text style={styles.label}>Dirección completa del local:</Text>
+        <Text>Dirección completa del local:</Text>
         <TextInput
-          style={styles.input}
-          value={commerceInfo.storeAddress}
-          onChangeText={(text) => handleCommerceInfoChange('storeAddress', text)}
+          style={{ borderWidth: 1, borderColor: 'gray', padding: 8, marginBottom: 8, borderRadius: 8 }}
+          onChangeText={(text) => setLocalInfo({ ...localInfo, address: text.trim() })}
+          value={localInfo.address}
         />
+
+<Text>Comentarios adicionales:</Text>
+<TextInput
+  style={{ borderWidth: 1, borderColor: 'gray', padding: 8, marginBottom: 30, borderRadius: 8 }}
+  onChangeText={(text) => setLocalInfo({ ...localInfo, comments: text })}
+  value={localInfo.comments}
+  multiline={true} // <-- Agregamos esta prop para hacerlo multilinea
+/>
+
+
+        {/* Alineación horizontal de los botones para subir imágenes */}
+        <View style={{ flexDirection: 'row', justifyContent: 'space-between', marginBottom: 16 }}>
+          <TouchableOpacity
+            onPress={() => pickImage('logo')}
+            style={{
+              alignItems: 'center',
+              borderWidth: 1,
+              borderColor: 'gray',
+              padding: 15,
+              borderRadius: 8,
+              backgroundColor: '#00BCE4',
+            }}
+          >
+            <Text style={{ color: '#fff' }}>Subir Imagen</Text>
+            <Text style={{ color: '#fff' }}>de Logotipo</Text>
+            <Text> </Text>
+            {localInfo.logoImage && <Image source={{ uri: localInfo.logoImage }} style={{width: 95, height: 95}} />}
+            {!localInfo.logoImage && <Text style={{fontSize:10, color:"red"}}>No hay imagen</Text>}
+          </TouchableOpacity>
+
+          <TouchableOpacity
+            onPress={() => pickImage('local')}
+            style={{
+              alignItems: 'center',
+              borderWidth: 1,
+              borderColor: 'gray',
+              padding: 15,
+              borderRadius: 8,
+              backgroundColor: '#00BCE4',
+            }}
+          >
+            <Text style={{ color: '#fff' }}>Subir</Text>
+            <Text style={{ color: '#fff' }}>Fotografía</Text>
+            <Text style={{ color: '#fff' }}>del Local</Text>
+            {localInfo.localImage && <Image source={{ uri: localInfo.localImage }} style={{width: 95, height: 95}} />}
+            {!localInfo.localImage && <Text style={{fontSize:10, color:"red"}}>No hay imagen</Text>}
+          </TouchableOpacity>
+
+          <TouchableOpacity
+            onPress={() => pickImage('menu')}
+            style={{
+              alignItems: 'center',
+              borderWidth: 1,
+              borderColor: 'gray',
+              padding: 15,
+              borderRadius: 8,
+              backgroundColor: '#00BCE4',
+            }}
+          >
+            <Text style={{ color: '#fff' }}>Subir Menú</Text>
+            <Text style={{ color: '#fff' }}>ó</Text>
+            <Text style={{ color: '#fff' }}>Servicios</Text>
+            {localInfo.menuImage && <Image source={{ uri: localInfo.menuImage }} style={{width: 95, height: 95}} />}
+            {!localInfo.menuImage && <Text style={{fontSize:10, color:"red"}}>No hay imagen</Text>}
+          </TouchableOpacity>
+        </View>
+
       </View>
 
-      <View style={styles.formGroup}>
-        <Text style={styles.label}>Comentarios adicionales:</Text>
-        <TextInput
-          style={styles.input}
-          value={commerceInfo.additionalComments}
-          onChangeText={(text) => handleCommerceInfoChange('additionalComments', text)}
-        />
-      </View>
-
-      <TouchableOpacity style={styles.button} onPress={handleLogoUpload}>
-        <Text style={styles.buttonText}>Subir Imagen de Logotipo</Text>
-      </TouchableOpacity>
-
-      <TouchableOpacity style={styles.button} onPress={handlePhotoUpload}>
-        <Text style={styles.buttonText}>Subir Fotografía del Local</Text>
-      </TouchableOpacity>
-
-      <TouchableOpacity style={styles.button} onPress={handleMenuUpload}>
-        <Text style={styles.buttonText}>Subir Menú / Servicios</Text>
+      <TouchableOpacity
+        onPress={handleSubmit}
+        style={{
+          backgroundColor: '#007BFF',
+          padding: 12,
+          borderRadius: 8,
+          alignItems: 'center',
+          marginBottom: 50,
+          backgroundColor: '#00BCE4',
+        }}
+      >
+        <Text style={{ color: 'white', fontWeight: 'bold', fontSize: 18 }}>Enviar Información</Text>
       </TouchableOpacity>
     </ScrollView>
   );
-};
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    padding: 20,
-    backgroundColor: '#fff',
-  },
-  title: {
-    fontSize: 18,
-    fontWeight: 'bold',
-    marginTop: 10,
-    marginBottom: 5,
-  },
-  formGroup: {
-    marginBottom: 15,
-  },
-  label: {
-    fontSize: 16,
-    marginBottom: 5,
-  },
-  input: {
-    borderWidth: 1,
-    borderColor: '#ccc',
-    borderRadius: 5,
-    padding: 10,
-    fontSize: 16,
-  },
-  button: {
-    backgroundColor: '#007BFF',
-    padding: 15,
-    borderRadius: 5,
-    marginTop: 10,
-  },
-  buttonText: {
-    color: '#fff',
-    fontSize: 16,
-    textAlign: 'center',
-  },
-});
-
-export default ExpoFormScreen;
+}
