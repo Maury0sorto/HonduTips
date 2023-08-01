@@ -82,7 +82,7 @@ export default function UniversidadUCEM() {
   return (
     <ScrollView>
       <View style={styles.container}>
-        <Text style={styles.title}>UCEM</Text>
+        <Text style={styles.title}>UCENM</Text>
         <View style={styles.containerSwipers}>
           <View style={styles.swiperContainer}>
             <Swiper
@@ -95,10 +95,10 @@ export default function UniversidadUCEM() {
             >
 
                 <View style={styles.slide}>
-                <Image style={styles.image} source={{ uri: 'https://i.imgur.com/t6pkq4N.jpg' }} />
+                <Image style={styles.image} source={{ uri: 'https://i.imgur.com/LhPHx2D.png' }} />
               </View>
                  <View style={styles.slide}>
-                <Image style={styles.image} source={{ uri: 'https://i.imgur.com/rcTYS29.png' }} />
+                <Image style={styles.image} source={{ uri: 'https://i.imgur.com/LhPHx2D.png' }} />
               </View>
             
              
@@ -134,7 +134,7 @@ export default function UniversidadUCEM() {
         <TouchableOpacity
             style={styles.button}
             onPress={() => {
-              Linking.openURL('http://uph.edu.hn/');
+              Linking.openURL('https://web.ucenm.net/');
             }}
           >
              <Icon name="globe" size={20} color="white" style={styles.buttonIcon} />
@@ -144,7 +144,7 @@ export default function UniversidadUCEM() {
           <TouchableOpacity
             style={styles.button}
             onPress={() => {
-              Linking.openURL('tel: 9788-3273');
+              Linking.openURL('https://api.whatsapp.com/send?phone=50495596009');
             }}
           >
              <Icon name="phone" size={20} color="white" style={styles.buttonIcon} />

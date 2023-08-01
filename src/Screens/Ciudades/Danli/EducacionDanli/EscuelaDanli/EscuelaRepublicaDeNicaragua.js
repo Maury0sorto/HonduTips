@@ -95,10 +95,10 @@ export default function EscuelaRepublicaDeNicaragua() {
             >
 
                 <View style={styles.slide}>
-                <Image style={styles.image} source={{ uri: 'https://i.imgur.com/t6pkq4N.jpg' }} />
+                <Image style={styles.image} source={{ uri: 'https://i.imgur.com/pHRY32K.png' }} />
               </View>
                  <View style={styles.slide}>
-                <Image style={styles.image} source={{ uri: 'https://i.imgur.com/rcTYS29.png' }} />
+                <Image style={styles.image} source={{ uri: 'https://i.imgur.com/iMe9gaf.png' }} />
               </View>
             
              
@@ -130,7 +130,7 @@ export default function EscuelaRepublicaDeNicaragua() {
         <TouchableOpacity
             style={styles.button}
             onPress={() => {
-              Linking.openURL('https://www.facebook.com/people/Escuela-Republica-de-Nicaragua/100063077808253/');
+              Linking.openURL('https://www.facebook.com/profile.php?id=100063077808253');
             }}
           >
              <Icon name="globe" size={20} color="white" style={styles.buttonIcon} />

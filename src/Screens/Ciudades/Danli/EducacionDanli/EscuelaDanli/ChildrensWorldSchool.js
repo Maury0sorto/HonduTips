@@ -95,10 +95,10 @@ export default function ChildrensWolrdSchool() {
             >
 
                 <View style={styles.slide}>
-                <Image style={styles.image} source={{ uri: 'https://i.imgur.com/t6pkq4N.jpg' }} />
+                <Image style={styles.image} source={{ uri: 'https://i.imgur.com/NGHvHid.png' }} />
               </View>
                  <View style={styles.slide}>
-                <Image style={styles.image} source={{ uri: 'https://i.imgur.com/rcTYS29.png' }} />
+                <Image style={styles.image} source={{ uri: 'https://i.imgur.com/KPLJVeB.jpg' }} />
               </View>
             
              
@@ -139,7 +139,7 @@ export default function ChildrensWolrdSchool() {
           <TouchableOpacity
             style={styles.button}
             onPress={() => {
-              Linking.openURL('tel: 2763-3908');
+              Linking.openURL('tel: 9671-0574');
             }}
           >
              <Icon name="phone" size={20} color="white" style={styles.buttonIcon} />

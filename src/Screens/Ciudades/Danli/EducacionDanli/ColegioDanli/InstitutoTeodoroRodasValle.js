@@ -95,10 +95,10 @@ export default function InstitutoTeodoroRodasValle() {
             >
 
                 <View style={styles.slide}>
-                <Image style={styles.image} source={{ uri: 'https://i.imgur.com/t6pkq4N.jpg' }} />
+                <Image style={styles.image} source={{ uri: 'https://i.imgur.com/j7xpB5Q.png' }} />
               </View>
                  <View style={styles.slide}>
-                <Image style={styles.image} source={{ uri: 'https://i.imgur.com/rcTYS29.png' }} />
+                <Image style={styles.image} source={{ uri: 'https://i.imgur.com/YRApF3G.jpg' }} />
               </View>
             
              
@@ -127,6 +127,15 @@ export default function InstitutoTeodoroRodasValle() {
 
 
         <View style={styles.buttonContainer}>
+        <TouchableOpacity
+            style={styles.button}
+            onPress={() => {
+              Linking.openURL('https://www.facebook.com/profile.php?id=100069588443769');
+            }}
+          >
+             <Icon name="globe" size={20} color="white" style={styles.buttonIcon} />
+            <Text style={styles.buttonText}>Visitar</Text>
+          </TouchableOpacity>
         </View>
               
         <View style={styles.mapContainer}>

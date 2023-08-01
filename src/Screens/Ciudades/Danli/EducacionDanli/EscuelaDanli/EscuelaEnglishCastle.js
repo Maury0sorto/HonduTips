@@ -95,10 +95,10 @@ export default function EscuelaEnglishCastle() {
             >
 
                 <View style={styles.slide}>
-                <Image style={styles.image} source={{ uri: 'https://i.imgur.com/t6pkq4N.jpg' }} />
+                <Image style={styles.image} source={{ uri: 'https://i.imgur.com/jjMumsO.jpg' }} />
               </View>
                  <View style={styles.slide}>
-                <Image style={styles.image} source={{ uri: 'https://i.imgur.com/rcTYS29.png' }} />
+                <Image style={styles.image} source={{ uri: 'https://i.imgur.com/VZSxEJw.png' }} />
               </View>
             
              
@@ -130,7 +130,7 @@ export default function EscuelaEnglishCastle() {
         <TouchableOpacity
             style={styles.button}
             onPress={() => {
-              Linking.openURL('http://english-castle.com/');
+              Linking.openURL('https://www.facebook.com/StallionPride');
             }}
           >
              <Icon name="globe" size={20} color="white" style={styles.buttonIcon} />

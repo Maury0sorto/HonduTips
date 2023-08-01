@@ -95,10 +95,10 @@ export default function InstiutoCatolicoBillingüe() {
             >
 
                 <View style={styles.slide}>
-                <Image style={styles.image} source={{ uri: 'https://i.imgur.com/t6pkq4N.jpg' }} />
+                <Image style={styles.image} source={{ uri: 'https://i.imgur.com/Sn4Anot.png' }} />
               </View>
                  <View style={styles.slide}>
-                <Image style={styles.image} source={{ uri: 'https://i.imgur.com/rcTYS29.png' }} />
+                <Image style={styles.image} source={{ uri: 'https://i.imgur.com/KG0s5At.jpg' }} />
               </View>
             
              
@@ -134,11 +134,20 @@ export default function InstiutoCatolicoBillingüe() {
         <TouchableOpacity
             style={styles.button}
             onPress={() => {
-              Linking.openURL('https://www.facebook.com/InstitutoDepartamentaldeOrienteOficial?locale=es_LA');
+              Linking.openURL('https://www.facebook.com/institutocatolicobilingue/');
             }}
           >
              <Icon name="globe" size={20} color="white" style={styles.buttonIcon} />
             <Text style={styles.buttonText}>Visitar</Text>
+          </TouchableOpacity>
+          <TouchableOpacity
+            style={styles.button}
+            onPress={() => {
+              Linking.openURL('tel: 9800-0140');
+            }}
+          >
+             <Icon name="phone" size={20} color="white" style={styles.buttonIcon} />
+            <Text style={styles.buttonText}>Contactar</Text>
           </TouchableOpacity>
         </View>
               
