@@ -7,7 +7,9 @@ import { Ionicons } from '@expo/vector-icons';
 
 import BarberiaGudosDanli from '../BellezaDanli/BarberiasDanli/BarberiaGudosDanli';
 import BarberiaMileniumDanli from '../BellezaDanli/BarberiasDanli/BarberiaMileniumDanli';
-
+import JardinDeNinnosDulceInfancia from './KinderDanli/JardinDeNinnosDulceInfancia';
+import KinderMariaBarahona from './KinderDanli/KinderMariaBarahona';
+import KinderLuzVictoria from './KinderDanli/KinderLuzVictoria';
 
 const ScreenA = ({ text, mostrarBotonAnterior }) => {
   return (
@@ -23,7 +25,7 @@ const ScreenA = ({ text, mostrarBotonAnterior }) => {
     </>
        
       </TouchableHighlight>
-      <BarberiaGudosDanli/>
+      <JardinDeNinnosDulceInfancia/>
    
     </View>
   );
@@ -42,13 +44,32 @@ const ScreenB = ({ text, mostrarBotonAnterior }) => {
       <Text style={styles.backButtonText}>Regresar</Text>
     </>
       </TouchableHighlight>
-      <BarberiaMileniumDanli/>
+      <KinderMariaBarahona/>
      
     </View>
   );
 };
 
 
+
+const ScreenC = ({ text, mostrarBotonAnterior }) => {
+  return (
+    <View style={styles.componentContainer}>
+      <TouchableHighlight
+        style={styles.backButton}
+        underlayColor="#0080ff"
+        onPress={mostrarBotonAnterior}
+      >
+        <>
+      <Ionicons name="arrow-back" size={24} color="black" style={styles.backButtonIcon} />
+      <Text style={styles.backButtonText}>Regresar</Text>
+    </>
+      </TouchableHighlight>
+      <KinderLuzVictoria/>
+     
+    </View>
+  );
+};
 
 
 
@@ -73,9 +94,8 @@ const KindersDanli = () => {
  
   const buttons = [
     { text: "Jardin de Niños Dulce Infancia", image: 'https://i.imgur.com/YrrDG9H.jpg',  screen: ScreenA },
-    { text: 'Kinder Maria B. Barahona', image: 'https://i.imgur.com/YrrDG9H.jpg', screen: ScreenB },
-    { text: 'Luz Victoria ', image: 'https://i.imgur.com/YrrDG9H.jpg', screen: ScreenB },
-    { text: 'Kinder Barahona  ', image: 'https://i.imgur.com/YrrDG9H.jpg', screen: ScreenB },
+    { text: 'Kinder Maria Barahona', image: 'https://i.imgur.com/YrrDG9H.jpg', screen: ScreenB },
+    { text: 'Jardin de Niños Luz Victoria ', image: 'https://i.imgur.com/YrrDG9H.jpg', screen: ScreenC },
    
   ]; 
   const data2 = [
@@ -102,15 +122,8 @@ const KindersDanli = () => {
     <View style={styles.container}>
       {mostrarSelectList && (
         <View style={styles.container2}>
-          <SelectList
-            setSelected={(val) => setSelectedOption(val)}
-            data={data2}
-            save="value"
-            placeholder="Recomendadas"
-            noDataText="Gasolinera no disponible"
-            searchPlaceholder="Busca tu barberia"
-            onInputChange={(text) => mostrarComponente(text, null)}
-          />
+       
+          
         </View>
       )}
 
@@ -152,7 +165,7 @@ const styles = StyleSheet.create({
     justifyContent: 'center',
   },
   container2: {
-    backgroundColor: '#ffff',
+    backgroundColor: 'transparent',
     borderRadius: 20,
     paddingHorizontal: 8,
     paddingVertical: 8,

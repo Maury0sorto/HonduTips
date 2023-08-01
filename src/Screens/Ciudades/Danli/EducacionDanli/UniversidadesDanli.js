@@ -4,9 +4,11 @@ import { SelectList } from 'react-native-dropdown-select-list';
 import { Ionicons } from '@expo/vector-icons';
 
 
-
-import BarberiaGudosDanli from '../BellezaDanli/BarberiasDanli/BarberiaGudosDanli';
-import BarberiaMileniumDanli from '../BellezaDanli/BarberiasDanli/BarberiaMileniumDanli';
+import UNICAHSAP from './UniversidadDanli/UNICAHDanli';
+import UniversidadPolitecnica from './UniversidadDanli/UniversidadPolitecnicaDanli';
+import UniversidadPedagógica from './UniversidadDanli/UniversidadPedagogicaFranciscoMorazan';
+import UNAHTECH from './UniversidadDanli/UniversidadNacionalAutonoma';
+import UniversidadUCEM from './UniversidadDanli/UCEM-Danli';
 
 
 const ScreenA = ({ text, mostrarBotonAnterior }) => {
@@ -23,7 +25,7 @@ const ScreenA = ({ text, mostrarBotonAnterior }) => {
     </>
        
       </TouchableHighlight>
-      <BarberiaGudosDanli/>
+      <UNICAHSAP/>
    
     </View>
   );
@@ -42,7 +44,7 @@ const ScreenB = ({ text, mostrarBotonAnterior }) => {
       <Text style={styles.backButtonText}>Regresar</Text>
     </>
       </TouchableHighlight>
-      <BarberiaMileniumDanli/>
+      <UniversidadPolitecnica/>
      
     </View>
   );
@@ -50,9 +52,63 @@ const ScreenB = ({ text, mostrarBotonAnterior }) => {
 
 
 
+const ScreenC = ({ text, mostrarBotonAnterior }) => {
+  return (
+    <View style={styles.componentContainer}>
+      <TouchableHighlight
+        style={styles.backButton}
+        underlayColor="#0080ff"
+        onPress={mostrarBotonAnterior}
+      >
+        <>
+      <Ionicons name="arrow-back" size={24} color="black" style={styles.backButtonIcon} />
+      <Text style={styles.backButtonText}>Regresar</Text>
+    </>
+      </TouchableHighlight>
+      <UniversidadPedagógica/>
+     
+    </View>
+  );
+};
 
 
+const ScreenD = ({ text, mostrarBotonAnterior }) => {
+  return (
+    <View style={styles.componentContainer}>
+      <TouchableHighlight
+        style={styles.backButton}
+        underlayColor="#0080ff"
+        onPress={mostrarBotonAnterior}
+      >
+        <>
+      <Ionicons name="arrow-back" size={24} color="black" style={styles.backButtonIcon} />
+      <Text style={styles.backButtonText}>Regresar</Text>
+    </>
+      </TouchableHighlight>
+      <UNAHTECH/>
+     
+    </View>
+  );
+};
 
+const ScreenE = ({ text, mostrarBotonAnterior }) => {
+  return (
+    <View style={styles.componentContainer}>
+      <TouchableHighlight
+        style={styles.backButton}
+        underlayColor="#0080ff"
+        onPress={mostrarBotonAnterior}
+      >
+        <>
+      <Ionicons name="arrow-back" size={24} color="black" style={styles.backButtonIcon} />
+      <Text style={styles.backButtonText}>Regresar</Text>
+    </>
+      </TouchableHighlight>
+      <UniversidadUCEM/>
+     
+    </View>
+  );
+};
 
 const UniversidadesDanli = () => {
   const [componenteVisible, setComponenteVisible] = useState(null);
@@ -74,13 +130,13 @@ const UniversidadesDanli = () => {
   const buttons = [
     { text: "UNICAH Campus Santiago Apóstol", image: 'https://i.imgur.com/YrrDG9H.jpg',  screen: ScreenA },
     { text: 'Universidad Politécnica de Honduras', image: 'https://i.imgur.com/YrrDG9H.jpg', screen: ScreenB },
-    { text: 'Universidad Pedagógica Francisco Morazán', image: 'https://i.imgur.com/YrrDG9H.jpg', screen: ScreenB },
-    { text: 'UNAH-TEC Danlí', image: 'https://i.imgur.com/YrrDG9H.jpg', screen: ScreenB },
-    { text: 'UCEM', image: 'https://i.imgur.com/YrrDG9H.jpg', screen: ScreenB },
+    { text: 'Universidad Pedagógica Francisco Morazán', image: 'https://i.imgur.com/YrrDG9H.jpg', screen: ScreenC },
+    { text: 'UNAH-TEC', image: 'https://i.imgur.com/YrrDG9H.jpg', screen: ScreenD }, 
+    { text: 'UCEM', image: 'https://i.imgur.com/YrrDG9H.jpg', screen: ScreenE },
    
   ];
 
-  const data2 = [
+  const data2 = [ 
     { key: '1', value: 'Recomendadas' },
     { key: '2', value: "UNICAH Campus Santiago Apóstol" },
     { key: '3', value: 'Universidad Politécnica de Honduras' },
@@ -107,15 +163,7 @@ const UniversidadesDanli = () => {
     <View style={styles.container}>
       {mostrarSelectList && (
         <View style={styles.container2}>
-          <SelectList
-            setSelected={(val) => setSelectedOption(val)}
-            data={data2}
-            save="value"
-            placeholder="Recomendadas"
-            noDataText="Gasolinera no disponible"
-            searchPlaceholder="Busca tu barberia"
-            onInputChange={(text) => mostrarComponente(text, null)}
-          />
+        
         </View>
       )}
 
@@ -157,7 +205,7 @@ const styles = StyleSheet.create({
     justifyContent: 'center',
   },
   container2: {
-    backgroundColor: '#ffff',
+    backgroundColor: 'transparent',
     borderRadius: 20,
     paddingHorizontal: 8,
     paddingVertical: 8,

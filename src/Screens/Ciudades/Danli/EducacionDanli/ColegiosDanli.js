@@ -4,11 +4,12 @@ import { SelectList } from 'react-native-dropdown-select-list';
 import { Ionicons } from '@expo/vector-icons';
 
 
-
-import BarberiaGudosDanli from '../BellezaDanli/BarberiasDanli/BarberiaGudosDanli';
-import BarberiaMileniumDanli from '../BellezaDanli/BarberiasDanli/BarberiaMileniumDanli';
-import EscuelasDanli from './EscuelasDanli';
-
+import IDODanli from './ColegioDanli/IDODanli';
+import InstiutoCatolicoBillingüe from './ColegioDanli/InstitutoCatolicoBilingueDanli';
+import INTAODanli from './ColegioDanli/INTAODanli';
+import InstitutoTeodoroRodasValle from './ColegioDanli/InstitutoTeodoroRodasValle';
+import CentroTecnicoPedroNufio from './ColegioDanli/CentroTecnicoPedroNufio';
+import InstitutoCosmeGarcia from './ColegioDanli/InstitutoCosmeGarcia';
 
 const ScreenA = ({ text, mostrarBotonAnterior }) => {
   return (
@@ -24,7 +25,7 @@ const ScreenA = ({ text, mostrarBotonAnterior }) => {
     </>
        
       </TouchableHighlight>
-      <BarberiaGudosDanli/>
+      <IDODanli/>
    
     </View>
   );
@@ -43,7 +44,7 @@ const ScreenB = ({ text, mostrarBotonAnterior }) => {
       <Text style={styles.backButtonText}>Regresar</Text>
     </>
       </TouchableHighlight>
-      <BarberiaMileniumDanli/>
+      <InstiutoCatolicoBillingüe/>
      
     </View>
   );
@@ -51,8 +52,87 @@ const ScreenB = ({ text, mostrarBotonAnterior }) => {
 
 
 
+const ScreenC = ({ text, mostrarBotonAnterior }) => {
+  return (
+    <View style={styles.componentContainer}>
+      <TouchableHighlight
+        style={styles.backButton}
+        underlayColor="#0080ff"
+        onPress={mostrarBotonAnterior}
+      >
+        <>
+      <Ionicons name="arrow-back" size={24} color="black" style={styles.backButtonIcon} />
+      <Text style={styles.backButtonText}>Regresar</Text>
+    </>
+      </TouchableHighlight>
+      <INTAODanli/>
+     
+    </View>
+  );
+};
 
 
+
+const ScreenD= ({ text, mostrarBotonAnterior }) => {
+  return (
+    <View style={styles.componentContainer}>
+      <TouchableHighlight
+        style={styles.backButton}
+        underlayColor="#0080ff"
+        onPress={mostrarBotonAnterior}
+      >
+        <>
+      <Ionicons name="arrow-back" size={24} color="black" style={styles.backButtonIcon} />
+      <Text style={styles.backButtonText}>Regresar</Text>
+    </>
+      </TouchableHighlight>
+      <InstitutoTeodoroRodasValle/>
+     
+    </View>
+  );
+};
+
+
+
+const ScreenE= ({ text, mostrarBotonAnterior }) => {
+  return (
+    <View style={styles.componentContainer}>
+      <TouchableHighlight
+        style={styles.backButton}
+        underlayColor="#0080ff"
+        onPress={mostrarBotonAnterior}
+      >
+        <>
+      <Ionicons name="arrow-back" size={24} color="black" style={styles.backButtonIcon} />
+      <Text style={styles.backButtonText}>Regresar</Text>
+    </>
+      </TouchableHighlight>
+      <CentroTecnicoPedroNufio/>
+     
+    </View>
+  );
+};
+
+
+
+const ScreenF= ({ text, mostrarBotonAnterior }) => {
+  return (
+    <View style={styles.componentContainer}>
+      <TouchableHighlight
+        style={styles.backButton}
+        underlayColor="#0080ff"
+        onPress={mostrarBotonAnterior}
+      >
+        <>
+      <Ionicons name="arrow-back" size={24} color="black" style={styles.backButtonIcon} />
+      <Text style={styles.backButtonText}>Regresar</Text>
+    </>
+      </TouchableHighlight>
+      <InstitutoCosmeGarcia/>
+     
+    </View>
+  );
+};
 
 
 const ColegiosDanli = () => {
@@ -73,12 +153,12 @@ const ColegiosDanli = () => {
   };
  
   const buttons = [
-    { text: "Instituto Departamental de Oriente", image: 'https://i.imgur.com/YrrDG9H.jpg',  screen: ScreenA },
-    { text: 'Intituto Católico Bilingüe', image: 'https://i.imgur.com/YrrDG9H.jpg', screen: ScreenB },
-    { text: 'INTAO - Instituto Tecnológico Automotriz De Oriente', image: 'https://i.imgur.com/YrrDG9H.jpg', screen: ScreenB },
-    { text: 'INSTITUTO TEODORO RODAS VALLE', image: 'https://i.imgur.com/YrrDG9H.jpg', screen: ScreenB },
-    { text: 'Centro Técnico Vocacional Pedro Nufio', image: 'https://i.imgur.com/YrrDG9H.jpg', screen: ScreenB },
-    { text: 'Instituto Cosme García', image: 'https://i.imgur.com/YrrDG9H.jpg', screen: ScreenB },
+    { text: "IDO", image: 'https://i.imgur.com/YrrDG9H.jpg',  screen: ScreenA },
+    { text: 'Intituto Católico Billingüe', image: 'https://i.imgur.com/YrrDG9H.jpg', screen: ScreenB },
+    { text: 'INTAO', image: 'https://i.imgur.com/YrrDG9H.jpg', screen: ScreenC },
+    { text: 'Instituto Teodoro Rodas Valle', image: 'https://i.imgur.com/YrrDG9H.jpg', screen: ScreenD },
+    { text: 'Centro Técnico Pedro Nufio', image: 'https://i.imgur.com/YrrDG9H.jpg', screen: ScreenE },
+    { text: 'Instituto Cosme García', image: 'https://i.imgur.com/YrrDG9H.jpg', screen: ScreenF },
     
 
   ]; 
@@ -110,15 +190,7 @@ const ColegiosDanli = () => {
     <View style={styles.container}>
       {mostrarSelectList && (
         <View style={styles.container2}>
-          <SelectList
-            setSelected={(val) => setSelectedOption(val)}
-            data={data2}
-            save="value"
-            placeholder="Recomendados"
-            noDataText="Gasolinera no disponible"
-            searchPlaceholder="Busca tu barberia"
-            onInputChange={(text) => mostrarComponente(text, null)}
-          />
+          
         </View>
       )}
 
@@ -160,7 +232,7 @@ const styles = StyleSheet.create({
     justifyContent: 'center',
   },
   container2: {
-    backgroundColor: '#ffff',
+    backgroundColor: 'transparent',
     borderRadius: 20,
     paddingHorizontal: 8,
     paddingVertical: 8,

@@ -7,16 +7,16 @@ import ImageViewer from 'react-native-image-zoom-viewer';
 
 const locationsData = [
   {
-    title: "Instituto Teodoro Rodas Valle",
+    title: "Escuela English Castle",
  
-    latitude: 14.029179928865362, 
-    longitude:   -86.5655264618798,
+    latitude:  14.037052683014604, 
+    longitude: -86.57924080305509,
   },
 
   // Agrega más ubicaciones aquí si lo deseas
 ];
 
-export default function InstitutoTeodoroRodasValle() {
+export default function EscuelaEnglishCastle() {
 
      // INICIO DE CODIGO PARA AGREGAR BOTONCITO CON MENU 
   const [modalVisible, setModalVisible] = useState(false);
@@ -31,8 +31,8 @@ export default function InstitutoTeodoroRodasValle() {
 
   const mapRef = useRef(null);
   const initialRegion = {
-    latitude: 14.029179928865362, 
-    longitude:   -86.5655264618798,
+    latitude:  14.037052683014604, 
+    longitude: -86.57924080305509,
     latitudeDelta: 0.003,
     longitudeDelta: 0.003,
   };
@@ -82,7 +82,7 @@ export default function InstitutoTeodoroRodasValle() {
   return (
     <ScrollView>
       <View style={styles.container}>
-        <Text style={styles.title}>Instituto Teodoro Rodas Valle</Text>
+        <Text style={styles.title}>Escuela English Castle</Text>
         <View style={styles.containerSwipers}>
           <View style={styles.swiperContainer}>
             <Swiper
@@ -127,6 +127,25 @@ export default function InstitutoTeodoroRodasValle() {
 
 
         <View style={styles.buttonContainer}>
+        <TouchableOpacity
+            style={styles.button}
+            onPress={() => {
+              Linking.openURL('http://english-castle.com/');
+            }}
+          >
+             <Icon name="globe" size={20} color="white" style={styles.buttonIcon} />
+            <Text style={styles.buttonText}>Visitar</Text>
+          </TouchableOpacity>
+
+          <TouchableOpacity
+            style={styles.button}
+            onPress={() => {
+              Linking.openURL('tel: 8738-1068');
+            }}
+          >
+             <Icon name="phone" size={20} color="white" style={styles.buttonIcon} />
+            <Text style={styles.buttonText}>Contactar</Text>
+          </TouchableOpacity>
         </View>
               
         <View style={styles.mapContainer}>
@@ -163,9 +182,9 @@ export default function InstitutoTeodoroRodasValle() {
         <View style={styles.buttonContainer}>
           <TouchableOpacity
             style={styles.button2}
-            onPress={() => openGoogleMaps( 14.029179928865362, -86.5655264618798,)}
+            onPress={() => openGoogleMaps( 14.037052683014604, -86.57924080305509,)}
           >
-            <Text style={styles.buttonText2}>Instituto</Text>
+            <Text style={styles.buttonText2}>Escuela</Text>
           </TouchableOpacity>
         </View>
      

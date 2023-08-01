@@ -7,16 +7,16 @@ import ImageViewer from 'react-native-image-zoom-viewer';
 
 const locationsData = [
   {
-    title: "Instituto Teodoro Rodas Valle",
+    title: "UCEM",
  
-    latitude: 14.029179928865362, 
-    longitude:   -86.5655264618798,
+    latitude:  14.041445160543057, 
+    longitude: -86.5704296765926,
   },
 
   // Agrega más ubicaciones aquí si lo deseas
 ];
 
-export default function InstitutoTeodoroRodasValle() {
+export default function UniversidadUCEM() {
 
      // INICIO DE CODIGO PARA AGREGAR BOTONCITO CON MENU 
   const [modalVisible, setModalVisible] = useState(false);
@@ -31,8 +31,8 @@ export default function InstitutoTeodoroRodasValle() {
 
   const mapRef = useRef(null);
   const initialRegion = {
-    latitude: 14.029179928865362, 
-    longitude:   -86.5655264618798,
+    latitude:  14.041445160543057, 
+    longitude: -86.5704296765926,
     latitudeDelta: 0.003,
     longitudeDelta: 0.003,
   };
@@ -82,7 +82,7 @@ export default function InstitutoTeodoroRodasValle() {
   return (
     <ScrollView>
       <View style={styles.container}>
-        <Text style={styles.title}>Instituto Teodoro Rodas Valle</Text>
+        <Text style={styles.title}>UCEM</Text>
         <View style={styles.containerSwipers}>
           <View style={styles.swiperContainer}>
             <Swiper
@@ -115,11 +115,15 @@ export default function InstitutoTeodoroRodasValle() {
       <View style={styles.scheduleContainer}>
         <View style={styles.scheduleItem}>
           <Icon name="clock-o" size={20} color="#000" style={styles.scheduleIcon} />
-          <Text style={styles.scheduleText}>Lun-Vier: 7:00 AM - 12:00 PM</Text>
+          <Text style={styles.scheduleText}>Lun-Vier: 7:00 AM - 9:00 PM</Text>
         </View>
         <View style={styles.scheduleItem}>
           <Icon name="clock-o" size={20} color="#000" style={styles.scheduleIcon} />
-          <Text style={styles.scheduleText}>Sab-Dom: Cerrado</Text>
+          <Text style={styles.scheduleText}>Sab: 8:00 AM - 5:00 PM</Text>
+        </View>
+        <View style={styles.scheduleItem}>
+          <Icon name="clock-o" size={20} color="#000" style={styles.scheduleIcon} />
+          <Text style={styles.scheduleText}>Dom: Cerrado</Text>
         </View>
       </View>
     </View>
@@ -127,6 +131,25 @@ export default function InstitutoTeodoroRodasValle() {
 
 
         <View style={styles.buttonContainer}>
+        <TouchableOpacity
+            style={styles.button}
+            onPress={() => {
+              Linking.openURL('http://uph.edu.hn/');
+            }}
+          >
+             <Icon name="globe" size={20} color="white" style={styles.buttonIcon} />
+            <Text style={styles.buttonText}>Visitar</Text>
+          </TouchableOpacity>
+
+          <TouchableOpacity
+            style={styles.button}
+            onPress={() => {
+              Linking.openURL('tel: 9788-3273');
+            }}
+          >
+             <Icon name="phone" size={20} color="white" style={styles.buttonIcon} />
+            <Text style={styles.buttonText}>Contactar</Text>
+          </TouchableOpacity>
         </View>
               
         <View style={styles.mapContainer}>
@@ -163,9 +186,9 @@ export default function InstitutoTeodoroRodasValle() {
         <View style={styles.buttonContainer}>
           <TouchableOpacity
             style={styles.button2}
-            onPress={() => openGoogleMaps( 14.029179928865362, -86.5655264618798,)}
+            onPress={() => openGoogleMaps( 14.041445160543057, -86.5704296765926,)}
           >
-            <Text style={styles.buttonText2}>Instituto</Text>
+            <Text style={styles.buttonText2}>Universidad</Text>
           </TouchableOpacity>
         </View>
      

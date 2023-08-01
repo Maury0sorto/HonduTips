@@ -4,9 +4,15 @@ import { SelectList } from 'react-native-dropdown-select-list';
 import { Ionicons } from '@expo/vector-icons';
 
 
-
-import BarberiaGudosDanli from '../BellezaDanli/BarberiasDanli/BarberiaGudosDanli';
-import BarberiaMileniumDanli from '../BellezaDanli/BarberiasDanli/BarberiaMileniumDanli';
+import EscuelaPedroNufio from './EscuelaDanli/EscuelaPedroNufioDanli';
+import EscuelaSanLuis from './EscuelaDanli/EscuelaSanLuisDanli';
+import EscuelaGuiaTecnica from './EscuelaDanli/EscuelaGuiaTecnica';
+import EscuelaManuelAdalidGamero from './EscuelaDanli/EscuelaManuelAdalidGamero';
+import ChildrensWolrdSchool from './EscuelaDanli/ChildrensWorldSchool';
+import EscuelaRepublicaDeNicaragua from './EscuelaDanli/EscuelaRepublicaDeNicaragua';
+import EscuelaCarlosRobertoReina from './EscuelaDanli/EscuelaCarlosRobertoReina';
+import EscuelaEnglishCastle from './EscuelaDanli/EscuelaEnglishCastle';
+import EscuelaMartaIriasDeAlcantara from './EscuelaDanli/EscuelaMartaIriasDeAlcantara';
 
 
 const ScreenA = ({ text, mostrarBotonAnterior }) => {
@@ -23,7 +29,7 @@ const ScreenA = ({ text, mostrarBotonAnterior }) => {
     </>
        
       </TouchableHighlight>
-      <BarberiaGudosDanli/>
+      <EscuelaPedroNufio/>
    
     </View>
   );
@@ -42,7 +48,7 @@ const ScreenB = ({ text, mostrarBotonAnterior }) => {
       <Text style={styles.backButtonText}>Regresar</Text>
     </>
       </TouchableHighlight>
-      <BarberiaMileniumDanli/>
+      <EscuelaSanLuis/>
      
     </View>
   );
@@ -50,9 +56,143 @@ const ScreenB = ({ text, mostrarBotonAnterior }) => {
 
 
 
+const ScreenC = ({ text, mostrarBotonAnterior }) => {
+  return (
+    <View style={styles.componentContainer}>
+      <TouchableHighlight
+        style={styles.backButton}
+        underlayColor="#0080ff"
+        onPress={mostrarBotonAnterior}
+      >
+        <>
+      <Ionicons name="arrow-back" size={24} color="black" style={styles.backButtonIcon} />
+      <Text style={styles.backButtonText}>Regresar</Text>
+    </>
+      </TouchableHighlight>
+      <EscuelaGuiaTecnica/>
+     
+    </View>
+  );
+};
 
 
+const ScreenD = ({ text, mostrarBotonAnterior }) => {
+  return (
+    <View style={styles.componentContainer}>
+      <TouchableHighlight
+        style={styles.backButton}
+        underlayColor="#0080ff"
+        onPress={mostrarBotonAnterior}
+      >
+        <>
+      <Ionicons name="arrow-back" size={24} color="black" style={styles.backButtonIcon} />
+      <Text style={styles.backButtonText}>Regresar</Text>
+    </>
+      </TouchableHighlight>
+      <EscuelaManuelAdalidGamero/>
+     
+    </View>
+  );
+};
 
+
+const ScreenE= ({ text, mostrarBotonAnterior }) => {
+  return (
+    <View style={styles.componentContainer}>
+      <TouchableHighlight
+        style={styles.backButton}
+        underlayColor="#0080ff"
+        onPress={mostrarBotonAnterior}
+      >
+        <>
+      <Ionicons name="arrow-back" size={24} color="black" style={styles.backButtonIcon} />
+      <Text style={styles.backButtonText}>Regresar</Text>
+    </>
+      </TouchableHighlight>
+      <ChildrensWolrdSchool/>
+     
+    </View>
+  );
+};
+
+
+const ScreenF= ({ text, mostrarBotonAnterior }) => {
+  return (
+    <View style={styles.componentContainer}>
+      <TouchableHighlight
+        style={styles.backButton}
+        underlayColor="#0080ff"
+        onPress={mostrarBotonAnterior}
+      >
+        <>
+      <Ionicons name="arrow-back" size={24} color="black" style={styles.backButtonIcon} />
+      <Text style={styles.backButtonText}>Regresar</Text>
+    </>
+      </TouchableHighlight>
+      <EscuelaRepublicaDeNicaragua/>
+     
+    </View>
+  );
+};
+
+
+const ScreenG= ({ text, mostrarBotonAnterior }) => {
+  return (
+    <View style={styles.componentContainer}>
+      <TouchableHighlight
+        style={styles.backButton}
+        underlayColor="#0080ff"
+        onPress={mostrarBotonAnterior}
+      >
+        <>
+      <Ionicons name="arrow-back" size={24} color="black" style={styles.backButtonIcon} />
+      <Text style={styles.backButtonText}>Regresar</Text>
+    </>
+      </TouchableHighlight>
+      <EscuelaCarlosRobertoReina/>
+     
+    </View>
+  );
+};
+
+const ScreenH= ({ text, mostrarBotonAnterior }) => {
+  return (
+    <View style={styles.componentContainer}>
+      <TouchableHighlight
+        style={styles.backButton}
+        underlayColor="#0080ff"
+        onPress={mostrarBotonAnterior}
+      >
+        <>
+      <Ionicons name="arrow-back" size={24} color="black" style={styles.backButtonIcon} />
+      <Text style={styles.backButtonText}>Regresar</Text>
+    </>
+      </TouchableHighlight>
+      <EscuelaEnglishCastle/>
+     
+    </View>
+  );
+};
+
+
+const ScreenI= ({ text, mostrarBotonAnterior }) => {
+  return (
+    <View style={styles.componentContainer}>
+      <TouchableHighlight
+        style={styles.backButton}
+        underlayColor="#0080ff"
+        onPress={mostrarBotonAnterior}
+      >
+        <>
+      <Ionicons name="arrow-back" size={24} color="black" style={styles.backButtonIcon} />
+      <Text style={styles.backButtonText}>Regresar</Text>
+    </>
+      </TouchableHighlight>
+      <EscuelaMartaIriasDeAlcantara/>
+     
+    </View>
+  );
+};
 
 const EscuelasDanli = () => {
   const [componenteVisible, setComponenteVisible] = useState(null);
@@ -74,15 +214,14 @@ const EscuelasDanli = () => {
   const buttons = [
     { text: "Escuela Pedro Nufio", image: 'https://i.imgur.com/YrrDG9H.jpg',  screen: ScreenA },
     { text: 'Escuela San Luis', image: 'https://i.imgur.com/YrrDG9H.jpg', screen: ScreenB },
-    { text: 'Instituto Departamental de Oriente', image: 'https://i.imgur.com/YrrDG9H.jpg', screen: ScreenB },
-    { text: 'Esc. Ren. Guia Tecnica', image: 'https://i.imgur.com/YrrDG9H.jpg', screen: ScreenB },
-    { text: 'Escuela Manuel Adalid y Gamero', image: 'https://i.imgur.com/YrrDG9H.jpg', screen: ScreenB },
-    { text: "The Children's World School", image: 'https://i.imgur.com/YrrDG9H.jpg', screen: ScreenB },
-    { text: "Escuela República de Nicaragua ", image: 'https://i.imgur.com/YrrDG9H.jpg', screen: ScreenB },
-    { text: "Escuela Marta irias de alcántara ", image: 'https://i.imgur.com/YrrDG9H.jpg', screen: ScreenB },
-    { text: "Escuela Carlos Roberto Reina ", image: 'https://i.imgur.com/YrrDG9H.jpg', screen: ScreenB },
-    { text: "Escuela English Castle  ", image: 'https://i.imgur.com/YrrDG9H.jpg', screen: ScreenB },
-  
+    { text: 'Escuela Guia Tecnica #10', image: 'https://i.imgur.com/YrrDG9H.jpg', screen: ScreenC },
+    { text: 'Escuela Manuel Adalid y Gamero', image: 'https://i.imgur.com/YrrDG9H.jpg', screen: ScreenD },
+    { text: "The Children's World School", image: 'https://i.imgur.com/YrrDG9H.jpg', screen: ScreenE },
+    { text: "Escuela República de Nicaragua ", image: 'https://i.imgur.com/YrrDG9H.jpg', screen: ScreenF },
+    { text: "Escuela Marta Irias de Alcántara ", image: 'https://i.imgur.com/YrrDG9H.jpg', screen: ScreenI },
+    { text: "Escuela Carlos Roberto Reina ", image: 'https://i.imgur.com/YrrDG9H.jpg', screen: ScreenG },
+    { text: "Escuela English Castle  ", image: 'https://i.imgur.com/YrrDG9H.jpg', screen: ScreenH },
+
   ];
 
   const data2 = [
@@ -113,15 +252,7 @@ const EscuelasDanli = () => {
     <View style={styles.container}>
       {mostrarSelectList && (
         <View style={styles.container2}>
-          <SelectList
-            setSelected={(val) => setSelectedOption(val)}
-            data={data2}
-            save="value"
-            placeholder="Recomendadas"
-            noDataText="Gasolinera no disponible"
-            searchPlaceholder="Busca tu barberia"
-            onInputChange={(text) => mostrarComponente(text, null)}
-          />
+         
         </View>
       )}
 
@@ -163,7 +294,7 @@ const styles = StyleSheet.create({
     justifyContent: 'center',
   },
   container2: {
-    backgroundColor: '#ffff',
+    backgroundColor: 'transparent',
     borderRadius: 20,
     paddingHorizontal: 8,
     paddingVertical: 8,
