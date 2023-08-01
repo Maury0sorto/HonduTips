@@ -16,7 +16,7 @@ const locationsData = [
 export default function BANHCAFE() {
   const mapRef = useRef(null);
   const initialRegion = {
-    latitude: 14.034589153046227,
+    latitude: 14.034589153046227, 
     longitude: -86.56844081476235,
     latitudeDelta: 0.01,
     longitudeDelta: 0.01,
@@ -156,6 +156,16 @@ export default function BANHCAFE() {
             </TouchableOpacity>
           </View>
         </View>
+
+        <View style={styles.buttonContainerMapa}>
+          <TouchableOpacity
+            style={styles.button2}
+            onPress={() => openGoogleMaps( 14.034589153046227, -86.56844081476235,)}
+          >
+            <Text style={styles.buttonText2}>BANHCAFE</Text>
+          </TouchableOpacity>
+        </View>
+                
       </View>
     </ScrollView>
   );
@@ -312,4 +322,30 @@ const styles = StyleSheet.create({
   },
 
   //fin de estilos de menu y horarios
+
+// para botones debajo del mapa
+button2: {
+  backgroundColor: '#00BCE4',
+  paddingHorizontal: 20,
+  paddingVertical: 10,
+  marginHorizontal: 10,
+  borderRadius: 5,
+  marginTop: 10,
+  flexDirection: 'row',
+  alignItems: 'center',
+  marginVertical: 20,
+},
+buttonText2: {
+  color: 'white',
+  fontSize: 16,
+  fontWeight: 'bold',
+}, 
+
+buttonContainerMapa: {
+  flexDirection: 'row',
+    flexWrap: 'wrap',
+    justifyContent: 'center',
+    marginTop: 20,
+    alignItems: 'center',
+},
 });

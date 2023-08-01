@@ -23,7 +23,7 @@ const locationsData = [
 export default function Banrural() {
   const mapRef = useRef(null);
   const initialRegion = {
-    latitude: 14.030667455785771,
+    latitude: 14.030667455785771, 
     longitude: -86.57961041534016,
     latitudeDelta: 0.01,
     longitudeDelta: 0.01,
@@ -163,6 +163,16 @@ export default function Banrural() {
             </TouchableOpacity>
           </View>
         </View>
+
+        <View style={styles.buttonContainerMapa}>
+          <TouchableOpacity
+            style={styles.button2}
+            onPress={() => openGoogleMaps(  14.030667455785771, -86.57961041534016,)}
+          >
+            <Text style={styles.buttonText2}>BANRURAL</Text>
+          </TouchableOpacity>
+        </View>
+
       </View>
     </ScrollView>
   );
@@ -319,4 +329,30 @@ const styles = StyleSheet.create({
   },
 
   //fin de estilos de menu y horarios
+
+// para botones debajo del mapa
+button2: {
+  backgroundColor: '#00BCE4',
+  paddingHorizontal: 20,
+  paddingVertical: 10,
+  marginHorizontal: 10,
+  borderRadius: 5,
+  marginTop: 10,
+  flexDirection: 'row',
+  alignItems: 'center',
+  marginVertical: 20,
+},
+buttonText2: {
+  color: 'white',
+  fontSize: 16,
+  fontWeight: 'bold',
+}, 
+
+buttonContainerMapa: {
+  flexDirection: 'row',
+    flexWrap: 'wrap',
+    justifyContent: 'center',
+    marginTop: 20,
+    alignItems: 'center',
+},
 });

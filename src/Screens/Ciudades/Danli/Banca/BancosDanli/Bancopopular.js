@@ -23,7 +23,7 @@ const locationsData = [
 export default function Bancopopular() {
   const mapRef = useRef(null);
   const initialRegion = {
-    latitude: 14.029686052273089,
+    latitude: 14.029686052273089, 
     longitude: -86.57099896136066,
     latitudeDelta: 0.01,
     longitudeDelta: 0.01,
@@ -163,6 +163,17 @@ export default function Bancopopular() {
             </TouchableOpacity>
           </View>
         </View>
+
+        <View style={styles.buttonContainerMapa}>
+          <TouchableOpacity
+            style={styles.button2}
+            onPress={() => openGoogleMaps(14.029686052273089, -86.57099896136066,)}
+          >
+            <Text style={styles.buttonText2}>Banco Popular</Text>
+          </TouchableOpacity>
+        </View>
+
+
       </View>
     </ScrollView>
   );
@@ -319,4 +330,30 @@ const styles = StyleSheet.create({
   },
 
   //fin de estilos de menu y horarios
+
+// para botones debajo del mapa
+button2: {
+  backgroundColor: '#00BCE4',
+  paddingHorizontal: 20,
+  paddingVertical: 10,
+  marginHorizontal: 10,
+  borderRadius: 5,
+  marginTop: 10,
+  flexDirection: 'row',
+  alignItems: 'center',
+  marginVertical: 20,
+},
+buttonText2: {
+  color: 'white',
+  fontSize: 16,
+  fontWeight: 'bold',
+}, 
+
+buttonContainerMapa: {
+  flexDirection: 'row',
+    flexWrap: 'wrap',
+    justifyContent: 'center',
+    marginTop: 20,
+    alignItems: 'center',
+},
 });
