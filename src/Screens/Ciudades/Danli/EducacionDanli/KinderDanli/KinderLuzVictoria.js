@@ -95,10 +95,10 @@ export default function KinderLuzVictoria() {
             >
 
                 <View style={styles.slide}>
-                <Image style={styles.image} source={{ uri: 'https://i.imgur.com/t6pkq4N.jpg' }} />
+                <Image style={styles.image} source={{ uri: 'https://i.imgur.com/AmLR1A3.png' }} />
               </View>
                  <View style={styles.slide}>
-                <Image style={styles.image} source={{ uri: 'https://i.imgur.com/rcTYS29.png' }} />
+                <Image style={styles.image} source={{ uri: 'https://i.imgur.com/8ITJJ0H.png' }} />
               </View>
             
              

@@ -82,7 +82,7 @@ export default function KinderMariaBarahona() {
   return (
     <ScrollView>
       <View style={styles.container}>
-        <Text style={styles.title}>Kinder Maria Barahona</Text>
+        <Text style={styles.title}>Jardin de Niños Maria B. Barahona</Text>
         <View style={styles.containerSwipers}>
           <View style={styles.swiperContainer}>
             <Swiper
@@ -95,10 +95,10 @@ export default function KinderMariaBarahona() {
             >
 
                 <View style={styles.slide}>
-                <Image style={styles.image} source={{ uri: 'https://i.imgur.com/t6pkq4N.jpg' }} />
+                <Image style={styles.image} source={{ uri: 'https://i.imgur.com/8ITJJ0H.png' }} />
               </View>
                  <View style={styles.slide}>
-                <Image style={styles.image} source={{ uri: 'https://i.imgur.com/rcTYS29.png' }} />
+                <Image style={styles.image} source={{ uri: 'https://i.imgur.com/AmLR1A3.png' }} />
               </View>
             
              

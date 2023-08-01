@@ -95,10 +95,10 @@ export default function EscuelaMartaIriasDeAlcantara() {
             >
 
                 <View style={styles.slide}>
-                <Image style={styles.image} source={{ uri: 'https://i.imgur.com/t6pkq4N.jpg' }} />
+                <Image style={styles.image} source={{ uri: 'https://i.imgur.com/bYv7le3.png' }} />
               </View>
                  <View style={styles.slide}>
-                <Image style={styles.image} source={{ uri: 'https://i.imgur.com/rcTYS29.png' }} />
+                <Image style={styles.image} source={{ uri: 'https://i.imgur.com/bYv7le3.png' }} />
               </View>
             
              

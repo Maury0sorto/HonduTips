@@ -93,8 +93,8 @@ const KindersDanli = () => {
   };
  
   const buttons = [
-    { text: "Jardin de Niños Dulce Infancia", image: 'https://i.imgur.com/YrrDG9H.jpg',  screen: ScreenA },
-    { text: 'Kinder Maria Barahona', image: 'https://i.imgur.com/YrrDG9H.jpg', screen: ScreenB },
+    { text: "Jardin de Niños Dulce Infancia", image: 'https://i.imgur.com/Dy0c9WT.png',  screen: ScreenA },
+    { text: 'Jardin de Niños Maria B. Barahona', image: 'https://i.imgur.com/rMUNIiM.png', screen: ScreenB },
     { text: 'Jardin de Niños Luz Victoria ', image: 'https://i.imgur.com/YrrDG9H.jpg', screen: ScreenC },
    
   ]; 

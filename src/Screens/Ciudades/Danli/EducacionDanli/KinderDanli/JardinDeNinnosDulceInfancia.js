@@ -95,10 +95,10 @@ export default function JardinDeNinnosDulceInfancia() {
             >
 
                 <View style={styles.slide}>
-                <Image style={styles.image} source={{ uri: 'https://i.imgur.com/t6pkq4N.jpg' }} />
+                <Image style={styles.image} source={{ uri: 'https://i.imgur.com/uJDtWHr.png' }} />
               </View>
                  <View style={styles.slide}>
-                <Image style={styles.image} source={{ uri: 'https://i.imgur.com/rcTYS29.png' }} />
+                <Image style={styles.image} source={{ uri: 'https://i.imgur.com/8ITJJ0H.png' }} />
               </View>
             
              
@@ -130,7 +130,7 @@ export default function JardinDeNinnosDulceInfancia() {
         <TouchableOpacity
             style={styles.button}
             onPress={() => {
-              Linking.openURL('https://www.facebook.com/people/Jard%C3%ADn-de-Ni%C3%B1os-Danl%C3%AD/100057667232172/?locale=es_LA');
+              Linking.openURL('https://www.facebook.com/profile.php?id=100057667232172&locale=es_LA');
             }}
           >
              <Icon name="globe" size={20} color="white" style={styles.buttonIcon} />

@@ -95,10 +95,10 @@ export default function EscuelaCarlosRobertoReina() {
             >
 
                 <View style={styles.slide}>
-                <Image style={styles.image} source={{ uri: 'https://i.imgur.com/t6pkq4N.jpg' }} />
+                <Image style={styles.image} source={{ uri: 'https://i.imgur.com/bdKm7jD.png' }} />
               </View>
                  <View style={styles.slide}>
-                <Image style={styles.image} source={{ uri: 'https://i.imgur.com/rcTYS29.png' }} />
+                <Image style={styles.image} source={{ uri: 'https://i.imgur.com/bdKm7jD.png' }} />
               </View>
             
              
