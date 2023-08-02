@@ -128,7 +128,7 @@ const CarWashDanli = () => {
   };
 
   const buttons = [
-    { text: "CarWash Jireh", image: 'https://i.imgur.com/YrrDG9H.jpg',  screen: ScreenA },
+    { text: "CarWash Jireh", image: 'https://i.imgur.com/9c5gtEf.png',  screen: ScreenA },
     { text: "Llantiservicios Barpin", image: 'https://i.imgur.com/29AtdCP.jpg',  screen: ScreenB },
     { text: "Evo Auto Spa", image: 'https://i.imgur.com/eBhnzdd.png',  screen: ScreenC },
     { text: "Autopits Romero", image: 'https://i.imgur.com/miKavAV.jpg',  screen: ScreenD },
