@@ -9,8 +9,8 @@ const locationsData = [
   {
     title: "Taller Mecanico Williams",
  
-    latitude:  14.027058584770868,   
-    longitude:  -86.56927539413932,
+    latitude:  14.03687030504562,   
+    longitude:   -86.57794124828884,
   },
   
   // Agrega más ubicaciones aquí si lo deseas
@@ -31,8 +31,9 @@ export default function TallerWilliamsDanli() {
 
   const mapRef = useRef(null);
   const initialRegion = {
-    latitude:  14.027058584770868,   
-    longitude:  -86.56927539413932,
+    
+    latitude:  14.03687030504562,   
+    longitude:   -86.57794124828884,
     latitudeDelta: 0.003,
     longitudeDelta: 0.003,
   };
@@ -150,7 +151,7 @@ export default function TallerWilliamsDanli() {
         <View style={styles.buttonContainer}>
           <TouchableOpacity
             style={styles.button2}
-            onPress={() => openGoogleMaps(   14.027058584770868,   -86.56927539413932,)}
+            onPress={() => openGoogleMaps(   14.03687030504562,    -86.57794124828884,)}
           >
             <Text style={styles.buttonText2}>Geolocalizar Taller Mecanico Williams</Text>
           </TouchableOpacity>
