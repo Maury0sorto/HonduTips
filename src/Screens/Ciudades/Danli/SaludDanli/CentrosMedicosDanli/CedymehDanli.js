@@ -192,13 +192,14 @@ export default function CedymehDanli() {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    alignItems: 'center',
+    alignItems: 'center', 
     justifyContent: 'center',
   },
   title: {
     fontSize: 34,
     fontWeight: 'bold',
     marginTop: 10,
+    textAlign: 'center',
   },
   mapContainer: {
     aspectRatio: 16 / 9,
@@ -340,23 +341,29 @@ const styles = StyleSheet.create({
 
   //fin de estilos de menu y horarios
 
+// para botones debajo del mapa
+button2: {
+  backgroundColor: '#00BCE4',
+  paddingHorizontal: 20,
+  paddingVertical: 10,
+  marginHorizontal: 10,
+  borderRadius: 5,
+  marginTop: 10,
+  flexDirection: 'row',
+  alignItems: 'center',
+  marginVertical: 20,
+},
+buttonText2: {
+  color: 'white',
+  fontSize: 16,
+  fontWeight: 'bold',
+}, 
 
-  // para botones debajo del mapa
-  button2: {
-    backgroundColor: '#00BCE4',
-    paddingHorizontal: 20,
-    paddingVertical: 10,
-    marginHorizontal: 10,
-    borderRadius: 5,
-    marginTop: 10,
-    flexDirection: 'row',
+buttonContainerMapa: {
+  flexDirection: 'row',
+    flexWrap: 'wrap',
+    justifyContent: 'center',
+    marginTop: 20,
     alignItems: 'center',
-    marginVertical: 20,
-  },
-  buttonText2: {
-    color: 'white',
-    fontSize: 16,
-    fontWeight: 'bold',
-    
-  }, 
+},
 });

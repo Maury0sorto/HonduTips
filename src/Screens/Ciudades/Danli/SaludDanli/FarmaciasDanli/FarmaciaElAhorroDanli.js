@@ -175,6 +175,30 @@ export default function FarmaciaElAhorroDanli() {
             </TouchableOpacity>
           </View>
         </View>
+
+                
+        <View style={styles.buttonContainerMapa}>
+          <TouchableOpacity
+            style={styles.button2}
+            onPress={() => openGoogleMaps(  14.031099546607022, -86.56956070049195,)}
+          >
+            <Text style={styles.buttonText2}>Farmacia El Ahorro 1</Text>
+          </TouchableOpacity>
+          <TouchableOpacity
+            style={styles.button2}
+            onPress={() => openGoogleMaps(  14.03290635602841,  -86.57305795119629,)}
+          >
+            <Text style={styles.buttonText2}>Farmacia El Ahorro 2</Text>
+          </TouchableOpacity>
+          <TouchableOpacity
+            style={styles.button2}
+            onPress={() => openGoogleMaps( 14.028164166511742, -86.57941412895535,)}
+          >
+            <Text style={styles.buttonText2}>Farmacia El Ahorro 3</Text>
+          </TouchableOpacity>
+        </View>
+
+
       </View>
     </ScrollView>
   );
@@ -184,13 +208,14 @@ export default function FarmaciaElAhorroDanli() {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    alignItems: 'center',
+    alignItems: 'center', 
     justifyContent: 'center',
   },
   title: {
     fontSize: 34,
     fontWeight: 'bold',
     marginTop: 10,
+    textAlign: 'center',
   },
   mapContainer: {
     aspectRatio: 16 / 9,
@@ -332,4 +357,29 @@ const styles = StyleSheet.create({
 
   //fin de estilos de menu y horarios
 
+// para botones debajo del mapa
+button2: {
+  backgroundColor: '#00BCE4',
+  paddingHorizontal: 20,
+  paddingVertical: 10,
+  marginHorizontal: 10,
+  borderRadius: 5,
+  marginTop: 10,
+  flexDirection: 'row',
+  alignItems: 'center',
+  marginVertical: 20,
+},
+buttonText2: {
+  color: 'white',
+  fontSize: 16,
+  fontWeight: 'bold',
+}, 
+
+buttonContainerMapa: {
+  flexDirection: 'row',
+    flexWrap: 'wrap',
+    justifyContent: 'center',
+    marginTop: 20,
+    alignItems: 'center',
+},
 });

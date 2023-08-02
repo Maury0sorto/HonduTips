@@ -175,6 +175,30 @@ export default function FarmaciaSimanDanli() {
             </TouchableOpacity>
           </View>
         </View>
+
+
+        <View style={styles.buttonContainerMapa}>
+          <TouchableOpacity
+            style={styles.button2}
+            onPress={() => openGoogleMaps( 14.044561278793351, -86.56797033474605,)}
+          >
+            <Text style={styles.buttonText2}>SIMAN </Text>
+          </TouchableOpacity>
+          <TouchableOpacity
+            style={styles.button2}
+            
+            onPress={() => openGoogleMaps( 14.030966655433298, -86.56982106206561,)}
+          >
+            <Text style={styles.buttonText2}>SIMAN Centro 1</Text>
+          </TouchableOpacity>
+          <TouchableOpacity
+            style={styles.button2}
+            onPress={() => openGoogleMaps( 14.030750026462947, -86.56580852901158, )}
+          >
+            <Text style={styles.buttonText2}>SIMAN Centro 2</Text>
+          </TouchableOpacity>
+        </View>
+
       </View>
     </ScrollView>
   );
@@ -184,13 +208,14 @@ export default function FarmaciaSimanDanli() {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    alignItems: 'center',
+    alignItems: 'center', 
     justifyContent: 'center',
   },
   title: {
     fontSize: 34,
     fontWeight: 'bold',
     marginTop: 10,
+    textAlign: 'center',
   },
   mapContainer: {
     aspectRatio: 16 / 9,
@@ -332,5 +357,30 @@ const styles = StyleSheet.create({
 
   //fin de estilos de menu y horarios
 
+// para botones debajo del mapa
+button2: {
+  backgroundColor: '#00BCE4',
+  paddingHorizontal: 20,
+  paddingVertical: 10,
+  marginHorizontal: 10,
+  borderRadius: 5,
+  marginTop: 10,
+  flexDirection: 'row',
+  alignItems: 'center',
+  marginVertical: 20,
+},
+buttonText2: {
+  color: 'white',
+  fontSize: 16,
+  fontWeight: 'bold',
+}, 
+
+buttonContainerMapa: {
+  flexDirection: 'row',
+    flexWrap: 'wrap',
+    justifyContent: 'center',
+    marginTop: 20,
+    alignItems: 'center',
+},
 
 });
