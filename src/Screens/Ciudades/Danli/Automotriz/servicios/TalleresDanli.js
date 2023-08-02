@@ -11,6 +11,11 @@ import EvoAutoSpaDanli from './EvoAutoSpaDanli';
 import AutoPitRomeroDanli from './AutoPitRomeroDanli';
 import AutoEstiloDanli from './AutoEstiloDanli'
 
+import TallerAlvaradoDanli from '../Talleres/TallerAlvaradoDanli';
+import TallerMerloDanli from '../Talleres/TallerMerloDanli';
+import TallerWilliamsDanli from '../Talleres/TallerWilliamsDanli';
+import TallerElRey from '../Talleres/TallerElReyDanli';
+
  
 
 
@@ -27,7 +32,7 @@ const ScreenA = ({ text, mostrarBotonAnterior }) => {
       <Text style={styles.backButtonText}>Regresar</Text>
     </>
     </TouchableHighlight>
-    <JirehDanli/>
+    <TallerAlvaradoDanli/>
    
   </View>
   );
@@ -45,7 +50,7 @@ const ScreenB = ({ text, mostrarBotonAnterior }) => {
       <Text style={styles.backButtonText}>Regresar</Text>
     </>
     </TouchableHighlight>
-    <BarPinDanli/>
+    <TallerMerloDanli/>
    
   </View>
   );
@@ -63,7 +68,7 @@ const ScreenC = ({ text, mostrarBotonAnterior }) => {
       <Text style={styles.backButtonText}>Regresar</Text>
     </>
     </TouchableHighlight>
-    <EvoAutoSpaDanli/>
+    <TallerWilliamsDanli/>
    
   </View>
   );
@@ -81,7 +86,7 @@ const ScreenD = ({ text, mostrarBotonAnterior }) => {
       <Text style={styles.backButtonText}>Regresar</Text>
     </>
     </TouchableHighlight>
-    <AutoPitRomeroDanli/>
+    <TallerElRey/>
    
   </View>
   );
@@ -112,7 +117,7 @@ const TalleresDanli = () => {
     { text: "Taller Mecanico Alvarado", image: 'https://i.imgur.com/fv4KinK.jpg',  screen: ScreenA },
     { text: "Taller Mecanico Merlo", image: 'https://i.imgur.com/YrrDG9H.jpg',  screen: ScreenB },
     { text: "Taller Mecanico Williams", image: 'https://i.imgur.com/YrrDG9H.jpg',  screen: ScreenC },
-    { text: "Taller Auto Eléctrico El Rey", image: 'https://i.imgur.com/YrrDG9H.jpg',  screen: ScreenD },
+    { text: "Taller Auto Eléctrico El Rey", image: 'https://i.imgur.com/Mp9lNHN.jpg',  screen: ScreenD },
     
   ];
 
