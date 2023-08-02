@@ -15,7 +15,7 @@ import HotelGranadaDanli from './HotelesDanli/HotelGranadaDanli';
 import HotelClementinaDanli from './HotelesDanli/HotelClementinaDanli';
 import HotelLaGuadalupeDanli from './HotelesDanli/HotelGuadalupeDanli';
 import HotelVillaParaisoDanli from './HotelesDanli/HotelVillaParaisoDanli';
-
+import HoltelKairos from './HotelesDanli/HotelKairosDanli';
 
 const ScreenA = ({ text, mostrarBotonAnterior }) => {
   return (
@@ -204,6 +204,25 @@ const ScreenJ = ({ text, mostrarBotonAnterior }) => {
 
 
 
+const ScreenK = ({ text, mostrarBotonAnterior }) => {
+  return (
+    <View style={styles.componentContainer}>
+      <TouchableHighlight
+        style={styles.backButton}
+        underlayColor="#0080ff"
+        onPress={mostrarBotonAnterior}
+      >
+        <>
+      <Ionicons name="arrow-back" size={24} color="black" style={styles.backButtonIcon} />
+      <Text style={styles.backButtonText}>Regresar</Text>
+    </>
+      </TouchableHighlight>
+      <HoltelKairos/>
+    </View>
+  );
+};
+
+
 const HotelesDanli = () => {
   const [componenteVisible, setComponenteVisible] = useState(null);
   const [mostrarSelectList, setMostrarSelectList] = useState(true); // Nuevo estado
@@ -232,7 +251,7 @@ const HotelesDanli = () => {
     { text: 'Hotel Apolo', image: 'https://i.imgur.com/iafHP3j.png', screen: ScreenF },
     { text: 'Hotel La Guadalupe', image: 'https://i.imgur.com/X9hX6Ik.png', screen: ScreenI },
     { text: 'Hotel Villa Paraiso', image: 'https://i.imgur.com/NyECKWB.png', screen: ScreenJ },
-    { text: 'Hotel Kairos', image: 'https://i.imgur.com/rEFwTM7.png', screen: ScreenJ },
+    { text: 'Hotel Kairos', image: 'https://i.imgur.com/rEFwTM7.png', screen: ScreenK },
 
 
   ];
