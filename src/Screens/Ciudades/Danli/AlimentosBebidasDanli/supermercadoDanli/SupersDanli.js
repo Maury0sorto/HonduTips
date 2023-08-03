@@ -11,6 +11,7 @@ import DespensaDanli from './DespensaFamiliar';
 import LaColoniaDanli from './LaColoniaDanli';
  import AlRashidDanli from './AlRashid';
  import YoyitasDanli from './YoyitasDanli';
+ import LaColoniaT60Danli from './LaColoniat60Danli';
 
 
 const ScreenA = ({ text, mostrarBotonAnterior }) => {
@@ -103,6 +104,25 @@ const ScreenB = ({ text, mostrarBotonAnterior }) => {
     </View>
     );
   };
+  const ScreenF = ({ text, mostrarBotonAnterior }) => {
+    return (
+      <View style={styles.componentContainer}>
+      <TouchableHighlight
+        style={styles.backButton}
+        underlayColor="#0080ff"
+        onPress={mostrarBotonAnterior} 
+      >
+         <>
+        <Ionicons name="arrow-back" size={24} color="black" style={styles.backButtonIcon} />
+        <Text style={styles.backButtonText}>Regresar</Text>
+      </>
+      </TouchableHighlight>
+      <LaColoniaT60Danli/>
+     
+    </View>
+    );
+  };
+
 
 
 
@@ -126,7 +146,7 @@ const SupersDanli = () => {
   const buttons = [
     
     { text: "Supermercados La Colonia T19", image: 'https://i.imgur.com/JKXtdqG.jpg',  screen: ScreenC },
-    { text: "Supermercados La Colonia T60", image: 'https://i.imgur.com/JKXtdqG.jpg',  screen: ScreenC },
+    { text: "Supermercados La Colonia T60", image: 'https://i.imgur.com/JKXtdqG.jpg',  screen: ScreenF },
     { text: "Maxi Despensa", image: 'https://i.imgur.com/tBPr3FS.jpg',  screen: ScreenA },
     { text: "Despensa Familiar", image: 'https://i.imgur.com/aWZdpQg.png',  screen: ScreenB },
     { text: "Supermercados Al Rashid", image: 'https://i.imgur.com/MjPpgUS.png',  screen: ScreenD },
@@ -293,6 +313,7 @@ const styles = StyleSheet.create({
    marginLeft: -35, // Alinea la imagen a la izquierda dentro del contenedor
     // Otros estilos que desees aplicar a la imagen
   },
+  
 });
 
 export default SupersDanli;
