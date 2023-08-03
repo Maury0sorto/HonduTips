@@ -1,5 +1,5 @@
 import React, { useState, useRef } from 'react';
-import { StyleSheet, View, Dimensions, Linking, Text, Alert, TouchableOpacity, ScrollView, Image , Modal} from 'react-native';
+import { StyleSheet, View, Dimensions, Linking, Text, Alert, TouchableOpacity, ScrollView, Image, Modal } from 'react-native';
 import MapView, { Marker, Callout } from 'react-native-maps';
 import Swiper from "react-native-web-swiper";
 import Icon from 'react-native-vector-icons/FontAwesome';
@@ -10,15 +10,9 @@ import ImageViewer from 'react-native-image-zoom-viewer';
 const locationsData = [
   {
     title: "La Colonia #2",
-    
-    latitude:     14.020078070296309,      
-    longitude:  -86.57170371209698
-  },
-  {
-    title: "La Colonia #1",
-    
-    latitude:     14.03089504787542,       
-    longitude:  -86.57821374197134
+
+    latitude: 14.020078070296309,
+    longitude: -86.57170371209698
   },
   // Agrega más ubicaciones aquí si lo deseas
 ];
@@ -40,17 +34,18 @@ export default function LaColoniaT60Danli() {  // Este solo es el nomre que se u
     },
   ];
 
-   // FIN DE CODIGO PARA AGREGAR BOTONCITO CON MENU 
+  // FIN DE CODIGO PARA AGREGAR BOTONCITO CON MENU 
 
 
 
 
-   // INICIO CODIGO PARA EL PUNNTO CENTRAL DEL MAPA DE LA UBICACION
+  // INICIO CODIGO PARA EL PUNNTO CENTRAL DEL MAPA DE LA UBICACION
   const mapRef = useRef(null);
   const initialRegion = {
+
     
-    latitude:     14.025377727078931,    
-    longitude:  -86.5739111360199,
+    latitude: 14.020078070296309,
+    longitude: -86.57170371209698,
     latitudeDelta: 0.03,    //ENTRE NUMEROS MAS GRANDES MAS ZOOM DE LA VISTIA INICIAL DEL MAPA
     longitudeDelta: 0.03,  //ENTRE NUMEROS MAS GRANDES MAS ZOOM DE LA VISTIA INICIAL DEL MAPA
   };
@@ -95,7 +90,7 @@ export default function LaColoniaT60Danli() {  // Este solo es el nomre que se u
       longitudeDelta: initialRegion.longitudeDelta * 0.01,
     };
     mapRef.current.animateToRegion(region, 500);
-    
+
   };
 
   const handleZoomOut = () => {
@@ -111,11 +106,11 @@ export default function LaColoniaT60Danli() {  // Este solo es el nomre que se u
 
 
 
-  
+
   return (
     <ScrollView>
       <View style={styles.container}>
-        <Text style={styles.title}>Supermercados La Colonia</Text>
+        <Text style={styles.title}>Supermercados La Colonia T60</Text>
         <View style={styles.containerSwipers}>
           <View style={styles.swiperContainer}>
             <Swiper
@@ -126,64 +121,64 @@ export default function LaColoniaT60Danli() {  // Este solo es el nomre que se u
                 dotActiveStyle: { backgroundColor: "red" },
               }}
             >
-                 <View style={styles.slide}>
+              <View style={styles.slide}>
                 <Image style={styles.image} source={{ uri: 'https://i.imgur.com/Rwlek3E.jpg' }} />
               </View>
               <View style={styles.slide}>
                 <Image style={styles.image} source={{ uri: 'https://i.imgur.com/XyzNCXQ.jpg' }} />
               </View>
-             
-  
+
+
             </Swiper>
           </View>
         </View>
 
 
-                
 
 
-<View style={styles.container}>
-     
-      
 
-      <Text style={styles.scheduleHeaderText}>HORARIOS DE ATENCION</Text>
-      <View style={styles.scheduleContainer}>
-        <View style={styles.scheduleItem}>
-          <Icon name="clock-o" size={20} color="#000" style={styles.scheduleIcon} />
-          <Text style={styles.scheduleText}>Lun-Dom: 8:00 AM - 8:00 PM</Text>
+        <View style={styles.container}>
+
+
+
+          <Text style={styles.scheduleHeaderText}>HORARIOS DE ATENCION</Text>
+          <View style={styles.scheduleContainer}>
+            <View style={styles.scheduleItem}>
+              <Icon name="clock-o" size={20} color="#000" style={styles.scheduleIcon} />
+              <Text style={styles.scheduleText}>Lun-Dom: 8:00 AM - 8:00 PM</Text>
+            </View>
+          </View>
+
+          <Modal visible={modalVisible} animationType="fade" transparent={true}>
+            <ImageViewer
+              imageUrls={images}
+              onCancel={toggleModal}
+              enableSwipeDown={true}
+              renderIndicator={() => null}
+              renderHeader={() => (
+                <TouchableOpacity style={styles.closeButtonContainer3} onPress={toggleModal}>
+                  <Icon name="times" size={20} color="#fff" />
+                </TouchableOpacity>
+              )}
+              renderFooter={() => null}
+            />
+          </Modal>
         </View>
-      </View>
-
-      <Modal visible={modalVisible} animationType="fade" transparent={true}>
-        <ImageViewer
-          imageUrls={images}
-          onCancel={toggleModal}
-          enableSwipeDown={true}
-          renderIndicator={() => null}
-          renderHeader={() => (
-            <TouchableOpacity style={styles.closeButtonContainer3} onPress={toggleModal}>
-              <Icon name="times" size={20} color="#fff" />
-            </TouchableOpacity>
-          )}
-          renderFooter={() => null}
-        />
-      </Modal>
-    </View>
 
 
         <View style={styles.buttonContainer}>
-          
+
           <TouchableOpacity
             style={styles.button}
             onPress={() => {
               Linking.openURL('tel: +50422161900');
             }}
           >
-             <Icon name="phone" size={20} color="white" style={styles.buttonIcon} />
+            <Icon name="phone" size={20} color="white" style={styles.buttonIcon} />
             <Text style={styles.buttonText}>Contactar</Text>
           </TouchableOpacity>
         </View>
-              
+
         <View style={styles.mapContainer}>
           <MapView ref={mapRef} style={styles.map} initialRegion={initialRegion} scrollEnabled={false}>
             {locationsData.map((location, index) => (
@@ -214,9 +209,20 @@ export default function LaColoniaT60Danli() {  // Este solo es el nomre que se u
             </TouchableOpacity>
           </View>
         </View>
-        
+
+
+        <View style={styles.buttonContainerMapa}>
+          <TouchableOpacity
+            style={styles.button2}
+            
+            onPress={() => openGoogleMaps(14.020078070296309, -86.57170371209698,)}
+          >
+            <Text style={styles.buttonText2}>Ir a La Colonia T60</Text>
+          </TouchableOpacity>
+        </View>
+
       </View>
-                
+
     </ScrollView>
   );
 }
@@ -234,7 +240,7 @@ const styles = StyleSheet.create({
     fontSize: 34,
     fontWeight: 'bold',
     marginTop: 10,
-    textAlign:'center',
+    textAlign: 'center',
   },
   mapContainer: {
     aspectRatio: 16 / 9,
@@ -293,7 +299,7 @@ const styles = StyleSheet.create({
     color: 'white',
     fontSize: 16,
     fontWeight: 'bold',
-  }, 
+  },
   buttonContainer2: {
     position: 'absolute',
     top: 10,
@@ -325,7 +331,7 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     backgroundColor: '#fff',
     paddingHorizontal: 40,
- 
+
   },
   menuText: {
     fontSize: 18,
@@ -375,30 +381,30 @@ const styles = StyleSheet.create({
   },
 
   //fin de estilos de menu y horarios
-// para botones debajo del mapa
-button2: {
-  backgroundColor: '#00BCE4',
-  paddingHorizontal: 20,
-  paddingVertical: 10,
-  marginHorizontal: 10,
-  borderRadius: 5,
-  marginTop: 10,
-  flexDirection: 'row',
-  alignItems: 'center',
-  marginVertical: 20,
-},
-buttonText2: {
-  color: 'white',
-  fontSize: 16,
-  fontWeight: 'bold',
-}, 
 
-buttonContainerMapa: {
-  flexDirection: 'row',
+  // para botones debajo del mapa
+  button2: {
+    backgroundColor: '#00BCE4',
+    paddingHorizontal: 20,
+    paddingVertical: 10,
+    marginHorizontal: 10,
+    borderRadius: 5,
+    marginTop: 10,
+    flexDirection: 'row',
+    alignItems: 'center',
+    marginVertical: 20,
+  },
+  buttonText2: {
+    color: 'white',
+    fontSize: 16,
+    fontWeight: 'bold',
+  },
+
+  buttonContainerMapa: {
+    flexDirection: 'row',
     flexWrap: 'wrap',
     justifyContent: 'center',
     marginTop: 20,
-    alignItems: 'center',
-},
-
+    alignItems: 'center',
+  },
 });
