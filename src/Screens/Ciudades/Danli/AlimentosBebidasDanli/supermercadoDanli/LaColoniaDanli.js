@@ -8,12 +8,7 @@ import ImageViewer from 'react-native-image-zoom-viewer';
 
 // INICIO DE PARA PONER PINES DENTRO DEL MAPA 
 const locationsData = [
-  {
-    title: "La Colonia #2",
-    
-    latitude:     14.020078070296309,      
-    longitude:  -86.57170371209698
-  },
+  
   {
     title: "La Colonia #1",
     
@@ -115,7 +110,7 @@ export default function LaColoniaDanli() {  // Este solo es el nomre que se usa 
   return (
     <ScrollView>
       <View style={styles.container}>
-        <Text style={styles.title}>Supermercados La Colonia</Text>
+        <Text style={styles.title}>Supermercados La Colonia T19</Text>
         <View style={styles.containerSwipers}>
           <View style={styles.swiperContainer}>
             <Swiper
@@ -214,6 +209,15 @@ export default function LaColoniaDanli() {  // Este solo es el nomre que se usa 
             </TouchableOpacity>
           </View>
         </View>
+        <View style={styles.buttonContainerMapa}>
+          <TouchableOpacity
+            style={styles.button2}
+            
+            onPress={() => openGoogleMaps(14.03089504787542, -86.57821374197134,)}
+          >
+            <Text style={styles.buttonText2}>Ir a La Colonia T19</Text>
+          </TouchableOpacity>
+        </View>
       </View>
     </ScrollView>
   );
@@ -232,7 +236,7 @@ const styles = StyleSheet.create({
     fontSize: 34,
     fontWeight: 'bold',
     marginTop: 10,
-    textAlign:'center',
+    textAlign: 'center',
   },
   mapContainer: {
     aspectRatio: 16 / 9,
@@ -291,7 +295,7 @@ const styles = StyleSheet.create({
     color: 'white',
     fontSize: 16,
     fontWeight: 'bold',
-  }, 
+  },
   buttonContainer2: {
     position: 'absolute',
     top: 10,
@@ -323,7 +327,7 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     backgroundColor: '#fff',
     paddingHorizontal: 40,
- 
+
   },
   menuText: {
     fontSize: 18,
@@ -374,5 +378,29 @@ const styles = StyleSheet.create({
 
   //fin de estilos de menu y horarios
 
+  // para botones debajo del mapa
+  button2: {
+    backgroundColor: '#00BCE4',
+    paddingHorizontal: 20,
+    paddingVertical: 10,
+    marginHorizontal: 10,
+    borderRadius: 5,
+    marginTop: 10,
+    flexDirection: 'row',
+    alignItems: 'center',
+    marginVertical: 20,
+  },
+  buttonText2: {
+    color: 'white',
+    fontSize: 16,
+    fontWeight: 'bold',
+  },
 
+  buttonContainerMapa: {
+    flexDirection: 'row',
+    flexWrap: 'wrap',
+    justifyContent: 'center',
+    marginTop: 20,
+    alignItems: 'center',
+  },
 });

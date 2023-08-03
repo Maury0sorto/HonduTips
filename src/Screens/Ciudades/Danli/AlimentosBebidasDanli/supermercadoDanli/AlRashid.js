@@ -214,6 +214,23 @@ export default function AlRashidDanli() {  // Este solo es el nomre que se usa p
             </TouchableOpacity>
           </View>
         </View>
+
+        <View style={styles.buttonContainerMapa}>
+          <TouchableOpacity
+            style={styles.button2}
+            
+            onPress={() => openGoogleMaps( 14.030810440142588,     -86.57538448262129,)}
+          >
+            <Text style={styles.buttonText2}>Ir a AlRashid #1</Text>
+          </TouchableOpacity>
+          <TouchableOpacity
+            style={styles.button2}
+            
+            onPress={() => openGoogleMaps( 14.031101884854708,  -86.56924758888785  ,)}
+          >
+            <Text style={styles.buttonText2}>Ir a AlRashid #2</Text>
+          </TouchableOpacity>
+        </View>
       </View>
     </ScrollView>
   );
@@ -232,7 +249,7 @@ const styles = StyleSheet.create({
     fontSize: 34,
     fontWeight: 'bold',
     marginTop: 10,
-    textAlign:'center',
+    textAlign: 'center',
   },
   mapContainer: {
     aspectRatio: 16 / 9,
@@ -291,7 +308,7 @@ const styles = StyleSheet.create({
     color: 'white',
     fontSize: 16,
     fontWeight: 'bold',
-  }, 
+  },
   buttonContainer2: {
     position: 'absolute',
     top: 10,
@@ -323,7 +340,7 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     backgroundColor: '#fff',
     paddingHorizontal: 40,
- 
+
   },
   menuText: {
     fontSize: 18,
@@ -374,5 +391,29 @@ const styles = StyleSheet.create({
 
   //fin de estilos de menu y horarios
 
+  // para botones debajo del mapa
+  button2: {
+    backgroundColor: '#00BCE4',
+    paddingHorizontal: 20,
+    paddingVertical: 10,
+    marginHorizontal: 10,
+    borderRadius: 5,
+    marginTop: 10,
+    flexDirection: 'row',
+    alignItems: 'center',
+    marginVertical: 20,
+  },
+  buttonText2: {
+    color: 'white',
+    fontSize: 16,
+    fontWeight: 'bold',
+  },
 
+  buttonContainerMapa: {
+    flexDirection: 'row',
+    flexWrap: 'wrap',
+    justifyContent: 'center',
+    marginTop: 20,
+    alignItems: 'center',
+  },
 });

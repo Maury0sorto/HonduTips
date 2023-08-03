@@ -213,6 +213,23 @@ export default function DespensaDanli() {  // Este solo es el nomre que se usa p
             </TouchableOpacity>
           </View>
         </View>
+
+        <View style={styles.buttonContainerMapa}>
+          <TouchableOpacity
+            style={styles.button2}
+            
+            onPress={() => openGoogleMaps( 14.032158514177429,  -86.56642492782515,)}
+          >
+            <Text style={styles.buttonText2}>Ir a Despensa Familiar #1</Text>
+          </TouchableOpacity>
+          <TouchableOpacity
+            style={styles.button2}
+            
+            onPress={() => openGoogleMaps( 14.047820052591513, -86.55555363738623,)}
+          >
+            <Text style={styles.buttonText2}>Ir a Despensa Familiar #2</Text>
+          </TouchableOpacity>
+        </View>
       </View>
     </ScrollView>
   );
@@ -231,7 +248,7 @@ const styles = StyleSheet.create({
     fontSize: 34,
     fontWeight: 'bold',
     marginTop: 10,
-    textAlign:'center',
+    textAlign: 'center',
   },
   mapContainer: {
     aspectRatio: 16 / 9,
@@ -290,7 +307,7 @@ const styles = StyleSheet.create({
     color: 'white',
     fontSize: 16,
     fontWeight: 'bold',
-  }, 
+  },
   buttonContainer2: {
     position: 'absolute',
     top: 10,
@@ -322,7 +339,7 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     backgroundColor: '#fff',
     paddingHorizontal: 40,
- 
+
   },
   menuText: {
     fontSize: 18,
@@ -373,5 +390,29 @@ const styles = StyleSheet.create({
 
   //fin de estilos de menu y horarios
 
+  // para botones debajo del mapa
+  button2: {
+    backgroundColor: '#00BCE4',
+    paddingHorizontal: 20,
+    paddingVertical: 10,
+    marginHorizontal: 10,
+    borderRadius: 5,
+    marginTop: 10,
+    flexDirection: 'row',
+    alignItems: 'center',
+    marginVertical: 20,
+  },
+  buttonText2: {
+    color: 'white',
+    fontSize: 16,
+    fontWeight: 'bold',
+  },
 
+  buttonContainerMapa: {
+    flexDirection: 'row',
+    flexWrap: 'wrap',
+    justifyContent: 'center',
+    marginTop: 20,
+    alignItems: 'center',
+  },
 });
