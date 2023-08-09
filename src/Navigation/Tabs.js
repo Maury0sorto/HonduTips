@@ -13,6 +13,7 @@ import SerchStackScreen from '../Stacks/SerchStackScreen';  // Importa el compon
 import Registro from '../Screens/Registro';  // Importa el componente Registro desde la ruta relativa '../Screens/Registro'
 import OnboardingScreen from '../Screens/OnboardingScreen';  // Importa el componente OnboardingScreen desde la ruta relativa '../Screens/OnboardingScreen'
 import { Image } from 'react-native';  // Importa el componente Image desde 'react-native'
+import Formulario from '../Screens/Formulario';
 
 // Crea una instancia del stack de navegación
 const Stack = createNativeStackNavigator();
@@ -56,7 +57,7 @@ const Tabs = () => {
       {/* Define una pantalla de tab para la pantalla de Registro */}
       <Tab.Screen
         name="Registra tu Empresa"
-        component={Registro}
+        component={Formulario}
         options={{
           headerStyle: { backgroundColor: '#00BCE4', shadowColor: 'black'},
           headerTintColor: '#fff',

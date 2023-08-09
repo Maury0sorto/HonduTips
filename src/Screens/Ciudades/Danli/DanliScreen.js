@@ -36,9 +36,11 @@ const DanlíScreen = () => {
   const [searchText, setSearchText] = useState('');
 
   useEffect(() => {
-    setFilterData(data);
+    setFilterData(data); // Mostrar el botón de retroceso en la barra de navegación
   }, [data]);
 
+
+  
   const filterSearch = () => {
     if (searchText.length === 0) {
       setFilterData(data);
@@ -185,77 +187,88 @@ const DanlíScreen = () => {
 };
 
 const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-  },
+ // Estilo para el contenedor principal
+container: {
+  flex: 1, // Ocupar todo el espacio disponible en la pantalla
+},
 
-  
-  container2: {
-    flex: 1,
-    paddingHorizontal: 16,
-    marginTop: 36,
-    
-  },
-  row: {
-    flexDirection: 'row',
-    justifyContent: 'space-between',
-    paddingHorizontal: 16,
-    marginBottom: 16,
-    
-  },
-  button: {
-    maxWidth: 160,
-    
-    alignItems: 'center',
-    backgroundColor: 'transparent',
-    borderRadius: 10,
-  
-  
-    
-  },
-  buttonImage: {
-    width: 145,
-    height: 145,
-    marginBottom: 10,
-    alignSelf: 'center',
-  },
-  buttonText: {
-    marginTop: 10,
-    fontSize: 16,
-    fontWeight: 'bold',
-    textAlign: 'center',
-  },
-  searchContainer: {
-    flexDirection: 'row',
-    alignItems: 'center',
-    backgroundColor: '#ffff',
-    borderRadius: 20,
-    paddingHorizontal: 8,
-    paddingVertical: 8,
-    width: '80%',
-    marginLeft: '10%',
-    marginTop: 16,
-  },
-  icon: {
-    marginRight: 8,
-  },
-  searchInput: {
-    flex: 1,
-    height: 30,
-    fontSize: 16,
-    fontWeight: 'bold',
-    color: 'black',
-  },
+// Estilo para el segundo contenedor
+container2: {
+  flex: 1, // Ocupar todo el espacio disponible en la pantalla
+  paddingHorizontal: 16, // Agregar espaciado horizontal de 16 unidades
+  marginTop: 36, // Agregar margen superior de 36 unidades
+},
 
-  noResultsText: {
-    textAlign: 'center',
-    alignSelf: 'center',
-    marginTop: 50,
-    color: 'red',
-    fontSize: 40,
-    fontWeight: 'bold', // Aplicar formato en negrita
-   // Utilizar la fuente "Arial Black"
-  },
+// Estilo para una fila de elementos
+row: {
+  flexDirection: 'row', // Organizar los elementos en una fila horizontal
+  justifyContent: 'space-between', // Distribuir el espacio disponible entre los elementos
+  paddingHorizontal: 16, // Agregar espaciado horizontal de 16 unidades
+  marginBottom: 16, // Agregar margen inferior de 16 unidades
+},
+
+// Estilo para un botón
+button: {
+  maxWidth: 160, // Ancho máximo del botón de 160 unidades
+  alignItems: 'center', // Centrar los elementos horizontalmente
+  backgroundColor: 'transparent', // Fondo transparente
+  borderRadius: 10, // Borde redondeado con radio de 10 unidades
+},
+
+// Estilo para la imagen dentro del botón
+buttonImage: {
+  width: 145, // Ancho de la imagen de 145 unidades
+  height: 145, // Altura de la imagen de 145 unidades
+  marginBottom: 10, // Margen inferior de 10 unidades
+  alignSelf: 'center', // Centrar la imagen horizontalmente dentro del botón
+},
+
+// Estilo para el texto del botón
+buttonText: {
+  marginTop: 10, // Margen superior de 10 unidades
+  fontSize: 16, // Tamaño de fuente de 16 unidades
+  fontWeight: 'bold', // Fuente en negrita
+  textAlign: 'center', // Centrar el texto horizontalmente
+},
+
+// Estilo para el contenedor de búsqueda
+searchContainer: {
+  flexDirection: 'row', // Organizar los elementos en una fila horizontal
+  alignItems: 'center', // Centrar los elementos verticalmente
+  backgroundColor: '#ffff', // Fondo de color blanco
+  borderRadius: 20, // Borde redondeado con radio de 20 unidades
+  paddingHorizontal: 8, // Agregar espaciado horizontal de 8 unidades
+  paddingVertical: 8, // Agregar espaciado vertical de 8 unidades
+  width: '80%', // Ancho del contenedor del 80% del padre
+  marginLeft: '10%', // Margen izquierdo del 10% del padre
+  marginTop: 16, // Margen superior de 16 unidades
+},
+
+// Estilo para el ícono de búsqueda
+icon: {
+  marginRight: 8, // Margen derecho de 8 unidades
+},
+
+// Estilo para la entrada de texto de búsqueda
+searchInput: {
+  flex: 1, // Ocupar todo el espacio disponible en la dirección principal
+  height: 30, // Altura de la entrada de texto de 30 unidades
+  fontSize: 16, // Tamaño de fuente de 16 unidades
+  fontWeight: 'bold', // Fuente en negrita
+  color: 'black', // Color de texto en negro
+},
+
+// Estilo para el texto de "sin resultados"
+noResultsText: {
+  textAlign: 'center', // Centrar el texto horizontalmente
+  alignSelf: 'center', // Centrar el elemento dentro de su contenedor
+  marginTop: 50, // Margen superior de 50 unidades
+  color: 'red', // Color de texto en rojo
+  fontSize: 40, // Tamaño de fuente de 40 unidades
+  fontWeight: 'bold', // Fuente en negrita
+  fontFamily: 'Arial Black', // Tipo de fuente "Arial Black"
+},
+
 });
 
 export default DanlíScreen;

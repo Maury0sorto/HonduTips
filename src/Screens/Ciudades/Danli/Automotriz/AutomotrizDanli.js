@@ -149,66 +149,82 @@ const AutomotrizDanli = () => {
 };
 
 const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-  },
-  container2: {
-    flex: 1,
-    paddingHorizontal: 16,
-    marginTop: 26,
-  },
-  button: {
-    width: '100%',
-    alignItems: 'center',
-    backgroundColor: 'transparent',
-    borderRadius: 10,
-    marginBottom: 16,
-  },
-  buttonImage: {
-    width: 160,
-    height: 160,
-    marginBottom: 8,
-    alignSelf: 'center',
-    borderRadius: 10,
-  },
-  buttonText: {
-    marginTop: 10,
-    fontSize: 20,
-    fontWeight: 'bold',
-    textAlign: 'center',
-  },
-  searchContainer: {
-    flexDirection: 'row',
-    alignItems: 'center',
-    backgroundColor: '#fff',
-    borderRadius: 20,
-    paddingHorizontal: 8,
-    paddingVertical: 8,
-    width: '80%',
-    marginLeft: '10%',
-    marginTop: 16,
-  },
-  icon: {
-    marginRight: 8,
-  },
-  searchInput: {
-    flex: 1,
-    height: 30,
-    fontSize: 16,
-    fontWeight: 'bold',
-    color: 'black',
-  },
+ // Estilo para el contenedor principal
+container: {
+  flex: 1,
+},
 
-  noResultsText: {
-    textAlign: 'center',
-    alignSelf: 'center',
-    marginTop: 50,
-    color: 'red',
-    fontSize: 40,
-    fontWeight: 'bold', // Aplicar formato en negrita
-   // Utilizar la fuente "Arial Black"
-  },
- 
+// Estilo para el segundo contenedor
+container2: {
+  flex: 1,
+  paddingHorizontal: 16,
+  marginTop: 26,
+},
+
+// Estilo para el botón
+button: {
+  width: '100%',
+  alignItems: 'center',
+  backgroundColor: 'transparent',
+  borderRadius: 10,
+  marginBottom: 16,
+},
+
+// Estilo para la imagen del botón
+buttonImage: {
+  width: 160,
+  height: 160,
+  marginBottom: 8,
+  alignSelf: 'center',
+  borderRadius: 10,
+},
+
+// Estilo para el texto del botón
+buttonText: {
+  marginTop: 10,
+  fontSize: 20,
+  fontWeight: 'bold',
+  textAlign: 'center',
+},
+
+// Estilo para el contenedor de búsqueda
+searchContainer: {
+  flexDirection: 'row',
+  alignItems: 'center',
+  backgroundColor: '#fff',
+  borderRadius: 20,
+  paddingHorizontal: 8,
+  paddingVertical: 8,
+  width: '80%',
+  marginLeft: '10%',
+  marginTop: 16,
+},
+
+// Estilo para el ícono
+icon: {
+  marginRight: 8,
+},
+
+// Estilo para la entrada de búsqueda
+searchInput: {
+  flex: 1,
+  height: 30,
+  fontSize: 16,
+  fontWeight: 'bold',
+  color: 'black',
+},
+
+// Estilo para el texto en caso de no haber resultados
+noResultsText: {
+  textAlign: 'center',
+  alignSelf: 'center',
+  marginTop: 50,
+  color: 'red',
+  fontSize: 40,
+  fontWeight: 'bold',
+  fontFamily: 'Arial Black', // Utiliza la fuente "Arial Black"
+},
+
 });
 
 export default AutomotrizDanli;

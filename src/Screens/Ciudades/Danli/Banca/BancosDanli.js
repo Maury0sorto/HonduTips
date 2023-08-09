@@ -359,93 +359,106 @@ const MyScreen = () => {
 };
 
 const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-  container2: {
-    backgroundColor: 'transparent',
-    borderRadius: 20,
-    paddingHorizontal: 8,
-    paddingVertical: 8,
-    width: '80%',
-    marginLeft: '1%',
-    marginTop: 20,
-  },
-  buttonsContainer: {
-    flexDirection: 'row',
-    flexWrap: 'wrap',
-    justifyContent: 'space-between',
-    alignItems: 'flex-start',
-    marginLeft: '5%',
-    marginRight: '5%',
-    marginTop: 20,
-    
-    
-    
-  },
-  buttonWrapper: {
-    width: '45%',
-    marginBottom: 20,
-    overflow: 'hidden',
-  },
+// Estilo para el contenedor principal
+container: {
+  flex: 1,
+  alignItems: 'center',
+  justifyContent: 'center',
+},
 
-  singleButtonWrapper: {
-    width: '100%',
-    alignItems: 'center',
-  },
+// Estilo para el segundo contenedor
+container2: {
+  backgroundColor: 'transparent',
+  borderRadius: 20,
+  paddingHorizontal: 8,
+  paddingVertical: 8,
+  width: '80%',
+  marginLeft: '1%',
+  marginTop: 20,
+},
 
-  button: {
-    alignItems: 'center',
-    justifyContent: 'center',
-    borderRadius: 10,
-    
-    
-  },
-  buttonImage: {
-    width: 150,
-    height: 150,
-    marginBottom: 8,
-    alignSelf: 'center',
-     borderRadius: 10,
-  },
-  buttonText: {
-    marginTop: 10,
-    fontSize: 16,
-    fontWeight: 'bold',
-    textAlign: 'center',
-  },
-  componentContainer: {
-    flex: 1,
-    alignItems: 'center',
-    justifyContent: 'center',
-    
-  },
-  backButton: {
-    backgroundColor: '#E5E7E5',
-    paddingHorizontal: 110,
-    paddingVertical: 10,
-    borderRadius: 5,
-    marginBottom: 10,
-    marginTop: 20,
+// Estilo para el contenedor de botones
+buttonsContainer: {
+  flexDirection: 'row',
+  flexWrap: 'wrap',
+  justifyContent: 'space-between',
+  alignItems: 'flex-start',
+  marginLeft: '5%',
+  marginRight: '5%',
+  marginTop: 20,
+},
 
-    flexDirection: 'row',
-    alignItems: 'center',
-    
-  },
-  backButtonText: {
-    color: '#000',
-    fontSize: 16,
-    fontWeight: 'bold',
-    
-  },
-  image: {
-    width: 362,
-    height: 76,
-   marginLeft: -35, // Alinea la imagen a la izquierda dentro del contenedor
-    // Otros estilos que desees aplicar a la imagen
-  },
+// Estilo para el contenedor de un botón individual
+buttonWrapper: {
+  width: '45%',
+  marginBottom: 20,
+  overflow: 'hidden',
+},
+
+// Estilo para el contenedor de un botón individual en caso de ser el único en la fila
+singleButtonWrapper: {
+  width: '100%',
+  alignItems: 'center',
+},
+
+// Estilo para el botón
+button: {
+  alignItems: 'center',
+  justifyContent: 'center',
+  borderRadius: 10,
+},
+
+// Estilo para la imagen del botón
+buttonImage: {
+  width: 150,
+  height: 150,
+  marginBottom: 8,
+  alignSelf: 'center',
+  borderRadius: 10,
+},
+
+// Estilo para el texto del botón
+buttonText: {
+  marginTop: 10,
+  fontSize: 16,
+  fontWeight: 'bold',
+  textAlign: 'center',
+},
+
+// Estilo para el contenedor de componentes
+componentContainer: {
+  flex: 1,
+  alignItems: 'center',
+  justifyContent: 'center',
+},
+
+// Estilo para el botón de retroceso
+backButton: {
+  backgroundColor: '#E5E7E5',
+  paddingHorizontal: 110,
+  paddingVertical: 10,
+  borderRadius: 5,
+  marginBottom: 10,
+  marginTop: 20,
+  flexDirection: 'row',
+  alignItems: 'center',
+},
+
+// Estilo para el texto del botón de retroceso
+backButtonText: {
+  color: '#000',
+  fontSize: 16,
+  fontWeight: 'bold',
+},
+
+// Estilo para la imagen
+image: {
+  width: 362,
+  height: 76,
+  marginLeft: -35, // Alinea la imagen a la izquierda dentro del contenedor
+  // Otros estilos que desees aplicar a la imagen
+},
+
 });
 
 export default MyScreen;

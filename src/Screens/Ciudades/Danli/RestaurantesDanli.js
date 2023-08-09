@@ -668,21 +668,25 @@ const ScreenAJ= ({ text, mostrarBotonAnterior }) => {
 };
 
 const RestaurantesDanli = () => {
-  const [componenteVisible, setComponenteVisible] = useState(null);
-  const [mostrarSelectList, setMostrarSelectList] = useState(true); // Nuevo estado
-  const [selectedOption, setSelectedOption] = useState('Recomendados');
+// Estados para gestionar el componente visible y la lista de selección
+const [componenteVisible, setComponenteVisible] = useState(null);
+const [mostrarSelectList, setMostrarSelectList] = useState(true); // Nuevo estado
+const [selectedOption, setSelectedOption] = useState('Recomendados');
 
-  const mostrarComponente = (text, screenComponent) => {
-    setMostrarSelectList(false); // Ocultar SelectList
-    setComponenteVisible({ text, screenComponent });
-    setSelectedOption(text); // Actualizar la opción seleccionada
-  };
+// Función para mostrar el componente y actualizar el estado
+const mostrarComponente = (text, screenComponent) => {
+  setMostrarSelectList(false); // Ocultar SelectList
+  setComponenteVisible({ text, screenComponent });
+  setSelectedOption(text); // Actualizar la opción seleccionada
+};
 
-  const mostrarBotonAnterior = () => {
-     setMostrarSelectList(true); // Mostrar SelectList nuevamente
+// Función para mostrar el botón anterior y restablecer los estados
+const mostrarBotonAnterior = () => {
+  setMostrarSelectList(true); // Mostrar SelectList nuevamente
   setComponenteVisible(null);
   setSelectedOption("Recomendados");
-  };
+};
+
 
   const buttons = [
     { text: "Wendy's", image: 'https://i.imgur.com/ibuMzCK.png',  screen: ScreenA },
@@ -732,6 +736,7 @@ const RestaurantesDanli = () => {
   
   ];
 
+  // para filtrar
   const data2 = [
     { key: '1', value: 'Recomendados' },
     { key: '2', value: "Wendy's" },
@@ -831,92 +836,103 @@ const RestaurantesDanli = () => {
 
 const styles = StyleSheet.create({
   container: {
-    flex: 1,
-    alignItems: 'center',
-    justifyContent: 'center',
+    flex: 1, // Ocupar todo el espacio disponible en la pantalla
+    alignItems: 'center', // Centrar los elementos horizontalmente
+    justifyContent: 'center', // Centrar los elementos verticalmente
   },
+  
+  // Estilo para el segundo contenedor
   container2: {
-    backgroundColor: 'transparent',
-    borderRadius: 20,
-    paddingHorizontal: 8,
-    paddingVertical: 8,
-    width: '80%',
-    marginLeft: '1%',
-    marginTop: 20,
+    backgroundColor: 'transparent', // Fondo transparente
+    borderRadius: 20, // Borde redondeado con radio de 20 unidades
+    paddingHorizontal: 8, // Agregar espaciado horizontal de 8 unidades
+    paddingVertical: 8, // Agregar espaciado vertical de 8 unidades
+    width: '80%', // Ancho del contenedor del 80% del padre
+    marginLeft: '1%', // Margen izquierdo del 1% del padre
+    marginTop: 20, // Margen superior de 20 unidades
   },
+  
+  // Estilo para el contenedor de botones
   buttonsContainer: {
-    flexDirection: 'row',
-    flexWrap: 'wrap',
-    justifyContent: 'space-between',
-    alignItems: 'flex-start',
-    marginLeft: '5%',
-    marginRight: '5%',
-    marginTop: 20,
-    
-    
-    
+    flexDirection: 'row', // Organizar los elementos en una fila horizontal
+    flexWrap: 'wrap', // Permitir que los elementos se envuelvan a la siguiente línea
+    justifyContent: 'space-between', // Distribuir el espacio disponible entre los elementos
+    alignItems: 'flex-start', // Alinear los elementos en la parte superior
+    marginLeft: '5%', // Margen izquierdo del 5% del padre
+    marginRight: '5%', // Margen derecho del 5% del padre
+    marginTop: 20, // Margen superior de 20 unidades
   },
+  
+  // Estilo para el contenedor de un botón
   buttonWrapper: {
-    width: '45%',
-    marginBottom: 20,
-    overflow: 'hidden',
+    width: '45%', // Ancho del contenedor del 45% del padre
+    marginBottom: 20, // Margen inferior de 20 unidades
+    overflow: 'hidden', // Ocultar contenido que se desborde del contenedor
   },
-
+  
+  // Estilo para el contenedor de un solo botón
   singleButtonWrapper: {
-    width: '100%',
-    alignItems: 'center',
+    width: '100%', // Ancho del contenedor del 100% del padre
+    alignItems: 'center', // Centrar los elementos horizontalmente
   },
-
+  
+  // Estilo para un botón
   button: {
-    alignItems: 'center',
-    justifyContent: 'center',
-    borderRadius: 10,
-    
-    
+    alignItems: 'center', // Centrar los elementos horizontalmente
+    justifyContent: 'center', // Centrar los elementos verticalmente
+    borderRadius: 10, // Borde redondeado con radio de 10 unidades
   },
+  
+  // Estilo para la imagen dentro del botón
   buttonImage: {
-    width: 150,
-    height: 150,
-    marginBottom: 8,
-    alignSelf: 'center',
-     borderRadius: 10,
+    width: 150, // Ancho de la imagen de 150 unidades
+    height: 150, // Altura de la imagen de 150 unidades
+    marginBottom: 8, // Margen inferior de 8 unidades
+    alignSelf: 'center', // Centrar la imagen horizontalmente dentro del botón
+    borderRadius: 10, // Borde redondeado con radio de 10 unidades
   },
+  
+  // Estilo para el texto del botón
   buttonText: {
-    marginTop: 10,
-    fontSize: 16,
-    fontWeight: 'bold',
-    textAlign: 'center',
+    marginTop: 10, // Margen superior de 10 unidades
+    fontSize: 16, // Tamaño de fuente de 16 unidades
+    fontWeight: 'bold', // Fuente en negrita
+    textAlign: 'center', // Centrar el texto horizontalmente
   },
+  
+  // Estilo para el contenedor de componentes
   componentContainer: {
-    flex: 1,
-    alignItems: 'center',
-    justifyContent: 'center',
-    
+    flex: 1, // Ocupar todo el espacio disponible en la pantalla
+    alignItems: 'center', // Centrar los elementos horizontalmente
+    justifyContent: 'center', // Centrar los elementos verticalmente
   },
+  
+  // Estilo para el botón de retroceso
   backButton: {
-    backgroundColor: '#E5E7E5',
-    paddingHorizontal: 110,
-    paddingVertical: 10,
-    borderRadius: 5,
-    marginBottom: 10,
-    marginTop: 20,
-
-    flexDirection: 'row',
-    alignItems: 'center',
-    
+    backgroundColor: '#E5E7E5', // Fondo de color gris claro
+    paddingHorizontal: 110, // Agregar espaciado horizontal de 110 unidades
+    paddingVertical: 10, // Agregar espaciado vertical de 10 unidades
+    borderRadius: 5, // Borde redondeado con radio de 5 unidades
+    marginBottom: 10, // Margen inferior de 10 unidades
+    marginTop: 20, // Margen superior de 20 unidades
+    flexDirection: 'row', // Organizar los elementos en una fila horizontal
+    alignItems: 'center', // Centrar los elementos verticalmente
   },
+  
+  // Estilo para el texto del botón de retroceso
   backButtonText: {
-    color: '#000',
-    fontSize: 16,
-    fontWeight: 'bold',
-    
+    color: '#000', // Color de texto en negro
+    fontSize: 16, // Tamaño de fuente de 16 unidades
+    fontWeight: 'bold', // Fuente en negrita
   },
-
+  
+  // Estilo para la imagen
   image: {
-    width: 362,
-    height: 76,
-   marginLeft: -35, // Alinea la imagen a la izquierda dentro del contenedor
-    // Otros estilos que desees aplicar a la imagen
+    width: 362, // Ancho de la imagen de 362 unidades
+    height: 76, // Altura de la imagen de 76 unidades
+    marginLeft: -35, // Desplazar la imagen hacia la izquierda
+    // Otros estilos relacionados con la imagen
+    // ...
   },
 });
 

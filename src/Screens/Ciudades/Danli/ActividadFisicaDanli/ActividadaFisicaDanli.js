@@ -153,78 +153,88 @@ const ActividadFisicaDanli = () => {
 };
 
 const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-  },
+// Estilo para el contenedor principal
+container: {
+  flex: 1,
+},
 
-  
-  container2: {
-    flex: 1,
-    paddingHorizontal: 16,
-    marginTop: 156,
-    
-  },
-  row: {
-    flexDirection: 'row',
-    justifyContent: 'space-between',
-    paddingHorizontal: 16,
-    marginBottom: 16,
-    
-  },
-  button: {
-    maxWidth: 160,
-    
-    alignItems: 'center',
-    backgroundColor: 'transparent',
-    borderRadius: 10,
-  
-  
-    
-  },
-  buttonImage: {
-    width: 145,
-    height: 145,
-    marginBottom: 8,
-    alignSelf: 'center',
-     borderRadius: 10,
-  },
-  buttonText: {
-    marginTop: 10,
-    fontSize: 16,
-    fontWeight: 'bold',
-    textAlign: 'center',
-  },
-  searchContainer: {
-    flexDirection: 'row',
-    alignItems: 'center',
-    backgroundColor: '#ffff',
-    borderRadius: 20,
-    paddingHorizontal: 8,
-    paddingVertical: 8,
-    width: '80%',
-    marginLeft: '10%',
-    marginTop: 16,
-  },
-  icon: {
-    marginRight: 8,
-  },
-  searchInput: {
-    flex: 1,
-    height: 30,
-    fontSize: 16,
-    fontWeight: 'bold',
-    color: 'black',
-  },
+// Estilo para el segundo contenedor
+container2: {
+  flex: 1,
+  paddingHorizontal: 16,
+  marginTop: 156,
+},
 
-  noResultsText: {
-    textAlign: 'center',
-    alignSelf: 'center',
-    marginTop: 50,
-    color: 'red',
-    fontSize: 40,
-    fontWeight: 'bold', // Aplicar formato en negrita
-   // Utilizar la fuente "Arial Black"
-  },
+// Estilo para la fila (row) que contiene elementos
+row: {
+  flexDirection: 'row',
+  justifyContent: 'space-between',
+  paddingHorizontal: 16,
+  marginBottom: 16,
+},
+
+// Estilo para los botones
+button: {
+  maxWidth: 160,
+  alignItems: 'center',
+  backgroundColor: 'transparent',
+  borderRadius: 10,
+},
+
+// Estilo para la imagen del botón
+buttonImage: {
+  width: 145,
+  height: 145,
+  marginBottom: 8,
+  alignSelf: 'center',
+  borderRadius: 10,
+},
+
+// Estilo para el texto del botón
+buttonText: {
+  marginTop: 10,
+  fontSize: 16,
+  fontWeight: 'bold',
+  textAlign: 'center',
+},
+
+// Estilo para el contenedor de búsqueda
+searchContainer: {
+  flexDirection: 'row',
+  alignItems: 'center',
+  backgroundColor: '#ffff',
+  borderRadius: 20,
+  paddingHorizontal: 8,
+  paddingVertical: 8,
+  width: '80%',
+  marginLeft: '10%',
+  marginTop: 16,
+},
+
+// Estilo para el icono de búsqueda
+icon: {
+  marginRight: 8,
+},
+
+// Estilo para el campo de entrada de búsqueda
+searchInput: {
+  flex: 1,
+  height: 30,
+  fontSize: 16,
+  fontWeight: 'bold',
+  color: 'black',
+},
+
+// Estilo para el texto que se muestra cuando no hay resultados
+noResultsText: {
+  textAlign: 'center',
+  alignSelf: 'center',
+  marginTop: 50,
+  color: 'red',
+  fontSize: 40,
+  fontWeight: 'bold', // Aplicar formato en negrita
+  // Utilizar la fuente "Arial Black"
+},
 });
 
 export default ActividadFisicaDanli;
