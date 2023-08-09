@@ -1,26 +1,27 @@
-import React from "react";
-import { View, Text } from "react-native";
-import { createNativeStackNavigator } from "@react-navigation/native-stack";
-import HomeScreen from "../Screens/HomeScreen";
-import { Ionicons } from "@expo/vector-icons";
+import React from "react";  // Importa React
+import { View, Text } from "react-native";  // Importa componentes básicos de react-native
+import { createNativeStackNavigator } from "@react-navigation/native-stack";  // Importa el componente createNativeStackNavigator de @react-navigation/native-stack
+import HomeScreen from "../Screens/HomeScreen";  // Importa el componente HomeScreen desde la ruta relativa "../Screens/HomeScreen"
+import { Ionicons } from "@expo/vector-icons";  // Importa el componente Ionicons de @expo/vector-icons
 
-const HomeStackScreen = () => {                           // Este stack es el de Home es decir es uno de los 3 que se ven en la parte de abajo
-  const HomeStack = createNativeStackNavigator();
+const HomeStackScreen = () => {  // Define el componente funcional HomeStackScreen
+  const HomeStack = createNativeStackNavigator();  // Crea una instancia del stack de navegación HomeStack
   return (
     <HomeStack.Navigator>
+      {/* Define una pantalla en el stack con nombre "HomeScreen" */}
       <HomeStack.Screen
         name="HomeScreen"
-        component={HomeScreen}
+        component={HomeScreen}  // Asigna el componente HomeScreen a esta pantalla
         options={{
-          headerShown: false, // Oculta la barra de navegación superior
-          headerTitle: "Home",
-          headerTitleStyle: { color: "#fff" },
+          headerShown: false,  // Oculta la barra de navegación superior
+          headerTitle: "Home",  // Establece el título de la barra de navegación
+          headerTitleStyle: { color: "#fff" },  // Estilos para el título de la barra de navegación
           headerLeft: () => (
             <Ionicons
               name="md-home"
               size={24}
               color="#fff"
-              style={{ marginLeft: 10 }}
+              style={{ marginLeft: 10 }}  // Estilos para el ícono en la parte izquierda de la barra de navegación
             />
           ),
         }}
@@ -29,4 +30,4 @@ const HomeStackScreen = () => {                           // Este stack es el de
   );
 };
 
-export default HomeStackScreen;
+export default HomeStackScreen;  // Exporta el componente HomeStackScreen

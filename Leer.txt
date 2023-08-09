@@ -1,0 +1,6 @@
+Cada explicación del código se encuentra en las pantallas iniciales, esta explicacion 
+es completa y contextual,  lo que permite a los usuarios comprender cómo se ha estructurado 
+y organizado el código para lograr la funcionalidad deseada. Esto facilita la comprensión 
+de los conceptos detrás de las características de la aplicación y, en última instancia, 
+empodera a los usuarios para personalizar, extender o solucionar problemas relacionados 
+con el código según sea necesario.

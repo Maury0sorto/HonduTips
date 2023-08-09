@@ -1,4 +1,3 @@
-
 import { useState } from 'react';  // Importar todo lo que se necesitara
 import LoadingScreen from './src/Screens/LoadingScreen';
 import { ThemeProvider } from './src/Navigation/ThemeContext';

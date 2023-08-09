@@ -1,25 +1,31 @@
+// Importa los módulos necesarios de React y React Native.
 import React from 'react';
-import { View, Text, StyleSheet, TouchableOpacity } from 'react-native';
+import { View, StyleSheet } from 'react-native';
 import { useNavigation } from '@react-navigation/native';
+
+// Importa el componente Carrucel desde la ruta especificada.
 import Carrucel from '../components/Carrucel';
+
+// Importa la pantalla de OnboardingScreen (puede faltar en el código actual).
 import OnboardingScreen from './OnboardingScreen';
 
+// Define el componente HomeScreen.
 const HomeScreen = () => {
+  // Obtiene el objeto de navegación utilizando el hook useNavigation.
   const navigation = useNavigation();
 
-
+  // Renderiza la pantalla principal.
   return (
-
     <>
     <View style={styles.container}>
       <Carrucel/>
     </View>
-    
-
     </>
   );
 };
 
+
+// Define los estilos de la pantalla utilizando StyleSheet.create.
 const styles = StyleSheet.create({
   container: {
     flex: 1,

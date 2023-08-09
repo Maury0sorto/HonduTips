@@ -105,12 +105,16 @@ export default function Carrucel() {
 
 // Configuracion de navegaciones
 
-  const navigateToDanli = () => {
-    navigation.navigate('Buscar'); 
-    setTimeout(() => { 
-      navigation.navigate('Danlí');
-    }, 300);
-  };
+const navigateToDanli = () => {
+  // Navega a la pantalla 'Buscar'
+  navigation.navigate('Buscar'); 
+
+  // Espera 300 milisegundos (0.3 segundos) 
+  setTimeout(() => { 
+    // Después de esperar, navega a la pantalla 'Danlí'
+    navigation.navigate('Danlí');
+  }, 300);
+};
 
   const navigateToConstruccion = () => {
     navigation.navigate('Buscar'); 
@@ -146,103 +150,130 @@ export default function Carrucel() {
 
   return (
     <SafeAreaView style={styles.container}>
-      <StatusBar hidden />
-      <Backdrop scrollX={scrollX} />
-      <Animated.FlatList
-        onScroll={Animated.event(
-          [{ nativeEvent: { contentOffset: { x: scrollX } } }],
-          { useNativeDriver: true }
-        )}
-        showsHorizontalScrollIndicator={false}
-        horizontal={true}
-        snapToAlignment="start"
-        contentContainerStyle={{
-          paddingTop: 230,  // Para hacer mas arriba o mas abajo el carruccel
-          paddingHorizontal: ESPACIO_CONTENEDOR,
-        }}
-        snapToInterval={ANCHO_CONTENEDOR}
-        decelerationRate={0}
-        scrollEventThrottle={16}
-        data={imagenes}
-        keyExtractor={(item) => item}
-        renderItem={({ item, index }) => {
-          const inputRange = [
-            (index - 1) * ANCHO_CONTENEDOR,
-            index * ANCHO_CONTENEDOR,
-            (index + 1) * ANCHO_CONTENEDOR,
-          ];
+  {/* Oculta la barra de estado */}
+  <StatusBar hidden />
+  
+  {/* Renderiza el fondo del carrusel */}
+  <Backdrop scrollX={scrollX} />
+  
+  {/* Renderiza la lista horizontal de elementos */}
+  <Animated.FlatList
+    // Captura y maneja el evento de desplazamiento horizontal
+    onScroll={Animated.event(
+      [{ nativeEvent: { contentOffset: { x: scrollX } } }],
+      { useNativeDriver: true }
+    )}
+    
+    // Oculta la barra de desplazamiento horizontal
+    showsHorizontalScrollIndicator={false}
+    
+    // Hace que la lista se desplace horizontalmente
+    horizontal={true}
+    
+    // Alinea los elementos al comienzo de la vista
+    snapToAlignment="start"
+    
+    // Establece el estilo del contenedor de contenido
+    contentContainerStyle={{
+      paddingTop: 230,  // Espacio superior del carrusel (ajusta según sea necesario)
+      paddingHorizontal: ESPACIO_CONTENEDOR,
+    }}
+    
+    // Establece la distancia de desplazamiento para ajustar elementos
+    snapToInterval={ANCHO_CONTENEDOR}
+    
+    // Establece la velocidad de desaceleración después de soltar el dedo
+    decelerationRate={0}
+    
+    // Controla la frecuencia de eventos de desplazamiento capturados
+    scrollEventThrottle={16}
+    
+    // Datos a mostrar en el carrusel (URLs de imágenes)
+    data={imagenes}
+    
+    // Función para extraer una clave única para cada elemento
+    keyExtractor={(item) => item}
+    
+    // Renderiza cada elemento en el carrusel
+    renderItem={({ item, index }) => {
+      // Calcula el rango de entrada para la animación de desplazamiento vertical
+      const inputRange = [
+        (index - 1) * ANCHO_CONTENEDOR,
+        index * ANCHO_CONTENEDOR,
+        (index + 1) * ANCHO_CONTENEDOR,
+      ];
+      
+      // Crea una animación de desplazamiento vertical basada en scrollX
+      const scrollY = scrollX.interpolate({
+        inputRange,
+        outputRange: [0, -0.2 * ANCHO_CONTENEDOR, 0],
+      });
 
-          const scrollY = scrollX.interpolate({
-            inputRange,
-            outputRange: [0, -0.2 * ANCHO_CONTENEDOR, 0],
-          });
-          return (
-
-            <TouchableOpacity
-            key={index}
-            onPress={() => {
-              switch (index) {
-                case 0:
-                  navigateToDanli();
-                  break;
-                case 1:
+      // Renderiza cada elemento del carrusel en un TouchableOpacity
+      return (
+        <TouchableOpacity
+          key={index}
+          onPress={() => {
+            // Navega a diferentes pantallas según el índice del elemento
+            switch (index) {
+              case 0:
+                navigateToDanli();
+                break;
+              case 1:
+                navigateToConstruccion();
+                break;
+              case 2:
+                navigateToConstruccion();
+                break;
+                case 3:
                   navigateToConstruccion();
                   break;
-                case 2:
-                  navigateToConstruccion();
-                  break;
-                  case 3:
+                  case 4:
                     navigateToConstruccion();
                     break;
-                    case 4:
+                    case 5:
                       navigateToConstruccion();
                       break;
-                      case 5:
+                      case 6:
                         navigateToConstruccion();
                         break;
-                        case 6:
+                        case 7:
                           navigateToConstruccion();
                           break;
-                          case 7:
-                            navigateToConstruccion();
-                            break;
-                            case 8:
-                              navigateToConstruccion();
-                              break;
+              // Agrega más casos según sea necesario
+              // ...
 
-                // Resto de tus casos
-                default:
-                  break;
-              }
-            }}
-          >
-            <View style={{ width: ANCHO_CONTENEDOR }}>
-              <Animated.View
-                style={{
-                  marginHorizontal: ESPACIO,
-                  padding: ESPACIO,
-                  borderRadius: 34,
-                  backgroundColor: "#fff",
-                  alignItems: "center",
-                  transform: [{ translateY: scrollY }],
-                }}
-              >
-                <Image source={{ uri: item }} style={styles.posterImage} />
-                <Text style={{ fontWeight: "bold", fontSize: 26 , textAlign:"center"}}>
-                {titulos[index]} {/* Utiliza el título correspondiente */}
-                </Text>
-              </Animated.View>
-            </View>
-            </TouchableOpacity>
-          );
-        }}
-      />
-      
-    
-      
+              default:
+                break;
+            }
+          }}
+        >
+          <View style={{ width: ANCHO_CONTENEDOR }}>
+            {/* Renderiza la imagen del elemento */}
+            <Animated.View
+              style={{
+                marginHorizontal: ESPACIO,
+                padding: ESPACIO,
+                borderRadius: 34,
+                backgroundColor: "#fff",
+                alignItems: "center",
+                transform: [{ translateY: scrollY }],
+              }}
+            >
+              <Image source={{ uri: item }} style={styles.posterImage} />
+              
+              {/* Muestra el título correspondiente al elemento */}
+              <Text style={{ fontWeight: "bold", fontSize: 26 , textAlign:"center"}}>
+                {titulos[index]}
+              </Text>
+            </Animated.View>
+          </View>
+        </TouchableOpacity>
+      );
+    }}
+  />
+</SafeAreaView>
 
-    
-    </SafeAreaView>
 
     
   );

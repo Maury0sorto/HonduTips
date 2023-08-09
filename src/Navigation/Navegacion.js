@@ -11,9 +11,12 @@ const Stack = createStackNavigator();
 function Navegacion() {
   return (
     <NavigationContainer>
+      {/* Crea un stack navigator */}
       <Stack.Navigator>
-       
+        {/* Define las pantallas en el stack */}
+        {/* Por ejemplo, aquí está definida una pantalla llamada "Onboarding" */}
         <Stack.Screen name="Onboarding" component={OnboardingScreen} />
+        {/* Agrega más pantallas aquí, si es necesario */}
       </Stack.Navigator>
     </NavigationContainer>
   );

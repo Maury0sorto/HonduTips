@@ -1,10 +1,11 @@
-import { View, Text } from 'react-native'
-import React from 'react'
-import { createNativeStackNavigator } from "@react-navigation/native-stack";
-import { Ionicons } from "@expo/vector-icons";
-import { Welcome } from '../Screens';
-import Ciudades from '../Screens/Ciudades';
+import { View, Text } from 'react-native';  // Importa componentes básicos de react-native
+import React from 'react';  // Importa React
+import { createNativeStackNavigator } from "@react-navigation/native-stack";  // Importa el componente createNativeStackNavigator de @react-navigation/native-stack
+import { Ionicons } from "@expo/vector-icons";  // Importa el componente Ionicons de @expo/vector-icons
+import { Welcome } from '../Screens';  // Importa el componente Welcome desde la ruta relativa '../Screens'
+import Ciudades from '../Screens/Ciudades';  // Importa el componente Ciudades desde la ruta relativa '../Screens/Ciudades'
 
+// Importa otros componentes desde sus rutas respectivas
 
 import OnboardingScreen from '../Screens/OnboardingScreen';
 import DanliScreen from '../Screens/Ciudades/Danli/DanliScreen';
@@ -57,6 +58,10 @@ import EmpresasSeguridadDanli from '../Screens/Ciudades/Danli/EmpresasSeguridadD
 import MediosComunicacionDanli from '../Screens/Ciudades/Danli/MediosComunicacionDanli/MediosComunicacionDanli';
 import TvCableDanli from '../Screens/Ciudades/Danli/TvCableDanli/TvCableDanli';
 import TransporteDanli from '../Screens/Ciudades/Danli/TransporteDanli/TransporteDanli';
+
+// Fin de importacio de componentes desde sus rutas respectivas
+
+
 const SerchStackScreen = () => {        // Este stack es el de Search es decir es uno de los 3 que se ven en la parte de abajo
 
     const SerchStack = createNativeStackNavigator();
@@ -134,4 +139,4 @@ const SerchStackScreen = () => {        // Este stack es el de Search es decir e
   )
 }
 
-export default SerchStackScreen
+export default SerchStackScreen  // Exporta el componente SerchStackScreen
